@@ -5,7 +5,7 @@ import { DEFAULT_OG_IMAGE } from '@/lib/metadata';
 export const metadata = {
   title: 'Cloud Security & Governance Saudi Arabia',
   description: 'Cloud security & governance in Saudi Arabia across AWS, Azure, Google Cloud & Oracle Cloud. Threat detection, IAM hardening, NCA ECC compliance & 24/7 SOC.',
-  keywords: ['cloud security Saudi Arabia', 'cloud governance', 'IAM hardening', 'NCA ECC compliance', 'threat detection', 'cloud security Riyadh', 'CSPM', 'cloud compliance', 'security operations center', 'GulfStream Technology'],
+  keywords: ['cloud security Saudi Arabia', 'cloud governance', 'IAM hardening', 'NCA ECC compliance', 'threat detection', 'cloud security Riyadh', 'CSPM', 'cloud compliance', 'security operations center', 'GulfStream Technologies'],
   alternates: { canonical: 'https://gulfstreamtech.com.sa/services/cloud-security-governance/' },
   openGraph: {
     title: 'Cloud Security & Governance Saudi Arabia | GulfStream',
@@ -27,7 +27,7 @@ const serviceSchema = {
   '@type': 'Service',
   name: 'Cloud Security & Governance',
   description: 'Enterprise cloud security and governance with continuous threat detection, IAM hardening, NCA ECC compliance automation, and 24/7 security operations.',
-  provider: { '@type': 'Organization', name: 'GulfStream Technology', url: 'https://gulfstreamtech.com.sa' },
+  provider: { '@type': 'Organization', name: 'GulfStream Technologies', url: 'https://gulfstreamtech.com.sa' },
   areaServed: { '@type': 'Country', name: 'Saudi Arabia' },
   serviceType: 'Cloud Security Services',
 };

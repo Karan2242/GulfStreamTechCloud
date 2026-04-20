@@ -22,7 +22,7 @@ const CookiePolicyContent = () => {
             <span className="text-gradient">& Tracking Technologies</span>
           </h1>
           <p>
-            This Cookie Policy explains what cookies are, how GulfStream Technology uses them, and how you can control them. By continuing to browse our website, you consent to our use of cookies as outlined below.
+            This Cookie Policy explains what cookies are, how GulfStream Technologies uses them, and how you can control them. By continuing to browse our website, you consent to our use of cookies as outlined below.
           </p>
           <p style={{ fontSize: '0.95rem', color: 'var(--text-secondary)', marginTop: '16px' }}>
             <strong>Last Updated:</strong> April 14, 2026 | <strong>Effective Date:</strong> April 14, 2026
@@ -37,7 +37,7 @@ const CookiePolicyContent = () => {
           <div className="card reveal" style={{ marginBottom: '40px' }}>
             <h2 style={{ fontSize: '1.4rem', fontWeight: 600, marginBottom: '16px', color: 'var(--text-primary)' }}>1. Introduction</h2>
             <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8, marginBottom: '12px' }}>
-              GulfStream Technology uses cookies and similar tracking technologies to enhance your browsing experience, understand how you use our website, and deliver personalized content and services. This Cookie Policy provides transparent information about our cookie practices.
+              GulfStream Technologies uses cookies and similar tracking technologies to enhance your browsing experience, understand how you use our website, and deliver personalized content and services. This Cookie Policy provides transparent information about our cookie practices.
             </p>
             <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8 }}>
               Please review this policy carefully. If you do not agree with our cookie practices, you can disable cookies through your browser settings or opt out using the methods described below.

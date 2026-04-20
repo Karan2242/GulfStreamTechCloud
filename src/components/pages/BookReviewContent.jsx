@@ -61,7 +61,7 @@ const BookReviewContent = () => {
       <section className="section" style={{ paddingBottom: '0' }}>
         <div className="container">
           <div className="reveal" style={{ maxWidth: '900px', margin: '0 auto', lineHeight: '1.8' }}>
-            <p>GulfStream Technology offers a <strong>free cloud assessment in Saudi Arabia</strong> across AWS, Azure, Google Cloud, and Oracle Cloud for enterprises looking to reduce cloud costs, strengthen security, and optimize performance. Our <Link href="/services/finops-cost-optimization" style={{ color: 'var(--accent)' }}>cloud cost optimization audit</Link> has helped 40+ Saudi enterprises identify an average of 30% in cloud savings — across retail, healthcare, SaaS, and logistics.</p>
+            <p>GulfStream Technologies offers a <strong>free cloud assessment in Saudi Arabia</strong> across AWS, Azure, Google Cloud, and Oracle Cloud for enterprises looking to reduce cloud costs, strengthen security, and optimize performance. Our <Link href="/services/finops-cost-optimization" style={{ color: 'var(--accent)' }}>cloud cost optimization audit</Link> has helped 40+ Saudi enterprises identify an average of 30% in cloud savings — across retail, healthcare, SaaS, and logistics.</p>
             <p>Whether you need a <Link href="/services/cloud-security-governance" style={{ color: 'var(--accent)' }}>cloud security assessment</Link>, an <Link href="/services/cloud-managed-services/aws" style={{ color: 'var(--accent)' }}>AWS managed services</Link> evaluation, or an <Link href="/services/cloud-managed-services/azure" style={{ color: 'var(--accent)' }}>Azure consulting</Link> review, our team of certified AWS architects and Azure expert engineers delivers a comprehensive, actionable report — completely free and with no obligation to engage.</p>
           </div>
         </div>
@@ -100,7 +100,7 @@ const BookReviewContent = () => {
                 <div className="icon-box" style={{ marginBottom: 0 }}>🗺️</div>
                 <h3 style={{ margin: 0, fontSize: '1.05rem' }}>Optimization Roadmap</h3>
               </div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.9rem' }}>A 90-day cloud optimization roadmap with prioritized, effort-vs-impact actions — giving you an immediate plan to follow whether or not you engage GulfStream Technology.</p>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '.9rem' }}>A 90-day cloud optimization roadmap with prioritized, effort-vs-impact actions — giving you an immediate plan to follow whether or not you engage GulfStream Technologies.</p>
               <div style={{ marginTop: '16px', padding: '12px', background: 'var(--dark-bg)', borderRadius: 'var(--radius-sm)', fontSize: '.82rem', color: 'var(--accent)' }}>
                 Yours to keep: <strong>100% free, no strings</strong>
               </div>

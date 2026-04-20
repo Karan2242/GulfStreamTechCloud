@@ -15,13 +15,13 @@ const AboutContent = () => {
           <nav className="breadcrumb" aria-label="Breadcrumb">
             <Link href="/">Home</Link><span>›</span><span>About Us</span>
           </nav>
-          <div className="badge badge-primary" style={{ marginBottom: '16px' }}>🏢 About GulfStream Technology</div>
+          <div className="badge badge-primary" style={{ marginBottom: '16px' }}>🏢 About GulfStream Technologies</div>
           <h1 className="display-lg">
             Saudi Arabia&apos;s Specialist<br />
             <span className="text-gradient">Cloud Management Partner</span>
           </h1>
           <p>
-            GulfStream Technology is a leading cloud management company in Saudi Arabia — specializing in AWS managed services, Azure consulting, FinOps cost optimization, and cloud security governance for enterprises across Riyadh, Jeddah, and Dammam.
+            GulfStream Technologies is a leading cloud management company in Saudi Arabia — specializing in AWS managed services, Azure consulting, FinOps cost optimization, and cloud security governance for enterprises across Riyadh, Jeddah, and Dammam.
           </p>
         </div>
       </section>
@@ -34,10 +34,10 @@ const AboutContent = () => {
               <div className="badge badge-accent" style={{ marginBottom: '16px' }}>🌊 Our Story</div>
               <h2 className="display-sm" style={{ marginBottom: '20px' }}>Built by Cloud Engineers, for Cloud-Forward Enterprises</h2>
               <p style={{ color: 'var(--text-secondary)', lineHeight: 1.75, marginBottom: '16px' }}>
-                GulfStream Technology was founded by a team of senior cloud engineers and certified AWS architects who spent years working inside enterprise cloud environments across Saudi Arabia and the GCC. We saw the same problems repeated across every industry: spiraling cloud costs, security misconfigurations, fragmented visibility, and under-resourced IT teams struggling to keep pace with cloud complexity.
+                GulfStream Technologies was founded by a team of senior cloud engineers and certified AWS architects who spent years working inside enterprise cloud environments across Saudi Arabia and the GCC. We saw the same problems repeated across every industry: spiraling cloud costs, security misconfigurations, fragmented visibility, and under-resourced IT teams struggling to keep pace with cloud complexity.
               </p>
               <p style={{ color: 'var(--text-secondary)', lineHeight: 1.75, marginBottom: '16px' }}>
-                We built GulfStream Technology to solve exactly those problems — combining deep <Link href="/services/cloud-managed-services/aws" style={{ color: 'var(--accent)' }}>AWS managed services</Link> and <Link href="/services/cloud-managed-services/azure" style={{ color: 'var(--accent)' }}>Azure consulting</Link> expertise with a structured <Link href="/services/finops-cost-optimization" style={{ color: 'var(--accent)' }}>FinOps discipline</Link> and a proactive, always-on service model that enterprises can trust.
+                We built GulfStream Technologies to solve exactly those problems — combining deep <Link href="/services/cloud-managed-services/aws" style={{ color: 'var(--accent)' }}>AWS managed services</Link> and <Link href="/services/cloud-managed-services/azure" style={{ color: 'var(--accent)' }}>Azure consulting</Link> expertise with a structured <Link href="/services/finops-cost-optimization" style={{ color: 'var(--accent)' }}>FinOps discipline</Link> and a proactive, always-on service model that enterprises can trust.
               </p>
               <p style={{ color: 'var(--text-secondary)', lineHeight: 1.75 }}>
                 Today, we manage cloud environments for enterprises across retail, healthcare, SaaS, logistics, and professional services — delivering an average of 32% cloud cost reduction and 99.99% uptime across our entire client portfolio.
@@ -146,7 +146,7 @@ const AboutContent = () => {
         <div className="container">
           <div className="cta-banner reveal">
             <h2 className="display-md">Ready to Work with Cloud Experts in Saudi Arabia?</h2>
-            <p>Book a free Cloud Assessment and discover how GulfStream Technology can reduce your cloud costs, strengthen security, and scale your infrastructure.</p>
+            <p>Book a free Cloud Assessment and discover how GulfStream Technologies can reduce your cloud costs, strengthen security, and scale your infrastructure.</p>
             <p className="cta-urgency">⚡ Limited free assessments available this month</p>
             <div className="cta-actions">
               <Link href="/book-a-review" className="btn btn-white btn-lg">📋 Book Free Cloud Assessment</Link>
@@ -212,7 +212,7 @@ const AboutContent = () => {
           <div className="grid-2 reveal">
             <div className="card">
               <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>What cloud services does GulfStream offer in Saudi Arabia?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>GulfStream Technology offers <Link href="/services/cloud-managed-services/aws" style={{ color: 'var(--accent)' }}>AWS managed services</Link>, <Link href="/services/cloud-managed-services/azure" style={{ color: 'var(--accent)' }}>Azure managed services</Link>, <Link href="/services/cloud-managed-services/google" style={{ color: 'var(--accent)' }}>Google Cloud managed services</Link>, <Link href="/services/cloud-managed-services/oracle" style={{ color: 'var(--accent)' }}>Oracle Cloud managed services</Link>, <Link href="/services/finops-cost-optimization" style={{ color: 'var(--accent)' }}>FinOps cost optimization</Link>, <Link href="/services/cloud-migration" style={{ color: 'var(--accent)' }}>cloud migration</Link>, <Link href="/services/cloud-security-governance" style={{ color: 'var(--accent)' }}>cloud security &amp; governance</Link>, and <Link href="/services/cloud-billing-management" style={{ color: 'var(--accent)' }}>cloud billing management</Link> for enterprises across Saudi Arabia.</p>
+              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>GulfStream Technologies offers <Link href="/services/cloud-managed-services/aws" style={{ color: 'var(--accent)' }}>AWS managed services</Link>, <Link href="/services/cloud-managed-services/azure" style={{ color: 'var(--accent)' }}>Azure managed services</Link>, <Link href="/services/cloud-managed-services/google" style={{ color: 'var(--accent)' }}>Google Cloud managed services</Link>, <Link href="/services/cloud-managed-services/oracle" style={{ color: 'var(--accent)' }}>Oracle Cloud managed services</Link>, <Link href="/services/finops-cost-optimization" style={{ color: 'var(--accent)' }}>FinOps cost optimization</Link>, <Link href="/services/cloud-migration" style={{ color: 'var(--accent)' }}>cloud migration</Link>, <Link href="/services/cloud-security-governance" style={{ color: 'var(--accent)' }}>cloud security &amp; governance</Link>, and <Link href="/services/cloud-billing-management" style={{ color: 'var(--accent)' }}>cloud billing management</Link> for enterprises across Saudi Arabia.</p>
             </div>
             <div className="card">
               <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>Which cloud platforms does GulfStream support?</h3>

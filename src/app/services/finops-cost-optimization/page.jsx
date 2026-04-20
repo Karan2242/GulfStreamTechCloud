@@ -5,7 +5,7 @@ import { DEFAULT_OG_IMAGE } from '@/lib/metadata';
 export const metadata = {
   title: 'FinOps & Cloud Cost Optimization Saudi Arabia',
   description: 'FinOps & cloud cost optimization in Saudi Arabia. 32% average cost reduction across AWS, Azure, Google Cloud & Oracle Cloud with spend visibility, rightsizing & RI strategy.',
-  keywords: ['FinOps Saudi Arabia', 'cloud cost optimization', 'cloud cost reduction', 'FinOps consulting', 'rightsizing', 'Reserved Instance strategy', 'cloud cost management Riyadh', 'FinOps framework', 'cloud spend optimization', 'GulfStream Technology'],
+  keywords: ['FinOps Saudi Arabia', 'cloud cost optimization', 'cloud cost reduction', 'FinOps consulting', 'rightsizing', 'Reserved Instance strategy', 'cloud cost management Riyadh', 'FinOps framework', 'cloud spend optimization', 'GulfStream Technologies'],
   alternates: { canonical: 'https://gulfstreamtech.com.sa/services/finops-cost-optimization/' },
   openGraph: {
     title: 'FinOps & Cloud Cost Optimization Saudi Arabia | GulfStream',
@@ -27,7 +27,7 @@ const serviceSchema = {
   '@type': 'Service',
   name: 'FinOps & Cloud Cost Optimization',
   description: 'Cloud FinOps and cost optimization services delivering 32% average cost reduction with full spend visibility, rightsizing, Reserved Instance strategy, and governance.',
-  provider: { '@type': 'Organization', name: 'GulfStream Technology', url: 'https://gulfstreamtech.com.sa' },
+  provider: { '@type': 'Organization', name: 'GulfStream Technologies', url: 'https://gulfstreamtech.com.sa' },
   areaServed: { '@type': 'Country', name: 'Saudi Arabia' },
   serviceType: 'FinOps Consulting',
 };

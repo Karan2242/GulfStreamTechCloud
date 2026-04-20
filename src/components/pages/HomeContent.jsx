@@ -79,7 +79,7 @@ const HomeContent = () => {
               </h1>
               <p className="hero-subtitle">Certified Multi-Cloud Specialists for Saudi Enterprises — AWS, Azure, Google Cloud &amp; Oracle Cloud</p>
               <p className="hero-desc">
-                GulfStream Technology helps enterprises across Riyadh, Jeddah, and Dammam <strong>optimize cloud costs by up to 30%</strong>, strengthen security posture, and achieve <strong>99.99% uptime</strong> — backed by 24/7 expert support and FinOps-driven cloud management across AWS, Azure, Google Cloud, and Oracle Cloud.
+                GulfStream Technologies helps enterprises across Riyadh, Jeddah, and Dammam <strong>optimize cloud costs by up to 30%</strong>, strengthen security posture, and achieve <strong>99.99% uptime</strong> — backed by 24/7 expert support and FinOps-driven cloud management across AWS, Azure, Google Cloud, and Oracle Cloud.
               </p>
               <div className="hero-actions">
                 <Link href="/book-a-review" className="btn btn-primary btn-lg">
@@ -215,13 +215,13 @@ const HomeContent = () => {
           </div>
           <div className="reveal" style={{ maxWidth: '900px', margin: '0 auto' }}>
             <p style={{ color: 'var(--text-secondary)', fontSize: '1rem', lineHeight: 1.8 }}>
-              <strong>Cloud managed services in Saudi Arabia</strong> involve outsourcing the day-to-day management, monitoring, security, and optimization of your cloud infrastructure to certified specialists. Instead of building costly in-house teams, enterprises across Riyadh, Jeddah, and Dammam partner with GulfStream Technology to operate their <Link href="/services/cloud-managed-services/aws" style={{ color: 'var(--accent)' }}>AWS</Link> and <Link href="/services/cloud-managed-services/azure" style={{ color: 'var(--accent)' }}>Azure</Link> environments with round-the-clock expertise — achieving significant cost reductions, stronger security, and faster time-to-market.
+              <strong>Cloud managed services in Saudi Arabia</strong> involve outsourcing the day-to-day management, monitoring, security, and optimization of your cloud infrastructure to certified specialists. Instead of building costly in-house teams, enterprises across Riyadh, Jeddah, and Dammam partner with GulfStream Technologies to operate their <Link href="/services/cloud-managed-services/aws" style={{ color: 'var(--accent)' }}>AWS</Link> and <Link href="/services/cloud-managed-services/azure" style={{ color: 'var(--accent)' }}>Azure</Link> environments with round-the-clock expertise — achieving significant cost reductions, stronger security, and faster time-to-market.
             </p>
             <p style={{ color: 'var(--text-secondary)', fontSize: '1rem', lineHeight: 1.8, marginTop: '16px' }}>
               As a leading provider of <strong>AWS managed services in Saudi Arabia</strong> and <strong>Azure cloud consulting</strong>, GulfStream delivers a full spectrum of cloud operations — from <Link href="/services/finops-cost-optimization" style={{ color: 'var(--accent)' }}>FinOps consulting</Link> and <Link href="/services/cloud-security-governance" style={{ color: 'var(--accent)' }}>cloud security governance</Link> to <Link href="/services/cloud-migration" style={{ color: 'var(--accent)' }}>cloud migration</Link> and <Link href="/services/cloud-billing-management" style={{ color: 'var(--accent)' }}>billing management</Link>. Our FinOps-driven approach has delivered an average 30% cloud cost reduction for Saudi enterprises while maintaining 99.99% infrastructure uptime across all managed environments.
             </p>
             <p style={{ color: 'var(--text-secondary)', fontSize: '1rem', lineHeight: 1.8, marginTop: '16px' }}>
-              Whether you need <strong>FinOps consulting in Saudi Arabia</strong> to control spiraling cloud costs, enterprise-grade security aligned to NCA ECC and ISO 27001, or a full outsourced cloud operations team — GulfStream Technology is the trusted partner for Saudi enterprises pursuing Vision 2030 digital transformation at scale.
+              Whether you need <strong>FinOps consulting in Saudi Arabia</strong> to control spiraling cloud costs, enterprise-grade security aligned to NCA ECC and ISO 27001, or a full outsourced cloud operations team — GulfStream Technologies is the trusted partner for Saudi enterprises pursuing Vision 2030 digital transformation at scale.
             </p>
           </div>
         </div>
@@ -289,7 +289,7 @@ const HomeContent = () => {
           <div className="section-header reveal">
             <div className="badge badge-primary">🇸🇦 Saudi Cloud Experts</div>
             <h2 className="display-md">Why Choose GulfStream for Cloud in Saudi Arabia?</h2>
-            <p>We&apos;re not a generic MSP. GulfStream Technology is a FinOps-driven, security-first cloud partner built for Saudi enterprises — with local expertise and global cloud certifications.</p>
+            <p>We're not a generic MSP. GulfStream Technologies is a FinOps-driven, security-first cloud partner built for Saudi enterprises — with local expertise and global cloud certifications.</p>
           </div>
           <div className="grid-3 reveal">
             <div className="card" style={{ padding: '24px' }}>
@@ -356,7 +356,7 @@ const HomeContent = () => {
           <div className="section-header reveal">
             <div className="badge badge-primary">🛠️ Our Services</div>
             <h2 className="display-md">End-to-End Cloud Managed Services in Saudi Arabia</h2>
-            <p>From day-to-day cloud operations to strategic FinOps governance — GulfStream Technology manages every layer of your AWS, Azure, Google Cloud, and Oracle Cloud environment so your teams can focus on what matters most.</p>
+            <p>From day-to-day cloud operations to strategic FinOps governance — GulfStream Technologies manages every layer of your AWS, Azure, Google Cloud, and Oracle Cloud environment so your teams can focus on what matters most.</p>
           </div>
           <div className="services-grid">
             <div className="service-card reveal">
@@ -598,7 +598,7 @@ const HomeContent = () => {
             </div>
             <div className="card" style={{ padding: '24px' }}>
               <h3 style={{ marginBottom: '10px', fontSize: '1rem' }}>Which cloud platforms do you support?</h3>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.9rem', lineHeight: 1.7 }}>GulfStream Technology is certified across AWS, Microsoft Azure, Google Cloud, and Oracle Cloud. We manage single-cloud and multi-cloud environments, helping you choose the right platform — AWS for cloud-native workloads, Azure for hybrid and Microsoft-centric environments, Google Cloud for data and AI, or Oracle Cloud for enterprise applications — and optimize all for cost, security, and performance.</p>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '.9rem', lineHeight: 1.7 }}>GulfStream Technologies is certified across AWS, Microsoft Azure, Google Cloud, and Oracle Cloud. We manage single-cloud and multi-cloud environments, helping you choose the right platform — AWS for cloud-native workloads, Azure for hybrid and Microsoft-centric environments, Google Cloud for data and AI, or Oracle Cloud for enterprise applications — and optimize all for cost, security, and performance.</p>
             </div>
             <div className="card" style={{ padding: '24px' }}>
               <h3 style={{ marginBottom: '10px', fontSize: '1rem' }}>How much cost savings can you deliver?</h3>
@@ -606,7 +606,7 @@ const HomeContent = () => {
             </div>
             <div className="card" style={{ padding: '24px' }}>
               <h3 style={{ marginBottom: '10px', fontSize: '1rem' }}>Do you operate in Saudi Arabia?</h3>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.9rem', lineHeight: 1.7 }}>Yes. GulfStream Technology is headquartered in Riyadh and serves enterprise clients across Jeddah, Dammam, and the wider GCC. We understand local regulations including NCA ECC compliance, support Vision 2030 digital transformation, and provide Arabic-language support.</p>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '.9rem', lineHeight: 1.7 }}>Yes. GulfStream Technologies is headquartered in Riyadh and serves enterprise clients across Jeddah, Dammam, and the wider GCC. We understand local regulations including NCA ECC compliance, support Vision 2030 digital transformation, and provide Arabic-language support.</p>
             </div>
             <div className="card" style={{ padding: '24px' }}>
               <h3 style={{ marginBottom: '10px', fontSize: '1rem' }}>Is there a free cloud consultation available?</h3>

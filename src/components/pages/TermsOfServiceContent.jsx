@@ -22,7 +22,7 @@ const TermsOfServiceContent = () => {
             <span className="text-gradient">Cloud Services</span>
           </h1>
           <p>
-            These Terms of Service govern your access to and use of GulfStream Technology's website and cloud management services. Please read them carefully before engaging with our services.
+            These Terms of Service govern your access to and use of GulfStream Technologies's website and cloud management services. Please read them carefully before engaging with our services.
           </p>
           <p style={{ fontSize: '0.95rem', color: 'var(--text-secondary)', marginTop: '16px' }}>
             <strong>Last Updated:</strong> April 14, 2026 | <strong>Effective Date:</strong> April 14, 2026
@@ -37,10 +37,10 @@ const TermsOfServiceContent = () => {
           <div className="card reveal" style={{ marginBottom: '40px' }}>
             <h2 style={{ fontSize: '1.4rem', fontWeight: 600, marginBottom: '16px', color: 'var(--text-primary)' }}>1. Acceptance of Terms</h2>
             <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8, marginBottom: '12px' }}>
-              By accessing and using GulfStream Technology's website, booking services, or engaging with our cloud management solutions, you agree to be bound by these Terms of Service. If you do not agree to any part of these terms, you must discontinue use of our services immediately.
+              By accessing and using GulfStream Technologies's website, booking services, or engaging with our cloud management solutions, you agree to be bound by these Terms of Service. If you do not agree to any part of these terms, you must discontinue use of our services immediately.
             </p>
             <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8 }}>
-              GulfStream Technology reserves the right to update these Terms at any time. Your continued use of our services following notification of changes constitutes acceptance of the updated Terms.
+              GulfStream Technologies reserves the right to update these Terms at any time. Your continued use of our services following notification of changes constitutes acceptance of the updated Terms.
             </p>
           </div>
 
@@ -61,7 +61,7 @@ const TermsOfServiceContent = () => {
               <li>Engage in phishing, spamming, or social engineering attacks</li>
               <li>Attempt to reverse engineer, decompile, or disassemble our software or services</li>
               <li>Use automated systems (bots, scrapers) without explicit permission</li>
-              <li>Violate intellectual property rights of GulfStream Technology or third parties</li>
+              <li>Violate intellectual property rights of GulfStream Technologies or third parties</li>
               <li>Engage in any activity that disrupts the normal functioning of our website or services</li>
             </ul>
           </div>
@@ -70,7 +70,7 @@ const TermsOfServiceContent = () => {
           <div className="card reveal" style={{ marginBottom: '40px' }}>
             <h2 style={{ fontSize: '1.4rem', fontWeight: 600, marginBottom: '16px', color: 'var(--text-primary)' }}>3. Services Offered</h2>
             <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8, marginBottom: '20px' }}>
-              GulfStream Technology provides comprehensive cloud management and optimization services, including but not limited to:
+              GulfStream Technologies provides comprehensive cloud management and optimization services, including but not limited to:
             </p>
 
             <h3 style={{ fontSize: '1.1rem', fontWeight: 600, marginBottom: '12px', marginTop: '16px', color: 'var(--text-primary)' }}>Cloud Platforms Supported</h3>
@@ -99,7 +99,7 @@ const TermsOfServiceContent = () => {
           <div className="card reveal" style={{ marginBottom: '40px' }}>
             <h2 style={{ fontSize: '1.4rem', fontWeight: 600, marginBottom: '16px', color: 'var(--text-primary)' }}>4. Intellectual Property Rights</h2>
             <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8, marginBottom: '20px' }}>
-              All content on this website, including text, graphics, logos, images, code, and other materials (&ldquo;Content&rdquo;), is the property of GulfStream Technology or its content suppliers and is protected by international copyright, trademark, and other intellectual property laws.
+              All content on this website, including text, graphics, logos, images, code, and other materials (&ldquo;Content&rdquo;), is the property of GulfStream Technologies or its content suppliers and is protected by international copyright, trademark, and other intellectual property laws.
             </p>
 
             <h3 style={{ fontSize: '1.1rem', fontWeight: 600, marginBottom: '12px', marginTop: '16px', color: 'var(--text-primary)' }}>License Grant</h3>
@@ -115,7 +115,7 @@ const TermsOfServiceContent = () => {
 
             <h3 style={{ fontSize: '1.1rem', fontWeight: 600, marginBottom: '12px', marginTop: '16px', color: 'var(--text-primary)' }}>Your Content</h3>
             <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8 }}>
-              If you provide any content, materials, or feedback to GulfStream Technology, you grant us a worldwide, perpetual, royalty-free license to use, modify, reproduce, and distribute such content for any purpose related to our services.
+              If you provide any content, materials, or feedback to GulfStream Technologies, you grant us a worldwide, perpetual, royalty-free license to use, modify, reproduce, and distribute such content for any purpose related to our services.
             </p>
           </div>
 
@@ -123,12 +123,12 @@ const TermsOfServiceContent = () => {
           <div className="card reveal" style={{ marginBottom: '40px' }}>
             <h2 style={{ fontSize: '1.4rem', fontWeight: 600, marginBottom: '16px', color: 'var(--text-primary)' }}>5. Limitation of Liability & Disclaimers</h2>
             <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8, marginBottom: '20px' }}>
-              To the maximum extent permitted by law, GulfStream Technology shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including loss of profits, data, or business interruption, arising from your use or inability to use our website or services.
+              To the maximum extent permitted by law, GulfStream Technologies shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including loss of profits, data, or business interruption, arising from your use or inability to use our website or services.
             </p>
 
             <h3 style={{ fontSize: '1.1rem', fontWeight: 600, marginBottom: '12px', marginTop: '16px', color: 'var(--text-primary)' }}>Warranty Disclaimer</h3>
             <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8, marginBottom: '12px' }}>
-              <strong>Our website and services are provided on an "AS IS" and "AS AVAILABLE" basis.</strong> GulfStream Technology makes no warranties, express or implied, regarding:
+              <strong>Our website and services are provided on an "AS IS" and "AS AVAILABLE" basis.</strong> GulfStream Technologies makes no warranties, express or implied, regarding:
             </p>
             <ul style={{ color: 'var(--text-secondary)', lineHeight: 1.8, marginLeft: '24px', marginBottom: '16px' }}>
               <li>Accuracy, completeness, or reliability of content</li>
@@ -139,7 +139,7 @@ const TermsOfServiceContent = () => {
 
             <h3 style={{ fontSize: '1.1rem', fontWeight: 600, marginBottom: '12px', marginTop: '16px', color: 'var(--text-primary)' }}>Indemnification</h3>
             <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8 }}>
-              You agree to indemnify, defend, and hold harmless GulfStream Technology, its officers, directors, employees, and agents from any claims, damages, losses, or expenses (including legal fees) arising from your violation of these Terms, your use of our website or services, or infringement of any third-party rights.
+              You agree to indemnify, defend, and hold harmless GulfStream Technologies, its officers, directors, employees, and agents from any claims, damages, losses, or expenses (including legal fees) arising from your violation of these Terms, your use of our website or services, or infringement of any third-party rights.
             </p>
           </div>
 
@@ -151,7 +151,7 @@ const TermsOfServiceContent = () => {
             </p>
 
             <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8, marginBottom: '12px' }}>
-              <strong>Your use of third-party websites is at your own risk.</strong> We recommend reviewing their terms of service and privacy policies before engaging. GulfStream Technology shall not be liable for:
+              <strong>Your use of third-party websites is at your own risk.</strong> We recommend reviewing their terms of service and privacy policies before engaging. GulfStream Technologies shall not be liable for:
             </p>
             <ul style={{ color: 'var(--text-secondary)', lineHeight: 1.8, marginLeft: '24px', marginBottom: '16px' }}>
               <li>Availability or content of third-party websites</li>
@@ -164,7 +164,7 @@ const TermsOfServiceContent = () => {
           <div className="card reveal" style={{ marginBottom: '40px' }}>
             <h2 style={{ fontSize: '1.4rem', fontWeight: 600, marginBottom: '16px', color: 'var(--text-primary)' }}>7. Termination of Access</h2>
             <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8, marginBottom: '20px' }}>
-              GulfStream Technology reserves the right to terminate or restrict your access to our website and services at any time, without notice or liability, for the following reasons:
+              GulfStream Technologies reserves the right to terminate or restrict your access to our website and services at any time, without notice or liability, for the following reasons:
             </p>
 
             <ul style={{ color: 'var(--text-secondary)', lineHeight: 1.8, marginLeft: '24px', marginBottom: '16px' }}>
@@ -222,7 +222,7 @@ const TermsOfServiceContent = () => {
             </div>
 
             <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8, fontSize: '0.9rem' }}>
-              We appreciate your engagement with GulfStream Technology and your commitment to complying with these Terms of Service.
+              We appreciate your engagement with GulfStream Technologies and your commitment to complying with these Terms of Service.
             </p>
           </div>
         </div>

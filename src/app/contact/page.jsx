@@ -5,7 +5,7 @@ import { DEFAULT_OG_IMAGE } from '@/lib/metadata';
 const localBusinessSchema = {
   '@context': 'https://schema.org',
   '@type': 'LocalBusiness',
-  name: 'GulfStream Technology',
+  name: 'GulfStream Technologies',
   url: 'https://gulfstreamtech.com.sa',
   description: 'Leading cloud consulting company in Riyadh, Saudi Arabia — AWS managed services, Azure consulting, FinOps, and cloud cost optimization experts.',
   address: {
@@ -93,7 +93,7 @@ export const metadata = {
     description: 'Contact GulfStream for multi-cloud consulting in Riyadh, Saudi Arabia. AWS, Azure, Google Cloud & Oracle Cloud experts. Response within 4 hours.',
     url: 'https://gulfstreamtech.com.sa/contact/',
     type: 'website',
-    siteName: 'GulfStream Technology',
+    siteName: 'GulfStream Technologies',
     images: [DEFAULT_OG_IMAGE],
   },
   twitter: {

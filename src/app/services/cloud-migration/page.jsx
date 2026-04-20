@@ -5,7 +5,7 @@ import { DEFAULT_OG_IMAGE } from '@/lib/metadata';
 export const metadata = {
   title: 'Cloud Migration & Modernization Saudi Arabia',
   description: 'End-to-end cloud migration in Saudi Arabia with zero disruption. 6Rs methodology, wave-based planning & post-migration optimization across AWS, Azure, GCP & OCI.',
-  keywords: ['cloud migration Saudi Arabia', 'cloud migration services', 'cloud modernization', 'AWS migration', 'Azure migration', 'data center migration', 'legacy modernization', 'cloud migration Riyadh', '6Rs migration', 'GulfStream Technology'],
+  keywords: ['cloud migration Saudi Arabia', 'cloud migration services', 'cloud modernization', 'AWS migration', 'Azure migration', 'data center migration', 'legacy modernization', 'cloud migration Riyadh', '6Rs migration', 'GulfStream Technologies'],
   alternates: { canonical: 'https://gulfstreamtech.com.sa/services/cloud-migration/' },
   openGraph: {
     title: 'Cloud Migration & Modernization Saudi Arabia | GulfStream',
@@ -27,7 +27,7 @@ const serviceSchema = {
   '@type': 'Service',
   name: 'Cloud Migration & Modernization',
   description: 'End-to-end cloud migration services with zero business disruption using proven 6Rs methodology, wave-based planning, and post-migration optimization.',
-  provider: { '@type': 'Organization', name: 'GulfStream Technology', url: 'https://gulfstreamtech.com.sa' },
+  provider: { '@type': 'Organization', name: 'GulfStream Technologies', url: 'https://gulfstreamtech.com.sa' },
   areaServed: { '@type': 'Country', name: 'Saudi Arabia' },
   serviceType: 'Cloud Migration Services',
 };

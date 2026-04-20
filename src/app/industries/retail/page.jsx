@@ -27,7 +27,7 @@ export default function RetailPage() {
           '@type': 'Service',
           name: 'Retail Cloud Solutions Saudi Arabia',
           description: 'Scalable multi-cloud infrastructure for Saudi retail — elastic auto-scaling, omnichannel integration, PCI DSS compliance, and retail analytics across AWS, Azure, Google Cloud, and Oracle Cloud.',
-          provider: { '@type': 'Organization', name: 'GulfStream Technology', url: 'https://gulfstreamtech.com.sa/' },
+          provider: { '@type': 'Organization', name: 'GulfStream Technologies', url: 'https://gulfstreamtech.com.sa/' },
           areaServed: { '@type': 'Country', name: 'Saudi Arabia' },
           serviceType: 'Retail Cloud Infrastructure',
         }) }}

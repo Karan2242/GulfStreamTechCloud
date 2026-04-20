@@ -29,7 +29,7 @@ const serviceSchema = {
   description: 'Enterprise cloud managed services with transparent pricing, 24/7 monitoring, FinOps optimization, and security governance across AWS, Azure, Google Cloud, and Oracle Cloud in Saudi Arabia.',
   provider: {
     '@type': 'Organization',
-    name: 'GulfStream Technology',
+    name: 'GulfStream Technologies',
     url: 'https://gulfstreamtech.com.sa',
   },
   areaServed: {
@@ -55,7 +55,7 @@ const faqSchema = {
       name: 'How much do managed cloud services cost in Saudi Arabia?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'GulfStream Technology offers cloud managed services starting from SAR 8,500/month for the Starter plan, SAR 22,000/month for Growth, and SAR 55,000/month for Premium. All plans include monitoring, optimization, and no setup fees.',
+        text: 'GulfStream Technologies offers cloud managed services starting from SAR 8,500/month for the Starter plan, SAR 22,000/month for Growth, and SAR 55,000/month for Premium. All plans include monitoring, optimization, and no setup fees.',
       },
     },
     {

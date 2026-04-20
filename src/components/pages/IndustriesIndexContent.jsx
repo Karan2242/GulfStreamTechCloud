@@ -17,7 +17,7 @@ const IndustriesIndexContent = () => {
           </nav>
           <div className="badge badge-primary" style={{ marginBottom: '16px' }}>🏭 Industries</div>
           <h1 className="display-lg">Industry-Specific Cloud Solutions<br /><span className="text-gradient">for Saudi Enterprises</span></h1>
-          <p>GulfStream Technology delivers <strong>industry-specific multi-cloud solutions across AWS, Azure, Google Cloud, and Oracle Cloud</strong> for Saudi enterprises — addressing the unique regulatory, operational, and scalability requirements of each sector we serve across Saudi Arabia and the GCC.</p>
+          <p>GulfStream Technologies delivers <strong>industry-specific multi-cloud solutions across AWS, Azure, Google Cloud, and Oracle Cloud</strong> for Saudi enterprises — addressing the unique regulatory, operational, and scalability requirements of each sector we serve across Saudi Arabia and the GCC.</p>
           <div className="hero-trust-strip">
             <span className="hero-trust-label">Trusted by 40+ Saudi enterprises</span>
             <div className="hero-quick-stats">
@@ -154,8 +154,8 @@ const IndustriesIndexContent = () => {
           </div>
           <div className="grid-2 reveal">
             <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>What industries does GulfStream Technology support?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>GulfStream Technology provides industry-specific cloud solutions for <Link href="/industries/retail" style={{ color: 'var(--accent)' }}>retail</Link>, <Link href="/industries/healthcare" style={{ color: 'var(--accent)' }}>healthcare</Link>, <Link href="/industries/logistics" style={{ color: 'var(--accent)' }}>logistics</Link>, <Link href="/industries/tech-saas" style={{ color: 'var(--accent)' }}>technology/SaaS</Link>, and <Link href="/industries/professional-services" style={{ color: 'var(--accent)' }}>professional services</Link> enterprises across Saudi Arabia — with tailored multi-cloud managed services for each sector.</p>
+              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>What industries does GulfStream Technologies support?</h3>
+              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>GulfStream Technologies provides industry-specific cloud solutions for <Link href="/industries/retail" style={{ color: 'var(--accent)' }}>retail</Link>, <Link href="/industries/healthcare" style={{ color: 'var(--accent)' }}>healthcare</Link>, <Link href="/industries/logistics" style={{ color: 'var(--accent)' }}>logistics</Link>, <Link href="/industries/tech-saas" style={{ color: 'var(--accent)' }}>technology/SaaS</Link>, and <Link href="/industries/professional-services" style={{ color: 'var(--accent)' }}>professional services</Link> enterprises across Saudi Arabia — with tailored multi-cloud managed services for each sector.</p>
             </div>
             <div className="card">
               <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>Do you provide industry-specific cloud solutions?</h3>

@@ -9,7 +9,7 @@ export const metadata = {
     template: '%s | GulfStream',
   },
   description:
-    'GulfStream Technology provides enterprise-grade multi-cloud managed services in Saudi Arabia — AWS, Azure, Google Cloud & Oracle Cloud. FinOps cost optimization, 24/7 monitoring, cloud migration, and security governance.',
+    'GulfStream Technologies provides enterprise-grade multi-cloud managed services in Saudi Arabia — AWS, Azure, Google Cloud & Oracle Cloud. FinOps cost optimization, 24/7 monitoring, cloud migration, and security governance.',
   keywords: [
     'AWS managed services Saudi Arabia',
     'Azure managed services Saudi Arabia',
@@ -20,9 +20,9 @@ export const metadata = {
     'cloud migration Saudi Arabia',
     'managed cloud services',
     'cloud security governance',
-    'GulfStream Technology',
+    'GulfStream Technologies',
   ],
-  authors: [{ name: 'GulfStream Technology' }],
+  authors: [{ name: 'GulfStream Technologies' }],
   robots: {
     index: true,
     follow: true,
@@ -38,14 +38,14 @@ export const metadata = {
     type: 'website',
     locale: 'en_US',
     url: 'https://gulfstreamtech.com.sa',
-    siteName: 'GulfStream Technology',
-    title: 'GulfStream Technology | Multi-Cloud Managed Services',
+    siteName: 'GulfStream Technologies',
+    title: 'GulfStream Technologies | Multi-Cloud Managed Services',
     description:
       'Enterprise-grade multi-cloud managed services in Saudi Arabia — AWS, Azure, Google Cloud & Oracle Cloud. FinOps, 24/7 monitoring, cloud migration & security governance.',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'GulfStream Technology | Multi-Cloud Managed Services',
+    title: 'GulfStream Technologies | Multi-Cloud Managed Services',
     description:
       'Enterprise-grade multi-cloud managed services in Saudi Arabia — AWS, Azure, Google Cloud & Oracle Cloud.',
   },
@@ -62,7 +62,7 @@ export default function RootLayout({ children }) {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'GulfStream Technology',
+    name: 'GulfStream Technologies',
     url: 'https://gulfstreamtech.com.sa',
     logo: 'https://gulfstreamtech.com.sa/assets/logo.png',
     description:

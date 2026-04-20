@@ -54,7 +54,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer-bottom">
-          <div>© 2026 GulfStream Technology. All rights reserved.</div>
+          <div>© 2026 GulfStream Technologies. All rights reserved.</div>
           <div style={{ display: 'flex', gap: '20px' }}>
             <Link href="/privacy-policy" style={{ color: 'inherit', textDecoration: 'none' }}>Privacy Policy</Link>
             <Link href="/terms-of-service" style={{ color: 'inherit', textDecoration: 'none' }}>Terms of Service</Link>

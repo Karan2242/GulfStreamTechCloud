@@ -8,7 +8,7 @@ const serviceSchema = {
   name: 'Free Multi-Cloud Assessment',
   provider: {
     '@type': 'Organization',
-    name: 'GulfStream Technology',
+    name: 'GulfStream Technologies',
     url: 'https://gulfstreamtech.com.sa',
   },
   areaServed: { '@type': 'Country', name: 'Saudi Arabia' },
@@ -89,7 +89,7 @@ export const metadata = {
     description: 'Book a free multi-cloud assessment in Saudi Arabia. Identify cost savings, security gaps & optimization opportunities with certified cloud experts.',
     url: 'https://gulfstreamtech.com.sa/book-a-review/',
     type: 'website',
-    siteName: 'GulfStream Technology',
+    siteName: 'GulfStream Technologies',
     images: [DEFAULT_OG_IMAGE],
   },
   twitter: {

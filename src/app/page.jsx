@@ -18,7 +18,7 @@ export const metadata = {
   openGraph: {
     title: 'Cloud Managed Services Saudi Arabia | GulfStream',
     description: 'Multi-cloud managed services in Saudi Arabia — AWS, Azure, Google Cloud & Oracle Cloud. Reduce costs 30%, strengthen security & scale with certified cloud specialists.',
-    siteName: 'GulfStream Technology',
+    siteName: 'GulfStream Technologies',
     locale: 'en_US',
     type: 'website',
     images: [DEFAULT_OG_IMAGE],
@@ -39,7 +39,7 @@ const serviceSchema = {
     'Enterprise-grade managed cloud services across AWS, Azure, Oracle Cloud and Google Cloud in Saudi Arabia. 24/7 monitoring, FinOps cost optimization, cloud security, and cloud migration.',
   provider: {
     '@type': 'Organization',
-    name: 'GulfStream Technology',
+    name: 'GulfStream Technologies',
     url: 'https://gulfstreamtech.com.sa',
   },
   areaServed: {
@@ -77,7 +77,7 @@ const faqSchema = {
       name: 'Which cloud platforms do you support?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes. GulfStream Technology is certified across AWS, Microsoft Azure, Google Cloud, and Oracle Cloud. We manage single-cloud and multi-cloud environments, helping Saudi enterprises choose the right platform and optimize for cost, security, and performance.',
+        text: 'Yes. GulfStream Technologies is certified across AWS, Microsoft Azure, Google Cloud, and Oracle Cloud. We manage single-cloud and multi-cloud environments, helping Saudi enterprises choose the right platform and optimize for cost, security, and performance.',
       },
     },
     {
@@ -93,7 +93,7 @@ const faqSchema = {
       name: 'Do you operate in Saudi Arabia?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes. GulfStream Technology is headquartered in Riyadh and serves enterprise clients across Jeddah, Dammam, and the wider GCC. We understand local regulations including NCA ECC compliance, support Vision 2030 digital transformation goals, and provide Arabic-language support.',
+        text: 'Yes. GulfStream Technologies is headquartered in Riyadh and serves enterprise clients across Jeddah, Dammam, and the wider GCC. We understand local regulations including NCA ECC compliance, support Vision 2030 digital transformation goals, and provide Arabic-language support.',
       },
     },
     {
@@ -109,7 +109,7 @@ const faqSchema = {
       name: 'What industries do you serve?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'GulfStream Technology serves enterprises across retail, healthcare, logistics, SaaS/technology, and professional services in Saudi Arabia. Each industry engagement includes specialized cloud architectures designed for sector-specific compliance, scalability, and operational requirements.',
+        text: 'GulfStream Technologies serves enterprises across retail, healthcare, logistics, SaaS/technology, and professional services in Saudi Arabia. Each industry engagement includes specialized cloud architectures designed for sector-specific compliance, scalability, and operational requirements.',
       },
     },
   ],

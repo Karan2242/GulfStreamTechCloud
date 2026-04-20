@@ -12,7 +12,7 @@ export const metadata = {
     description: 'Google Cloud (GCP) managed services in Saudi Arabia — GKE, BigQuery, Cloud Run & Cloud SQL. 28% cost reduction, 24/7 monitoring & data analytics.',
     url: 'https://gulfstreamtech.com.sa/services/cloud-managed-services/google/',
     type: 'website',
-    siteName: 'GulfStream Technology',
+    siteName: 'GulfStream Technologies',
     images: [DEFAULT_OG_IMAGE],
   },
   twitter: {
@@ -28,7 +28,7 @@ const serviceSchema = {
   '@type': 'Service',
   name: 'Google Cloud Managed Services in Saudi Arabia',
   description: 'Comprehensive Google Cloud Platform managed services including GKE, BigQuery, Cloud Run, and Cloud SQL. 24/7 monitoring, security governance, and FinOps-driven cost optimization.',
-  provider: { '@type': 'Organization', name: 'GulfStream Technology', url: 'https://gulfstreamtech.com.sa' },
+  provider: { '@type': 'Organization', name: 'GulfStream Technologies', url: 'https://gulfstreamtech.com.sa' },
   areaServed: { '@type': 'Country', name: 'Saudi Arabia' },
   serviceType: 'Google Cloud Managed Services',
 };
@@ -38,9 +38,9 @@ const faqSchema = {
   '@type': 'FAQPage',
   mainEntity: [
     { '@type': 'Question', name: 'What are Google Cloud Managed Services?', acceptedAnswer: { '@type': 'Answer', text: 'Google Cloud Managed Services involve outsourcing GCP operations to certified experts. This includes 24/7 monitoring, GKE cluster management, BigQuery optimization, security governance with Security Command Center, and FinOps-driven cost management.' } },
-    { '@type': 'Question', name: 'How much do Google Cloud Managed Services cost?', acceptedAnswer: { '@type': 'Answer', text: 'Costs depend on your GCP environment size, services used, and support level. GulfStream Technology offers flexible tiers from basic monitoring to fully managed operations including data platform support. Book a free assessment for a tailored quote.' } },
+    { '@type': 'Question', name: 'How much do Google Cloud Managed Services cost?', acceptedAnswer: { '@type': 'Answer', text: 'Costs depend on your GCP environment size, services used, and support level. GulfStream Technologies offers flexible tiers from basic monitoring to fully managed operations including data platform support. Book a free assessment for a tailored quote.' } },
     { '@type': 'Question', name: 'How quickly can you reduce Google Cloud costs?', acceptedAnswer: { '@type': 'Answer', text: 'Most enterprises see a 20-30% reduction in GCP spend within 90 days through committed use discount planning, BigQuery slot optimization, GKE rightsizing, and elimination of idle resources.' } },
-    { '@type': 'Question', name: 'Why choose Google Cloud for enterprises in Saudi Arabia?', acceptedAnswer: { '@type': 'Answer', text: 'Google Cloud offers industry-leading data analytics with BigQuery, strong Kubernetes support with GKE, and competitive pricing. With GulfStream Technology as your managed services partner in Saudi Arabia, you get local expertise, 24/7 support, and regulatory compliance knowledge.' } },
+    { '@type': 'Question', name: 'Why choose Google Cloud for enterprises in Saudi Arabia?', acceptedAnswer: { '@type': 'Answer', text: 'Google Cloud offers industry-leading data analytics with BigQuery, strong Kubernetes support with GKE, and competitive pricing. With GulfStream Technologies as your managed services partner in Saudi Arabia, you get local expertise, 24/7 support, and regulatory compliance knowledge.' } },
     { '@type': 'Question', name: 'Do you manage BigQuery and data analytics workloads?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. We provide specialized BigQuery management including query optimization (up to 60% cost savings), slot management, data pipeline monitoring with Dataflow and Pub/Sub, and cost governance for data analytics workloads.' } },
   ],
 };

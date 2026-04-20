@@ -8,10 +8,10 @@ const faqSchema = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'What cloud services does GulfStream Technology offer in Saudi Arabia?',
+      name: 'What cloud services does GulfStream Technologies offer in Saudi Arabia?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'GulfStream Technology offers AWS managed services, Azure managed services, FinOps cost optimization, cloud migration, cloud security & governance, and cloud billing management for enterprises across Saudi Arabia.',
+        text: 'GulfStream Technologies offers AWS managed services, Azure managed services, FinOps cost optimization, cloud migration, cloud security & governance, and cloud billing management for enterprises across Saudi Arabia.',
       },
     },
     {
@@ -52,23 +52,23 @@ const breadcrumbSchema = {
 
 export const metadata = {
   title: 'About Us — Cloud Experts Saudi Arabia',
-  description: 'GulfStream Technology is a leading cloud management company in Saudi Arabia specializing in AWS, Azure, FinOps, and cloud cost optimization for enterprises.',
-  keywords: ['about GulfStream Technology', 'cloud management Saudi Arabia', 'AWS managed services Saudi Arabia', 'Azure consulting Saudi Arabia', 'FinOps consulting Saudi Arabia', 'cloud cost optimization experts'],
+  description: 'GulfStream Technologies is a leading cloud management company in Saudi Arabia specializing in AWS, Azure, FinOps, and cloud cost optimization for enterprises.',
+  keywords: ['about GulfStream Technologies', 'cloud management Saudi Arabia', 'AWS managed services Saudi Arabia', 'Azure consulting Saudi Arabia', 'FinOps consulting Saudi Arabia', 'cloud cost optimization experts'],
   alternates: {
     canonical: 'https://gulfstreamtech.com.sa/about/',
   },
   openGraph: {
     title: 'About Us — Cloud Experts Saudi Arabia | GulfStream',
-    description: 'GulfStream Technology is a leading cloud management company in Saudi Arabia specializing in AWS, Azure, FinOps, and cloud cost optimization for enterprises.',
+    description: 'GulfStream Technologies is a leading cloud management company in Saudi Arabia specializing in AWS, Azure, FinOps, and cloud cost optimization for enterprises.',
     url: 'https://gulfstreamtech.com.sa/about/',
     type: 'website',
-    siteName: 'GulfStream Technology',
+    siteName: 'GulfStream Technologies',
     images: [DEFAULT_OG_IMAGE],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'About Us — Cloud Experts Saudi Arabia | GulfStream',
-    description: 'GulfStream Technology is a leading cloud management company in Saudi Arabia specializing in AWS, Azure, FinOps, and cloud cost optimization for enterprises.',
+    description: 'GulfStream Technologies is a leading cloud management company in Saudi Arabia specializing in AWS, Azure, FinOps, and cloud cost optimization for enterprises.',
     images: [DEFAULT_OG_IMAGE.url],
   },
 };

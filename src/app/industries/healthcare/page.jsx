@@ -27,7 +27,7 @@ export default function HealthcarePage() {
           '@type': 'Service',
           name: 'Healthcare Cloud Solutions Saudi Arabia',
           description: 'HIPAA-aligned, high-availability multi-cloud infrastructure for Saudi healthcare organizations — patient data security, clinical application reliability, and NCA ECC compliance across AWS, Azure, Google Cloud, and Oracle Cloud.',
-          provider: { '@type': 'Organization', name: 'GulfStream Technology', url: 'https://gulfstreamtech.com.sa/' },
+          provider: { '@type': 'Organization', name: 'GulfStream Technologies', url: 'https://gulfstreamtech.com.sa/' },
           areaServed: { '@type': 'Country', name: 'Saudi Arabia' },
           serviceType: 'Healthcare Cloud Infrastructure',
         }) }}

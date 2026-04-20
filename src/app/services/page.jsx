@@ -21,7 +21,7 @@ export const metadata = {
     description: 'Enterprise managed cloud services in Saudi Arabia. Reduce cloud costs 30% across AWS, Azure, Google Cloud & Oracle Cloud with 24/7 monitoring, FinOps & security governance.',
     url: 'https://gulfstreamtech.com.sa/services/',
     type: 'website',
-    siteName: 'GulfStream Technology',
+    siteName: 'GulfStream Technologies',
     locale: 'en_US',
     images: [DEFAULT_OG_IMAGE],
   },
@@ -41,7 +41,7 @@ const serviceSchema = {
     'Enterprise managed cloud services across AWS, Azure, Oracle Cloud, and Google Cloud in Saudi Arabia. 24/7 monitoring, FinOps cost optimization, cloud migration, and security governance for businesses in Riyadh, Jeddah & Dammam.',
   provider: {
     '@type': 'Organization',
-    name: 'GulfStream Technology',
+    name: 'GulfStream Technologies',
     url: 'https://gulfstreamtech.com.sa',
   },
   areaServed: [
@@ -74,7 +74,7 @@ const faqSchema = {
       name: 'What are managed cloud services in Saudi Arabia?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Managed cloud services in Saudi Arabia involve outsourcing 24/7 cloud operations — monitoring, security, optimization, and maintenance — to a certified provider like GulfStream Technology. We manage AWS, Azure, Oracle Cloud, and Google Cloud environments for enterprises across Riyadh, Jeddah, and Dammam, delivering an average 30% cost reduction and 99.99% uptime.',
+        text: 'Managed cloud services in Saudi Arabia involve outsourcing 24/7 cloud operations — monitoring, security, optimization, and maintenance — to a certified provider like GulfStream Technologies. We manage AWS, Azure, Oracle Cloud, and Google Cloud environments for enterprises across Riyadh, Jeddah, and Dammam, delivering an average 30% cost reduction and 99.99% uptime.',
       },
     },
     {
@@ -82,7 +82,7 @@ const faqSchema = {
       name: 'Which cloud platforms do you support?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'GulfStream Technology is certified across AWS (Advanced Consulting Partner), Microsoft Azure (Expert MSP), Google Cloud, and Oracle Cloud. We manage single-cloud and multi-cloud environments, helping Saudi enterprises optimize all platforms for cost, security, and performance.',
+        text: 'GulfStream Technologies is certified across AWS (Advanced Consulting Partner), Microsoft Azure (Expert MSP), Google Cloud, and Oracle Cloud. We manage single-cloud and multi-cloud environments, helping Saudi enterprises optimize all platforms for cost, security, and performance.',
       },
     },
     {
@@ -114,7 +114,7 @@ const faqSchema = {
       name: 'Do you operate in Riyadh, Jeddah, and Dammam?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes. GulfStream Technology is headquartered in Riyadh and serves enterprise clients across Jeddah, Dammam, and the wider GCC region. We provide on-site consulting, 24/7 remote operations, and understand local regulations including NCA ECC compliance and Vision 2030 digital transformation requirements.',
+        text: 'Yes. GulfStream Technologies is headquartered in Riyadh and serves enterprise clients across Jeddah, Dammam, and the wider GCC region. We provide on-site consulting, 24/7 remote operations, and understand local regulations including NCA ECC compliance and Vision 2030 digital transformation requirements.',
       },
     },
     {

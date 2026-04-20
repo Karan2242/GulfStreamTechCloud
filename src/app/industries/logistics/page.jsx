@@ -27,7 +27,7 @@ export default function LogisticsPage() {
           '@type': 'Service',
           name: 'Logistics Cloud Solutions Saudi Arabia',
           description: 'Resilient multi-cloud infrastructure for Saudi logistics operations — real-time fleet tracking, IoT data platforms, supply chain analytics, and 99.99% uptime across AWS, Azure, Google Cloud, and Oracle Cloud.',
-          provider: { '@type': 'Organization', name: 'GulfStream Technology', url: 'https://gulfstreamtech.com.sa/' },
+          provider: { '@type': 'Organization', name: 'GulfStream Technologies', url: 'https://gulfstreamtech.com.sa/' },
           areaServed: { '@type': 'Country', name: 'Saudi Arabia' },
           serviceType: 'Logistics Cloud Infrastructure',
         }) }}

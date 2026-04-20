@@ -29,7 +29,7 @@ const serviceSchema = {
   description: 'Enterprise cloud managed services with 24/7 monitoring, FinOps optimization, and security governance across AWS, Azure, Google Cloud, and Oracle Cloud in Saudi Arabia.',
   provider: {
     '@type': 'Organization',
-    name: 'GulfStream Technology',
+    name: 'GulfStream Technologies',
     url: 'https://gulfstreamtech.com.sa',
   },
   areaServed: {
@@ -48,7 +48,7 @@ const faqSchema = {
       name: 'What industries does GulfStream serve with cloud managed services?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'GulfStream Technology serves enterprises across retail, healthcare, SaaS, logistics, banking, government, and professional services in Saudi Arabia with multi-cloud managed services across AWS, Azure, Google Cloud, and Oracle Cloud.',
+        text: 'GulfStream Technologies serves enterprises across retail, healthcare, SaaS, logistics, banking, government, and professional services in Saudi Arabia with multi-cloud managed services across AWS, Azure, Google Cloud, and Oracle Cloud.',
       },
     },
     {

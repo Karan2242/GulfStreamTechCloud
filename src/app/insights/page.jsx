@@ -5,12 +5,12 @@ import { DEFAULT_OG_IMAGE } from '@/lib/metadata';
 const blogSchema = {
   '@context': 'https://schema.org',
   '@type': 'Blog',
-  name: 'Cloud Insights & Resources | GulfStream Technology',
+  name: 'Cloud Insights & Resources | GulfStream Technologies',
   url: 'https://gulfstreamtech.com.sa/insights/',
   description: 'Expert multi-cloud insights, FinOps strategies, cost optimization guides, and security best practices for Saudi enterprises.',
   publisher: {
     '@type': 'Organization',
-    name: 'GulfStream Technology',
+    name: 'GulfStream Technologies',
     url: 'https://gulfstreamtech.com.sa/',
   },
 };
@@ -36,7 +36,7 @@ export const metadata = {
     description: 'Expert multi-cloud insights, FinOps strategies, cost optimization guides, and security best practices for Saudi enterprises.',
     url: 'https://gulfstreamtech.com.sa/insights/',
     type: 'website',
-    siteName: 'GulfStream Technology',
+    siteName: 'GulfStream Technologies',
     images: [DEFAULT_OG_IMAGE],
   },
   twitter: {
@@ -54,7 +54,7 @@ const faqSchema = {
     { '@type': 'Question', name: 'Who writes GulfStream\'s cloud insights?', acceptedAnswer: { '@type': 'Answer', text: 'Our articles are written by certified AWS architects and Azure expert engineers with hands-on experience managing enterprise cloud environments across Saudi Arabia. Every guide is based on real project experience.' } },
     { '@type': 'Question', name: 'Are these insights relevant to Saudi Arabia?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. All content addresses Saudi-specific considerations including NCA ECC compliance, AWS Middle East and Azure UAE region availability, Vision 2030 digital transformation, and local regulatory requirements for enterprises in Riyadh, Jeddah, and Dammam.' } },
     { '@type': 'Question', name: 'How can I reduce cloud costs in Saudi Arabia?', acceptedAnswer: { '@type': 'Answer', text: 'Start with our FinOps guide covering rightsizing, Reserved Instance optimization, and waste elimination. For personalized recommendations, book a free cloud assessment — our FinOps team delivers an average 30% cloud cost reduction within 90 days.' } },
-    { '@type': 'Question', name: 'Do you offer cloud consulting beyond insights?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. GulfStream Technology provides full cloud managed services including AWS managed services, Azure managed services, FinOps cost optimization, and cloud migration for Saudi enterprises.' } },
+    { '@type': 'Question', name: 'Do you offer cloud consulting beyond insights?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. GulfStream Technologies provides full cloud managed services including AWS managed services, Azure managed services, FinOps cost optimization, and cloud migration for Saudi enterprises.' } },
   ],
 };
 

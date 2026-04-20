@@ -12,7 +12,7 @@ export const metadata = {
     description: 'Oracle Cloud (OCI) managed services in Saudi Arabia — Autonomous Database, Exadata & OCI Compute. 35% cost reduction, 24/7 monitoring & licensing optimization.',
     url: 'https://gulfstreamtech.com.sa/services/cloud-managed-services/oracle/',
     type: 'website',
-    siteName: 'GulfStream Technology',
+    siteName: 'GulfStream Technologies',
     images: [DEFAULT_OG_IMAGE],
   },
   twitter: {
@@ -28,7 +28,7 @@ const serviceSchema = {
   '@type': 'Service',
   name: 'Oracle Cloud Managed Services in Saudi Arabia',
   description: 'Enterprise Oracle Cloud Infrastructure managed services including Autonomous Database, Exadata, OCI Compute, and networking. 24/7 monitoring, licensing optimization, and FinOps governance.',
-  provider: { '@type': 'Organization', name: 'GulfStream Technology', url: 'https://gulfstreamtech.com.sa' },
+  provider: { '@type': 'Organization', name: 'GulfStream Technologies', url: 'https://gulfstreamtech.com.sa' },
   areaServed: { '@type': 'Country', name: 'Saudi Arabia' },
   serviceType: 'Oracle Cloud Managed Services',
 };
@@ -38,9 +38,9 @@ const faqSchema = {
   '@type': 'FAQPage',
   mainEntity: [
     { '@type': 'Question', name: 'What are Oracle Cloud Managed Services?', acceptedAnswer: { '@type': 'Answer', text: 'Oracle Cloud Managed Services involve outsourcing the management of your OCI environment to certified experts. This includes 24/7 monitoring, Autonomous Database management, Exadata operations, security governance, licensing optimization, and FinOps-driven cost management.' } },
-    { '@type': 'Question', name: 'How much do Oracle Cloud Managed Services cost?', acceptedAnswer: { '@type': 'Answer', text: 'Costs depend on your OCI environment size, database complexity, and licensing model (BYOL vs Universal Credits). GulfStream Technology offers flexible pricing tiers. Book a free assessment for a tailored quote that includes potential savings.' } },
+    { '@type': 'Question', name: 'How much do Oracle Cloud Managed Services cost?', acceptedAnswer: { '@type': 'Answer', text: 'Costs depend on your OCI environment size, database complexity, and licensing model (BYOL vs Universal Credits). GulfStream Technologies offers flexible pricing tiers. Book a free assessment for a tailored quote that includes potential savings.' } },
     { '@type': 'Question', name: 'Can you optimize Oracle licensing costs?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Oracle licensing optimization is a core part of our service. We help enterprises maximize BYOL benefits, optimize Universal Credit consumption, right-size compute shapes, and ensure license compliance — typically reducing costs by 25-35%.' } },
-    { '@type': 'Question', name: 'Why choose Oracle Cloud in Saudi Arabia?', acceptedAnswer: { '@type': 'Answer', text: 'Oracle Cloud offers dedicated infrastructure options, strong database performance, and competitive pricing for enterprises running Oracle workloads. With a managed services provider like GulfStream Technology in Saudi Arabia, you get local compliance expertise and 24/7 support.' } },
+    { '@type': 'Question', name: 'Why choose Oracle Cloud in Saudi Arabia?', acceptedAnswer: { '@type': 'Answer', text: 'Oracle Cloud offers dedicated infrastructure options, strong database performance, and competitive pricing for enterprises running Oracle workloads. With a managed services provider like GulfStream Technologies in Saudi Arabia, you get local compliance expertise and 24/7 support.' } },
     { '@type': 'Question', name: 'Do you support Oracle database migration to OCI?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. We provide end-to-end Oracle database migration services from on-premises or other clouds to OCI, including assessment, migration planning, execution, and post-migration optimization for enterprises across Riyadh, Jeddah, and Dammam.' } },
   ],
 };

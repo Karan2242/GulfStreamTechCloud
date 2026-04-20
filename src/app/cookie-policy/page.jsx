@@ -12,24 +12,24 @@ const breadcrumbSchema = {
 };
 
 export const metadata = {
-  title: 'Cookie Policy — GulfStream Technology',
-  description: 'Learn how GulfStream Technology uses cookies and similar tracking technologies to enhance your browsing experience.',
+  title: 'Cookie Policy — GulfStream Technologies',
+  description: 'Learn how GulfStream Technologies uses cookies and similar tracking technologies to enhance your browsing experience.',
   keywords: ['cookie policy', 'cookies', 'tracking', 'website cookies', 'analytics cookies', 'cookie consent'],
   alternates: {
     canonical: 'https://gulfstreamtech.com.sa/cookie-policy/',
   },
   openGraph: {
-    title: 'Cookie Policy — GulfStream Technology',
-    description: 'Learn how GulfStream Technology uses cookies and similar tracking technologies to enhance your browsing experience.',
+    title: 'Cookie Policy — GulfStream Technologies',
+    description: 'Learn how GulfStream Technologies uses cookies and similar tracking technologies to enhance your browsing experience.',
     url: 'https://gulfstreamtech.com.sa/cookie-policy/',
     type: 'website',
-    siteName: 'GulfStream Technology',
+    siteName: 'GulfStream Technologies',
     images: [DEFAULT_OG_IMAGE],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Cookie Policy — GulfStream Technology',
-    description: 'Learn how GulfStream Technology uses cookies and similar tracking technologies to enhance your browsing experience.',
+    title: 'Cookie Policy — GulfStream Technologies',
+    description: 'Learn how GulfStream Technologies uses cookies and similar tracking technologies to enhance your browsing experience.',
     images: [DEFAULT_OG_IMAGE.url],
   },
 };

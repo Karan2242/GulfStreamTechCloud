@@ -27,7 +27,7 @@ export default function ProfessionalServicesPage() {
           '@type': 'Service',
           name: 'Secure Cloud for Professional Services Saudi Arabia',
           description: 'Secure, compliant cloud environments for consulting, legal, and financial services firms in Saudi Arabia — zero-trust security, ISO 27001 alignment, and enterprise collaboration.',
-          provider: { '@type': 'Organization', name: 'GulfStream Technology', url: 'https://gulfstreamtech.com.sa/' },
+          provider: { '@type': 'Organization', name: 'GulfStream Technologies', url: 'https://gulfstreamtech.com.sa/' },
           areaServed: { '@type': 'Country', name: 'Saudi Arabia' },
           serviceType: 'Professional Services Cloud Infrastructure',
         }) }}

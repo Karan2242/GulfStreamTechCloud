@@ -27,7 +27,7 @@ export default function TechSaasPage() {
           '@type': 'Service',
           name: 'SaaS Cloud Infrastructure Saudi Arabia',
           description: 'Managed cloud infrastructure for SaaS and technology companies in Saudi Arabia — Kubernetes orchestration, CI/CD pipelines, FinOps cost management, and multi-tenant architecture.',
-          provider: { '@type': 'Organization', name: 'GulfStream Technology', url: 'https://gulfstreamtech.com.sa/' },
+          provider: { '@type': 'Organization', name: 'GulfStream Technologies', url: 'https://gulfstreamtech.com.sa/' },
           areaServed: { '@type': 'Country', name: 'Saudi Arabia' },
           serviceType: 'SaaS Cloud Infrastructure',
         }) }}

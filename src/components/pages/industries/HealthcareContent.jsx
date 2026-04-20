@@ -17,7 +17,7 @@ const HealthcareContent = () => {
           </nav>
           <div className="badge badge-primary" style={{ marginBottom: '16px' }}>🏥 Healthcare Cloud</div>
           <h1 className="display-lg">Healthcare Cloud Solutions<br /><span className="text-gradient">Saudi Arabia</span></h1>
-          <p>GulfStream Technology builds <strong>HIPAA-aligned, high-availability cloud infrastructure</strong> for Saudi healthcare organizations — ensuring patient data security, clinical application reliability, and seamless compliance with NCA ECC and Ministry of Health regulations.</p>
+          <p>GulfStream Technologies builds <strong>HIPAA-aligned, high-availability cloud infrastructure</strong> for Saudi healthcare organizations — ensuring patient data security, clinical application reliability, and seamless compliance with NCA ECC and Ministry of Health regulations.</p>
           <div className="hero-trust-strip">
             <span className="hero-trust-label">Multi-cloud certified healthcare cloud experts</span>
             <div className="hero-quick-stats">

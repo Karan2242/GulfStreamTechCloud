@@ -17,7 +17,7 @@ const LogisticsContent = () => {
           </nav>
           <div className="badge badge-primary" style={{ marginBottom: '16px' }}>🚛 Logistics Cloud</div>
           <h1 className="display-lg">Logistics Cloud Solutions<br /><span className="text-gradient">Saudi Arabia</span></h1>
-          <p>GulfStream Technology delivers <strong>resilient, always-on multi-cloud infrastructure</strong> that powers Saudi Arabia’s most demanding logistics operations — from real-time fleet tracking and IoT integration to supply chain analytics and warehouse management systems.</p>
+          <p>GulfStream Technologies delivers <strong>resilient, always-on multi-cloud infrastructure</strong> that powers Saudi Arabia’s most demanding logistics operations — from real-time fleet tracking and IoT integration to supply chain analytics and warehouse management systems.</p>
           <div className="hero-trust-strip">
             <span className="hero-trust-label">Multi-cloud certified logistics cloud experts</span>
             <div className="hero-quick-stats">
@@ -45,7 +45,7 @@ const LogisticsContent = () => {
       <section className="section" style={{ paddingBottom: '0' }}>
         <div className="container">
           <div className="reveal" style={{ maxWidth: '900px', margin: '0 auto', lineHeight: '1.8' }}>
-            <p>Saudi Arabia&apos;s logistics sector is a cornerstone of Vision 2030, with massive investment in supply chain infrastructure, port expansions, and last-mile delivery networks. <strong>Logistics cloud infrastructure in Saudi Arabia</strong> must support 24/7 operations, process millions of IoT data points in real time, and integrate legacy ERP and TMS systems with modern cloud analytics. GulfStream Technology provides <strong>always-on cloud solutions</strong> on <Link href="/services/cloud-managed-services/aws" style={{ color: 'var(--accent)' }}>AWS</Link> and <Link href="/services/cloud-managed-services/azure" style={{ color: 'var(--accent)' }}>Azure</Link> — purpose-built for logistics companies across Riyadh, Jeddah, and the GCC.</p>
+            <p>Saudi Arabia&apos;s logistics sector is a cornerstone of Vision 2030, with massive investment in supply chain infrastructure, port expansions, and last-mile delivery networks. <strong>Logistics cloud infrastructure in Saudi Arabia</strong> must support 24/7 operations, process millions of IoT data points in real time, and integrate legacy ERP and TMS systems with modern cloud analytics. GulfStream Technologies provides <strong>always-on cloud solutions</strong> on <Link href="/services/cloud-managed-services/aws" style={{ color: 'var(--accent)' }}>AWS</Link> and <Link href="/services/cloud-managed-services/azure" style={{ color: 'var(--accent)' }}>Azure</Link> — purpose-built for logistics companies across Riyadh, Jeddah, and the GCC.</p>
             <p>With deep expertise in <strong>AWS IoT</strong>, real-time data processing, and <Link href="/services/finops-cost-optimization" style={{ color: 'var(--accent)' }}>cloud cost optimization</Link>, we help logistics enterprises achieve 99.99% uptime, sub-second IoT telemetry processing, and 30% infrastructure cost reduction — without compromising operational reliability or <Link href="/services/cloud-security-governance" style={{ color: 'var(--accent)' }}>data security</Link>.</p>
           </div>
         </div>

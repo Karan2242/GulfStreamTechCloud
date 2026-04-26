@@ -14,11 +14,11 @@ const AzureManagedContent = () => {
       <section className="page-hero">
         <div className="container">
           <div className="breadcrumb">
-            <Link href="/">Home</Link><span>›</span><Link href="/services">Services</Link><span>›</span><Link href="/services/cloud-managed-services">Cloud Managed Services</Link><span>›</span><span>Azure</span>
+            <Link href="/">Home</Link><span>›</span><Link href="/services">Services</Link><span>›</span><Link href="/services/cloud-managed-services">Managed Cloud Services</Link><span>›</span><span>Azure</span>
           </div>
           <div className="badge badge-primary" style={{ marginBottom: '16px' }}>🔷 Azure Managed Services</div>
           <h1 className="display-lg">Azure Managed Services<br /><span className="text-gradient">in Saudi Arabia</span></h1>
-          <p>GulfStream Technology is a trusted managed cloud services provider for Microsoft Azure in Saudi Arabia. We deliver comprehensive Azure cloud management — from VMs, AKS, and Azure SQL to Entra ID and Defender — with 24/7 cloud monitoring services, enterprise governance, and FinOps consulting to cut costs by up to 29%.</p>
+          <p>GulfStream Technologies is a trusted managed cloud services provider for Microsoft Azure in Saudi Arabia. We deliver comprehensive Azure cloud management — from VMs, AKS, and Azure SQL to Entra ID and Defender — with 24/7 cloud monitoring services, enterprise governance, and FinOps consulting to cut costs by up to 29%.</p>
           <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
             <Link href="/book-a-review" className="btn btn-primary btn-lg">Book a Free Azure Assessment</Link>
             <Link href="/contact" className="btn btn-outline btn-lg">Talk to an Expert</Link>
@@ -252,7 +252,7 @@ const AzureManagedContent = () => {
             <h2 className="display-md">Azure Managed Services in Riyadh</h2>
           </div>
           <div className="reveal" style={{ maxWidth: '900px', margin: '0 auto', lineHeight: '1.8' }}>
-            <p>As a cloud management company based in Saudi Arabia, GulfStream Technology provides Azure managed services tailored to enterprises in Riyadh, Jeddah, and Dammam. With Azure&apos;s dedicated Saudi cloud region, we help organizations maintain data residency compliance while leveraging the full power of the Microsoft cloud ecosystem.</p>
+            <p>As a cloud management company based in Saudi Arabia, GulfStream Technologies provides Azure managed services tailored to enterprises in Riyadh, Jeddah, and Dammam. With Azure&apos;s dedicated Saudi cloud region, we help organizations maintain data residency compliance while leveraging the full power of the Microsoft cloud ecosystem.</p>
             <p style={{ marginTop: '16px' }}>Our Riyadh-based team delivers 24/7 cloud monitoring services, hybrid cloud management with Azure Arc, enterprise identity governance through Entra ID, and cloud cost optimization services — ensuring your Azure investment supports Vision 2030 digital transformation objectives. We also offer seamless integration with <Link href="/services/cloud-managed-services/aws" style={{ color: 'var(--accent)' }}>AWS managed services</Link> for multi-cloud strategies.</p>
           </div>
         </div>
@@ -328,7 +328,7 @@ const AzureManagedContent = () => {
             </div>
             <div className="card">
               <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>How much do Azure Managed Services cost in Saudi Arabia?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>Costs depend on your environment complexity, number of subscriptions, and support level. GulfStream Technology offers flexible pricing from basic monitoring to fully managed operations. <Link href="/book-a-review" style={{ color: 'var(--accent)' }}>Book a free assessment</Link> for a tailored quote.</p>
+              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>Costs depend on your environment complexity, number of subscriptions, and support level. GulfStream Technologies offers flexible pricing from basic monitoring to fully managed operations. <Link href="/book-a-review" style={{ color: 'var(--accent)' }}>Book a free assessment</Link> for a tailored quote.</p>
             </div>
             <div className="card">
               <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>How quickly can you reduce our Azure costs?</h3>

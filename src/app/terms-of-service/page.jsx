@@ -13,14 +13,14 @@ const breadcrumbSchema = {
 
 export const metadata = {
   title: 'Terms of Service — GulfStream Technologies',
-  description: 'Read the terms and conditions governing the use of GulfStream Technologies\' website and cloud managed services.',
+  description: 'Read the terms and conditions governing the use of GulfStream Technologies\' website and Managed Cloud Services.',
   keywords: ['terms of service', 'terms and conditions', 'service agreement', 'website terms', 'legal terms', 'cloud services terms'],
   alternates: {
     canonical: 'https://gulfstreamtech.com.sa/terms-of-service/',
   },
   openGraph: {
     title: 'Terms of Service — GulfStream Technologies',
-    description: 'Read the terms and conditions governing the use of GulfStream Technologies\' website and cloud managed services.',
+    description: 'Read the terms and conditions governing the use of GulfStream Technologies\' website and Managed Cloud Services.',
     url: 'https://gulfstreamtech.com.sa/terms-of-service/',
     type: 'website',
     siteName: 'GulfStream Technologies',
@@ -29,7 +29,7 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Terms of Service — GulfStream Technologies',
-    description: 'Read the terms and conditions governing the use of GulfStream Technologies\' website and cloud managed services.',
+    description: 'Read the terms and conditions governing the use of GulfStream Technologies\' website and Managed Cloud Services.',
     images: [DEFAULT_OG_IMAGE.url],
   },
 };

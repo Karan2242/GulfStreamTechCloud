@@ -17,7 +17,7 @@ const RetailContent = () => {
           </nav>
           <div className="badge badge-primary" style={{ marginBottom: '16px' }}>🛒 Retail Cloud</div>
           <h1 className="display-lg">Retail Cloud Solutions<br /><span className="text-gradient">Saudi Arabia</span></h1>
-          <p>GulfStream Technology delivers <strong>scalable multi-cloud infrastructure</strong> that powers the modern Saudi retail experience — from omnichannel e-commerce to real-time inventory analytics and seamless seasonal scaling during Ramadan, National Day, and peak shopping events.</p>
+          <p>GulfStream Technologies delivers <strong>scalable multi-cloud infrastructure</strong> that powers the modern Saudi retail experience — from omnichannel e-commerce to real-time inventory analytics and seamless seasonal scaling during Ramadan, National Day, and peak shopping events.</p>
           <div className="hero-trust-strip">
             <span className="hero-trust-label">Multi-cloud certified retail cloud experts</span>
             <div className="hero-quick-stats">
@@ -45,7 +45,7 @@ const RetailContent = () => {
       <section className="section" style={{ paddingBottom: '0' }}>
         <div className="container">
           <div className="reveal" style={{ maxWidth: '900px', margin: '0 auto', lineHeight: '1.8' }}>
-            <p>Saudi Arabia&apos;s retail market is booming — powered by Vision 2030 consumer spending growth, rapid e-commerce adoption, and omnichannel transformation. <strong>Retail cloud solutions in Saudi Arabia</strong> must handle extreme traffic spikes during Ramadan and National Day, maintain PCI DSS compliance for payment processing, and integrate inventory, pricing, and customer data across physical and digital channels. GulfStream Technology builds <strong>auto-scaling cloud infrastructure</strong> on <Link href="/services/cloud-managed-services/aws" style={{ color: 'var(--accent)' }}>AWS</Link> and <Link href="/services/cloud-managed-services/azure" style={{ color: 'var(--accent)' }}>Azure</Link> — purpose-built for retailers across Riyadh, Jeddah, and the GCC.</p>
+            <p>Saudi Arabia&apos;s retail market is booming — powered by Vision 2030 consumer spending growth, rapid e-commerce adoption, and omnichannel transformation. <strong>Retail cloud solutions in Saudi Arabia</strong> must handle extreme traffic spikes during Ramadan and National Day, maintain PCI DSS compliance for payment processing, and integrate inventory, pricing, and customer data across physical and digital channels. GulfStream Technologies builds <strong>auto-scaling cloud infrastructure</strong> on <Link href="/services/cloud-managed-services/aws" style={{ color: 'var(--accent)' }}>AWS</Link> and <Link href="/services/cloud-managed-services/azure" style={{ color: 'var(--accent)' }}>Azure</Link> — purpose-built for retailers across Riyadh, Jeddah, and the GCC.</p>
             <p>With deep expertise in elastic architectures, <Link href="/services/finops-cost-optimization" style={{ color: 'var(--accent)' }}>FinOps cost optimization</Link>, and <Link href="/services/cloud-security-governance" style={{ color: 'var(--accent)' }}>PCI DSS-compliant cloud security</Link>, we help Saudi retailers achieve zero peak-event outages, 28% average infrastructure cost reduction, and 40% faster page load times — delivering uninterrupted shopping experiences at every scale.</p>
           </div>
         </div>

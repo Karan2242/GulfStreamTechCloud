@@ -17,7 +17,7 @@ const TechSaasContent = () => {
           </nav>
           <div className="badge badge-primary" style={{ marginBottom: '16px' }}>💻 Tech / SaaS Cloud</div>
           <h1 className="display-lg">SaaS Cloud Infrastructure<br /><span className="text-gradient">Saudi Arabia</span></h1>
-          <p>GulfStream Technology manages <strong>cloud infrastructure for SaaS and technology companies</strong> in Saudi Arabia — so you can ship faster, scale effortlessly, and spend less. From managed Kubernetes to CI/CD pipelines, FinOps governance, and multi-tenant cloud architecture.</p>
+          <p>GulfStream Technologies manages <strong>cloud infrastructure for SaaS and technology companies</strong> in Saudi Arabia — so you can ship faster, scale effortlessly, and spend less. From managed Kubernetes to CI/CD pipelines, FinOps governance, and multi-tenant cloud architecture.</p>
           <div className="hero-trust-strip">
             <span className="hero-trust-label">Multi-cloud certified SaaS cloud experts</span>
             <div className="hero-quick-stats">
@@ -45,7 +45,7 @@ const TechSaasContent = () => {
       <section className="section" style={{ paddingBottom: '0' }}>
         <div className="container">
           <div className="reveal" style={{ maxWidth: '900px', margin: '0 auto', lineHeight: '1.8' }}>
-            <p>Saudi Arabia&apos;s tech ecosystem is accelerating — driven by Vision 2030 investment, venture capital growth, and surging enterprise SaaS adoption. <strong>SaaS cloud infrastructure in Saudi Arabia</strong> must support rapid product iteration, auto-scaling for unpredictable growth, cost-efficient Kubernetes operations, and enterprise-grade security (SOC 2, ISO 27001). GulfStream Technology provides <strong>managed cloud infrastructure</strong> on <Link href="/services/cloud-managed-services/aws" style={{ color: 'var(--accent)' }}>AWS</Link> and <Link href="/services/cloud-managed-services/azure" style={{ color: 'var(--accent)' }}>Azure</Link> — purpose-built for SaaS companies and technology startups across Riyadh, Jeddah, and the GCC.</p>
+            <p>Saudi Arabia&apos;s tech ecosystem is accelerating — driven by Vision 2030 investment, venture capital growth, and surging enterprise SaaS adoption. <strong>SaaS cloud infrastructure in Saudi Arabia</strong> must support rapid product iteration, auto-scaling for unpredictable growth, cost-efficient Kubernetes operations, and enterprise-grade security (SOC 2, ISO 27001). GulfStream Technologies provides <strong>managed cloud infrastructure</strong> on <Link href="/services/cloud-managed-services/aws" style={{ color: 'var(--accent)' }}>AWS</Link> and <Link href="/services/cloud-managed-services/azure" style={{ color: 'var(--accent)' }}>Azure</Link> — purpose-built for SaaS companies and technology startups across Riyadh, Jeddah, and the GCC.</p>
             <p>With deep expertise in managed Kubernetes (EKS/AKS), CI/CD pipeline optimization, <Link href="/services/finops-cost-optimization" style={{ color: 'var(--accent)' }}>FinOps cost governance</Link>, and <Link href="/services/cloud-security-governance" style={{ color: 'var(--accent)' }}>cloud security automation</Link>, we help SaaS companies achieve 35% infrastructure cost reduction, 3x deployment frequency, and SOC 2 compliance readiness — so engineering teams focus on product, not infrastructure.</p>
           </div>
         </div>

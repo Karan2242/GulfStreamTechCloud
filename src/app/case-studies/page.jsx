@@ -4,12 +4,12 @@ import { DEFAULT_OG_IMAGE } from '@/lib/metadata';
 
 export const metadata = {
   title: 'Cloud Case Studies Saudi Arabia — Real Results',
-  description: 'Cloud case studies from Saudi Arabia. See how enterprises achieved 35% cost savings, 99.99% uptime & 24/7 monitoring with multi-cloud managed services.',
-  keywords: ['cloud case studies Saudi Arabia', 'cloud transformation case study', 'AWS cost optimization case study', 'Azure migration success story', 'cloud managed services results', 'cloud cost savings Saudi Arabia'],
+  description: 'Cloud case studies from Saudi Arabia. See how enterprises achieved 35% cost savings, 99.99% uptime & 24/7 monitoring with multi-Managed Cloud Services.',
+  keywords: ['cloud case studies Saudi Arabia', 'cloud transformation case study', 'AWS cost optimization case study', 'Azure migration success story', 'Managed Cloud Services results', 'cloud cost savings Saudi Arabia'],
   alternates: { canonical: 'https://gulfstreamtech.com.sa/case-studies/' },
   openGraph: {
     title: 'Cloud Case Studies Saudi Arabia | GulfStream',
-    description: 'Cloud case studies from Saudi Arabia. See how enterprises achieved 35% cost savings, 99.99% uptime & 24/7 monitoring with multi-cloud managed services.',
+    description: 'Cloud case studies from Saudi Arabia. See how enterprises achieved 35% cost savings, 99.99% uptime & 24/7 monitoring with multi-Managed Cloud Services.',
     url: 'https://gulfstreamtech.com.sa/case-studies/',
     type: 'website',
     images: [DEFAULT_OG_IMAGE],
@@ -17,7 +17,7 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Cloud Case Studies Saudi Arabia | GulfStream',
-    description: 'Cloud case studies from Saudi Arabia. See how enterprises achieved 35% cost savings, 99.99% uptime & 24/7 monitoring with multi-cloud managed services.',
+    description: 'Cloud case studies from Saudi Arabia. See how enterprises achieved 35% cost savings, 99.99% uptime & 24/7 monitoring with multi-Managed Cloud Services.',
     images: [DEFAULT_OG_IMAGE.url],
   },
 };
@@ -25,8 +25,8 @@ export const metadata = {
 const serviceSchema = {
   '@context': 'https://schema.org',
   '@type': 'Service',
-  name: 'Cloud Managed Services',
-  description: 'Enterprise cloud managed services with 24/7 monitoring, FinOps optimization, and security governance across AWS, Azure, Google Cloud, and Oracle Cloud in Saudi Arabia.',
+  name: 'Managed Cloud Services',
+  description: 'Enterprise Managed Cloud Services with 24/7 monitoring, FinOps optimization, and security governance across AWS, Azure, Google Cloud, and Oracle Cloud in Saudi Arabia.',
   provider: {
     '@type': 'Organization',
     name: 'GulfStream Technologies',
@@ -36,7 +36,7 @@ const serviceSchema = {
     '@type': 'Country',
     name: 'Saudi Arabia',
   },
-  serviceType: 'Cloud Managed Services',
+  serviceType: 'Managed Cloud Services',
 };
 
 const faqSchema = {
@@ -45,10 +45,10 @@ const faqSchema = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'What industries does GulfStream serve with cloud managed services?',
+      name: 'What industries does GulfStream serve with Managed Cloud Services?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'GulfStream Technologies serves enterprises across retail, healthcare, SaaS, logistics, banking, government, and professional services in Saudi Arabia with multi-cloud managed services across AWS, Azure, Google Cloud, and Oracle Cloud.',
+        text: 'GulfStream Technologies serves enterprises across retail, healthcare, SaaS, logistics, banking, government, and professional services in Saudi Arabia with multi-Managed Cloud Services across AWS, Azure, Google Cloud, and Oracle Cloud.',
       },
     },
     {

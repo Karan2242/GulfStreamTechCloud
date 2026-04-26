@@ -13,7 +13,7 @@ const Footer = () => {
               <Image src={logo} alt="GulfStream Technologies Logo" className="nav-logo-img" />
               <span className="brand">GulfStream Technologies</span>
             </Link>
-            <p>Multi-Cloud Managed Services &mdash; AWS, Azure, GCP &amp; OCI &mdash; for Saudi enterprises. Optimize, secure, and scale your cloud with confidence.</p>
+            <p>Multi-Managed Cloud Services &mdash; AWS, Azure, GCP &amp; OCI &mdash; for Saudi enterprises. Optimize, secure, and scale your cloud with confidence.</p>
             <div className="footer-social">
               <a href="https://www.linkedin.com/company/gulfstream-technology" className="social-btn" title="LinkedIn" target="_blank" rel="noopener noreferrer">in</a>
               <a href="https://x.com/GulfStreamTech" className="social-btn" title="Twitter / X" target="_blank" rel="noopener noreferrer">𝕏</a>
@@ -23,7 +23,7 @@ const Footer = () => {
           <div className="footer-col">
             <h5>Services</h5>
             <ul className="footer-links">
-              <li><Link href="/services/cloud-managed-services">Cloud Managed Services</Link></li>
+              <li><Link href="/services/cloud-managed-services">Managed Cloud Services</Link></li>
               <li><Link href="/services/finops-cost-optimization">FinOps &amp; Cost Optimization</Link></li>
               <li><Link href="/services/cloud-billing-management">Cloud Billing Management</Link></li>
               <li><Link href="/services/cloud-migration">Cloud Migration</Link></li>

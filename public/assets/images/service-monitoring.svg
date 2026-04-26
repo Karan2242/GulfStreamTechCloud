@@ -1,0 +1,19 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="675" fill="#F4F7FC"/>
+  <rect x="84" y="86" width="1032" height="503" rx="24" fill="#FFFFFF" stroke="#DCE3EE" stroke-width="4"/>
+  <rect x="132" y="146" width="936" height="68" rx="12" fill="#EAF0F9"/>
+  <rect x="160" y="170" width="180" height="20" rx="10" fill="#9BB4D6"/>
+  <rect x="382" y="170" width="120" height="20" rx="10" fill="#B6C8E2"/>
+  <rect x="529" y="170" width="144" height="20" rx="10" fill="#B6C8E2"/>
+  <rect x="132" y="246" width="600" height="295" rx="16" fill="#F5F8FD" stroke="#DCE3EE"/>
+  <polyline points="170,485 256,435 350,452 430,365 520,388 620,305 690,338" fill="none" stroke="#1C4FD7" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="256" cy="435" r="12" fill="#1C4FD7"/>
+  <circle cx="430" cy="365" r="12" fill="#1C4FD7"/>
+  <circle cx="620" cy="305" r="12" fill="#1C4FD7"/>
+  <rect x="770" y="246" width="298" height="136" rx="16" fill="#F5F8FD" stroke="#DCE3EE"/>
+  <text x="808" y="305" fill="#284066" font-family="Arial, sans-serif" font-size="40" font-weight="700">99.99%</text>
+  <text x="808" y="342" fill="#5E7396" font-family="Arial, sans-serif" font-size="24">Uptime</text>
+  <rect x="770" y="405" width="298" height="136" rx="16" fill="#F5F8FD" stroke="#DCE3EE"/>
+  <text x="808" y="464" fill="#284066" font-family="Arial, sans-serif" font-size="40" font-weight="700">24/7</text>
+  <text x="808" y="501" fill="#5E7396" font-family="Arial, sans-serif" font-size="24">Monitoring</text>
+</svg>

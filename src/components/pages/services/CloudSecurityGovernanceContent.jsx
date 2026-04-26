@@ -17,7 +17,7 @@ const CloudSecurityGovernanceContent = () => {
           </div>
           <div className="badge badge-primary" style={{ marginBottom: '16px' }}>🔒 Cloud Security &amp; Governance</div>
           <h1 className="display-lg">Cloud Security &amp; Governance<br /><span className="text-gradient">in Saudi Arabia</span></h1>
-          <p>GulfStream Technology delivers enterprise-grade cloud security and governance across AWS, Azure, and multi-cloud environments in Saudi Arabia — combining continuous threat detection, IAM hardening, NCA ECC compliance automation, and policy enforcement to protect your most critical cloud workloads in Riyadh, Jeddah, and Dammam.</p>
+          <p>GulfStream Technologies delivers enterprise-grade cloud security and governance across AWS, Azure, and multi-cloud environments in Saudi Arabia — combining continuous threat detection, IAM hardening, NCA ECC compliance automation, and policy enforcement to protect your most critical cloud workloads in Riyadh, Jeddah, and Dammam.</p>
           <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
             <Link href="/book-a-review" className="btn btn-primary btn-lg">Book a Free Security Assessment</Link>
             <Link href="/contact" className="btn btn-outline btn-lg">Talk to an Expert</Link>
@@ -396,8 +396,8 @@ const CloudSecurityGovernanceContent = () => {
             <h2 className="display-md">Cloud Security Services in Riyadh</h2>
           </div>
           <div className="reveal" style={{ maxWidth: '900px', margin: '0 auto', lineHeight: '1.8' }}>
-            <p>As a cloud security partner based in Saudi Arabia, GulfStream Technology delivers comprehensive security and governance services for enterprises in Riyadh, Jeddah, and Dammam. Our team of certified security engineers combines deep expertise in NCA ECC compliance, Saudi data sovereignty requirements, and enterprise-grade threat detection across AWS, Azure, Google Cloud, and Oracle Cloud environments.</p>
-            <p style={{ marginTop: '16px' }}>Our security services integrate seamlessly with our <Link href="/services/cloud-managed-services" style={{ color: 'var(--accent)' }}>cloud managed services</Link> for ongoing operations, <Link href="/services/cloud-managed-services/aws" style={{ color: 'var(--accent)' }}>AWS managed services</Link> for AWS-native security, <Link href="/services/cloud-managed-services/azure" style={{ color: 'var(--accent)' }}>Azure cloud services</Link> for Azure-native protection, and <Link href="/services/cloud-billing-management" style={{ color: 'var(--accent)' }}>cloud billing management</Link> for security cost optimization.</p>
+            <p>As a cloud security partner based in Saudi Arabia, GulfStream Technologies delivers comprehensive security and governance services for enterprises in Riyadh, Jeddah, and Dammam. Our team of certified security engineers combines deep expertise in NCA ECC compliance, Saudi data sovereignty requirements, and enterprise-grade threat detection across AWS, Azure, Google Cloud, and Oracle Cloud environments.</p>
+            <p style={{ marginTop: '16px' }}>Our security services integrate seamlessly with our <Link href="/services/cloud-managed-services" style={{ color: 'var(--accent)' }}>Managed Cloud Services</Link> for ongoing operations, <Link href="/services/cloud-managed-services/aws" style={{ color: 'var(--accent)' }}>AWS managed services</Link> for AWS-native security, <Link href="/services/cloud-managed-services/azure" style={{ color: 'var(--accent)' }}>Azure cloud services</Link> for Azure-native protection, and <Link href="/services/cloud-billing-management" style={{ color: 'var(--accent)' }}>cloud billing management</Link> for security cost optimization.</p>
           </div>
         </div>
       </section>

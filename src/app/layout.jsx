@@ -5,16 +5,16 @@ import Footer from '@/components/Footer';
 export const metadata = {
   metadataBase: new URL('https://gulfstreamtech.com.sa'),
   title: {
-    default: 'Cloud Managed Services Saudi Arabia | GulfStream',
+    default: 'Managed Cloud Services Saudi Arabia | GulfStream',
     template: '%s | GulfStream',
   },
   description:
-    'GulfStream Technologies provides enterprise-grade multi-cloud managed services in Saudi Arabia — AWS, Azure, Google Cloud & Oracle Cloud. FinOps cost optimization, 24/7 monitoring, cloud migration, and security governance.',
+    'GulfStream Technologies provides enterprise-grade multi-Managed Cloud Services in Saudi Arabia — AWS, Azure, Google Cloud & Oracle Cloud. FinOps cost optimization, 24/7 monitoring, cloud migration, and security governance.',
   keywords: [
     'AWS managed services Saudi Arabia',
     'Azure managed services Saudi Arabia',
-    'Oracle Cloud managed services Saudi Arabia',
-    'Google Cloud managed services Saudi Arabia',
+    'Oracle Managed Cloud Services Saudi Arabia',
+    'Google Managed Cloud Services Saudi Arabia',
     'cloud cost optimization',
     'FinOps Saudi Arabia',
     'cloud migration Saudi Arabia',
@@ -39,15 +39,15 @@ export const metadata = {
     locale: 'en_US',
     url: 'https://gulfstreamtech.com.sa',
     siteName: 'GulfStream Technologies',
-    title: 'GulfStream Technologies | Multi-Cloud Managed Services',
+    title: 'GulfStream Technologies | Multi-Managed Cloud Services',
     description:
-      'Enterprise-grade multi-cloud managed services in Saudi Arabia — AWS, Azure, Google Cloud & Oracle Cloud. FinOps, 24/7 monitoring, cloud migration & security governance.',
+      'Enterprise-grade multi-Managed Cloud Services in Saudi Arabia — AWS, Azure, Google Cloud & Oracle Cloud. FinOps, 24/7 monitoring, cloud migration & security governance.',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'GulfStream Technologies | Multi-Cloud Managed Services',
+    title: 'GulfStream Technologies | Multi-Managed Cloud Services',
     description:
-      'Enterprise-grade multi-cloud managed services in Saudi Arabia — AWS, Azure, Google Cloud & Oracle Cloud.',
+      'Enterprise-grade multi-Managed Cloud Services in Saudi Arabia — AWS, Azure, Google Cloud & Oracle Cloud.',
   },
   icons: {
     icon: '/assets/logo.png',

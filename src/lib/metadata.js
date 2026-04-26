@@ -11,5 +11,5 @@ export const DEFAULT_OG_IMAGE = {
   url: `${SITE_URL}/assets/images/hero-illustration.png`,
   width: 1200,
   height: 630,
-  alt: 'GulfStream Technologies — Cloud Managed Services Saudi Arabia',
+  alt: 'GulfStream Technologies — Managed Cloud Services Saudi Arabia',
 };

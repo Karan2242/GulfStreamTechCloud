@@ -152,8 +152,8 @@ const ContactContent = () => {
                       <option value="" disabled>Select enquiry type</option>
                       <option value="aws-managed-services">AWS Managed Services</option>
                       <option value="azure-managed-services">Azure Managed Services</option>
-                      <option value="oracle-cloud-managed-services">Oracle Cloud Managed Services</option>
-                      <option value="google-cloud-managed-services">Google Cloud Managed Services</option>
+                      <option value="oracle-cloud-managed-services">Oracle Managed Cloud Services</option>
+                      <option value="google-cloud-managed-services">Google Managed Cloud Services</option>
                       <option value="cloud-migration">Cloud Migration</option>
                       <option value="cost-optimization">Cloud Cost Optimization</option>
                       <option value="cloud-security">Cloud Security</option>

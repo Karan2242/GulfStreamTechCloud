@@ -17,7 +17,7 @@ const FinopsCostOptimizationContent = () => {
           </div>
           <div className="badge badge-primary" style={{ marginBottom: '16px' }}>📊 FinOps &amp; Cost Optimization</div>
           <h1 className="display-lg">Cloud FinOps &amp; Cost Optimization<br /><span className="text-gradient">in Saudi Arabia</span></h1>
-          <p>GulfStream Technology applies the FinOps framework to give enterprises in Saudi Arabia complete visibility into cloud spend across AWS, Azure, and multi-cloud — eliminating waste, rightsizing infrastructure, and building a culture of cloud financial accountability in Riyadh, Jeddah, and Dammam with an average 32% cost reduction.</p>
+          <p>GulfStream Technologies applies the FinOps framework to give enterprises in Saudi Arabia complete visibility into cloud spend across AWS, Azure, and multi-cloud — eliminating waste, rightsizing infrastructure, and building a culture of cloud financial accountability in Riyadh, Jeddah, and Dammam with an average 32% cost reduction.</p>
           <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
             <Link href="/book-a-review" className="btn btn-primary btn-lg">Get a Free Cost Analysis</Link>
             <Link href="/contact" className="btn btn-outline btn-lg">Talk to a FinOps Expert</Link>
@@ -353,8 +353,8 @@ const FinopsCostOptimizationContent = () => {
             <h2 className="display-md">Cloud FinOps Services in Riyadh</h2>
           </div>
           <div className="reveal" style={{ maxWidth: '900px', margin: '0 auto', lineHeight: '1.8' }}>
-            <p>As a cloud FinOps partner based in Saudi Arabia, GulfStream Technology delivers end-to-end cost optimization services for enterprises in Riyadh, Jeddah, and Dammam. Our certified FinOps practitioners combine deep expertise in AWS, Azure, Google Cloud, and Oracle Cloud cost management with an understanding of Saudi business requirements and cloud spending patterns.</p>
-            <p style={{ marginTop: '16px' }}>Our FinOps services integrate with our <Link href="/services/cloud-managed-services" style={{ color: 'var(--accent)' }}>cloud managed services</Link> for ongoing operational savings, <Link href="/services/cloud-billing-management" style={{ color: 'var(--accent)' }}>cloud billing management</Link> for granular cost tracking, <Link href="/services/cloud-managed-services/aws" style={{ color: 'var(--accent)' }}>AWS managed services</Link>, and <Link href="/services/cloud-managed-services/azure" style={{ color: 'var(--accent)' }}>Azure cloud services</Link> for platform-specific optimization.</p>
+            <p>As a cloud FinOps partner based in Saudi Arabia, GulfStream Technologies delivers end-to-end cost optimization services for enterprises in Riyadh, Jeddah, and Dammam. Our certified FinOps practitioners combine deep expertise in AWS, Azure, Google Cloud, and Oracle Cloud cost management with an understanding of Saudi business requirements and cloud spending patterns.</p>
+            <p style={{ marginTop: '16px' }}>Our FinOps services integrate with our <Link href="/services/cloud-managed-services" style={{ color: 'var(--accent)' }}>Managed Cloud Services</Link> for ongoing operational savings, <Link href="/services/cloud-billing-management" style={{ color: 'var(--accent)' }}>cloud billing management</Link> for granular cost tracking, <Link href="/services/cloud-managed-services/aws" style={{ color: 'var(--accent)' }}>AWS managed services</Link>, and <Link href="/services/cloud-managed-services/azure" style={{ color: 'var(--accent)' }}>Azure cloud services</Link> for platform-specific optimization.</p>
           </div>
         </div>
       </section>

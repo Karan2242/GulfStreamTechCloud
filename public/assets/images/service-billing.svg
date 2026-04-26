@@ -1,0 +1,19 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="675" fill="#F4F7FC"/>
+  <rect x="92" y="86" width="1016" height="503" rx="24" fill="#FFFFFF" stroke="#DCE3EE" stroke-width="4"/>
+  <rect x="150" y="136" width="560" height="402" rx="18" fill="#F6F9FE" stroke="#DEE6F3"/>
+  <rect x="190" y="184" width="480" height="58" rx="10" fill="#EAF0FA"/>
+  <rect x="214" y="205" width="180" height="16" rx="8" fill="#8FAED8"/>
+  <rect x="190" y="270" width="220" height="20" rx="10" fill="#C0CEE4"/>
+  <rect x="190" y="310" width="320" height="20" rx="10" fill="#C0CEE4"/>
+  <rect x="190" y="350" width="260" height="20" rx="10" fill="#C0CEE4"/>
+  <rect x="520" y="270" width="150" height="20" rx="10" fill="#1C4FD7"/>
+  <rect x="540" y="310" width="130" height="20" rx="10" fill="#1C4FD7"/>
+  <rect x="560" y="350" width="110" height="20" rx="10" fill="#1C4FD7"/>
+  <rect x="754" y="136" width="296" height="188" rx="18" fill="#F6F9FE" stroke="#DEE6F3"/>
+  <text x="790" y="214" fill="#1E3357" font-family="Arial, sans-serif" font-size="50" font-weight="700">$1.2M</text>
+  <text x="790" y="258" fill="#5E7396" font-family="Arial, sans-serif" font-size="24">Monthly Spend</text>
+  <rect x="754" y="350" width="296" height="188" rx="18" fill="#F6F9FE" stroke="#DEE6F3"/>
+  <text x="790" y="430" fill="#1E3357" font-family="Arial, sans-serif" font-size="34" font-weight="700">Chargeback</text>
+  <text x="790" y="468" fill="#5E7396" font-family="Arial, sans-serif" font-size="24">By Team &amp; Project</text>
+</svg>

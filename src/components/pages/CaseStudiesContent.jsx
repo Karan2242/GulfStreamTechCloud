@@ -25,7 +25,7 @@ const CaseStudiesContent = () => {
       <section className="section-sm">
         <div className="container">
           <div className="reveal" style={{ maxWidth: '900px', margin: '0 auto', lineHeight: '1.8' }}>
-            <p>GulfStream Technologies has helped enterprises across Saudi Arabia achieve measurable cloud cost savings, improved security posture, and higher uptime through <Link href="/services/cloud-managed-services" style={{ color: 'var(--accent)' }}>cloud managed services</Link>, <Link href="/services/finops-cost-optimization" style={{ color: 'var(--accent)' }}>FinOps cost optimization</Link>, and <Link href="/services/cloud-migration" style={{ color: 'var(--accent)' }}>cloud migration</Link> across AWS, Azure, Google Cloud, and Oracle Cloud. These case studies document real results from enterprises in Riyadh, Jeddah, and Dammam.</p>
+            <p>GulfStream Technologies has helped enterprises across Saudi Arabia achieve measurable cloud cost savings, improved security posture, and higher uptime through <Link href="/services/cloud-managed-services" style={{ color: 'var(--accent)' }}>Managed Cloud Services</Link>, <Link href="/services/finops-cost-optimization" style={{ color: 'var(--accent)' }}>FinOps cost optimization</Link>, and <Link href="/services/cloud-migration" style={{ color: 'var(--accent)' }}>cloud migration</Link> across AWS, Azure, Google Cloud, and Oracle Cloud. These case studies document real results from enterprises in Riyadh, Jeddah, and Dammam.</p>
             <p style={{ marginTop: '16px' }}>From retail chains managing peak-season traffic to healthcare organizations meeting strict compliance requirements, our <Link href="/services/cloud-security-governance" style={{ color: 'var(--accent)' }}>cloud security</Link> and optimization expertise delivers outcomes that matter — reduced costs, zero unplanned outages, and full NCA ECC compliance. <Link href="/book-a-review" style={{ color: 'var(--accent)' }}>Book a free cloud assessment</Link> to see what results we can deliver for your organization.</p>
           </div>
         </div>
@@ -217,7 +217,7 @@ const CaseStudiesContent = () => {
                   </div>
                   <div style={{ marginBottom: '20px' }}>
                     <h3 style={{ fontSize: '.85rem', fontWeight: 700, color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '.05em', marginBottom: '6px' }}>GulfStream Solution</h3>
-                    <p style={{ color: 'var(--text-secondary)', fontSize: '.95rem' }}>EKS with Karpenter for dynamic node provisioning, strategic Reserved Instance portfolio, Spot Instances for batch workloads, per-tenant <Link href="/services/cloud-billing-management" style={{ color: 'var(--accent)' }}>cost attribution dashboards</Link>, and SOC 2-aligned <Link href="/services/cloud-security-governance" style={{ color: 'var(--accent)' }}>security governance</Link> with automated compliance evidence via <Link href="/services/cloud-managed-services" style={{ color: 'var(--accent)' }}>cloud managed services</Link>.</p>
+                    <p style={{ color: 'var(--text-secondary)', fontSize: '.95rem' }}>EKS with Karpenter for dynamic node provisioning, strategic Reserved Instance portfolio, Spot Instances for batch workloads, per-tenant <Link href="/services/cloud-billing-management" style={{ color: 'var(--accent)' }}>cost attribution dashboards</Link>, and SOC 2-aligned <Link href="/services/cloud-security-governance" style={{ color: 'var(--accent)' }}>security governance</Link> with automated compliance evidence via <Link href="/services/cloud-managed-services" style={{ color: 'var(--accent)' }}>Managed Cloud Services</Link>.</p>
                   </div>
                   <div style={{ background: 'rgba(255,107,53,0.08)', border: '1px solid rgba(255,107,53,0.2)', borderRadius: 'var(--radius-md)', padding: '16px', marginTop: '16px' }}>
                     <p style={{ color: 'var(--text-secondary)', fontSize: '.9rem', fontStyle: 'italic', lineHeight: 1.7 }}>"GulfStream's FinOps approach saved us 35% on infrastructure costs while achieving SOC 2 compliance in 60 days. The per-tenant cost dashboards transformed our unit economics."</p>
@@ -292,7 +292,7 @@ const CaseStudiesContent = () => {
             <h2 className="display-md">Serving Enterprises in Riyadh &amp; Saudi Arabia</h2>
           </div>
           <div className="reveal" style={{ maxWidth: '900px', margin: '0 auto', lineHeight: '1.8' }}>
-            <p>GulfStream Technologies is headquartered in Riyadh and delivers <Link href="/services/cloud-managed-services" style={{ color: 'var(--accent)' }}>cloud managed services</Link> to enterprises across Saudi Arabia and the Middle East. Our team of certified cloud engineers combines deep expertise in <Link href="/services/cloud-managed-services/aws" style={{ color: 'var(--accent)' }}>AWS managed services</Link>, <Link href="/services/cloud-managed-services/azure" style={{ color: 'var(--accent)' }}>Azure cloud services</Link>, <Link href="/services/finops-cost-optimization" style={{ color: 'var(--accent)' }}>cloud cost optimization</Link>, and <Link href="/services/cloud-security-governance" style={{ color: 'var(--accent)' }}>security governance</Link> with an understanding of Saudi regulatory requirements including NCA ECC compliance.</p>
+            <p>GulfStream Technologies is headquartered in Riyadh and delivers <Link href="/services/cloud-managed-services" style={{ color: 'var(--accent)' }}>Managed Cloud Services</Link> to enterprises across Saudi Arabia and the Middle East. Our team of certified cloud engineers combines deep expertise in <Link href="/services/cloud-managed-services/aws" style={{ color: 'var(--accent)' }}>AWS managed services</Link>, <Link href="/services/cloud-managed-services/azure" style={{ color: 'var(--accent)' }}>Azure cloud services</Link>, <Link href="/services/finops-cost-optimization" style={{ color: 'var(--accent)' }}>cloud cost optimization</Link>, and <Link href="/services/cloud-security-governance" style={{ color: 'var(--accent)' }}>security governance</Link> with an understanding of Saudi regulatory requirements including NCA ECC compliance.</p>
           </div>
         </div>
       </section>
@@ -306,8 +306,8 @@ const CaseStudiesContent = () => {
           </div>
           <div className="grid-2 reveal">
             <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>What industries does GulfStream serve with cloud managed services?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>GulfStream Technologies serves enterprises across retail, healthcare, SaaS, logistics, banking, government, and professional services in Saudi Arabia with multi-cloud managed services across AWS, Azure, Google Cloud, and Oracle Cloud.</p>
+              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>What industries does GulfStream serve with Managed Cloud Services?</h3>
+              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>GulfStream Technologies serves enterprises across retail, healthcare, SaaS, logistics, banking, government, and professional services in Saudi Arabia with multi-Managed Cloud Services across AWS, Azure, Google Cloud, and Oracle Cloud.</p>
             </div>
             <div className="card">
               <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>What results can be achieved with cloud transformation?</h3>

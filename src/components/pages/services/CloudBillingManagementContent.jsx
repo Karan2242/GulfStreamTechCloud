@@ -17,7 +17,7 @@ const CloudBillingManagementContent = () => {
           </div>
           <div className="badge badge-primary" style={{ marginBottom: '16px' }}>🧾 Cloud Billing Management</div>
           <h1 className="display-lg">Cloud Billing Management<br /><span className="text-gradient">in Saudi Arabia</span></h1>
-          <p>GulfStream Technology delivers unified, transparent cloud billing management across AWS, Azure, Oracle, and Google Cloud — with real-time dashboards, chargeback reporting, anomaly detection, and executive-ready spend analytics that eliminate billing surprises for enterprises in Riyadh and the Middle East.</p>
+          <p>GulfStream Technologies delivers unified, transparent cloud billing management across AWS, Azure, Oracle, and Google Cloud — with real-time dashboards, chargeback reporting, anomaly detection, and executive-ready spend analytics that eliminate billing surprises for enterprises in Riyadh and the Middle East.</p>
           <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
             <Link href="/book-a-review" className="btn btn-primary btn-lg">Get a Free Billing Audit</Link>
             <Link href="/contact" className="btn btn-outline btn-lg">Talk to an Expert</Link>
@@ -316,8 +316,8 @@ const CloudBillingManagementContent = () => {
             <h2 className="display-md">Cloud Billing Management in Riyadh</h2>
           </div>
           <div className="reveal" style={{ maxWidth: '900px', margin: '0 auto', lineHeight: '1.8' }}>
-            <p>As a cloud billing management provider based in Saudi Arabia, GulfStream Technology delivers specialized cost visibility and financial governance for enterprises in Riyadh, Jeddah, and Dammam. Our local team understands the unique billing complexities of multi-cloud environments in the Middle East — from currency and tax considerations to regulatory reporting requirements.</p>
-            <p style={{ marginTop: '16px' }}>Our billing management services integrate seamlessly with our <Link href="/services/cloud-managed-services" style={{ color: 'var(--accent)' }}>cloud managed services</Link> and <Link href="/services/finops-cost-optimization" style={{ color: 'var(--accent)' }}>FinOps consulting</Link>, providing a complete financial operations framework for your cloud environment. For platform-specific billing, see our <Link href="/services/cloud-managed-services/aws" style={{ color: 'var(--accent)' }}>AWS managed services</Link> and <Link href="/services/cloud-managed-services/azure" style={{ color: 'var(--accent)' }}>Azure cloud services</Link>.</p>
+            <p>As a cloud billing management provider based in Saudi Arabia, GulfStream Technologies delivers specialized cost visibility and financial governance for enterprises in Riyadh, Jeddah, and Dammam. Our local team understands the unique billing complexities of multi-cloud environments in the Middle East — from currency and tax considerations to regulatory reporting requirements.</p>
+            <p style={{ marginTop: '16px' }}>Our billing management services integrate seamlessly with our <Link href="/services/cloud-managed-services" style={{ color: 'var(--accent)' }}>Managed Cloud Services</Link> and <Link href="/services/finops-cost-optimization" style={{ color: 'var(--accent)' }}>FinOps consulting</Link>, providing a complete financial operations framework for your cloud environment. For platform-specific billing, see our <Link href="/services/cloud-managed-services/aws" style={{ color: 'var(--accent)' }}>AWS managed services</Link> and <Link href="/services/cloud-managed-services/azure" style={{ color: 'var(--accent)' }}>Azure cloud services</Link>.</p>
           </div>
         </div>
       </section>
@@ -340,7 +340,7 @@ const CloudBillingManagementContent = () => {
             </div>
             <div className="card">
               <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>Can you manage billing across multiple cloud providers?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>Yes. GulfStream Technology provides unified billing management across AWS, Azure, Oracle Cloud, and Google Cloud — aggregating costs into a single dashboard with consistent chargeback and showback reporting.</p>
+              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>Yes. GulfStream Technologies provides unified billing management across AWS, Azure, Oracle Cloud, and Google Cloud — aggregating costs into a single dashboard with consistent chargeback and showback reporting.</p>
             </div>
             <div className="card">
               <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>How much does cloud billing management cost in Saudi Arabia?</h3>

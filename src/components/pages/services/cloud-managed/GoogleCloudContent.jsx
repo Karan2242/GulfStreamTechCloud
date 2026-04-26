@@ -14,11 +14,11 @@ const GoogleCloudContent = () => {
       <section className="page-hero">
         <div className="container">
           <div className="breadcrumb">
-            <Link href="/">Home</Link><span>›</span><Link href="/services">Services</Link><span>›</span><Link href="/services/cloud-managed-services">Cloud Managed Services</Link><span>›</span><span>Google Cloud</span>
+            <Link href="/">Home</Link><span>›</span><Link href="/services">Services</Link><span>›</span><Link href="/services/cloud-managed-services">Managed Cloud Services</Link><span>›</span><span>Google Cloud</span>
           </div>
-          <div className="badge badge-primary" style={{ marginBottom: '16px' }}>🟢 Google Cloud Managed Services</div>
-          <h1 className="display-lg">Google Cloud Managed Services<br /><span className="text-gradient">in Saudi Arabia</span></h1>
-          <p>GulfStream Technology is a certified managed cloud services provider for Google Cloud Platform (GCP) in Saudi Arabia. We deliver comprehensive GCP management — from GKE and BigQuery to Cloud Run and Security Command Center — with 24/7 cloud monitoring services, data analytics optimization, and FinOps consulting to cut costs by up to 28%.</p>
+          <div className="badge badge-primary" style={{ marginBottom: '16px' }}>🟢 Google Managed Cloud Services</div>
+          <h1 className="display-lg">Google Managed Cloud Services<br /><span className="text-gradient">in Saudi Arabia</span></h1>
+          <p>GulfStream Technologies is a certified managed cloud services provider for Google Cloud Platform (GCP) in Saudi Arabia. We deliver comprehensive GCP management — from GKE and BigQuery to Cloud Run and Security Command Center — with 24/7 cloud monitoring services, data analytics optimization, and FinOps consulting to cut costs by up to 28%.</p>
           <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
             <Link href="/book-a-review" className="btn btn-primary btn-lg">Book a Free GCP Assessment</Link>
             <Link href="/contact" className="btn btn-outline btn-lg">Talk to an Expert</Link>
@@ -244,15 +244,15 @@ const GoogleCloudContent = () => {
         </div>
       </section>
 
-      {/* GOOGLE CLOUD MANAGED SERVICES IN RIYADH */}
+      {/* GOOGLE Managed Cloud Services IN RIYADH */}
       <section className="section">
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-primary">🇸🇦 Local Expertise</div>
-            <h2 className="display-md">Google Cloud Managed Services in Riyadh</h2>
+            <h2 className="display-md">Google Managed Cloud Services in Riyadh</h2>
           </div>
           <div className="reveal" style={{ maxWidth: '900px', margin: '0 auto', lineHeight: '1.8' }}>
-            <p>As a cloud management company based in Saudi Arabia, GulfStream Technology provides Google Cloud managed services tailored to enterprises in Riyadh, Jeddah, and Dammam. With Google Cloud&apos;s dedicated Saudi Arabia region (Dammam), we help organizations maintain data residency compliance while leveraging GCP&apos;s industry-leading data analytics, AI/ML, and container orchestration capabilities.</p>
+            <p>As a cloud management company based in Saudi Arabia, GulfStream Technologies provides Google Managed Cloud Services tailored to enterprises in Riyadh, Jeddah, and Dammam. With Google Cloud&apos;s dedicated Saudi Arabia region (Dammam), we help organizations maintain data residency compliance while leveraging GCP&apos;s industry-leading data analytics, AI/ML, and container orchestration capabilities.</p>
             <p style={{ marginTop: '16px' }}>Our Riyadh-based team delivers 24/7 cloud monitoring services, GKE management, BigQuery cost optimization, security governance through Security Command Center, and cloud cost management services — ensuring your GCP investment supports Vision 2030 digital transformation objectives. For multi-cloud strategies, see our <Link href="/services/cloud-managed-services/aws" style={{ color: 'var(--accent)' }}>AWS managed services</Link> and <Link href="/services/cloud-managed-services/azure" style={{ color: 'var(--accent)' }}>Azure managed services</Link>.</p>
           </div>
         </div>
@@ -323,12 +323,12 @@ const GoogleCloudContent = () => {
           </div>
           <div className="grid-2 reveal">
             <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>What are Google Cloud Managed Services?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>Google Cloud Managed Services involve outsourcing the management of your GCP environment to certified cloud experts. This includes 24/7 monitoring, GKE cluster management, BigQuery optimization, security governance with Security Command Center, cost optimization, and incident response.</p>
+              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>What are Google Managed Cloud Services?</h3>
+              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>Google Managed Cloud Services involve outsourcing the management of your GCP environment to certified cloud experts. This includes 24/7 monitoring, GKE cluster management, BigQuery optimization, security governance with Security Command Center, cost optimization, and incident response.</p>
             </div>
             <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>How much do Google Cloud Managed Services cost?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>Costs depend on your environment complexity, number of projects, and workload types. GulfStream Technology offers flexible pricing from basic monitoring to fully managed operations. <Link href="/book-a-review" style={{ color: 'var(--accent)' }}>Book a free assessment</Link> for a tailored quote.</p>
+              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>How much do Google Managed Cloud Services cost?</h3>
+              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>Costs depend on your environment complexity, number of projects, and workload types. GulfStream Technologies offers flexible pricing from basic monitoring to fully managed operations. <Link href="/book-a-review" style={{ color: 'var(--accent)' }}>Book a free assessment</Link> for a tailored quote.</p>
             </div>
             <div className="card">
               <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>How do you optimize BigQuery costs?</h3>

@@ -3,10 +3,10 @@ import HomeContent from '@/components/pages/HomeContent';
 import { DEFAULT_OG_IMAGE } from '@/lib/metadata';
 
 export const metadata = {
-  title: 'Cloud Managed Services Saudi Arabia',
-  description: 'Multi-cloud managed services in Saudi Arabia — AWS, Azure, Google Cloud & Oracle Cloud. Reduce costs 30%, strengthen security & scale with certified cloud specialists.',
+  title: 'Managed Cloud Services Saudi Arabia',
+  description: 'Multi-Managed Cloud Services in Saudi Arabia — AWS, Azure, Google Cloud & Oracle Cloud. Reduce costs 30%, strengthen security & scale with certified cloud specialists.',
   keywords: [
-    'cloud managed services Saudi Arabia',
+    'Managed Cloud Services Saudi Arabia',
     'AWS managed services Saudi Arabia',
     'Azure cloud consulting Saudi Arabia',
     'cloud cost optimization Saudi Arabia',
@@ -16,8 +16,8 @@ export const metadata = {
   ],
   alternates: { canonical: 'https://gulfstreamtech.com.sa/' },
   openGraph: {
-    title: 'Cloud Managed Services Saudi Arabia | GulfStream',
-    description: 'Multi-cloud managed services in Saudi Arabia — AWS, Azure, Google Cloud & Oracle Cloud. Reduce costs 30%, strengthen security & scale with certified cloud specialists.',
+    title: 'Managed Cloud Services Saudi Arabia | GulfStream',
+    description: 'Multi-Managed Cloud Services in Saudi Arabia — AWS, Azure, Google Cloud & Oracle Cloud. Reduce costs 30%, strengthen security & scale with certified cloud specialists.',
     siteName: 'GulfStream Technologies',
     locale: 'en_US',
     type: 'website',
@@ -25,8 +25,8 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Cloud Managed Services Saudi Arabia | GulfStream',
-    description: 'Multi-cloud managed services in Saudi Arabia — AWS, Azure, Google Cloud & Oracle Cloud. Reduce costs 30%, strengthen security & scale with certified cloud specialists.',
+    title: 'Managed Cloud Services Saudi Arabia | GulfStream',
+    description: 'Multi-Managed Cloud Services in Saudi Arabia — AWS, Azure, Google Cloud & Oracle Cloud. Reduce costs 30%, strengthen security & scale with certified cloud specialists.',
     images: [DEFAULT_OG_IMAGE.url],
   },
 };
@@ -34,7 +34,7 @@ export const metadata = {
 const serviceSchema = {
   '@context': 'https://schema.org',
   '@type': 'Service',
-  name: 'Cloud Managed Services Saudi Arabia',
+  name: 'Managed Cloud Services Saudi Arabia',
   description:
     'Enterprise-grade managed cloud services across AWS, Azure, Oracle Cloud and Google Cloud in Saudi Arabia. 24/7 monitoring, FinOps cost optimization, cloud security, and cloud migration.',
   provider: {
@@ -46,7 +46,7 @@ const serviceSchema = {
     '@type': 'Country',
     name: 'Saudi Arabia',
   },
-  serviceType: 'Cloud Managed Services',
+  serviceType: 'Managed Cloud Services',
   hasOfferCatalog: {
     '@type': 'OfferCatalog',
     name: 'Cloud Services',
@@ -66,10 +66,10 @@ const faqSchema = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'What are cloud managed services?',
+      name: 'What are Managed Cloud Services?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Cloud managed services involve outsourcing the day-to-day management, monitoring, security, and optimization of your cloud infrastructure to a specialized provider. This includes 24/7 operations, incident response, FinOps cost governance, and performance tuning across platforms like AWS, Azure, Oracle Cloud, and Google Cloud — so your teams focus on business growth, not infrastructure.',
+        text: 'Managed Cloud Services involve outsourcing the day-to-day management, monitoring, security, and optimization of your cloud infrastructure to a specialized provider. This includes 24/7 operations, incident response, FinOps cost governance, and performance tuning across platforms like AWS, Azure, Oracle Cloud, and Google Cloud — so your teams focus on business growth, not infrastructure.',
       },
     },
     {

@@ -43,7 +43,7 @@ const platforms = [
   {
     id: 'oracle',
     name: 'Oracle Cloud',
-    fullName: 'Oracle Cloud Managed Services',
+    fullName: 'Oracle Managed Cloud Services',
     href: '/services/cloud-managed-services/oracle',
     logo: '/assets/images/logo-oracle.png',
     description: 'Enterprise Oracle Cloud Infrastructure management — OCI Compute, Autonomous Database, networking, and security. Optimized for performance, cost efficiency, and mission-critical workloads running in the Kingdom of Saudi Arabia.',
@@ -61,7 +61,7 @@ const platforms = [
   {
     id: 'google',
     name: 'Google Cloud',
-    fullName: 'Google Cloud Managed Services',
+    fullName: 'Google Managed Cloud Services',
     href: '/services/cloud-managed-services/google',
     logo: '/assets/images/logo-gcp.png',
     description: 'Comprehensive Google Cloud Platform management — GKE, BigQuery, Cloud Run, and Cloud SQL. We bring FinOps-driven cost governance, 24/7 operations, and data analytics expertise to Saudi enterprises in Riyadh and beyond.',

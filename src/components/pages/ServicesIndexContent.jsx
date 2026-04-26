@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { useReveal } from '@/hooks/useReveal';
 
 const ServicesIndexContent = () => {
@@ -17,7 +18,7 @@ const ServicesIndexContent = () => {
           </div>
           <div className="badge badge-primary" style={{ marginBottom: '16px' }}>🛠️ Managed Cloud Services</div>
           <h1 className="display-lg">Managed Cloud Services<br /><span className="text-gradient">in Saudi Arabia</span></h1>
-          <p>GulfStream Technologies delivers <strong>enterprise multi-cloud managed services across AWS, Azure, Google Cloud, and Oracle Cloud</strong> for organizations across <strong>Riyadh, Jeddah, and Dammam</strong>. We Operate, Optimize, Secure, Govern, and Modernize your cloud — reducing costs by up to <strong>30%</strong> while maintaining <strong>99.99% uptime</strong>.</p>
+          <p>GulfStream Technologies delivers <strong>enterprise multi-Managed Cloud Services across AWS, Azure, Google Cloud, and Oracle Cloud</strong> for organizations across <strong>Riyadh, Jeddah, and Dammam</strong>. We Operate, Optimize, Secure, Govern, and Modernize your cloud — reducing costs by up to <strong>30%</strong> while maintaining <strong>99.99% uptime</strong>.</p>
           <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap', marginTop: '8px' }}>
             <Link href="/book-a-review" className="btn btn-primary btn-lg">Book Your Free Cloud Cost Assessment</Link>
             <Link href="/contact" className="btn btn-outline btn-lg">Get a Cloud Optimization Report</Link>
@@ -46,11 +47,11 @@ const ServicesIndexContent = () => {
       <section className="section">
         <div className="container">
           <div className="section-header reveal">
-            <div className="badge badge-primary">☁️ Cloud Managed Services</div>
+            <div className="badge badge-primary">☁️ Managed Cloud Services</div>
             <h2 className="display-md">What Are Managed Cloud Services in Saudi Arabia?</h2>
           </div>
           <div className="reveal" style={{ maxWidth: '900px', margin: '0 auto', lineHeight: '1.8' }}>
-            <p>Managed cloud services involve outsourcing the day-to-day management, monitoring, and optimization of your cloud infrastructure to a dedicated team of certified experts. For enterprises operating in Saudi Arabia, this means partnering with a provider who understands the unique demands of the regional market — from regulatory compliance and data residency to supporting Vision 2030 digital transformation goals. GulfStream Technologies provides managed services across <Link href="/services/cloud-managed-services/aws" style={{ color: 'var(--accent)' }}>AWS</Link>, <Link href="/services/cloud-managed-services/azure" style={{ color: 'var(--accent)' }}>Azure</Link>, <Link href="/services/cloud-managed-services/google" style={{ color: 'var(--accent)' }}>Google Cloud</Link>, and <Link href="/services/cloud-managed-services/oracle" style={{ color: 'var(--accent)' }}>Oracle Cloud</Link> designed specifically for the Saudi enterprise ...
+            <p>Managed cloud services involve outsourcing the day-to-day management, monitoring, and optimization of your cloud infrastructure to a dedicated team of certified experts. For enterprises operating in Saudi Arabia, this means partnering with a provider who understands the unique demands of the regional market — from regulatory compliance and data residency to supporting Vision 2030 digital transformation goals. GulfStream Technologies provides managed services across <Link href="/services/cloud-managed-services/aws" style={{ color: 'var(--accent)' }}>AWS</Link>, <Link href="/services/cloud-managed-services/azure" style={{ color: 'var(--accent)' }}>Azure</Link>, <Link href="/services/cloud-managed-services/google" style={{ color: 'var(--accent)' }}>Google Cloud</Link>, and <Link href="/services/cloud-managed-services/oracle" style={{ color: 'var(--accent)' }}>Oracle Cloud</Link> designed specifically for the Saudi enterprise ...</p>
             <p style={{ marginTop: '16px' }}>Our approach goes beyond basic monitoring. We integrate <Link href="/services/finops-cost-optimization" style={{ color: 'var(--accent)' }}>FinOps cost optimization</Link> into every engagement, delivering an average <strong>30% cloud cost reduction within 90 days</strong>. Combined with <Link href="/services/cloud-security-governance" style={{ color: 'var(--accent)' }}>cloud security governance</Link> aligned to NCA ECC compliance standards, enterprises in Riyadh, Jeddah, and Dammam gain a fully managed cloud environment that is secure, cost-efficient, and always available.</p>
             <p style={{ marginTop: '16px' }}>Whether you need to <Link href="/services/cloud-migration" style={{ color: 'var(--accent)' }}>migrate to the cloud</Link>, optimize an existing multi-cloud estate, or centralize <Link href="/services/cloud-billing-management" style={{ color: 'var(--accent)' }}>cloud billing management</Link> across departments — GulfStream is the trusted managed cloud services provider in Saudi Arabia with a proven track record across 40+ enterprise clients. <Link href="/book-a-review" style={{ color: 'var(--accent)' }}>Book a free cloud assessment</Link> to see where your environment stands today.</p>
           </div>
@@ -148,53 +149,59 @@ const ServicesIndexContent = () => {
           </div>
           <div className="services-grid">
             <div className="service-card reveal">
-              <div className="service-card-header">
-                <div className="service-icon">🌐</div>
-                <h3>Cloud Managed Services</h3>
+              <Image src="/assets/images/service-monitoring.svg" alt="Managed cloud monitoring dashboard" className="service-image" width={800} height={450} />
+              <div className="service-content">
+                <span className="service-label">SERVICE</span>
+                <h3>Managed Cloud Services</h3>
+                <p>End-to-end managed services across <strong>AWS, Azure, Oracle Cloud, and Google Cloud</strong> — 24/7 operations, monitoring, security governance, and FinOps cost optimization delivering 99.99% uptime and 30% average cost savings for your entire cloud estate.</p>
+                <Link href="/services/cloud-managed-services/aws" className="learn-more">AWS Managed Services →</Link>
+                <Link href="/services/cloud-managed-services/azure" className="learn-more" style={{ marginLeft: '16px' }}>Azure Managed Services →</Link>
               </div>
-              <p>End-to-end managed services across <strong>AWS, Azure, Oracle Cloud, and Google Cloud</strong> — 24/7 operations, monitoring, security governance, and FinOps cost optimization delivering 99.99% uptime and 30% average cost savings for your entire cloud estate.</p>
-              <Link href="/services/cloud-managed-services/aws" className="learn-more">AWS Managed Services →</Link>
-              <Link href="/services/cloud-managed-services/azure" className="learn-more" style={{ marginLeft: '16px' }}>Azure Managed Services →</Link>
             </div>
             <div className="service-card reveal">
-              <div className="service-card-header">
-                <div className="service-icon">📊</div>
+              <Image src="/assets/images/service-finops.svg" alt="FinOps cost optimization analytics" className="service-image" width={800} height={450} />
+              <div className="service-content">
+                <span className="service-label">SERVICE</span>
                 <h3>FinOps &amp; Cost Optimization</h3>
+                <p>Apply the <strong>FinOps framework</strong> to achieve full cloud spend visibility, eliminate wasted resources, implement rightsizing strategies, and build a culture of cloud financial accountability — delivering an average <strong>30% cost reduction within 90 days</strong>.</p>
+                <Link href="/services/finops-cost-optimization" className="learn-more">Learn More →</Link>
               </div>
-              <p>Apply the <strong>FinOps framework</strong> to achieve full cloud spend visibility, eliminate wasted resources, implement rightsizing strategies, and build a culture of cloud financial accountability — delivering an average <strong>30% cost reduction within 90 days</strong>.</p>
-              <Link href="/services/finops-cost-optimization" className="learn-more">Learn More →</Link>
             </div>
             <div className="service-card reveal">
-              <div className="service-card-header">
-                <div className="service-icon">🧾</div>
+              <Image src="/assets/images/service-billing.svg" alt="Cloud billing and chargeback reporting" className="service-image" width={800} height={450} />
+              <div className="service-content">
+                <span className="service-label">SERVICE</span>
                 <h3>Cloud Billing Management</h3>
+                <p>Centralized, multi-account <strong>cloud billing management</strong> with chargeback reporting, anomaly detection, and executive dashboards — giving CFOs and finance teams full visibility across Riyadh, Jeddah, and Dammam operations.</p>
+                <Link href="/services/cloud-billing-management" className="learn-more">Learn More →</Link>
               </div>
-              <p>Centralized, multi-account <strong>cloud billing management</strong> with chargeback reporting, anomaly detection, and executive dashboards — giving CFOs and finance teams full visibility across Riyadh, Jeddah, and Dammam operations.</p>
-              <Link href="/services/cloud-billing-management" className="learn-more">Learn More →</Link>
             </div>
             <div className="service-card reveal">
-              <div className="service-card-header">
-                <div className="service-icon">🚀</div>
+              <Image src="/assets/images/service-migration.svg" alt="Cloud migration and modernization roadmap" className="service-image" width={800} height={450} />
+              <div className="service-content">
+                <span className="service-label">SERVICE</span>
                 <h3>Cloud Migration &amp; Modernization</h3>
+                <p>End-to-end <strong>cloud migration services</strong> from discovery and assessment through cutover and post-migration optimization — using proven rehost, replatform, and refactor strategies to minimize downtime and accelerate time-to-value.</p>
+                <Link href="/services/cloud-migration" className="learn-more">Learn More →</Link>
               </div>
-              <p>End-to-end <strong>cloud migration services</strong> from discovery and assessment through cutover and post-migration optimization — using proven rehost, replatform, and refactor strategies to minimize downtime and accelerate time-to-value.</p>
-              <Link href="/services/cloud-migration" className="learn-more">Learn More →</Link>
             </div>
             <div className="service-card reveal">
-              <div className="service-card-header">
-                <div className="service-icon">🔒</div>
+              <Image src="/assets/images/service-security.svg" alt="Cloud security governance and compliance" className="service-image" width={800} height={450} />
+              <div className="service-content">
+                <span className="service-label">SERVICE</span>
                 <h3>Cloud Security &amp; Governance</h3>
+                <p>Enterprise <strong>cloud security</strong> — continuous compliance monitoring, CSPM, IAM hardening, encryption governance, and incident response aligned with <strong>NCA ECC standards</strong> and Saudi regulatory requirements.</p>
+                <Link href="/services/cloud-security-governance" className="learn-more">Learn More →</Link>
               </div>
-              <p>Enterprise <strong>cloud security</strong> — continuous compliance monitoring, CSPM, IAM hardening, encryption governance, and incident response aligned with <strong>NCA ECC standards</strong> and Saudi regulatory requirements.</p>
-              <Link href="/services/cloud-security-governance" className="learn-more">Learn More →</Link>
             </div>
-            <div className="service-card reveal" style={{ background: 'var(--gradient-card)', borderColor: 'var(--dark-border)' }}>
-              <div className="service-card-header">
-                <div className="service-icon">🛠️</div>
+            <div className="service-card reveal">
+              <Image src="/assets/images/service-custom.svg" alt="Custom cloud solutions architecture" className="service-image" width={800} height={450} />
+              <div className="service-content">
+                <span className="service-label">SERVICE</span>
                 <h3>Custom Cloud Solutions</h3>
+                <p>Need a cloud service tailored to your specific requirements? We design and deliver <strong>custom multi-cloud solutions</strong> for enterprises across Riyadh, Jeddah, Dammam, and the wider Kingdom — from architecture design to full managed operations.</p>
+                <Link href="/contact" className="learn-more">Learn More →</Link>
               </div>
-              <p>Need a cloud service tailored to your specific requirements? We design and deliver <strong>custom multi-cloud solutions</strong> for enterprises across Riyadh, Jeddah, Dammam, and the wider Kingdom — from architecture design to full managed operations.</p>
-              <Link href="/contact" className="btn btn-accent btn-sm" style={{ marginTop: '8px' }}>Get in Touch</Link>
             </div>
           </div>
         </div>

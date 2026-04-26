@@ -18,13 +18,13 @@ const CloudManagedServicesContent = () => {
       <PlatformSelector />
       <ServicesGrid />
 
-      {/* WHY CLOUD MANAGED SERVICES */}
+      {/* WHY Managed Cloud Services */}
       <section className="section" style={{ background: 'var(--dark-surface)' }}>
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-primary">⭐ Key Benefits</div>
             <h2 className="display-md">Why Outsource Cloud Management?</h2>
-            <p>Enterprises across Riyadh, Jeddah, and Dammam partner with GulfStream Technology for measurable cloud outcomes.</p>
+            <p>Enterprises across Riyadh, Jeddah, and Dammam partner with GulfStream Technologies for measurable cloud outcomes.</p>
           </div>
           <div className="grid-3 reveal">
             <div className="card">

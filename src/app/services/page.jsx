@@ -13,7 +13,7 @@ export const metadata = {
     'FinOps consulting Saudi Arabia',
     'cloud migration Saudi Arabia',
     'cloud security governance Saudi Arabia',
-    'cloud managed services Riyadh',
+    'Managed Cloud Services Riyadh',
   ],
   alternates: { canonical: 'https://gulfstreamtech.com.sa/services/' },
   openGraph: {
@@ -53,7 +53,7 @@ const serviceSchema = {
   serviceType: 'Managed Cloud Services',
   hasOfferCatalog: {
     '@type': 'OfferCatalog',
-    name: 'Cloud Managed Services',
+    name: 'Managed Cloud Services',
     itemListElement: [
       { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'AWS Managed Services Saudi Arabia' } },
       { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Azure Managed Services Saudi Arabia' } },

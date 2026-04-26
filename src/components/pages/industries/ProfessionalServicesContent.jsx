@@ -17,7 +17,7 @@ const ProfessionalServicesContent = () => {
           </nav>
           <div className="badge badge-primary" style={{ marginBottom: '16px' }}>🏢 Professional Services Cloud</div>
           <h1 className="display-lg">Secure Cloud for<br /><span className="text-gradient">Professional Services Saudi Arabia</span></h1>
-          <p>GulfStream Technology delivers <strong>secure, compliant cloud environments</strong> for consulting, legal, and financial services firms in Saudi Arabia — protecting sensitive client data, enabling enterprise collaboration, and ensuring regulatory compliance across all cloud operations.</p>
+          <p>GulfStream Technologies delivers <strong>secure, compliant cloud environments</strong> for consulting, legal, and financial services firms in Saudi Arabia — protecting sensitive client data, enabling enterprise collaboration, and ensuring regulatory compliance across all cloud operations.</p>
           <div className="hero-trust-strip">
             <span className="hero-trust-label">Multi-cloud certified cloud security experts</span>
             <div className="hero-quick-stats">
@@ -45,7 +45,7 @@ const ProfessionalServicesContent = () => {
       <section className="section" style={{ paddingBottom: '0' }}>
         <div className="container">
           <div className="reveal" style={{ maxWidth: '900px', margin: '0 auto', lineHeight: '1.8' }}>
-            <p>Professional services firms in Saudi Arabia — consulting, legal, accounting, and financial advisory — handle some of the most sensitive data in the enterprise landscape. <strong>Secure cloud for professional services in Saudi Arabia</strong> must provide zero-trust security, ISO 27001-aligned compliance, complete audit trails, and encrypted document management — while enabling seamless hybrid collaboration. GulfStream Technology builds <strong>compliance-first cloud environments</strong> on <Link href="/services/cloud-managed-services/aws" style={{ color: 'var(--accent)' }}>AWS</Link> and <Link href="/services/cloud-managed-services/azure" style={{ color: 'var(--accent)' }}>Azure</Link> — designed for firms across Riyadh, Jeddah, and the GCC.</p>
+            <p>Professional services firms in Saudi Arabia — consulting, legal, accounting, and financial advisory — handle some of the most sensitive data in the enterprise landscape. <strong>Secure cloud for professional services in Saudi Arabia</strong> must provide zero-trust security, ISO 27001-aligned compliance, complete audit trails, and encrypted document management — while enabling seamless hybrid collaboration. GulfStream Technologies builds <strong>compliance-first cloud environments</strong> on <Link href="/services/cloud-managed-services/aws" style={{ color: 'var(--accent)' }}>AWS</Link> and <Link href="/services/cloud-managed-services/azure" style={{ color: 'var(--accent)' }}>Azure</Link> — designed for firms across Riyadh, Jeddah, and the GCC.</p>
             <p>With deep expertise in <Link href="/services/cloud-security-governance" style={{ color: 'var(--accent)' }}>zero-trust cloud architecture</Link>, regulatory compliance automation, and <Link href="/services/finops-cost-optimization" style={{ color: 'var(--accent)' }}>client-attributable cloud cost management</Link>, we help professional services firms achieve 100% data encryption, ISO 27001 alignment, 40% IT overhead reduction, and zero data breach incidents — protecting client trust while modernizing operations.</p>
           </div>
         </div>

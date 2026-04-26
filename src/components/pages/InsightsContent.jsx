@@ -85,7 +85,7 @@ const InsightsContent = () => {
           </nav>
           <div className="badge badge-primary" style={{ marginBottom: '16px' }}>📚 Cloud Insights &amp; Resources</div>
           <h1 className="display-lg">Cloud Insights<br /><span className="text-gradient">Saudi Arabia</span></h1>
-          <p>Expert cloud insights across AWS, Azure, Google Cloud, and Oracle Cloud — FinOps strategies, cloud cost optimization guides, and security best practices from the GulfStream Technology team — helping Saudi enterprises make smarter cloud decisions.</p>
+          <p>Expert cloud insights across AWS, Azure, Google Cloud, and Oracle Cloud — FinOps strategies, cloud cost optimization guides, and security best practices from the GulfStream Technologies team — helping Saudi enterprises make smarter cloud decisions.</p>
         </div>
       </section>
 
@@ -93,7 +93,7 @@ const InsightsContent = () => {
       <section className="section">
         <div className="container">
           <div className="reveal" style={{ maxWidth: '900px', margin: '0 auto 48px', lineHeight: '1.8' }}>
-            <p>GulfStream Technology publishes in-depth guides on <Link href="/services/finops-cost-optimization" style={{ color: 'var(--accent)' }}>cloud cost optimization in Saudi Arabia</Link>, <Link href="/services/cloud-managed-services/aws" style={{ color: 'var(--accent)' }}>AWS managed services</Link>, <Link href="/services/cloud-managed-services/azure" style={{ color: 'var(--accent)' }}>Azure cloud consulting</Link>, <Link href="/services/cloud-managed-services/google" style={{ color: 'var(--accent)' }}>Google Cloud solutions</Link>, <Link href="/services/cloud-security-governance" style={{ color: 'var(--accent)' }}>cloud security governance</Link>, and <Link href="/services/finops-cost-optimization" style={{ color: 'var(--accent)' }}>FinOps services for Saudi enterprises</Link>. Our insights are written by certified multi-cloud architects with hands-on experience managing enterprise cloud environments across Riyadh, Jeddah, and Dammam.</p>
+            <p>GulfStream Technologies publishes in-depth guides on <Link href="/services/finops-cost-optimization" style={{ color: 'var(--accent)' }}>cloud cost optimization in Saudi Arabia</Link>, <Link href="/services/cloud-managed-services/aws" style={{ color: 'var(--accent)' }}>AWS managed services</Link>, <Link href="/services/cloud-managed-services/azure" style={{ color: 'var(--accent)' }}>Azure cloud consulting</Link>, <Link href="/services/cloud-managed-services/google" style={{ color: 'var(--accent)' }}>Google Cloud solutions</Link>, <Link href="/services/cloud-security-governance" style={{ color: 'var(--accent)' }}>cloud security governance</Link>, and <Link href="/services/finops-cost-optimization" style={{ color: 'var(--accent)' }}>FinOps services for Saudi enterprises</Link>. Our insights are written by certified multi-cloud architects with hands-on experience managing enterprise cloud environments across Riyadh, Jeddah, and Dammam.</p>
           </div>
 
           {/* CATEGORY FILTER */}
@@ -246,7 +246,7 @@ const InsightsContent = () => {
             </div>
             <div className="card" style={{ marginBottom: '16px' }}>
               <h3 style={{ marginBottom: '8px' }}>Do you offer cloud consulting beyond insights?</h3>
-              <p style={{ color: 'var(--text-secondary)', lineHeight: 1.7 }}>Yes. GulfStream Technology provides <Link href="/services" style={{ color: 'var(--accent)' }}>full cloud managed services</Link> including <Link href="/services/cloud-managed-services/aws" style={{ color: 'var(--accent)' }}>AWS managed services</Link>, <Link href="/services/cloud-managed-services/azure" style={{ color: 'var(--accent)' }}>Azure managed services</Link>, <Link href="/services/cloud-managed-services/google" style={{ color: 'var(--accent)' }}>Google Cloud services</Link>, <Link href="/services/finops-cost-optimization" style={{ color: 'var(--accent)' }}>FinOps cost optimization</Link>, and <Link href="/services/cloud-migration" style={{ color: 'var(--accent)' }}>cloud migration</Link> for Saudi enterprises.</p>
+              <p style={{ color: 'var(--text-secondary)', lineHeight: 1.7 }}>Yes. GulfStream Technologies provides <Link href="/services" style={{ color: 'var(--accent)' }}>full Managed Cloud Services</Link> including <Link href="/services/cloud-managed-services/aws" style={{ color: 'var(--accent)' }}>AWS managed services</Link>, <Link href="/services/cloud-managed-services/azure" style={{ color: 'var(--accent)' }}>Azure managed services</Link>, <Link href="/services/cloud-managed-services/google" style={{ color: 'var(--accent)' }}>Google Cloud services</Link>, <Link href="/services/finops-cost-optimization" style={{ color: 'var(--accent)' }}>FinOps cost optimization</Link>, and <Link href="/services/cloud-migration" style={{ color: 'var(--accent)' }}>cloud migration</Link> for Saudi enterprises.</p>
             </div>
           </div>
         </div>

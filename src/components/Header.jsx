@@ -104,7 +104,7 @@ const Header = () => {
             <div className="dropdown-menu">
               <div className="dropdown-submenu">
                 <Link href="/services/cloud-managed-services" className={`dropdown-item dropdown-submenu-toggle ${pathname.startsWith('/services/cloud-managed-services') ? 'active' : ''}`}>
-                  <span><span className="item-icon">🌐</span>Cloud Managed Services</span>
+                  <span><span className="item-icon">🌐</span>Managed Cloud Services</span>
                   <svg className="submenu-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polyline points="9 6 15 12 9 18"></polyline></svg>
                 </Link>
                 <div className="dropdown-submenu-menu">

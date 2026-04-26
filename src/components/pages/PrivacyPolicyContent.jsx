@@ -22,7 +22,7 @@ const PrivacyPolicyContent = () => {
             <span className="text-gradient">Data & Privacy</span>
           </h1>
           <p>
-            At GulfStream Technology, protecting your privacy and data is our highest priority. This Privacy Policy explains how we collect, use, store, and protect your information across all of our digital properties and cloud managed services.
+            At GulfStream Technologies, protecting your privacy and data is our highest priority. This Privacy Policy explains how we collect, use, store, and protect your information across all of our digital properties and Managed Cloud Services.
           </p>
           <p style={{ fontSize: '0.95rem', color: 'var(--text-secondary)', marginTop: '16px' }}>
             <strong>Last Updated:</strong> April 14, 2026 | <strong>Effective Date:</strong> April 14, 2026
@@ -37,7 +37,7 @@ const PrivacyPolicyContent = () => {
           <div className="card reveal" style={{ marginBottom: '40px' }}>
             <h2 style={{ fontSize: '1.4rem', fontWeight: 600, marginBottom: '16px', color: 'var(--text-primary)' }}>1. Introduction</h2>
             <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8, marginBottom: '12px' }}>
-              GulfStream Technology (&ldquo;we,&rdquo; &ldquo;us,&rdquo; &ldquo;our,&rdquo; or &ldquo;Company&rdquo;) is committed to transparency regarding how we collect and use information about you. This Privacy Policy applies to our website, cloud managed services, and all digital interactions with our organization.
+              GulfStream Technologies (&ldquo;we,&rdquo; &ldquo;us,&rdquo; &ldquo;our,&rdquo; or &ldquo;Company&rdquo;) is committed to transparency regarding how we collect and use information about you. This Privacy Policy applies to our website, Managed Cloud Services, and all digital interactions with our organization.
             </p>
             <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8 }}>
               By accessing our website or using our services, you acknowledge that you have read, understood, and agree to be bound by this Privacy Policy. If you do not agree with our policies and practices, please do not use our website or engage our services.
@@ -92,7 +92,7 @@ const PrivacyPolicyContent = () => {
             </p>
             
             <ul style={{ color: 'var(--text-secondary)', lineHeight: 1.8, marginLeft: '24px', marginBottom: '16px' }}>
-              <li><strong>Service Delivery:</strong> To provide, maintain, and improve our cloud managed services, customer support, and technical assistance</li>
+              <li><strong>Service Delivery:</strong> To provide, maintain, and improve our Managed Cloud Services, customer support, and technical assistance</li>
               <li><strong>Communication:</strong> To send service updates, security alerts, billing notifications, and respond to your inquiries</li>
               <li><strong>Marketing & Outreach:</strong> To send newsletters, promotional content, and industry insights (with your consent, where required)</li>
               <li><strong>Analytics & Optimization:</strong> To analyze website usage, optimize user experience, and improve our services</li>
@@ -126,7 +126,7 @@ const PrivacyPolicyContent = () => {
           <div className="card reveal" style={{ marginBottom: '40px' }}>
             <h2 style={{ fontSize: '1.4rem', fontWeight: 600, marginBottom: '16px', color: 'var(--text-primary)' }}>5. Third-Party Services & Cloud Platforms</h2>
             <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8, marginBottom: '20px' }}>
-              We work with industry-leading cloud platforms and third-party service providers. When you use our cloud managed services, your data may be processed through the following platforms:
+              We work with industry-leading cloud platforms and third-party service providers. When you use our Managed Cloud Services, your data may be processed through the following platforms:
             </p>
             
             <h3 style={{ fontSize: '1.1rem', fontWeight: 600, marginBottom: '12px', marginTop: '16px', color: 'var(--text-primary)' }}>Cloud Infrastructure Providers</h3>
@@ -220,7 +220,7 @@ const PrivacyPolicyContent = () => {
           <div className="card reveal" style={{ marginBottom: '40px' }}>
             <h2 style={{ fontSize: '1.4rem', fontWeight: 600, marginBottom: '16px', color: 'var(--text-primary)' }}>9. International Data Transfers</h2>
             <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8, marginBottom: '20px' }}>
-              GulfStream Technology is headquartered in Saudi Arabia. Your information may be transferred, stored, and processed in Saudi Arabia or other countries where we or our service providers operate, including the United States, Europe, and Asia.
+              GulfStream Technologies is headquartered in Saudi Arabia. Your information may be transferred, stored, and processed in Saudi Arabia or other countries where we or our service providers operate, including the United States, Europe, and Asia.
             </p>
             
             <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8, marginBottom: '20px' }}>

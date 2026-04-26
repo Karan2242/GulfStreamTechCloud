@@ -50,7 +50,7 @@ const breadcrumbSchema = {
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://gulfstreamtech.com.sa/' },
     { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://gulfstreamtech.com.sa/services/' },
-    { '@type': 'ListItem', position: 3, name: 'Cloud Managed Services', item: 'https://gulfstreamtech.com.sa/services/cloud-managed-services/' },
+    { '@type': 'ListItem', position: 3, name: 'Managed Cloud Services', item: 'https://gulfstreamtech.com.sa/services/cloud-managed-services/' },
     { '@type': 'ListItem', position: 4, name: 'AWS Managed Services' },
   ],
 };

@@ -14,11 +14,11 @@ const AwsManagedContent = () => {
       <section className="page-hero">
         <div className="container">
           <div className="breadcrumb">
-            <Link href="/">Home</Link><span>›</span><Link href="/services">Services</Link><span>›</span><Link href="/services/cloud-managed-services">Cloud Managed Services</Link><span>›</span><span>AWS</span>
+            <Link href="/">Home</Link><span>›</span><Link href="/services">Services</Link><span>›</span><Link href="/services/cloud-managed-services">Managed Cloud Services</Link><span>›</span><span>AWS</span>
           </div>
           <div className="badge badge-primary" style={{ marginBottom: '16px' }}>☁️ AWS Managed Services</div>
           <h1 className="display-lg">AWS Managed Services<br /><span className="text-gradient">in Saudi Arabia</span></h1>
-          <p>GulfStream Technology is a leading managed cloud services provider for AWS in Saudi Arabia. We manage your entire AWS environment — from EC2, RDS, and EKS to Lambda and S3 — with certified engineers, 24/7 cloud monitoring services, and FinOps consulting to reduce costs by up to 32%.</p>
+          <p>GulfStream Technologies is a leading managed cloud services provider for AWS in Saudi Arabia. We manage your entire AWS environment — from EC2, RDS, and EKS to Lambda and S3 — with certified engineers, 24/7 cloud monitoring services, and FinOps consulting to reduce costs by up to 32%.</p>
           <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
             <Link href="/book-a-review" className="btn btn-primary btn-lg">Book a Free AWS Assessment</Link>
             <Link href="/contact" className="btn btn-outline btn-lg">Talk to an Expert</Link>
@@ -276,7 +276,7 @@ const AwsManagedContent = () => {
             <h2 className="display-md">AWS Managed Services in Riyadh</h2>
           </div>
           <div className="reveal" style={{ maxWidth: '900px', margin: '0 auto', lineHeight: '1.8' }}>
-            <p>As a cloud management company based in Saudi Arabia, GulfStream Technology provides AWS managed services tailored to the unique needs of enterprises in Riyadh, Jeddah, and Dammam. Our Riyadh-based team of certified AWS architects delivers 24/7 cloud monitoring services with local response times, ensuring your workloads meet Saudi regulatory requirements including NCA ECC compliance.</p>
+            <p>As a cloud management company based in Saudi Arabia, GulfStream Technologies provides AWS managed services tailored to the unique needs of enterprises in Riyadh, Jeddah, and Dammam. Our Riyadh-based team of certified AWS architects delivers 24/7 cloud monitoring services with local response times, ensuring your workloads meet Saudi regulatory requirements including NCA ECC compliance.</p>
             <p style={{ marginTop: '16px' }}>Whether you&apos;re running mission-critical applications on EC2, managing databases with RDS and Aurora, or deploying containerized workloads on EKS — our team ensures enterprise-grade operations, security governance, and FinOps consulting that aligns with your business goals and Vision 2030 digital transformation objectives.</p>
           </div>
         </div>
@@ -352,7 +352,7 @@ const AwsManagedContent = () => {
             </div>
             <div className="card">
               <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>How much do AWS Managed Services cost in Saudi Arabia?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>Costs vary based on your environment size, number of AWS accounts, and support level required. GulfStream Technology offers flexible pricing tiers from basic monitoring to fully managed operations. <Link href="/book-a-review" style={{ color: 'var(--accent)' }}>Book a free assessment</Link> for a tailored quote.</p>
+              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>Costs vary based on your environment size, number of AWS accounts, and support level required. GulfStream Technologies offers flexible pricing tiers from basic monitoring to fully managed operations. <Link href="/book-a-review" style={{ color: 'var(--accent)' }}>Book a free assessment</Link> for a tailored quote.</p>
             </div>
             <div className="card">
               <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>How quickly can you reduce our AWS costs?</h3>

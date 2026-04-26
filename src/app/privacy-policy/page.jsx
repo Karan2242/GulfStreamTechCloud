@@ -13,14 +13,14 @@ const breadcrumbSchema = {
 
 export const metadata = {
   title: 'Privacy Policy — GulfStream Technologies',
-  description: 'Review GulfStream Technologies\' comprehensive privacy policy outlining how we collect, use, and protect your data across cloud managed services.',
+  description: 'Review GulfStream Technologies\' comprehensive privacy policy outlining how we collect, use, and protect your data across Managed Cloud Services.',
   keywords: ['privacy policy', 'data protection', 'GDPR compliance', 'cloud services privacy', 'data security', 'cookie policy'],
   alternates: {
     canonical: 'https://gulfstreamtech.com.sa/privacy-policy/',
   },
   openGraph: {
     title: 'Privacy Policy — GulfStream Technologies',
-    description: 'Review GulfStream Technologies\' comprehensive privacy policy outlining how we collect, use, and protect your data across cloud managed services.',
+    description: 'Review GulfStream Technologies\' comprehensive privacy policy outlining how we collect, use, and protect your data across Managed Cloud Services.',
     url: 'https://gulfstreamtech.com.sa/privacy-policy/',
     type: 'website',
     siteName: 'GulfStream Technologies',
@@ -29,7 +29,7 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Privacy Policy — GulfStream Technologies',
-    description: 'Review GulfStream Technologies\' comprehensive privacy policy outlining how we collect, use, and protect your data across cloud managed services.',
+    description: 'Review GulfStream Technologies\' comprehensive privacy policy outlining how we collect, use, and protect your data across Managed Cloud Services.',
     images: [DEFAULT_OG_IMAGE.url],
   },
 };

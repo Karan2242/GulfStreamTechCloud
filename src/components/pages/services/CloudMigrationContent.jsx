@@ -17,7 +17,7 @@ const CloudMigrationContent = () => {
           </div>
           <div className="badge badge-primary" style={{ marginBottom: '16px' }}>🚀 Cloud Migration &amp; Modernization</div>
           <h1 className="display-lg">Cloud Migration &amp; Modernization<br /><span className="text-gradient">in Saudi Arabia</span></h1>
-          <p>GulfStream Technology designs and executes cloud migration projects in Saudi Arabia with zero business disruption — moving your workloads to AWS, Azure, or multi-cloud using our proven 6Rs methodology, wave-based planning, and post-migration optimization for enterprises in Riyadh, Jeddah, and Dammam.</p>
+          <p>GulfStream Technologies designs and executes cloud migration projects in Saudi Arabia with zero business disruption — moving your workloads to AWS, Azure, or multi-cloud using our proven 6Rs methodology, wave-based planning, and post-migration optimization for enterprises in Riyadh, Jeddah, and Dammam.</p>
           <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
             <Link href="/book-a-review" className="btn btn-primary btn-lg">Book a Free Migration Assessment</Link>
             <Link href="/contact" className="btn btn-outline btn-lg">Talk to an Expert</Link>
@@ -354,8 +354,8 @@ const CloudMigrationContent = () => {
             <h2 className="display-md">Cloud Migration Services in Riyadh</h2>
           </div>
           <div className="reveal" style={{ maxWidth: '900px', margin: '0 auto', lineHeight: '1.8' }}>
-            <p>As a cloud migration partner based in Saudi Arabia, GulfStream Technology delivers end-to-end migration services for enterprises in Riyadh, Jeddah, and Dammam. Our local team ensures NCA ECC compliance, data sovereignty requirements, and Arabic-language support throughout every phase of your cloud migration journey.</p>
-            <p style={{ marginTop: '16px' }}>Post-migration, we transition seamlessly into our <Link href="/services/cloud-managed-services" style={{ color: 'var(--accent)' }}>cloud managed services</Link> for ongoing 24/7 operations. Our migration expertise spans <Link href="/services/cloud-managed-services/aws" style={{ color: 'var(--accent)' }}>AWS managed services</Link>, <Link href="/services/cloud-managed-services/azure" style={{ color: 'var(--accent)' }}>Azure cloud services</Link>, and multi-cloud environments — with integrated <Link href="/services/finops-cost-optimization" style={{ color: 'var(--accent)' }}>FinOps cost optimization</Link> from day one.</p>
+            <p>As a cloud migration partner based in Saudi Arabia, GulfStream Technologies delivers end-to-end migration services for enterprises in Riyadh, Jeddah, and Dammam. Our local team ensures NCA ECC compliance, data sovereignty requirements, and Arabic-language support throughout every phase of your cloud migration journey.</p>
+            <p style={{ marginTop: '16px' }}>Post-migration, we transition seamlessly into our <Link href="/services/cloud-managed-services" style={{ color: 'var(--accent)' }}>Managed Cloud Services</Link> for ongoing 24/7 operations. Our migration expertise spans <Link href="/services/cloud-managed-services/aws" style={{ color: 'var(--accent)' }}>AWS managed services</Link>, <Link href="/services/cloud-managed-services/azure" style={{ color: 'var(--accent)' }}>Azure cloud services</Link>, and multi-cloud environments — with integrated <Link href="/services/finops-cost-optimization" style={{ color: 'var(--accent)' }}>FinOps cost optimization</Link> from day one.</p>
           </div>
         </div>
       </section>

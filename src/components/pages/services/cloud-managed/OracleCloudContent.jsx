@@ -14,11 +14,11 @@ const OracleCloudContent = () => {
       <section className="page-hero">
         <div className="container">
           <div className="breadcrumb">
-            <Link href="/">Home</Link><span>›</span><Link href="/services">Services</Link><span>›</span><Link href="/services/cloud-managed-services">Cloud Managed Services</Link><span>›</span><span>Oracle Cloud</span>
+            <Link href="/">Home</Link><span>›</span><Link href="/services">Services</Link><span>›</span><Link href="/services/cloud-managed-services">Managed Cloud Services</Link><span>›</span><span>Oracle Cloud</span>
           </div>
-          <div className="badge badge-primary" style={{ marginBottom: '16px' }}>🔴 Oracle Cloud Managed Services</div>
-          <h1 className="display-lg">Oracle Cloud Managed Services<br /><span className="text-gradient">in Saudi Arabia</span></h1>
-          <p>GulfStream Technology is a specialized managed cloud services provider for Oracle Cloud Infrastructure (OCI) in Saudi Arabia. We deliver end-to-end OCI management — from Autonomous Database and Exadata to OKE and Cloud Guard — with 24/7 cloud monitoring services, Oracle licensing optimization, and FinOps consulting to reduce costs by up to 35%.</p>
+          <div className="badge badge-primary" style={{ marginBottom: '16px' }}>🔴 Oracle Managed Cloud Services</div>
+          <h1 className="display-lg">Oracle Managed Cloud Services<br /><span className="text-gradient">in Saudi Arabia</span></h1>
+          <p>GulfStream Technologies is a specialized managed cloud services provider for Oracle Cloud Infrastructure (OCI) in Saudi Arabia. We deliver end-to-end OCI management — from Autonomous Database and Exadata to OKE and Cloud Guard — with 24/7 cloud monitoring services, Oracle licensing optimization, and FinOps consulting to reduce costs by up to 35%.</p>
           <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
             <Link href="/book-a-review" className="btn btn-primary btn-lg">Book a Free OCI Assessment</Link>
             <Link href="/contact" className="btn btn-outline btn-lg">Talk to an Expert</Link>
@@ -249,10 +249,10 @@ const OracleCloudContent = () => {
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-primary">🇸🇦 Local Expertise</div>
-            <h2 className="display-md">Oracle Cloud Managed Services in Riyadh</h2>
+            <h2 className="display-md">Oracle Managed Cloud Services in Riyadh</h2>
           </div>
           <div className="reveal" style={{ maxWidth: '900px', margin: '0 auto', lineHeight: '1.8' }}>
-            <p>As a cloud management company based in Saudi Arabia, GulfStream Technology provides Oracle Cloud managed services tailored to enterprises in Riyadh, Jeddah, and Dammam. With Oracle&apos;s dedicated Saudi Arabia cloud region, we help organizations maintain data residency compliance while leveraging the full power of OCI — including Autonomous Database, Exadata, and Oracle&apos;s industry-leading enterprise applications.</p>
+            <p>As a cloud management company based in Saudi Arabia, GulfStream Technologies provides Oracle Managed Cloud Services tailored to enterprises in Riyadh, Jeddah, and Dammam. With Oracle&apos;s dedicated Saudi Arabia cloud region, we help organizations maintain data residency compliance while leveraging the full power of OCI — including Autonomous Database, Exadata, and Oracle&apos;s industry-leading enterprise applications.</p>
             <p style={{ marginTop: '16px' }}>Our Riyadh-based team delivers 24/7 Oracle database monitoring, licensing optimization for BYOL and Universal Credits, security governance through Cloud Guard, and cloud cost management services — ensuring your Oracle Cloud investment supports Vision 2030 objectives. For multi-cloud strategies, see our <Link href="/services/cloud-managed-services/aws" style={{ color: 'var(--accent)' }}>AWS managed services</Link> and <Link href="/services/cloud-managed-services/azure" style={{ color: 'var(--accent)' }}>Azure managed services</Link>.</p>
           </div>
         </div>
@@ -323,8 +323,8 @@ const OracleCloudContent = () => {
           </div>
           <div className="grid-2 reveal">
             <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>What are Oracle Cloud Managed Services?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>Oracle Cloud Managed Services involve outsourcing the management of your OCI environment to certified cloud experts. This includes 24/7 monitoring, security governance with Cloud Guard, database performance tuning, licensing optimization, and incident response.</p>
+              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>What are Oracle Managed Cloud Services?</h3>
+              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>Oracle Managed Cloud Services involve outsourcing the management of your OCI environment to certified cloud experts. This includes 24/7 monitoring, security governance with Cloud Guard, database performance tuning, licensing optimization, and incident response.</p>
             </div>
             <div className="card">
               <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>How do you optimize Oracle licensing costs?</h3>
@@ -335,8 +335,8 @@ const OracleCloudContent = () => {
               <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>Yes. We handle end-to-end Oracle database migrations from on-premises or other clouds to OCI, including Autonomous Database and Exadata Cloud Service — with zero-downtime strategies and full data validation.</p>
             </div>
             <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>How much do Oracle Cloud Managed Services cost?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>Costs depend on your environment complexity, number of tenancies, and database workloads. GulfStream Technology offers flexible pricing from basic monitoring to fully managed operations. <Link href="/book-a-review" style={{ color: 'var(--accent)' }}>Book a free assessment</Link> for a tailored quote.</p>
+              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>How much do Oracle Managed Cloud Services cost?</h3>
+              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>Costs depend on your environment complexity, number of tenancies, and database workloads. GulfStream Technologies offers flexible pricing from basic monitoring to fully managed operations. <Link href="/book-a-review" style={{ color: 'var(--accent)' }}>Book a free assessment</Link> for a tailored quote.</p>
             </div>
             <div className="card">
               <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>Why choose OCI managed services in Saudi Arabia?</h3>

@@ -83,7 +83,7 @@ const TermsOfServiceContent = () => {
 
             <h3 style={{ fontSize: '1.1rem', fontWeight: 600, marginBottom: '12px', marginTop: '16px', color: 'var(--text-primary)' }}>Service Categories</h3>
             <ul style={{ color: 'var(--text-secondary)', lineHeight: 1.8, marginLeft: '24px', marginBottom: '16px' }}>
-              <li>Cloud managed services and 24/7 monitoring</li>
+              <li>Managed Cloud Services and 24/7 monitoring</li>
               <li>FinOps cost optimization and billing management</li>
               <li>Cloud migration and infrastructure modernization</li>
               <li>Cloud security, governance, and compliance</li>

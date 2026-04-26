@@ -37,8 +37,8 @@ const PricingContent = () => {
             <Link href="/">Home</Link><span>›</span><span>Pricing</span>
           </div>
           <div className="badge badge-primary" style={{ marginBottom: '16px' }}>💰 Pricing</div>
-          <h1 className="display-lg">Cloud Managed Services Pricing<br /><span className="text-gradient">Saudi Arabia</span></h1>
-          <p>Transparent, enterprise-grade multi-cloud managed services pricing starting from SAR 8,500/month — with no setup fees, no lock-in contracts, and no markup on cloud provider costs. Every engagement starts with a free Cloud Assessment to right-size your plan.</p>
+          <h1 className="display-lg">Managed Cloud Services Pricing<br /><span className="text-gradient">Saudi Arabia</span></h1>
+          <p>Transparent, enterprise-grade multi-Managed Cloud Services pricing starting from SAR 8,500/month — with no setup fees, no lock-in contracts, and no markup on cloud provider costs. Every engagement starts with a free Cloud Assessment to right-size your plan.</p>
         </div>
       </section>
 
@@ -167,7 +167,7 @@ const PricingContent = () => {
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-primary">📋 How It Works</div>
-            <h2 className="display-md">How Cloud Managed Services Pricing Works</h2>
+            <h2 className="display-md">How Managed Cloud Services Pricing Works</h2>
           </div>
           <div className="grid-3 reveal">
             <div className="card" style={{ textAlign: 'center' }}>
@@ -209,7 +209,7 @@ const PricingContent = () => {
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-accent">📈 ROI</div>
-            <h2 className="display-md">ROI of Cloud Managed Services</h2>
+            <h2 className="display-md">ROI of Managed Cloud Services</h2>
             <p style={{ maxWidth: '700px', margin: '0 auto' }}>Our clients typically recover the full cost of managed services through cloud savings alone — within the first 60-90 days. See how the numbers work for a typical Growth plan client.</p>
           </div>
           <div className="grid-2 reveal">
@@ -247,10 +247,10 @@ const PricingContent = () => {
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-primary">🇸🇦 Local Expertise</div>
-            <h2 className="display-md">Cloud Managed Services Pricing for Saudi Enterprises</h2>
+            <h2 className="display-md">Managed Cloud Services Pricing for Saudi Enterprises</h2>
           </div>
           <div className="reveal" style={{ maxWidth: '900px', margin: '0 auto', lineHeight: '1.8' }}>
-            <p>GulfStream Technology is headquartered in Riyadh and delivers <Link href="/services/cloud-managed-services" style={{ color: 'var(--accent)' }}>cloud managed services</Link> to enterprises across Saudi Arabia. Our pricing is designed for the Saudi market — billed in SAR with no markup on <Link href="/services/cloud-managed-services/aws" style={{ color: 'var(--accent)' }}>AWS</Link>, <Link href="/services/cloud-managed-services/azure" style={{ color: 'var(--accent)' }}>Azure</Link>, <Link href="/services/cloud-managed-services/google" style={{ color: 'var(--accent)' }}>Google Cloud</Link>, or <Link href="/services/cloud-managed-services/oracle" style={{ color: 'var(--accent)' }}>Oracle Cloud</Link> provider costs. Whether you operate in Riyadh, Jeddah, or Dammam, our team of certified engineers provides 24/7 monitoring, <Link href="/services/finops-cost-optimization" style={{ color: 'var(--accent)' }}>FinOps cost optimization</Link>, and <Link href="/services/cloud-security-governance" style={{ color: 'var(--accent)' }}>security governance</Link> aligned with NCA ECC compliance requirements.</p>
+            <p>GulfStream Technologies is headquartered in Riyadh and delivers <Link href="/services/cloud-managed-services" style={{ color: 'var(--accent)' }}>Managed Cloud Services</Link> to enterprises across Saudi Arabia. Our pricing is designed for the Saudi market — billed in SAR with no markup on <Link href="/services/cloud-managed-services/aws" style={{ color: 'var(--accent)' }}>AWS</Link>, <Link href="/services/cloud-managed-services/azure" style={{ color: 'var(--accent)' }}>Azure</Link>, <Link href="/services/cloud-managed-services/google" style={{ color: 'var(--accent)' }}>Google Cloud</Link>, or <Link href="/services/cloud-managed-services/oracle" style={{ color: 'var(--accent)' }}>Oracle Cloud</Link> provider costs. Whether you operate in Riyadh, Jeddah, or Dammam, our team of certified engineers provides 24/7 monitoring, <Link href="/services/finops-cost-optimization" style={{ color: 'var(--accent)' }}>FinOps cost optimization</Link>, and <Link href="/services/cloud-security-governance" style={{ color: 'var(--accent)' }}>security governance</Link> aligned with NCA ECC compliance requirements.</p>
           </div>
         </div>
       </section>
@@ -264,8 +264,8 @@ const PricingContent = () => {
           </div>
           <div className="reveal">
             <FaqItem 
-              question="How much do cloud managed services cost in Saudi Arabia?" 
-              answer="GulfStream's cloud managed services start at SAR 8,500/month for the Starter plan, SAR 22,000/month for Growth (most popular), and SAR 55,000/month for Premium enterprise. All plans are billed monthly with no setup fees. Cloud provider costs (AWS, Azure, Google Cloud, Oracle Cloud) are billed separately by the provider — we do not mark up cloud costs."
+              question="How much do Managed Cloud Services cost in Saudi Arabia?" 
+              answer="GulfStream's Managed Cloud Services start at SAR 8,500/month for the Starter plan, SAR 22,000/month for Growth (most popular), and SAR 55,000/month for Premium enterprise. All plans are billed monthly with no setup fees. Cloud provider costs (AWS, Azure, Google Cloud, Oracle Cloud) are billed separately by the provider — we do not mark up cloud costs."
             />
             <FaqItem 
               question="Are there any hidden charges or markup on cloud costs?" 

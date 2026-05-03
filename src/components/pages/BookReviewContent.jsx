@@ -9,6 +9,42 @@ const BookReviewContent = () => {
   useReveal();
   const [formState, setFormState] = useState('idle'); // idle | submitting | success | error
   const [errorMsg, setErrorMsg] = useState('');
+  const [openFaqIndex, setOpenFaqIndex] = useState(null);
+
+  const bookReviewFaqs = [
+    {
+      question: 'What is included in the free cloud review?',
+      answer: 'Our free cloud review includes a detailed cloud cost analysis with estimated SAR savings, a security posture review covering IAM, encryption, and NCA ECC compliance, and a 90-day optimization roadmap — all delivered within 5 business days.'
+    },
+    {
+      question: 'How long does the assessment take?',
+      answer: 'The full assessment takes 3-5 business days after the initial 30-minute discovery call. We present findings in a live session with your team, including actionable recommendations you can implement immediately.'
+    },
+    {
+      question: 'Is the cloud review really free?',
+      answer: (
+        <>
+          Yes, 100% free with no obligation to engage GulfStream afterward. You keep the full assessment report, cost analysis, and optimization roadmap regardless of your decision. <Link href="/pricing" style={{ color: 'var(--accent)' }}>See our pricing</Link> if you decide to continue with managed services.
+        </>
+      )
+    },
+    {
+      question: 'Which cloud platforms do you assess?',
+      answer: (
+        <>
+          GulfStream assesses all major cloud platforms including <Link href="/services/cloud-managed-services/aws" style={{ color: 'var(--accent)' }}>AWS</Link>, <Link href="/services/cloud-managed-services/azure" style={{ color: 'var(--accent)' }}>Microsoft Azure</Link>, <Link href="/services/cloud-managed-services/google" style={{ color: 'var(--accent)' }}>Google Cloud</Link>, and <Link href="/services/cloud-managed-services/oracle" style={{ color: 'var(--accent)' }}>Oracle Cloud</Link>. We evaluate single-cloud and multi-cloud environments for Saudi enterprises.
+        </>
+      )
+    },
+    {
+      question: 'Will I receive a cost savings report?',
+      answer: (
+        <>
+          Yes. Every free cloud review includes a detailed cost savings report with specific SAR amounts — identifying idle resources, oversized instances, Reserved Instance opportunities, and governance improvements. Our clients typically see 25-35% savings. See <Link href="/case-studies" style={{ color: 'var(--accent)' }}>real results in our case studies</Link>.
+        </>
+      )
+    }
+  ];
 
   const handleReviewSubmit = async (e) => {
     e.preventDefault();
@@ -291,27 +327,33 @@ const BookReviewContent = () => {
             <div className="badge badge-primary">❓ FAQ</div>
             <h2 className="display-md">Frequently Asked Questions</h2>
           </div>
-          <div className="grid-2 reveal">
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>What is included in the free cloud review?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>Our free cloud review includes a detailed cloud cost analysis with estimated SAR savings, a security posture review covering IAM, encryption, and NCA ECC compliance, and a 90-day optimization roadmap — all delivered within 5 business days.</p>
-            </div>
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>How long does the assessment take?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>The full assessment takes 3-5 business days after the initial 30-minute discovery call. We present findings in a live session with your team, including actionable recommendations you can implement immediately.</p>
-            </div>
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>Is the cloud review really free?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>Yes, 100% free with no obligation to engage GulfStream afterward. You keep the full assessment report, cost analysis, and optimization roadmap regardless of your decision. <Link href="/pricing" style={{ color: 'var(--accent)' }}>See our pricing</Link> if you decide to continue with managed services.</p>
-            </div>
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>Which cloud platforms do you assess?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>GulfStream assesses all major cloud platforms including <Link href="/services/cloud-managed-services/aws" style={{ color: 'var(--accent)' }}>AWS</Link>, <Link href="/services/cloud-managed-services/azure" style={{ color: 'var(--accent)' }}>Microsoft Azure</Link>, <Link href="/services/cloud-managed-services/google" style={{ color: 'var(--accent)' }}>Google Cloud</Link>, and <Link href="/services/cloud-managed-services/oracle" style={{ color: 'var(--accent)' }}>Oracle Cloud</Link>. We evaluate single-cloud and multi-cloud environments for Saudi enterprises.</p>
-            </div>
-            <div className="card" style={{ gridColumn: 'span 2' }}>
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>Will I receive a cost savings report?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>Yes. Every free cloud review includes a detailed cost savings report with specific SAR amounts — identifying idle resources, oversized instances, Reserved Instance opportunities, and governance improvements. Our clients typically see 25-35% savings. See <Link href="/case-studies" style={{ color: 'var(--accent)' }}>real results in our case studies</Link>.</p>
-            </div>
+          <div className="faq-accordion reveal">
+            {bookReviewFaqs.map((faq, index) => {
+              const isOpen = openFaqIndex === index;
+
+              return (
+                <div className={`faq-item ${isOpen ? 'active' : ''}`} key={faq.question}>
+                  <button
+                    className="faq-question"
+                    type="button"
+                    onClick={() => setOpenFaqIndex(isOpen ? null : index)}
+                    aria-expanded={isOpen}
+                    aria-controls={`book-review-faq-answer-${index}`}
+                  >
+                    <span>{faq.question}</span>
+                    <span className="faq-toggle" aria-hidden="true">+</span>
+                  </button>
+                  <div
+                    id={`book-review-faq-answer-${index}`}
+                    className="faq-answer"
+                  >
+                    <div className="faq-answer-inner">
+                      <p>{faq.answer}</p>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>

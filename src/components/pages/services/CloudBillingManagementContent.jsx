@@ -1,11 +1,39 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 import { useReveal } from '@/hooks/useReveal';
 
 const CloudBillingManagementContent = () => {
   useReveal();
+  const [openFaqIndex, setOpenFaqIndex] = useState(null);
+
+  const billingFaqs = [
+    {
+      question: 'What is cloud billing management?',
+      answer: 'Cloud billing management is the practice of tracking, analyzing, and optimizing cloud spending across providers like AWS, Azure, Oracle, and Google Cloud. It includes real-time dashboards, chargeback reporting, anomaly detection, spend forecasting, and invoice validation.'
+    },
+    {
+      question: 'How do you reduce cloud billing costs?',
+      answer: 'We reduce cloud billing costs through tag-based cost attribution, anomaly detection, spend forecasting, invoice validation, and integration with FinOps practices. Most enterprises see full cost visibility within 30 days.'
+    },
+    {
+      question: 'Can you manage billing across multiple cloud providers?',
+      answer: 'Yes. GulfStream Technologies provides unified billing management across AWS, Azure, Oracle Cloud, and Google Cloud — aggregating costs into a single dashboard with consistent chargeback and showback reporting.'
+    },
+    {
+      question: 'How much does cloud billing management cost in Saudi Arabia?',
+      answer: (
+        <>
+          Costs depend on the number of cloud accounts, providers, and complexity. GulfStream offers flexible pricing from basic billing dashboards to fully managed billing operations. <Link href="/book-a-review" style={{ color: 'var(--accent)' }}>Book a free audit</Link> for a tailored quote.
+        </>
+      )
+    },
+    {
+      question: 'How quickly can you set up billing dashboards?',
+      answer: 'We typically deploy unified billing dashboards within 2-4 weeks, including tag governance, cost allocation rules, budget alerts, and executive reporting — with full chargeback capability within 30 days.'
+    }
+  ];
 
   return (
     <main>
@@ -329,27 +357,33 @@ const CloudBillingManagementContent = () => {
             <div className="badge badge-primary">❓ FAQ</div>
             <h2 className="display-md">Frequently Asked Questions</h2>
           </div>
-          <div className="grid-2 reveal">
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>What is cloud billing management?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>Cloud billing management is the practice of tracking, analyzing, and optimizing cloud spending across providers like AWS, Azure, Oracle, and Google Cloud. It includes real-time dashboards, chargeback reporting, anomaly detection, spend forecasting, and invoice validation.</p>
-            </div>
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>How do you reduce cloud billing costs?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>We reduce cloud billing costs through tag-based cost attribution, anomaly detection, spend forecasting, invoice validation, and integration with FinOps practices. Most enterprises see full cost visibility within 30 days.</p>
-            </div>
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>Can you manage billing across multiple cloud providers?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>Yes. GulfStream Technologies provides unified billing management across AWS, Azure, Oracle Cloud, and Google Cloud — aggregating costs into a single dashboard with consistent chargeback and showback reporting.</p>
-            </div>
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>How much does cloud billing management cost in Saudi Arabia?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>Costs depend on the number of cloud accounts, providers, and complexity. GulfStream offers flexible pricing from basic billing dashboards to fully managed billing operations. <Link href="/book-a-review" style={{ color: 'var(--accent)' }}>Book a free audit</Link> for a tailored quote.</p>
-            </div>
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>How quickly can you set up billing dashboards?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>We typically deploy unified billing dashboards within 2-4 weeks, including tag governance, cost allocation rules, budget alerts, and executive reporting — with full chargeback capability within 30 days.</p>
-            </div>
+          <div className="faq-accordion reveal">
+            {billingFaqs.map((faq, index) => {
+              const isOpen = openFaqIndex === index;
+
+              return (
+                <div className={`faq-item ${isOpen ? 'active' : ''}`} key={faq.question}>
+                  <button
+                    className="faq-question"
+                    type="button"
+                    onClick={() => setOpenFaqIndex(isOpen ? null : index)}
+                    aria-expanded={isOpen}
+                    aria-controls={`billing-faq-answer-${index}`}
+                  >
+                    <span>{faq.question}</span>
+                    <span className="faq-toggle" aria-hidden="true">+</span>
+                  </button>
+                  <div
+                    id={`billing-faq-answer-${index}`}
+                    className="faq-answer"
+                  >
+                    <div className="faq-answer-inner">
+                      <p>{faq.answer}</p>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>

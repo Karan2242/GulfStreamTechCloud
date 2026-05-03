@@ -10,7 +10,7 @@ const platforms = [
     fullName: 'AWS Managed Services',
     href: '/services/cloud-managed-services/aws',
     logo: '/assets/images/logo-aws.png',
-    description: 'Complete management of your Amazon Web Services environment — from EC2, RDS, and EKS to Lambda, S3, and CloudFront. Our certified AWS architects deliver 24/7 operations, cost optimization, and security governance for enterprises across Riyadh, Jeddah, and Dammam.',
+    description: 'Complete management of your Amazon Web Services environment — from EC2, RDS, and EKS to Lambda, S3, and CloudFront. Our certified AWS architects deliver 24/7 operations, cost optimization, and security governance for enterprises across Saudi Arabia.',
     services: [
       'EC2 & Auto Scaling Management',
       'RDS & Aurora Database Ops',
@@ -88,7 +88,7 @@ const PlatformSelector = () => {
   const active = platforms[activeIndex];
 
   return (
-    <section className="section" style={{ background: 'var(--dark-surface)' }}>
+    <section className="section">
       <div className="container">
         <div className="section-header reveal">
           <div className="badge badge-accent">☁️ Platforms</div>

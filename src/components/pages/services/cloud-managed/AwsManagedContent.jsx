@@ -1,12 +1,40 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 import { useReveal } from '@/hooks/useReveal';
 import CloudSubNav from '@/components/CloudSubNav';
 
 const AwsManagedContent = () => {
   useReveal();
+  const [openFaqIndex, setOpenFaqIndex] = useState(null);
+
+  const awsFaqs = [
+    {
+      question: 'What are AWS Managed Services?',
+      answer: 'AWS Managed Services involve outsourcing the day-to-day management of your Amazon Web Services environment to certified cloud experts. This includes 24/7 monitoring, security governance, cost optimization, patching, backups, and incident response for services like EC2, RDS, EKS, Lambda, and S3.'
+    },
+    {
+      question: 'How much do AWS Managed Services cost in Saudi Arabia?',
+      answer: (
+        <>
+          Costs vary based on your environment size, number of AWS accounts, and support level required. GulfStream Technologies offers flexible pricing tiers from basic monitoring to fully managed operations. <Link href="/book-a-review" style={{ color: 'var(--accent)' }}>Book a free assessment</Link> for a tailored quote.
+        </>
+      )
+    },
+    {
+      question: 'How quickly can you reduce our AWS costs?',
+      answer: 'Most enterprises see a 20-35% reduction in AWS spend within the first 90 days through rightsizing, Reserved Instance optimization, unused resource cleanup, and FinOps best practices implemented by our certified engineers.'
+    },
+    {
+      question: 'Why outsource AWS management in Saudi Arabia?',
+      answer: 'Outsourcing to a Saudi-based provider like GulfStream gives you certified engineers, 24/7 NOC monitoring, regulatory compliance expertise, and cloud cost optimization services — without building an expensive in-house cloud team.'
+    },
+    {
+      question: 'What AWS services does GulfStream manage?',
+      answer: 'We manage the full AWS stack: EC2, RDS, Aurora, EKS, Lambda, S3, CloudFront, VPC, IAM, GuardDuty, Security Hub, Cost Explorer, and more. Our coverage spans compute, databases, networking, storage, security, and cost management.'
+    }
+  ];
 
   return (
     <main>
@@ -345,27 +373,32 @@ const AwsManagedContent = () => {
             <div className="badge badge-accent">❓ FAQ</div>
             <h2 className="display-md">Frequently Asked Questions</h2>
           </div>
-          <div className="grid-2 reveal">
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>What are AWS Managed Services?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>AWS Managed Services involve outsourcing the day-to-day management of your Amazon Web Services environment to certified cloud experts. This includes 24/7 monitoring, security governance, cost optimization, patching, backups, and incident response for services like EC2, RDS, EKS, Lambda, and S3.</p>
-            </div>
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>How much do AWS Managed Services cost in Saudi Arabia?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>Costs vary based on your environment size, number of AWS accounts, and support level required. GulfStream Technologies offers flexible pricing tiers from basic monitoring to fully managed operations. <Link href="/book-a-review" style={{ color: 'var(--accent)' }}>Book a free assessment</Link> for a tailored quote.</p>
-            </div>
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>How quickly can you reduce our AWS costs?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>Most enterprises see a 20-35% reduction in AWS spend within the first 90 days through rightsizing, Reserved Instance optimization, unused resource cleanup, and FinOps best practices implemented by our certified engineers.</p>
-            </div>
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>Why outsource AWS management in Saudi Arabia?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>Outsourcing to a Saudi-based provider like GulfStream gives you certified engineers, 24/7 NOC monitoring, regulatory compliance expertise, and cloud cost optimization services — without building an expensive in-house cloud team.</p>
-            </div>
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>What AWS services does GulfStream manage?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>We manage the full AWS stack: EC2, RDS, Aurora, EKS, Lambda, S3, CloudFront, VPC, IAM, GuardDuty, Security Hub, Cost Explorer, and more. Our coverage spans compute, databases, networking, storage, security, and cost management.</p>
-            </div>
+          <div className="faq-accordion reveal">
+            {awsFaqs.map((faq, index) => {
+              const isOpen = openFaqIndex === index;
+              return (
+                <div className={`faq-item ${isOpen ? 'active' : ''}`} key={faq.question}>
+                  <button
+                    className="faq-question"
+                    type="button"
+                    onClick={() => setOpenFaqIndex(isOpen ? null : index)}
+                    aria-expanded={isOpen}
+                    aria-controls={`aws-faq-answer-${index}`}
+                  >
+                    <span>{faq.question}</span>
+                    <span className="faq-toggle" aria-hidden="true">+</span>
+                  </button>
+                  <div
+                    id={`aws-faq-answer-${index}`}
+                    className="faq-answer"
+                  >
+                    <div className="faq-answer-inner">
+                      <p>{faq.answer}</p>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>

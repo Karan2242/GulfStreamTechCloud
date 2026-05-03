@@ -1,11 +1,39 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 import { useReveal } from '@/hooks/useReveal';
 
 const FinopsCostOptimizationContent = () => {
   useReveal();
+  const [openFaqIndex, setOpenFaqIndex] = useState(null);
+
+  const finopsFaqs = [
+    {
+      question: 'What is FinOps?',
+      answer: 'FinOps (Cloud Financial Operations) is a framework with three phases — Inform, Optimize, Operate — that brings financial accountability to cloud spending through visibility, optimization, and continuous governance.'
+    },
+    {
+      question: 'How quickly can you reduce our cloud costs?',
+      answer: 'Most enterprises see 20-35% cost reduction within the first 90 days through rightsizing, idle resource cleanup, and commitment-based purchasing. Ongoing optimization maintains and increases savings.'
+    },
+    {
+      question: 'What ROI can we expect from FinOps?',
+      answer: 'Our clients typically see 3x ROI on Reserved Instance investments and 32% overall cost reduction. The free cost analysis provides a detailed savings estimate for your specific environment.'
+    },
+    {
+      question: 'How much does FinOps cost in Saudi Arabia?',
+      answer: (
+        <>
+          FinOps engagement costs depend on your cloud estate size and complexity. GulfStream offers a free cost analysis to identify savings potential before any commitment. <Link href="/book-a-review" style={{ color: 'var(--accent)' }}>Get a free analysis</Link>.
+        </>
+      )
+    },
+    {
+      question: 'Do you support multi-cloud FinOps?',
+      answer: 'Yes. We optimize costs across AWS, Azure, and multi-cloud environments using tools like CloudHealth, native cost management services, and custom dashboards for unified visibility.'
+    }
+  ];
 
   return (
     <main>
@@ -17,7 +45,7 @@ const FinopsCostOptimizationContent = () => {
           </div>
           <div className="badge badge-primary" style={{ marginBottom: '16px' }}>📊 FinOps &amp; Cost Optimization</div>
           <h1 className="display-lg">Cloud FinOps &amp; Cost Optimization<br /><span className="text-gradient">in Saudi Arabia</span></h1>
-          <p>GulfStream Technologies applies the FinOps framework to give enterprises in Saudi Arabia complete visibility into cloud spend across AWS, Azure, and multi-cloud — eliminating waste, rightsizing infrastructure, and building a culture of cloud financial accountability in Riyadh, Jeddah, and Dammam with an average 32% cost reduction.</p>
+          <p>GulfStream Technologies applies the FinOps framework to give enterprises in Saudi Arabia complete visibility into cloud spend across AWS, Azure, Google Cloud & Oracle Cloud — eliminating waste, rightsizing infrastructure, and building a culture of cloud financial accountability in Saudi Arabia with an average 32% cost reduction.</p>
           <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
             <Link href="/book-a-review" className="btn btn-primary btn-lg">Get a Free Cost Analysis</Link>
             <Link href="/contact" className="btn btn-outline btn-lg">Talk to a FinOps Expert</Link>
@@ -366,27 +394,32 @@ const FinopsCostOptimizationContent = () => {
             <div className="badge badge-accent">❓ FAQ</div>
             <h2 className="display-md">Frequently Asked Questions</h2>
           </div>
-          <div className="grid-2 reveal">
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>What is FinOps?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>FinOps (Cloud Financial Operations) is a framework with three phases — Inform, Optimize, Operate — that brings financial accountability to cloud spending through visibility, optimization, and continuous governance.</p>
-            </div>
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>How quickly can you reduce our cloud costs?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>Most enterprises see 20-35% cost reduction within the first 90 days through rightsizing, idle resource cleanup, and commitment-based purchasing. Ongoing optimization maintains and increases savings.</p>
-            </div>
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>What ROI can we expect from FinOps?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>Our clients typically see 3x ROI on Reserved Instance investments and 32% overall cost reduction. The free cost analysis provides a detailed savings estimate for your specific environment.</p>
-            </div>
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>How much does FinOps cost in Saudi Arabia?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>FinOps engagement costs depend on your cloud estate size and complexity. GulfStream offers a free cost analysis to identify savings potential before any commitment. <Link href="/book-a-review" style={{ color: 'var(--accent)' }}>Get a free analysis</Link>.</p>
-            </div>
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>Do you support multi-cloud FinOps?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>Yes. We optimize costs across AWS, Azure, and multi-cloud environments using tools like CloudHealth, native cost management services, and custom dashboards for unified visibility.</p>
-            </div>
+          <div className="faq-accordion reveal">
+            {finopsFaqs.map((faq, index) => {
+              const isOpen = openFaqIndex === index;
+              return (
+                <div className={`faq-item ${isOpen ? 'active' : ''}`} key={faq.question}>
+                  <button
+                    className="faq-question"
+                    type="button"
+                    onClick={() => setOpenFaqIndex(isOpen ? null : index)}
+                    aria-expanded={isOpen}
+                    aria-controls={`finops-faq-answer-${index}`}
+                  >
+                    <span>{faq.question}</span>
+                    <span className="faq-toggle" aria-hidden="true">+</span>
+                  </button>
+                  <div
+                    id={`finops-faq-answer-${index}`}
+                    className="faq-answer"
+                  >
+                    <div className="faq-answer-inner">
+                      <p>{faq.answer}</p>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>

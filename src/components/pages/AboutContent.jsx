@@ -1,11 +1,43 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 import { useReveal } from '@/hooks/useReveal';
 
 const AboutContent = () => {
   useReveal();
+  const [openFaqIndex, setOpenFaqIndex] = useState(null);
+
+  const aboutFaqs = [
+    {
+      question: 'What cloud services does GulfStream offer in Saudi Arabia?',
+      answer: (
+        <>
+          GulfStream Technologies offers <Link href="/services/cloud-managed-services/aws" style={{ color: 'var(--accent)' }}>AWS managed services</Link>, <Link href="/services/cloud-managed-services/azure" style={{ color: 'var(--accent)' }}>Azure managed services</Link>, <Link href="/services/cloud-managed-services/google" style={{ color: 'var(--accent)' }}>Google Managed Cloud Services</Link>, <Link href="/services/cloud-managed-services/oracle" style={{ color: 'var(--accent)' }}>Oracle Managed Cloud Services</Link>, <Link href="/services/finops-cost-optimization" style={{ color: 'var(--accent)' }}>FinOps cost optimization</Link>, <Link href="/services/cloud-migration" style={{ color: 'var(--accent)' }}>cloud migration</Link>, <Link href="/services/cloud-security-governance" style={{ color: 'var(--accent)' }}>cloud security &amp; governance</Link>, and <Link href="/services/cloud-billing-management" style={{ color: 'var(--accent)' }}>cloud billing management</Link> for enterprises across Saudi Arabia.
+        </>
+      )
+    },
+    {
+      question: 'Which cloud platforms does GulfStream support?',
+      answer: 'GulfStream is certified across AWS, Microsoft Azure, Google Cloud, and Oracle Cloud. We manage single-cloud and multi-cloud environments for Saudi enterprises with 24/7 monitoring and dedicated support.'
+    },
+    {
+      question: 'How does GulfStream reduce cloud costs?',
+      answer: (
+        <>
+          We apply FinOps best practices including rightsizing, Reserved Instance planning, Spot optimization, tagging governance, and anomaly detection — delivering an average 32% cloud cost reduction. See our <Link href="/case-studies" style={{ color: 'var(--accent)' }}>case studies</Link> for documented results.
+        </>
+      )
+    },
+    {
+      question: 'What industries does GulfStream serve?',
+      answer: (
+        <>
+          We serve <Link href="/industries/retail" style={{ color: 'var(--accent)' }}>retail</Link>, <Link href="/industries/healthcare" style={{ color: 'var(--accent)' }}>healthcare</Link>, <Link href="/industries/tech-saas" style={{ color: 'var(--accent)' }}>SaaS</Link>, <Link href="/industries/logistics" style={{ color: 'var(--accent)' }}>logistics</Link>, banking, government, and <Link href="/industries/professional-services" style={{ color: 'var(--accent)' }}>professional services</Link> enterprises across Riyadh, Jeddah, Dammam, and the wider Saudi Arabia region.
+        </>
+      )
+    }
+  ];
 
   return (
     <main>
@@ -209,23 +241,33 @@ const AboutContent = () => {
             <div className="badge badge-primary">❓ FAQ</div>
             <h2 className="display-md">Frequently Asked Questions</h2>
           </div>
-          <div className="grid-2 reveal">
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>What cloud services does GulfStream offer in Saudi Arabia?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>GulfStream Technologies offers <Link href="/services/cloud-managed-services/aws" style={{ color: 'var(--accent)' }}>AWS managed services</Link>, <Link href="/services/cloud-managed-services/azure" style={{ color: 'var(--accent)' }}>Azure managed services</Link>, <Link href="/services/cloud-managed-services/google" style={{ color: 'var(--accent)' }}>Google Managed Cloud Services</Link>, <Link href="/services/cloud-managed-services/oracle" style={{ color: 'var(--accent)' }}>Oracle Managed Cloud Services</Link>, <Link href="/services/finops-cost-optimization" style={{ color: 'var(--accent)' }}>FinOps cost optimization</Link>, <Link href="/services/cloud-migration" style={{ color: 'var(--accent)' }}>cloud migration</Link>, <Link href="/services/cloud-security-governance" style={{ color: 'var(--accent)' }}>cloud security &amp; governance</Link>, and <Link href="/services/cloud-billing-management" style={{ color: 'var(--accent)' }}>cloud billing management</Link> for enterprises across Saudi Arabia.</p>
-            </div>
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>Which cloud platforms does GulfStream support?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>GulfStream is certified across AWS, Microsoft Azure, Google Cloud, and Oracle Cloud. We manage single-cloud and multi-cloud environments for Saudi enterprises with 24/7 monitoring and dedicated support.</p>
-            </div>
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>How does GulfStream reduce cloud costs?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>We apply FinOps best practices including rightsizing, Reserved Instance planning, Spot optimization, tagging governance, and anomaly detection — delivering an average 32% cloud cost reduction. See our <Link href="/case-studies" style={{ color: 'var(--accent)' }}>case studies</Link> for documented results.</p>
-            </div>
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>What industries does GulfStream serve?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>We serve <Link href="/industries/retail" style={{ color: 'var(--accent)' }}>retail</Link>, <Link href="/industries/healthcare" style={{ color: 'var(--accent)' }}>healthcare</Link>, <Link href="/industries/tech-saas" style={{ color: 'var(--accent)' }}>SaaS</Link>, <Link href="/industries/logistics" style={{ color: 'var(--accent)' }}>logistics</Link>, banking, government, and <Link href="/industries/professional-services" style={{ color: 'var(--accent)' }}>professional services</Link> enterprises across Riyadh, Jeddah, Dammam, and the wider Saudi Arabia region.</p>
-            </div>
+          <div className="faq-accordion reveal">
+            {aboutFaqs.map((faq, index) => {
+              const isOpen = openFaqIndex === index;
+
+              return (
+                <div className={`faq-item ${isOpen ? 'active' : ''}`} key={faq.question}>
+                  <button
+                    className="faq-question"
+                    type="button"
+                    onClick={() => setOpenFaqIndex(isOpen ? null : index)}
+                    aria-expanded={isOpen}
+                    aria-controls={`about-faq-answer-${index}`}
+                  >
+                    <span>{faq.question}</span>
+                    <span className="faq-toggle" aria-hidden="true">+</span>
+                  </button>
+                  <div
+                    id={`about-faq-answer-${index}`}
+                    className="faq-answer"
+                  >
+                    <div className="faq-answer-inner">
+                      <p>{faq.answer}</p>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>

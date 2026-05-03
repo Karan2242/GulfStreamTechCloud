@@ -34,20 +34,22 @@ const services = [
 ];
 
 const ServicesGrid = () => (
-  <section className="section">
+  <section className="section" style={{ background: 'var(--dark-surface)' }}>
     <div className="container">
       <div className="section-header reveal">
         <div className="badge badge-primary">🛠️ Full Coverage</div>
         <h2 className="display-md">What We Manage</h2>
-        <p>End-to-end cloud management services that cover every aspect of your infrastructure across Riyadh, Jeddah, and Dammam.</p>
+        <p>End-to-end cloud management services that cover every aspect of your infrastructure across Saudi Arabia.</p>
       </div>
-      <div className="manage-grid reveal">
+      <div className="grid-3 reveal">
         {services.map((s) => (
-          <div className="manage-card" key={s.title}>
-            <div className="manage-card-icon">{s.icon}</div>
-            <h4>{s.title}</h4>
-            <p>{s.description}</p>
-          </div>
+          <div className="card premium-card" key={s.title}>
+  <div className="card-header">
+    <div className="icon-box">{s.icon}</div>
+    <h3>{s.title}</h3>
+  </div>
+  <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>{s.description}</p>
+</div>
         ))}
       </div>
     </div>

@@ -1,11 +1,43 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 import { useReveal } from '@/hooks/useReveal';
 
 const TechSaasContent = () => {
   useReveal();
+  const [openFaqIndex, setOpenFaqIndex] = useState(null);
+
+  const saasFaqs = [
+    {
+      question: 'What is SaaS cloud infrastructure management?',
+      answer: 'SaaS cloud infrastructure management is the practice of outsourcing cloud operations — Kubernetes management, CI/CD pipelines, auto-scaling, security, and cost optimization — to a specialist partner, so SaaS engineering teams can focus entirely on building product rather than managing infrastructure.'
+    },
+    {
+      question: 'Do you manage Kubernetes for SaaS companies?',
+      answer: (
+        <>
+          Yes. We provide full lifecycle management of <Link href="/services/cloud-managed-services/aws" style={{ color: 'var(--accent)' }}>AWS EKS</Link> and <Link href="/services/cloud-managed-services/azure" style={{ color: 'var(--accent)' }}>Azure AKS</Link> clusters — including provisioning, upgrades, pod autoscaling, namespace-based multi-tenancy, cost optimization with Karpenter/KEDA, and container security hardening.
+        </>
+      )
+    },
+    {
+      question: 'Can you help with SOC 2 compliance?',
+      answer: (
+        <>
+          Yes. Our <Link href="/services/cloud-security-governance" style={{ color: 'var(--accent)' }}>cloud security practice</Link> helps SaaS companies achieve SOC 2 readiness through automated evidence collection, continuous security posture management, secret management, and runtime container protection — drastically reducing audit preparation time.
+        </>
+      )
+    },
+    {
+      question: 'Can you reduce SaaS cloud costs?',
+      answer: (
+        <>
+          Yes. Our <Link href="/services/finops-cost-optimization" style={{ color: 'var(--accent)' }}>FinOps practice</Link> delivers an average 35% infrastructure cost reduction for SaaS companies through per-tenant cost attribution, Spot Instance automation, Kubernetes right-sizing, and commitment planning — improving unit economics at every scale.
+        </>
+      )
+    }
+  ];
 
   return (
     <main>
@@ -222,23 +254,32 @@ const TechSaasContent = () => {
             <div className="badge badge-primary">❓ FAQ</div>
             <h2 className="display-md">SaaS Cloud FAQ</h2>
           </div>
-          <div className="grid-2 reveal">
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>What is SaaS cloud infrastructure management?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>SaaS cloud infrastructure management is the practice of outsourcing cloud operations — Kubernetes management, CI/CD pipelines, auto-scaling, security, and cost optimization — to a specialist partner, so SaaS engineering teams can focus entirely on building product rather than managing infrastructure.</p>
-            </div>
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>Do you manage Kubernetes for SaaS companies?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>Yes. We provide full lifecycle management of <Link href="/services/cloud-managed-services/aws" style={{ color: 'var(--accent)' }}>AWS EKS</Link> and <Link href="/services/cloud-managed-services/azure" style={{ color: 'var(--accent)' }}>Azure AKS</Link> clusters — including provisioning, upgrades, pod autoscaling, namespace-based multi-tenancy, cost optimization with Karpenter/KEDA, and container security hardening.</p>
-            </div>
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>Can you help with SOC 2 compliance?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>Yes. Our <Link href="/services/cloud-security-governance" style={{ color: 'var(--accent)' }}>cloud security practice</Link> helps SaaS companies achieve SOC 2 readiness through automated evidence collection, continuous security posture management, secret management, and runtime container protection — drastically reducing audit preparation time.</p>
-            </div>
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>Can you reduce SaaS cloud costs?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>Yes. Our <Link href="/services/finops-cost-optimization" style={{ color: 'var(--accent)' }}>FinOps practice</Link> delivers an average 35% infrastructure cost reduction for SaaS companies through per-tenant cost attribution, Spot Instance automation, Kubernetes right-sizing, and commitment planning — improving unit economics at every scale.</p>
-            </div>
+          <div className="faq-accordion reveal">
+            {saasFaqs.map((faq, index) => {
+              const isOpen = openFaqIndex === index;
+              return (
+                <div className={`faq-item ${isOpen ? 'active' : ''}`} key={faq.question}>
+                  <button
+                    className="faq-question"
+                    type="button"
+                    onClick={() => setOpenFaqIndex(isOpen ? null : index)}
+                    aria-expanded={isOpen}
+                    aria-controls={`saas-faq-answer-${index}`}
+                  >
+                    <span>{faq.question}</span>
+                    <span className="faq-toggle" aria-hidden="true">+</span>
+                  </button>
+                  <div
+                    id={`saas-faq-answer-${index}`}
+                    className="faq-answer"
+                  >
+                    <div className="faq-answer-inner">
+                      <p>{faq.answer}</p>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>

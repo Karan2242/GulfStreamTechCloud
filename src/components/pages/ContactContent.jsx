@@ -9,6 +9,38 @@ const ContactContent = () => {
   useReveal();
   const [formState, setFormState] = useState('idle'); // idle | submitting | success | error
   const [errorMsg, setErrorMsg] = useState('');
+  const [openFaqIndex, setOpenFaqIndex] = useState(null);
+
+  const contactFaqs = [
+    {
+      question: 'How quickly do you respond to enquiries?',
+      answer: 'We respond to all enquiries within 4 business hours during our working days (Sunday to Thursday, 8 AM – 6 PM AST). For existing clients, we provide 24/7 support with priority response times.'
+    },
+    {
+      question: 'Do you offer a free consultation?',
+      answer: (
+        <>
+          Yes. Every new engagement starts with a free consultation and <Link href="/book-a-review" style={{ color: 'var(--accent)' }}>complimentary cloud assessment</Link> — including cost analysis, security review, and a 90-day optimization roadmap delivered within 5 business days.
+        </>
+      )
+    },
+    {
+      question: 'Which cloud platforms do you support?',
+      answer: (
+        <>
+          We specialize in <Link href="/services/cloud-managed-services/aws" style={{ color: 'var(--accent)' }}>AWS</Link>, <Link href="/services/cloud-managed-services/azure" style={{ color: 'var(--accent)' }}>Microsoft Azure</Link>, <Link href="/services/cloud-managed-services/google" style={{ color: 'var(--accent)' }}>Google Cloud</Link>, and <Link href="/services/cloud-managed-services/oracle" style={{ color: 'var(--accent)' }}>Oracle Cloud</Link>, supporting single-cloud and multi-cloud environments. Our certified architects help Saudi enterprises with managed services, migration, security, and <Link href="/services/finops-cost-optimization" style={{ color: 'var(--accent)' }}>cost optimization</Link>.
+        </>
+      )
+    },
+    {
+      question: 'Can you help reduce our cloud costs?',
+      answer: (
+        <>
+          Yes. Our <Link href="/services/finops-cost-optimization" style={{ color: 'var(--accent)' }}>FinOps and cloud cost optimization</Link> practice has delivered an average 32% cost reduction for Saudi enterprises — through right-sizing, Reserved Instance optimization, waste elimination, and governance automation.
+        </>
+      )
+    }
+  ];
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -223,23 +255,33 @@ const ContactContent = () => {
             <div className="badge badge-accent">❓ FAQ</div>
             <h2 className="display-md">Frequently Asked Questions</h2>
           </div>
-          <div className="grid-2 reveal">
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>How quickly do you respond to enquiries?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>We respond to all enquiries within 4 business hours during our working days (Sunday to Thursday, 8 AM – 6 PM AST). For existing clients, we provide 24/7 support with priority response times.</p>
-            </div>
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>Do you offer a free consultation?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>Yes. Every new engagement starts with a free consultation and <Link href="/book-a-review" style={{ color: 'var(--accent)' }}>complimentary cloud assessment</Link> — including cost analysis, security review, and a 90-day optimization roadmap delivered within 5 business days.</p>
-            </div>
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>Which cloud platforms do you support?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>We specialize in <Link href="/services/cloud-managed-services/aws" style={{ color: 'var(--accent)' }}>AWS</Link>, <Link href="/services/cloud-managed-services/azure" style={{ color: 'var(--accent)' }}>Microsoft Azure</Link>, <Link href="/services/cloud-managed-services/google" style={{ color: 'var(--accent)' }}>Google Cloud</Link>, and <Link href="/services/cloud-managed-services/oracle" style={{ color: 'var(--accent)' }}>Oracle Cloud</Link>, supporting single-cloud and multi-cloud environments. Our certified architects help Saudi enterprises with managed services, migration, security, and <Link href="/services/finops-cost-optimization" style={{ color: 'var(--accent)' }}>cost optimization</Link>.</p>
-            </div>
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>Can you help reduce our cloud costs?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>Yes. Our <Link href="/services/finops-cost-optimization" style={{ color: 'var(--accent)' }}>FinOps and cloud cost optimization</Link> practice has delivered an average 32% cost reduction for Saudi enterprises — through right-sizing, Reserved Instance optimization, waste elimination, and governance automation.</p>
-            </div>
+          <div className="faq-accordion reveal">
+            {contactFaqs.map((faq, index) => {
+              const isOpen = openFaqIndex === index;
+
+              return (
+                <div className={`faq-item ${isOpen ? 'active' : ''}`} key={faq.question}>
+                  <button
+                    className="faq-question"
+                    type="button"
+                    onClick={() => setOpenFaqIndex(isOpen ? null : index)}
+                    aria-expanded={isOpen}
+                    aria-controls={`contact-faq-answer-${index}`}
+                  >
+                    <span>{faq.question}</span>
+                    <span className="faq-toggle" aria-hidden="true">+</span>
+                  </button>
+                  <div
+                    id={`contact-faq-answer-${index}`}
+                    className="faq-answer"
+                  >
+                    <div className="faq-answer-inner">
+                      <p>{faq.answer}</p>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>

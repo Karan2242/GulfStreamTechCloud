@@ -1,11 +1,39 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 import { useReveal } from '@/hooks/useReveal';
 
 const RetailContent = () => {
   useReveal();
+  const [openFaqIndex, setOpenFaqIndex] = useState(null);
+
+  const retailFaqs = [
+    {
+      question: 'What is retail cloud infrastructure?',
+      answer: 'Retail cloud infrastructure is a purpose-built cloud environment designed to support scalable e-commerce, omnichannel integration, PCI DSS-compliant payment processing, and real-time inventory analytics — with elastic auto-scaling for peak shopping events like Ramadan and National Day.'
+    },
+    {
+      question: 'How do you handle PCI DSS compliance?',
+      answer: (
+        <>
+          We design and manage PCI DSS-compliant cloud environments on <Link href="/services/cloud-managed-services/aws" style={{ color: 'var(--accent)' }}>AWS</Link> and <Link href="/services/cloud-managed-services/azure" style={{ color: 'var(--accent)' }}>Azure</Link> with network segmentation, encryption, tokenization, access controls, and continuous <Link href="/services/cloud-security-governance" style={{ color: 'var(--accent)' }}>compliance monitoring</Link> — ensuring audit readiness at all times.
+        </>
+      )
+    },
+    {
+      question: 'Which cloud platforms do you support for retail?',
+      answer: 'GulfStream is certified across AWS, Microsoft Azure, Google Cloud, and Oracle Cloud. We design retail cloud architectures using AWS Auto Scaling, CloudFront, EventBridge, and SageMaker, or Azure VMSS, Front Door, Service Bus, and Machine Learning — based on your existing technology stack.'
+    },
+    {
+      question: 'Can you reduce retail cloud costs?',
+      answer: (
+        <>
+          Yes. Our <Link href="/services/finops-cost-optimization" style={{ color: 'var(--accent)' }}>FinOps practice</Link> delivers an average 28% infrastructure cost reduction for retailers through elastic scaling that eliminates idle-hour provisioning, Reserved Instances for baseline workloads, and Spot Instances for batch analytics.
+        </>
+      )
+    }
+  ];
 
   return (
     <main>
@@ -222,23 +250,32 @@ const RetailContent = () => {
             <div className="badge badge-primary">❓ FAQ</div>
             <h2 className="display-md">Retail Cloud FAQ</h2>
           </div>
-          <div className="grid-2 reveal">
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>What is retail cloud infrastructure?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>Retail cloud infrastructure is a purpose-built cloud environment designed to support scalable e-commerce, omnichannel integration, PCI DSS-compliant payment processing, and real-time inventory analytics — with elastic auto-scaling for peak shopping events like Ramadan and National Day.</p>
-            </div>
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>How do you handle PCI DSS compliance?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>We design and manage PCI DSS-compliant cloud environments on <Link href="/services/cloud-managed-services/aws" style={{ color: 'var(--accent)' }}>AWS</Link> and <Link href="/services/cloud-managed-services/azure" style={{ color: 'var(--accent)' }}>Azure</Link> with network segmentation, encryption, tokenization, access controls, and continuous <Link href="/services/cloud-security-governance" style={{ color: 'var(--accent)' }}>compliance monitoring</Link> — ensuring audit readiness at all times.</p>
-            </div>
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>Which cloud platforms do you support for retail?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>GulfStream is certified across AWS, Microsoft Azure, Google Cloud, and Oracle Cloud. We design retail cloud architectures using AWS Auto Scaling, CloudFront, EventBridge, and SageMaker, or Azure VMSS, Front Door, Service Bus, and Machine Learning — based on your existing technology stack.</p>
-            </div>
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>Can you reduce retail cloud costs?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>Yes. Our <Link href="/services/finops-cost-optimization" style={{ color: 'var(--accent)' }}>FinOps practice</Link> delivers an average 28% infrastructure cost reduction for retailers through elastic scaling that eliminates idle-hour provisioning, Reserved Instances for baseline workloads, and Spot Instances for batch analytics.</p>
-            </div>
+          <div className="faq-accordion reveal">
+            {retailFaqs.map((faq, index) => {
+              const isOpen = openFaqIndex === index;
+              return (
+                <div className={`faq-item ${isOpen ? 'active' : ''}`} key={faq.question}>
+                  <button
+                    className="faq-question"
+                    type="button"
+                    onClick={() => setOpenFaqIndex(isOpen ? null : index)}
+                    aria-expanded={isOpen}
+                    aria-controls={`retail-faq-answer-${index}`}
+                  >
+                    <span>{faq.question}</span>
+                    <span className="faq-toggle" aria-hidden="true">+</span>
+                  </button>
+                  <div
+                    id={`retail-faq-answer-${index}`}
+                    className="faq-answer"
+                  >
+                    <div className="faq-answer-inner">
+                      <p>{faq.answer}</p>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>

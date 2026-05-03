@@ -1,11 +1,39 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 import { useReveal } from '@/hooks/useReveal';
 
 const CloudSecurityGovernanceContent = () => {
   useReveal();
+  const [openFaqIndex, setOpenFaqIndex] = useState(null);
+
+  const securityFaqs = [
+    {
+      question: 'How do you ensure NCA ECC compliance?',
+      answer: 'We implement NCA ECC controls using AWS Config, Azure Policy, and custom compliance rules with continuous monitoring, automated drift detection, and audit-ready reporting for Saudi regulatory requirements.'
+    },
+    {
+      question: 'What security tools do you use?',
+      answer: 'We deploy AWS GuardDuty, Azure Sentinel, Security Hub, Defender for Cloud, AWS Config, Azure Policy, and leading CSPM tools — configured and tuned specifically for your environment.'
+    },
+    {
+      question: 'Do you provide 24/7 security monitoring?',
+      answer: 'Yes. GulfStream provides round-the-clock threat monitoring with sub-5-minute mean time to detect (MTTD), automated alert triage, and SLA-backed incident response for all managed environments.'
+    },
+    {
+      question: 'How much does cloud security cost in Saudi Arabia?',
+      answer: (
+        <>
+          Costs depend on your cloud estate size and compliance requirements. GulfStream offers a free security assessment with a detailed risk report and remediation roadmap. <Link href="/book-a-review" style={{ color: 'var(--accent)' }}>Book a free assessment</Link>.
+        </>
+      )
+    },
+    {
+      question: 'Can you secure multi-cloud environments?',
+      answer: 'Yes. We secure AWS, Azure, and multi-cloud environments with unified security policies, centralized monitoring, and cross-cloud compliance enforcement using tools like Prisma Cloud and native services.'
+    }
+  ];
 
   return (
     <main>
@@ -409,27 +437,33 @@ const CloudSecurityGovernanceContent = () => {
             <div className="badge badge-accent">❓ FAQ</div>
             <h2 className="display-md">Frequently Asked Questions</h2>
           </div>
-          <div className="grid-2 reveal">
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>How do you ensure NCA ECC compliance?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>We implement NCA ECC controls using AWS Config, Azure Policy, and custom compliance rules with continuous monitoring, automated drift detection, and audit-ready reporting for Saudi regulatory requirements.</p>
-            </div>
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>What security tools do you use?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>We deploy AWS GuardDuty, Azure Sentinel, Security Hub, Defender for Cloud, AWS Config, Azure Policy, and leading CSPM tools — configured and tuned specifically for your environment.</p>
-            </div>
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>Do you provide 24/7 security monitoring?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>Yes. GulfStream provides round-the-clock threat monitoring with sub-5-minute mean time to detect (MTTD), automated alert triage, and SLA-backed incident response for all managed environments.</p>
-            </div>
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>How much does cloud security cost in Saudi Arabia?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>Costs depend on your cloud estate size and compliance requirements. GulfStream offers a free security assessment with a detailed risk report and remediation roadmap. <Link href="/book-a-review" style={{ color: 'var(--accent)' }}>Book a free assessment</Link>.</p>
-            </div>
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>Can you secure multi-cloud environments?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>Yes. We secure AWS, Azure, and multi-cloud environments with unified security policies, centralized monitoring, and cross-cloud compliance enforcement using tools like Prisma Cloud and native services.</p>
-            </div>
+          <div className="faq-accordion reveal">
+            {securityFaqs.map((faq, index) => {
+              const isOpen = openFaqIndex === index;
+
+              return (
+                <div className={`faq-item ${isOpen ? 'active' : ''}`} key={faq.question}>
+                  <button
+                    className="faq-question"
+                    type="button"
+                    onClick={() => setOpenFaqIndex(isOpen ? null : index)}
+                    aria-expanded={isOpen}
+                    aria-controls={`security-faq-answer-${index}`}
+                  >
+                    <span>{faq.question}</span>
+                    <span className="faq-toggle" aria-hidden="true">+</span>
+                  </button>
+                  <div
+                    id={`security-faq-answer-${index}`}
+                    className="faq-answer"
+                  >
+                    <div className="faq-answer-inner">
+                      <p>{faq.answer}</p>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>

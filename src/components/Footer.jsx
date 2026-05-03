@@ -46,7 +46,14 @@ const Footer = () => {
             <ul className="footer-links">
               <li><a href="mailto:sales@gulfstreamtech.com.sa">sales@gulfstreamtech.com.sa</a></li>
               <li><a href="tel:+966053201917">+966 (0) 53 201 917</a></li>
-              <li><span>6526 At Takhassusi Road Almathar Ash Shamali District Central Province, Riyadh 12332, Saudi Arabia</span></li>
+            <li className="footer-address">
+  <p>
+    6526 At Takhassusi Road <br />
+    Almathar Ash Shamali District <br />
+    Central Province, Riyadh <br />
+    12332, Saudi Arabia
+  </p>
+</li>
             </ul>
             <div style={{ marginTop: '20px' }}>
               <Link href="/book-a-review" className="btn btn-primary btn-sm w-full" style={{ justifyContent: 'center' }}>Book Free Review</Link>

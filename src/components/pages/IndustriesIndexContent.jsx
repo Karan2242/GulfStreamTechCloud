@@ -1,11 +1,51 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 import { useReveal } from '@/hooks/useReveal';
 
 const IndustriesIndexContent = () => {
   useReveal();
+  const [openFaqIndex, setOpenFaqIndex] = useState(null);
+
+  const industriesFaqs = [
+    {
+      question: 'What industries does GulfStream Technologies support?',
+      answer: (
+        <>
+          GulfStream Technologies provides industry-specific cloud solutions for <Link href="/industries/retail" style={{ color: 'var(--accent)' }}>retail</Link>, <Link href="/industries/healthcare" style={{ color: 'var(--accent)' }}>healthcare</Link>, <Link href="/industries/logistics" style={{ color: 'var(--accent)' }}>logistics</Link>, <Link href="/industries/tech-saas" style={{ color: 'var(--accent)' }}>technology/SaaS</Link>, and <Link href="/industries/professional-services" style={{ color: 'var(--accent)' }}>professional services</Link> enterprises across Saudi Arabia — with tailored multi-Managed Cloud Services for each sector.
+        </>
+      )
+    },
+    {
+      question: 'Do you provide industry-specific cloud solutions?',
+      answer: 'Yes. Unlike generic cloud providers, GulfStream builds cloud architectures tailored to each industry\'s regulatory, compliance, and operational requirements — including PCI DSS for retail, HIPAA and NCA ECC for healthcare, and ISO 27001 for professional services.'
+    },
+    {
+      question: 'Which cloud platforms do you manage?',
+      answer: (
+        <>
+          We manage <Link href="/services/cloud-managed-services/aws" style={{ color: 'var(--accent)' }}>AWS</Link>, <Link href="/services/cloud-managed-services/azure" style={{ color: 'var(--accent)' }}>Microsoft Azure</Link>, <Link href="/services/cloud-managed-services/google" style={{ color: 'var(--accent)' }}>Google Cloud</Link>, and <Link href="/services/cloud-managed-services/oracle" style={{ color: 'var(--accent)' }}>Oracle Cloud</Link>, supporting single-cloud and multi-cloud environments. Our certified architects manage Kubernetes, serverless, IoT, data lakes, and enterprise workloads across all platforms.
+        </>
+      )
+    },
+    {
+      question: 'Do you offer a free cloud consultation?',
+      answer: (
+        <>
+          Yes. Every new engagement starts with a <Link href="/book-a-review" style={{ color: 'var(--accent)' }}>free cloud assessment</Link> — including cost analysis, security review, and a 90-day optimization roadmap delivered within 5 business days at no charge.
+        </>
+      )
+    },
+    {
+      question: 'How do you ensure compliance for Saudi enterprises?',
+      answer: (
+        <>
+          We design cloud environments with NCA ECC, SAMA, Saudi MOH, and international frameworks (HIPAA, ISO 27001, PCI DSS, SOC 2) built in from day one — with continuous compliance monitoring and automated audit reporting. See our <Link href="/services/cloud-security-governance" style={{ color: 'var(--accent)' }}>cloud security and governance</Link> services for details.
+        </>
+      )
+    }
+  ];
 
   return (
     <main>
@@ -152,27 +192,32 @@ const IndustriesIndexContent = () => {
             <div className="badge badge-accent">❓ FAQ</div>
             <h2 className="display-md">Frequently Asked Questions</h2>
           </div>
-          <div className="grid-2 reveal">
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>What industries does GulfStream Technologies support?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>GulfStream Technologies provides industry-specific cloud solutions for <Link href="/industries/retail" style={{ color: 'var(--accent)' }}>retail</Link>, <Link href="/industries/healthcare" style={{ color: 'var(--accent)' }}>healthcare</Link>, <Link href="/industries/logistics" style={{ color: 'var(--accent)' }}>logistics</Link>, <Link href="/industries/tech-saas" style={{ color: 'var(--accent)' }}>technology/SaaS</Link>, and <Link href="/industries/professional-services" style={{ color: 'var(--accent)' }}>professional services</Link> enterprises across Saudi Arabia — with tailored multi-Managed Cloud Services for each sector.</p>
-            </div>
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>Do you provide industry-specific cloud solutions?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>Yes. Unlike generic cloud providers, GulfStream builds cloud architectures tailored to each industry&apos;s regulatory, compliance, and operational requirements — including PCI DSS for retail, HIPAA and NCA ECC for healthcare, and ISO 27001 for professional services.</p>
-            </div>
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>Which cloud platforms do you manage?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>We manage <Link href="/services/cloud-managed-services/aws" style={{ color: 'var(--accent)' }}>AWS</Link>, <Link href="/services/cloud-managed-services/azure" style={{ color: 'var(--accent)' }}>Microsoft Azure</Link>, <Link href="/services/cloud-managed-services/google" style={{ color: 'var(--accent)' }}>Google Cloud</Link>, and <Link href="/services/cloud-managed-services/oracle" style={{ color: 'var(--accent)' }}>Oracle Cloud</Link>, supporting single-cloud and multi-cloud environments. Our certified architects manage Kubernetes, serverless, IoT, data lakes, and enterprise workloads across all platforms.</p>
-            </div>
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>Do you offer a free cloud consultation?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>Yes. Every new engagement starts with a <Link href="/book-a-review" style={{ color: 'var(--accent)' }}>free cloud assessment</Link> — including cost analysis, security review, and a 90-day optimization roadmap delivered within 5 business days at no charge.</p>
-            </div>
-            <div className="card" style={{ gridColumn: 'span 2' }}>
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>How do you ensure compliance for Saudi enterprises?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>We design cloud environments with NCA ECC, SAMA, Saudi MOH, and international frameworks (HIPAA, ISO 27001, PCI DSS, SOC 2) built in from day one — with continuous compliance monitoring and automated audit reporting. See our <Link href="/services/cloud-security-governance" style={{ color: 'var(--accent)' }}>cloud security and governance</Link> services for details.</p>
-            </div>
+          <div className="faq-accordion reveal">
+            {industriesFaqs.map((faq, index) => {
+              const isOpen = openFaqIndex === index;
+              return (
+                <div className={`faq-item ${isOpen ? 'active' : ''}`} key={faq.question}>
+                  <button
+                    className="faq-question"
+                    type="button"
+                    onClick={() => setOpenFaqIndex(isOpen ? null : index)}
+                    aria-expanded={isOpen}
+                    aria-controls={`industries-faq-answer-${index}`}
+                  >
+                    <span>{faq.question}</span>
+                    <span className="faq-toggle" aria-hidden="true">+</span>
+                  </button>
+                  <div
+                    id={`industries-faq-answer-${index}`}
+                    className="faq-answer"
+                  >
+                    <div className="faq-answer-inner">
+                      <p>{faq.answer}</p>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>

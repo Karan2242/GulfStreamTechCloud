@@ -1,11 +1,31 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 import { useReveal } from '@/hooks/useReveal';
 
 const CaseStudiesContent = () => {
   useReveal();
+  const [openFaqIndex, setOpenFaqIndex] = useState(null);
+
+  const caseStudiesFaqs = [
+    {
+      question: 'What industries does GulfStream serve with Managed Cloud Services?',
+      answer: 'GulfStream Technologies serves enterprises across retail, healthcare, SaaS, logistics, banking, government, and professional services in Saudi Arabia with multi-Managed Cloud Services across AWS, Azure, Google Cloud, and Oracle Cloud.'
+    },
+    {
+      question: 'What results can be achieved with cloud transformation?',
+      answer: 'Our clients typically achieve 28-35% cloud cost reduction, 99.99% application uptime, zero unplanned outages, and full NCA ECC/ISO 27001 compliance within 60-90 days of engagement.'
+    },
+    {
+      question: 'How long before cloud transformation results are visible?',
+      answer: (
+        <>
+          Most enterprises see measurable cost savings within 60-90 days. Performance and uptime improvements are typically visible within the first 30 days. <Link href="/book-a-review" style={{ color: 'var(--accent)' }}>Book a free assessment</Link> to get started.
+        </>
+      )
+    }
+  ];
 
   return (
     <main>
@@ -304,19 +324,33 @@ const CaseStudiesContent = () => {
             <div className="badge badge-accent">❓ FAQ</div>
             <h2 className="display-md">Frequently Asked Questions</h2>
           </div>
-          <div className="grid-2 reveal">
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>What industries does GulfStream serve with Managed Cloud Services?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>GulfStream Technologies serves enterprises across retail, healthcare, SaaS, logistics, banking, government, and professional services in Saudi Arabia with multi-Managed Cloud Services across AWS, Azure, Google Cloud, and Oracle Cloud.</p>
-            </div>
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>What results can be achieved with cloud transformation?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>Our clients typically achieve 28-35% cloud cost reduction, 99.99% application uptime, zero unplanned outages, and full NCA ECC/ISO 27001 compliance within 60-90 days of engagement.</p>
-            </div>
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>How long before cloud transformation results are visible?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>Most enterprises see measurable cost savings within 60-90 days. Performance and uptime improvements are typically visible within the first 30 days. <Link href="/book-a-review" style={{ color: 'var(--accent)' }}>Book a free assessment</Link> to get started.</p>
-            </div>
+          <div className="faq-accordion reveal">
+            {caseStudiesFaqs.map((faq, index) => {
+              const isOpen = openFaqIndex === index;
+
+              return (
+                <div className={`faq-item ${isOpen ? 'active' : ''}`} key={faq.question}>
+                  <button
+                    className="faq-question"
+                    type="button"
+                    onClick={() => setOpenFaqIndex(isOpen ? null : index)}
+                    aria-expanded={isOpen}
+                    aria-controls={`case-studies-faq-answer-${index}`}
+                  >
+                    <span>{faq.question}</span>
+                    <span className="faq-toggle" aria-hidden="true">+</span>
+                  </button>
+                  <div
+                    id={`case-studies-faq-answer-${index}`}
+                    className="faq-answer"
+                  >
+                    <div className="faq-answer-inner">
+                      <p>{faq.answer}</p>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>

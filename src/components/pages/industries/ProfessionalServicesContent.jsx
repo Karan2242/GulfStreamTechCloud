@@ -1,11 +1,43 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 import { useReveal } from '@/hooks/useReveal';
 
 const ProfessionalServicesContent = () => {
   useReveal();
+  const [openFaqIndex, setOpenFaqIndex] = useState(null);
+
+  const professionalServicesFaqs = [
+    {
+      question: 'What is secure cloud for professional services?',
+      answer: 'Secure cloud for professional services is a compliance-first cloud environment designed for consulting, legal, and financial firms — with zero-trust security, encrypted document management, complete audit trails, and ISO 27001-aligned governance to protect sensitive client data.'
+    },
+    {
+      question: 'How do you ensure regulatory compliance?',
+      answer: (
+        <>
+          We design cloud environments with <Link href="/services/cloud-security-governance" style={{ color: 'var(--accent)' }}>compliance built in</Link> — including NCA ECC, ISO 27001, CMA regulations, and international frameworks (GDPR for global clients). Automated compliance monitoring and evidence collection ensure audit readiness at all times.
+        </>
+      )
+    },
+    {
+      question: 'Which cloud platforms do you support?',
+      answer: (
+        <>
+          GulfStream is certified across <Link href="/services/cloud-managed-services/aws" style={{ color: 'var(--accent)' }}>AWS</Link>, <Link href="/services/cloud-managed-services/azure" style={{ color: 'var(--accent)' }}>Microsoft Azure</Link>, <Link href="/services/cloud-managed-services/google" style={{ color: 'var(--accent)' }}>Google Cloud</Link>, and <Link href="/services/cloud-managed-services/oracle" style={{ color: 'var(--accent)' }}>Oracle Cloud</Link>. We design secure cloud architectures using AWS IAM, CloudTrail, S3, and KMS, or Azure AD, Activity Logs, Blob Storage, and Key Vault — based on your existing technology stack.
+        </>
+      )
+    },
+    {
+      question: 'Can you reduce IT overhead costs?',
+      answer: (
+        <>
+          Yes. Our <Link href="/services/finops-cost-optimization" style={{ color: 'var(--accent)' }}>managed cloud and FinOps practice</Link> delivers an average 40% IT overhead reduction for professional services firms — by managing all cloud operations, automating compliance, and enabling client-level cost attribution for accurate pass-through billing.
+        </>
+      )
+    }
+  ];
 
   return (
     <main>
@@ -222,23 +254,32 @@ const ProfessionalServicesContent = () => {
             <div className="badge badge-primary">❓ FAQ</div>
             <h2 className="display-md">Professional Services Cloud FAQ</h2>
           </div>
-          <div className="grid-2 reveal">
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>What is secure cloud for professional services?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>Secure cloud for professional services is a compliance-first cloud environment designed for consulting, legal, and financial firms — with zero-trust security, encrypted document management, complete audit trails, and ISO 27001-aligned governance to protect sensitive client data.</p>
-            </div>
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>How do you ensure regulatory compliance?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>We design cloud environments with <Link href="/services/cloud-security-governance" style={{ color: 'var(--accent)' }}>compliance built in</Link> — including NCA ECC, ISO 27001, CMA regulations, and international frameworks (GDPR for global clients). Automated compliance monitoring and evidence collection ensure audit readiness at all times.</p>
-            </div>
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>Which cloud platforms do you support?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>GulfStream is certified across <Link href="/services/cloud-managed-services/aws" style={{ color: 'var(--accent)' }}>AWS</Link>, <Link href="/services/cloud-managed-services/azure" style={{ color: 'var(--accent)' }}>Microsoft Azure</Link>, <Link href="/services/cloud-managed-services/google" style={{ color: 'var(--accent)' }}>Google Cloud</Link>, and <Link href="/services/cloud-managed-services/oracle" style={{ color: 'var(--accent)' }}>Oracle Cloud</Link>. We design secure cloud architectures using AWS IAM, CloudTrail, S3, and KMS, or Azure AD, Activity Logs, Blob Storage, and Key Vault — based on your existing technology stack.</p>
-            </div>
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>Can you reduce IT overhead costs?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>Yes. Our <Link href="/services/finops-cost-optimization" style={{ color: 'var(--accent)' }}>managed cloud and FinOps practice</Link> delivers an average 40% IT overhead reduction for professional services firms — by managing all cloud operations, automating compliance, and enabling client-level cost attribution for accurate pass-through billing.</p>
-            </div>
+          <div className="faq-accordion reveal">
+            {professionalServicesFaqs.map((faq, index) => {
+              const isOpen = openFaqIndex === index;
+              return (
+                <div className={`faq-item ${isOpen ? 'active' : ''}`} key={faq.question}>
+                  <button
+                    className="faq-question"
+                    type="button"
+                    onClick={() => setOpenFaqIndex(isOpen ? null : index)}
+                    aria-expanded={isOpen}
+                    aria-controls={`professional-services-faq-answer-${index}`}
+                  >
+                    <span>{faq.question}</span>
+                    <span className="faq-toggle" aria-hidden="true">+</span>
+                  </button>
+                  <div
+                    id={`professional-services-faq-answer-${index}`}
+                    className="faq-answer"
+                  >
+                    <div className="faq-answer-inner">
+                      <p>{faq.answer}</p>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>

@@ -1,11 +1,43 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 import { useReveal } from '@/hooks/useReveal';
 
 const HealthcareContent = () => {
   useReveal();
+  const [openFaqIndex, setOpenFaqIndex] = useState(null);
+
+  const healthcareFaqs = [
+    {
+      question: 'What is healthcare cloud infrastructure?',
+      answer: 'Healthcare cloud infrastructure is a purpose-built cloud environment designed to host clinical applications (EHR, HIS, PACS), store patient data securely, and ensure compliance with HIPAA, NCA ECC, and Saudi Ministry of Health regulations — while delivering 99.99% uptime for mission-critical systems.'
+    },
+    {
+      question: 'How do you ensure healthcare compliance in Saudi Arabia?',
+      answer: (
+        <>
+          GulfStream architects cloud environments with NCA ECC, Saudi MOH, and HIPAA compliance built in from day one — including data residency enforcement in Saudi regions, end-to-end encryption, audit logging, and automated <Link href="/services/cloud-security-governance" style={{ color: 'var(--accent)' }}>compliance reporting</Link> for regulatory audits.
+        </>
+      )
+    },
+    {
+      question: 'Which cloud platforms do you support for healthcare?',
+      answer: (
+        <>
+          Yes. We are certified across <Link href="/services/cloud-managed-services/aws" style={{ color: 'var(--accent)' }}>AWS</Link>, <Link href="/services/cloud-managed-services/azure" style={{ color: 'var(--accent)' }}>Microsoft Azure</Link>, <Link href="/services/cloud-managed-services/google" style={{ color: 'var(--accent)' }}>Google Cloud</Link>, and <Link href="/services/cloud-managed-services/oracle" style={{ color: 'var(--accent)' }}>Oracle Cloud</Link>, supporting HIPAA-eligible services on all platforms — including AWS HealthLake, Azure Health Data Services, and compliant storage for DICOM imaging and patient records.
+        </>
+      )
+    },
+    {
+      question: 'Can you reduce healthcare cloud costs?',
+      answer: (
+        <>
+          Yes. Our <Link href="/services/finops-cost-optimization" style={{ color: 'var(--accent)' }}>FinOps practice</Link> has delivered 45% storage cost reduction through intelligent tiering for DICOM and medical data, plus right-sizing of clinical application infrastructure — while maintaining full compliance and 99.99% uptime.
+        </>
+      )
+    }
+  ];
 
   return (
     <main>
@@ -222,23 +254,32 @@ const HealthcareContent = () => {
             <div className="badge badge-primary">❓ FAQ</div>
             <h2 className="display-md">Healthcare Cloud FAQ</h2>
           </div>
-          <div className="grid-2 reveal">
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>What is healthcare cloud infrastructure?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>Healthcare cloud infrastructure is a purpose-built cloud environment designed to host clinical applications (EHR, HIS, PACS), store patient data securely, and ensure compliance with HIPAA, NCA ECC, and Saudi Ministry of Health regulations — while delivering 99.99% uptime for mission-critical systems.</p>
-            </div>
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>How do you ensure healthcare compliance in Saudi Arabia?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>GulfStream architects cloud environments with NCA ECC, Saudi MOH, and HIPAA compliance built in from day one — including data residency enforcement in Saudi regions, end-to-end encryption, audit logging, and automated <Link href="/services/cloud-security-governance" style={{ color: 'var(--accent)' }}>compliance reporting</Link> for regulatory audits.</p>
-            </div>
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>Which cloud platforms do you support for healthcare?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>Yes. We are certified across <Link href="/services/cloud-managed-services/aws" style={{ color: 'var(--accent)' }}>AWS</Link>, <Link href="/services/cloud-managed-services/azure" style={{ color: 'var(--accent)' }}>Microsoft Azure</Link>, <Link href="/services/cloud-managed-services/google" style={{ color: 'var(--accent)' }}>Google Cloud</Link>, and <Link href="/services/cloud-managed-services/oracle" style={{ color: 'var(--accent)' }}>Oracle Cloud</Link>, supporting HIPAA-eligible services on all platforms — including AWS HealthLake, Azure Health Data Services, and compliant storage for DICOM imaging and patient records.</p>
-            </div>
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>Can you reduce healthcare cloud costs?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>Yes. Our <Link href="/services/finops-cost-optimization" style={{ color: 'var(--accent)' }}>FinOps practice</Link> has delivered 45% storage cost reduction through intelligent tiering for DICOM and medical data, plus right-sizing of clinical application infrastructure — while maintaining full compliance and 99.99% uptime.</p>
-            </div>
+          <div className="faq-accordion reveal">
+            {healthcareFaqs.map((faq, index) => {
+              const isOpen = openFaqIndex === index;
+              return (
+                <div className={`faq-item ${isOpen ? 'active' : ''}`} key={faq.question}>
+                  <button
+                    className="faq-question"
+                    type="button"
+                    onClick={() => setOpenFaqIndex(isOpen ? null : index)}
+                    aria-expanded={isOpen}
+                    aria-controls={`healthcare-faq-answer-${index}`}
+                  >
+                    <span>{faq.question}</span>
+                    <span className="faq-toggle" aria-hidden="true">+</span>
+                  </button>
+                  <div
+                    id={`healthcare-faq-answer-${index}`}
+                    className="faq-answer"
+                  >
+                    <div className="faq-answer-inner">
+                      <p>{faq.answer}</p>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>

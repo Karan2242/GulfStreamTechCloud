@@ -1,11 +1,39 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 import { useReveal } from '@/hooks/useReveal';
 
 const CloudMigrationContent = () => {
   useReveal();
+  const [openFaqIndex, setOpenFaqIndex] = useState(null);
+
+  const migrationFaqs = [
+    {
+      question: 'How long does a cloud migration take?',
+      answer: 'Migration timelines depend on complexity. Simple lift-and-shift migrations can complete in 4-8 weeks, while full enterprise migrations with modernization typically take 3-6 months. GulfStream uses wave-based planning for predictable delivery.'
+    },
+    {
+      question: 'Is downtime required during cloud migration?',
+      answer: 'GulfStream designs zero-downtime migration strategies using blue-green deployments, database replication, and phased cutovers. Critical applications maintain availability throughout.'
+    },
+    {
+      question: 'What is the 6Rs migration framework?',
+      answer: 'The 6Rs framework classifies each workload as Rehost, Replatform, Refactor, Repurchase, Retire, or Retain — ensuring the optimal migration strategy for each application in your portfolio.'
+    },
+    {
+      question: 'How much does cloud migration cost in Saudi Arabia?',
+      answer: (
+        <>
+          Costs vary based on environment size, complexity, and modernization scope. GulfStream provides a free migration assessment with detailed cost estimates. Most enterprises see 35% infrastructure cost reduction. <Link href="/book-a-review" style={{ color: 'var(--accent)' }}>Book a free assessment</Link>.
+        </>
+      )
+    },
+    {
+      question: 'Do you provide post-migration support?',
+      answer: 'Yes. Every migration includes post-migration optimization — rightsizing, cost optimization, performance tuning, and transition to our managed services for ongoing 24/7 cloud operations.'
+    }
+  ];
 
   return (
     <main>
@@ -367,27 +395,33 @@ const CloudMigrationContent = () => {
             <div className="badge badge-accent">❓ FAQ</div>
             <h2 className="display-md">Frequently Asked Questions</h2>
           </div>
-          <div className="grid-2 reveal">
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>How long does a cloud migration take?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>Migration timelines depend on complexity. Simple lift-and-shift migrations can complete in 4-8 weeks, while full enterprise migrations with modernization typically take 3-6 months. GulfStream uses wave-based planning for predictable delivery.</p>
-            </div>
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>Is downtime required during cloud migration?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>GulfStream designs zero-downtime migration strategies using blue-green deployments, database replication, and phased cutovers. Critical applications maintain availability throughout.</p>
-            </div>
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>What is the 6Rs migration framework?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>The 6Rs framework classifies each workload as Rehost, Replatform, Refactor, Repurchase, Retire, or Retain — ensuring the optimal migration strategy for each application in your portfolio.</p>
-            </div>
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>How much does cloud migration cost in Saudi Arabia?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>Costs vary based on environment size, complexity, and modernization scope. GulfStream provides a free migration assessment with detailed cost estimates. Most enterprises see 35% infrastructure cost reduction. <Link href="/book-a-review" style={{ color: 'var(--accent)' }}>Book a free assessment</Link>.</p>
-            </div>
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>Do you provide post-migration support?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>Yes. Every migration includes post-migration optimization — rightsizing, cost optimization, performance tuning, and transition to our managed services for ongoing 24/7 cloud operations.</p>
-            </div>
+          <div className="faq-accordion reveal">
+            {migrationFaqs.map((faq, index) => {
+              const isOpen = openFaqIndex === index;
+
+              return (
+                <div className={`faq-item ${isOpen ? 'active' : ''}`} key={faq.question}>
+                  <button
+                    className="faq-question"
+                    type="button"
+                    onClick={() => setOpenFaqIndex(isOpen ? null : index)}
+                    aria-expanded={isOpen}
+                    aria-controls={`migration-faq-answer-${index}`}
+                  >
+                    <span>{faq.question}</span>
+                    <span className="faq-toggle" aria-hidden="true">+</span>
+                  </button>
+                  <div
+                    id={`migration-faq-answer-${index}`}
+                    className="faq-answer"
+                  >
+                    <div className="faq-answer-inner">
+                      <p>{faq.answer}</p>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>

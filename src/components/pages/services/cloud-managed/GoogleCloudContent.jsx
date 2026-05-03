@@ -1,12 +1,40 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 import { useReveal } from '@/hooks/useReveal';
 import CloudSubNav from '@/components/CloudSubNav';
 
 const GoogleCloudContent = () => {
   useReveal();
+  const [openFaqIndex, setOpenFaqIndex] = useState(null);
+
+  const gcpFaqs = [
+    {
+      question: 'What are Google Managed Cloud Services?',
+      answer: 'Google Managed Cloud Services involve outsourcing the management of your GCP environment to certified cloud experts. This includes 24/7 monitoring, GKE cluster management, BigQuery optimization, security governance with Security Command Center, cost optimization, and incident response.'
+    },
+    {
+      question: 'How much do Google Managed Cloud Services cost?',
+      answer: (
+        <>
+          Costs depend on your environment complexity, number of projects, and workload types. GulfStream Technologies offers flexible pricing from basic monitoring to fully managed operations. <Link href="/book-a-review" style={{ color: 'var(--accent)' }}>Book a free assessment</Link> for a tailored quote.
+        </>
+      )
+    },
+    {
+      question: 'How do you optimize BigQuery costs?',
+      answer: 'We implement slot reservations, partition and cluster tables, optimize query patterns, use materialized views, and implement storage lifecycle policies — typically reducing BigQuery costs by 40-60%.'
+    },
+    {
+      question: 'Do you manage GKE clusters?',
+      answer: 'Yes. We provide full GKE lifecycle management including cluster upgrades, node pool optimization, autoscaling configuration, security hardening, and cost management for containerized workloads on Google Cloud.'
+    },
+    {
+      question: 'Why choose GCP managed services in Saudi Arabia?',
+      answer: 'Google Cloud has a dedicated region in Dammam, Saudi Arabia, ideal for data residency. A local managed services provider ensures NCA ECC compliance, low-latency support, and deep expertise in GCP\'s data and analytics stack.'
+    }
+  ];
 
   return (
     <main>
@@ -321,27 +349,32 @@ const GoogleCloudContent = () => {
             <div className="badge badge-accent">❓ FAQ</div>
             <h2 className="display-md">Frequently Asked Questions</h2>
           </div>
-          <div className="grid-2 reveal">
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>What are Google Managed Cloud Services?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>Google Managed Cloud Services involve outsourcing the management of your GCP environment to certified cloud experts. This includes 24/7 monitoring, GKE cluster management, BigQuery optimization, security governance with Security Command Center, cost optimization, and incident response.</p>
-            </div>
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>How much do Google Managed Cloud Services cost?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>Costs depend on your environment complexity, number of projects, and workload types. GulfStream Technologies offers flexible pricing from basic monitoring to fully managed operations. <Link href="/book-a-review" style={{ color: 'var(--accent)' }}>Book a free assessment</Link> for a tailored quote.</p>
-            </div>
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>How do you optimize BigQuery costs?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>We implement slot reservations, partition and cluster tables, optimize query patterns, use materialized views, and implement storage lifecycle policies — typically reducing BigQuery costs by 40-60%.</p>
-            </div>
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>Do you manage GKE clusters?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>Yes. We provide full GKE lifecycle management including cluster upgrades, node pool optimization, autoscaling configuration, security hardening, and cost management for containerized workloads on Google Cloud.</p>
-            </div>
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>Why choose GCP managed services in Saudi Arabia?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>Google Cloud has a dedicated region in Dammam, Saudi Arabia, ideal for data residency. A local managed services provider ensures NCA ECC compliance, low-latency support, and deep expertise in GCP&apos;s data and analytics stack.</p>
-            </div>
+          <div className="faq-accordion reveal">
+            {gcpFaqs.map((faq, index) => {
+              const isOpen = openFaqIndex === index;
+              return (
+                <div className={`faq-item ${isOpen ? 'active' : ''}`} key={faq.question}>
+                  <button
+                    className="faq-question"
+                    type="button"
+                    onClick={() => setOpenFaqIndex(isOpen ? null : index)}
+                    aria-expanded={isOpen}
+                    aria-controls={`gcp-faq-answer-${index}`}
+                  >
+                    <span>{faq.question}</span>
+                    <span className="faq-toggle" aria-hidden="true">+</span>
+                  </button>
+                  <div
+                    id={`gcp-faq-answer-${index}`}
+                    className="faq-answer"
+                  >
+                    <div className="faq-answer-inner">
+                      <p>{faq.answer}</p>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>

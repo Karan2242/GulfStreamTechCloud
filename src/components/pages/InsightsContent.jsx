@@ -72,6 +72,42 @@ const categories = ['All', 'FinOps', 'Security', 'Migration', 'Architecture'];
 const InsightsContent = () => {
   useReveal();
   const [activeCategory, setActiveCategory] = useState('All');
+  const [openFaqIndex, setOpenFaqIndex] = useState(null);
+
+  const insightsFaqs = [
+    {
+      question: 'Who writes GulfStream\'s cloud insights?',
+      answer: (
+        <>
+          Our articles are written by certified multi-cloud architects and engineers with hands-on experience managing enterprise <Link href="/services/cloud-managed-services" style={{ color: 'var(--accent)' }}>cloud environments across Saudi Arabia</Link>. Every guide is based on real project experience, not theory.
+        </>
+      )
+    },
+    {
+      question: 'Are these insights relevant to Saudi Arabia?',
+      answer: (
+        <>
+          Yes. All our content addresses Saudi-specific considerations including <Link href="/services/cloud-security-governance" style={{ color: 'var(--accent)' }}>NCA ECC compliance</Link>, AWS Middle East and Azure UAE region availability, Vision 2030 digital transformation, and local regulatory requirements for enterprises in Riyadh, Jeddah, and Dammam.
+        </>
+      )
+    },
+    {
+      question: 'How can I reduce cloud costs in Saudi Arabia?',
+      answer: (
+        <>
+          Start with our FinOps guide covering rightsizing, Reserved Instance optimization, and waste elimination. For personalized recommendations, <Link href="/book-a-review" style={{ color: 'var(--accent)' }}>book a free cloud assessment</Link> — our <Link href="/services/finops-cost-optimization" style={{ color: 'var(--accent)' }}>FinOps team</Link> delivers an average 30% cloud cost reduction within 90 days.
+        </>
+      )
+    },
+    {
+      question: 'Do you offer cloud consulting beyond insights?',
+      answer: (
+        <>
+          Yes. GulfStream Technologies provides <Link href="/services" style={{ color: 'var(--accent)' }}>full Managed Cloud Services</Link> including <Link href="/services/cloud-managed-services/aws" style={{ color: 'var(--accent)' }}>AWS managed services</Link>, <Link href="/services/cloud-managed-services/azure" style={{ color: 'var(--accent)' }}>Azure managed services</Link>, <Link href="/services/cloud-managed-services/google" style={{ color: 'var(--accent)' }}>Google Cloud services</Link>, <Link href="/services/finops-cost-optimization" style={{ color: 'var(--accent)' }}>FinOps cost optimization</Link>, and <Link href="/services/cloud-migration" style={{ color: 'var(--accent)' }}>cloud migration</Link> for Saudi enterprises.
+        </>
+      )
+    }
+  ];
 
   const filtered = activeCategory === 'All' ? articles : articles.filter(a => a.category === activeCategory);
 
@@ -231,23 +267,32 @@ const InsightsContent = () => {
             <div className="badge badge-primary">❓ Frequently Asked Questions</div>
             <h2 className="display-md">Cloud Insights FAQ</h2>
           </div>
-          <div className="reveal" style={{ maxWidth: '800px', margin: '0 auto' }}>
-            <div className="card" style={{ marginBottom: '16px' }}>
-              <h3 style={{ marginBottom: '8px' }}>Who writes GulfStream&apos;s cloud insights?</h3>
-              <p style={{ color: 'var(--text-secondary)', lineHeight: 1.7 }}>Our articles are written by certified multi-cloud architects and engineers with hands-on experience managing enterprise <Link href="/services/cloud-managed-services" style={{ color: 'var(--accent)' }}>cloud environments across Saudi Arabia</Link>. Every guide is based on real project experience, not theory.</p>
-            </div>
-            <div className="card" style={{ marginBottom: '16px' }}>
-              <h3 style={{ marginBottom: '8px' }}>Are these insights relevant to Saudi Arabia?</h3>
-              <p style={{ color: 'var(--text-secondary)', lineHeight: 1.7 }}>Yes. All our content addresses Saudi-specific considerations including <Link href="/services/cloud-security-governance" style={{ color: 'var(--accent)' }}>NCA ECC compliance</Link>, AWS Middle East and Azure UAE region availability, Vision 2030 digital transformation, and local regulatory requirements for enterprises in Riyadh, Jeddah, and Dammam.</p>
-            </div>
-            <div className="card" style={{ marginBottom: '16px' }}>
-              <h3 style={{ marginBottom: '8px' }}>How can I reduce cloud costs in Saudi Arabia?</h3>
-              <p style={{ color: 'var(--text-secondary)', lineHeight: 1.7 }}>Start with our FinOps guide covering rightsizing, Reserved Instance optimization, and waste elimination. For personalized recommendations, <Link href="/book-a-review" style={{ color: 'var(--accent)' }}>book a free cloud assessment</Link> — our <Link href="/services/finops-cost-optimization" style={{ color: 'var(--accent)' }}>FinOps team</Link> delivers an average 30% cloud cost reduction within 90 days.</p>
-            </div>
-            <div className="card" style={{ marginBottom: '16px' }}>
-              <h3 style={{ marginBottom: '8px' }}>Do you offer cloud consulting beyond insights?</h3>
-              <p style={{ color: 'var(--text-secondary)', lineHeight: 1.7 }}>Yes. GulfStream Technologies provides <Link href="/services" style={{ color: 'var(--accent)' }}>full Managed Cloud Services</Link> including <Link href="/services/cloud-managed-services/aws" style={{ color: 'var(--accent)' }}>AWS managed services</Link>, <Link href="/services/cloud-managed-services/azure" style={{ color: 'var(--accent)' }}>Azure managed services</Link>, <Link href="/services/cloud-managed-services/google" style={{ color: 'var(--accent)' }}>Google Cloud services</Link>, <Link href="/services/finops-cost-optimization" style={{ color: 'var(--accent)' }}>FinOps cost optimization</Link>, and <Link href="/services/cloud-migration" style={{ color: 'var(--accent)' }}>cloud migration</Link> for Saudi enterprises.</p>
-            </div>
+          <div className="faq-accordion reveal">
+            {insightsFaqs.map((faq, index) => {
+              const isOpen = openFaqIndex === index;
+              return (
+                <div className={`faq-item ${isOpen ? 'active' : ''}`} key={faq.question}>
+                  <button
+                    className="faq-question"
+                    type="button"
+                    onClick={() => setOpenFaqIndex(isOpen ? null : index)}
+                    aria-expanded={isOpen}
+                    aria-controls={`insights-faq-answer-${index}`}
+                  >
+                    <span>{faq.question}</span>
+                    <span className="faq-toggle" aria-hidden="true">+</span>
+                  </button>
+                  <div
+                    id={`insights-faq-answer-${index}`}
+                    className="faq-answer"
+                  >
+                    <div className="faq-answer-inner">
+                      <p>{faq.answer}</p>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>

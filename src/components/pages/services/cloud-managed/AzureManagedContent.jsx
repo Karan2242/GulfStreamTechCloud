@@ -1,12 +1,40 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 import { useReveal } from '@/hooks/useReveal';
 import CloudSubNav from '@/components/CloudSubNav';
 
 const AzureManagedContent = () => {
   useReveal();
+  const [openFaqIndex, setOpenFaqIndex] = useState(null);
+
+  const azureFaqs = [
+    {
+      question: 'What are Azure Managed Services?',
+      answer: 'Azure Managed Services involve outsourcing the management of your Microsoft Azure environment to certified cloud experts. This includes 24/7 monitoring, security governance with Defender for Cloud, cost optimization, Entra ID management, patching, and incident response.'
+    },
+    {
+      question: 'How much do Azure Managed Services cost in Saudi Arabia?',
+      answer: (
+        <>
+          Costs depend on your environment complexity, number of subscriptions, and support level. GulfStream Technologies offers flexible pricing from basic monitoring to fully managed operations. <Link href="/book-a-review" style={{ color: 'var(--accent)' }}>Book a free assessment</Link> for a tailored quote.
+        </>
+      )
+    },
+    {
+      question: 'How quickly can you reduce our Azure costs?',
+      answer: 'Most enterprises see a 25-35% reduction in Azure spend within 90 days through rightsizing, Azure Reservations, Hybrid Benefit optimization, and elimination of idle resources using our FinOps methodology.'
+    },
+    {
+      question: 'Why choose Azure cloud management in Saudi Arabia?',
+      answer: 'Azure has a dedicated cloud region in Saudi Arabia, making it ideal for data residency. A local managed services provider ensures NCA ECC compliance, low-latency support, and deep understanding of the Saudi enterprise market.'
+    },
+    {
+      question: 'Do you support hybrid Azure environments?',
+      answer: 'Yes. We specialize in managing hybrid Azure environments including Azure Arc, ExpressRoute, Active Directory synchronization, and Azure Stack HCI — ensuring seamless integration between on-premises and cloud infrastructure.'
+    }
+  ];
 
   return (
     <main>
@@ -321,27 +349,32 @@ const AzureManagedContent = () => {
             <div className="badge badge-accent">❓ FAQ</div>
             <h2 className="display-md">Frequently Asked Questions</h2>
           </div>
-          <div className="grid-2 reveal">
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>What are Azure Managed Services?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>Azure Managed Services involve outsourcing the management of your Microsoft Azure environment to certified cloud experts. This includes 24/7 monitoring, security governance with Defender for Cloud, cost optimization, Entra ID management, patching, and incident response.</p>
-            </div>
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>How much do Azure Managed Services cost in Saudi Arabia?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>Costs depend on your environment complexity, number of subscriptions, and support level. GulfStream Technologies offers flexible pricing from basic monitoring to fully managed operations. <Link href="/book-a-review" style={{ color: 'var(--accent)' }}>Book a free assessment</Link> for a tailored quote.</p>
-            </div>
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>How quickly can you reduce our Azure costs?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>Most enterprises see a 25-35% reduction in Azure spend within 90 days through rightsizing, Azure Reservations, Hybrid Benefit optimization, and elimination of idle resources using our FinOps methodology.</p>
-            </div>
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>Why choose Azure cloud management in Saudi Arabia?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>Azure has a dedicated cloud region in Saudi Arabia, making it ideal for data residency. A local managed services provider ensures NCA ECC compliance, low-latency support, and deep understanding of the Saudi enterprise market.</p>
-            </div>
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>Do you support hybrid Azure environments?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>Yes. We specialize in managing hybrid Azure environments including Azure Arc, ExpressRoute, Active Directory synchronization, and Azure Stack HCI — ensuring seamless integration between on-premises and cloud infrastructure.</p>
-            </div>
+          <div className="faq-accordion reveal">
+            {azureFaqs.map((faq, index) => {
+              const isOpen = openFaqIndex === index;
+              return (
+                <div className={`faq-item ${isOpen ? 'active' : ''}`} key={faq.question}>
+                  <button
+                    className="faq-question"
+                    type="button"
+                    onClick={() => setOpenFaqIndex(isOpen ? null : index)}
+                    aria-expanded={isOpen}
+                    aria-controls={`azure-faq-answer-${index}`}
+                  >
+                    <span>{faq.question}</span>
+                    <span className="faq-toggle" aria-hidden="true">+</span>
+                  </button>
+                  <div
+                    id={`azure-faq-answer-${index}`}
+                    className="faq-answer"
+                  >
+                    <div className="faq-answer-inner">
+                      <p>{faq.answer}</p>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>

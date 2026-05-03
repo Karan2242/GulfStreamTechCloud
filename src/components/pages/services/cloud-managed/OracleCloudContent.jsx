@@ -1,12 +1,40 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 import { useReveal } from '@/hooks/useReveal';
 import CloudSubNav from '@/components/CloudSubNav';
 
 const OracleCloudContent = () => {
   useReveal();
+  const [openFaqIndex, setOpenFaqIndex] = useState(null);
+
+  const ociiFaqs = [
+    {
+      question: 'What are Oracle Managed Cloud Services?',
+      answer: 'Oracle Managed Cloud Services involve outsourcing the management of your OCI environment to certified cloud experts. This includes 24/7 monitoring, security governance with Cloud Guard, database performance tuning, licensing optimization, and incident response.'
+    },
+    {
+      question: 'How do you optimize Oracle licensing costs?',
+      answer: 'We analyze your Oracle licensing across BYOL, Universal Credits, and Support contracts. We identify unused licenses, optimize processor metrics, and implement BYOL strategies that reduce licensing costs by up to 35% on OCI.'
+    },
+    {
+      question: 'Can you manage Oracle database migrations to OCI?',
+      answer: 'Yes. We handle end-to-end Oracle database migrations from on-premises or other clouds to OCI, including Autonomous Database and Exadata Cloud Service — with zero-downtime strategies and full data validation.'
+    },
+    {
+      question: 'How much do Oracle Managed Cloud Services cost?',
+      answer: (
+        <>
+          Costs depend on your environment complexity, number of tenancies, and database workloads. GulfStream Technologies offers flexible pricing from basic monitoring to fully managed operations. <Link href="/book-a-review" style={{ color: 'var(--accent)' }}>Book a free assessment</Link> for a tailored quote.
+        </>
+      )
+    },
+    {
+      question: 'Why choose OCI managed services in Saudi Arabia?',
+      answer: 'Oracle has a dedicated cloud region in Saudi Arabia, making it ideal for data residency and regulatory compliance. A local managed services provider ensures NCA ECC compliance, low-latency support, and deep Oracle database expertise.'
+    }
+  ];
 
   return (
     <main>
@@ -321,27 +349,32 @@ const OracleCloudContent = () => {
             <div className="badge badge-accent">❓ FAQ</div>
             <h2 className="display-md">Frequently Asked Questions</h2>
           </div>
-          <div className="grid-2 reveal">
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>What are Oracle Managed Cloud Services?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>Oracle Managed Cloud Services involve outsourcing the management of your OCI environment to certified cloud experts. This includes 24/7 monitoring, security governance with Cloud Guard, database performance tuning, licensing optimization, and incident response.</p>
-            </div>
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>How do you optimize Oracle licensing costs?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>We analyze your Oracle licensing across BYOL, Universal Credits, and Support contracts. We identify unused licenses, optimize processor metrics, and implement BYOL strategies that reduce licensing costs by up to 35% on OCI.</p>
-            </div>
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>Can you manage Oracle database migrations to OCI?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>Yes. We handle end-to-end Oracle database migrations from on-premises or other clouds to OCI, including Autonomous Database and Exadata Cloud Service — with zero-downtime strategies and full data validation.</p>
-            </div>
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>How much do Oracle Managed Cloud Services cost?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>Costs depend on your environment complexity, number of tenancies, and database workloads. GulfStream Technologies offers flexible pricing from basic monitoring to fully managed operations. <Link href="/book-a-review" style={{ color: 'var(--accent)' }}>Book a free assessment</Link> for a tailored quote.</p>
-            </div>
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1rem' }}>Why choose OCI managed services in Saudi Arabia?</h3>
-              <p style={{ fontSize: '.9rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>Oracle has a dedicated cloud region in Saudi Arabia, making it ideal for data residency and regulatory compliance. A local managed services provider ensures NCA ECC compliance, low-latency support, and deep Oracle database expertise.</p>
-            </div>
+          <div className="faq-accordion reveal">
+            {ociiFaqs.map((faq, index) => {
+              const isOpen = openFaqIndex === index;
+              return (
+                <div className={`faq-item ${isOpen ? 'active' : ''}`} key={faq.question}>
+                  <button
+                    className="faq-question"
+                    type="button"
+                    onClick={() => setOpenFaqIndex(isOpen ? null : index)}
+                    aria-expanded={isOpen}
+                    aria-controls={`oci-faq-answer-${index}`}
+                  >
+                    <span>{faq.question}</span>
+                    <span className="faq-toggle" aria-hidden="true">+</span>
+                  </button>
+                  <div
+                    id={`oci-faq-answer-${index}`}
+                    className="faq-answer"
+                  >
+                    <div className="faq-answer-inner">
+                      <p>{faq.answer}</p>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>

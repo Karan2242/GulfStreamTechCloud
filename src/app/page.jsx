@@ -63,56 +63,13 @@ const serviceSchema = {
 const faqSchema = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
-  mainEntity: [
-    {
-      '@type': 'Question',
-      name: 'What are Managed Cloud Services?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Managed Cloud Services involve outsourcing the day-to-day management, monitoring, security, and optimization of your cloud infrastructure to a specialized provider. This includes 24/7 operations, incident response, FinOps cost governance, and performance tuning across platforms like AWS, Azure, Oracle Cloud, and Google Cloud — so your teams focus on business growth, not infrastructure.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Which cloud platforms do you support?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Yes. GulfStream Technologies is certified across AWS, Microsoft Azure, Google Cloud, and Oracle Cloud. We manage single-cloud and multi-cloud environments, helping Saudi enterprises choose the right platform and optimize for cost, security, and performance.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'How much cost savings can you deliver?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Our FinOps-driven approach delivers an average 30% cloud cost reduction within 90 days. Savings come from rightsizing, Reserved Instance optimization, Spot Instance automation, waste elimination, and continuous cost governance — making the investment self-funding through immediate infrastructure savings.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Do you operate in Saudi Arabia?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Yes. GulfStream Technologies is headquartered in Riyadh and serves enterprise clients across Jeddah, Dammam, and the wider GCC. We understand local regulations including NCA ECC compliance, support Vision 2030 digital transformation goals, and provide Arabic-language support.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Is there a free cloud consultation available?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Yes. We offer a complimentary Cloud Assessment that identifies cost savings opportunities, security gaps, and performance improvements in your current cloud environment — across AWS, Azure, Google Cloud, or Oracle Cloud — at no cost and no commitment. Book your free review at gulfstreamtech.com.sa/book-a-review.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'What industries do you serve?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'GulfStream Technologies serves enterprises across retail, healthcare, logistics, SaaS/technology, and professional services in Saudi Arabia. Each industry engagement includes specialized cloud architectures designed for sector-specific compliance, scalability, and operational requirements.',
-      },
-    },
-  ],
+      mainEntity: [
+      { '@type': 'Question', name: 'What are Managed Cloud Services?', acceptedAnswer: { '@type': 'Answer', text: 'Managed Cloud Services involve outsourcing cloud operations, monitoring, security, and optimization to certified experts.', } },
+      { '@type': 'Question', name: 'How much can you save on cloud costs?', acceptedAnswer: { '@type': 'Answer', text: 'Clients typically save 25-35% through rightsizing, Reserved Instance planning, and continuous cost governance.', } },
+      { '@type': 'Question', name: 'How quickly can you see results with GulfStream?', acceptedAnswer: { '@type': 'Answer', text: 'Most organizations see measurable cloud savings and stability improvements within 60-90 days.', } },
+      { '@type': 'Question', name: 'Do you support AWS, Azure, Google Cloud, and Oracle Cloud?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. We support AWS, Azure, Google Cloud, Oracle Cloud, and hybrid operations with unified governance.', } },
+      { '@type': 'Question', name: 'Why choose GulfStream for cloud management in Saudi Arabia?', acceptedAnswer: { '@type': 'Answer', text: 'A local Saudi team with multi-cloud certifications, FinOps expertise, and compliance experience delivers faster outcomes.', } },
+    ],
 };
 
 const breadcrumbSchema = {

@@ -8,31 +8,27 @@ const RetailContent = () => {
   useReveal();
   const [openFaqIndex, setOpenFaqIndex] = useState(null);
 
-  const retailFaqs = [
+    const retailFaqs = [
     {
       question: 'What is retail cloud infrastructure?',
-      answer: 'Retail cloud infrastructure is a purpose-built cloud environment designed to support scalable e-commerce, omnichannel integration, PCI DSS-compliant payment processing, and real-time inventory analytics — with elastic auto-scaling for peak shopping events like Ramadan and National Day.'
+      answer: 'Retail cloud infrastructure supports e-commerce, inventory, payments, and peak traffic events with scalable, secure cloud architecture.',
     },
     {
       question: 'How do you handle PCI DSS compliance?',
-      answer: (
-        <>
-          We design and manage PCI DSS-compliant cloud environments on <Link href="/services/cloud-managed-services/aws" style={{ color: 'var(--accent)' }}>AWS</Link> and <Link href="/services/cloud-managed-services/azure" style={{ color: 'var(--accent)' }}>Azure</Link> with network segmentation, encryption, tokenization, access controls, and continuous <Link href="/services/cloud-security-governance" style={{ color: 'var(--accent)' }}>compliance monitoring</Link> — ensuring audit readiness at all times.
-        </>
-      )
+      answer: 'We build and manage PCI DSS-compliant retail cloud environments with network controls, encryption, and continuous monitoring.',
     },
     {
       question: 'Which cloud platforms do you support for retail?',
-      answer: 'GulfStream is certified across AWS, Microsoft Azure, Google Cloud, and Oracle Cloud. We design retail cloud architectures using AWS Auto Scaling, CloudFront, EventBridge, and SageMaker, or Azure VMSS, Front Door, Service Bus, and Machine Learning — based on your existing technology stack.'
+      answer: 'We support AWS, Azure, Google Cloud, and Oracle Cloud, tailoring retail solutions to your existing systems and growth needs.',
     },
     {
       question: 'Can you reduce retail cloud costs?',
-      answer: (
-        <>
-          Yes. Our <Link href="/services/finops-cost-optimization" style={{ color: 'var(--accent)' }}>FinOps practice</Link> delivers an average 28% infrastructure cost reduction for retailers through elastic scaling that eliminates idle-hour provisioning, Reserved Instances for baseline workloads, and Spot Instances for batch analytics.
-        </>
-      )
-    }
+      answer: 'Yes. We cut retail cloud spending through seasonal scaling, rightsizing, and FinOps controls without impacting performance.',
+    },
+    {
+      question: 'Why choose GulfStream for retail cloud in Saudi Arabia?',
+      answer: 'We combine retail cloud experience, peak-event scaling, and Saudi regulatory awareness to keep your customer experience reliable.',
+    },
   ];
 
   return (

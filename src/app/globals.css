@@ -1483,7 +1483,7 @@ h5 {
     inset 0 1px 0 rgba(255, 255, 255, 0.04),
     0 10px 30px rgba(0, 0, 0, 0.4);
   border-radius: var(--radius-lg);
-  padding: 28px;
+  padding: 16px;
   transition: all 0.35s ease;
   overflow: hidden;
 }
@@ -1532,7 +1532,7 @@ h5 {
 }
 
 .industry-card p {
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   color: var(--text-secondary);
   line-height: 1.6;
 }
@@ -1624,7 +1624,7 @@ h5 {
 }
 
 .metric-value {
-  font-size: clamp(2.2rem, 5vw, 3rem);
+  font-size: clamp(2rem, 2vw, 2rem);
   font-weight: 700;
   font-family: var(--font-heading);
   color: var(--accent);
@@ -1674,7 +1674,7 @@ h5 {
 
 .case-tag {
   display: inline-block;
-  padding: 6px 12px;
+  padding: 3px 6px;
   background: rgba(255, 107, 53, 0.08);
   border: 1px solid rgba(255, 107, 53, 0.15);
   border-radius: 6px;
@@ -2200,7 +2200,7 @@ textarea.form-control {
 
 /* === FAQ =================================================== */
 .faq-accordion {
-  max-width: 920px;
+  max-width: 950px;
   margin: 0 auto;
 }
 
@@ -2226,13 +2226,13 @@ textarea.form-control {
   gap: 16px;
   cursor: pointer;
   text-align: left;
-  font-weight: 600;
+  font-weight: 500;
   color: var(--text-primary);
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   line-height: 1.5;
   background: transparent;
   border: none;
-  padding: 18px 22px;
+  padding: 10px 14px;
 }
 
 .faq-toggle {
@@ -4351,9 +4351,9 @@ body.nav-mobile-open {
 
 .comparison-table thead th {
   background: var(--dark-card);
-  padding: 20px 24px;
+  padding: 16px 20px;
   font-weight: 700;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   text-align: center;
   border-bottom: 1px solid var(--dark-border-subtle);
 }
@@ -4370,9 +4370,9 @@ body.nav-mobile-open {
 }
 
 .comparison-table tbody td {
-  padding: 18px 24px;
+  padding: 16px 20px;
   text-align: center;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   color: var(--text-secondary);
   border-bottom: 1px solid var(--dark-border-subtle);
   background: var(--dark-bg);
@@ -5323,7 +5323,7 @@ body.nav-mobile-open {
     inset 0 1px 0 rgba(255, 255, 255, 0.04),
     0 10px 30px rgba(0, 0, 0, 0.4);
   border-radius: 16px;
-  padding: 24px;
+  padding: 16px;
   border: 1px solid rgba(255, 255, 255, 0.06);
   transition: all 0.35s ease;
   overflow: hidden;
@@ -5400,4 +5400,88 @@ body.nav-mobile-open {
   .grid-3 {
     grid-template-columns: 1fr;
   }
+}
+
+/* --- About Stat Card (for metrics in Our Story) ------------ */
+.about-stat-card {
+  background: var(--dark-card);
+  border: 1px solid var(--dark-border);
+  border-radius: var(--radius-md);
+  padding: 28px;
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-stat-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--gradient-primary);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.about-stat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-card);
+}
+
+.about-stat-card:hover::before {
+  opacity: 1;
+}
+
+/* --- Vision Card (for Vision & Mission section) ------------ */
+.vision-card {
+  background: var(--dark-card);
+  border: 1px solid var(--dark-border);
+  border-radius: var(--radius-md);
+  padding: 32px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.vision-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--gradient-primary);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.vision-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-card);
+}
+
+.vision-card:hover::before {
+  opacity: 1;
+}
+
+.vision-card .card-header {
+  margin-bottom: 20px;
+}
+
+.vision-card .card-title-row {
+  justify-content: space-between;
+}
+
+.vision-card .card-icon {
+  font-size: 1.5rem;
+  opacity: 0.8;
+}
+
+.vision-card p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin: 0;
 }

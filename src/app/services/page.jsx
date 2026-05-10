@@ -68,72 +68,13 @@ const serviceSchema = {
 const faqSchema = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
-  mainEntity: [
-    {
-      '@type': 'Question',
-      name: 'What are managed cloud services in Saudi Arabia?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Managed cloud services in Saudi Arabia involve outsourcing 24/7 cloud operations — monitoring, security, optimization, and maintenance — to a certified provider like GulfStream Technologies. We manage AWS, Azure, Oracle Cloud, and Google Cloud environments for enterprises across Riyadh, Jeddah, and Dammam, delivering an average 30% cost reduction and 99.99% uptime.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Which cloud platforms do you support?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'GulfStream Technologies is certified across AWS (Advanced Consulting Partner), Microsoft Azure (Expert MSP), Google Cloud, and Oracle Cloud. We manage single-cloud and multi-cloud environments, helping Saudi enterprises optimize all platforms for cost, security, and performance.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'How much cost savings can I expect from managed cloud services?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Our FinOps-driven approach delivers an average 30% cloud cost reduction within 90 days. Savings come from rightsizing, Reserved Instance optimization, Spot Instance automation, waste elimination, and continuous cost governance — making the investment self-funding from day one.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Do you offer multi-cloud support?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Yes. GulfStream provides unified managed services across AWS, Azure, Oracle Cloud, and Google Cloud. We operate multi-cloud environments with centralized monitoring, consistent security policies, cross-cloud FinOps, and a single pane of glass for operations — eliminating the complexity of managing multiple providers.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'How quickly can you start managing our cloud?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'We can begin onboarding within 1-2 weeks of engagement. The process starts with a free Cloud Assessment (3-5 business days), followed by a phased onboarding — monitoring and alerting within week 1, full managed operations within 30 days. Quick wins in cost savings are typically identified within the first 2 weeks.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Do you operate in Riyadh, Jeddah, and Dammam?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Yes. GulfStream Technologies is headquartered in Riyadh and serves enterprise clients across Jeddah, Dammam, and the wider GCC region. We provide on-site consulting, 24/7 remote operations, and understand local regulations including NCA ECC compliance and Vision 2030 digital transformation requirements.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'What makes GulfStream different from other cloud providers?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'GulfStream is not a generic MSP. We specialize exclusively in cloud management with FinOps at the core, security-first architecture, and Saudi compliance expertise. Our outcome-based contracts mean we are accountable for measurable results — cost reduction, uptime, and security posture improvements.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Is there a free cloud consultation available?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Yes. Every prospective client receives a complimentary Cloud Assessment that identifies cost savings opportunities, security gaps, and performance improvements in your current cloud environment — across AWS, Azure, Google Cloud, or Oracle Cloud — delivered within 5 business days at no cost and no commitment.',
-      },
-    },
-  ],
+      mainEntity: [
+      { '@type': 'Question', name: 'What are Managed Cloud Services?', acceptedAnswer: { '@type': 'Answer', text: 'Managed Cloud Services involve outsourcing cloud operations, monitoring, security, and optimization to a certified provider.', } },
+      { '@type': 'Question', name: 'Which cloud platforms do you support?', acceptedAnswer: { '@type': 'Answer', text: 'We support AWS, Azure, Google Cloud, Oracle Cloud, and hybrid environments with unified management and governance.', } },
+      { '@type': 'Question', name: 'How much can Managed Cloud Services save?', acceptedAnswer: { '@type': 'Answer', text: 'Clients typically save 25-35% on cloud spend through cost optimization and operational efficiency.', } },
+      { '@type': 'Question', name: 'How quickly can you deliver results?', acceptedAnswer: { '@type': 'Answer', text: 'Most enterprises see measurable savings and stability improvements within 60-90 days.', } },
+      { '@type': 'Question', name: 'Why choose GulfStream for managed cloud services?', acceptedAnswer: { '@type': 'Answer', text: 'We combine local Saudi expertise, multi-cloud certifications, and a measurable ROI approach for enterprise cloud operations.', } },
+    ],
 };
 
 const breadcrumbSchema = {

@@ -27,47 +27,27 @@ const HomeContent = () => {
 
   
 
-  const homeFaqs = [
+    const homeFaqs = [
     {
       question: 'What are Managed Cloud Services?',
-      answer: (
-        <>
-          Managed Cloud Services involve outsourcing the administration, monitoring, security, and optimization of your cloud infrastructure to a specialized provider. This allows your teams to focus on business innovation while certified engineers handle 24/7 operations across <Link href="/services/cloud-managed-services/aws" style={{ color: 'var(--accent)' }}>AWS</Link>, <Link href="/services/cloud-managed-services/azure" style={{ color: 'var(--accent)' }}>Azure</Link>, and other cloud platforms.
-        </>
-      )
+      answer: 'Managed Cloud Services involve outsourcing cloud operations, security, monitoring, and optimization to certified experts.',
     },
     {
-      question: 'Which cloud platforms do you support?',
-      answer: 'GulfStream Technologies is certified across AWS, Microsoft Azure, Google Cloud, and Oracle Cloud. We manage single-cloud and multi-cloud environments, helping you choose the right platform — AWS for cloud-native workloads, Azure for hybrid and Microsoft-centric environments, Google Cloud for data and AI, or Oracle Cloud for enterprise applications — and optimize all for cost, security, and performance.'
+      question: 'How much can you save on cloud costs?',
+      answer: 'Our clients typically save 25-35% on cloud spend through rightsizing, reserved capacity, and ongoing FinOps governance.',
     },
     {
-      question: 'How much cost savings can you deliver?',
-      answer: (
-        <>
-          Our <Link href="/services/finops-cost-optimization" style={{ color: 'var(--accent)' }}>FinOps-driven approach</Link> delivers an average 30% cloud cost reduction within 90 days. Savings come from rightsizing, Reserved Instance optimization, Spot Instance automation, waste elimination, and continuous cost governance — making the investment self-funding.
-        </>
-      )
+      question: 'How quickly can you see results?',
+      answer: 'Most organizations see measurable savings and stability improvements within 60-90 days of starting with us.',
     },
     {
-      question: 'Do you operate in Saudi Arabia?',
-      answer: 'Yes. GulfStream Technologies is headquartered in Riyadh and serves enterprise clients across Jeddah, Dammam, and the wider GCC. We understand local regulations including NCA ECC compliance, support Vision 2030 digital transformation, and provide Arabic-language support.'
+      question: 'Do you support AWS, Azure, Google Cloud, and Oracle Cloud?',
+      answer: 'Yes. We manage AWS, Azure, Google Cloud, Oracle Cloud, and hybrid environments with unified visibility and control.',
     },
     {
-      question: 'Is there a free cloud consultation available?',
-      answer: (
-        <>
-          Yes. We offer a complimentary <Link href="/book-a-review" style={{ color: 'var(--accent)' }}>Cloud Assessment</Link> that identifies cost savings opportunities, security gaps, and performance improvements in your current AWS, Azure, Google Cloud, or Oracle Cloud environment — at no cost and no commitment.
-        </>
-      )
+      question: 'Why choose GulfStream for cloud management in Saudi Arabia?',
+      answer: 'A local Saudi team with multi-cloud certifications, FinOps expertise, and Saudi compliance experience delivers faster outcomes.',
     },
-    {
-      question: 'What industries do you serve?',
-      answer: (
-        <>
-          We serve enterprises across <Link href="/industries/retail" style={{ color: 'var(--accent)' }}>retail</Link>, <Link href="/industries/healthcare" style={{ color: 'var(--accent)' }}>healthcare</Link>, <Link href="/industries/logistics" style={{ color: 'var(--accent)' }}>logistics</Link>, <Link href="/industries/tech-saas" style={{ color: 'var(--accent)' }}>SaaS/technology</Link>, and <Link href="/industries/professional-services" style={{ color: 'var(--accent)' }}>professional services</Link> in Saudi Arabia — with industry-specific architectures for compliance, scalability, and operational requirements.
-        </>
-      )
-    }
   ];
 
   const caseStudyCards = [
@@ -83,7 +63,7 @@ const HomeContent = () => {
 
       <div className="case-study-content">
         <h3>Multi-Branch Retail Chain</h3>
-        <p>A leading Saudi retail chain migrated 40+ workloads to AWS, implemented auto-scaling, and adopted FinOps practices — achieving 28% infrastructure cost reduction and 40% improvement in application load times.</p>
+        <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>A leading Saudi retail chain migrated 40+ workloads to AWS, implemented auto-scaling, and adopted FinOps practices — achieving 28% infrastructure cost reduction and 40% improvement in application load times.</p>
       </div>
 
       <div className="case-study-footer">
@@ -104,7 +84,7 @@ const HomeContent = () => {
 
       <div className="case-study-content">
         <h3>Private Hospital Group</h3>
-        <p>A regional hospital group required HIPAA-aligned cloud infrastructure. We deployed a multi-AZ Azure architecture with disaster recovery, achieving 99.99% uptime for critical clinical applications and full audit compliance.</p>
+        <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>A regional hospital group required HIPAA-aligned cloud infrastructure. We deployed a multi-AZ Azure architecture with disaster recovery, achieving 99.99% uptime for critical clinical applications and full audit compliance.</p>
       </div>
 
       <div className="case-study-footer">
@@ -125,7 +105,7 @@ const HomeContent = () => {
 
       <div className="case-study-content">
         <h3>Enterprise SaaS Provider</h3>
-        <p>A Saudi SaaS company was overspending on unoptimized cloud resources. Through rightsizing, Reserved Instance strategy, and Kubernetes cost governance, we delivered 35% savings within 60 days.</p>
+        <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>A Saudi SaaS company was overspending on unoptimized cloud resources. Through rightsizing, Reserved Instance strategy, and Kubernetes cost governance, we delivered 35% savings within 60 days.</p>
       </div>
 
       <div className="case-study-footer">
@@ -271,14 +251,14 @@ const HomeContent = () => {
           <div className="section-header reveal">
             <div className="badge badge-primary">🛠️ Our Services</div>
             <h2 className="display-md">What We Deliver</h2>
-            <p>Explore our full range of managed cloud services — each designed to deliver measurable outcomes for Saudi enterprises.</p>
+            <p >Explore our full range of managed cloud services — each designed to deliver measurable outcomes for Saudi enterprises.</p>
           </div>
           <div className="services-grid">
             <div className="service-card premium-card reveal">
               <Image src="/assets/images/service-monitoring.png" alt="Managed cloud monitoring dashboard" className="service-image" width={800} height={450} />
               <div className="service-content">
                 <h3>Managed Cloud Services</h3>
-                <p>End-to-end managed cloud operations across <Link href="/services/cloud-managed-services/aws" style={{ color: 'var(--accent)' }}>AWS</Link>, <Link href="/services/cloud-managed-services/azure" style={{ color: 'var(--accent)' }}>Azure</Link>, Google Cloud & Oracle Cloud — 24/7 monitoring, incident response, security governance, and FinOps cost optimization for your entire cloud estate in Saudi Arabia.</p>
+                <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>End-to-end managed cloud operations across <Link href="/services/cloud-managed-services/aws" style={{ color: 'var(--accent)' }}>AWS</Link>, <Link href="/services/cloud-managed-services/azure" style={{ color: 'var(--accent)' }}>Azure</Link>, Google Cloud & Oracle Cloud — 24/7 monitoring, incident response, security governance, and FinOps cost optimization for your entire cloud estate in Saudi Arabia.</p>
                 <Link href="/services/cloud-managed-services" className="learn-more">Learn More →</Link>
               </div>
             </div>
@@ -286,7 +266,7 @@ const HomeContent = () => {
               <Image src="/assets/images/service-finops.png" alt="FinOps cost optimization analytics" className="service-image" width={800} height={450} />
               <div className="service-content">
                 <h3>Cloud FinOps &amp; Cost Optimization</h3>
-                <p>Apply the FinOps framework to gain full visibility into cloud spend, eliminate waste, rightsize resources, and achieve sustainable cost governance — delivering an average 30% cost reduction across your cloud estate.</p>
+                <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>Apply the FinOps framework to gain full visibility into cloud spend, eliminate waste, rightsize resources, and achieve sustainable cost governance — delivering an average 30% cost reduction across your cloud estate.</p>
                 <Link href="/services/finops-cost-optimization" className="learn-more">Learn More →</Link>
               </div>
             </div>
@@ -294,7 +274,7 @@ const HomeContent = () => {
               <Image src="/assets/images/service-billing.png" alt="Cloud billing and chargeback reporting" className="service-image" width={800} height={450} />
               <div className="service-content">
                 <h3>Cloud Billing Management</h3>
-                <p>Centralized billing, chargeback reporting, and spend analytics across multiple accounts and teams. Gain accurate cost attribution so every dollar spent on cloud is justified and trackable.</p>
+                <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>Centralized billing, chargeback reporting, and spend analytics across multiple accounts and teams. Gain accurate cost attribution so every dollar spent on cloud is justified and trackable.</p>
                 <Link href="/services/cloud-billing-management" className="learn-more">Learn More →</Link>
               </div>
             </div>
@@ -302,7 +282,7 @@ const HomeContent = () => {
               <Image src="/assets/images/service-migration.png" alt="Cloud migration and modernization roadmap" className="service-image" width={800} height={450} />
               <div className="service-content">
                 <h3>Cloud Migration &amp; Modernization</h3>
-                <p>Migrate legacy on-premises workloads to <Link href="/services/cloud-managed-services/aws" style={{ color: 'var(--accent)' }}>AWS</Link>, <Link href="/services/cloud-managed-services/azure" style={{ color: 'var(--accent)' }}>Azure</Link>, <Link href="/services/cloud-managed-services/google" style={{ color: 'var(--accent)' }}>Google Cloud</Link>, or <Link href="/services/cloud-managed-services/oracle" style={{ color: 'var(--accent)' }}>Oracle Cloud</Link> with zero business disruption. We design, plan, and execute cloud migrations following proven rehost, replatform, and refactor strategies.</p>
+                <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>Migrate legacy on-premises workloads to <Link href="/services/cloud-managed-services/aws" style={{ color: 'var(--accent)' }}>AWS</Link>, <Link href="/services/cloud-managed-services/azure" style={{ color: 'var(--accent)' }}>Azure</Link>, <Link href="/services/cloud-managed-services/google" style={{ color: 'var(--accent)' }}>Google Cloud</Link>, or <Link href="/services/cloud-managed-services/oracle" style={{ color: 'var(--accent)' }}>Oracle Cloud</Link> with zero business disruption. We design, plan, and execute cloud migrations following proven rehost, replatform, and refactor strategies.</p>
                 <Link href="/services/cloud-migration" className="learn-more">Learn More →</Link>
               </div>
             </div>
@@ -310,7 +290,7 @@ const HomeContent = () => {
               <Image src="/assets/images/service-security.png" alt="Cloud security governance and compliance" className="service-image" width={800} height={450} />
               <div className="service-content">
                 <h3>Cloud Security &amp; Governance</h3>
-                <p>Enterprise-level cloud security including IAM governance, NCA ECC compliance automation, security posture management, and continuous threat detection across AWS, Azure, Google Cloud, and Oracle Cloud environments.</p>
+                <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>Enterprise-level cloud security including IAM governance, NCA ECC compliance automation, security posture management, and continuous threat detection across AWS, Azure, Google Cloud, and Oracle Cloud environments.</p>
                 <Link href="/services/cloud-security-governance" className="learn-more">Learn More →</Link>
               </div>
             </div>
@@ -318,8 +298,8 @@ const HomeContent = () => {
               <Image src="/assets/images/service-custom.png" alt="Custom cloud solutions architecture" className="service-image" width={800} height={450} />
               <div className="service-content">
                 <h3>Custom Cloud Solutions</h3>
-                <p>Need a cloud service tailored to your specific requirements? We design and deliver custom cloud solutions for enterprises across Saudi Arabia — from Kubernetes management to multi-cloud architecture.</p>
-                <Link href="/contact" className="learn-more">Learn More →</Link>
+                <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>Need a cloud service tailored to your specific requirements? We design and deliver custom cloud solutions for enterprises across Saudi Arabia — from Kubernetes management to multi-cloud architecture.</p>
+                <Link href="/contact" className="learn-more" >Learn More →</Link>
               </div>
             </div>
           </div>
@@ -344,7 +324,7 @@ const HomeContent = () => {
                   <h3>Not a Generic MSP</h3>
                 </div>
               </div>
-              <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>We don&apos;t offer one-size-fits-all monitoring. Every engagement is architected around your specific workloads, compliance requirements, and growth trajectory — with dedicated account teams.</p>
+              <p style={{ fontSize: '.8 rem', color: 'var(--text-secondary)' }}>We don&apos;t offer one-size-fits-all monitoring. Every engagement is architected around your specific workloads, compliance requirements, and growth trajectory — with dedicated account teams.</p>
             </div>
             <div className="card premium-card">
               <div className="card-header">
@@ -409,7 +389,7 @@ const HomeContent = () => {
                 <div className="industry-icon">🛒</div>
                 <h3 style={{ fontSize: '0.9rem' }}>Retail Cloud Solutions</h3>
               </div>
-              <p>Scale cloud infrastructure seamlessly during Ramadan and peak seasons, enable omnichannel commerce, and optimize inventory and analytics workloads across AWS, Azure, Google Cloud, and Oracle Cloud.</p>
+              <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>Scale cloud infrastructure seamlessly during Ramadan and peak seasons, enable omnichannel commerce, and optimize inventory and analytics workloads across AWS, Azure, Google Cloud, and Oracle Cloud.</p>
               <Link href="/industries/retail" className="industry-link">Learn More </Link>
             </div>
             <div className="industry-card">
@@ -417,7 +397,7 @@ const HomeContent = () => {
                 <div className="industry-icon">🏥</div>
                 <h3 style={{ fontSize: '0.9rem' }}>Healthcare Cloud Solutions</h3>
               </div>
-              <p>HIPAA-aligned cloud infrastructure ensuring patient data security, high availability for clinical applications, and compliant cloud storage — built for Saudi healthcare regulations.</p>
+              <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>HIPAA-aligned cloud infrastructure ensuring patient data security, high availability for clinical applications, and compliant cloud storage — built for Saudi healthcare regulations.</p>
               <Link href="/industries/healthcare" className="industry-link">Learn More </Link>
             </div>
             <div className="industry-card">
@@ -425,7 +405,7 @@ const HomeContent = () => {
                 <div className="industry-icon">🚛</div>
                 <h3 style={{ fontSize: '0.9rem' }}>Logistics Cloud Solutions</h3>
               </div>
-              <p>Power real-time fleet tracking, IoT data processing, supply chain analytics, and warehouse management systems with resilient, always-on cloud infrastructure.</p>
+              <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>Power real-time fleet tracking, IoT data processing, supply chain analytics, and warehouse management systems with resilient, always-on cloud infrastructure.</p>
               <Link href="/industries/logistics" className="industry-link">Learn More </Link>
             </div>
             <div className="industry-card">
@@ -433,7 +413,7 @@ const HomeContent = () => {
                 <div className="industry-icon">💻</div>
                 <h3 style={{ fontSize: '0.9rem' }}>SaaS Cloud Infrastructure</h3>
               </div>
-              <p>Build, deploy, and scale SaaS products on optimized cloud infrastructure. Managed Kubernetes, CI/CD pipelines, and multi-tenant environments with FinOps cost governance.</p>
+              <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>Build, deploy, and scale SaaS products on optimized cloud infrastructure. Managed Kubernetes, CI/CD pipelines, and multi-tenant environments with FinOps cost governance.</p>
               <Link href="/industries/tech-saas" className="industry-link">Learn More </Link>
             </div>
             <div className="industry-card">
@@ -441,7 +421,7 @@ const HomeContent = () => {
                 <div className="industry-icon">🏢</div>
                 <h3 style={{ fontSize: '0.9rem' }}>Professional Services Cloud</h3>
               </div>
-              <p>Secure, compliant cloud environments for consulting, legal, and financial firms — with zero-trust security, ISO 27001 alignment, and encrypted document management.</p>
+              <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>Secure, compliant cloud environments for consulting, legal, and financial firms — with zero-trust security, ISO 27001 alignment, and encrypted document management.</p>
               <Link href="/industries/professional-services" className="industry-link">Learn More </Link>
             </div>
             <div className="industry-card industry-cta">
@@ -449,7 +429,7 @@ const HomeContent = () => {
                 <div className="industry-icon">🌐</div>
                 <h3 style={{ fontSize: '0.9rem' }}>Your Industry</h3>
               </div>
-              <p>Don&apos;t see your sector? We work with enterprises across all verticals in Saudi Arabia. Talk to our cloud specialists for a tailored approach.</p>
+              <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>Don&apos;t see your sector? We work with enterprises across all verticals in Saudi Arabia. Talk to our cloud specialists for a tailored approach.</p>
               <Link href="/contact" className="btn btn-accent btn-sm">Get in Touch</Link>
             </div>
           </div>
@@ -531,7 +511,7 @@ const HomeContent = () => {
                     className="faq-answer"
                   >
                     <div className="faq-answer-inner">
-                      <p>{faq.answer}</p>
+                      <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>{faq.answer}</p>
                     </div>
                   </div>
                 </div>

@@ -5,7 +5,6 @@ export default function sitemap() {
     '',
     '/about',
     '/contact',
-    '/pricing',
     '/insights',
     '/services',
     '/industries',
@@ -31,6 +30,6 @@ export default function sitemap() {
     url: `${BASE_URL}${route}/`,
     lastModified: '2025-04-09',
     changeFrequency: route === '' ? 'weekly' : 'monthly',
-    priority: route === '' ? 1 : route === '/services' || route === '/pricing' || route === '/book-a-review' ? 0.9 : route.includes('/services/') || route.includes('/industries/') ? 0.7 : 0.8,
+    priority: route === '' ? 1 : route === '/services' || route === '/book-a-review' ? 0.9 : route.includes('/services/') || route.includes('/industries/') ? 0.7 : 0.8,
   }));
 }

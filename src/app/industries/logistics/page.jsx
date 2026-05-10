@@ -37,11 +37,12 @@ export default function LogisticsPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify({
           '@context': 'https://schema.org',
           '@type': 'FAQPage',
-          mainEntity: [
-            { '@type': 'Question', name: 'What is logistics cloud infrastructure?', acceptedAnswer: { '@type': 'Answer', text: 'Logistics cloud infrastructure is a purpose-built cloud environment designed to support always-on fleet management, real-time IoT data processing from GPS and temperature sensors, supply chain analytics, and warehouse management — with 99.99% uptime and elastic scaling for peak demand.' } },
-            { '@type': 'Question', name: 'How do you handle IoT data for logistics in Saudi Arabia?', acceptedAnswer: { '@type': 'Answer', text: 'We build managed IoT data platforms on AWS IoT Core or Azure IoT Hub that process millions of fleet and warehouse sensor events per hour in real time with sub-second latency — supporting GPS tracking, temperature monitoring, and predictive maintenance analytics.' } },
-            { '@type': 'Question', name: 'Which cloud platforms do you support for logistics?', acceptedAnswer: { '@type': 'Answer', text: 'GulfStream is certified across AWS, Microsoft Azure, Google Cloud, and Oracle Cloud. We design logistics cloud architectures using AWS IoT, Redshift, and Lambda, or Azure IoT Hub, Synapse Analytics, and Azure Functions — based on your existing technology stack.' } },
-            { '@type': 'Question', name: 'Can you reduce logistics cloud costs?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Our FinOps practice delivers an average 30% infrastructure cost reduction for logistics companies through elastic scaling, Spot Instance automation for batch analytics, and right-sizing of always-on fleet management systems.' } },
+                              mainEntity: [
+            { '@type': 'Question', name: 'What is logistics cloud infrastructure?', acceptedAnswer: { '@type': 'Answer', text: 'Logistics cloud infrastructure supports fleet tracking, IoT data, and supply chain analytics with scalable, reliable operations.', } },
+            { '@type': 'Question', name: 'Do you support logistics IoT and real-time data?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. We design cloud platforms for real-time IoT telemetry, tracking, and analytics on AWS and Azure.', } },
+            { '@type': 'Question', name: 'Which cloud platforms do you support for logistics?', acceptedAnswer: { '@type': 'Answer', text: 'We support AWS, Azure, Google Cloud, and Oracle Cloud and choose the best platform for your logistics workloads.', } },
+            { '@type': 'Question', name: 'Can you reduce logistics cloud costs?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Our logistics clients save 25-35% through elastic scaling, optimization, and FinOps governance.', } },
+            { '@type': 'Question', name: 'Why choose GulfStream for logistics cloud operations?', acceptedAnswer: { '@type': 'Answer', text: 'We deliver reliable logistics cloud solutions with local Saudi support and multi-cloud engineering expertise.', } },
           ],
         }) }}
       />

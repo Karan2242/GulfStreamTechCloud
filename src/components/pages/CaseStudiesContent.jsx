@@ -8,23 +8,27 @@ const CaseStudiesContent = () => {
   useReveal();
   const [openFaqIndex, setOpenFaqIndex] = useState(null);
 
-  const caseStudiesFaqs = [
+    const caseStudiesFaqs = [
     {
-      question: 'What industries does GulfStream serve with Managed Cloud Services?',
-      answer: 'GulfStream Technologies serves enterprises across retail, healthcare, SaaS, logistics, banking, government, and professional services in Saudi Arabia with multi-Managed Cloud Services across AWS, Azure, Google Cloud, and Oracle Cloud.'
+      question: 'What results do GulfStream clients achieve?',
+      answer: 'Clients typically achieve 25-35% cloud cost reduction, 99.99% uptime, and stronger operational visibility within months of engagement.',
     },
     {
-      question: 'What results can be achieved with cloud transformation?',
-      answer: 'Our clients typically achieve 28-35% cloud cost reduction, 99.99% application uptime, zero unplanned outages, and full NCA ECC/ISO 27001 compliance within 60-90 days of engagement.'
+      question: 'How quickly can cloud transformation deliver value?',
+      answer: 'Most enterprises see measurable results in 60-90 days, with early wins from cost and performance optimization.',
     },
     {
-      question: 'How long before cloud transformation results are visible?',
-      answer: (
-        <>
-          Most enterprises see measurable cost savings within 60-90 days. Performance and uptime improvements are typically visible within the first 30 days. <Link href="/book-a-review" style={{ color: 'var(--accent)' }}>Book a free assessment</Link> to get started.
-        </>
-      )
-    }
+      question: 'Which industries do you serve with cloud services?',
+      answer: 'We support retail, healthcare, SaaS, logistics, government, and professional services clients across Saudi Arabia.',
+    },
+    {
+      question: 'Do you support multi-cloud or hybrid environments?',
+      answer: 'Yes. We manage AWS, Azure, Google Cloud, Oracle Cloud, and hybrid environments with a unified operations model.',
+    },
+    {
+      question: 'Why choose GulfStream for enterprise cloud transformation?',
+      answer: 'We combine local Saudi expertise, multi-cloud certifications, and a measurable ROI approach focused on cost savings and compliance.',
+    },
   ];
 
   return (
@@ -41,15 +45,7 @@ const CaseStudiesContent = () => {
         </div>
       </section>
 
-      {/* SEO INTRO */}
-      <section className="section-sm">
-        <div className="container">
-          <div className="reveal" style={{ maxWidth: '900px', margin: '0 auto', lineHeight: '1.8' }}>
-            <p>GulfStream Technologies has helped enterprises across Saudi Arabia achieve measurable cloud cost savings, improved security posture, and higher uptime through <Link href="/services/cloud-managed-services" style={{ color: 'var(--accent)' }}>Managed Cloud Services</Link>, <Link href="/services/finops-cost-optimization" style={{ color: 'var(--accent)' }}>FinOps cost optimization</Link>, and <Link href="/services/cloud-migration" style={{ color: 'var(--accent)' }}>cloud migration</Link> across AWS, Azure, Google Cloud, and Oracle Cloud. These case studies document real results from enterprises in Riyadh, Jeddah, and Dammam.</p>
-            <p style={{ marginTop: '16px' }}>From retail chains managing peak-season traffic to healthcare organizations meeting strict compliance requirements, our <Link href="/services/cloud-security-governance" style={{ color: 'var(--accent)' }}>cloud security</Link> and optimization expertise delivers outcomes that matter — reduced costs, zero unplanned outages, and full NCA ECC compliance. <Link href="/book-a-review" style={{ color: 'var(--accent)' }}>Book a free cloud assessment</Link> to see what results we can deliver for your organization.</p>
-          </div>
-        </div>
-      </section>
+
 
       {/* KEY TAKEAWAYS */}
       <section className="section">
@@ -141,20 +137,7 @@ const CaseStudiesContent = () => {
         </div>
       </section>
 
-      {/* MID-PAGE CTA */}
-      <section className="section-sm" style={{ background: 'var(--dark-surface)' }}>
-        <div className="container">
-          <div className="cta-banner reveal">
-            <h2 className="display-md">Want Results Like These for Your Business?</h2>
-            <p>Book a free Cloud Assessment and discover exactly where your cloud environment is overspending — our team delivers actionable recommendations within 5 business days.</p>
-            <p className="cta-urgency">⚡ Limited free assessments available this month</p>
-            <div className="cta-actions">
-              <Link href="/book-a-review" className="btn btn-white btn-lg">📋 Book Free Cloud Assessment</Link>
-              <Link href="/services" className="btn-white-outline">Explore Our Services</Link>
-            </div>
-          </div>
-        </div>
-      </section>
+
 
       {/* CASE STUDY 2: HEALTHCARE */}
       <section className="section">
@@ -364,7 +347,7 @@ const CaseStudiesContent = () => {
             <p className="cta-urgency">⚡ Limited free cloud assessments available this month</p>
             <div className="cta-actions">
               <Link href="/book-a-review" className="btn btn-white btn-lg">📋 Book Cloud Assessment Saudi Arabia</Link>
-              <Link href="/pricing" className="btn-white-outline">💰 Get Cloud Cost Estimate</Link>
+              <Link href="/book-a-review" className="btn-white-outline">💰 Get Cloud Cost Estimate</Link>
             </div>
           </div>
         </div>

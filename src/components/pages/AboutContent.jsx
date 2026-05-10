@@ -1,43 +1,11 @@
 'use client';
 
-import React, { useState } from 'react';
+import React from 'react';
 import Link from 'next/link';
 import { useReveal } from '@/hooks/useReveal';
 
 const AboutContent = () => {
   useReveal();
-  const [openFaqIndex, setOpenFaqIndex] = useState(null);
-
-  const aboutFaqs = [
-    {
-      question: 'What cloud services does GulfStream offer in Saudi Arabia?',
-      answer: (
-        <>
-          GulfStream Technologies offers <Link href="/services/cloud-managed-services/aws" style={{ color: 'var(--accent)' }}>AWS managed services</Link>, <Link href="/services/cloud-managed-services/azure" style={{ color: 'var(--accent)' }}>Azure managed services</Link>, <Link href="/services/cloud-managed-services/google" style={{ color: 'var(--accent)' }}>Google Managed Cloud Services</Link>, <Link href="/services/cloud-managed-services/oracle" style={{ color: 'var(--accent)' }}>Oracle Managed Cloud Services</Link>, <Link href="/services/finops-cost-optimization" style={{ color: 'var(--accent)' }}>FinOps cost optimization</Link>, <Link href="/services/cloud-migration" style={{ color: 'var(--accent)' }}>cloud migration</Link>, <Link href="/services/cloud-security-governance" style={{ color: 'var(--accent)' }}>cloud security &amp; governance</Link>, and <Link href="/services/cloud-billing-management" style={{ color: 'var(--accent)' }}>cloud billing management</Link> for enterprises across Saudi Arabia.
-        </>
-      )
-    },
-    {
-      question: 'Which cloud platforms does GulfStream support?',
-      answer: 'GulfStream is certified across AWS, Microsoft Azure, Google Cloud, and Oracle Cloud. We manage single-cloud and multi-cloud environments for Saudi enterprises with 24/7 monitoring and dedicated support.'
-    },
-    {
-      question: 'How does GulfStream reduce cloud costs?',
-      answer: (
-        <>
-          We apply FinOps best practices including rightsizing, Reserved Instance planning, Spot optimization, tagging governance, and anomaly detection — delivering an average 32% cloud cost reduction. See our <Link href="/case-studies" style={{ color: 'var(--accent)' }}>case studies</Link> for documented results.
-        </>
-      )
-    },
-    {
-      question: 'What industries does GulfStream serve?',
-      answer: (
-        <>
-          We serve <Link href="/industries/retail" style={{ color: 'var(--accent)' }}>retail</Link>, <Link href="/industries/healthcare" style={{ color: 'var(--accent)' }}>healthcare</Link>, <Link href="/industries/tech-saas" style={{ color: 'var(--accent)' }}>SaaS</Link>, <Link href="/industries/logistics" style={{ color: 'var(--accent)' }}>logistics</Link>, banking, government, and <Link href="/industries/professional-services" style={{ color: 'var(--accent)' }}>professional services</Link> enterprises across Riyadh, Jeddah, Dammam, and the wider Saudi Arabia region.
-        </>
-      )
-    }
-  ];
 
   return (
     <main>
@@ -53,7 +21,7 @@ const AboutContent = () => {
             <span className="text-gradient">Cloud Management Partner</span>
           </h1>
           <p>
-            GulfStream Technologies is a leading cloud management company in Saudi Arabia — specializing in AWS managed services, Azure consulting, FinOps cost optimization, and cloud security governance for enterprises across Riyadh, Jeddah, and Dammam.
+            GulfStream Technologies is a Saudi Arabia-based cloud management and FinOps company helping enterprises optimize, secure, and scale workloads across AWS, Microsoft Azure, Google Cloud, and Oracle Cloud environments.
           </p>
         </div>
       </section>
@@ -76,29 +44,59 @@ const AboutContent = () => {
               </p>
             </div>
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}>
-              <div className="card" style={{ padding: '28px', textAlign: 'center' }}>
-                <div style={{ fontSize: '2.2rem', fontWeight: 800, background: 'var(--gradient-primary)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', marginBottom: '8px' }}>7+</div>
-                <div style={{ color: 'var(--text-secondary)', fontSize: '.875rem' }}>Years of Cloud Operations Experience</div>
+              <div className="about-stat-card">
+                <div style={{ fontSize: '2.2rem', fontWeight: 800, background: 'var(--gradient-primary)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', marginBottom: '8px' }}>25+</div>
+                <div style={{ color: 'var(--text-secondary)', fontSize: '.875rem' }}>Cloud Engineers</div>
               </div>
-              <div className="card" style={{ padding: '28px', textAlign: 'center' }}>
+              <div className="about-stat-card">
                 <div style={{ fontSize: '2.2rem', fontWeight: 800, background: 'var(--gradient-primary)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', marginBottom: '8px' }}>80+</div>
                 <div style={{ color: 'var(--text-secondary)', fontSize: '.875rem' }}>Enterprise Cloud Certifications</div>
               </div>
-              <div className="card" style={{ padding: '28px', textAlign: 'center' }}>
-                <div style={{ fontSize: '2.2rem', fontWeight: 800, background: 'var(--gradient-primary)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', marginBottom: '8px' }}>40+</div>
-                <div style={{ color: 'var(--text-secondary)', fontSize: '.875rem' }}>Active Enterprise Clients</div>
+              <div className="about-stat-card">
+                <div style={{ fontSize: '2.2rem', fontWeight: 800, background: 'var(--gradient-primary)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', marginBottom: '8px' }}>50+</div>
+                <div style={{ color: 'var(--text-secondary)', fontSize: '.875rem' }}>Enterprise Clients</div>
               </div>
-              <div className="card" style={{ padding: '28px', textAlign: 'center' }}>
-                <div style={{ fontSize: '2.2rem', fontWeight: 800, background: 'var(--gradient-primary)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', marginBottom: '8px' }}>SAR 50M+</div>
-                <div style={{ color: 'var(--text-secondary)', fontSize: '.875rem' }}>Cloud Costs Optimized</div>
+              <div className="about-stat-card">
+                <div style={{ fontSize: '2.2rem', fontWeight: 800, background: 'var(--gradient-primary)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', marginBottom: '8px' }}>500+</div>
+                <div style={{ color: 'var(--text-secondary)', fontSize: '.875rem' }}>Cloud Workloads Managed</div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* WHY CHOOSE US */}
+      {/* VISION & MISSION */}
       <section className="section" style={{ background: 'var(--dark-surface)' }}>
+        <div className="container">
+          <div className="section-header reveal">
+            <div className="badge badge-primary">🎯 Vision & Mission</div>
+            <h2 className="display-md">Driving Cloud Excellence in the Middle East</h2>
+          </div>
+          <div className="grid-2 reveal">
+            <div className="vision-card">
+              <div className="card-header">
+                <div className="card-title-row">
+                  <h3>Our Vision</h3>
+                  <span className="card-icon">🔭</span>
+                </div>
+              </div>
+              <p>To be the leading cloud transformation partner in the Middle East, empowering enterprises to achieve operational excellence through intelligent cloud management and sustainable cost optimization.</p>
+            </div>
+            <div className="vision-card">
+              <div className="card-header">
+                <div className="card-title-row">
+                  <h3>Our Mission</h3>
+                  <span className="card-icon">🚀</span>
+                </div>
+              </div>
+              <p>To deliver exceptional cloud managed services that reduce costs by 30%, enhance security, and ensure 99.99% uptime for enterprises across Saudi Arabia and the GCC region.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* WHY CHOOSE US */}
+      <section className="section">
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-accent">🏆 Why GulfStream</div>
@@ -107,27 +105,27 @@ const AboutContent = () => {
           <div className="grid-3 reveal">
             <div className="card">
               <h3 style={{ marginBottom: '8px', fontSize: '1.05rem' }}>☁️ Multi-Cloud Experts</h3>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.85rem', lineHeight: 1.7 }}>Our team of certified cloud architects across AWS, Azure, Google Cloud, and Oracle Cloud delivers enterprise-grade <Link href="/services/cloud-managed-services" style={{ color: 'var(--accent)' }}>Managed Cloud Services</Link> with 24/7 monitoring, automated runbooks, and proactive optimization — tailored for Saudi Arabia.</p>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '.85rem', lineHeight: 1.7 }}>Certified cloud architects across AWS, Azure, Google Cloud, and Oracle Cloud deliver enterprise-grade <Link href="/services/cloud-managed-services" style={{ color: 'var(--accent)' }}>Managed Cloud Services</Link> with 24/7 monitoring and proactive optimization for Saudi enterprises.</p>
             </div>
             <div className="card">
               <h3 style={{ marginBottom: '8px', fontSize: '1.05rem' }}>💰 FinOps-Driven Savings</h3>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.85rem', lineHeight: 1.7 }}>Our FinOps certified practitioners apply <Link href="/services/finops-cost-optimization" style={{ color: 'var(--accent)' }}>cloud cost optimization best practices</Link> — rightsizing, RI planning, Spot optimization, and tagging governance — delivering 28-35% savings across engagements.</p>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '.85rem', lineHeight: 1.7 }}>FinOps certified practitioners apply <Link href="/services/finops-cost-optimization" style={{ color: 'var(--accent)' }}>cloud cost optimization</Link> best practices including rightsizing and RI planning, delivering 28-35% savings across all engagements.</p>
             </div>
             <div className="card">
               <h3 style={{ marginBottom: '8px', fontSize: '1.05rem' }}>🔒 Security &amp; Compliance</h3>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.85rem', lineHeight: 1.7 }}>We implement <Link href="/services/cloud-security-governance" style={{ color: 'var(--accent)' }}>cloud security governance</Link> aligned with NCA ECC, ISO 27001, HIPAA, and SOC 2 — ensuring your cloud meets Saudi regulatory requirements from day one.</p>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '.85rem', lineHeight: 1.7 }}>We implement <Link href="/services/cloud-security-governance" style={{ color: 'var(--accent)' }}>cloud security governance</Link> aligned with NCA ECC, ISO 27001, HIPAA, and SOC 2 — ensuring compliance with Saudi regulatory requirements.</p>
             </div>
             <div className="card">
               <h3 style={{ marginBottom: '8px', fontSize: '1.05rem' }}>🇸🇦 Saudi-Based Team</h3>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.85rem', lineHeight: 1.7 }}>Headquartered in Riyadh with engineers supporting enterprises across Jeddah, Dammam, and the wider GCC — we understand Saudi business culture, regulatory landscape, and local cloud requirements.</p>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '.85rem', lineHeight: 1.7 }}>Headquartered in Riyadh with engineers supporting enterprises across Jeddah, Dammam, and the GCC — we understand Saudi business culture and local cloud requirements.</p>
             </div>
             <div className="card">
               <h3 style={{ marginBottom: '8px', fontSize: '1.05rem' }}>📊 Measurable ROI</h3>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.85rem', lineHeight: 1.7 }}>Every engagement is backed by clear success metrics. Our clients see measurable cloud savings within 60-90 days — see our <Link href="/case-studies" style={{ color: 'var(--accent)' }}>case studies</Link> for documented results.</p>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '.85rem', lineHeight: 1.7 }}>Every engagement includes clear success metrics. Clients see measurable cloud savings within 60-90 days — see our <Link href="/case-studies" style={{ color: 'var(--accent)' }}>case studies</Link> for documented results.</p>
             </div>
             <div className="card">
               <h3 style={{ marginBottom: '8px', fontSize: '1.05rem' }}>🤝 Partnership Model</h3>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.85rem', lineHeight: 1.7 }}>We work as an extension of your team — not a black-box vendor. Monthly reports, quarterly architecture reviews, and dedicated account management keep you in control. See our <Link href="/pricing" style={{ color: 'var(--accent)' }}>transparent pricing</Link>.</p>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '.85rem', lineHeight: 1.7 }}>We work as an extension of your team with monthly reports, quarterly reviews, and dedicated account management. <Link href="/contact" style={{ color: 'var(--accent)' }}>Contact us</Link> for partnership details.</p>
             </div>
           </div>
         </div>
@@ -168,21 +166,6 @@ const AboutContent = () => {
                 <h3 style={{ fontSize: '.95rem' }}>Security by Default</h3>
               </div>
               <p style={{ color: 'var(--text-secondary)', fontSize: '.875rem', lineHeight: 1.6 }}>Security is never an afterthought. Every cloud design, configuration, and change we make defaults to the most secure posture — without compromising agility.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* MID-PAGE CTA */}
-      <section className="section-sm">
-        <div className="container">
-          <div className="cta-banner reveal">
-            <h2 className="display-md">Ready to Work with Cloud Experts in Saudi Arabia?</h2>
-            <p>Book a free Cloud Assessment and discover how GulfStream Technologies can reduce your cloud costs, strengthen security, and scale your infrastructure.</p>
-            <p className="cta-urgency">⚡ Limited free assessments available this month</p>
-            <div className="cta-actions">
-              <Link href="/book-a-review" className="btn btn-white btn-lg">📋 Book Free Cloud Assessment</Link>
-              <Link href="/services" className="btn-white-outline">Explore Our Services</Link>
             </div>
           </div>
         </div>
@@ -234,54 +217,14 @@ const AboutContent = () => {
         </div>
       </section>
 
-      {/* FAQ */}
+      {/* CTA */}
       <section className="section">
         <div className="container">
-          <div className="section-header reveal">
-            <div className="badge badge-primary">❓ FAQ</div>
-            <h2 className="display-md">Frequently Asked Questions</h2>
-          </div>
-          <div className="faq-accordion reveal">
-            {aboutFaqs.map((faq, index) => {
-              const isOpen = openFaqIndex === index;
-
-              return (
-                <div className={`faq-item ${isOpen ? 'active' : ''}`} key={faq.question}>
-                  <button
-                    className="faq-question"
-                    type="button"
-                    onClick={() => setOpenFaqIndex(isOpen ? null : index)}
-                    aria-expanded={isOpen}
-                    aria-controls={`about-faq-answer-${index}`}
-                  >
-                    <span>{faq.question}</span>
-                    <span className="faq-toggle" aria-hidden="true">+</span>
-                  </button>
-                  <div
-                    id={`about-faq-answer-${index}`}
-                    className="faq-answer"
-                  >
-                    <div className="faq-answer-inner">
-                      <p>{faq.answer}</p>
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="section" style={{ background: 'var(--dark-surface)' }}>
-        <div className="container">
           <div className="cta-banner reveal">
-            <h2 className="display-md">Let&apos;s Build Something Excellent Together</h2>
-            <p>Book a free Cloud Assessment and meet the GulfStream team. We&apos;ll assess your cloud environment, identify savings opportunities, and propose a plan — with no commitment needed.</p>
-            <p className="cta-urgency">⚡ Limited free cloud assessments available this month</p>
+            <h2 className="display-md">Ready to Transform Your Cloud Operations?</h2>
+            <p>Join 50+ enterprises across Saudi Arabia that trust GulfStream Technologies for enterprise cloud management. Our certified team delivers 30% cost savings, 99.99% uptime, and complete peace of mind.</p>
             <div className="cta-actions">
-              <Link href="/book-a-review" className="btn btn-white btn-lg">📋 Book Cloud Assessment Saudi Arabia</Link>
-              <Link href="/contact" className="btn-white-outline">Talk to Cloud Experts</Link>
+              <Link href="/book-a-review" className="btn btn-primary btn-lg">🚀 Start Your Cloud Transformation</Link>
             </div>
           </div>
         </div>

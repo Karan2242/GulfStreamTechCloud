@@ -8,35 +8,27 @@ const ProfessionalServicesContent = () => {
   useReveal();
   const [openFaqIndex, setOpenFaqIndex] = useState(null);
 
-  const professionalServicesFaqs = [
+    const professionalServicesFaqs = [
     {
       question: 'What is secure cloud for professional services?',
-      answer: 'Secure cloud for professional services is a compliance-first cloud environment designed for consulting, legal, and financial firms — with zero-trust security, encrypted document management, complete audit trails, and ISO 27001-aligned governance to protect sensitive client data.'
+      answer: 'Secure cloud for professional services is a compliance-first environment that protects sensitive client data while enabling collaboration and productivity.',
     },
     {
       question: 'How do you ensure regulatory compliance?',
-      answer: (
-        <>
-          We design cloud environments with <Link href="/services/cloud-security-governance" style={{ color: 'var(--accent)' }}>compliance built in</Link> — including NCA ECC, ISO 27001, CMA regulations, and international frameworks (GDPR for global clients). Automated compliance monitoring and evidence collection ensure audit readiness at all times.
-        </>
-      )
+      answer: 'We build cloud governance around NCA ECC, ISO 27001, and industry requirements with automated monitoring and audit-ready reporting.',
     },
     {
       question: 'Which cloud platforms do you support?',
-      answer: (
-        <>
-          GulfStream is certified across <Link href="/services/cloud-managed-services/aws" style={{ color: 'var(--accent)' }}>AWS</Link>, <Link href="/services/cloud-managed-services/azure" style={{ color: 'var(--accent)' }}>Microsoft Azure</Link>, <Link href="/services/cloud-managed-services/google" style={{ color: 'var(--accent)' }}>Google Cloud</Link>, and <Link href="/services/cloud-managed-services/oracle" style={{ color: 'var(--accent)' }}>Oracle Cloud</Link>. We design secure cloud architectures using AWS IAM, CloudTrail, S3, and KMS, or Azure AD, Activity Logs, Blob Storage, and Key Vault — based on your existing technology stack.
-        </>
-      )
+      answer: 'We support AWS, Azure, Google Cloud, and Oracle Cloud for professional services workloads, including secure data management and file sharing.',
     },
     {
       question: 'Can you reduce IT overhead costs?',
-      answer: (
-        <>
-          Yes. Our <Link href="/services/finops-cost-optimization" style={{ color: 'var(--accent)' }}>managed cloud and FinOps practice</Link> delivers an average 40% IT overhead reduction for professional services firms — by managing all cloud operations, automating compliance, and enabling client-level cost attribution for accurate pass-through billing.
-        </>
-      )
-    }
+      answer: 'Yes. We reduce costs by managing cloud operations, automating compliance, and optimizing resource usage across the estate.',
+    },
+    {
+      question: 'Why choose GulfStream for professional services cloud?',
+      answer: 'Because we deliver secure, compliant cloud operations with local Saudi support and a focus on protecting sensitive client information.',
+    },
   ];
 
   return (

@@ -5,40 +5,13 @@ import { DEFAULT_OG_IMAGE } from '@/lib/metadata';
 const faqSchema = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
-  mainEntity: [
-    {
-      '@type': 'Question',
-      name: 'What cloud services does GulfStream Technologies offer in Saudi Arabia?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'GulfStream Technologies offers AWS managed services, Azure managed services, FinOps cost optimization, cloud migration, cloud security & governance, and cloud billing management for enterprises across Saudi Arabia.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Which cloud platforms does GulfStream support?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'GulfStream is certified across AWS, Microsoft Azure, Google Cloud, and Oracle Cloud. We manage single-cloud and multi-cloud environments for Saudi enterprises.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'How does GulfStream reduce cloud costs for Saudi enterprises?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'We apply FinOps best practices including rightsizing, Reserved Instance planning, Spot optimization, tagging governance, and anomaly detection — delivering an average 32% cloud cost reduction across our client portfolio.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'What industries does GulfStream serve in Saudi Arabia?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'GulfStream serves retail, healthcare, SaaS, logistics, banking, government, and professional services enterprises across Riyadh, Jeddah, Dammam, and the wider Saudi Arabia region.',
-      },
-    },
-  ],
+      mainEntity: [
+      { '@type': 'Question', name: 'What are Managed Cloud Services?', acceptedAnswer: { '@type': 'Answer', text: 'Managed Cloud Services mean outsourcing cloud operations, monitoring, security, and optimization to specialists.', } },
+      { '@type': 'Question', name: 'How much do your cloud services cost in Saudi Arabia?', acceptedAnswer: { '@type': 'Answer', text: 'Costs depend on environment size, platform mix, and support level. We offer flexible packages with clear ROI and a tailored quote.', } },
+      { '@type': 'Question', name: 'How quickly can you deliver results?', acceptedAnswer: { '@type': 'Answer', text: 'Most clients see measurable cost savings and improved cloud stability within 60-90 days.', } },
+      { '@type': 'Question', name: 'Do you support multi-cloud and hybrid environments?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. We manage AWS, Azure, Google Cloud, Oracle Cloud, and hybrid on-prem/cloud environments.', } },
+      { '@type': 'Question', name: 'Why choose GulfStream Technologies over other providers?', acceptedAnswer: { '@type': 'Answer', text: 'We combine local Saudi expertise, certified multi-cloud engineers, and transparent delivery for measurable cloud outcomes.', } },
+    ],
 };
 
 const breadcrumbSchema = {

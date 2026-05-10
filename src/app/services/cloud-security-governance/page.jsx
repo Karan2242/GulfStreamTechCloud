@@ -35,13 +35,13 @@ const serviceSchema = {
 const faqSchema = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
-  mainEntity: [
-    { '@type': 'Question', name: 'How do you ensure NCA ECC compliance in the cloud?', acceptedAnswer: { '@type': 'Answer', text: 'We implement automated compliance monitoring using AWS Config, Azure Policy, and continuous audit reporting aligned to NCA ECC controls. Our team maintains compliance as cloud environments evolve, preventing drift.' } },
-    { '@type': 'Question', name: 'What cloud security tools do you use?', acceptedAnswer: { '@type': 'Answer', text: 'We use AWS GuardDuty, Security Hub, Azure Sentinel, Defender for Cloud, along with Terraform for policy-as-code, SIEM integration, and custom detection rules tailored to each client environment.' } },
-    { '@type': 'Question', name: 'Do you provide 24/7 cloud security monitoring?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Our security operations center provides 24/7 threat detection, real-time alert triage, incident response, and automated remediation — with human-backed analysis, not just automated emails.' } },
-    { '@type': 'Question', name: 'How much does cloud security cost in Saudi Arabia?', acceptedAnswer: { '@type': 'Answer', text: 'Costs depend on environment size, compliance requirements, and support level. GulfStream offers flexible plans from security assessments to fully managed 24/7 security operations. Book a free assessment for pricing.' } },
-    { '@type': 'Question', name: 'Can you secure multi-cloud environments?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. We provide unified security governance across AWS, Azure, Oracle Cloud, and Google Cloud — with centralized IAM, consistent compliance policies, and cross-cloud threat detection from a single pane of glass.' } },
-  ],
+      mainEntity: [
+      { '@type': 'Question', name: 'How do you ensure NCA ECC compliance?', acceptedAnswer: { '@type': 'Answer', text: 'We implement NCA ECC controls with automated monitoring, policy enforcement, and audit-ready reporting across your cloud estate.', } },
+      { '@type': 'Question', name: 'Do you provide 24/7 security monitoring?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Our security operations team monitors threats around the clock and responds with SLA-backed support.', } },
+      { '@type': 'Question', name: 'Can you secure multi-cloud environments?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. We secure AWS, Azure, Google Cloud, Oracle Cloud, and multi-cloud environments with centralized governance.', } },
+      { '@type': 'Question', name: 'How much does cloud security governance cost?', acceptedAnswer: { '@type': 'Answer', text: 'Costs depend on your cloud estate and compliance needs. We offer a free security assessment with a customized estimate.', } },
+      { '@type': 'Question', name: 'Why choose GulfStream for cloud security in Saudi Arabia?', acceptedAnswer: { '@type': 'Answer', text: 'We combine local compliance expertise, certified security engineers, and managed operations to protect cloud workloads effectively.', } },
+    ],
 };
 
 const breadcrumbSchema = {

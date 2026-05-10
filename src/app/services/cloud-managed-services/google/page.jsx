@@ -36,13 +36,13 @@ const serviceSchema = {
 const faqSchema = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
-  mainEntity: [
-    { '@type': 'Question', name: 'What are Google Managed Cloud Services?', acceptedAnswer: { '@type': 'Answer', text: 'Google Managed Cloud Services involve outsourcing GCP operations to certified experts. This includes 24/7 monitoring, GKE cluster management, BigQuery optimization, security governance with Security Command Center, and FinOps-driven cost management.' } },
-    { '@type': 'Question', name: 'How much do Google Managed Cloud Services cost?', acceptedAnswer: { '@type': 'Answer', text: 'Costs depend on your GCP environment size, services used, and support level. GulfStream Technologies offers flexible tiers from basic monitoring to fully managed operations including data platform support. Book a free assessment for a tailored quote.' } },
-    { '@type': 'Question', name: 'How quickly can you reduce Google Cloud costs?', acceptedAnswer: { '@type': 'Answer', text: 'Most enterprises see a 20-30% reduction in GCP spend within 90 days through committed use discount planning, BigQuery slot optimization, GKE rightsizing, and elimination of idle resources.' } },
-    { '@type': 'Question', name: 'Why choose Google Cloud for enterprises in Saudi Arabia?', acceptedAnswer: { '@type': 'Answer', text: 'Google Cloud offers industry-leading data analytics with BigQuery, strong Kubernetes support with GKE, and competitive pricing. With GulfStream Technologies as your managed services partner in Saudi Arabia, you get local expertise, 24/7 support, and regulatory compliance knowledge.' } },
-    { '@type': 'Question', name: 'Do you manage BigQuery and data analytics workloads?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. We provide specialized BigQuery management including query optimization (up to 60% cost savings), slot management, data pipeline monitoring with Dataflow and Pub/Sub, and cost governance for data analytics workloads.' } },
-  ],
+      mainEntity: [
+      { '@type': 'Question', name: 'What are Google Managed Cloud Services?', acceptedAnswer: { '@type': 'Answer', text: 'Google Managed Cloud Services means outsourcing your GCP operations, monitoring, security, and optimization to certified cloud professionals.', } },
+      { '@type': 'Question', name: 'How much do Google Cloud services cost?', acceptedAnswer: { '@type': 'Answer', text: 'Costs depend on workload mix and project count. We provide flexible pricing and a free assessment for a tailored estimate.', } },
+      { '@type': 'Question', name: 'Do you manage GKE clusters and BigQuery optimization?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. We manage GKE cluster lifecycles and optimize BigQuery costs through reservations, query tuning, and data lifecycle policies.', } },
+      { '@type': 'Question', name: 'Do you support multi-cloud environments with GCP?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. We integrate GCP into multi-cloud environments with consistent governance and centralized monitoring.', } },
+      { '@type': 'Question', name: 'Why choose GulfStream for Google Cloud in Saudi Arabia?', acceptedAnswer: { '@type': 'Answer', text: 'We combine GCP expertise with Saudi compliance knowledge and local support to deliver reliable cloud operations.', } },
+    ],
 };
 
 const breadcrumbSchema = {

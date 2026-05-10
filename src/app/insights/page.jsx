@@ -50,12 +50,13 @@ export const metadata = {
 const faqSchema = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
-  mainEntity: [
-    { '@type': 'Question', name: 'Who writes GulfStream\'s cloud insights?', acceptedAnswer: { '@type': 'Answer', text: 'Our articles are written by certified AWS architects and Azure expert engineers with hands-on experience managing enterprise cloud environments across Saudi Arabia. Every guide is based on real project experience.' } },
-    { '@type': 'Question', name: 'Are these insights relevant to Saudi Arabia?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. All content addresses Saudi-specific considerations including NCA ECC compliance, AWS Middle East and Azure UAE region availability, Vision 2030 digital transformation, and local regulatory requirements for enterprises in Riyadh, Jeddah, and Dammam.' } },
-    { '@type': 'Question', name: 'How can I reduce cloud costs in Saudi Arabia?', acceptedAnswer: { '@type': 'Answer', text: 'Start with our FinOps guide covering rightsizing, Reserved Instance optimization, and waste elimination. For personalized recommendations, book a free cloud assessment — our FinOps team delivers an average 30% cloud cost reduction within 90 days.' } },
-    { '@type': 'Question', name: 'Do you offer cloud consulting beyond insights?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. GulfStream Technologies provides full Managed Cloud Services including AWS managed services, Azure managed services, FinOps cost optimization, and cloud migration for Saudi enterprises.' } },
-  ],
+      mainEntity: [
+      { '@type': 'Question', name: 'Who writes GulfStream cloud insights?', acceptedAnswer: { '@type': 'Answer', text: 'Our insights are written by certified cloud architects and engineers with hands-on experience in enterprise AWS, Azure, Google Cloud, and Oracle Cloud projects.', } },
+      { '@type': 'Question', name: 'Are these insights relevant to Saudi Arabia?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Our content covers Saudi-specific cloud regulations, local region considerations, and enterprise requirements for Riyadh, Jeddah, and Dammam.', } },
+      { '@type': 'Question', name: 'How can I get help beyond these articles?', acceptedAnswer: { '@type': 'Answer', text: 'You can book a free cloud assessment or contact our team to turn the recommendations into a practical managed cloud engagement.', } },
+      { '@type': 'Question', name: 'Do you offer managed services for cloud platforms?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. We provide managed services across AWS, Azure, Google Cloud, Oracle Cloud, and hybrid environments.', } },
+      { '@type': 'Question', name: 'Why choose GulfStream for cloud transformation?', acceptedAnswer: { '@type': 'Answer', text: 'We focus on measurable outcomes, local Saudi support, multi-cloud expertise, and fast ROI from cost optimization and governance.', } },
+    ],
 };
 
 export default function InsightsPage() {

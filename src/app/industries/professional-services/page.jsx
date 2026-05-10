@@ -37,11 +37,12 @@ export default function ProfessionalServicesPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify({
           '@context': 'https://schema.org',
           '@type': 'FAQPage',
-          mainEntity: [
-            { '@type': 'Question', name: 'What is secure cloud infrastructure for professional services?', acceptedAnswer: { '@type': 'Answer', text: 'Secure cloud infrastructure for professional services is a purpose-built cloud environment with zero-trust network access, MFA, conditional access policies, and end-to-end encryption — designed to protect sensitive client data for consulting, legal, and financial services firms while enabling seamless hybrid collaboration.' } },
-            { '@type': 'Question', name: 'How do you ensure compliance for professional services firms in Saudi Arabia?', acceptedAnswer: { '@type': 'Answer', text: 'GulfStream designs cloud environments with Saudi regulatory requirements (NCA ECC, CMA, SAMA), ISO 27001, and international compliance frameworks built in from day one — with automated compliance reporting, complete audit trails, and continuous security monitoring.' } },
-            { '@type': 'Question', name: 'Which cloud platforms do you support for professional services?', acceptedAnswer: { '@type': 'Answer', text: 'GulfStream is certified across AWS, Microsoft Azure, Google Cloud, and Oracle Cloud. We manage cloud environments including Microsoft 365 integration, Azure Virtual Desktop for secure remote work, AWS WorkSpaces, and enterprise collaboration platforms with DLP policies protecting sensitive documents automatically.' } },
-            { '@type': 'Question', name: 'Can you reduce IT costs for professional services firms?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Our managed cloud services deliver 40% average IT overhead reduction for professional services firms through managed infrastructure, project-tagged cost attribution (enabling client pass-through billing), and elimination of on-premise hardware maintenance.' } },
+                              mainEntity: [
+            { '@type': 'Question', name: 'What is secure cloud for professional services?', acceptedAnswer: { '@type': 'Answer', text: 'Secure cloud for professional services protects sensitive client data while enabling collaboration and compliance.', } },
+            { '@type': 'Question', name: 'How do you ensure regulatory compliance?', acceptedAnswer: { '@type': 'Answer', text: 'We build cloud governance around NCA ECC, ISO 27001, and relevant industry regulations with audit-ready reporting.', } },
+            { '@type': 'Question', name: 'Which cloud platforms do you support?', acceptedAnswer: { '@type': 'Answer', text: 'We support AWS, Azure, Google Cloud, and Oracle Cloud for professional services workloads and secure collaboration.', } },
+            { '@type': 'Question', name: 'Can you reduce IT overhead costs?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. We reduce costs by managing cloud operations, automating compliance, and optimizing resource usage.', } },
+            { '@type': 'Question', name: 'Why choose GulfStream for professional services cloud?', acceptedAnswer: { '@type': 'Answer', text: 'We deliver secure, compliant cloud operations with local Saudi support and a focus on protecting sensitive client information.', } },
           ],
         }) }}
       />

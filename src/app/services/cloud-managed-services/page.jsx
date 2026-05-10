@@ -53,12 +53,13 @@ const serviceSchema = {
 const faqSchema = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
-  mainEntity: [
-    { '@type': 'Question', name: 'What are Managed Cloud Services?', acceptedAnswer: { '@type': 'Answer', text: 'Managed Cloud Services involve outsourcing 24/7 cloud operations — monitoring, security, optimization, and maintenance — to a certified provider like GulfStream Technologies. We manage AWS, Azure, Oracle Cloud, and Google Cloud environments for enterprises across Saudi Arabia.' } },
-    { '@type': 'Question', name: 'Which cloud platform is best for Saudi enterprises?', acceptedAnswer: { '@type': 'Answer', text: 'The best platform depends on your workloads, compliance needs, and budget. AWS and Azure lead in Saudi Arabia with local regions, while Oracle and Google Cloud suit specific use cases. GulfStream helps you choose and manage the right platform or multi-cloud strategy.' } },
-    { '@type': 'Question', name: 'How much can Managed Cloud Services save?', acceptedAnswer: { '@type': 'Answer', text: 'GulfStream clients typically achieve 25-35% cloud cost reduction through FinOps optimization, rightsizing, Reserved Instance planning, and elimination of idle resources — visible within the first 90 days.' } },
-    { '@type': 'Question', name: 'Do you operate in Riyadh, Jeddah, and Dammam?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. GulfStream Technologies serves enterprises across Riyadh, Jeddah, Dammam, and the wider GCC region with 24/7 Managed Cloud Services, on-site consulting, and regulatory compliance expertise.' } },
-  ],
+      mainEntity: [
+      { '@type': 'Question', name: 'What are Managed Cloud Services?', acceptedAnswer: { '@type': 'Answer', text: 'Managed Cloud Services involve outsourcing cloud operations, monitoring, security, and optimization to a certified provider.', } },
+      { '@type': 'Question', name: 'Which cloud platforms do you support?', acceptedAnswer: { '@type': 'Answer', text: 'We support AWS, Azure, Google Cloud, Oracle Cloud, and hybrid environments with unified management and governance.', } },
+      { '@type': 'Question', name: 'How much can Managed Cloud Services save?', acceptedAnswer: { '@type': 'Answer', text: 'Clients typically save 25-35% on cloud spend through cost optimization and operational efficiency.', } },
+      { '@type': 'Question', name: 'How quickly can you deliver results?', acceptedAnswer: { '@type': 'Answer', text: 'Most enterprises see measurable savings and stability improvements within 60-90 days.', } },
+      { '@type': 'Question', name: 'Why choose GulfStream for managed cloud services?', acceptedAnswer: { '@type': 'Answer', text: 'We combine local Saudi expertise, multi-cloud certifications, and measurable ROI delivery for enterprise cloud operations.', } },
+    ],
 };
 
 const breadcrumbSchema = {

@@ -108,10 +108,30 @@ const Header = () => {
                   <svg className="submenu-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polyline points="9 6 15 12 9 18"></polyline></svg>
                 </Link>
                 <div className="dropdown-submenu-menu">
-                  <Link href="/services/cloud-managed-services/aws" className={`dropdown-item ${pathname === '/services/cloud-managed-services/aws' ? 'active' : ''}`}><span className="item-icon">☁️</span>AWS Managed Services</Link>
-                  <Link href="/services/cloud-managed-services/azure" className={`dropdown-item ${pathname === '/services/cloud-managed-services/azure' ? 'active' : ''}`}><span className="item-icon">🔷</span>Azure Managed Services</Link>
-                  <Link href="/services/cloud-managed-services/oracle" className={`dropdown-item ${pathname === '/services/cloud-managed-services/oracle' ? 'active' : ''}`}><span className="item-icon">🔴</span>Oracle Cloud Services</Link>
-                  <Link href="/services/cloud-managed-services/google" className={`dropdown-item ${pathname === '/services/cloud-managed-services/google' ? 'active' : ''}`}><span className="item-icon">🟢</span>Google Cloud Services</Link>
+                  <Link href="/services/cloud-managed-services/aws" className={`dropdown-item ${pathname === '/services/cloud-managed-services/aws' ? 'active' : ''}`}>
+                    <span className="item-icon">
+                      <Image src="/assets/images/logo-aws.png" alt="AWS logo" width={18} height={18} />
+                    </span>
+                    AWS Managed Services
+                  </Link>
+                  <Link href="/services/cloud-managed-services/azure" className={`dropdown-item ${pathname === '/services/cloud-managed-services/azure' ? 'active' : ''}`}>
+                    <span className="item-icon">
+                      <Image src="/assets/images/logo-azure.png" alt="Azure logo" width={18} height={18} />
+                    </span>
+                    Azure Managed Services
+                  </Link>
+                  <Link href="/services/cloud-managed-services/oracle" className={`dropdown-item ${pathname === '/services/cloud-managed-services/oracle' ? 'active' : ''}`}>
+                    <span className="item-icon">
+                      <Image src="/assets/images/logo-oracle.png" alt="Oracle Cloud logo" width={18} height={18} />
+                    </span>
+                    Oracle Cloud Services
+                  </Link>
+                  <Link href="/services/cloud-managed-services/google" className={`dropdown-item ${pathname === '/services/cloud-managed-services/google' ? 'active' : ''}`}>
+                    <span className="item-icon">
+                      <Image src="/assets/images/logo-gcp.png" alt="Google Cloud logo" width={18} height={18} />
+                    </span>
+                    Google Cloud Services
+                  </Link>
                 </div>
               </div>
               <Link href="/services/finops-cost-optimization" className={`dropdown-item ${pathname === '/services/finops-cost-optimization' ? 'active' : ''}`}><span className="item-icon">📊</span>FinOps &amp; Cost Optimization</Link>
@@ -145,7 +165,6 @@ const Header = () => {
             </div>
           </div>
           <Link href="/case-studies" className={`nav-link ${pathname === '/case-studies' ? 'active' : ''}`}>Case Studies</Link>
-          <Link href="/pricing" className={`nav-link ${pathname === '/pricing' ? 'active' : ''}`}>Pricing</Link>
           <Link href="/insights" className={`nav-link ${pathname === '/insights' ? 'active' : ''}`}>Insights</Link>
           <Link href="/about" className={`nav-link ${pathname === '/about' ? 'active' : ''}`}>About</Link>
         </div>

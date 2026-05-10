@@ -11,35 +11,27 @@ const ContactContent = () => {
   const [errorMsg, setErrorMsg] = useState('');
   const [openFaqIndex, setOpenFaqIndex] = useState(null);
 
-  const contactFaqs = [
+    const contactFaqs = [
     {
-      question: 'How quickly do you respond to enquiries?',
-      answer: 'We respond to all enquiries within 4 business hours during our working days (Sunday to Thursday, 8 AM – 6 PM AST). For existing clients, we provide 24/7 support with priority response times.'
+      question: 'Do you offer a free cloud consultation?',
+      answer: 'Yes. Every new enquiry includes a free cloud consultation and assessment to identify savings, security gaps, and operational improvements.',
     },
     {
-      question: 'Do you offer a free consultation?',
-      answer: (
-        <>
-          Yes. Every new engagement starts with a free consultation and <Link href="/book-a-review" style={{ color: 'var(--accent)' }}>complimentary cloud assessment</Link> — including cost analysis, security review, and a 90-day optimization roadmap delivered within 5 business days.
-        </>
-      )
+      question: 'How quickly do you respond to enquiries?',
+      answer: 'We respond within four business hours on working days, and existing clients receive priority support through our 24/7 operations team.',
     },
     {
       question: 'Which cloud platforms do you support?',
-      answer: (
-        <>
-          We specialize in <Link href="/services/cloud-managed-services/aws" style={{ color: 'var(--accent)' }}>AWS</Link>, <Link href="/services/cloud-managed-services/azure" style={{ color: 'var(--accent)' }}>Microsoft Azure</Link>, <Link href="/services/cloud-managed-services/google" style={{ color: 'var(--accent)' }}>Google Cloud</Link>, and <Link href="/services/cloud-managed-services/oracle" style={{ color: 'var(--accent)' }}>Oracle Cloud</Link>, supporting single-cloud and multi-cloud environments. Our certified architects help Saudi enterprises with managed services, migration, security, and <Link href="/services/finops-cost-optimization" style={{ color: 'var(--accent)' }}>cost optimization</Link>.
-        </>
-      )
+      answer: 'We support AWS, Azure, Google Cloud, and Oracle Cloud, including single-cloud and multi-cloud enterprise environments.',
     },
     {
       question: 'Can you help reduce our cloud costs?',
-      answer: (
-        <>
-          Yes. Our <Link href="/services/finops-cost-optimization" style={{ color: 'var(--accent)' }}>FinOps and cloud cost optimization</Link> practice has delivered an average 32% cost reduction for Saudi enterprises — through right-sizing, Reserved Instance optimization, waste elimination, and governance automation.
-        </>
-      )
-    }
+      answer: 'Yes. Our managed services and FinOps teams regularly deliver 25-35% cost reduction for Saudi enterprises.',
+    },
+    {
+      question: 'Do you support multi-cloud and hybrid environments?',
+      answer: 'Yes. We help enterprises manage multi-cloud estates and hybrid on-premises environments with consistent governance and automation.',
+    },
   ];
 
   const handleSubmit = async (e) => {
@@ -189,7 +181,7 @@ const ContactContent = () => {
                       <option value="cloud-migration">Cloud Migration</option>
                       <option value="cost-optimization">Cloud Cost Optimization</option>
                       <option value="cloud-security">Cloud Security</option>
-                      <option value="pricing">Pricing &amp; Packages</option>
+                      <option value="pricing-quote">Pricing Quote</option>
                       <option value="other">General Enquiry</option>
                     </select>
                   </div>
@@ -237,7 +229,7 @@ const ContactContent = () => {
             <div className="card" style={{ padding: 'clamp(16px, 3vw, 24px)', textAlign: 'center' }}>
               <div style={{ fontSize: 'clamp(1.8rem, 4vw, 28px)', marginBottom: '12px' }}>3️⃣</div>
               <h3 style={{ fontSize: '.95rem' }}>Custom Proposal</h3>
-              <p style={{ color: 'var(--text-secondary)', fontSize: 'clamp(0.8rem, 1.8vw, 0.875rem)' }}>We build a tailored proposal based on your environment — not a generic pitch deck. See our <Link href="/pricing" style={{ color: 'var(--accent)' }}>transparent pricing</Link>.</p>
+              <p style={{ color: 'var(--text-secondary)', fontSize: 'clamp(0.8rem, 1.8vw, 0.875rem)' }}>We build a tailored proposal based on your environment — not a generic pitch deck. <Link href="/contact" style={{ color: 'var(--accent)' }}>Contact us</Link> for details.</p>
             </div>
             <div className="card" style={{ padding: 'clamp(16px, 3vw, 24px)', textAlign: 'center' }}>
               <div style={{ fontSize: 'clamp(1.8rem, 4vw, 28px)', marginBottom: '12px' }}>4️⃣</div>

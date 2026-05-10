@@ -42,12 +42,12 @@ export default function IndustriesPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify({
           '@context': 'https://schema.org',
           '@type': 'FAQPage',
-          mainEntity: [
-            { '@type': 'Question', name: 'What industries does GulfStream Technologies support?', acceptedAnswer: { '@type': 'Answer', text: 'GulfStream Technologies provides industry-specific cloud solutions for retail, healthcare, logistics, technology/SaaS, and professional services enterprises across Saudi Arabia — with tailored multi-Managed Cloud Services across AWS, Azure, Google Cloud, and Oracle Cloud for each sector.' } },
-            { '@type': 'Question', name: 'Do you provide industry-specific cloud solutions?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Unlike generic cloud providers, GulfStream builds cloud architectures tailored to each industry\'s regulatory, compliance, and operational requirements — including PCI DSS for retail, HIPAA and NCA ECC for healthcare, and ISO 27001 for professional services.' } },
-            { '@type': 'Question', name: 'Which cloud platforms do you manage?', acceptedAnswer: { '@type': 'Answer', text: 'We manage AWS, Microsoft Azure, Google Cloud, and Oracle Cloud, supporting single-cloud and multi-cloud environments. Our certified architects manage Kubernetes, serverless, IoT, data lakes, and enterprise workloads across all platforms.' } },
-            { '@type': 'Question', name: 'Do you offer a free cloud consultation?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Every new engagement starts with a free cloud assessment — including cost analysis, security review, and a 90-day optimization roadmap delivered within 5 business days at no charge.' } },
-            { '@type': 'Question', name: 'How do you ensure compliance for Saudi enterprises?', acceptedAnswer: { '@type': 'Answer', text: 'We design cloud environments with NCA ECC, SAMA, Saudi MOH, and international frameworks (HIPAA, ISO 27001, PCI DSS, SOC 2) built in from day one — with continuous compliance monitoring and automated audit reporting.' } },
+                                              mainEntity: [
+            { '@type': 'Question', name: 'Which industries does GulfStream Technologies support?', acceptedAnswer: { '@type': 'Answer', text: 'GulfStream supports retail, healthcare, logistics, technology/SaaS, and professional services enterprises across Saudi Arabia.', } },
+            { '@type': 'Question', name: 'Do you provide industry-specific cloud solutions?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. We build cloud architectures tailored to regulatory, compliance, and operational requirements for each sector.', } },
+            { '@type': 'Question', name: 'Which cloud platforms do you manage?', acceptedAnswer: { '@type': 'Answer', text: 'We manage AWS, Azure, Google Cloud, and Oracle Cloud for industry cloud workloads with consistent governance.', } },
+            { '@type': 'Question', name: 'Do you offer a free cloud consultation?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. We offer a free cloud assessment that includes cost analysis, security review, and an optimization roadmap.', } },
+            { '@type': 'Question', name: 'Why choose GulfStream for Saudi industry cloud solutions?', acceptedAnswer: { '@type': 'Answer', text: 'We combine local Saudi expertise, industry experience, and multi-cloud engineering to deliver reliable enterprise cloud outcomes.', } },
           ],
         }) }}
       />

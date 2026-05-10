@@ -37,11 +37,12 @@ export default function HealthcarePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify({
           '@context': 'https://schema.org',
           '@type': 'FAQPage',
-          mainEntity: [
-            { '@type': 'Question', name: 'What is healthcare cloud infrastructure?', acceptedAnswer: { '@type': 'Answer', text: 'Healthcare cloud infrastructure is a purpose-built cloud environment designed to host clinical applications (EHR, HIS, PACS), store patient data securely, and ensure compliance with HIPAA, NCA ECC, and Saudi Ministry of Health regulations — while delivering 99.99% uptime for mission-critical systems.' } },
-            { '@type': 'Question', name: 'How do you ensure healthcare compliance in Saudi Arabia?', acceptedAnswer: { '@type': 'Answer', text: 'GulfStream architects cloud environments with NCA ECC, Saudi MOH, and HIPAA compliance built in from day one — including data residency enforcement in Saudi regions, end-to-end encryption, audit logging, and automated compliance reporting for regulatory audits.' } },
-            { '@type': 'Question', name: 'Which cloud platforms do you support for healthcare?', acceptedAnswer: { '@type': 'Answer', text: 'We are certified across AWS, Microsoft Azure, Google Cloud, and Oracle Cloud, supporting HIPAA-eligible services on all platforms — including AWS HealthLake, Azure Health Data Services, and compliant storage solutions for DICOM imaging and patient records.' } },
-            { '@type': 'Question', name: 'Can you reduce healthcare cloud costs?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Our FinOps practice has delivered 45% storage cost reduction through intelligent tiering for DICOM and medical data, plus right-sizing of clinical application infrastructure — while maintaining full compliance and 99.99% uptime.' } },
+                              mainEntity: [
+            { '@type': 'Question', name: 'What is healthcare cloud infrastructure?', acceptedAnswer: { '@type': 'Answer', text: 'Healthcare cloud infrastructure supports clinical systems, patient data, and compliance with high availability and security.', } },
+            { '@type': 'Question', name: 'How do you ensure healthcare compliance in Saudi Arabia?', acceptedAnswer: { '@type': 'Answer', text: 'We align cloud environments to NCA ECC, Saudi MOH, and healthcare data protection requirements with audit-ready governance.', } },
+            { '@type': 'Question', name: 'Which cloud platforms do you support for healthcare?', acceptedAnswer: { '@type': 'Answer', text: 'We support AWS, Azure, Google Cloud, and Oracle Cloud for compliant healthcare workloads.', } },
+            { '@type': 'Question', name: 'Can you reduce healthcare cloud costs?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. We optimize healthcare cloud costs through storage efficiency, rightsizing, and FinOps practices.', } },
+            { '@type': 'Question', name: 'Why choose GulfStream for healthcare cloud in Saudi Arabia?', acceptedAnswer: { '@type': 'Answer', text: 'We combine healthcare compliance experience with local Saudi cloud expertise and certified operations.', } },
           ],
         }) }}
       />

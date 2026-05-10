@@ -24,48 +24,13 @@ const serviceSchema = {
 const faqSchema = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
-  mainEntity: [
-    {
-      '@type': 'Question',
-      name: 'What is included in a free cloud review?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Our free cloud review includes a detailed cloud cost analysis with estimated SAR savings, a security posture review covering IAM, encryption, and NCA ECC compliance, and a 90-day optimization roadmap — all delivered within 5 business days.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'How long does the cloud assessment take?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'The full assessment takes 3-5 business days after the initial 30-minute discovery call. We present findings in a live session with your team, including actionable recommendations you can implement immediately.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Is the cloud review really free?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Yes, 100% free with no obligation to engage GulfStream afterward. You keep the full assessment report, cost analysis, and optimization roadmap regardless of your decision.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Which cloud platforms do you assess?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'GulfStream is certified across AWS, Microsoft Azure, Google Cloud, and Oracle Cloud. We assess single-cloud and multi-cloud environments for Saudi enterprises.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Will I receive a cost savings report?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Yes. Every free cloud review includes a detailed cost savings report with specific SAR amounts, identifying idle resources, oversized instances, Reserved Instance opportunities, and governance improvements. Our clients typically see 25-35% savings opportunities identified.',
-      },
-    },
-  ],
+      mainEntity: [
+      { '@type': 'Question', name: 'What is included in the free cloud review?', acceptedAnswer: { '@type': 'Answer', text: 'The review includes a cost analysis, security posture check, operational assessment, and an optimization roadmap delivered within five business days.', } },
+      { '@type': 'Question', name: 'Is the cloud review really free?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. The cloud review is free with no obligation, and you keep the full report regardless of engagement.', } },
+      { '@type': 'Question', name: 'How long does the assessment take?', acceptedAnswer: { '@type': 'Answer', text: 'The assessment typically completes in 3-5 business days after the initial discovery call.', } },
+      { '@type': 'Question', name: 'Which cloud platforms do you assess?', acceptedAnswer: { '@type': 'Answer', text: 'We assess AWS, Azure, Google Cloud, and Oracle Cloud environments, including single-cloud and multi-cloud estates.', } },
+      { '@type': 'Question', name: 'Will I receive a cost savings report?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. You receive a detailed savings report showing expected cost reductions and practical actions for ROI.', } },
+    ],
 };
 
 const breadcrumbSchema = {

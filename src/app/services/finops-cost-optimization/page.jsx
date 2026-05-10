@@ -35,13 +35,13 @@ const serviceSchema = {
 const faqSchema = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
-  mainEntity: [
-    { '@type': 'Question', name: 'What is FinOps?', acceptedAnswer: { '@type': 'Answer', text: 'FinOps (Cloud Financial Operations) is a framework for managing cloud costs through collaboration between finance, engineering, and business teams. It follows three phases — Inform, Optimize, Operate — to drive continuous cloud cost reduction and accountability.' } },
-    { '@type': 'Question', name: 'How quickly can you reduce cloud costs?', acceptedAnswer: { '@type': 'Answer', text: 'Most enterprises see a 20-35% reduction in cloud spend within 90 days through rightsizing, Reserved Instance optimization, idle resource cleanup, and architectural improvements. Quick wins are typically identified within the first 2 weeks.' } },
-    { '@type': 'Question', name: 'What is the ROI of FinOps consulting?', acceptedAnswer: { '@type': 'Answer', text: 'GulfStream\'s FinOps engagements deliver an average 3x ROI on Reserved Instances and an overall 32% cost reduction. The investment in FinOps typically pays for itself within the first month of optimization.' } },
-    { '@type': 'Question', name: 'How much does FinOps cost optimization cost in Saudi Arabia?', acceptedAnswer: { '@type': 'Answer', text: 'Costs vary based on environment size and cloud spend. GulfStream offers flexible pricing from one-time cost assessments to ongoing FinOps-as-a-service. Book a free cost analysis to see potential savings before committing.' } },
-    { '@type': 'Question', name: 'Do you support multi-cloud FinOps?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. GulfStream provides unified FinOps across AWS, Azure, Oracle Cloud, and Google Cloud — with consolidated dashboards, cross-cloud rightsizing, and commitment optimization across all providers.' } },
-  ],
+      mainEntity: [
+      { '@type': 'Question', name: 'What is FinOps?', acceptedAnswer: { '@type': 'Answer', text: 'FinOps is a cloud financial operations framework that brings visibility, accountability, and optimization to cloud spend.', } },
+      { '@type': 'Question', name: 'How much can you reduce cloud costs?', acceptedAnswer: { '@type': 'Answer', text: 'Most clients save 25-35% through rightsizing, reserved capacity, and continuous cost governance.', } },
+      { '@type': 'Question', name: 'How quickly can FinOps deliver savings?', acceptedAnswer: { '@type': 'Answer', text: 'Measurable savings can appear within 60-90 days through waste elimination and governance.', } },
+      { '@type': 'Question', name: 'Do you support multi-cloud FinOps?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. We provide FinOps across AWS, Azure, Google Cloud, Oracle Cloud, and multi-cloud environments.', } },
+      { '@type': 'Question', name: 'Why choose GulfStream for cloud cost optimization?', acceptedAnswer: { '@type': 'Answer', text: 'We combine FinOps methodology with local Saudi expertise and managed services to deliver sustainable savings.', } },
+    ],
 };
 
 const breadcrumbSchema = {

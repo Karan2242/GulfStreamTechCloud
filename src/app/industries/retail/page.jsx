@@ -37,11 +37,12 @@ export default function RetailPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify({
           '@context': 'https://schema.org',
           '@type': 'FAQPage',
-          mainEntity: [
-            { '@type': 'Question', name: 'What is retail cloud infrastructure?', acceptedAnswer: { '@type': 'Answer', text: 'Retail cloud infrastructure is a purpose-built cloud environment designed for e-commerce platforms, omnichannel inventory management, and retail analytics — with elastic auto-scaling that handles 500-1000% traffic spikes during Ramadan, National Day, and peak shopping events without downtime.' } },
-            { '@type': 'Question', name: 'How do you handle PCI DSS compliance for Saudi retailers?', acceptedAnswer: { '@type': 'Answer', text: 'GulfStream architects PCI DSS-compliant cloud environments with network segmentation, encryption at rest and in transit, access control, and continuous compliance monitoring — ensuring your payment processing infrastructure meets all regulatory requirements.' } },
-            { '@type': 'Question', name: 'Which cloud platforms do you support for retail?', acceptedAnswer: { '@type': 'Answer', text: 'GulfStream is certified across AWS, Microsoft Azure, Google Cloud, and Oracle Cloud. We design retail cloud architectures using auto-scaling groups, CDN (CloudFront/Front Door), managed databases, and serverless backends optimized for retail workloads and seasonal traffic patterns.' } },
-            { '@type': 'Question', name: 'Can you reduce retail cloud costs?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Our FinOps practice has delivered 28% average infrastructure cost reduction for Saudi retailers through elastic scaling (eliminating idle capacity), Reserved Instance optimization, and dynamic cost management aligned to revenue events.' } },
+                              mainEntity: [
+            { '@type': 'Question', name: 'What is retail cloud infrastructure?', acceptedAnswer: { '@type': 'Answer', text: 'Retail cloud infrastructure supports e-commerce, inventory, and peak traffic events with secure, scalable architecture.', } },
+            { '@type': 'Question', name: 'How do you handle PCI DSS compliance?', acceptedAnswer: { '@type': 'Answer', text: 'We build PCI DSS-compliant retail cloud environments with network controls, encryption, and continuous monitoring.', } },
+            { '@type': 'Question', name: 'Which cloud platforms do you support for retail?', acceptedAnswer: { '@type': 'Answer', text: 'We support AWS, Azure, Google Cloud, and Oracle Cloud for retail workloads and seasonal scaling.', } },
+            { '@type': 'Question', name: 'Can you reduce retail cloud costs?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. We cut retail cloud spend through elastic scaling, rightsizing, and FinOps controls.', } },
+            { '@type': 'Question', name: 'Why choose GulfStream for retail cloud in Saudi Arabia?', acceptedAnswer: { '@type': 'Answer', text: 'We combine retail cloud experience, peak-event scaling, and Saudi compliance knowledge for reliable operations.', } },
           ],
         }) }}
       />

@@ -35,13 +35,13 @@ const serviceSchema = {
 const faqSchema = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
-  mainEntity: [
-    { '@type': 'Question', name: 'How long does a cloud migration take?', acceptedAnswer: { '@type': 'Answer', text: 'Migration timelines depend on complexity. Simple lift-and-shift migrations can complete in 4-8 weeks, while full enterprise migrations with modernization typically take 3-6 months. GulfStream uses wave-based planning for predictable delivery.' } },
-    { '@type': 'Question', name: 'Is downtime required during cloud migration?', acceptedAnswer: { '@type': 'Answer', text: 'GulfStream designs zero-downtime migration strategies using blue-green deployments, database replication, and phased cutovers. Critical applications maintain availability throughout the migration process.' } },
-    { '@type': 'Question', name: 'What is the 6Rs migration framework?', acceptedAnswer: { '@type': 'Answer', text: 'The 6Rs framework classifies each workload as Rehost (lift & shift), Replatform (optimize), Refactor (re-architect), Repurchase (SaaS), Retire (decommission), or Retain (keep on-premises). This ensures the optimal strategy for each application.' } },
-    { '@type': 'Question', name: 'How much does cloud migration cost in Saudi Arabia?', acceptedAnswer: { '@type': 'Answer', text: 'Costs vary based on environment size, complexity, and modernization scope. GulfStream provides a free migration assessment with detailed cost estimates. Most enterprises see 35% infrastructure cost reduction post-migration.' } },
-    { '@type': 'Question', name: 'Do you provide post-migration support?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Every migration includes post-migration optimization — rightsizing, cost optimization, performance tuning, and transition to our managed services for ongoing 24/7 cloud operations.' } },
-  ],
+      mainEntity: [
+      { '@type': 'Question', name: 'How long does a cloud migration take?', acceptedAnswer: { '@type': 'Answer', text: 'Migration timelines vary, but simple cloud moves can complete in 4-8 weeks and enterprise projects often take 3-6 months.', } },
+      { '@type': 'Question', name: 'Is downtime required during cloud migration?', acceptedAnswer: { '@type': 'Answer', text: 'We design migrations to avoid or minimize downtime using phased cutovers, replication, and blue-green deployment patterns.', } },
+      { '@type': 'Question', name: 'How much does cloud migration cost in Saudi Arabia?', acceptedAnswer: { '@type': 'Answer', text: 'Costs depend on workload complexity and scope. We provide a free migration assessment with a tailored estimate.', } },
+      { '@type': 'Question', name: 'Do you support AWS, Azure, Google Cloud, and Oracle Cloud migrations?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. We migrate workloads to AWS, Azure, Google Cloud, and Oracle Cloud, including multi-cloud and hybrid transitions.', } },
+      { '@type': 'Question', name: 'Do you provide post-migration support?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Every migration includes post-migration optimization, monitoring, and transition support to our managed services team.', } },
+    ],
 };
 
 const breadcrumbSchema = {

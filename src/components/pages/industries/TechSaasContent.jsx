@@ -8,35 +8,27 @@ const TechSaasContent = () => {
   useReveal();
   const [openFaqIndex, setOpenFaqIndex] = useState(null);
 
-  const saasFaqs = [
+    const saasFaqs = [
     {
       question: 'What is SaaS cloud infrastructure management?',
-      answer: 'SaaS cloud infrastructure management is the practice of outsourcing cloud operations — Kubernetes management, CI/CD pipelines, auto-scaling, security, and cost optimization — to a specialist partner, so SaaS engineering teams can focus entirely on building product rather than managing infrastructure.'
-    },
-    {
-      question: 'Do you manage Kubernetes for SaaS companies?',
-      answer: (
-        <>
-          Yes. We provide full lifecycle management of <Link href="/services/cloud-managed-services/aws" style={{ color: 'var(--accent)' }}>AWS EKS</Link> and <Link href="/services/cloud-managed-services/azure" style={{ color: 'var(--accent)' }}>Azure AKS</Link> clusters — including provisioning, upgrades, pod autoscaling, namespace-based multi-tenancy, cost optimization with Karpenter/KEDA, and container security hardening.
-        </>
-      )
-    },
-    {
-      question: 'Can you help with SOC 2 compliance?',
-      answer: (
-        <>
-          Yes. Our <Link href="/services/cloud-security-governance" style={{ color: 'var(--accent)' }}>cloud security practice</Link> helps SaaS companies achieve SOC 2 readiness through automated evidence collection, continuous security posture management, secret management, and runtime container protection — drastically reducing audit preparation time.
-        </>
-      )
+      answer: 'SaaS cloud infrastructure management means outsourcing your platform operations, deployments, security, and cost control to expert cloud engineers.',
     },
     {
       question: 'Can you reduce SaaS cloud costs?',
-      answer: (
-        <>
-          Yes. Our <Link href="/services/finops-cost-optimization" style={{ color: 'var(--accent)' }}>FinOps practice</Link> delivers an average 35% infrastructure cost reduction for SaaS companies through per-tenant cost attribution, Spot Instance automation, Kubernetes right-sizing, and commitment planning — improving unit economics at every scale.
-        </>
-      )
-    }
+      answer: 'Yes. We reduce SaaS costs through Kubernetes optimization, rightsizing, reserved capacity, and FinOps automation.',
+    },
+    {
+      question: 'Do you manage Kubernetes for SaaS companies?',
+      answer: 'Yes. We manage Kubernetes clusters, autoscaling, security, and cost governance for SaaS workloads on AWS and Azure.',
+    },
+    {
+      question: 'Do you support multi-cloud SaaS deployments?',
+      answer: 'Yes. We support multi-cloud SaaS platforms and hybrid deployments with consistent observability and governance.',
+    },
+    {
+      question: 'Why choose GulfStream for SaaS cloud operations in Saudi Arabia?',
+      answer: 'Our team combines SaaS product expertise with cloud operations, enabling faster launches and stable growth with lower infrastructure costs.',
+    },
   ];
 
   return (

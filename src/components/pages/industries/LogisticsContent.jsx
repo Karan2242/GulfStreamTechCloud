@@ -8,31 +8,27 @@ const LogisticsContent = () => {
   useReveal();
   const [openFaqIndex, setOpenFaqIndex] = useState(null);
 
-  const logisticsFaqs = [
+    const logisticsFaqs = [
     {
       question: 'What is logistics cloud infrastructure?',
-      answer: 'Logistics cloud infrastructure is a purpose-built cloud environment designed to support always-on fleet management, real-time IoT data processing from GPS and temperature sensors, supply chain analytics, and warehouse management — with 99.99% uptime and elastic scaling for peak demand.'
+      answer: 'Logistics cloud infrastructure supports fleet management, IoT data, supply chain analytics, and warehouse systems with reliable, scalable operations.',
     },
     {
-      question: 'How do you handle IoT data for logistics?',
-      answer: (
-        <>
-          We build managed IoT data platforms on <Link href="/services/cloud-managed-services/aws" style={{ color: 'var(--accent)' }}>AWS IoT Core</Link> or <Link href="/services/cloud-managed-services/azure" style={{ color: 'var(--accent)' }}>Azure IoT Hub</Link> that process millions of fleet and warehouse sensor events per hour in real time with sub-second latency — supporting GPS tracking, temperature monitoring, and predictive maintenance.
-        </>
-      )
+      question: 'Do you support logistics IoT and real-time data?',
+      answer: 'Yes. We design and manage cloud platforms for real-time IoT telemetry, tracking, and analytics across AWS and Azure.',
     },
     {
       question: 'Which cloud platforms do you support for logistics?',
-      answer: 'GulfStream is certified across AWS, Microsoft Azure, Google Cloud, and Oracle Cloud. We design logistics cloud architectures using AWS IoT, Redshift, and Lambda, or Azure IoT Hub, Synapse Analytics, and Azure Functions — based on your existing technology stack.'
+      answer: 'We support AWS, Azure, Google Cloud, and Oracle Cloud, choosing the best platform for your logistics workload and data needs.',
     },
     {
       question: 'Can you reduce logistics cloud costs?',
-      answer: (
-        <>
-          Yes. Our <Link href="/services/finops-cost-optimization" style={{ color: 'var(--accent)' }}>FinOps practice</Link> delivers an average 30% infrastructure cost reduction for logistics companies through elastic scaling, Spot Instance automation for batch analytics, and right-sizing of always-on fleet management systems.
-        </>
-      )
-    }
+      answer: 'Yes. Our logistics clients save 25-35% through elastic scaling, workload optimization, and FinOps governance.',
+    },
+    {
+      question: 'Why choose GulfStream for logistics cloud operations?',
+      answer: 'Because we deliver reliable, compliant logistics cloud solutions with local Saudi support and multi-cloud engineering expertise.',
+    },
   ];
 
   return (

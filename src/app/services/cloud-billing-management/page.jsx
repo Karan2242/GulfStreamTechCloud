@@ -35,13 +35,13 @@ const serviceSchema = {
 const faqSchema = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
-  mainEntity: [
-    { '@type': 'Question', name: 'What is cloud billing management?', acceptedAnswer: { '@type': 'Answer', text: 'Cloud billing management is the practice of tracking, analyzing, and optimizing cloud spending across providers like AWS, Azure, Oracle, and Google Cloud. It includes real-time dashboards, chargeback reporting, anomaly detection, spend forecasting, and invoice validation.' } },
-    { '@type': 'Question', name: 'How do you reduce cloud billing costs?', acceptedAnswer: { '@type': 'Answer', text: 'We reduce cloud billing costs through tag-based cost attribution, anomaly detection, spend forecasting, invoice validation, and integration with FinOps practices. Most enterprises see full cost visibility within 30 days.' } },
-    { '@type': 'Question', name: 'Can you manage billing across multiple cloud providers?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. GulfStream Technologies provides unified billing management across AWS, Azure, Oracle Cloud, and Google Cloud — aggregating costs into a single dashboard with consistent chargeback and showback reporting.' } },
-    { '@type': 'Question', name: 'How much does cloud billing management cost in Saudi Arabia?', acceptedAnswer: { '@type': 'Answer', text: 'Costs depend on the number of cloud accounts, providers, and complexity. GulfStream offers flexible pricing from basic billing dashboards to fully managed billing operations. Book a free audit for a tailored quote.' } },
-    { '@type': 'Question', name: 'How quickly can you set up billing dashboards?', acceptedAnswer: { '@type': 'Answer', text: 'We typically deploy unified billing dashboards within 2-4 weeks, including tag governance, cost allocation rules, budget alerts, and executive reporting — with full chargeback capability within 30 days.' } },
-  ],
+      mainEntity: [
+      { '@type': 'Question', name: 'What is cloud billing management?', acceptedAnswer: { '@type': 'Answer', text: 'Cloud billing management tracks, analyzes, and optimizes cloud spend across providers to eliminate surprises and improve visibility.', } },
+      { '@type': 'Question', name: 'Can you manage billing across multiple cloud providers?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. We unify billing for AWS, Azure, Google Cloud, and Oracle Cloud into a single view with consistent reporting.', } },
+      { '@type': 'Question', name: 'How much does cloud billing management cost?', acceptedAnswer: { '@type': 'Answer', text: 'Costs depend on account count and complexity. We offer flexible pricing and a free audit for a tailored estimate.', } },
+      { '@type': 'Question', name: 'How quickly can you set up billing dashboards?', acceptedAnswer: { '@type': 'Answer', text: 'We typically deploy unified billing dashboards within 2-4 weeks, including budget alerts and cost allocation reports.', } },
+      { '@type': 'Question', name: 'Why choose GulfStream for cloud billing management?', acceptedAnswer: { '@type': 'Answer', text: 'We combine managed billing, FinOps controls, and local Saudi support to deliver accurate, audit-ready cloud spend visibility.', } },
+    ],
 };
 
 const breadcrumbSchema = {

@@ -11,39 +11,27 @@ const BookReviewContent = () => {
   const [errorMsg, setErrorMsg] = useState('');
   const [openFaqIndex, setOpenFaqIndex] = useState(null);
 
-  const bookReviewFaqs = [
+    const bookReviewFaqs = [
     {
       question: 'What is included in the free cloud review?',
-      answer: 'Our free cloud review includes a detailed cloud cost analysis with estimated SAR savings, a security posture review covering IAM, encryption, and NCA ECC compliance, and a 90-day optimization roadmap — all delivered within 5 business days.'
-    },
-    {
-      question: 'How long does the assessment take?',
-      answer: 'The full assessment takes 3-5 business days after the initial 30-minute discovery call. We present findings in a live session with your team, including actionable recommendations you can implement immediately.'
+      answer: 'The review includes a cost analysis, security posture check, operational assessment, and a practical optimization roadmap delivered within five business days.',
     },
     {
       question: 'Is the cloud review really free?',
-      answer: (
-        <>
-          Yes, 100% free with no obligation to engage GulfStream afterward. You keep the full assessment report, cost analysis, and optimization roadmap regardless of your decision. <Link href="/pricing" style={{ color: 'var(--accent)' }}>See our pricing</Link> if you decide to continue with managed services.
-        </>
-      )
+      answer: 'Yes. The cloud review is free with no obligation, and you keep the full report and savings recommendations regardless of engagement.',
+    },
+    {
+      question: 'How long does the assessment take?',
+      answer: 'The assessment typically completes in 3-5 business days after the initial discovery call, with a live findings presentation included.',
     },
     {
       question: 'Which cloud platforms do you assess?',
-      answer: (
-        <>
-          GulfStream assesses all major cloud platforms including <Link href="/services/cloud-managed-services/aws" style={{ color: 'var(--accent)' }}>AWS</Link>, <Link href="/services/cloud-managed-services/azure" style={{ color: 'var(--accent)' }}>Microsoft Azure</Link>, <Link href="/services/cloud-managed-services/google" style={{ color: 'var(--accent)' }}>Google Cloud</Link>, and <Link href="/services/cloud-managed-services/oracle" style={{ color: 'var(--accent)' }}>Oracle Cloud</Link>. We evaluate single-cloud and multi-cloud environments for Saudi enterprises.
-        </>
-      )
+      answer: 'We assess AWS, Azure, Google Cloud, and Oracle Cloud environments, including single-cloud and multi-cloud estates.',
     },
     {
       question: 'Will I receive a cost savings report?',
-      answer: (
-        <>
-          Yes. Every free cloud review includes a detailed cost savings report with specific SAR amounts — identifying idle resources, oversized instances, Reserved Instance opportunities, and governance improvements. Our clients typically see 25-35% savings. See <Link href="/case-studies" style={{ color: 'var(--accent)' }}>real results in our case studies</Link>.
-        </>
-      )
-    }
+      answer: 'Yes. You receive a detailed savings report showing expected cost reductions and practical actions to secure immediate ROI.',
+    },
   ];
 
   const handleReviewSubmit = async (e) => {

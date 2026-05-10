@@ -36,13 +36,13 @@ const serviceSchema = {
 const faqSchema = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
-  mainEntity: [
-    { '@type': 'Question', name: 'What are Oracle Managed Cloud Services?', acceptedAnswer: { '@type': 'Answer', text: 'Oracle Managed Cloud Services involve outsourcing the management of your OCI environment to certified experts. This includes 24/7 monitoring, Autonomous Database management, Exadata operations, security governance, licensing optimization, and FinOps-driven cost management.' } },
-    { '@type': 'Question', name: 'How much do Oracle Managed Cloud Services cost?', acceptedAnswer: { '@type': 'Answer', text: 'Costs depend on your OCI environment size, database complexity, and licensing model (BYOL vs Universal Credits). GulfStream Technologies offers flexible pricing tiers. Book a free assessment for a tailored quote that includes potential savings.' } },
-    { '@type': 'Question', name: 'Can you optimize Oracle licensing costs?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Oracle licensing optimization is a core part of our service. We help enterprises maximize BYOL benefits, optimize Universal Credit consumption, right-size compute shapes, and ensure license compliance — typically reducing costs by 25-35%.' } },
-    { '@type': 'Question', name: 'Why choose Oracle Cloud in Saudi Arabia?', acceptedAnswer: { '@type': 'Answer', text: 'Oracle Cloud offers dedicated infrastructure options, strong database performance, and competitive pricing for enterprises running Oracle workloads. With a managed services provider like GulfStream Technologies in Saudi Arabia, you get local compliance expertise and 24/7 support.' } },
-    { '@type': 'Question', name: 'Do you support Oracle database migration to OCI?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. We provide end-to-end Oracle database migration services from on-premises or other clouds to OCI, including assessment, migration planning, execution, and post-migration optimization for enterprises across Riyadh, Jeddah, and Dammam.' } },
-  ],
+      mainEntity: [
+      { '@type': 'Question', name: 'What are Oracle Managed Cloud Services?', acceptedAnswer: { '@type': 'Answer', text: 'Oracle Managed Cloud Services means outsourcing your OCI operations, security, and optimization to experienced Oracle cloud specialists.', } },
+      { '@type': 'Question', name: 'How much do Oracle managed services cost?', acceptedAnswer: { '@type': 'Answer', text: 'Costs depend on tenancy and database workload complexity. We provide a tailored estimate after a free OCI assessment.', } },
+      { '@type': 'Question', name: 'Can you manage Oracle database migrations to OCI?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. We handle Oracle database migrations to OCI with zero-downtime planning and full validation.', } },
+      { '@type': 'Question', name: 'Do you support Oracle Cloud licensing optimization?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. We optimize Oracle licensing with BYOL and Universal Credits strategies.', } },
+      { '@type': 'Question', name: 'Why choose GulfStream for OCI managed services in Saudi Arabia?', acceptedAnswer: { '@type': 'Answer', text: 'We offer local Oracle expertise, Saudi compliance support, and deep OCI management experience for enterprise workloads.', } },
+    ],
 };
 
 const breadcrumbSchema = {

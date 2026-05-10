@@ -42,32 +42,13 @@ const serviceSchema = {
 const faqSchema = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
-  mainEntity: [
-    {
-      '@type': 'Question',
-      name: 'What industries does GulfStream serve with Managed Cloud Services?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'GulfStream Technologies serves enterprises across retail, healthcare, SaaS, logistics, banking, government, and professional services in Saudi Arabia with multi-Managed Cloud Services across AWS, Azure, Google Cloud, and Oracle Cloud.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'What results can be achieved with cloud transformation?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Our clients typically achieve 28-35% cloud cost reduction, 99.99% application uptime, zero unplanned outages, and full compliance with NCA ECC and ISO 27001 within 60-90 days of engagement.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'How long before cloud transformation results are visible?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Most enterprises see measurable cost savings within 60-90 days. Performance improvements and uptime gains are typically visible within the first 30 days of GulfStream managing your cloud environment.',
-      },
-    },
-  ],
+      mainEntity: [
+      { '@type': 'Question', name: 'What results do GulfStream clients achieve?', acceptedAnswer: { '@type': 'Answer', text: 'Clients typically achieve 25-35% cloud cost reduction, 99.99% uptime, and stronger operational visibility within months.', } },
+      { '@type': 'Question', name: 'How quickly can cloud transformation deliver value?', acceptedAnswer: { '@type': 'Answer', text: 'Most enterprises see measurable results in 60-90 days, with early wins from cost and performance optimization.', } },
+      { '@type': 'Question', name: 'Which industries do you serve with cloud services?', acceptedAnswer: { '@type': 'Answer', text: 'We serve retail, healthcare, SaaS, logistics, government, and professional services enterprises across Saudi Arabia.', } },
+      { '@type': 'Question', name: 'Do you support multi-cloud or hybrid environments?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. We manage AWS, Azure, Google Cloud, Oracle Cloud, and hybrid environments with unified operations.', } },
+      { '@type': 'Question', name: 'Why choose GulfStream for enterprise cloud transformation?', acceptedAnswer: { '@type': 'Answer', text: 'A local Saudi team with multi-cloud certifications and ROI-driven delivery makes transformations faster and more reliable.', } },
+    ],
 };
 
 const breadcrumbSchema = {

@@ -36,40 +36,13 @@ const localBusinessSchema = {
 const faqSchema = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
-  mainEntity: [
-    {
-      '@type': 'Question',
-      name: 'How quickly does GulfStream respond to enquiries?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'We respond to all enquiries within 4 business hours during Sun-Thu 8am-6pm AST. For active managed services clients, we provide 24/7 support with 15-minute response times for critical issues.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Does GulfStream offer a free cloud consultation?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Yes. Every prospective client receives a free cloud assessment including cost analysis, security posture review, and a 90-day optimization roadmap — delivered within 5 business days at no cost or commitment.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'What cloud platforms does GulfStream support?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'GulfStream is certified across AWS, Microsoft Azure, Google Cloud, and Oracle Cloud. We manage single-cloud and multi-cloud environments for Saudi enterprises.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Can GulfStream help reduce our cloud costs?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Yes. Our FinOps-certified team delivers an average 32% cloud cost reduction through rightsizing, Reserved Instance planning, Spot optimization, and governance improvements. See our case studies for documented results.',
-      },
-    },
-  ],
+      mainEntity: [
+      { '@type': 'Question', name: 'Do you offer a free cloud consultation?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Every new enquiry includes a free consultation and assessment to identify savings, security gaps, and operational improvements.', } },
+      { '@type': 'Question', name: 'How quickly do you respond to enquiries?', acceptedAnswer: { '@type': 'Answer', text: 'We respond within four business hours on working days, and existing clients receive priority support.', } },
+      { '@type': 'Question', name: 'Which cloud platforms do you support?', acceptedAnswer: { '@type': 'Answer', text: 'We support AWS, Azure, Google Cloud, and Oracle Cloud, including single-cloud and multi-cloud environments.', } },
+      { '@type': 'Question', name: 'Can you help reduce our cloud costs?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Our managed services and FinOps teams regularly deliver 25-35% cost reduction for Saudi enterprises.', } },
+      { '@type': 'Question', name: 'Do you support multi-cloud and hybrid environments?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. We help enterprises manage multi-cloud and hybrid environments with consistent governance.', } },
+    ],
 };
 
 const breadcrumbSchema = {

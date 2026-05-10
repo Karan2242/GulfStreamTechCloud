@@ -35,13 +35,13 @@ const serviceSchema = {
 const faqSchema = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
-  mainEntity: [
-    { '@type': 'Question', name: 'What are Azure Managed Services?', acceptedAnswer: { '@type': 'Answer', text: 'Azure Managed Services involve outsourcing the management of your Microsoft Azure environment to certified cloud experts. This includes 24/7 monitoring, security governance with Defender for Cloud, cost optimization, patching, Entra ID management, and incident response.' } },
-    { '@type': 'Question', name: 'How much do Azure Managed Services cost in Saudi Arabia?', acceptedAnswer: { '@type': 'Answer', text: 'Azure Managed Services costs depend on your environment complexity, number of subscriptions, and support level. GulfStream Technologies offers flexible pricing from basic monitoring to fully managed operations including hybrid cloud support. Book a free assessment for a quote.' } },
-    { '@type': 'Question', name: 'How quickly can you reduce our Azure costs?', acceptedAnswer: { '@type': 'Answer', text: 'Most enterprises achieve a 25-35% reduction in Azure spend within the first 90 days through rightsizing, Azure Reservations, Hybrid Benefit optimization, and elimination of idle resources using our FinOps methodology.' } },
-    { '@type': 'Question', name: 'Why choose Azure Managed Services in Saudi Arabia?', acceptedAnswer: { '@type': 'Answer', text: 'Azure has a dedicated cloud region in Saudi Arabia, making it ideal for data residency requirements. A local managed services provider like GulfStream Technologies ensures low-latency support, NCA ECC compliance, and deep understanding of the Saudi enterprise market.' } },
-    { '@type': 'Question', name: 'Do you support hybrid Azure environments?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. We specialize in managing hybrid Azure environments including Azure Arc, ExpressRoute connectivity, Active Directory synchronization, and Azure Stack HCI — ensuring seamless integration between on-premises and cloud infrastructure.' } },
-  ],
+      mainEntity: [
+      { '@type': 'Question', name: 'What are Azure Managed Services?', acceptedAnswer: { '@type': 'Answer', text: 'Azure Managed Services means outsourcing your Azure operations, security, monitoring, and optimization to certified cloud engineers.', } },
+      { '@type': 'Question', name: 'How much do Azure Managed Services cost in Saudi Arabia?', acceptedAnswer: { '@type': 'Answer', text: 'Costs vary with subscription count and support requirements. We provide tailored quotes after a free assessment.', } },
+      { '@type': 'Question', name: 'How quickly can you reduce Azure costs?', acceptedAnswer: { '@type': 'Answer', text: 'Most Azure clients see 25-35% savings within 90 days through reserved instances and hybrid benefit optimization.', } },
+      { '@type': 'Question', name: 'Do you support hybrid Azure environments?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. We support Azure Arc, ExpressRoute, and hybrid on-premises/cloud integration.', } },
+      { '@type': 'Question', name: 'Why choose GulfStream for Azure in Saudi Arabia?', acceptedAnswer: { '@type': 'Answer', text: 'We combine local Saudi expertise, Azure certifications, and compliance experience for reliable hybrid cloud operations.', } },
+    ],
 };
 
 const breadcrumbSchema = {

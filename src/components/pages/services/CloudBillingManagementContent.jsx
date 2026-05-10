@@ -8,31 +8,27 @@ const CloudBillingManagementContent = () => {
   useReveal();
   const [openFaqIndex, setOpenFaqIndex] = useState(null);
 
-  const billingFaqs = [
+    const billingFaqs = [
     {
       question: 'What is cloud billing management?',
-      answer: 'Cloud billing management is the practice of tracking, analyzing, and optimizing cloud spending across providers like AWS, Azure, Oracle, and Google Cloud. It includes real-time dashboards, chargeback reporting, anomaly detection, spend forecasting, and invoice validation.'
-    },
-    {
-      question: 'How do you reduce cloud billing costs?',
-      answer: 'We reduce cloud billing costs through tag-based cost attribution, anomaly detection, spend forecasting, invoice validation, and integration with FinOps practices. Most enterprises see full cost visibility within 30 days.'
+      answer: 'Cloud billing management tracks, analyzes, and optimizes cloud spend across providers so you can eliminate surprises and charge costs accurately.',
     },
     {
       question: 'Can you manage billing across multiple cloud providers?',
-      answer: 'Yes. GulfStream Technologies provides unified billing management across AWS, Azure, Oracle Cloud, and Google Cloud — aggregating costs into a single dashboard with consistent chargeback and showback reporting.'
+      answer: 'Yes. We unify billing for AWS, Azure, Google Cloud, and Oracle Cloud into a single view with consistent reporting.',
     },
     {
-      question: 'How much does cloud billing management cost in Saudi Arabia?',
-      answer: (
-        <>
-          Costs depend on the number of cloud accounts, providers, and complexity. GulfStream offers flexible pricing from basic billing dashboards to fully managed billing operations. <Link href="/book-a-review" style={{ color: 'var(--accent)' }}>Book a free audit</Link> for a tailored quote.
-        </>
-      )
+      question: 'How much does cloud billing management cost?',
+      answer: 'Costs depend on the number of accounts and complexity. We offer flexible pricing with a free audit to estimate your needs.',
     },
     {
       question: 'How quickly can you set up billing dashboards?',
-      answer: 'We typically deploy unified billing dashboards within 2-4 weeks, including tag governance, cost allocation rules, budget alerts, and executive reporting — with full chargeback capability within 30 days.'
-    }
+      answer: 'We typically deploy unified billing dashboards within 2-4 weeks, including budget alerts and cost allocation reports.',
+    },
+    {
+      question: 'Why choose GulfStream for cloud billing management?',
+      answer: 'We combine managed billing, FinOps controls, and local Saudi support to deliver accurate, audit-ready cloud spend visibility.',
+    },
   ];
 
   return (
@@ -78,30 +74,53 @@ const CloudBillingManagementContent = () => {
             <h2 className="display-md">What You Get with GulfStream</h2>
           </div>
           <div className="grid-3 reveal">
-            <div className="card">
-              <div className="card-header"><div className="icon-box">📊</div><h3>24/7 Cost Monitoring</h3></div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.9rem' }}>Real-time monitoring of cloud spend with automated anomaly alerts and budget threshold notifications across all accounts and providers.</p>
-            </div>
-            <div className="card">
-              <div className="card-header"><div className="icon-box">💰</div><h3>Cost Optimization</h3></div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.9rem' }}>Proactive identification of billing waste, unused resources, and optimization opportunities integrated directly into your billing workflows.</p>
-            </div>
-            <div className="card">
-              <div className="card-header"><div className="icon-box">🔒</div><h3>Security Compliance</h3></div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.9rem' }}>Billing data governance aligned with NCA ECC and ISO 27001, ensuring sensitive financial data is properly managed and auditable.</p>
-            </div>
-            <div className="card">
-              <div className="card-header"><div className="icon-box">👥</div><h3>Dedicated Cloud Engineers</h3></div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.9rem' }}>Certified cloud billing specialists assigned to your account who understand your architecture and financial requirements.</p>
-            </div>
-            <div className="card">
-              <div className="card-header"><div className="icon-box">📈</div><h3>Real-Time Dashboards</h3></div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.9rem' }}>Executive-ready dashboards with drill-down cost views, trend analysis, forecasts, and anomaly reports — accessible to all stakeholders.</p>
-            </div>
-            <div className="card">
-              <div className="card-header"><div className="icon-box">📋</div><h3>SLA-Backed Support</h3></div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.9rem' }}>Committed SLAs for billing report delivery, anomaly response times, and forecast accuracy — not generic best-effort promises.</p>
-            </div>
+           <div className="card premium-card">
+  <div className="card-header">
+    <div className="icon-box">📊</div>
+    <div className="card-title-row"><h3>Unified Billing Dashboard</h3></div>
+  </div>
+  <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Single real-time dashboard across AWS, Azure, Oracle, and Google Cloud with complete cost visibility and drill-down insights.</p>
+</div>
+
+<div className="card premium-card">
+  <div className="card-header">
+    <div className="icon-box">💰</div>
+    <div className="card-title-row"><h3>Cost Allocation</h3></div>
+  </div>
+  <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Tag-based cost allocation across teams, projects, and business units for accurate financial accountability and reporting.</p>
+</div>
+
+<div className="card premium-card">
+  <div className="card-header">
+    <div className="icon-box">🚨</div>
+    <div className="card-title-row"><h3>Real-Time Alerts</h3></div>
+  </div>
+  <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Instant alerts for unusual spend, budget breaches, and usage spikes — before they impact your monthly bill.</p>
+</div>
+
+<div className="card premium-card">
+  <div className="card-header">
+    <div className="icon-box">📈</div>
+    <div className="card-title-row"><h3>Cost Optimization</h3></div>
+  </div>
+  <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Identify unused resources, over-provisioning, and savings opportunities with continuous FinOps optimization recommendations.</p>
+</div>
+
+<div className="card premium-card">
+  <div className="card-header">
+    <div className="icon-box">🔮</div>
+    <div className="card-title-row"><h3>Spend Forecasting</h3></div>
+  </div>
+  <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Predict future cloud spend using historical trends and growth patterns with accurate budgeting and financial planning.</p>
+</div>
+
+<div className="card premium-card">
+  <div className="card-header">
+    <div className="icon-box">📋</div>
+    <div className="card-title-row"><h3>Executive Reporting</h3></div>
+  </div>
+  <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Audit-ready reports, ROI tracking, and invoice validation to ensure billing accuracy and executive-level visibility.</p>
+</div>
           </div>
         </div>
       </section>
@@ -114,72 +133,55 @@ const CloudBillingManagementContent = () => {
             <h2 className="display-md">Billing Challenges That Cost You Millions</h2>
           </div>
           <div className="grid-3 reveal">
-            <div className="card">
-              <div className="card-header"><div className="icon-box">😱</div><h3>End-of-Month Bill Shock</h3></div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.9rem' }}>Cloud bills arrive at month-end with no prior warning. Unexpected spikes from new workloads, data transfer, or licensing fees catch finance teams completely off guard.</p>
+            <div className="card premium-card">
+              <div className="card-header">
+                <div className="icon-box">😱</div>
+                <div className="card-title-row"><h3>End-of-Month Bill Shock</h3></div>
+              </div>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Cloud bills arrive at month-end with no prior warning. Unexpected spikes from new workloads, data transfer, or licensing fees catch finance teams completely off guard.</p>
             </div>
-            <div className="card">
-              <div className="card-header"><div className="icon-box">🏷️</div><h3>No Cost Attribution</h3></div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.9rem' }}>When every team shares a single cloud account, or resources aren't tagged, attributing cloud costs to business units, projects, or products becomes effectively impossible.</p>
+            <div className="card premium-card">
+              <div className="card-header">
+                <div className="icon-box">🏷️</div>
+                <div className="card-title-row"><h3>No Cost Attribution</h3></div>
+              </div>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>When every team shares a single cloud account, or resources aren't tagged, attributing cloud costs to business units, projects, or products becomes effectively impossible.</p>
             </div>
-            <div className="card">
-              <div className="card-header"><div className="icon-box">📊</div><h3>Complex Multi-Account Bills</h3></div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.9rem' }}>Enterprises with dozens of AWS accounts or Azure subscriptions receive fragmented, confusing billing data that requires significant manual processing and reconciliation.</p>
+            <div className="card premium-card">
+              <div className="card-header">
+                <div className="icon-box">📊</div>
+                <div className="card-title-row"><h3>Complex Multi-Account Bills</h3></div>
+              </div>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Enterprises with dozens of AWS accounts or Azure subscriptions receive fragmented, confusing billing data that requires significant manual processing and reconciliation.</p>
             </div>
-            <div className="card">
-              <div className="card-header"><div className="icon-box">🔮</div><h3>No Forecasting Capability</h3></div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.9rem' }}>Without historical trend analysis and predictive modeling, finance teams cannot accurately budget for cloud spend, leading to repeated budget overruns.</p>
+            <div className="card premium-card">
+              <div className="card-header">
+                <div className="icon-box">🔮</div>
+                <div className="card-title-row"><h3>No Forecasting Capability</h3></div>
+              </div>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Without historical trend analysis and predictive modeling, finance teams cannot accurately budget for cloud spend, leading to repeated budget overruns.</p>
             </div>
-            <div className="card">
-              <div className="card-header"><div className="icon-box">🤝</div><h3>Finance-Engineering Disconnect</h3></div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.9rem' }}>Finance teams lack cloud context; engineering teams lack billing visibility. Neither side has the full picture needed to make informed cost decisions.</p>
+            <div className="card premium-card">
+              <div className="card-header">
+                <div className="icon-box">🤝</div>
+                <div className="card-title-row"><h3>Finance-Engineering Disconnect</h3></div>
+              </div>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Finance teams lack cloud context; engineering teams lack billing visibility. Neither side has the full picture needed to make informed cost decisions.</p>
             </div>
-            <div className="card">
-              <div className="card-header"><div className="icon-box">🗂️</div><h3>Marketplace &amp; License Complexity</h3></div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.9rem' }}>AWS Marketplace and Azure Marketplace purchases, BYOL licensing, and support tiers add layers of billing complexity that require specialist knowledge to interpret.</p>
+            <div className="card premium-card">
+              <div className="card-header">
+                <div className="icon-box">🗂️</div>
+                <div className="card-title-row"><h3>Marketplace &amp; License Complexity</h3></div>
+              </div>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>AWS Marketplace and Azure Marketplace purchases, BYOL licensing, and support tiers add layers of billing complexity that require specialist knowledge to interpret.</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* OUR SOLUTION */}
-      <section className="section">
-        <div className="container">
-          <div className="section-header reveal">
-            <div className="badge badge-accent">✅ Our Solution</div>
-            <h2 className="display-md">Complete Cloud Billing Management</h2>
-          </div>
-          <div className="grid-3 reveal">
-            <div className="card" style={{ borderTop: '3px solid var(--primary)' }}>
-              <div className="card-header"><div className="icon-box">🔍</div><h3>Unified Billing Dashboard</h3></div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.9rem' }}>We aggregate AWS, Azure, Oracle, and Google Cloud costs into a single real-time dashboard that gives every stakeholder appropriate visibility.</p>
-            </div>
-            <div className="card" style={{ borderTop: '3px solid var(--accent)' }}>
-              <div className="card-header"><div className="icon-box">📋</div><h3>Chargeback &amp; Showback</h3></div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.9rem' }}>We implement tag-based chargeback and showback reporting so finance teams can accurately allocate cloud costs to business units, projects, and products.</p>
-            </div>
-            <div className="card" style={{ borderTop: '3px solid var(--primary-light)' }}>
-              <div className="card-header"><div className="icon-box">🚨</div><h3>Anomaly Detection &amp; Alerts</h3></div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.9rem' }}>Real-time spend anomaly detection and budget threshold alerts ensure you're notified of unexpected cost spikes before they reach your monthly bill.</p>
-            </div>
-            <div className="card" style={{ borderTop: '3px solid var(--primary)' }}>
-              <div className="card-header"><div className="icon-box">📈</div><h3>Spend Forecasting</h3></div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.9rem' }}>Using historical trends, growth projections, and workload modeling, we provide accurate cloud spend forecasts that enable confident financial planning.</p>
-            </div>
-            <div className="card" style={{ borderTop: '3px solid var(--accent)' }}>
-              <div className="card-header"><div className="icon-box">🤝</div><h3>Executive Reporting</h3></div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.9rem' }}>Monthly executive billing reports — cloud ROI, cost trends, savings achieved, and forecasts — designed for C-suite and board presentations.</p>
-            </div>
-            <div className="card" style={{ borderTop: '3px solid var(--primary-light)' }}>
-              <div className="card-header"><div className="icon-box">🧮</div><h3>Invoice Validation</h3></div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.9rem' }}>We validate every cloud invoice against actual usage, identify discrepancies, and manage cloud provider credit and refund processes on your behalf.</p>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* OUTCOMES / METRICS */}
-      <section className="section" style={{ background: 'var(--dark-surface)' }}>
+      <section className="section">
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-primary">📊 Results</div>
@@ -207,107 +209,43 @@ const CloudBillingManagementContent = () => {
       </section>
 
       {/* USE CASES */}
-      <section className="section">
+      <section className="section" style={{ background: 'var(--dark-surface)' }}>
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-accent">🎯 Use Cases</div>
             <h2 className="display-md">Cloud Billing Use Cases</h2>
           </div>
           <div className="grid-3 reveal">
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1.05rem' }}>📊 Multi-Account Cost Tracking</h3>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.85rem' }}>Consolidate billing data across dozens of AWS accounts, Azure subscriptions, and multi-cloud environments into unified cost views with real-time tracking.</p>
+            <div className="card premium-card">
+              <div className="card-header">
+                <div className="icon-box">📊</div>
+                <div className="card-title-row"><h3>Multi-Account Cost Tracking</h3></div>
+              </div>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Consolidate billing data across dozens of AWS accounts, Azure subscriptions, and multi-cloud environments into unified cost views with real-time tracking.</p>
             </div>
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1.05rem' }}>📋 Finance Reporting &amp; Compliance</h3>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.85rem' }}>Automated monthly executive reports, C-suite presentations, and audit-ready billing documentation aligned with Saudi regulatory requirements.</p>
+            <div className="card premium-card">
+              <div className="card-header">
+                <div className="icon-box">📋</div>
+                <div className="card-title-row"><h3>Finance Reporting &amp; Compliance</h3></div>
+              </div>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Automated monthly executive reports, C-suite presentations, and audit-ready billing documentation aligned with Saudi regulatory requirements.</p>
             </div>
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1.05rem' }}>🔮 Budget Forecasting</h3>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.85rem' }}>Predictive spend modeling using historical trends, seasonality, and growth patterns — enabling confident cloud budgeting for enterprises in Riyadh.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* INDUSTRIES */}
-      <section className="section" style={{ background: 'var(--dark-surface)' }}>
-        <div className="container">
-          <div className="section-header reveal">
-            <div className="badge badge-primary">🏢 Industries</div>
-            <h2 className="display-md">Industries We Serve</h2>
-          </div>
-          <div className="grid-3 reveal">
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1.05rem' }}>🏦 Banking &amp; Finance</h3>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.85rem' }}>SAMA-compliant cloud billing with department-level chargeback, regulatory audit trails, and granular cost reporting for financial institutions in Riyadh.</p>
-            </div>
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1.05rem' }}>🏥 Healthcare</h3>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.85rem' }}>HIPAA-aligned billing management with cost tracking per department, facility, or application for healthcare providers across Saudi Arabia.</p>
-            </div>
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1.05rem' }}>🛒 E-Commerce &amp; Retail</h3>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.85rem' }}>Seasonal spend forecasting, campaign cost attribution, and real-time billing dashboards for retail enterprises scaling across the Middle East.</p>
-            </div>
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1.05rem' }}>🏗️ Government &amp; Public Sector</h3>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.85rem' }}>NCA ECC-compliant billing governance, procurement-aligned reporting, and budget accountability for Vision 2030 digital transformation projects.</p>
-            </div>
-            <div className="card">
-              <h3 style={{ marginBottom: '8px', fontSize: '1.05rem' }}>💻 SaaS &amp; Technology</h3>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.85rem' }}>Per-customer cost attribution, unit economics tracking, and COGS-aligned cloud billing for SaaS companies growing in the Saudi market.</p>
+            <div className="card premium-card">
+              <div className="card-header">
+                <div className="icon-box">🔮</div>
+                <div className="card-title-row"><h3>Budget Forecasting</h3></div>
+              </div>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Predictive spend modeling using historical trends, seasonality, and growth patterns — enabling confident cloud budgeting for enterprises in Riyadh.</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* TOOLS & TECHNOLOGIES */}
-      <section className="section">
-        <div className="container">
-          <div className="section-header reveal">
-            <div className="badge badge-accent">🛠️ Tools &amp; Technologies</div>
-            <h2 className="display-md">Billing Tools &amp; Technologies We Use</h2>
-          </div>
-          <div className="grid-4 reveal">
-            <div className="card text-center" style={{ padding: '20px' }}>
-              <h3 style={{ fontSize: '.9rem', marginBottom: '4px' }}>AWS Cost Explorer</h3>
-              <p style={{ color: 'var(--text-muted)', fontSize: '.75rem' }}>Spend Analytics</p>
-            </div>
-            <div className="card text-center" style={{ padding: '20px' }}>
-              <h3 style={{ fontSize: '.9rem', marginBottom: '4px' }}>Azure Cost Management</h3>
-              <p style={{ color: 'var(--text-muted)', fontSize: '.75rem' }}>Budget &amp; Alerts</p>
-            </div>
-            <div className="card text-center" style={{ padding: '20px' }}>
-              <h3 style={{ fontSize: '.9rem', marginBottom: '4px' }}>CloudHealth</h3>
-              <p style={{ color: 'var(--text-muted)', fontSize: '.75rem' }}>Multi-Cloud Billing</p>
-            </div>
-            <div className="card text-center" style={{ padding: '20px' }}>
-              <h3 style={{ fontSize: '.9rem', marginBottom: '4px' }}>Kubecost</h3>
-              <p style={{ color: 'var(--text-muted)', fontSize: '.75rem' }}>K8s Cost Allocation</p>
-            </div>
-            <div className="card text-center" style={{ padding: '20px' }}>
-              <h3 style={{ fontSize: '.9rem', marginBottom: '4px' }}>AWS Budgets</h3>
-              <p style={{ color: 'var(--text-muted)', fontSize: '.75rem' }}>Threshold Alerts</p>
-            </div>
-            <div className="card text-center" style={{ padding: '20px' }}>
-              <h3 style={{ fontSize: '.9rem', marginBottom: '4px' }}>Power BI</h3>
-              <p style={{ color: 'var(--text-muted)', fontSize: '.75rem' }}>Executive Dashboards</p>
-            </div>
-            <div className="card text-center" style={{ padding: '20px' }}>
-              <h3 style={{ fontSize: '.9rem', marginBottom: '4px' }}>Terraform</h3>
-              <p style={{ color: 'var(--text-muted)', fontSize: '.75rem' }}>Tag Governance</p>
-            </div>
-            <div className="card text-center" style={{ padding: '20px' }}>
-              <h3 style={{ fontSize: '.9rem', marginBottom: '4px' }}>Custom APIs</h3>
-              <p style={{ color: 'var(--text-muted)', fontSize: '.75rem' }}>Billing Automation</p>
-            </div>
-          </div>
-        </div>
-      </section>
+     
 
+ 
       {/* COMPARISON */}
-      <section className="section" style={{ background: 'var(--dark-surface)' }}>
+      <section className="section" >
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-primary">⚖️ Compare</div>
@@ -336,19 +274,6 @@ const CloudBillingManagementContent = () => {
         </div>
       </section>
 
-      {/* LOCATION SEO */}
-      <section className="section">
-        <div className="container">
-          <div className="section-header reveal">
-            <div className="badge badge-accent">🇸🇦 Local Expertise</div>
-            <h2 className="display-md">Cloud Billing Management in Riyadh</h2>
-          </div>
-          <div className="reveal" style={{ maxWidth: '900px', margin: '0 auto', lineHeight: '1.8' }}>
-            <p>As a cloud billing management provider based in Saudi Arabia, GulfStream Technologies delivers specialized cost visibility and financial governance for enterprises in Riyadh, Jeddah, and Dammam. Our local team understands the unique billing complexities of multi-cloud environments in the Middle East — from currency and tax considerations to regulatory reporting requirements.</p>
-            <p style={{ marginTop: '16px' }}>Our billing management services integrate seamlessly with our <Link href="/services/cloud-managed-services" style={{ color: 'var(--accent)' }}>Managed Cloud Services</Link> and <Link href="/services/finops-cost-optimization" style={{ color: 'var(--accent)' }}>FinOps consulting</Link>, providing a complete financial operations framework for your cloud environment. For platform-specific billing, see our <Link href="/services/cloud-managed-services/aws" style={{ color: 'var(--accent)' }}>AWS managed services</Link> and <Link href="/services/cloud-managed-services/azure" style={{ color: 'var(--accent)' }}>Azure cloud services</Link>.</p>
-          </div>
-        </div>
-      </section>
 
       {/* FAQ */}
       <section className="section" style={{ background: 'var(--dark-surface)' }}>
@@ -378,7 +303,7 @@ const CloudBillingManagementContent = () => {
                     className="faq-answer"
                   >
                     <div className="faq-answer-inner">
-                      <p>{faq.answer}</p>
+                      <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>{faq.answer}</p>
                     </div>
                   </div>
                 </div>
@@ -397,7 +322,7 @@ const CloudBillingManagementContent = () => {
             <p className="cta-urgency">⚡ Limited free billing audits available this month</p>
             <div className="cta-actions">
               <Link href="/book-a-review" className="btn btn-white btn-lg">📋 Get a Free Billing Audit</Link>
-              <Link href="/pricing" className="btn-white-outline">💰 Get a Cost Estimate</Link>
+              <Link href="/book-a-review" className="btn-white-outline">💰 Get a Cost Estimate</Link>
             </div>
           </div>
         </div>

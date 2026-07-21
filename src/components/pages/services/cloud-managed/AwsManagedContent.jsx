@@ -36,24 +36,24 @@ const AwsManagedContent = () => {
     <main>
       {/* HERO */}
       <section className="page-hero">
-        <div className="container">
+        <div className="container" style={{ textAlign: 'left' }}>
           <div className="breadcrumb">
             <Link href="/">Home</Link><span>›</span><Link href="/services">Services</Link><span>›</span><Link href="/services/cloud-managed-services">Managed Cloud Services</Link><span>›</span><span>AWS</span>
           </div>
-          <div className="badge badge-primary" style={{ marginBottom: '16px' }}>☁️ AWS Managed Services</div>
-          <h1 className="display-lg">AWS Managed Services<br /><span className="text-gradient">in Saudi Arabia</span></h1>
+          <h1 className="display-lg"><span className="text-gradient">AWS Managed Services in Saudi Arabia</span></h1>
           <p>GulfStream Technologies is a leading managed cloud services provider for AWS in Saudi Arabia. We manage your entire AWS environment — from EC2, RDS, and EKS to Lambda and S3 — with certified engineers, 24/7 cloud monitoring services, and FinOps consulting to reduce costs by up to 32%.</p>
-          <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
+          <div style={{ display: 'flex', gap: '16px', justifyContent: 'left', flexWrap: 'wrap' }}>
             <Link href="/book-a-review" className="btn btn-primary btn-lg">Book a Free AWS Assessment</Link>
-            <Link href="/contact" className="btn btn-outline btn-lg">Talk to an Expert</Link>
+            <Link href="/contact" className="btn btn-outline btn-lg"              style={{ backgroundColor: '#ffffff', color: '#0052CC', borderColor: 'rgba(0,0,0,0.08)' }}
+>Talk to an Expert</Link>
           </div>
         </div>
       </section>
 
-      <CloudSubNav />
+      <CloudSubNav/>
 
       {/* CHALLENGES */}
-      <section className="section">
+      <section className="section" style={{ background: 'var(--dark-surface)' }}>
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-accent">⚠️ Common Challenges</div>
@@ -108,7 +108,7 @@ const AwsManagedContent = () => {
       </section>
 
       {/* COVERAGE */}
-      <section className="section" style={{ background: 'var(--dark-surface)' }}>
+      <section className="section" >
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-accent">🔧 Coverage</div>
@@ -181,7 +181,7 @@ const AwsManagedContent = () => {
       </section>
 
       {/* OUR PROCESS */}
-      <section className="section">
+      <section className="section" style={{ background: 'var(--dark-surface)' }}>
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-primary">✅ Our Process</div>
@@ -206,7 +206,7 @@ const AwsManagedContent = () => {
       </section>
 
       {/* METRICS */}
-      <section className="section" style={{ background: 'var(--dark-surface)' }}>
+      <section className="section" >
         <div className="container">
           <div className="metrics-grid reveal">
             <div className="metric-item"><span className="metric-value">↓32%</span>
@@ -229,52 +229,7 @@ const AwsManagedContent = () => {
         </div>
       </section>
 
-      <section className="section" >
-        <div className="container">
-          <div className="section-header reveal">
-            <div className="badge badge-accent">⭐ Why GulfStream</div>
-            <h2 className="display-md">Why Choose GulfStream for AWS?</h2>
-          </div>
-          <div className="grid-4 reveal">
-            <div className="card premium-card why-us-card">
-              <div className="card-header">
-                <div className="icon-box">🇸🇦</div>
-                <div className="card-title-row">
-                  <h3> Saudi AWS Specialists</h3>
-                </div>
-              </div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Certified AWS architects based in Riyadh, ensuring local compliance knowledge, Arabic support, and time-zone aligned operations for enterprises across Saudi Arabia.</p>
-            </div>
-            <div className="card premium-card why-us-card">
-              <div className="card-header">
-                <div className="icon-box">📊</div>
-                <div className="card-title-row">
-                  <h3>FinOps Management</h3>
-                </div>
-              </div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Every engagement includes structured <Link href="/services/finops-cost-optimization" style={{ color: 'var(--accent)' }}>FinOps consulting</Link> with measurable cost reduction targets from day one.</p>
-            </div>
-            <div className="card premium-card why-us-card">
-              <div className="card-header">
-                <div className="icon-box">🔔</div>
-                <div className="card-title-row">
-                  <h3>24/7 NOC Operations</h3>
-                </div>
-              </div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Our NOC monitors your AWS environment around the clock with human-backed alerting and incident response — not just automated emails.</p>
-            </div>
-            <div className="card premium-card why-us-card">
-              <div className="card-header">
-                <div className="icon-box">📋</div>
-                <div className="card-title-row">
-                  <h3>Outcome-Based SLAs</h3>
-                </div>
-              </div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>We commit to specific uptime, cost, and performance targets — not generic best-effort agreements. See also our <Link href="/services/cloud-managed-services/azure" style={{ color: 'var(--accent)' }}>Azure</Link>, <Link href="/services/cloud-managed-services/oracle" style={{ color: 'var(--accent)' }}>Oracle Cloud</Link>, and <Link href="/services/cloud-managed-services/google" style={{ color: 'var(--accent)' }}>Google Cloud</Link> managed services.</p>
-            </div>
-          </div>
-        </div>
-      </section>
+      
 
       {/* FAQ */}
       <section className="section" style={{ background: 'var(--dark-surface)' }}>
@@ -319,10 +274,9 @@ const AwsManagedContent = () => {
           <div className="cta-banner">
             <h2 className="display-md">Start Your AWS Optimization Journey</h2>
             <p>Book a free 60-minute AWS Assessment. Our certified architects will analyze your environment and deliver a prioritized action plan with cost savings projections.</p>
-            <p className="cta-urgency">⚡ Limited free assessments available this month</p>
             <div className="cta-actions">
               <Link href="/book-a-review" className="btn btn-white btn-lg">📋 Book Free AWS Assessment</Link>
-              <Link href="/book-a-review" className="btn-white-outline">💰 Get a Cost Estimate</Link>
+
             </div>
           </div>
         </div>

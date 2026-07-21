@@ -4,16 +4,16 @@ import Link from 'next/link';
 
 const HeroSection = () => (
   <section className="page-hero">
-    <div className="container">
+    <div className="container" style={{ textAlign: 'left' }}>
       <div className="breadcrumb">
         <Link href="/">Home</Link><span>›</span><Link href="/services">Services</Link><span>›</span><span>Managed Cloud Services</span>
       </div>
-      <div className="badge badge-primary" style={{ marginBottom: '16px' }}>🌐 Managed Cloud Services</div>
-      <h1 className="display-lg">Enterprise Managed Cloud Service<br/> <span className="text-gradient">in Saudi Arabia</span></h1>
-      <p>GulfStream Technologies delivers enterprise-grade managed services across AWS, Azure, Oracle Cloud, and Google Cloud for businesses in Saudi Arabia. We operate, optimize, secure, and modernize your cloud — so you can focus on growth.</p>
-      <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
+
+      <h1 className="display-lg">Enterprise Managed Cloud Service <span className="text-gradient">in Saudi Arabia</span></h1>
+      <p>GulfStream Technologies delivers enterprise-grade managed services across AWS, Microsoft Cloud, Oracle Cloud, and Google Cloud for businesses in Saudi Arabia. We operate, optimize, secure, and modernize your cloud — so you can focus on growth.</p>
+      <div style={{ display: 'flex', gap: '16px', justifyContent: 'left', flexWrap: 'wrap' }}>
         <Link href="/book-a-review" className="btn btn-primary btn-lg">Book a Free Cloud Assessment</Link>
-        <Link href="/contact" className="btn btn-outline btn-lg">Talk to an Expert</Link>
+        <Link href="/contact" className="btn btn-outline btn-lg" style={{ backgroundColor: '#ffffff', color: '#0052CC', borderColor: 'rgba(0,0,0,0.08)' }}>Talk to an Expert</Link>
       </div>
 
       <div className="hero-trust-strip">

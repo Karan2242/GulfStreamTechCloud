@@ -4,283 +4,288 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { useReveal } from '@/hooks/useReveal';
 
-const articles = [
-  {
-    slug: '/insights/nca-ecc-cloud-compliance-saudi',
-    icon: '🔒',
-    category: 'Security',
-    title: 'NCA ECC Cloud Compliance: What Saudi Enterprises Must Know in 2025',
-    summary: 'The National Cybersecurity Authority’s Essential Cybersecurity Controls apply to all Saudi organizations using cloud. Here’s exactly what you need to implement and how AWS, Azure, Google Cloud, and Oracle Cloud controls map to NCA requirements.',
-    readTime: '8 min read',
-    date: '2025-02',
-    dateLabel: 'Feb 2025',
-  },
-  {
-    slug: '/insights/aws-vs-azure-saudi-2025',
-    icon: '🚀',
-    category: 'Migration',
-    title: 'AWS vs. Azure for Saudi Enterprises: 2025 Comparison Guide',
-    summary: 'A detailed comparison of AWS Middle East (UAE/Bahrain) and Azure UAE North regions for Saudi Arabian enterprises \u2014 covering pricing, compliance, service breadth, and Saudi-specific considerations.',
-    readTime: '10 min read',
-    date: '2025-02',
-    dateLabel: 'Feb 2025',
-  },
-  {
-    slug: '/insights/cloud-cost-optimization-hidden-costs',
-    icon: '💸',
-    category: 'FinOps',
-    title: 'The Hidden Cloud Costs Draining Your Multi-Cloud Budget',
-    summary: 'Data transfer costs, NAT Gateway charges, forgotten snapshots, and idle Elastic IPs \u2014 the cloud costs that consistently surprise enterprises. A complete guide to finding and eliminating them.',
-    readTime: '7 min read',
-    date: '2025-01',
-    dateLabel: 'Jan 2025',
-  },
-  {
-    slug: '/insights/auto-scaling-cloud-architecture-saudi-retail',
-    icon: '📈',
-    category: 'Architecture',
-    title: 'Building Auto-Scaling Cloud Architectures for Saudi Retail Peak Events',
-    summary: 'How to design cloud architectures on AWS, Azure, and Google Cloud that automatically scale during Ramadan, Saudi National Day, and promotional peak traffic — and scale back down to minimize cost.',
-    readTime: '9 min read',
-    date: '2025-01',
-    dateLabel: 'Jan 2025',
-  },
-  {
-    slug: '/insights/azure-savings-plans-vs-reserved-instances',
-    icon: '🔷',
-    category: 'FinOps',
-    title: 'Microsoft Azure Savings Plans vs Reserved Instances: Which Should You Buy?',
-    summary: 'A practical guide for Azure enterprise customers on choosing between 1-year and 3-year Reserved Instances versus Savings Plans \u2014 with a decision matrix for different workload types.',
-    readTime: '6 min read',
-    date: '2024-12',
-    dateLabel: 'Dec 2024',
-  },
-  {
-    slug: '/insights/cloud-tagging-strategy-guide',
-    icon: '🔗',
-    category: 'Architecture',
-    title: 'Cloud Tagging Strategy: How to Build a Tagging Taxonomy That Actually Works',
-    summary: 'A complete guide to cloud resource tagging for cost allocation, compliance, and automation. Includes recommended tag keys, enforcement strategies, and automation with AWS Config and Azure Policy.',
-    readTime: '8 min read',
-    date: '2024-12',
-    dateLabel: 'Dec 2024',
-  },
-];
-
-const categories = ['All', 'FinOps', 'Security', 'Migration', 'Architecture'];
-
 const InsightsContent = () => {
   useReveal();
   const [activeCategory, setActiveCategory] = useState('All');
-  const [openFaqIndex, setOpenFaqIndex] = useState(null);
 
-    const insightsFaqs = [
+  const articles = [
     {
-      question: 'Who writes GulfStream cloud insights?',
-      answer: 'Our insights are written by certified cloud architects and engineers with hands-on experience in enterprise AWS, Azure, Google Cloud, and Oracle Cloud projects.',
+      slug: 'cloud-cost-optimization-strategy',
+      icon: '💰',
+      category: 'FinOps',
+      title: 'Cloud Cost Optimization Strategy: A Complete Framework',
+      summary: 'Learn proven FinOps methodologies to reduce cloud costs by 25-35% through rightsizing, commitment planning, and intelligent resource allocation.',
+      readTime: '8 min read',
+      date: '2026-05-15',
+      dateLabel: 'May 15, 2026',
     },
     {
-      question: 'Are these insights relevant to Saudi Arabia?',
-      answer: 'Yes. Our content covers Saudi-specific cloud regulations, local region considerations, and enterprise requirements for Riyadh, Jeddah, and Dammam.',
+      slug: 'auto-scaling-architecture',
+      icon: '📈',
+      category: 'Architecture',
+      title: 'Auto-Scaling Cloud Architecture: Design Patterns',
+      summary: 'Build elastic architectures that automatically scale based on demand, reducing costs and improving performance across AWS, Azure, and GCP.',
+      readTime: '10 min read',
+      date: '2026-05-14',
+      dateLabel: 'May 14, 2026',
     },
     {
-      question: 'How can I get help beyond these articles?',
-      answer: 'You can book a free cloud assessment or contact our team to turn the recommendations into a practical managed cloud engagement.',
+      slug: 'cloud-migration-planning',
+      icon: '📦',
+      category: 'Migration',
+      title: 'Cloud Migration Planning Strategy: From Discovery to Go-Live',
+      summary: 'A step-by-step migration framework covering assessment, design, validation, and cutover planning for zero-downtime enterprise migrations.',
+      readTime: '10 min read',
+      date: '2026-05-13',
+      dateLabel: 'May 13, 2026',
     },
     {
-      question: 'Do you offer managed services for cloud platforms?',
-      answer: 'Yes. We provide managed services across AWS, Azure, Google Cloud, Oracle Cloud, and hybrid cloud environments.',
+      slug: 'cloud-iam-security-best-practices',
+      icon: '🔐',
+      category: 'Security',
+      title: 'Cloud IAM Security Best Practices: AWS, Azure, GCP',
+      summary: 'Implement zero-trust identity models, least privilege access, and MFA across multi-cloud environments with practical implementation steps.',
+      readTime: '8 min read',
+      date: '2026-05-12',
+      dateLabel: 'May 12, 2026',
     },
     {
-      question: 'Why choose GulfStream for cloud transformation?',
-      answer: 'We focus on measurable outcomes, local Saudi support, multi-cloud expertise, and fast ROI from cost optimization and governance.',
+      slug: 'multi-region-high-availability',
+      icon: '🌍',
+      category: 'Architecture',
+      title: 'Multi-Region High Availability Design: 99.99% Uptime',
+      summary: 'Architect resilient multi-region deployments with automated failover, data replication, and disaster recovery ensuring mission-critical availability.',
+      readTime: '11 min read',
+      date: '2026-05-11',
+      dateLabel: 'May 11, 2026',
+    },
+    {
+      slug: 'reserved-instances-vs-savings-plans',
+      icon: '💳',
+      category: 'FinOps',
+      title: 'Reserved Instances vs Savings Plans: Which Should You Buy?',
+      summary: 'A practical comparison of AWS Reserved Instances, Savings Plans, and on-demand pricing with decision matrices for different workload types.',
+      readTime: '7 min read',
+      date: '2026-05-10',
+      dateLabel: 'May 10, 2026',
+    },
+    {
+      slug: 'lift-and-shift-vs-modernization',
+      icon: '🔄',
+      category: 'Migration',
+      title: 'Lift-and-Shift vs Modernization: Which Path is Right?',
+      summary: 'Compare rehost, replatform, and refactor strategies with cost-benefit analysis, timeline considerations, and decision frameworks.',
+      readTime: '9 min read',
+      date: '2026-05-09',
+      dateLabel: 'May 09, 2026',
+    },
+    {
+      slug: 'multi-cloud-threat-detection',
+      icon: '⚠️',
+      category: 'Security',
+      title: 'Multi-Cloud Threat Detection and Response Strategy',
+      summary: 'Unified security monitoring across AWS, Azure, and Google Cloud with SIEM integration, automated detection, and incident response procedures.',
+      readTime: '11 min read',
+      date: '2026-05-08',
+      dateLabel: 'May 08, 2026',
+    },
+    {
+      slug: 'cloud-waste-reduction',
+      icon: '🔍',
+      category: 'FinOps',
+      title: 'Cloud Waste Reduction Techniques: Finding Hidden Costs',
+      summary: 'Discover data transfer charges, idle resources, and orphaned snapshots draining your budget. A complete guide to finding and eliminating cloud waste.',
+      readTime: '9 min read',
+      date: '2026-05-05',
+      dateLabel: 'May 05, 2026',
+    },
+    {
+      slug: 'zero-downtime-migration',
+      icon: '⚡',
+      category: 'Migration',
+      title: 'Zero Downtime Cloud Migration: Advanced Techniques',
+      summary: 'Implement dual-running, database replication, and cutover strategies ensuring business continuity during cloud migration.',
+      readTime: '11 min read',
+      date: '2026-05-03',
+      dateLabel: 'May 03, 2026',
+    },
+    {
+      slug: 'resilient-cloud-infrastructure',
+      icon: '🛡️',
+      category: 'Architecture',
+      title: 'Resilient Cloud Infrastructure: Fault Tolerance Design',
+      summary: 'Design fault-tolerant systems using microservices, containerization, and infrastructure-as-code for production-grade reliability.',
+      readTime: '9 min read',
+      date: '2026-05-02',
+      dateLabel: 'May 02, 2026',
+    },
+    {
+      slug: 'cloud-compliance-governance',
+      icon: '✅',
+      category: 'Security',
+      title: 'Cloud Compliance & Governance: A Practical Roadmap',
+      summary: 'Navigate HIPAA, SOC 2, ISO 27001, and Saudi regulations with automated compliance frameworks and continuous monitoring strategies.',
+      readTime: '9 min read',
+      date: '2026-05-01',
+      dateLabel: 'May 01, 2026',
+    },
+    {
+      slug: 'finops-governance',
+      icon: '📋',
+      category: 'FinOps',
+      title: 'FinOps Governance Best Practices: Building Cost Culture',
+      summary: 'Implement FinOps governance policies, automated cost controls, and organizational structures that make cloud cost management a team discipline.',
+      readTime: '10 min read',
+      date: '2026-04-30',
+      dateLabel: 'Apr 30, 2026',
+    },
+    {
+      slug: 'security-monitoring-aws-azure',
+      icon: '📊',
+      category: 'Security',
+      title: 'Security Monitoring in AWS/Azure: Native Tools Guide',
+      summary: 'Compare native security tools, implement centralized logging, and set up real-time alerts across AWS and Azure environments.',
+      readTime: '8 min read',
+      date: '2026-04-28',
+      dateLabel: 'Apr 28, 2026',
+    },
+    {
+      slug: 'cloud-performance-optimization',
+      icon: '⚙️',
+      category: 'Architecture',
+      title: 'Cloud Performance Optimization: Beyond CPU and Memory',
+      summary: 'Optimize application performance through caching strategies, CDN integration, database optimization, and observability best practices.',
+      readTime: '8 min read',
+      date: '2026-04-27',
+      dateLabel: 'Apr 27, 2026',
+    },
+    {
+      slug: 'hybrid-cloud-migration',
+      icon: '🌐',
+      category: 'Migration',
+      title: 'Hybrid Cloud Migration Best Practices',
+      summary: 'Strategies for phased cloud adoption, managing on-premises and cloud infrastructure, and hybrid cloud governance models.',
+      readTime: '8 min read',
+      date: '2026-04-26',
+      dateLabel: 'Apr 26, 2026',
     },
   ];
 
+  const categories = ['All', 'FinOps', 'Security', 'Migration', 'Architecture'];
   const filtered = activeCategory === 'All' ? articles : articles.filter(a => a.category === activeCategory);
 
   return (
     <main>
       {/* HERO */}
       <section className="page-hero">
-        <div className="container">
+        <div className="container" style={{ textAlign: 'left' }}>
           <nav className="breadcrumb" aria-label="Breadcrumb">
             <Link href="/">Home</Link><span>›</span><span>Insights</span>
           </nav>
-          <div className="badge badge-primary" style={{ marginBottom: '16px' }}>📚 Cloud Insights &amp; Resources</div>
-          <h1 className="display-lg">Cloud Insights<br /><span className="text-gradient">Saudi Arabia</span></h1>
-          <p>Expert cloud insights across AWS, Azure, Google Cloud, and Oracle Cloud — FinOps strategies, cloud cost optimization guides, and security best practices from the GulfStream Technologies team — helping Saudi enterprises make smarter cloud decisions.</p>
+          <h1 className="display-lg">Cloud Insights & Resources <span className="text-gradient">Expert Guidance for Saudi Enterprises</span></h1>
+          <p>In-depth guides on FinOps, security, migration, and cloud architecture from GulfStream certified cloud engineers — helping you make smarter decisions across AWS, Microsoft Cloud, Google Cloud, and Oracle Cloud.</p>
         </div>
       </section>
 
-      {/* SEO INTRO */}
+      {/* CONTENT */}
       <section className="section">
         <div className="container">
-          <div className="reveal" style={{ maxWidth: '900px', margin: '0 auto 48px', lineHeight: '1.8' }}>
-            <p>GulfStream Technologies publishes in-depth guides on <Link href="/services/finops-cost-optimization" style={{ color: 'var(--accent)' }}>cloud cost optimization in Saudi Arabia</Link>, <Link href="/services/cloud-managed-services/aws" style={{ color: 'var(--accent)' }}>AWS managed services</Link>, <Link href="/services/cloud-managed-services/azure" style={{ color: 'var(--accent)' }}>Azure cloud consulting</Link>, <Link href="/services/cloud-managed-services/google" style={{ color: 'var(--accent)' }}>Google Cloud solutions</Link>, <Link href="/services/cloud-security-governance" style={{ color: 'var(--accent)' }}>cloud security governance</Link>, and <Link href="/services/finops-cost-optimization" style={{ color: 'var(--accent)' }}>FinOps services for Saudi enterprises</Link>. Our insights are written by certified multi-cloud architects with hands-on experience managing enterprise cloud environments across Riyadh, Jeddah, and Dammam.</p>
-          </div>
-
-          {/* CATEGORY FILTER */}
-          <div className="reveal" style={{ display: 'flex', gap: '10px', flexWrap: 'wrap', justifyContent: 'center', marginBottom: '48px' }}>
+          {/* FILTER TABS */}
+          <div className="insights-filter-tabs reveal">
             {categories.map(cat => (
               <button
                 key={cat}
                 onClick={() => setActiveCategory(cat)}
-                className={`btn ${activeCategory === cat ? 'btn-primary' : 'btn-outline'} btn-sm`}
-                style={{ cursor: 'pointer' }}
+                className={`insights-filter-btn ${activeCategory === cat ? 'active' : ''}`}
+                type="button"
               >
                 {cat}
               </button>
             ))}
           </div>
 
-          {/* FEATURED ARTICLE */}
-          <article className="reveal" style={{ marginBottom: '60px' }}>
-            <div style={{ display: 'block' }} className="card featured-card">
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: '48px', alignItems: 'center' }}>
-                <div style={{ background: 'linear-gradient(135deg, var(--primary), var(--accent))', borderRadius: 'var(--radius-lg)', padding: '48px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '72px', minHeight: '220px' }}>
-                  📊
-                </div>
-                <div>
-                  <header style={{ display: 'flex', gap: '10px', marginBottom: '16px' }}>
-                    <span className="badge badge-accent">FinOps</span>
-                    <span className="badge badge-primary">Featured</span>
+          {/* INSIGHTS GRID */}
+          <div className="grid-3 reveal" style={{ marginTop: '48px' }}>
+            {filtered.map(a => (
+              <Link
+                key={a.slug}
+                href={`/insights/${a.slug}`}
+                className="insight-card"
+                style={{ textDecoration: 'none', color: 'inherit' }}
+              >
+                <div className="card" style={{ display: 'flex', flexDirection: 'column', height: '100%', cursor: 'pointer' }}>
+                  <header style={{ display: 'flex', gap: '8px', marginBottom: '12px' }}>
+                    <span className="badge badge-accent">{a.category}</span>
                   </header>
-                  <h2 style={{ marginBottom: '14px', fontSize: '1.6rem', lineHeight: 1.3 }}>The Complete FinOps Guide for Saudi Enterprises: Reduce Cloud Costs by 30% in 90 Days</h2>
-                  <p style={{ color: 'var(--text-secondary)', lineHeight: 1.65, marginBottom: '20px' }}>A comprehensive guide to implementing the FinOps Foundation framework across AWS, Azure, Google Cloud, and Oracle Cloud environments — covering cost visibility, rightsizing, commitment planning, and governance for Saudi enterprises.</p>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '16px', color: 'var(--text-muted)', fontSize: '.85rem' }}>
-                    <span>12 min read</span><span>•</span><time dateTime="2025-03">March 2025</time>
+                  <h2 style={{ marginBottom: '10px', flex: 1, fontSize: '1.1rem', lineHeight: 1.3 }}>{a.title}</h2>
+                  <p style={{ color: 'var(--text-secondary)', fontSize: '.825rem', lineHeight: 1.6, flex: 2, marginBottom: '16px' }}>
+                    {a.summary}
+                  </p>
+                  <div style={{ marginTop: 'auto', display: 'flex', alignItems: 'center', gap: '10px', color: 'var(--text-muted)', fontSize: '.82rem', paddingTop: '16px', borderTop: '1px solid rgba(255, 107, 53, 0.1)' }}>
+                    <span>{a.readTime}</span>
+                    <span>•</span>
+                    <time dateTime={a.date}>{a.dateLabel}</time>
                   </div>
                 </div>
-              </div>
-            </div>
-          </article>
-
-          {/* ARTICLE GRID */}
-          <div className="grid-3 reveal" style={{ marginBottom: '48px' }}>
-            {filtered.slice(0, 2).map(a => (
-              <article key={a.slug}>
-                <div className="card" style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
-                  <div style={{ fontSize: '36px', marginBottom: '16px' }}>{a.icon}</div>
-                  <header style={{ display: 'flex', gap: '8px', marginBottom: '12px' }}><span className={`badge ${a.category === 'FinOps' || a.category === 'Security' ? 'badge-primary' : 'badge-accent'}`}>{a.category}</span></header>
-                  <h2 style={{ marginBottom: '10px', flex: 1, fontSize: '1.1rem' }}>{a.title}</h2>
-                  <p style={{ color: 'var(--text-secondary)', fontSize: '.875rem', lineHeight: 1.6, flex: 2 }}>{a.summary}</p>
-                  <div style={{ marginTop: '16px', display: 'flex', alignItems: 'center', gap: '10px', color: 'var(--text-muted)', fontSize: '.82rem' }}>
-                    <span>{a.readTime}</span><span>•</span><time dateTime={a.date}>{a.dateLabel}</time>
-                  </div>
-                </div>
-              </article>
-            ))}
-
-            {/* INLINE CTA after 2nd article */}
-            <div className="card" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', textAlign: 'center', background: 'linear-gradient(135deg, rgba(0,82,204,0.12), rgba(255,107,53,0.12))', border: '1px solid rgba(255,107,53,0.25)' }}>
-              <div style={{ fontSize: '36px', marginBottom: '12px' }}>💰</div>
-              <h3 style={{ marginBottom: '8px', fontSize: '1.05rem' }}>Want Help Reducing Your Cloud Cost?</h3>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.85rem', lineHeight: 1.6, marginBottom: '20px' }}>Get a free assessment from our FinOps certified practitioners — average 30% cost savings in 90 days.</p>
-              <Link href="/book-a-review" className="btn btn-primary btn-sm">Book Free Assessment</Link>
-            </div>
-
-            {filtered.slice(2).map(a => (
-              <article key={a.slug}>
-                <div className="card" style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
-                  <div style={{ fontSize: '36px', marginBottom: '16px' }}>{a.icon}</div>
-                  <header style={{ display: 'flex', gap: '8px', marginBottom: '12px' }}><span className={`badge ${a.category === 'FinOps' || a.category === 'Security' ? 'badge-primary' : 'badge-accent'}`}>{a.category}</span></header>
-                  <h2 style={{ marginBottom: '10px', flex: 1, fontSize: '1.1rem' }}>{a.title}</h2>
-                  <p style={{ color: 'var(--text-secondary)', fontSize: '.875rem', lineHeight: 1.6, flex: 2 }}>{a.summary}</p>
-                  <div style={{ marginTop: '16px', display: 'flex', alignItems: 'center', gap: '10px', color: 'var(--text-muted)', fontSize: '.82rem' }}>
-                    <span>{a.readTime}</span><span>•</span><time dateTime={a.date}>{a.dateLabel}</time>
-                  </div>
-                </div>
-              </article>
+              </Link>
             ))}
           </div>
         </div>
       </section>
 
       {/* NEWSLETTER */}
-      <section className="section" style={{ background: 'var(--dark-surface)' }}>
-        <div className="container" style={{ maxWidth: '620px' }}>
-          <div className="section-header reveal">
-            <div className="badge badge-primary">📬 Newsletter</div>
-            <h2 className="display-md">Cloud Insights, Monthly.</h2>
-            <p>Join 1,200+ Saudi cloud professionals who receive expert cloud cost optimization tips, security updates, and AWS/Azure news monthly — no spam, ever.</p>
-          </div>
-          <form className="contact-form reveal" style={{ gap: '16px' }} onSubmit={(e) => { e.preventDefault(); alert('Subscribed!'); }}>
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr auto', gap: '12px' }}>
-              <input type="email" placeholder="Your business email address" className="form-input" style={{ margin: 0 }} required />
-              <button type="submit" className="btn btn-primary">Subscribe</button>
-            </div>
-            <p style={{ color: 'var(--text-muted)', fontSize: '.8rem', textAlign: 'center' }}>No spam. Monthly insights only. Unsubscribe any time.</p>
-          </form>
-        </div>
-      </section>
-
-      {/* TRUST SIGNALS */}
-      <section className="section" style={{ background: 'var(--dark-surface)' }}>
+      <section className="section" style={{ background: 'var(--dark-surface)' }}  >
         <div className="container">
-          <div className="section-header reveal">
-            <div className="badge badge-accent">🏆 Why Trust GulfStream Insights</div>
-            <h2 className="display-md">Written by Certified Cloud Practitioners</h2>
-            <p>Every article is authored by our team of AWS-certified architects and Azure expert engineers with hands-on experience managing enterprise cloud environments across Saudi Arabia.</p>
-          </div>
-          <div className="grid-4 reveal">
-            <div className="card" style={{ textAlign: 'center' }}>
-              <div style={{ fontSize: '2rem', marginBottom: '8px' }}>🏢</div>
-              <h3 style={{ fontSize: '1.4rem', marginBottom: '4px' }}>40+</h3>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.85rem' }}>Enterprise Clients in Saudi Arabia</p>
-            </div>
-            <div className="card" style={{ textAlign: 'center' }}>
-              <div style={{ fontSize: '2rem', marginBottom: '8px' }}>💰</div>
-              <h3 style={{ fontSize: '1.4rem', marginBottom: '4px' }}>30%</h3>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.85rem' }}>Average Cloud Cost Reduction</p>
-            </div>
-            <div className="card" style={{ textAlign: 'center' }}>
-              <div style={{ fontSize: '2rem', marginBottom: '8px' }}>🔒</div>
-              <h3 style={{ fontSize: '1.4rem', marginBottom: '4px' }}>99.99%</h3>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.85rem' }}>Uptime SLA Delivered</p>
-            </div>
-            <div className="card" style={{ textAlign: 'center' }}>
-              <div style={{ fontSize: '2rem', marginBottom: '8px' }}>🏅</div>
-              <h3 style={{ fontSize: '1.4rem', marginBottom: '4px' }}>80+</h3>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.85rem' }}>80+ Multi-Cloud Certifications</p>
-            </div>
-          </div>
-        </div>
-      </section>
+          <div className="newsletter-banner reveal" style={{ textAlign: 'center' }}>
+            <div className="badge badge-primary" style={{ marginBottom: '24px', justifyContent: 'center', width: 'fit-content', margin: '0 auto 24px' }}>📧 NEWSLETTER</div>
+            <h2 className="display-md" style={{ marginBottom: '16px' }}>Cloud Insights, Monthly.</h2>
+            <p style={{ marginBottom: '32px', maxWidth: '600px', margin: '0 auto 32px', fontSize: '1rem', color: 'var(--text-secondary)' }}>Join 1,200+ Saudi cloud professionals who receive expert cloud cost optimization tips, security updates, and Cloud news monthly — no spam, ever.</p>
+            
+            <form onSubmit={async (e) => {
+              e.preventDefault();
+              const email = e.target.email.value;
+              if (email) {
+                try {
+                  await fetch('/api/newsletter', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ email })
+                  });
+                  e.target.email.value = '';
+                  alert('✅ Subscription confirmed! Check your email.');
+                } catch (err) {
+                  alert('Error subscribing. Please try again.');
+                }
+              }
+            }} style={{ display: 'flex', gap: '12px', maxWidth: '550px', margin: '0 auto', flexWrap: 'wrap', justifyContent: 'center' }}>
+              <input
+                type="email"
+                name="email"
+                placeholder="Your business email address"
+                required
+                style={{
+                  flex: 1,
+                  minWidth: '300px',
+                  padding: '14px 20px',
+                  borderRadius: 'var(--radius-md)',
+                  background: 'rgba(15, 26, 46, 0.8)',
+                  border: '1px solid var(--dark-border)',
+                  color: 'var(--text-primary)',
+                  fontSize: '.95rem',
+                  transition: 'all var(--transition)',
+                }}
+                onFocus={(e) => { e.target.style.borderColor = 'var(--accent)'; e.target.style.boxShadow = '0 0 20px rgba(255, 107, 53, 0.2)'; }}
+                onBlur={(e) => { e.target.style.borderColor = 'var(--dark-border)'; e.target.style.boxShadow = 'none'; }}
+              />
+              <button
+                type="submit"
+                className="btn btn-primary btn-lg"
+              >
+                Subscribe
+              </button>
+            </form>
 
-      {/* FAQ */}
-      <section className="section">
-        <div className="container">
-          <div className="section-header reveal">
-            <div className="badge badge-primary">❓ Frequently Asked Questions</div>
-            <h2 className="display-md">Cloud Insights FAQ</h2>
-          </div>
-          <div className="faq-accordion reveal">
-            {insightsFaqs.map((faq, index) => {
-              const isOpen = openFaqIndex === index;
-              return (
-                <div className={`faq-item ${isOpen ? 'active' : ''}`} key={faq.question}>
-                  <button
-                    className="faq-question"
-                    type="button"
-                    onClick={() => setOpenFaqIndex(isOpen ? null : index)}
-                    aria-expanded={isOpen}
-                    aria-controls={`insights-faq-answer-${index}`}
-                  >
-                    <span>{faq.question}</span>
-                    <span className="faq-toggle" aria-hidden="true">+</span>
-                  </button>
-                  <div
-                    id={`insights-faq-answer-${index}`}
-                    className="faq-answer"
-                  >
-                    <div className="faq-answer-inner">
-                      <p>{faq.answer}</p>
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
+            <p style={{ marginTop: '16px', fontSize: '.875rem', color: 'var(--text-muted)' }}>No spam. Monthly insights only. Unsubscribe any time.</p>
           </div>
         </div>
       </section>
@@ -289,11 +294,10 @@ const InsightsContent = () => {
       <section className="section">
         <div className="container">
           <div className="cta-banner reveal">
-            <h2 className="display-md">Want Expert Cloud Advice for Your Business?</h2>
-            <p>Book a free Cloud Assessment and get personalized recommendations from our certified multi-cloud architects and engineers — at no cost or commitment.</p>
-            <p className="cta-urgency">⚡ Limited free cloud assessments available this month</p>
+            <h2 className="display-md">Ready to Transform Your Cloud Strategy?</h2>
+            <p>Book a free cloud assessment to discuss how these strategies apply to your organization and discover your specific optimization opportunities.</p>
             <div className="cta-actions">
-              <Link href="/book-a-review" className="btn btn-white btn-lg">📋 Book Cloud Assessment Saudi Arabia</Link>
+              <Link href="/book-a-review" className="btn btn-white btn-lg">📋 Book Free Assessment</Link>
               <Link href="/contact" className="btn-white-outline">Talk to Cloud Experts</Link>
             </div>
           </div>

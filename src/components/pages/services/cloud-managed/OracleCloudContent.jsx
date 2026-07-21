@@ -36,16 +36,15 @@ const OracleCloudContent = () => {
     <main>
       {/* HERO */}
       <section className="page-hero">
-        <div className="container">
+        <div className="container" style={{ textAlign: 'left' }}>
           <div className="breadcrumb">
             <Link href="/">Home</Link><span>›</span><Link href="/services">Services</Link><span>›</span><Link href="/services/cloud-managed-services">Managed Cloud Services</Link><span>›</span><span>Oracle Cloud</span>
           </div>
-          <div className="badge badge-primary" style={{ marginBottom: '16px' }}>🔴 Oracle Managed Cloud Services</div>
-          <h1 className="display-lg">Oracle Managed Cloud Services<br /><span className="text-gradient">in Saudi Arabia</span></h1>
+          <h1 className="display-lg"><span className="text-gradient">Oracle Managed Cloud Services in Saudi Arabia</span></h1>
           <p>GulfStream Technologies is a specialized managed cloud services provider for Oracle Cloud Infrastructure (OCI) in Saudi Arabia. We deliver end-to-end OCI management — from Autonomous Database and Exadata to OKE and Cloud Guard — with 24/7 cloud monitoring services, Oracle licensing optimization, and FinOps consulting to reduce costs by up to 35%.</p>
-          <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
+          <div style={{ display: 'flex', gap: '16px', justifyContent: 'left', flexWrap: 'wrap' }}>
             <Link href="/book-a-review" className="btn btn-primary btn-lg">Book a Free OCI Assessment</Link>
-            <Link href="/contact" className="btn btn-outline btn-lg">Talk to an Expert</Link>
+            <Link href="/contact" className="btn btn-outline btn-lg" style={{ backgroundColor: '#ffffff', color: '#0052CC', borderColor: 'rgba(0,0,0,0.08)' }}>Talk to an Expert</Link>
           </div>
         </div>
       </section>
@@ -53,7 +52,7 @@ const OracleCloudContent = () => {
       <CloudSubNav />
 
       {/* CHALLENGES */}
-      <section className="section">
+      <section className="section" style={{ background: 'var(--dark-surface)' }}>
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-accent">⚠️ Challenges</div>
@@ -108,7 +107,7 @@ const OracleCloudContent = () => {
       </section>
 
       {/* COVERAGE */}
-      <section className="section" style={{ background: 'var(--dark-surface)' }}>
+      <section className="section" >
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-accent">🔧 Coverage</div>
@@ -157,7 +156,7 @@ const OracleCloudContent = () => {
       </section>
 
       {/* OUR PROCESS */}
-      <section className="section">
+      <section className="section" style={{ background: 'var(--dark-surface)' }}>
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-primary">✅ Our Process</div>
@@ -182,7 +181,7 @@ const OracleCloudContent = () => {
       </section>
 
       {/* METRICS */}
-      <section className="section" style={{ background: 'var(--dark-surface)' }}>
+      <section className="section" >
         <div className="container">
           <div className="metrics-grid reveal">
             <div className="metric-item"><span className="metric-value">↓35%</span>
@@ -205,45 +204,7 @@ const OracleCloudContent = () => {
         </div>
       </section>
 
-      {/* WHY US */}
-      <section className="section">
-        <div className="container">
-          <div className="section-header reveal">
-            <div className="badge badge-accent">⭐ Why GulfStream</div>
-            <h2 className="display-md">Why Choose GulfStream for Oracle Cloud?</h2>
-          </div>
-          <div className="grid-4 reveal">
-            <div className="card premium-card why-us-card">
-              <div className="card-header">
-                <div className="icon-box">🇸🇦</div>
-                <div className="card-title-row"><h3>Oracle Specialists</h3></div>
-              </div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Certified Oracle Cloud architects based in Riyadh with deep expertise in OCI, Autonomous DB, Exadata, and enterprise Oracle workloads.</p>
-            </div>
-            <div className="card premium-card why-us-card">
-              <div className="card-header">
-                <div className="icon-box">📊</div>
-                <div className="card-title-row"><h3>License Optimization</h3></div>
-              </div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Expert guidance on Oracle BYOL, Universal Credits, and license compliance through structured <Link href="/services/finops-cost-optimization" style={{ color: 'var(--accent)' }}>FinOps consulting</Link> — ensuring you never overpay.</p>
-            </div>
-            <div className="card premium-card why-us-card">
-              <div className="card-header">
-                <div className="icon-box">🔔</div>
-                <div className="card-title-row"><h3>24/7 Monitoring</h3></div>
-              </div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Specialized Oracle database monitoring with performance baselines, alert tuning, and proactive capacity management — not just automated emails.</p>
-            </div>
-            <div className="card premium-card why-us-card">
-              <div className="card-header">
-                <div className="icon-box">📋</div>
-                <div className="card-title-row"><h3>Outcome-Based SLAs</h3></div>
-              </div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>We commit to specific uptime, performance, and cost targets. See also our <Link href="/services/cloud-managed-services/azure" style={{ color: 'var(--accent)' }}>Azure</Link> and <Link href="/services/cloud-managed-services/google" style={{ color: 'var(--accent)' }}>Google Cloud</Link> managed services.</p>
-            </div>
-          </div>
-        </div>
-      </section>
+
 
       {/* FAQ */}
       <section className="section" style={{ background: 'var(--dark-surface)' }}>
@@ -288,10 +249,8 @@ const OracleCloudContent = () => {
           <div className="cta-banner">
             <h2 className="display-md">Optimize Your Oracle Cloud Investment</h2>
             <p>Get a free OCI environment assessment and discover how much you can save on licensing and infrastructure while improving database performance and security.</p>
-            <p className="cta-urgency">⚡ Limited free assessments available this month</p>
             <div className="cta-actions">
               <Link href="/book-a-review" className="btn btn-white btn-lg">📋 Book Free OCI Assessment</Link>
-              <Link href="/book-a-review" className="btn-white-outline">💰 Get a Cost Estimate</Link>
             </div>
           </div>
         </div>

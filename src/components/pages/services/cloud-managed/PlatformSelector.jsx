@@ -2,6 +2,7 @@
 
 import React, { useState, useCallback } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const platforms = [
   {
@@ -23,21 +24,21 @@ const platforms = [
     ],
   },
   {
-    id: 'azure',
-    name: 'Azure',
-    fullName: 'Azure Managed Services',
-    href: '/services/cloud-managed-services/azure',
+    id: 'microsoft-cloud',
+    name: 'Microsoft Cloud',
+    fullName: 'Microsoft Cloud Managed Services',
+    href: '/services/cloud-managed-services/microsoft-cloud',
     logo: '/assets/images/logo-azure.png',
-    description: 'Full lifecycle management of Microsoft Azure — VMs, AKS, Azure SQL, Entra ID, and Defender for Cloud. We provide enterprise governance, hybrid cloud integration, and FinOps cost optimization tailored to Saudi enterprises.',
+    description: 'Comprehensive management of Microsoft Azure infrastructure and Microsoft 365 productivity platform. VMs, AKS, Azure SQL, Entra ID, Defender, Teams, Exchange, and SharePoint. 24/7 operations, hybrid cloud governance, and enterprise compliance for Saudi organizations.',
     services: [
-      'Virtual Machines & Scale Sets',
-      'AKS Container Management',
-      'Azure SQL & Cosmos DB',
-      'Entra ID & Access Management',
+      'Azure Infrastructure Management',
+      'Azure Kubernetes Service (AKS)',
+      'Azure SQL & Cosmos DB Ops',
+      'Microsoft Entra ID & Access',
       'Defender for Cloud Security',
-      'Azure DevOps Pipelines',
-      'Cost Management & Advisor',
-      'Azure Monitor & Alerts',
+      'Microsoft 365 Tenant Management',
+      'Teams & Exchange Administration',
+      'SharePoint & OneDrive Governance',
     ],
   },
   {
@@ -88,7 +89,7 @@ const PlatformSelector = () => {
   const active = platforms[activeIndex];
 
   return (
-    <section className="section">
+    <section className="section" style={{ background: 'var(--dark-surface)' }}>
       <div className="container">
         <div className="section-header reveal">
           <div className="badge badge-accent">☁️ Platforms</div>
@@ -96,16 +97,17 @@ const PlatformSelector = () => {
           <p>We provide expert managed cloud services across the four leading platforms, tailored to enterprise requirements in Saudi Arabia.</p>
         </div>
 
-        <div className="platform-tabs reveal">
+        <div className="platform-tabs reveal" role="tablist" aria-label="Cloud platform tabs">
           {platforms.map((p, i) => (
             <button
               key={p.id}
               className={`platform-tab${i === activeIndex ? ' active' : ''}`}
               onClick={() => handleTabClick(i)}
               type="button"
+              role="tab"
               aria-selected={i === activeIndex}
             >
-              <img src={p.logo} alt={p.name} className="platform-tab-logo" width={24} height={24} loading="lazy" />
+              <Image src={p.logo} alt={p.name} className="platform-tab-logo" width={24} height={24} priority={false} style={{ objectFit: 'contain' }} />
               {p.name}
             </button>
           ))}
@@ -126,7 +128,15 @@ const PlatformSelector = () => {
           </div>
           <div className="platform-panel-visual">
             <div className="platform-logo-showcase">
-              <img src={active.logo} alt={`${active.name} logo`} width={120} height={120} loading="lazy" />
+              <Image
+                src={active.logo}
+                alt={`${active.name} logo`}
+                width={320}
+                height={180}
+                style={{ objectFit: 'contain', width: '100%', height: '100%' }}
+                sizes="(max-width: 768px) 100vw, 320px"
+                priority={false}
+              />
             </div>
           </div>
         </div>

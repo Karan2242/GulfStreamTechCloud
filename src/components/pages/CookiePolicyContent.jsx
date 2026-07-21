@@ -63,7 +63,7 @@ const CookiePolicyContent = () => {
             </ul>
 
             <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8 }}>
-              For clarity, this policy refers to all these technologies collectively as "cookies," though they may function differently.
+              For clarity, this policy refers to all these technologies collectively as &quot;cookies,&quot; though they may function differently.
             </p>
           </div>
 
@@ -115,7 +115,7 @@ const CookiePolicyContent = () => {
               <strong>Examples:</strong> LinkedIn Pixel, Facebook Pixel, Google Ads retargeting, social media tracking.
             </p>
             <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8 }}>
-              <em>You can opt out of these cookies using your browser's privacy settings or the methods described in Section 5.</em>
+              <em>You can opt out of these cookies using your browser&apos;s privacy settings or the methods described in Section 5.</em>
             </p>
           </div>
 
@@ -168,12 +168,12 @@ const CookiePolicyContent = () => {
 
             <h3 style={{ fontSize: '1.1rem', fontWeight: 600, marginBottom: '12px', marginTop: '16px', color: 'var(--text-primary)' }}>Do-Not-Track (DNT) Signals</h3>
             <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8, marginBottom: '12px' }}>
-              Some browsers include a &ldquo;Do Not Track&rdquo; feature. While we recognize DNT signals, we cannot guarantee compliance as universal DNT standards are not established. You can typically enable DNT in your browser's privacy settings.
+              Some browsers include a &ldquo;Do Not Track&rdquo; feature. While we recognize DNT signals, we cannot guarantee compliance as universal DNT standards are not established. You can typically enable DNT in your browser&apos;s privacy settings.
             </p>
 
             <h3 style={{ fontSize: '1.1rem', fontWeight: 600, marginBottom: '12px', marginTop: '16px', color: 'var(--text-primary)' }}>Cookie Manager</h3>
             <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8 }}>
-              If available, you may use our website's cookie preference manager or consent banner to adjust your cookie settings directly.
+              If available, you may use our website&apos;s cookie preference manager or consent banner to adjust your cookie settings directly.
             </p>
           </div>
 

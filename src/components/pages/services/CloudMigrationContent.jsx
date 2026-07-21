@@ -22,8 +22,8 @@ const CloudMigrationContent = () => {
       answer: 'Costs depend on workload complexity and scope. We provide a free migration assessment with a tailored estimate.',
     },
     {
-      question: 'Do you support AWS, Azure, Google Cloud, and Oracle Cloud migrations?',
-      answer: 'Yes. We migrate workloads to AWS, Azure, Google Cloud, and Oracle Cloud, including multi-cloud and hybrid transition strategies.',
+      question: 'Do you support AWS, Microsoft, Google Cloud, and Oracle Cloud migrations?',
+      answer: 'Yes. We migrate workloads to AWS, Microsoft, Google Cloud, and Oracle Cloud, including multi-cloud and hybrid transition strategies.',
     },
     {
       question: 'Do you provide post-migration support?',
@@ -35,16 +35,15 @@ const CloudMigrationContent = () => {
     <main>
       {/* HERO */}
       <section className="page-hero">
-        <div className="container">
+        <div className="container" style={{ textAlign: 'left' }}>
           <div className="breadcrumb">
             <Link href="/">Home</Link><span>›</span><Link href="/services">Services</Link><span>›</span><span>Cloud Migration</span>
           </div>
-          <div className="badge badge-primary" style={{ marginBottom: '16px' }}>🚀 Cloud Migration &amp; Modernization</div>
-          <h1 className="display-lg">Cloud Migration &amp; Modernization<br /><span className="text-gradient">in Saudi Arabia</span></h1>
-          <p>GulfStream Technologies designs and executes cloud migration projects in Saudi Arabia with zero business disruption — moving your workloads to AWS, Azure, or multi-cloud using our proven 6Rs methodology, wave-based planning, and post-migration optimization for enterprises in Riyadh, Jeddah, and Dammam.</p>
-          <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
+          <h1 className="display-lg">Cloud Migration &amp; Modernization <span className="text-gradient">in Saudi Arabia</span></h1>
+          <p>GulfStream Technologies designs and executes cloud migration projects in Saudi Arabia with zero business disruption — moving your workloads to AWS, Microsoft Cloud, Google Cloud, and Oracle Cloud using our proven 6Rs methodology, wave-based planning, and post-migration optimization for enterprises in Saudi Arabia.</p>
+          <div style={{ display: 'flex', gap: '16px', justifyContent: 'left', flexWrap: 'wrap' }}>
             <Link href="/book-a-review" className="btn btn-primary btn-lg">Book a Free Migration Assessment</Link>
-            <Link href="/contact" className="btn btn-outline btn-lg">Talk to an Expert</Link>
+            <Link href="/contact" className="btn btn-outline btn-lg" style={{ backgroundColor: '#ffffff', color: '#0052CC', borderColor: 'rgba(0,0,0,0.08)' }}>Talk to an Expert</Link>
           </div>
           <div className="hero-trust-strip">
             <span className="hero-trust-label">Trusted by enterprises across Saudi Arabia</span>
@@ -66,59 +65,8 @@ const CloudMigrationContent = () => {
         </div>
       </section>
 
-      {/* WHAT YOU GET */}
-      <section className="section">
-        <div className="container">
-          <div className="section-header reveal">
-            <div className="badge badge-accent">🎯 What You Get</div>
-            <h2 className="display-md">What You Get with GulfStream</h2>
-          </div>
-          <div className="grid-3 reveal">
-            <div className="card premium-card">
-              <div className="card-header">
-                <div className="icon-box">🧩</div>
-                <div className="card-title-row"><h3>Migration Strategy</h3></div>
-              </div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>End-to-end migration strategy with workload assessment, dependency mapping, and wave-based execution planning.</p>
-            </div>
-            <div className="card premium-card">
-              <div className="card-header">
-                <div className="icon-box">🚀</div>
-                <div className="card-title-row"><h3>Zero Downtime</h3></div>
-              </div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Seamless migration using replication, phased cutovers, and rollback strategies to ensure zero business disruption.</p>
-            </div>
-            <div className="card premium-card">
-              <div className="card-header">
-                <div className="icon-box">🔒</div>
-                <div className="card-title-row"><h3>Security Compliance</h3></div>
-              </div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Migration aligned with NCA ECC, ISO standards, and data residency requirements with secure architecture design.</p>
-            </div>
-            <div className="card premium-card">
-              <div className="card-header">
-                <div className="icon-box">📦</div>
-                <div className="card-title-row"><h3>Modernization</h3></div>
-              </div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Transform legacy applications into cloud-native architectures using containers, microservices, and managed services.</p>
-            </div>
-            <div className="card premium-card">
-              <div className="card-header">
-                <div className="icon-box">💰</div>
-                <div className="card-title-row"><h3>Cost Optimization</h3></div>
-              </div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>FinOps-driven migration with right-sizing and cost controls to reduce cloud spend from day one.</p>
-            </div>
-            <div className="card premium-card">
-              <div className="card-header">
-                <div className="icon-box">📋</div>
-                <div className="card-title-row"><h3>Post-Migration Support</h3></div>
-              </div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Continuous monitoring, optimization, and 24/7 support to ensure performance, stability, and ROI.</p>
-            </div>
-          </div>
-        </div>
-      </section>
+
+
 
       {/* CHALLENGES */}
       <section className="section" style={{ background: 'var(--dark-surface)' }}>
@@ -177,8 +125,66 @@ const CloudMigrationContent = () => {
 
 
 
-      {/* METRICS */}
+      {/* WHAT YOU GET */}
       <section className="section">
+        <div className="container">
+          <div className="section-header reveal">
+            <div className="badge badge-accent">🎯 What You Get</div>
+            <h2 className="display-md">What You Get with GulfStream</h2>
+          </div>
+          <div className="grid-3 reveal">
+            <div className="card premium-card">
+              <div className="card-header">
+                <div className="icon-box">🧩</div>
+                <div className="card-title-row"><h3>Migration Strategy</h3></div>
+              </div>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>End-to-end migration strategy with workload assessment, dependency mapping, and wave-based execution planning.</p>
+            </div>
+            <div className="card premium-card">
+              <div className="card-header">
+                <div className="icon-box">🚀</div>
+                <div className="card-title-row"><h3>Zero Downtime</h3></div>
+              </div>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Seamless migration using replication, phased cutovers, and rollback strategies to ensure zero business disruption.</p>
+            </div>
+            <div className="card premium-card">
+              <div className="card-header">
+                <div className="icon-box">🔒</div>
+                <div className="card-title-row"><h3>Security Compliance</h3></div>
+              </div>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Migration aligned with NCA ECC, ISO standards, and data residency requirements with secure architecture design.</p>
+            </div>
+            <div className="card premium-card">
+              <div className="card-header">
+                <div className="icon-box">📦</div>
+                <div className="card-title-row"><h3>Modernization</h3></div>
+              </div>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Transform legacy applications into cloud-native architectures using containers, microservices, and managed services.</p>
+            </div>
+            <div className="card premium-card">
+              <div className="card-header">
+                <div className="icon-box">💰</div>
+                <div className="card-title-row"><h3>Cost Optimization</h3></div>
+              </div>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>FinOps-driven migration with right-sizing and cost controls to reduce cloud spend from day one.</p>
+            </div>
+            <div className="card premium-card">
+              <div className="card-header">
+                <div className="icon-box">📋</div>
+                <div className="card-title-row"><h3>Post-Migration Support</h3></div>
+              </div>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Continuous monitoring, optimization, and 24/7 support to ensure performance, stability, and ROI.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+      {/* METRICS */}
+      <section className="section" style={{ background: 'var(--dark-surface)' }}>
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-accent">📊 Results</div>
@@ -206,7 +212,7 @@ const CloudMigrationContent = () => {
       </section>
 
       {/* USE CASES */}
-      <section className="section" style={{ background: 'var(--dark-surface)' }}>
+      <section className="section" >
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-primary">🎯 Use Cases</div>
@@ -240,7 +246,7 @@ const CloudMigrationContent = () => {
 
     
       {/* COMPARISON */}
-      <section className="section">
+      <section className="section" style={{ background: 'var(--dark-surface)' }}>
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-accent">⚖️ Compare</div>
@@ -272,7 +278,7 @@ const CloudMigrationContent = () => {
      
 
       {/* FAQ */}
-      <section className="section" style={{ background: 'var(--dark-surface)' }}>
+      <section className="section">
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-accent">❓ FAQ</div>
@@ -315,10 +321,9 @@ const CloudMigrationContent = () => {
           <div className="cta-banner">
             <h2 className="display-md">Ready to Migrate to the Cloud?</h2>
             <p>Book a free Migration Assessment and receive a detailed cloud readiness report, target architecture recommendations, and a migration roadmap — at no cost or commitment.</p>
-            <p className="cta-urgency">⚡ Limited free migration assessments available this month</p>
             <div className="cta-actions">
               <Link href="/book-a-review" className="btn btn-white btn-lg">🚀 Book Free Migration Assessment</Link>
-              <Link href="/book-a-review" className="btn-white-outline">💰 Get a Cost Estimate</Link>
+
             </div>
           </div>
         </div>

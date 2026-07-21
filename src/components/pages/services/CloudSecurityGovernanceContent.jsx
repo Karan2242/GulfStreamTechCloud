@@ -19,7 +19,7 @@ const CloudSecurityGovernanceContent = () => {
     },
     {
       question: 'Can you secure multi-cloud environments?',
-      answer: 'Yes. We secure AWS, Azure, Google Cloud, Oracle Cloud, and multi-cloud environments with centralized governance and controls.',
+      answer: 'Yes. We secure AWS, Microsoft Cloud, Google Cloud, Oracle Cloud, and multi-cloud environments with centralized governance and controls.',
     },
     {
       question: 'How much does cloud security governance cost?',
@@ -35,16 +35,15 @@ const CloudSecurityGovernanceContent = () => {
     <main>
       {/* HERO */}
       <section className="page-hero">
-        <div className="container">
+        <div className="container" style={{ textAlign: 'left' }}>
           <div className="breadcrumb">
             <Link href="/">Home</Link><span>›</span><Link href="/services">Services</Link><span>›</span><span>Cloud Security &amp; Governance</span>
           </div>
-          <div className="badge badge-primary" style={{ marginBottom: '16px' }}>🔒 Cloud Security &amp; Governance</div>
-          <h1 className="display-lg">Cloud Security &amp; Governance<br /><span className="text-gradient">in Saudi Arabia</span></h1>
-          <p>GulfStream Technologies delivers enterprise-grade cloud security and governance across AWS, Azure, and multi-cloud environments in Saudi Arabia — combining continuous threat detection, IAM hardening, NCA ECC compliance automation, and policy enforcement to protect your most critical cloud workloads in Riyadh, Jeddah, and Dammam.</p>
-          <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
+          <h1 className="display-lg">Cloud Security &amp; Governance <span className="text-gradient">in Saudi Arabia</span></h1>
+          <p>GulfStream Technologies delivers enterprise-grade cloud security and governance across multi-cloud environments in Saudi Arabia — combining continuous threat detection, IAM hardening, NCA ECC compliance automation, and policy enforcement to protect your most critical cloud workloads in Saudi Arabia.</p>
+          <div style={{ display: 'flex', gap: '16px', justifyContent: 'left', flexWrap: 'wrap' }}>
             <Link href="/book-a-review" className="btn btn-primary btn-lg">Book a Free Security Assessment</Link>
-            <Link href="/contact" className="btn btn-outline btn-lg">Talk to an Expert</Link>
+            <Link href="/contact" className="btn btn-outline btn-lg" style={{ backgroundColor: '#ffffff', color: '#0052CC', borderColor: 'rgba(0,0,0,0.08)' }}>Talk to an Expert</Link>
           </div>
           <div className="hero-trust-strip">
             <span className="hero-trust-label">Trusted by enterprises across Saudi Arabia</span>
@@ -65,6 +64,66 @@ const CloudSecurityGovernanceContent = () => {
           </div>
         </div>
       </section>
+
+
+
+
+      {/* THREATS */}
+      <section className="section" style={{ background: 'var(--dark-surface)' }}>
+        <div className="container">
+          <div className="section-header reveal">
+            <div className="badge badge-primary">⚠️ Threats</div>
+            <h2 className="display-md">Cloud Security Risks Enterprises Face</h2>
+          </div>
+          <div className="grid-3 reveal">
+            <div className="card premium-card">
+              <div className="card-header">
+                <div className="icon-box">🔓</div>
+                <div className="card-title-row"><h3>Misconfigured Resources</h3></div>
+              </div>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Publicly accessible S3 buckets, open security groups, and improperly configured Azure Blob storage are among the most common causes of cloud data breaches.</p>
+            </div>
+            <div className="card premium-card">
+              <div className="card-header">
+                <div className="icon-box">🕵️</div>
+                <div className="card-title-row"><h3>Over-Privileged Access</h3></div>
+              </div>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>IAM roles and identities with excessive permissions violate the principle of least privilege, creating massive blast radius in the event of a credential compromise.</p>
+            </div>
+            <div className="card premium-card">
+              <div className="card-header">
+                <div className="icon-box">🦠</div>
+                <div className="card-title-row"><h3>Insider Threats &amp; Account Takeover</h3></div>
+              </div>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Compromised credentials, malicious insiders, and API key exposure can give attackers persistent, privileged access to your cloud environment without detection.</p>
+            </div>
+            <div className="card premium-card">
+              <div className="card-header">
+                <div className="icon-box">📋</div>
+                <div className="card-title-row"><h3>Compliance Drift</h3></div>
+              </div>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Cloud environments that start compliant often drift from regulatory requirements (NCA ECC, ISO 27001, PCI DSS) as configurations change and teams scale rapidly.</p>
+            </div>
+            <div className="card premium-card">
+              <div className="card-header">
+                <div className="icon-box">🔍</div>
+                <div className="card-title-row"><h3>Limited Threat Visibility</h3></div>
+              </div>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Without centralized logging, SIEM integration, and threat intelligence, malicious activity can persist undetected in cloud environments for months.</p>
+            </div>
+            <div className="card premium-card">
+              <div className="card-header">
+                <div className="icon-box">🔗</div>
+                <div className="card-title-row"><h3>Supply Chain Vulnerabilities</h3></div>
+              </div>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Third-party dependencies, marketplace components, and container images may contain vulnerabilities that compromise your cloud workloads at the software supply chain level.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
 
       {/* WHAT YOU GET */}
       <section className="section">
@@ -125,63 +184,11 @@ const CloudSecurityGovernanceContent = () => {
         </div>
       </section>
 
-      {/* THREATS */}
-      <section className="section" style={{ background: 'var(--dark-surface)' }}>
-        <div className="container">
-          <div className="section-header reveal">
-            <div className="badge badge-primary">⚠️ Threats</div>
-            <h2 className="display-md">Cloud Security Risks Enterprises Face</h2>
-          </div>
-          <div className="grid-3 reveal">
-            <div className="card premium-card">
-              <div className="card-header">
-                <div className="icon-box">🔓</div>
-                <div className="card-title-row"><h3>Misconfigured Resources</h3></div>
-              </div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Publicly accessible S3 buckets, open security groups, and improperly configured Azure Blob storage are among the most common causes of cloud data breaches.</p>
-            </div>
-            <div className="card premium-card">
-              <div className="card-header">
-                <div className="icon-box">🕵️</div>
-                <div className="card-title-row"><h3>Over-Privileged Access</h3></div>
-              </div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>IAM roles and identities with excessive permissions violate the principle of least privilege, creating massive blast radius in the event of a credential compromise.</p>
-            </div>
-            <div className="card premium-card">
-              <div className="card-header">
-                <div className="icon-box">🦠</div>
-                <div className="card-title-row"><h3>Insider Threats &amp; Account Takeover</h3></div>
-              </div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Compromised credentials, malicious insiders, and API key exposure can give attackers persistent, privileged access to your cloud environment without detection.</p>
-            </div>
-            <div className="card premium-card">
-              <div className="card-header">
-                <div className="icon-box">📋</div>
-                <div className="card-title-row"><h3>Compliance Drift</h3></div>
-              </div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Cloud environments that start compliant often drift from regulatory requirements (NCA ECC, ISO 27001, PCI DSS) as configurations change and teams scale rapidly.</p>
-            </div>
-            <div className="card premium-card">
-              <div className="card-header">
-                <div className="icon-box">🔍</div>
-                <div className="card-title-row"><h3>Limited Threat Visibility</h3></div>
-              </div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Without centralized logging, SIEM integration, and threat intelligence, malicious activity can persist undetected in cloud environments for months.</p>
-            </div>
-            <div className="card premium-card">
-              <div className="card-header">
-                <div className="icon-box">🔗</div>
-                <div className="card-title-row"><h3>Supply Chain Vulnerabilities</h3></div>
-              </div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Third-party dependencies, marketplace components, and container images may contain vulnerabilities that compromise your cloud workloads at the software supply chain level.</p>
-            </div>
-          </div>
-        </div>
-      </section>
+
 
 
       {/* METRICS */}
-      <section className="section">
+      <section className="section" style={{ background: 'var(--dark-surface)' }}>
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-accent">📊 Results</div>
@@ -209,7 +216,7 @@ const CloudSecurityGovernanceContent = () => {
       </section>
 
       {/* USE CASES */}
-      <section className="section" style={{ background: 'var(--dark-surface)' }}>
+      <section className="section" >
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-primary">🎯 Use Cases</div>
@@ -243,7 +250,7 @@ const CloudSecurityGovernanceContent = () => {
 
  
       {/* COMPARISON */}
-      <section className="section">
+      <section className="section" style={{ background: 'var(--dark-surface)' }}>
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-accent">⚖️ Compare</div>
@@ -274,7 +281,7 @@ const CloudSecurityGovernanceContent = () => {
 
 
       {/* FAQ */}
-      <section className="section" style={{ background: 'var(--dark-surface)' }}>
+      <section className="section" >
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-accent">❓ FAQ</div>
@@ -317,10 +324,9 @@ const CloudSecurityGovernanceContent = () => {
           <div className="cta-banner">
             <h2 className="display-md">Secure Your Cloud Environment Today</h2>
             <p>Book a free Cloud Security Assessment and receive a prioritized report of your security risks, compliance gaps, and a remediation roadmap — at no cost or commitment.</p>
-            <p className="cta-urgency">⚡ Limited free security assessments available this month</p>
             <div className="cta-actions">
               <Link href="/book-a-review" className="btn btn-white btn-lg">🔒 Book Free Security Assessment</Link>
-              <Link href="/book-a-review" className="btn-white-outline">💰 Get a Cost Estimate</Link>
+
             </div>
           </div>
         </div>

@@ -19,7 +19,7 @@ const LogisticsContent = () => {
     },
     {
       question: 'Which cloud platforms do you support for logistics?',
-      answer: 'We support AWS, Azure, Google Cloud, and Oracle Cloud, choosing the best platform for your logistics workload and data needs.',
+      answer: 'We support AWS, Microsoft Azure, Google Cloud, and Oracle Cloud, choosing the best platform for your logistics workload and data needs.',
     },
     {
       question: 'Can you reduce logistics cloud costs?',
@@ -35,13 +35,15 @@ const LogisticsContent = () => {
     <main>
       {/* HERO */}
       <section className="page-hero">
-        <div className="container">
+        <div className="container" style={{ textAlign: 'left' }}>
           <nav className="breadcrumb" aria-label="Breadcrumb">
             <Link href="/">Home</Link><span>›</span><Link href="/industries">Industries</Link><span>›</span><span>Logistics</span>
           </nav>
-          <div className="badge badge-primary" style={{ marginBottom: '16px' }}>🚛 Logistics Cloud</div>
-          <h1 className="display-lg">Logistics Cloud Solutions<br /><span className="text-gradient">Saudi Arabia</span></h1>
+          <h1 className="display-lg"><span className="text-gradient">Logistics Cloud Solutions Saudi Arabia</span></h1>
           <p>GulfStream Technologies delivers <strong>resilient, always-on multi-cloud infrastructure</strong> that powers Saudi Arabia’s most demanding logistics operations — from real-time fleet tracking and IoT integration to supply chain analytics and warehouse management systems.</p>
+          <div style={{ marginTop: '24px' }}>
+            <Link href="/book-a-review" className="btn btn-primary btn-lg">Book a Free Logistics Cloud Review</Link>
+          </div>
           <div className="hero-trust-strip">
             <span className="hero-trust-label">Multi-cloud certified logistics cloud experts</span>
             <div className="hero-quick-stats">
@@ -59,160 +61,162 @@ const LogisticsContent = () => {
               </div>
             </div>
           </div>
-          <div style={{ marginTop: '24px' }}>
-            <Link href="/book-a-review" className="btn btn-primary btn-lg">Book a Free Logistics Cloud Review</Link>
-          </div>
+          
         </div>
       </section>
 
-      {/* SEO INTRO */}
-      <section className="section" style={{ paddingBottom: '0' }}>
-        <div className="container">
-          <div className="reveal" style={{ maxWidth: '900px', margin: '0 auto', lineHeight: '1.8' }}>
-            <p>Saudi Arabia&apos;s logistics sector is a cornerstone of Vision 2030, with massive investment in supply chain infrastructure, port expansions, and last-mile delivery networks. <strong>Logistics cloud infrastructure in Saudi Arabia</strong> must support 24/7 operations, process millions of IoT data points in real time, and integrate legacy ERP and TMS systems with modern cloud analytics. GulfStream Technologies provides <strong>always-on cloud solutions</strong> on <Link href="/services/cloud-managed-services/aws" style={{ color: 'var(--accent)' }}>AWS</Link> and <Link href="/services/cloud-managed-services/azure" style={{ color: 'var(--accent)' }}>Azure</Link> — purpose-built for logistics companies across Riyadh, Jeddah, and the GCC.</p>
-            <p>With deep expertise in <strong>AWS IoT</strong>, real-time data processing, and <Link href="/services/finops-cost-optimization" style={{ color: 'var(--accent)' }}>cloud cost optimization</Link>, we help logistics enterprises achieve 99.99% uptime, sub-second IoT telemetry processing, and 30% infrastructure cost reduction — without compromising operational reliability or <Link href="/services/cloud-security-governance" style={{ color: 'var(--accent)' }}>data security</Link>.</p>
-          </div>
-        </div>
-      </section>
+
 
       {/* CHALLENGES */}
-      <section className="section">
+      <section className="section" style={{ background: 'var(--dark-surface)' }}>
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-accent">⚠️ Challenges</div>
             <h2 className="display-md">Logistics Cloud Challenges in Saudi Arabia</h2>
           </div>
           <div className="grid-3 reveal">
-            <div className="card">
+            <div className="card premium-card">
               <div className="card-header">
                 <div className="icon-box">⏰</div>
                 <h3 style={{ fontSize: '.95rem' }}>24/7 Uptime Demands</h3>
               </div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.9rem' }}>Logistics never stops. Fleet management, tracking systems, and warehouse operations require always-on cloud infrastructure — any downtime translates directly to missed SLAs and lost revenue.</p>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Fleet management, tracking systems, and warehouse operations demand always-on infrastructure; downtime means missed SLAs and lost revenue.</p>
             </div>
-            <div className="card">
+            <div className="card premium-card">
               <div className="card-header">
                 <div className="icon-box">📡</div>
                 <h3 style={{ fontSize: '.95rem' }}>IoT Data Volumes</h3>
               </div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.9rem' }}>GPS trackers, temperature sensors, and warehouse scanners generate millions of data points per hour. Processing and storing this data in real time requires elastic, cost-efficient cloud architectures.</p>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>GPS trackers and sensors generate millions of data points hourly; processing and storing real-time data requires elastic, cost-efficient architecture.</p>
             </div>
-            <div className="card">
+            <div className="card premium-card">
               <div className="card-header">
                 <div className="icon-box">🔗</div>
                 <h3 style={{ fontSize: '.95rem' }}>Legacy System Integration</h3>
               </div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.9rem' }}>ERP, TMS, and WMS systems often use proprietary data formats and APIs that are difficult to integrate with modern cloud services, creating visibility gaps across the supply chain.</p>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>ERP, TMS, and WMS systems use proprietary formats creating integration gaps; modern cloud services struggle with legacy system compatibility.</p>
             </div>
-            <div className="card">
+            <div className="card premium-card">
               <div className="card-header">
                 <div className="icon-box">🌐</div>
                 <h3 style={{ fontSize: '.95rem' }}>Cross-Border Complexity</h3>
               </div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.9rem' }}>Logistics operations spanning Saudi Arabia, the GCC, and international routes require cloud infrastructure with data sovereignty capabilities and compliance with multiple regional regulations.</p>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Operations spanning Saudi Arabia, GCC, and international routes need data sovereignty and compliance with multiple regional regulations.</p>
             </div>
-            <div className="card">
+            <div className="card premium-card">
               <div className="card-header">
                 <div className="icon-box">💸</div>
                 <h3 style={{ fontSize: '.95rem' }}>Cloud Cost Optimization</h3>
               </div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.9rem' }}>Unpredictable data processing loads make cloud cost management complex. Without proper architecture, IoT and analytics workloads drive up costs without proportional business value.</p>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Unpredictable data processing loads complicate cost management; IoT and analytics workloads drive expenses without proportional business value.</p>
             </div>
-            <div className="card">
+            <div className="card premium-card">
               <div className="card-header">
                 <div className="icon-box">🔒</div>
                 <h3 style={{ fontSize: '.95rem' }}>Cargo &amp; Data Security</h3>
               </div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.9rem' }}>Logistics data — routes, cargo manifests, client shipments — is commercially sensitive. Data breaches can compromise operational security and erode customer trust irreparably.</p>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Routes, cargo manifests, and shipment data are commercially sensitive; breaches compromise operational security and erode customer trust.</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* SOLUTIONS */}
-      <section className="section" style={{ background: 'var(--dark-surface)' }}>
+      <section className="section" >
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-primary">✅ Our Solutions</div>
             <h2 className="display-md">How GulfStream Powers Logistics in Saudi Arabia</h2>
           </div>
           <div className="grid-3 reveal">
-            <div className="card">
+            <div className="card premium-card">
               <div className="card-header">
                 <div className="icon-box">⚡</div>
                 <h3 style={{ fontSize: '.95rem' }}>High-Availability Infrastructure</h3>
               </div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.9rem' }}>Multi-AZ, multi-region cloud architecture with automated failover and 99.99% uptime SLAs ensures your logistics operations never stop — even during cloud provider incidents.</p>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Multi-AZ, multi-region architecture with automated failover ensures operations continue even during cloud provider incidents.</p>
             </div>
-            <div className="card">
+            <div className="card premium-card">
               <div className="card-header">
                 <div className="icon-box">📡</div>
                 <h3 style={{ fontSize: '.95rem' }}>IoT Data Platform</h3>
               </div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.9rem' }}>Managed IoT data ingestion platforms on AWS IoT Core or Azure IoT Hub — processing millions of fleet and warehouse sensor events in real time with sub-second latency.</p>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>AWS IoT Core and Azure IoT Hub platforms process millions of fleet and warehouse sensor events in real time sub-second latency.</p>
             </div>
-            <div className="card">
+            <div className="card premium-card">
               <div className="card-header">
                 <div className="icon-box">📊</div>
                 <h3 style={{ fontSize: '.95rem' }}>Supply Chain Analytics</h3>
               </div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.9rem' }}>Cloud data lake and analytics architecture (AWS Redshift, Azure Synapse) delivering real-time supply chain visibility — from origin to delivery — with operational dashboards for leadership.</p>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>AWS Redshift and Azure Synapse deliver real-time supply chain visibility from origin to delivery with operational leadership dashboards.</p>
             </div>
-            <div className="card">
+            <div className="card premium-card">
               <div className="card-header">
                 <div className="icon-box">🔗</div>
                 <h3 style={{ fontSize: '.95rem' }}>System Integration</h3>
               </div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.9rem' }}>API and ETL integration connecting SAP, Oracle TMS, WMS, and proprietary ERP systems to cloud analytics and AI platforms — creating a unified operational view.</p>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>API and ETL integration connect SAP, Oracle TMS, and WMS to cloud analytics platforms creating unified operational visibility.</p>
             </div>
-            <div className="card">
+            <div className="card premium-card">
               <div className="card-header">
                 <div className="icon-box">🚛</div>
                 <h3 style={{ fontSize: '.95rem' }}>Fleet Management Cloud</h3>
               </div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.9rem' }}>Scalable cloud backends for fleet management platforms — real-time telemetry processing, route optimization, predictive maintenance analytics, and driver performance monitoring.</p>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Scalable backends for fleet management with real-time telemetry, route optimization, predictive maintenance, and driver performance analytics.</p>
             </div>
-            <div className="card">
+            <div className="card premium-card">
               <div className="card-header">
                 <div className="icon-box">🔒</div>
                 <h3 style={{ fontSize: '.95rem' }}>Data Security &amp; Compliance</h3>
               </div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.9rem' }}>End-to-end encryption for logistics data, granular access controls, and NCA-compliant cloud architecture protecting cargo manifests, route data, and customer shipment information.</p>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>End-to-end encryption with granular access controls and NCA-compliant architecture protecting cargo, routes, and customer shipment data.</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* USE CASES */}
-      <section className="section">
+      <section className="section" style={{ background: 'var(--dark-surface)' }}>
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-accent">🎯 Use Cases</div>
             <h2 className="display-md">Use Cases for Logistics Cloud in Saudi Arabia</h2>
           </div>
-          <div className="grid-2 reveal">
-            <div className="card" style={{ padding: '28px' }}>
-              <h3 style={{ fontSize: '1rem', marginBottom: '12px' }}>🚛 Real-Time Fleet Tracking Platform</h3>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.9rem', lineHeight: 1.7 }}>Cloud-native fleet management backends processing GPS, fuel, and telemetry data from thousands of vehicles across Saudi Arabia — with real-time dashboards, route optimization, and predictive maintenance alerts.</p>
+          <div className="grid-4 reveal" style={{ gridTemplateColumns: 'repeat(4, minmax(0, 1fr))', gap: '16px' }}>
+            <div className="card premium-card" style={{ minHeight: '100%' }}>
+              <div className="card-header">
+                <div className="icon-box">🚛</div>
+                <h3 style={{ fontSize: '.9rem', lineHeight: 1.3 }}>Real-Time Fleet Tracking</h3>
+              </div>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Cloud-native fleet backends process GPS, fuel, and telemetry from thousands of vehicles with real-time dashboards and predictive maintenance.</p>
             </div>
-            <div className="card" style={{ padding: '28px' }}>
-              <h3 style={{ fontSize: '1rem', marginBottom: '12px' }}>📦 Warehouse Management Cloud</h3>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.9rem', lineHeight: 1.7 }}>Scalable cloud infrastructure for WMS platforms supporting barcode/RFID scanning, inventory tracking, pick-pack-ship workflows, and integration with ERP and e-commerce systems.</p>
+            <div className="card premium-card" style={{ minHeight: '100%' }}>
+              <div className="card-header">
+                <div className="icon-box">📦</div>
+                <h3 style={{ fontSize: '.9rem', lineHeight: 1.3 }}>Warehouse Management Cloud</h3>
+              </div>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Scalable WMS platforms supporting barcode/RFID scanning, inventory tracking, pick-pack-ship workflows, and ERP system integration.</p>
             </div>
-            <div className="card" style={{ padding: '28px' }}>
-              <h3 style={{ fontSize: '1rem', marginBottom: '12px' }}>🌡️ Cold Chain IoT Monitoring</h3>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.9rem', lineHeight: 1.7 }}>AWS IoT or Azure IoT Hub ingestion for temperature, humidity, and condition sensors on cold chain shipments — with automated alerts, compliance logging, and analytics for food and pharmaceutical logistics.</p>
+            <div className="card premium-card" style={{ minHeight: '100%' }}>
+              <div className="card-header">
+                <div className="icon-box">🌡️</div>
+                <h3 style={{ fontSize: '.9rem', lineHeight: 1.3 }}>Cold Chain IoT Monitoring</h3>
+              </div>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>IoT Hub ingestion for temperature and condition sensors with automated alerts and compliance logging for food and pharmaceutical.</p>
             </div>
-            <div className="card" style={{ padding: '28px' }}>
-              <h3 style={{ fontSize: '1rem', marginBottom: '12px' }}>📊 Supply Chain Analytics Platform</h3>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.9rem', lineHeight: 1.7 }}>Cloud data lakes connecting TMS, WMS, and ERP data sources into unified supply chain analytics dashboards — enabling 360° visibility from origin to final delivery for Saudi logistics operators.</p>
+            <div className="card premium-card" style={{ minHeight: '100%' }}>
+              <div className="card-header">
+                <div className="icon-box">📊</div>
+                <h3 style={{ fontSize: '.9rem', lineHeight: 1.3 }}>Supply Chain Analytics</h3>
+              </div>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Cloud data lakes connect TMS, WMS, and ERP sources into unified dashboards providing 360° visibility origin to delivery.</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* RESULTS */}
-      <section className="section" style={{ background: 'var(--dark-surface)' }}>
+      <section className="section" >
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-accent">📊 Results</div>
@@ -240,7 +244,7 @@ const LogisticsContent = () => {
       </section>
 
       {/* FAQ */}
-      <section className="section">
+      <section className="section" style={{ background: 'var(--dark-surface)' }}>
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-primary">❓ FAQ</div>
@@ -266,7 +270,7 @@ const LogisticsContent = () => {
                     className="faq-answer"
                   >
                     <div className="faq-answer-inner">
-                      <p>{faq.answer}</p>
+                      <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>{faq.answer}</p>
                     </div>
                   </div>
                 </div>
@@ -276,41 +280,13 @@ const LogisticsContent = () => {
         </div>
       </section>
 
-      {/* RELATED INDUSTRIES */}
-      <section className="section" style={{ background: 'var(--dark-surface)' }}>
-        <div className="container">
-          <div className="section-header reveal">
-            <div className="badge badge-primary">🔗 Related Industries</div>
-            <h2 className="display-md">Explore Other Industry Solutions</h2>
-          </div>
-          <div className="grid-4 reveal">
-            <Link href="/industries/retail" className="card" style={{ textAlign: 'center', textDecoration: 'none', padding: '24px' }}>
-              <div style={{ fontSize: '2rem', marginBottom: '8px' }}>🛒</div>
-              <h3 style={{ fontSize: '.9rem' }}>Retail Cloud</h3>
-            </Link>
-            <Link href="/industries/healthcare" className="card" style={{ textAlign: 'center', textDecoration: 'none', padding: '24px' }}>
-              <div style={{ fontSize: '2rem', marginBottom: '8px' }}>🏥</div>
-              <h3 style={{ fontSize: '.9rem' }}>Healthcare Cloud</h3>
-            </Link>
-            <Link href="/industries/tech-saas" className="card" style={{ textAlign: 'center', textDecoration: 'none', padding: '24px' }}>
-              <div style={{ fontSize: '2rem', marginBottom: '8px' }}>💻</div>
-              <h3 style={{ fontSize: '.9rem' }}>SaaS Cloud</h3>
-            </Link>
-            <Link href="/industries/professional-services" className="card" style={{ textAlign: 'center', textDecoration: 'none', padding: '24px' }}>
-              <div style={{ fontSize: '2rem', marginBottom: '8px' }}>🏢</div>
-              <h3 style={{ fontSize: '.9rem' }}>Professional Services</h3>
-            </Link>
-          </div>
-        </div>
-      </section>
 
       {/* CTA */}
       <section className="section">
         <div className="container">
           <div className="cta-banner reveal">
             <h2 className="display-md">Optimize Your Logistics Cloud Operations</h2>
-            <p>Book a free consultation to discover how GulfStream builds always-on cloud infrastructure that powers your logistics operations at every scale — across AWS, Azure, Google Cloud, and Oracle Cloud in Saudi Arabia.</p>
-            <p className="cta-urgency">⚡ Limited free assessments available each month</p>
+            <p>Book a free consultation to discover how GulfStream builds always-on cloud infrastructure that powers your logistics operations at every scale — across AWS, Microsoft Cloud, Google Cloud, and Oracle Cloud in Saudi Arabia.</p>
             <div className="cta-actions">
               <Link href="/book-a-review" className="btn btn-white btn-lg">📋 Book Free Logistics Review</Link>
               <Link href="/contact" className="btn-white-outline">Talk to Cloud Experts</Link>

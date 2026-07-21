@@ -13,7 +13,7 @@ const Footer = () => {
               <Image src={logo} alt="GulfStream Technologies Logo" className="nav-logo-img" />
               <span className="brand">GulfStream Technologies</span>
             </Link>
-            <p>Multi-Managed Cloud Services &mdash; AWS, Azure, GCP &amp; OCI &mdash; for Saudi enterprises. Optimize, secure, and scale your cloud with confidence.</p>
+            <p>Multi-Managed Cloud Services &mdash; AWS, Microsoft Cloud, GCP &amp; OCI &mdash; for Saudi enterprises. Optimize, secure, and scale your cloud with confidence.</p>
             <div className="footer-social">
               <a href="https://www.linkedin.com/company/gulfstream-technology" className="social-btn" title="LinkedIn" target="_blank" rel="noopener noreferrer">in</a>
               <a href="https://x.com/GulfStreamTech" className="social-btn" title="Twitter / X" target="_blank" rel="noopener noreferrer">𝕏</a>
@@ -34,7 +34,6 @@ const Footer = () => {
             <h5>Company</h5>
             <ul className="footer-links">
               <li><Link href="/about">About Us</Link></li>
-              <li><Link href="/case-studies">Case Studies</Link></li>
               <li><Link href="/insights">Insights</Link></li>
               <li><Link href="/contact">Contact</Link></li>
               <li><Link href="/book-a-review">Book a Review</Link></li>
@@ -54,9 +53,7 @@ const Footer = () => {
   </p>
 </li>
             </ul>
-            <div style={{ marginTop: '20px' }}>
-              <Link href="/book-a-review" className="btn btn-primary btn-sm w-full" style={{ justifyContent: 'center' }}>Book Free Review</Link>
-            </div>
+          
           </div>
         </div>
         <div className="footer-bottom">

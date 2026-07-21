@@ -3,7 +3,7 @@ import HomeContent from '@/components/pages/HomeContent';
 import { DEFAULT_OG_IMAGE } from '@/lib/metadata';
 
 export const metadata = {
-  title: 'Managed Cloud Services Saudi Arabia',
+  title: 'Managed Cloud Services | GulfStream Technologies',
   description: 'Multi-Managed Cloud Services in Saudi Arabia — AWS, Azure, Google Cloud & Oracle Cloud. Reduce costs 30%, strengthen security & scale with certified cloud specialists.',
   keywords: [
     'Managed Cloud Services Saudi Arabia',
@@ -16,7 +16,7 @@ export const metadata = {
   ],
   alternates: { canonical: 'https://gulfstreamtech.com.sa/' },
   openGraph: {
-    title: 'Managed Cloud Services Saudi Arabia | GulfStream',
+    title: 'Managed Cloud Services | GulfStream Technologies',
     description: 'Multi-Managed Cloud Services in Saudi Arabia — AWS, Azure, Google Cloud & Oracle Cloud. Reduce costs 30%, strengthen security & scale with certified cloud specialists.',
     siteName: 'GulfStream Technologies',
     locale: 'en_US',
@@ -25,7 +25,7 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Managed Cloud Services Saudi Arabia | GulfStream',
+    title: 'Managed Cloud Services | GulfStream Technologies',
     description: 'Multi-Managed Cloud Services in Saudi Arabia — AWS, Azure, Google Cloud & Oracle Cloud. Reduce costs 30%, strengthen security & scale with certified cloud specialists.',
     images: [DEFAULT_OG_IMAGE.url],
   },

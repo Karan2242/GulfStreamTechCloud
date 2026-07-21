@@ -15,7 +15,7 @@ const CloudBillingManagementContent = () => {
     },
     {
       question: 'Can you manage billing across multiple cloud providers?',
-      answer: 'Yes. We unify billing for AWS, Azure, Google Cloud, and Oracle Cloud into a single view with consistent reporting.',
+      answer: 'Yes. We unify billing for AWS, Microsoft, Google Cloud, and Oracle Cloud into a single view with consistent reporting.',
     },
     {
       question: 'How much does cloud billing management cost?',
@@ -35,16 +35,15 @@ const CloudBillingManagementContent = () => {
     <main>
       {/* HERO */}
       <section className="page-hero">
-        <div className="container">
+        <div className="container" style={{ textAlign: 'left' }}>
           <div className="breadcrumb">
             <Link href="/">Home</Link><span>›</span><Link href="/services">Services</Link><span>›</span><span>Cloud Billing Management</span>
           </div>
-          <div className="badge badge-primary" style={{ marginBottom: '16px' }}>🧾 Cloud Billing Management</div>
-          <h1 className="display-lg">Cloud Billing Management<br /><span className="text-gradient">in Saudi Arabia</span></h1>
-          <p>GulfStream Technologies delivers unified, transparent cloud billing management across AWS, Azure, Oracle, and Google Cloud — with real-time dashboards, chargeback reporting, anomaly detection, and executive-ready spend analytics that eliminate billing surprises for enterprises in Riyadh and the Middle East.</p>
-          <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
+          <h1 className="display-lg">Cloud Billing Management <span className="text-gradient">in Saudi Arabia</span></h1>
+          <p>GulfStream Technologies delivers unified, transparent cloud billing management across AWS, Microsoft Cloud, Oracle, and Google Cloud — with real-time dashboards, chargeback reporting, anomaly detection, and executive-ready spend analytics that eliminate billing surprises for enterprises in Riyadh and the Middle East.</p>
+          <div style={{ display: 'flex', gap: '16px', justifyContent: 'left', flexWrap: 'wrap' }}>
             <Link href="/book-a-review" className="btn btn-primary btn-lg">Get a Free Billing Audit</Link>
-            <Link href="/contact" className="btn btn-outline btn-lg">Talk to an Expert</Link>
+            <Link href="/contact" className="btn btn-outline btn-lg" style={{ backgroundColor: '#ffffff', color: '#0052CC', borderColor: 'rgba(0,0,0,0.08)' }}>Talk to an Expert</Link>
           </div>
           <div className="hero-trust-strip">
             <span className="hero-trust-label">Trusted by enterprises across Saudi Arabia</span>
@@ -66,6 +65,63 @@ const CloudBillingManagementContent = () => {
         </div>
       </section>
 
+
+      {/* CHALLENGES */}
+      <section className="section" style={{ background: 'var(--dark-surface)' }}>
+        <div className="container">
+          <div className="section-header reveal">
+            <div className="badge badge-primary">⚠️ Challenges</div>
+            <h2 className="display-md">Billing Challenges That Cost You Millions</h2>
+          </div>
+          <div className="grid-3 reveal">
+            <div className="card premium-card">
+              <div className="card-header">
+                <div className="icon-box">😱</div>
+                <div className="card-title-row"><h3>End-of-Month Bill Shock</h3></div>
+              </div>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Cloud bills arrive at month-end with no prior warning. Unexpected spikes from new workloads, data transfer, or licensing fees catch finance teams completely off guard.</p>
+            </div>
+            <div className="card premium-card">
+              <div className="card-header">
+                <div className="icon-box">🏷️</div>
+                <div className="card-title-row"><h3>No Cost Attribution</h3></div>
+              </div>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>When every team shares a single cloud account, or resources aren&apos;t tagged, attributing cloud costs to business units, projects, or products becomes effectively impossible.</p>
+            </div>
+            <div className="card premium-card">
+              <div className="card-header">
+                <div className="icon-box">📊</div>
+                <div className="card-title-row"><h3>Complex Multi-Account Bills</h3></div>
+              </div>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Enterprises with dozens of AWS accounts or Azure subscriptions receive fragmented, confusing billing data that requires significant manual processing and reconciliation.</p>
+            </div>
+            <div className="card premium-card">
+              <div className="card-header">
+                <div className="icon-box">🔮</div>
+                <div className="card-title-row"><h3>No Forecasting Capability</h3></div>
+              </div>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Without historical trend analysis and predictive modeling, finance teams cannot accurately budget for cloud spend, leading to repeated budget overruns.</p>
+            </div>
+            <div className="card premium-card">
+              <div className="card-header">
+                <div className="icon-box">🤝</div>
+                <div className="card-title-row"><h3>Finance-Engineering Disconnect</h3></div>
+              </div>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Finance teams lack cloud context; engineering teams lack billing visibility. Neither side has the full picture needed to make informed cost decisions.</p>
+            </div>
+            <div className="card premium-card">
+              <div className="card-header">
+                <div className="icon-box">🗂️</div>
+                <div className="card-title-row"><h3>Marketplace &amp; License Complexity</h3></div>
+              </div>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>AWS Marketplace and Azure Marketplace purchases, BYOL licensing, and support tiers add layers of billing complexity that require specialist knowledge to interpret.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
       {/* WHAT YOU GET */}
       <section className="section">
         <div className="container">
@@ -79,7 +135,7 @@ const CloudBillingManagementContent = () => {
     <div className="icon-box">📊</div>
     <div className="card-title-row"><h3>Unified Billing Dashboard</h3></div>
   </div>
-  <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Single real-time dashboard across AWS, Azure, Oracle, and Google Cloud with complete cost visibility and drill-down insights.</p>
+  <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Single real-time dashboard across AWS, Microsoft, Oracle, and Google Cloud with complete cost visibility and drill-down insights.</p>
 </div>
 
 <div className="card premium-card">
@@ -125,63 +181,10 @@ const CloudBillingManagementContent = () => {
         </div>
       </section>
 
-      {/* CHALLENGES */}
-      <section className="section" style={{ background: 'var(--dark-surface)' }}>
-        <div className="container">
-          <div className="section-header reveal">
-            <div className="badge badge-primary">⚠️ Challenges</div>
-            <h2 className="display-md">Billing Challenges That Cost You Millions</h2>
-          </div>
-          <div className="grid-3 reveal">
-            <div className="card premium-card">
-              <div className="card-header">
-                <div className="icon-box">😱</div>
-                <div className="card-title-row"><h3>End-of-Month Bill Shock</h3></div>
-              </div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Cloud bills arrive at month-end with no prior warning. Unexpected spikes from new workloads, data transfer, or licensing fees catch finance teams completely off guard.</p>
-            </div>
-            <div className="card premium-card">
-              <div className="card-header">
-                <div className="icon-box">🏷️</div>
-                <div className="card-title-row"><h3>No Cost Attribution</h3></div>
-              </div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>When every team shares a single cloud account, or resources aren't tagged, attributing cloud costs to business units, projects, or products becomes effectively impossible.</p>
-            </div>
-            <div className="card premium-card">
-              <div className="card-header">
-                <div className="icon-box">📊</div>
-                <div className="card-title-row"><h3>Complex Multi-Account Bills</h3></div>
-              </div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Enterprises with dozens of AWS accounts or Azure subscriptions receive fragmented, confusing billing data that requires significant manual processing and reconciliation.</p>
-            </div>
-            <div className="card premium-card">
-              <div className="card-header">
-                <div className="icon-box">🔮</div>
-                <div className="card-title-row"><h3>No Forecasting Capability</h3></div>
-              </div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Without historical trend analysis and predictive modeling, finance teams cannot accurately budget for cloud spend, leading to repeated budget overruns.</p>
-            </div>
-            <div className="card premium-card">
-              <div className="card-header">
-                <div className="icon-box">🤝</div>
-                <div className="card-title-row"><h3>Finance-Engineering Disconnect</h3></div>
-              </div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Finance teams lack cloud context; engineering teams lack billing visibility. Neither side has the full picture needed to make informed cost decisions.</p>
-            </div>
-            <div className="card premium-card">
-              <div className="card-header">
-                <div className="icon-box">🗂️</div>
-                <div className="card-title-row"><h3>Marketplace &amp; License Complexity</h3></div>
-              </div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>AWS Marketplace and Azure Marketplace purchases, BYOL licensing, and support tiers add layers of billing complexity that require specialist knowledge to interpret.</p>
-            </div>
-          </div>
-        </div>
-      </section>
 
 
       {/* OUTCOMES / METRICS */}
-      <section className="section">
+      <section className="section" style={{ background: 'var(--dark-surface)' }}>
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-primary">📊 Results</div>
@@ -209,7 +212,7 @@ const CloudBillingManagementContent = () => {
       </section>
 
       {/* USE CASES */}
-      <section className="section" style={{ background: 'var(--dark-surface)' }}>
+      <section className="section" >
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-accent">🎯 Use Cases</div>
@@ -245,7 +248,7 @@ const CloudBillingManagementContent = () => {
 
  
       {/* COMPARISON */}
-      <section className="section" >
+      <section className="section" style={{ background: 'var(--dark-surface)' }}>
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-primary">⚖️ Compare</div>
@@ -276,7 +279,7 @@ const CloudBillingManagementContent = () => {
 
 
       {/* FAQ */}
-      <section className="section" style={{ background: 'var(--dark-surface)' }}>
+      <section className="section" >
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-primary">❓ FAQ</div>
@@ -319,10 +322,9 @@ const CloudBillingManagementContent = () => {
           <div className="cta-banner">
             <h2 className="display-md">Start Controlling Your Cloud Spend</h2>
             <p>Book a free billing audit and get a complete breakdown of your cloud spend with actionable attribution and savings opportunities — at no cost or commitment.</p>
-            <p className="cta-urgency">⚡ Limited free billing audits available this month</p>
             <div className="cta-actions">
               <Link href="/book-a-review" className="btn btn-white btn-lg">📋 Get a Free Billing Audit</Link>
-              <Link href="/book-a-review" className="btn-white-outline">💰 Get a Cost Estimate</Link>
+
             </div>
           </div>
         </div>

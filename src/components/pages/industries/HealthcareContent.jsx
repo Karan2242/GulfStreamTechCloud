@@ -19,7 +19,7 @@ const HealthcareContent = () => {
     },
     {
       question: 'Which cloud platforms do you support for healthcare?',
-      answer: 'We support AWS, Azure, Google Cloud, and Oracle Cloud for healthcare workloads, including secure storage and compliant compute.',
+      answer: 'We support AWS, Microsoft Azure, Google Cloud, and Oracle Cloud for healthcare workloads, including secure storage and compliant compute.',
     },
     {
       question: 'Can you reduce healthcare cloud costs?',
@@ -35,13 +35,15 @@ const HealthcareContent = () => {
     <main>
       {/* HERO */}
       <section className="page-hero">
-        <div className="container">
+        <div className="container" style={{ textAlign: 'left' }}>
           <nav className="breadcrumb" aria-label="Breadcrumb">
             <Link href="/">Home</Link><span>›</span><Link href="/industries">Industries</Link><span>›</span><span>Healthcare</span>
           </nav>
-          <div className="badge badge-primary" style={{ marginBottom: '16px' }}>🏥 Healthcare Cloud</div>
-          <h1 className="display-lg">Healthcare Cloud Solutions<br /><span className="text-gradient">Saudi Arabia</span></h1>
+          <h1 className="display-lg"><span className="text-gradient">Healthcare Cloud Solutions Saudi Arabia</span></h1>
           <p>GulfStream Technologies builds <strong>HIPAA-aligned, high-availability cloud infrastructure</strong> for Saudi healthcare organizations — ensuring patient data security, clinical application reliability, and seamless compliance with NCA ECC and Ministry of Health regulations.</p>
+          <div style={{ marginTop: '24px' }}>
+            <Link href="/book-a-review" className="btn btn-primary btn-lg">Book a Free Healthcare Cloud Review</Link>
+          </div>
           <div className="hero-trust-strip">
             <span className="hero-trust-label">Multi-cloud certified healthcare cloud experts</span>
             <div className="hero-quick-stats">
@@ -59,160 +61,162 @@ const HealthcareContent = () => {
               </div>
             </div>
           </div>
-          <div style={{ marginTop: '24px' }}>
-            <Link href="/book-a-review" className="btn btn-primary btn-lg">Book a Free Healthcare Cloud Review</Link>
-          </div>
+
         </div>
       </section>
 
-      {/* SEO INTRO */}
-      <section className="section" style={{ paddingBottom: '0' }}>
-        <div className="container">
-          <div className="reveal" style={{ maxWidth: '900px', margin: '0 auto', lineHeight: '1.8' }}>
-            <p>Saudi Arabia&apos;s healthcare sector is undergoing rapid digital transformation under Vision 2030. From electronic health records and telemedicine to clinical analytics, <strong>healthcare cloud solutions in Saudi Arabia</strong> must balance strict regulatory compliance with operational performance. GulfStream Technologies delivers <strong>HIPAA-aligned cloud infrastructure</strong> on <Link href="/services/cloud-managed-services/aws" style={{ color: 'var(--accent)' }}>AWS</Link> and <Link href="/services/cloud-managed-services/azure" style={{ color: 'var(--accent)' }}>Azure</Link> — purpose-built for healthcare organizations in Riyadh and across the Kingdom.</p>
-            <p>Our healthcare cloud practice ensures full <strong>NCA ECC compliance</strong>, Saudi MOH regulatory alignment, and HIPAA readiness — with 99.99% uptime for mission-critical clinical systems. Combined with <Link href="/services/finops-cost-optimization" style={{ color: 'var(--accent)' }}>cloud cost optimization</Link> and <Link href="/services/cloud-security-governance" style={{ color: 'var(--accent)' }}>security governance</Link>, we help healthcare organizations protect patient data while reducing infrastructure costs by up to 45%.</p>
-          </div>
-        </div>
-      </section>
+
 
       {/* CHALLENGES */}
-      <section className="section">
+      <section className="section" style={{ background: 'var(--dark-surface)' }}>
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-accent">⚠️ Challenges</div>
             <h2 className="display-md">Healthcare Cloud Challenges in Saudi Arabia</h2>
           </div>
           <div className="grid-3 reveal">
-            <div className="card">
+            <div className="card premium-card">
               <div className="card-header">
                 <div className="icon-box">🏥</div>
                 <h3 style={{ fontSize: '.95rem' }}>Clinical Application Availability</h3>
               </div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.9rem' }}>Electronic Health Records (EHR), clinical decision support systems, and patient monitoring applications require 99.99%+ uptime — downtime directly impacts patient safety.</p>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>EHR and clinical systems require 99.99%+ uptime; patient safety depends on continuous availability and zero downtime.</p>
             </div>
-            <div className="card">
+            <div className="card premium-card">
               <div className="card-header">
                 <div className="icon-box">🔒</div>
                 <h3 style={{ fontSize: '.95rem' }}>Patient Data Security</h3>
               </div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.9rem' }}>Healthcare data is among the most sensitive and most targeted. HIPAA, NCA ECC, and Saudi MOH regulations impose strict requirements for encryption, access control, and data residency.</p>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>HIPAA, NCA ECC, and Saudi MOH regulations demand strict encryption, access controls, and data residency enforcement.</p>
             </div>
-            <div className="card">
+            <div className="card premium-card">
               <div className="card-header">
                 <div className="icon-box">📋</div>
                 <h3 style={{ fontSize: '.95rem' }}>Compliance Complexity</h3>
               </div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.9rem' }}>Navigating overlapping regulatory frameworks — Saudi Vision 2030 Health Transformation, NCA controls, and international HIPAA requirements — requires dedicated specialist expertise.</p>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Navigating Saudi Vision 2030, NCA controls, and HIPAA requirements requires dedicated regulatory compliance expertise.</p>
             </div>
-            <div className="card">
+            <div className="card premium-card">
               <div className="card-header">
                 <div className="icon-box">🔗</div>
                 <h3 style={{ fontSize: '.95rem' }}>Healthcare System Integration</h3>
               </div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.9rem' }}>Integrating HIS, PACS, LIS, and EHR systems with cloud environments while maintaining HL7 FHIR standards and data integrity is a complex technical and compliance challenge.</p>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Integrating HIS, PACS, and EHR systems with cloud while maintaining HL7 FHIR standards is complex.</p>
             </div>
-            <div className="card">
+            <div className="card premium-card">
               <div className="card-header">
                 <div className="icon-box">💾</div>
                 <h3 style={{ fontSize: '.95rem' }}>Medical Data Storage &amp; Archival</h3>
               </div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.9rem' }}>DICOM imaging data, lab results, and patient records require cost-effective, long-term cloud storage with instant retrieval capabilities and strict data lifecycle policies.</p>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>DICOM imaging and patient records require cost-effective, long-term cloud storage with instant retrieval and lifecycle policies.</p>
             </div>
-            <div className="card">
+            <div className="card premium-card">
               <div className="card-header">
                 <div className="icon-box">📈</div>
                 <h3 style={{ fontSize: '.95rem' }}>Scalable Digital Health</h3>
               </div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.9rem' }}>Telemedicine platforms and digital health services require elastic cloud infrastructure that can scale rapidly during health crises without compromising performance or security.</p>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Telemedicine platforms require elastic cloud that scales during health crises without compromising performance or security.</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* SOLUTIONS */}
-      <section className="section" style={{ background: 'var(--dark-surface)' }}>
+      <section className="section" >
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-primary">✅ Our Healthcare Cloud Solutions</div>
             <h2 className="display-md">How GulfStream Serves Healthcare in Saudi Arabia</h2>
           </div>
           <div className="grid-3 reveal">
-            <div className="card">
+            <div className="card premium-card">
               <div className="card-header">
                 <div className="icon-box">🏛️</div>
                 <h3 style={{ fontSize: '.95rem' }}>Compliance-First Architecture</h3>
               </div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.9rem' }}>We architect cloud environments with HIPAA, NCA ECC, and Saudi MOH compliance requirements built in from day one — including data residency enforcement, encryption, and audit logging.</p>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Cloud architectures built with HIPAA, NCA ECC, and Saudi MOH compliance from day one with audit logging.</p>
             </div>
-            <div className="card">
+            <div className="card premium-card">
               <div className="card-header">
                 <div className="icon-box">⚡</div>
                 <h3 style={{ fontSize: '.95rem' }}>High-Availability Clinical Systems</h3>
               </div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.9rem' }}>Multi-AZ deployments, automated failover, and disaster recovery for EHR and clinical applications with RPO/RTO targets matched to patient safety requirements.</p>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Multi-AZ deployments with automated failover and disaster recovery matching RPO/RTO targets for patient safety.</p>
             </div>
-            <div className="card">
+            <div className="card premium-card">
               <div className="card-header">
                 <div className="icon-box">🔒</div>
                 <h3 style={{ fontSize: '.95rem' }}>Clinical Data Security</h3>
               </div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.9rem' }}>End-to-end encryption, de-identification, and data masking for test environments. IAM controls restrict access to patient data on a strict need-to-know basis.</p>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>End-to-end encryption with de-identification and IAM controls restricting access on strict need-to-know basis.</p>
             </div>
-            <div className="card">
+            <div className="card premium-card">
               <div className="card-header">
                 <div className="icon-box">🔗</div>
                 <h3 style={{ fontSize: '.95rem' }}>HL7 FHIR Integration</h3>
               </div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.9rem' }}>Managed integration platforms connecting disparate healthcare systems using HL7 FHIR standards — enabling seamless data exchange between HIS, EHR, PACS, and clinical analytics platforms.</p>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>HL7 FHIR integration platforms enabling seamless data exchange across HIS, EHR, PACS, and analytics systems.</p>
             </div>
-            <div className="card">
+            <div className="card premium-card">
               <div className="card-header">
                 <div className="icon-box">💾</div>
                 <h3 style={{ fontSize: '.95rem' }}>Medical Imaging Storage</h3>
               </div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.9rem' }}>Cost-optimized DICOM storage with intelligent tiering on AWS S3 or Azure Blob Storage — instant access to recent studies with automated archival of historical imaging data.</p>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Cost-optimized DICOM storage with intelligent tiering for instant access to recent studies and historical archival.</p>
             </div>
-            <div className="card">
+            <div className="card premium-card">
               <div className="card-header">
                 <div className="icon-box">📊</div>
                 <h3 style={{ fontSize: '.95rem' }}>Health Analytics Platform</h3>
               </div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.9rem' }}>Managed healthcare analytics environments for population health management, clinical outcome analysis, and operational efficiency reporting — built on HIPAA-compliant cloud services.</p>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>HIPAA-compliant healthcare analytics for population health management, clinical outcomes, and operational efficiency reporting.</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* USE CASES */}
-      <section className="section">
+      <section className="section" style={{ background: 'var(--dark-surface)' }}>
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-accent">🎯 Use Cases</div>
             <h2 className="display-md">Use Cases for Healthcare Cloud in Saudi Arabia</h2>
           </div>
-          <div className="grid-2 reveal">
-            <div className="card" style={{ padding: '28px' }}>
-              <h3 style={{ fontSize: '1rem', marginBottom: '12px' }}>🏥 Hospital EHR Cloud Migration</h3>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.85rem', lineHeight: '1.7' }}>Migrate on-premises Electronic Health Record systems to HIPAA-aligned cloud environments on AWS, Azure, Google Cloud, or Oracle Cloud with zero downtime, full data residency in Saudi regions, and 99.99% availability SLA.</p>
+          <div className="grid-4 reveal" style={{ gridTemplateColumns: 'repeat(4, minmax(0, 1fr))', gap: '16px' }}>
+            <div className="card premium-card" style={{ minHeight: '100%' }}>
+              <div className="card-header">
+                <div className="icon-box">🏥</div>
+                <h3 style={{ fontSize: '.9rem', lineHeight: 1.3 }}>Hospital EHR Cloud Migration</h3>
+              </div>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Migrate on-premises EHR to HIPAA-aligned cloud with zero downtime and 99.99% SLA guarantee.</p>
             </div>
-            <div className="card" style={{ padding: '28px' }}>
-              <h3 style={{ fontSize: '1rem', marginBottom: '12px' }}>📱 Telemedicine Platform Scaling</h3>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.9rem', lineHeight: 1.7 }}>Elastic cloud backends for telemedicine and digital health platforms that scale automatically during peak demand — supporting video consultations, remote monitoring, and patient portals.</p>
+            <div className="card premium-card" style={{ minHeight: '100%' }}>
+              <div className="card-header">
+                <div className="icon-box">📱</div>
+                <h3 style={{ fontSize: '.9rem', lineHeight: 1.3 }}>Telemedicine Platform Scaling</h3>
+              </div>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Elastic backends for telemedicine platforms scaling automatically during peak demand with video consultations and remote monitoring.</p>
             </div>
-            <div className="card" style={{ padding: '28px' }}>
-              <h3 style={{ fontSize: '1rem', marginBottom: '12px' }}>💾 DICOM Medical Imaging Archive</h3>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.9rem', lineHeight: 1.7 }}>Cost-optimized cloud storage for PACS and DICOM imaging with intelligent tiering — reducing storage costs by up to 45% while ensuring instant retrieval for active studies and compliant long-term archival.</p>
+            <div className="card premium-card" style={{ minHeight: '100%' }}>
+              <div className="card-header">
+                <div className="icon-box">💾</div>
+                <h3 style={{ fontSize: '.9rem', lineHeight: 1.3 }}>DICOM Medical Imaging</h3>
+              </div>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Intelligent tiering for PACS and DICOM imaging reduces costs by 45% with instant retrieval access.</p>
             </div>
-            <div className="card" style={{ padding: '28px' }}>
-              <h3 style={{ fontSize: '1rem', marginBottom: '12px' }}>📊 Clinical Analytics &amp; AI</h3>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.9rem', lineHeight: 1.7 }}>HIPAA-compliant data lakes and ML environments for population health analytics, predictive patient outcomes, and operational efficiency — built on AWS HealthLake or Azure Health Data Services.</p>
+            <div className="card premium-card" style={{ minHeight: '100%' }}>
+              <div className="card-header">
+                <div className="icon-box">📊</div>
+                <h3 style={{ fontSize: '.9rem', lineHeight: 1.3 }}>Clinical Analytics &amp; AI</h3>
+              </div>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>HIPAA-compliant data lakes and ML environments for population health analytics and predictive patient outcomes.</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* RESULTS */}
-      <section className="section" style={{ background: 'var(--dark-surface)' }}>
+      <section className="section" >
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-accent">📊 Results</div>
@@ -240,7 +244,7 @@ const HealthcareContent = () => {
       </section>
 
       {/* FAQ */}
-      <section className="section">
+      <section className="section" style={{ background: 'var(--dark-surface)' }}>
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-primary">❓ FAQ</div>
@@ -266,7 +270,7 @@ const HealthcareContent = () => {
                     className="faq-answer"
                   >
                     <div className="faq-answer-inner">
-                      <p>{faq.answer}</p>
+                      <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>{faq.answer}</p>
                     </div>
                   </div>
                 </div>
@@ -276,41 +280,14 @@ const HealthcareContent = () => {
         </div>
       </section>
 
-      {/* RELATED INDUSTRIES */}
-      <section className="section" style={{ background: 'var(--dark-surface)' }}>
-        <div className="container">
-          <div className="section-header reveal">
-            <div className="badge badge-primary">🔗 Related Industries</div>
-            <h2 className="display-md">Explore Other Industry Solutions</h2>
-          </div>
-          <div className="grid-4 reveal">
-            <Link href="/industries/retail" className="card" style={{ textAlign: 'center', textDecoration: 'none', padding: '24px' }}>
-              <div style={{ fontSize: '2rem', marginBottom: '8px' }}>🛒</div>
-              <h3 style={{ fontSize: '.9rem' }}>Retail Cloud</h3>
-            </Link>
-            <Link href="/industries/logistics" className="card" style={{ textAlign: 'center', textDecoration: 'none', padding: '24px' }}>
-              <div style={{ fontSize: '2rem', marginBottom: '8px' }}>🚛</div>
-              <h3 style={{ fontSize: '.9rem' }}>Logistics Cloud</h3>
-            </Link>
-            <Link href="/industries/tech-saas" className="card" style={{ textAlign: 'center', textDecoration: 'none', padding: '24px' }}>
-              <div style={{ fontSize: '2rem', marginBottom: '8px' }}>💻</div>
-              <h3 style={{ fontSize: '.9rem' }}>SaaS Cloud</h3>
-            </Link>
-            <Link href="/industries/professional-services" className="card" style={{ textAlign: 'center', textDecoration: 'none', padding: '24px' }}>
-              <div style={{ fontSize: '2rem', marginBottom: '8px' }}>🏢</div>
-              <h3 style={{ fontSize: '.9rem' }}>Professional Services</h3>
-            </Link>
-          </div>
-        </div>
-      </section>
+
 
       {/* CTA */}
       <section className="section">
         <div className="container">
           <div className="cta-banner reveal">
             <h2 className="display-md">Protect Your Patients. Optimize Your Cloud.</h2>
-            <p>Book a free healthcare cloud assessment and discover how to achieve 99.99% uptime, full NCA ECC compliance, and up to 45% cost reduction across AWS, Azure, Google Cloud, and Oracle Cloud.</p>
-            <p className="cta-urgency">⚡ Limited free assessments available each month</p>
+            <p>Book a free healthcare cloud assessment and discover how to achieve 99.99% uptime, full NCA ECC compliance, and up to 45% cost reduction across AWS, Microsoft Cloud, Oracle Cloud, and Google Cloud.</p>
             <div className="cta-actions">
               <Link href="/book-a-review" className="btn btn-white btn-lg">📋 Book Free Healthcare Review</Link>
               <Link href="/contact" className="btn-white-outline">Talk to Cloud Experts</Link>

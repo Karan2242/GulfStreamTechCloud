@@ -22,7 +22,7 @@ const ContactContent = () => {
     },
     {
       question: 'Which cloud platforms do you support?',
-      answer: 'We support AWS, Azure, Google Cloud, and Oracle Cloud, including single-cloud and multi-cloud enterprise environments.',
+      answer: 'We support AWS, Microsoft Cloud, Google Cloud, and Oracle Cloud, including single-cloud and multi-cloud enterprise environments.',
     },
     {
       question: 'Can you help reduce our cloud costs?',
@@ -34,13 +34,35 @@ const ContactContent = () => {
     },
   ];
 
+  const serviceOptions = [
+    { id: 'service-aws', value: 'AWS Managed Services', title: 'AWS Managed Services', description: 'Managed AWS operations, governance, and optimization.' },
+    { id: 'service-azure', value: 'Azure Managed Services', title: 'Azure Managed Services', description: 'Azure cloud management, migration and security support.' },
+    { id: 'service-m365', value: 'M365 Services', title: 'M365 Services', description: 'Microsoft 365 deployment, security, and collaboration support for enterprise teams.' },
+    { id: 'service-gcp', value: 'Google Cloud Services', title: 'Google Cloud Services', description: 'GCP architecture, managed workloads, and cost controls.' },
+    { id: 'service-oracle', value: 'Oracle Cloud Services', title: 'Oracle Cloud Services', description: 'OCI managed services, integration, and support for enterprise workloads.' },
+    { id: 'service-migration', value: 'Cloud Migration', title: 'Cloud Migration', description: 'End-to-end migration planning, execution, and cutover support.' },
+    { id: 'service-finops', value: 'FinOps & Cost Optimization', title: 'FinOps & Cost Optimization', description: 'Cloud cost reduction, governance, and efficiency for GCC enterprises.' },
+    { id: 'service-billing', value: 'Cloud Billing Management', title: 'Cloud Billing Management', description: 'Automated billing, showback, and cost accountability for multi-cloud estates.' },
+    { id: 'service-security', value: 'Cloud Security & Governance', title: 'Cloud Security & Governance', description: 'Cloud security controls, compliance, and governance for enterprise workloads.' },
+  ];
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setFormState('submitting');
     setErrorMsg('');
     const fd = new FormData(e.target);
-    const data = Object.fromEntries(fd.entries());
+    const data = {};
+
+    for (const [key, value] of fd.entries()) {
+      if (data[key]) {
+        data[key] = Array.isArray(data[key]) ? [...data[key], value] : [data[key], value];
+      } else {
+        data[key] = value;
+      }
+    }
+
     data.subject = 'New Contact Enquiry — GulfStream Website';
+
     try {
       await submitForm(data);
       setFormState('success');
@@ -55,45 +77,20 @@ const ContactContent = () => {
     <main>
       {/* HERO */}
       <section className="page-hero">
-        <div className="container">
+        <div className="container" style={{ textAlign: 'left' }}>
           <nav className="breadcrumb" aria-label="Breadcrumb">
             <Link href="/">Home</Link><span>›</span><span>Contact</span>
           </nav>
-          <div className="badge badge-primary" style={{ marginBottom: '16px' }}>📞 Contact Cloud Experts</div>
-          <h1 className="display-lg">Contact Multi-Cloud Experts<br /><span className="text-gradient">in Riyadh, Saudi Arabia</span></h1>
-          <p>Get in touch with GulfStream Technologies — a leading <strong>cloud consulting company in Riyadh, Saudi Arabia</strong>. Whether you need <Link href="/services/cloud-managed-services/aws" style={{ color: 'var(--accent)' }}>AWS managed services</Link>, <Link href="/services/cloud-managed-services/azure" style={{ color: 'var(--accent)' }}>Azure consulting</Link>, or a <Link href="/book-a-review" style={{ color: 'var(--accent)' }}>free cloud assessment</Link>, our certified specialists respond within 4 business hours.</p>
-          <div className="hero-trust-strip">
-            <span className="hero-trust-label">Trusted by 40+ Saudi enterprises</span>
-            <div className="hero-quick-stats">
-              <div className="hero-quick-stat">
-                <span className="hero-quick-stat-value">&lt; 4 hrs</span>
-                <span className="hero-quick-stat-label">Response Time</span>
-              </div>
-              <div className="hero-quick-stat">
-                <span className="hero-quick-stat-value">Sun–Thu</span>
-                <span className="hero-quick-stat-label">8 AM – 6 PM AST</span>
-              </div>
-              <div className="hero-quick-stat">
-                <span className="hero-quick-stat-value">Riyadh</span>
-                <span className="hero-quick-stat-label">HQ, Saudi Arabia</span>
-              </div>
-            </div>
-          </div>
+          <h1 className="display-lg"><span className="text-gradient">Contact Multi-Cloud Experts in Saudi Arabia</span></h1>
+          <p>Connect with GulfStream Technologies for expert-led cloud consulting, managed services, and cloud optimization solutions across AWS, Microsoft, Oracle Cloud, and Google Cloud. We help enterprises across the GCC improve performance, strengthen security, and reduce cloud costs with scalable multi-cloud strategies.</p>
+          
         </div>
       </section>
 
-      {/* SEO INTRO */}
-      <section className="section-sm">
-        <div className="container">
-          <div className="reveal" style={{ maxWidth: '900px', margin: '0 auto', lineHeight: '1.8' }}>
-            <p>GulfStream Technologies is a leading <strong>cloud consulting company in Riyadh, Saudi Arabia</strong>, specializing in <Link href="/services/cloud-managed-services/aws" style={{ color: 'var(--accent)' }}>AWS managed services</Link>, <Link href="/services/cloud-managed-services/azure" style={{ color: 'var(--accent)' }}>Azure cloud consulting</Link>, <Link href="/services/finops-cost-optimization" style={{ color: 'var(--accent)' }}>FinOps cost optimization</Link>, and <Link href="/services/cloud-security-governance" style={{ color: 'var(--accent)' }}>cloud security governance</Link>. Our certified specialists serve enterprises across Riyadh, Jeddah, Dammam, and the wider GCC region.</p>
-            <p style={{ marginTop: '16px' }}>Whether you need help reducing cloud costs, migrating to AWS, Azure, Google Cloud, or Oracle Cloud, or strengthening your <Link href="/services/cloud-security-governance" style={{ color: 'var(--accent)' }}>cloud security posture</Link>, our team responds within 4 business hours. Start with a <Link href="/book-a-review" style={{ color: 'var(--accent)' }}>free cloud assessment</Link> to identify savings opportunities and optimization pathways for your cloud environment.</p>
-          </div>
-        </div>
-      </section>
+
 
       {/* CONTACT GRID */}
-      <section className="section">
+      <section className="section" style={{ background: 'var(--dark-surface)' }}>
         <div className="container">
           <div className="contact-grid-2col">
             {/* Contact Info */}
@@ -112,39 +109,44 @@ const ContactContent = () => {
                   <div className="icon-box" style={{ margin: 0, flexShrink: 0 }}>📞</div>
                   <div style={{ minWidth: 0 }}>
                     <h3 style={{ marginBottom: '6px', fontSize: '1rem' }}>Phone</h3>
-                    <a href="tel:+966053201917" style={{ color: 'var(--accent)', fontSize: 'clamp(0.85rem, 2vw, 0.95rem)' }}>+966 (0) 53 201 917</a>
+                    <a href="tel:+9660532019172" style={{ color: 'var(--accent)', fontSize: 'clamp(0.85rem, 2vw, 0.95rem)' }}>+966 (0) 53 201 9172</a>
                     <p style={{ color: 'var(--text-muted)', fontSize: '.82rem', marginTop: '4px' }}>Sun–Thu, 8:00 AM – 6:00 PM AST</p>
                   </div>
                 </div>
                 <div className="card" style={{ padding: 'clamp(16px, 3vw, 24px)', display: 'flex', gap: 'clamp(12px, 2vw, 16px)', alignItems: 'flex-start' }}>
                   <div className="icon-box" style={{ margin: 0, flexShrink: 0 }}>📍</div>
                   <div style={{ minWidth: 0 }}>
-                    <h3 style={{ marginBottom: '6px', fontSize: '1rem' }}>Office — Riyadh, Saudi Arabia</h3>
-                    <p style={{ color: 'var(--text-secondary)', fontSize: 'clamp(0.85rem, 2vw, 0.95rem)', margin: 0 }}>6526 At Takhassusi Road, Almathar Ash Shamali District, Central Province, Riyadh 12332, Saudi Arabia</p>
+                    <h3 style={{ marginBottom: '6px', fontSize: '1rem' }}>Location — Riyadh, Saudi Arabia<br />  Muscat, Oman</h3>
+                    
                   </div>
                 </div>
                 <div className="card" style={{ padding: 'clamp(16px, 3vw, 24px)', display: 'flex', gap: 'clamp(12px, 2vw, 16px)', alignItems: 'flex-start' }}>
                   <div className="icon-box" style={{ margin: 0, flexShrink: 0 }}>⚡</div>
                   <div style={{ minWidth: 0 }}>
                     <h3 style={{ marginBottom: '6px', fontSize: '1rem' }}>24/7 Client Support</h3>
-                    <a href="tel:+966112345680" style={{ color: 'var(--accent)', fontSize: 'clamp(0.85rem, 2vw, 0.95rem)' }}>+966 11 234 5680 (Clients)</a>
+                    <a href="tel:+9660532019172" style={{ color: 'var(--accent)', fontSize: 'clamp(0.85rem, 2vw, 0.95rem)' }}>+966 (0) 53 201 9172 (Clients)</a>
                     <p style={{ color: 'var(--text-muted)', fontSize: '.82rem', marginTop: '4px' }}>For active GulfStream-managed environments</p>
                   </div>
                 </div>
               </div>
 
-              {/* Urgent Help CTA */}
-              <div style={{ marginTop: '24px', padding: '20px', background: 'var(--dark-bg)', border: '1px solid var(--accent)', borderRadius: 'var(--radius-lg)', textAlign: 'center' }}>
-                <p style={{ color: 'var(--accent)', fontWeight: 700, marginBottom: '8px', fontSize: '.95rem' }}>🚨 Need Urgent Cloud Help?</p>
-                <p style={{ color: 'var(--text-secondary)', fontSize: '.85rem', margin: 0 }}>Call us now: <a href="tel:+966053201917" style={{ color: 'var(--accent)', fontWeight: 600 }}>+966 (0) 53 201 917</a></p>
-              </div>
+           
             </div>
 
             {/* Contact Form */}
             <div className="reveal">
-              <div className="card" style={{ padding: 'clamp(20px, 4vw, 48px)' }}>
-                <h2 style={{ marginBottom: '8px', fontSize: '1.3rem' }}>Send Us a Message</h2>
-                <p style={{ color: 'var(--text-secondary)', fontSize: 'clamp(0.85rem, 2vw, 0.9rem)', marginBottom: '32px' }}>Fill in your details and one of our cloud specialists will be in touch within 4 hours during business hours.</p>
+              <div 
+                className="card contact-form-card"
+                style={{
+                  position: 'relative',
+                  background: 'linear-gradient(145deg, rgba(26, 40, 71, 0.95), rgba(15, 26, 46, 0.95))',
+                  border: '1.5px solid rgba(255, 107, 53, 0.15)',
+                  boxShadow: '0 0 0 1px rgba(255, 107, 53, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.06), 0 20px 60px rgba(255, 107, 53, 0.08), 0 0 40px rgba(255, 107, 53, 0.05)',
+                  transition: 'all 0.35s ease',
+                }}
+              >
+                <h2 style={{ marginBottom: '12px', fontSize: '1.4rem', fontWeight: 700, background: 'linear-gradient(135deg, #fff, rgba(255,255,255,0.8))', backgroundClip: 'text', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', color: '#fff' }}>Send Us a Message</h2>
+                <p style={{ color: 'var(--text-secondary)', fontSize: 'clamp(0.85rem, 2vw, 0.9rem)', marginBottom: '20px', lineHeight: 1.6 }}>Fill in your details and one of our cloud specialists will be in touch within 4 hours during business hours.</p>
                 <form className="contact-form" id="contactForm" onSubmit={handleSubmit}>
                   {/* Honeypot — hidden from users, caught by Web3Forms */}
                   <input type="checkbox" name="botcheck" style={{ display: 'none' }} tabIndex={-1} autoComplete="off" />
@@ -171,23 +173,27 @@ const ContactContent = () => {
                     <input type="text" id="company" name="company" autoComplete="organization" aria-label="Company Name" className="form-input" placeholder="Your Company LLC" required />
                   </div>
                   <div className="form-group">
-                    <label className="form-label" htmlFor="enquiry">How Can We Help? *</label>
-                    <select id="enquiry" name="enquiry" aria-label="How Can We Help" className="form-input form-select" required defaultValue="">
-                      <option value="" disabled>Select enquiry type</option>
-                      <option value="aws-managed-services">AWS Managed Services</option>
-                      <option value="azure-managed-services">Azure Managed Services</option>
-                      <option value="oracle-cloud-managed-services">Oracle Managed Cloud Services</option>
-                      <option value="google-cloud-managed-services">Google Managed Cloud Services</option>
-                      <option value="cloud-migration">Cloud Migration</option>
-                      <option value="cost-optimization">Cloud Cost Optimization</option>
-                      <option value="cloud-security">Cloud Security</option>
-                      <option value="pricing-quote">Pricing Quote</option>
-                      <option value="other">General Enquiry</option>
+                    <label className="form-label" htmlFor="service">What service are you interested in?</label>
+                    <select id="service" name="service" aria-label="What service are you interested in" className="form-input form-select" defaultValue="" required>
+                      <option value="" disabled>Select a service</option>
+                      {serviceOptions.map((option) => (
+                        <option key={option.id} value={option.value}>{option.title}</option>
+                      ))}
                     </select>
                   </div>
                   <div className="form-group">
-                    <label className="form-label" htmlFor="message">Tell Us More</label>
-                    <textarea id="message" name="message" aria-label="Tell Us More" className="form-input form-textarea" placeholder="Briefly describe your cloud environment, challenges, or goals..." rows="4"></textarea>
+                    <label className="form-label" htmlFor="cloud-size">Cloud Environment Size</label>
+                    <select id="cloud-size" name="cloudSize" aria-label="Cloud Environment Size" className="form-input form-select" defaultValue="" required>
+                      <option value="" disabled>Select size</option>
+                      <option value="startup-small">1 - 50</option>
+                      <option value="mid-market">51 - 200</option>
+                      <option value="enterprise">201 - 1000</option>
+                      <option value="multi-cloud">1000+</option>
+                    </select>
+                  </div>
+                  <div className="form-group">
+                    <label className="form-label" htmlFor="message">Project Requirements or Challenges</label>
+                    <textarea id="message" name="message" aria-label="Project Requirements or Challenges" className="form-input form-textarea" placeholder="Briefly describe your cloud environment, challenges, or goals..." rows="4"></textarea>
                   </div>
                   <button type="submit" className="btn btn-primary w-full" style={{ justifyContent: 'center' }} disabled={formState === 'submitting'}>
                     {formState === 'submitting' ? 'Sending...' : 'Send Message →'}
@@ -209,7 +215,7 @@ const ContactContent = () => {
       </section>
 
       {/* WHAT HAPPENS */}
-      <section className="section" style={{ background: 'var(--dark-surface)' }}>
+      <section className="section" >
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-primary">⭐ Why Reach Out?</div>
@@ -241,7 +247,7 @@ const ContactContent = () => {
       </section>
 
       {/* FAQ */}
-      <section className="section">
+      <section className="section"style={{ background: 'var(--dark-surface)' }}>
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-accent">❓ FAQ</div>
@@ -268,7 +274,7 @@ const ContactContent = () => {
                     className="faq-answer"
                   >
                     <div className="faq-answer-inner">
-                      <p>{faq.answer}</p>
+                      <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>{faq.answer}</p>
                     </div>
                   </div>
                 </div>
@@ -279,15 +285,13 @@ const ContactContent = () => {
       </section>
 
       {/* CTA */}
-      <section className="section" style={{ background: 'var(--dark-surface)' }}>
+      <section className="section" >
         <div className="container">
           <div className="cta-banner reveal">
             <h2 className="display-md">Ready to Optimize Your Cloud?</h2>
             <p>Talk to certified multi-cloud experts in Riyadh, Saudi Arabia. Get a free consultation, a complimentary cloud assessment, and actionable recommendations — no commitment required.</p>
-            <p className="cta-urgency">⚡ We respond within 4 business hours — reach out today</p>
             <div className="cta-actions">
               <Link href="/book-a-review" className="btn btn-white btn-lg">📋 Book Free Cloud Assessment</Link>
-              <a href="tel:+966053201917" className="btn-white-outline">📞 Call +966 53 201 917</a>
             </div>
           </div>
         </div>

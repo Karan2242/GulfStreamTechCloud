@@ -3,7 +3,7 @@ import ServicesIndexContent from '@/components/pages/ServicesIndexContent';
 import { DEFAULT_OG_IMAGE } from '@/lib/metadata';
 
 export const metadata = {
-  title: 'Enterprise Cloud Services Saudi Arabia',
+  title: 'Managed Cloud Services | GulfStream Technologies',
   description: 'Enterprise managed cloud services in Saudi Arabia. Reduce cloud costs 30% across AWS, Azure, Google Cloud & Oracle Cloud with 24/7 monitoring, FinOps & security governance.',
   keywords: [
     'managed cloud services Saudi Arabia',
@@ -17,7 +17,7 @@ export const metadata = {
   ],
   alternates: { canonical: 'https://gulfstreamtech.com.sa/services/' },
   openGraph: {
-    title: 'Enterprise Cloud Services Saudi Arabia | GulfStream',
+    title: 'Managed Cloud Services | GulfStream Technologies',
     description: 'Enterprise managed cloud services in Saudi Arabia. Reduce cloud costs 30% across AWS, Azure, Google Cloud & Oracle Cloud with 24/7 monitoring, FinOps & security governance.',
     url: 'https://gulfstreamtech.com.sa/services/',
     type: 'website',
@@ -27,7 +27,7 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Enterprise Cloud Services Saudi Arabia | GulfStream',
+    title: 'Managed Cloud Services | GulfStream Technologies',
     description: 'Enterprise managed cloud services in Saudi Arabia. Reduce cloud costs 30% across AWS, Azure, Google Cloud & Oracle Cloud with 24/7 monitoring, FinOps & security governance.',
     images: [DEFAULT_OG_IMAGE.url],
   },

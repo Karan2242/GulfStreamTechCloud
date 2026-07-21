@@ -19,7 +19,7 @@ const CloudManagedServicesContent = () => {
       <ServicesGrid />
 
       {/* WHY Managed Cloud Services */}
-      <section className="section" >
+      <section className="section" style={{ background: 'var(--dark-surface)' }}>
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-primary">⭐ Key Benefits</div>
@@ -60,7 +60,7 @@ const CloudManagedServicesContent = () => {
                 <div className="icon-box">👥</div>
                 <h3>Certified Expert Engineers</h3>
               </div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Certified architects and engineers across <Link href="/services/cloud-managed-services/aws" style={{ color: 'var(--accent)' }}>AWS</Link>, <Link href="/services/cloud-managed-services/azure" style={{ color: 'var(--accent)' }}>Azure</Link>, <Link href="/services/cloud-managed-services/oracle" style={{ color: 'var(--accent)' }}>Oracle</Link>, and <Link href="/services/cloud-managed-services/google" style={{ color: 'var(--accent)' }}>Google Cloud</Link> — without the hiring overhead.</p>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Certified architects and engineers across AWS, Microsoft Cloud, Oracle, and Google Cloud— without the hiring overhead.</p>
             </div>
             <div className="card premium-card">
               <div className="card-header">

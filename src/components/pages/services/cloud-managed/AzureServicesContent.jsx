@@ -5,30 +5,30 @@ import Link from 'next/link';
 import { useReveal } from '@/hooks/useReveal';
 import CloudSubNav from '@/components/CloudSubNav';
 
-const AzureManagedContent = () => {
+const AzureServicesContent = () => {
   useReveal();
   const [openFaqIndex, setOpenFaqIndex] = useState(null);
 
-    const azureFaqs = [
+  const azureFaqs = [
     {
       question: 'What are Azure Managed Services?',
-      answer: 'Azure Managed Services means outsourcing your Azure operations, security, monitoring, and optimization to certified cloud engineers.',
+      answer: 'Azure Managed Services means outsourcing your Azure operations, security, monitoring, and optimization to certified cloud engineers. We handle everything from VMs and databases to Kubernetes, security, and cost optimization.',
     },
     {
       question: 'How much do Azure Managed Services cost in Saudi Arabia?',
-      answer: 'Costs vary with subscription count and support requirements. We provide a tailored quote after a free assessment.',
+      answer: 'Costs vary with subscription count and support requirements. We provide a tailored quote after a free assessment. Most clients see ROI within 90 days through cost savings alone.',
     },
     {
       question: 'How quickly can you reduce Azure costs?',
-      answer: 'Most Azure clients see 25-35% savings within 90 days through reserved instances, hybrid benefit optimization, and rightsizing.',
+      answer: 'Most Azure clients see 25-35% savings within 90 days through reserved instances, hybrid benefit optimization, rightsizing, and automated governance policies.',
     },
     {
       question: 'Do you support hybrid Azure environments?',
-      answer: 'Yes. We support Azure hybrid environments with Azure Arc, ExpressRoute, and on-premises integration.',
+      answer: 'Yes. We support complete hybrid environments with Azure hybrid benefits, Azure Arc for on-premises servers, ExpressRoute for connectivity, and on-premises/cloud integration.',
     },
     {
       question: 'Why choose GulfStream for Azure in Saudi Arabia?',
-      answer: 'We offer local Saudi expertise, Azure certifications, and compliance experience for reliable hybrid cloud operations.',
+      answer: 'We combine local Saudi expertise, Microsoft Azure certifications, compliance experience with NCA ECC regulations, and 24/7 operations for reliable hybrid cloud management.',
     },
   ];
 
@@ -36,21 +36,20 @@ const AzureManagedContent = () => {
     <main>
       {/* HERO */}
       <section className="page-hero">
-        <div className="container">
+        <div className="container" style={{ textAlign: 'left' }}>
           <div className="breadcrumb">
-            <Link href="/">Home</Link><span>›</span><Link href="/services">Services</Link><span>›</span><Link href="/services/cloud-managed-services">Managed Cloud Services</Link><span>›</span><span>Azure</span>
+            <Link href="/">Home</Link><span>›</span><Link href="/services">Services</Link><span>›</span><Link href="/services/cloud-managed-services">Managed Cloud Services</Link><span>›</span><Link href="/services/cloud-managed-services/microsoft-cloud">Microsoft Cloud</Link><span>›</span><span>Azure Services</span>
           </div>
-          <div className="badge badge-primary" style={{ marginBottom: '16px' }}>🔷 Azure Managed Services</div>
-          <h1 className="display-lg">Azure Managed Services<br /><span className="text-gradient">in Saudi Arabia</span></h1>
+          <h1 className="display-lg"><span className="text-gradient">Azure Managed Services in Saudi Arabia</span></h1>
           <p>GulfStream Technologies is a trusted managed cloud services provider for Microsoft Azure in Saudi Arabia. We deliver comprehensive Azure cloud management — from VMs, AKS, and Azure SQL to Entra ID and Defender — with 24/7 cloud monitoring services, enterprise governance, and FinOps consulting to cut costs by up to 29%.</p>
-          <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
+          <div style={{ display: 'flex', gap: '16px', justifyContent: 'left', flexWrap: 'wrap' }}>
             <Link href="/book-a-review" className="btn btn-primary btn-lg">Book a Free Azure Assessment</Link>
-            <Link href="/contact" className="btn btn-outline btn-lg">Talk to an Expert</Link>
+            <Link href="/contact" className="btn btn-outline btn-lg" style={{ backgroundColor: '#ffffff', color: '#0052CC', borderColor: 'rgba(0,0,0,0.08)' }}>Talk to an Expert</Link>
           </div>
         </div>
       </section>
 
-      <CloudSubNav />
+     
 
       {/* CHALLENGES */}
       <section className="section" style={{ background: 'var(--dark-surface)' }}>
@@ -205,8 +204,6 @@ const AzureManagedContent = () => {
         </div>
       </section>
 
-
-
       {/* FAQ */}
       <section className="section" style={{ background: 'var(--dark-surface)' }}>
         <div className="container">
@@ -253,7 +250,6 @@ const AzureManagedContent = () => {
             <p className="cta-urgency">⚡ Limited free assessments available this month</p>
             <div className="cta-actions">
               <Link href="/book-a-review" className="btn btn-white btn-lg">📋 Book Free Azure Assessment</Link>
-
             </div>
           </div>
         </div>
@@ -262,4 +258,4 @@ const AzureManagedContent = () => {
   );
 };
 
-export default AzureManagedContent;
+export default AzureServicesContent;

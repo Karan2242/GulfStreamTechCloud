@@ -35,16 +35,16 @@ const FinopsCostOptimizationContent = () => {
     <main>
       {/* HERO */}
       <section className="page-hero">
-        <div className="container">
+        <div className="container" style={{ textAlign: 'left' }}>
           <div className="breadcrumb">
             <Link href="/">Home</Link><span>›</span><Link href="/services">Services</Link><span>›</span><span>FinOps &amp; Cost Optimization</span>
           </div>
-          <div className="badge badge-primary" style={{ marginBottom: '16px' }}>📊 FinOps &amp; Cost Optimization</div>
-          <h1 className="display-lg">Cloud FinOps &amp; Cost Optimization<br /><span className="text-gradient">in Saudi Arabia</span></h1>
-          <p>GulfStream Technologies applies the FinOps framework to give enterprises in Saudi Arabia complete visibility into cloud spend across AWS, Azure, Google Cloud & Oracle Cloud — eliminating waste, rightsizing infrastructure, and building a culture of cloud financial accountability in Saudi Arabia with an average 32% cost reduction.</p>
-          <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
+
+          <h1 className="display-lg">Cloud FinOps &amp; Cost Optimization <span className="text-gradient">in Saudi Arabia</span></h1>
+          <p>GulfStream Technologies applies the FinOps framework to give enterprises in Saudi Arabia complete visibility into cloud spend across AWS, Microsoft Cloud, Google Cloud & Oracle Cloud — eliminating waste, rightsizing infrastructure, and building a culture of cloud financial accountability in Saudi Arabia with an average 32% cost reduction.</p>
+          <div style={{ display: 'flex', gap: '16px', justifyContent: 'left', flexWrap: 'wrap' }}>
             <Link href="/book-a-review" className="btn btn-primary btn-lg">Get a Free Cost Analysis</Link>
-            <Link href="/contact" className="btn btn-outline btn-lg">Talk to a FinOps Expert</Link>
+            <Link href="/contact" className="btn btn-outline btn-lg" style={{ backgroundColor: '#ffffff', color: '#0052CC', borderColor: 'rgba(0,0,0,0.08)' }}>Talk to a FinOps Expert</Link>
           </div>
           <div className="hero-trust-strip">
             <span className="hero-trust-label">Trusted by enterprises across Saudi Arabia</span>
@@ -65,6 +65,63 @@ const FinopsCostOptimizationContent = () => {
           </div>
         </div>
       </section>
+
+
+
+      {/* THE PROBLEM */}
+      <section className="section" style={{ background: 'var(--dark-surface)' }}>
+        <div className="container">
+          <div className="section-header reveal">
+            <div className="badge badge-primary">💡 The Problem</div>
+            <h2 className="display-md">Why Cloud Costs Spiral Out of Control</h2>
+          </div>
+          <div className="grid-3 reveal">
+            <div className="card premium-card">
+              <div className="card-header">
+                <div className="icon-box">🔍</div>
+                <div className="card-title-row"><h3>No Spend Visibility</h3></div>
+              </div>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Without proper tagging, cost allocation, and dashboards, business units have no idea how much they&apos;re spending — or why bills keep growing month over month.</p>
+            </div>
+            <div className="card premium-card">
+              <div className="card-header">
+                <div className="icon-box">💤</div>
+                <div className="card-title-row"><h3>Idle &amp; Oversized Resources</h3></div>
+              </div>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Dev/test instances left running overnight, oversized production databases, and forgotten snapshots silently consume 20–40% of typical cloud budgets.</p>
+            </div>
+            <div className="card premium-card">
+              <div className="card-header">
+                <div className="icon-box">📉</div>
+                <div className="card-title-row"><h3>No Reserved Instance Strategy</h3></div>
+              </div>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Paying On-Demand for predictable workloads can cost 3x more than Reserved Instances or Savings Plans — savings most enterprises leave on the table.</p>
+            </div>
+            <div className="card premium-card">
+              <div className="card-header">
+                <div className="icon-box">🏷️</div>
+                <div className="card-title-row"><h3>Poor Tagging &amp; Attribution</h3></div>
+              </div>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Without consistent tagging, chargeback to business units is impossible, eliminating accountability and enabling continued unchecked spending.</p>
+            </div>
+            <div className="card premium-card">
+              <div className="card-header">
+                <div className="icon-box">🔮</div>
+                <div className="card-title-row"><h3>No Forecasting or Budgets</h3></div>
+              </div>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Cloud spend projections are guesswork. Budget alerts are set too high or missing entirely, leading to end-of-month bill shock.</p>
+            </div>
+            <div className="card premium-card">
+              <div className="card-header">
+                <div className="icon-box">🏗️</div>
+                <div className="card-title-row"><h3>Architecture Inefficiencies</h3></div>
+              </div>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Legacy lift-and-shift architectures not optimized for the cloud consume far more resources than cloud-native equivalents designed for elasticity.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
 
       {/* WHAT YOU GET */}
       <section className="section">
@@ -120,62 +177,10 @@ const FinopsCostOptimizationContent = () => {
         </div>
       </section>
 
-      {/* THE PROBLEM */}
-      <section className="section" style={{ background: 'var(--dark-surface)' }}>
-        <div className="container">
-          <div className="section-header reveal">
-            <div className="badge badge-primary">💡 The Problem</div>
-            <h2 className="display-md">Why Cloud Costs Spiral Out of Control</h2>
-          </div>
-          <div className="grid-3 reveal">
-            <div className="card premium-card">
-              <div className="card-header">
-                <div className="icon-box">🔍</div>
-                <div className="card-title-row"><h3>No Spend Visibility</h3></div>
-              </div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Without proper tagging, cost allocation, and dashboards, business units have no idea how much they're spending — or why bills keep growing month over month.</p>
-            </div>
-            <div className="card premium-card">
-              <div className="card-header">
-                <div className="icon-box">💤</div>
-                <div className="card-title-row"><h3>Idle &amp; Oversized Resources</h3></div>
-              </div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Dev/test instances left running overnight, oversized production databases, and forgotten snapshots silently consume 20–40% of typical cloud budgets.</p>
-            </div>
-            <div className="card premium-card">
-              <div className="card-header">
-                <div className="icon-box">📉</div>
-                <div className="card-title-row"><h3>No Reserved Instance Strategy</h3></div>
-              </div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Paying On-Demand for predictable workloads can cost 3x more than Reserved Instances or Savings Plans — savings most enterprises leave on the table.</p>
-            </div>
-            <div className="card premium-card">
-              <div className="card-header">
-                <div className="icon-box">🏷️</div>
-                <div className="card-title-row"><h3>Poor Tagging &amp; Attribution</h3></div>
-              </div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Without consistent tagging, chargeback to business units is impossible, eliminating accountability and enabling continued unchecked spending.</p>
-            </div>
-            <div className="card premium-card">
-              <div className="card-header">
-                <div className="icon-box">🔮</div>
-                <div className="card-title-row"><h3>No Forecasting or Budgets</h3></div>
-              </div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Cloud spend projections are guesswork. Budget alerts are set too high or missing entirely, leading to end-of-month bill shock.</p>
-            </div>
-            <div className="card premium-card">
-              <div className="card-header">
-                <div className="icon-box">🏗️</div>
-                <div className="card-title-row"><h3>Architecture Inefficiencies</h3></div>
-              </div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Legacy lift-and-shift architectures not optimized for the cloud consume far more resources than cloud-native equivalents designed for elasticity.</p>
-            </div>
-          </div>
-        </div>
-      </section>
+
 
       {/* METRICS */}
-      <section className="section">
+      <section className="section" style={{ background: 'var(--dark-surface)' }}>
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-accent">📊 Results</div>
@@ -203,7 +208,7 @@ const FinopsCostOptimizationContent = () => {
       </section>
 
       {/* USE CASES */}
-      <section className="section" style={{ background: 'var(--dark-surface)' }}>
+      <section className="section" >
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-primary">🎯 Use Cases</div>
@@ -215,7 +220,7 @@ const FinopsCostOptimizationContent = () => {
                 <div className="icon-box">💸</div>
                 <div className="card-title-row"><h3>Multi-Cloud Cost Reduction</h3></div>
               </div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Unified cost optimization across AWS, Azure, Google Cloud, and Oracle Cloud accounts — rightsizing, RI/SP purchasing, Spot strategies, and idle resource cleanup for enterprises spending $50K+ monthly on cloud.</p>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Unified cost optimization across AWS, Microsoft Cloud, Google Cloud, and Oracle Cloud accounts — rightsizing, RI/SP purchasing, Spot strategies, and idle resource cleanup for enterprises spending $50K+ monthly on cloud.</p>
             </div>
             <div className="card premium-card">
               <div className="card-header">
@@ -240,7 +245,7 @@ const FinopsCostOptimizationContent = () => {
 
 
       {/* COMPARISON */}
-      <section className="section">
+      <section className="section" style={{ background: 'var(--dark-surface)' }}>
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-accent">⚖️ Compare</div>
@@ -272,7 +277,7 @@ const FinopsCostOptimizationContent = () => {
 
 
       {/* FAQ */}
-      <section className="section" style={{ background: 'var(--dark-surface)' }}>
+      <section className="section" >
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-accent">❓ FAQ</div>
@@ -313,11 +318,9 @@ const FinopsCostOptimizationContent = () => {
         <div className="container reveal">
           <div className="cta-banner">
             <h2 className="display-md">Discover Your Cloud Cost Savings</h2>
-            <p>Get a complimentary cloud cost analysis. We'll identify exactly where your money is going and what you can save — with a detailed savings roadmap at no cost or commitment.</p>
-            <p className="cta-urgency">⚡ Limited free cost analysis spots available this month</p>
+            <p>Get a complimentary cloud cost analysis. We&apos;ll identify exactly where your money is going and what you can save — with a detailed savings roadmap at no cost or commitment.</p>
             <div className="cta-actions">
               <Link href="/book-a-review" className="btn btn-white btn-lg">📋 Get a Free Cost Analysis</Link>
-              <Link href="/book-a-review" className="btn-white-outline">💰 View Pricing Plans</Link>
             </div>
           </div>
         </div>

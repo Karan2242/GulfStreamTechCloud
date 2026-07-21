@@ -36,16 +36,15 @@ const GoogleCloudContent = () => {
     <main>
       {/* HERO */}
       <section className="page-hero">
-        <div className="container">
+        <div className="container" style={{ textAlign: 'left' }}>
           <div className="breadcrumb">
             <Link href="/">Home</Link><span>›</span><Link href="/services">Services</Link><span>›</span><Link href="/services/cloud-managed-services">Managed Cloud Services</Link><span>›</span><span>Google Cloud</span>
           </div>
-          <div className="badge badge-primary" style={{ marginBottom: '16px' }}>🟢 Google Managed Cloud Services</div>
-          <h1 className="display-lg">Google Managed Cloud Services<br /><span className="text-gradient">in Saudi Arabia</span></h1>
+          <h1 className="display-lg"><span className="text-gradient">Google Managed Cloud Services in Saudi Arabia</span></h1>
           <p>GulfStream Technologies is a certified managed cloud services provider for Google Cloud Platform (GCP) in Saudi Arabia. We deliver comprehensive GCP management — from GKE and BigQuery to Cloud Run and Security Command Center — with 24/7 cloud monitoring services, data analytics optimization, and FinOps consulting to cut costs by up to 28%.</p>
-          <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
+          <div style={{ display: 'flex', gap: '16px', justifyContent: 'left', flexWrap: 'wrap' }}>
             <Link href="/book-a-review" className="btn btn-primary btn-lg">Book a Free GCP Assessment</Link>
-            <Link href="/contact" className="btn btn-outline btn-lg">Talk to an Expert</Link>
+            <Link href="/contact" className="btn btn-outline btn-lg" style={{ backgroundColor: '#ffffff', color: '#0052CC', borderColor: 'rgba(0,0,0,0.08)' }}>Talk to an Expert</Link>
           </div>
         </div>
       </section>
@@ -53,7 +52,7 @@ const GoogleCloudContent = () => {
       <CloudSubNav />
 
       {/* CHALLENGES */}
-      <section className="section">
+      <section className="section" style={{ background: 'var(--dark-surface)' }}>
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-accent">⚠️ Challenges</div>
@@ -108,7 +107,7 @@ const GoogleCloudContent = () => {
       </section>
 
       {/* COVERAGE */}
-      <section className="section" style={{ background: 'var(--dark-surface)' }}>
+      <section className="section">
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-accent">🔧 Coverage</div>
@@ -157,7 +156,7 @@ const GoogleCloudContent = () => {
       </section>
 
       {/* OUR PROCESS */}
-      <section className="section">
+      <section className="section" style={{ background: 'var(--dark-surface)' }}>
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-primary">✅ Our Process</div>
@@ -182,7 +181,7 @@ const GoogleCloudContent = () => {
       </section>
 
       {/* METRICS */}
-      <section className="section" style={{ background: 'var(--dark-surface)' }}>
+      <section className="section" >
         <div className="container">
           <div className="metrics-grid reveal">
             <div className="metric-item"><span className="metric-value">↓28%</span>
@@ -205,45 +204,7 @@ const GoogleCloudContent = () => {
         </div>
       </section>
 
-      {/* WHY US */}
-      <section className="section">
-        <div className="container">
-          <div className="section-header reveal">
-            <div className="badge badge-accent">⭐ Why GulfStream</div>
-            <h2 className="display-md">Why Choose GulfStream for Google Cloud?</h2>
-          </div>
-          <div className="grid-4 reveal">
-            <div className="card premium-card why-us-card">
-              <div className="card-header">
-                <div className="icon-box">🇸🇦</div>
-                <div className="card-title-row"><h3>Saudi GCP Specialists</h3></div>
-              </div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Certified Google Cloud architects based in Riyadh with deep expertise in GKE, BigQuery, Cloud Run, and Vertex AI.</p>
-            </div>
-            <div className="card premium-card why-us-card">
-              <div className="card-header">
-                <div className="icon-box">📊</div>
-                <div className="card-title-row"><h3>FinOps Management</h3></div>
-              </div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Every engagement includes structured <Link href="/services/finops-cost-optimization" style={{ color: 'var(--accent)' }}>FinOps consulting</Link> with measurable cost reduction targets from day one.</p>
-            </div>
-            <div className="card premium-card why-us-card">
-              <div className="card-header">
-                <div className="icon-box">🔔</div>
-                <div className="card-title-row"><h3>True 24/7 Operations</h3></div>
-              </div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Our NOC monitors your Google Cloud environment around the clock with human-backed alerting and incident response — not just automated emails.</p>
-            </div>
-            <div className="card premium-card why-us-card">
-              <div className="card-header">
-                <div className="icon-box">📋</div>
-                <div className="card-title-row"><h3>Outcome-Based SLAs</h3></div>
-              </div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>We commit to specific uptime, cost, and performance targets. See also our <Link href="/services/cloud-managed-services/aws" style={{ color: 'var(--accent)' }}>AWS</Link>, <Link href="/services/cloud-managed-services/azure" style={{ color: 'var(--accent)' }}>Azure</Link>, and <Link href="/services/cloud-managed-services/oracle" style={{ color: 'var(--accent)' }}>Oracle Cloud</Link> managed services.</p>
-            </div>
-          </div>
-        </div>
-      </section>
+
 
       {/* FAQ */}
       <section className="section" style={{ background: 'var(--dark-surface)' }}>
@@ -291,7 +252,6 @@ const GoogleCloudContent = () => {
             <p className="cta-urgency">⚡ Limited free assessments available this month</p>
             <div className="cta-actions">
               <Link href="/book-a-review" className="btn btn-white btn-lg">📋 Book Free GCP Assessment</Link>
-              <Link href="/book-a-review" className="btn-white-outline">💰 Get a Cost Estimate</Link>
             </div>
           </div>
         </div>

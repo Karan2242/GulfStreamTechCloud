@@ -54,116 +54,50 @@ const BookReviewContent = () => {
     <main>
       {/* HERO */}
       <section className="page-hero">
-        <div className="container" style={{ maxWidth: '820px' }}>
+        <div className="container" style={{ textAlign: 'left' }}>
           <nav className="breadcrumb" aria-label="Breadcrumb">
             <Link href="/">Home</Link><span>›</span><span>Book a Free Cloud Review</span>
           </nav>
-          <div className="badge badge-accent" style={{ marginBottom: '16px' }}>🎁 100% Free · No Commitment</div>
-          <h1 className="display-lg">Free Multi-Cloud Assessment<br /><span className="text-gradient">Saudi Arabia</span></h1>
-          <p>Book a free, no-obligation cloud assessment for your Saudi enterprise — covering AWS, Azure, Google Cloud, and Oracle Cloud. Delivered by certified cloud specialists within 5 business days. Discover exact cost savings, security gaps, and performance improvements.</p>
-          <div className="hero-trust-strip">
-            <span className="hero-trust-label">Trusted by 40+ Saudi enterprises</span>
-            <div className="hero-quick-stats">
-              <div className="hero-quick-stat">
-                <span className="hero-quick-stat-value">30%</span>
-                <span className="hero-quick-stat-label">Avg Savings Found</span>
-              </div>
-              <div className="hero-quick-stat">
-                <span className="hero-quick-stat-value">5 Days</span>
-                <span className="hero-quick-stat-label">Delivery Time</span>
-              </div>
-              <div className="hero-quick-stat">
-                <span className="hero-quick-stat-value">100%</span>
-                <span className="hero-quick-stat-label">Free, No Strings</span>
-              </div>
-            </div>
-          </div>
+          <h1 className="display-lg"><span className="text-gradient">Free Enterprise Cloud Assessment for Saudi Arabia</span></h1>
+          <p>Book a free, no-obligation cloud assessment for your Saudi enterprise — covering AWS, Microsoft, Google Cloud, and Oracle Cloud. Delivered by certified cloud specialists within 5 business days. Discover exact cost savings, security gaps, and performance improvements.</p>
+          
         </div>
       </section>
 
-      {/* SEO INTRO */}
-      <section className="section" style={{ paddingBottom: '0' }}>
-        <div className="container">
-          <div className="reveal" style={{ maxWidth: '900px', margin: '0 auto', lineHeight: '1.8' }}>
-            <p>GulfStream Technologies offers a <strong>free cloud assessment in Saudi Arabia</strong> across AWS, Azure, Google Cloud, and Oracle Cloud for enterprises looking to reduce cloud costs, strengthen security, and optimize performance. Our <Link href="/services/finops-cost-optimization" style={{ color: 'var(--accent)' }}>cloud cost optimization audit</Link> has helped 40+ Saudi enterprises identify an average of 30% in cloud savings — across retail, healthcare, SaaS, and logistics.</p>
-            <p>Whether you need a <Link href="/services/cloud-security-governance" style={{ color: 'var(--accent)' }}>cloud security assessment</Link>, an <Link href="/services/cloud-managed-services/aws" style={{ color: 'var(--accent)' }}>AWS managed services</Link> evaluation, or an <Link href="/services/cloud-managed-services/azure" style={{ color: 'var(--accent)' }}>Azure consulting</Link> review, our team of certified AWS architects and Azure expert engineers delivers a comprehensive, actionable report — completely free and with no obligation to engage.</p>
-          </div>
-        </div>
-      </section>
 
-      {/* WHAT YOU GET */}
-      <section className="section" style={{ paddingTop: '48px' }}>
-        <div className="container">
-          <div className="section-header reveal">
-            <div className="badge badge-primary">🎁 What&apos;s Included</div>
-            <h2 className="display-md">What You Get in Your Free Cloud Review</h2>
-          </div>
-          <div className="grid-3 reveal">
-            <div className="card" style={{ borderTop: '3px solid var(--primary)' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '12px' }}>
-                <div className="icon-box" style={{ marginBottom: 0 }}>📊</div>
-                <h3 style={{ margin: 0, fontSize: '1.05rem' }}>Cloud Cost Analysis</h3>
-              </div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.9rem' }}>A detailed breakdown of your current cloud spend — identifying idle resources, oversized instances, On-Demand waste, and actionable savings opportunities with estimated SAR impact.</p>
-              <div style={{ marginTop: '16px', padding: '12px', background: 'var(--dark-bg)', borderRadius: 'var(--radius-sm)', fontSize: '.82rem', color: 'var(--accent)' }}>
-                Average savings identified: <strong>25–35% of monthly bill</strong>
-              </div>
-            </div>
-            <div className="card" style={{ borderTop: '3px solid var(--accent)' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '12px' }}>
-                <div className="icon-box" style={{ marginBottom: 0 }}>🔒</div>
-                <h3 style={{ margin: 0, fontSize: '1.05rem' }}>Security Posture Review</h3>
-              </div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.9rem' }}>A prioritized report of your cloud security risks — covering IAM over-permissions, misconfigured resources, encryption gaps, and NCA ECC compliance status — with remediation recommendations.</p>
-              <div style={{ marginTop: '16px', padding: '12px', background: 'var(--dark-bg)', borderRadius: 'var(--radius-sm)', fontSize: '.82rem', color: 'var(--accent)' }}>
-                Delivered within: <strong>5 business days</strong>
-              </div>
-            </div>
-            <div className="card" style={{ borderTop: '3px solid var(--primary-light)' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '12px' }}>
-                <div className="icon-box" style={{ marginBottom: 0 }}>🗺️</div>
-                <h3 style={{ margin: 0, fontSize: '1.05rem' }}>Optimization Roadmap</h3>
-              </div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.9rem' }}>A 90-day cloud optimization roadmap with prioritized, effort-vs-impact actions — giving you an immediate plan to follow whether or not you engage GulfStream Technologies.</p>
-              <div style={{ marginTop: '16px', padding: '12px', background: 'var(--dark-bg)', borderRadius: 'var(--radius-sm)', fontSize: '.82rem', color: 'var(--accent)' }}>
-                Yours to keep: <strong>100% free, no strings</strong>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+    
 
       {/* THE FORM */}
-      <section className="section" style={{ background: 'var(--dark-surface)' }}>
+      <section className="section" >
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1.4fr', gap: '64px', alignItems: 'start' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1.6fr', gap: '20px', alignItems: 'start' }}>
             {/* Left: Trust / Process */}
             <div className="reveal">
-              <h2 style={{ marginBottom: '24px', fontSize: '1.3rem' }}>How It Works</h2>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '20px', marginBottom: '40px' }}>
-                <div style={{ display: 'flex', gap: '16px', alignItems: 'flex-start' }}>
-                  <div style={{ width: '36px', height: '36px', background: 'var(--gradient-primary)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 800, fontSize: '.9rem', flexShrink: 0 }}>1</div>
+              <h2 style={{ marginBottom: '16px', fontSize: '1.3rem' }}>How It Works</h2>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '12px', marginBottom: '20px' }}>
+                <div style={{ display: 'flex', gap: '10px', alignItems: 'flex-start' }}>
+                  <div style={{ width: '30px', height: '30px', background: 'var(--gradient-primary)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 800, fontSize: '.8rem', flexShrink: 0 }}>1</div>
                   <div>
                     <h3 style={{ marginBottom: '6px', fontSize: '.95rem' }}>Submit Your Request</h3>
                     <p style={{ color: 'var(--text-secondary)', fontSize: '.875rem' }}>Fill in the form with your contact details and cloud environment overview.</p>
                   </div>
                 </div>
-                <div style={{ display: 'flex', gap: '16px', alignItems: 'flex-start' }}>
-                  <div style={{ width: '36px', height: '36px', background: 'var(--gradient-primary)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 800, fontSize: '.9rem', flexShrink: 0 }}>2</div>
+                <div style={{ display: 'flex', gap: '10px', alignItems: 'flex-start' }}>
+                  <div style={{ width: '30px', height: '30px', background: 'var(--gradient-primary)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 800, fontSize: '.8rem', flexShrink: 0 }}>2</div>
                   <div>
                     <h3 style={{ marginBottom: '6px', fontSize: '.95rem' }}>Discovery Call (30 min)</h3>
                     <p style={{ color: 'var(--text-secondary)', fontSize: '.875rem' }}>A senior cloud specialist contacts you to understand your environment and share read-only access credentials for our analysis tools.</p>
                   </div>
                 </div>
-                <div style={{ display: 'flex', gap: '16px', alignItems: 'flex-start' }}>
-                  <div style={{ width: '36px', height: '36px', background: 'var(--gradient-primary)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 800, fontSize: '.9rem', flexShrink: 0 }}>3</div>
+                <div style={{ display: 'flex', gap: '10px', alignItems: 'flex-start' }}>
+                  <div style={{ width: '30px', height: '30px', background: 'var(--gradient-primary)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 800, fontSize: '.8rem', flexShrink: 0 }}>3</div>
                   <div>
                     <h3 style={{ marginBottom: '6px', fontSize: '.95rem' }}>Assessment &amp; Analysis</h3>
                     <p style={{ color: 'var(--text-secondary)', fontSize: '.875rem' }}>Our team analyses your cloud environment using industry-leading assessment tools over 3–5 business days.</p>
                   </div>
                 </div>
-                <div style={{ display: 'flex', gap: '16px', alignItems: 'flex-start' }}>
-                  <div style={{ width: '36px', height: '36px', background: 'var(--gradient-primary)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 800, fontSize: '.9rem', flexShrink: 0 }}>4</div>
+                <div style={{ display: 'flex', gap: '10px', alignItems: 'flex-start' }}>
+                  <div style={{ width: '30px', height: '30px', background: 'var(--gradient-primary)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 800, fontSize: '.8rem', flexShrink: 0 }}>4</div>
                   <div>
                     <h3 style={{ marginBottom: '6px', fontSize: '.95rem' }}>Findings Presentation</h3>
                     <p style={{ color: 'var(--text-secondary)', fontSize: '.875rem' }}>We present your personalized cost analysis, security report, and 90-day optimization roadmap in a live session with your team.</p>
@@ -174,16 +108,16 @@ const BookReviewContent = () => {
 
             {/* Right: Form */}
             <div className="reveal">
-              <div className="card" style={{ padding: '48px' }}>
+              <div className="card" style={{ padding: '32px' }}>
                 <h2 style={{ marginBottom: '8px', fontSize: '1.3rem' }}>Book Your Free Cloud Assessment</h2>
                 <p style={{ color: 'var(--text-secondary)', fontSize: '.9rem', marginBottom: '8px' }}>Takes 3 minutes. We&apos;ll be in touch within 4 business hours.</p>
-                <p style={{ color: 'var(--accent)', fontSize: '.85rem', fontWeight: 600, marginBottom: '28px' }}>⚡ Limited to 10 free assessments per month</p>
+                <p style={{ color: 'var(--accent)', fontSize: '.85rem', fontWeight: 600, marginBottom: '18px' }}>⚡ Limited to 10 free assessments per month</p>
                 
                 {formState !== 'success' ? (
                   <form className="contact-form" id="reviewForm" onSubmit={handleReviewSubmit}>
                     {/* Honeypot */}
                     <input type="checkbox" name="botcheck" style={{ display: 'none' }} tabIndex={-1} autoComplete="off" />
-                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px' }}>
+                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px' }}>
                       <div className="form-group">
                         <label className="form-label" htmlFor="revFirstName">First Name *</label>
                         <input type="text" id="revFirstName" name="firstName" autoComplete="given-name" aria-label="First Name" className="form-input" placeholder="Ahmed" required />
@@ -245,7 +179,7 @@ const BookReviewContent = () => {
                       <label className="form-label" htmlFor="revChallenge">Primary Cloud Challenge</label>
                       <textarea id="revChallenge" name="challenge" aria-label="Primary Cloud Challenge" className="form-input form-textarea" placeholder="e.g. Costs are growing 20% month-over-month, we have no visibility into where the spend is going..." rows="3"></textarea>
                     </div>
-                    <button type="submit" className="btn btn-primary w-full" id="reviewSubmitBtn" style={{ justifyContent: 'center', fontSize: '1rem', padding: '16px' }} disabled={formState === 'submitting'}>
+                    <button type="submit" className="btn btn-primary w-full" id="reviewSubmitBtn" style={{ justifyContent: 'center', fontSize: '1rem', padding: '12px' }} disabled={formState === 'submitting'}>
                       {formState === 'submitting' ? 'Submitting...' : '📋 Book My Free Cloud Assessment →'}
                     </button>
                     {formState === 'error' && (
@@ -254,12 +188,61 @@ const BookReviewContent = () => {
                     <p style={{ textAlign: 'center', color: 'var(--text-muted)', fontSize: '.8rem', marginTop: '12px' }}>No spam. No commitment. 100% free. We&apos;ll contact you within 4 business hours.</p>
                   </form>
                 ) : (
-                  <div id="reviewSuccess" style={{ textAlign: 'center', padding: '32px' }}>
+                  <div id="reviewSuccess" style={{ textAlign: 'center', padding: '24px' }}>
                     <div style={{ fontSize: '48px', marginBottom: '16px' }}>✅</div>
                     <h3>Request Received!</h3>
                     <p style={{ color: 'var(--text-secondary)' }}>Thank you for booking your free cloud review. A GulfStream specialist will contact you within 4 business hours to arrange your discovery call.</p>
                   </div>
                 )}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+        {/* WHAT YOU GET */}
+      <section className="section" style={{ paddingTop: '48px', background: 'var(--dark-surface)' }}>
+        <div className="container">
+          <div className="section-header reveal">
+            <div className="badge badge-primary">🎁 What&apos;s Included</div>
+            <h2 className="display-md">What You Get in Your Free Cloud Review</h2>
+          </div>
+          <div className="grid-3 reveal">
+            <div className="card premium-card">
+              <div className="card-header" style={{ display: 'flex', alignItems: 'center', gap: '14px', marginBottom: '18px' }}>
+                <div style={{ width: '48px', height: '48px', minWidth: '48px', borderRadius: '14px', background: 'rgba(255, 255, 255, 0.08)', display: 'grid', placeItems: 'center', fontSize: '1.3rem' }}>📊</div>
+                <div>
+                  <h3 style={{ margin: 0, fontSize: '1rem', color: '#fff' }}>Cloud Cost Analysis</h3>
+                </div>
+              </div>
+              <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>A detailed breakdown of your current cloud spend — identifying idle resources, oversized instances, On-Demand waste, and actionable savings opportunities with estimated SAR impact.</p>
+              <div style={{ marginTop: '18px', padding: '14px', background: 'rgba(0, 0, 0, 0.16)', borderRadius: 'var(--radius-sm)', fontSize: '.8rem', color: 'var(--accent)', border: '1px solid rgba(255, 107, 53, 0.15)' }}>
+                Average savings identified: <strong>25–35% of monthly bill</strong>
+              </div>
+            </div>
+            <div className="card premium-card">
+              <div className="card-header" style={{ display: 'flex', alignItems: 'center', gap: '14px', marginBottom: '18px' }}>
+                <div style={{ width: '48px', height: '48px', minWidth: '48px', borderRadius: '14px', background: 'rgba(255, 255, 255, 0.08)', display: 'grid', placeItems: 'center', fontSize: '1.3rem' }}>🔒</div>
+                <div>
+                  <h3 style={{ margin: 0, fontSize: '1rem', color: '#fff' }}>Security Posture Review</h3>
+                </div>
+              </div>
+              <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>A prioritized report of your cloud security risks — covering IAM over-permissions, misconfigured resources, encryption gaps, and NCA ECC compliance status — with remediation recommendations.</p>
+              <div style={{ marginTop: '18px', padding: '14px', background: 'rgba(0, 0, 0, 0.16)', borderRadius: 'var(--radius-sm)', fontSize: '.8rem', color: 'var(--accent)', border: '1px solid rgba(255, 107, 53, 0.15)' }}>
+                Delivered within: <strong>5 business days</strong>
+              </div>
+            </div>
+            <div className="card premium-card">
+              <div className="card-header" style={{ display: 'flex', alignItems: 'center', gap: '14px', marginBottom: '18px' }}>
+                <div style={{ width: '48px', height: '48px', minWidth: '48px', borderRadius: '14px', background: 'rgba(255, 255, 255, 0.08)', display: 'grid', placeItems: 'center', fontSize: '1.3rem' }}>🗺️</div>
+                <div>
+                  <h3 style={{ margin: 0, fontSize: '1rem', color: '#fff' }}>Optimization Roadmap</h3>
+                </div>
+              </div>
+              <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>A 90-day cloud optimization roadmap with prioritized, effort-vs-impact actions — giving you an immediate plan to follow whether or not you engage GulfStream Technologies.</p>
+              <div style={{ marginTop: '18px', padding: '14px', background: 'rgba(0, 0, 0, 0.16)', borderRadius: 'var(--radius-sm)', fontSize: '.8rem', color: 'var(--accent)', border: '1px solid rgba(255, 107, 53, 0.15)' }}>
+                Yours to keep: <strong>100% free, no strings</strong>
               </div>
             </div>
           </div>
@@ -275,7 +258,7 @@ const BookReviewContent = () => {
           </div>
           <div className="grid-3 reveal">
             <div className="card testimonial-card">
-              <p>&ldquo;The free cloud review identified SAR 42,000 in monthly savings we had no idea existed. The GulfStream team was thorough, fast, and the recommendations were immediately actionable.&rdquo;</p>
+              <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>&ldquo;The free cloud review identified SAR 42,000 in monthly savings we had no idea existed. The GulfStream team was thorough, fast, and the recommendations were immediately actionable.&rdquo;</p>
               <div className="testimonial-author">
                 <div className="author-avatar">AK</div>
                 <div>
@@ -285,7 +268,7 @@ const BookReviewContent = () => {
               </div>
             </div>
             <div className="card testimonial-card">
-              <p>&ldquo;I expected a sales pitch. What I got was a 35-page detailed assessment of our Azure environment with specific remediation steps. We implemented 80% of the recommendations ourselves — the value was immediate.&rdquo;</p>
+              <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>&ldquo;I expected a sales pitch. What I got was a 35-page detailed assessment of our Azure environment with specific remediation steps. We implemented 80% of the recommendations ourselves — the value was immediate.&rdquo;</p>
               <div className="testimonial-author">
                 <div className="author-avatar">FM</div>
                 <div>
@@ -295,7 +278,7 @@ const BookReviewContent = () => {
               </div>
             </div>
             <div className="card testimonial-card">
-              <p>&ldquo;The security findings alone in the free review justified engaging GulfStream. Three publicly accessible S3 buckets we didn&apos;t know about. That&apos;s the kind of expertise that matters.&rdquo;</p>
+              <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>&ldquo;The security findings alone in the free review justified engaging GulfStream. Three publicly accessible S3 buckets we didn&apos;t know about. That&apos;s the kind of expertise that matters.&rdquo;</p>
               <div className="testimonial-author">
                 <div className="author-avatar">SR</div>
                 <div>
@@ -336,7 +319,7 @@ const BookReviewContent = () => {
                     className="faq-answer"
                   >
                     <div className="faq-answer-inner">
-                      <p>{faq.answer}</p>
+                      <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>{faq.answer}</p>
                     </div>
                   </div>
                 </div>
@@ -352,7 +335,6 @@ const BookReviewContent = () => {
           <div className="cta-banner reveal">
             <h2 className="display-md">Ready to Discover Your Cloud Savings?</h2>
             <p>Book your free cloud assessment today — certified cloud experts, actionable insights, and a 90-day roadmap delivered within 5 business days. No cost, no commitment.</p>
-            <p className="cta-urgency">⚡ Limited to 10 free assessments per month — book now</p>
             <div className="cta-actions">
               <a href="#reviewForm" className="btn btn-white btn-lg">📋 Book Free Cloud Assessment</a>
               <Link href="/contact" className="btn-white-outline">Talk to Cloud Experts</Link>

@@ -43,7 +43,7 @@ const Footer = () => {
             <h5>Contact</h5>
             <ul className="footer-links">
               <li><a href="mailto:sales@gulfstreamtech.com.sa">sales@gulfstreamtech.com.sa</a></li>
-              <li><a href="tel:+966053201917">+966 (0) 53 201 917</a></li>
+              <li><a href="tel:+966532019172">+966 53 201 9172</a></li>
             <li className="footer-address">
   <p>
     6526 At Takhassusi Road <br />

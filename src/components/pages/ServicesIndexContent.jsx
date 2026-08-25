@@ -35,7 +35,7 @@ const ServicesIndexContent = () => {
       </section>
 
       {/* SERVICES OVERVIEW */}
-      <section className="section" style={{ background: 'var(--dark-surface)' }} >
+      <section className="section" >
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-primary">🛠️ Our Services</div>
@@ -106,6 +106,83 @@ const ServicesIndexContent = () => {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+            {/* PLATFORM PARTNERS */}
+      <section className="section" style={{ background: 'var(--dark-surface)' }}>
+        <div className="container">
+          <div className="section-header reveal">
+            <div className="badge badge-primary">☁️ Supported Platforms</div>
+            <h2 className="display-md">Multi-Cloud Platform Support</h2>
+            <p>We are certified partners and specialists across all major cloud providers. Unified expertise for AWS, Microsoft Cloud, Google Cloud, and Oracle Cloud environments in Saudi Arabia.</p>
+          </div>
+          <div className="grid-4 reveal">
+            <div className="card premium-card">
+              <div className="platform-logo-container">
+                <Image
+                  src="/assets/images/logo-aws.png"
+                  alt="Amazon Web Services"
+                  fill
+                  className="platform-logo"
+                  priority
+                />
+              </div>
+              <h3 style={{ margin: '1rem 0 0.5rem 0', textAlign: 'center', width: '100%', wordWrap: 'break-word', whiteSpace: 'normal' }}>Amazon Web Services</h3>
+              <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)', textAlign: 'center' }}>AWS management including EC2 optimization, S3 storage governance, cost reduction, and multi-region disaster recovery with certified AWS architects.</p>
+              <div style={{ textAlign: 'center', marginTop: '16px' }}>
+                <Link href="/services/cloud-managed-services/aws" className="btn btn-accent btn-sm">Explore AWS Services →</Link>
+              </div>
+            </div>
+            <div className="card premium-card">
+              <div className="platform-logo-container">
+                <Image
+                  src="/assets/images/logo-azure.png"
+                  alt="Microsoft (Azure/M365)"
+                  fill
+                  className="platform-logo"
+                  priority
+                />
+              </div>
+              <h3 style={{ margin: '1rem 0 0.5rem 0', textAlign: 'center', width: '100%', wordWrap: 'break-word', whiteSpace: 'normal' }}>Microsoft (Azure/M365)</h3>
+              <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)', textAlign: 'center' }}>End-to-end Azure management covering VMs, App Services, databases, security, and hybrid cloud integration with proven Microsoft certification expertise.</p>
+              <div style={{ textAlign: 'center', marginTop: '16px' }}>
+                <Link href="/services/cloud-managed-services/microsoft-cloud" className="btn btn-accent btn-sm">Explore Microsoft Cloud Services →</Link>
+              </div>
+            </div>
+            <div className="card premium-card">
+              <div className="platform-logo-container">
+                <Image
+                  src="/assets/images/logo-gcp.png"
+                  alt="Google Cloud"
+                  fill
+                  className="platform-logo"
+                  priority
+                />
+              </div>
+              <h3 style={{ margin: '1rem 0 0.5rem 0', textAlign: 'center', width: '100%', wordWrap: 'break-word', whiteSpace: 'normal' }}>Google Cloud</h3>
+              <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)', textAlign: 'center' }}>Advanced GCP operations including Compute Engine, BigQuery analytics, Kubernetes clusters, and data residency compliance for Saudi organizations.</p>
+              <div style={{ textAlign: 'center', marginTop: '16px' }}>
+                <Link href="/services/cloud-managed-services/google" className="btn btn-accent btn-sm">Explore Google Cloud Services →</Link>
+              </div>
+            </div>
+            <div className="card premium-card">
+              <div className="platform-logo-container">
+                <Image
+                  src="/assets/images/logo-oracle.png"
+                  alt="Oracle Cloud"
+                  fill
+                  className="platform-logo"
+                  priority
+                />
+              </div>
+              <h3 style={{ margin: '1rem 0 0.5rem 0', textAlign: 'center', width: '100%', wordWrap: 'break-word', whiteSpace: 'normal' }}>Oracle Cloud</h3>
+              <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)', textAlign: 'center' }}>Specialized Oracle Cloud expertise for database workloads, enterprise applications, and hybrid infrastructure with certified Oracle specialists.</p>
+              <div style={{ textAlign: 'center', marginTop: '16px' }}>
+                <Link href="/services/cloud-managed-services/oracle" className="btn btn-accent btn-sm">Explore Oracle Cloud Services →</Link>
+              </div>
+            </div>
+          </div>
+          
         </div>
       </section>
 

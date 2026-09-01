@@ -78,4 +78,8 @@ export const NAV_SERVICES = [
       { label: 'IT Projects & Deployments', href: '/it-services/it-projects-deployments', icon: '🚀' },
     ],
   },
+  {
+    label: 'Manpower Services',
+    href: '/manpower-services',
+  },
 ];

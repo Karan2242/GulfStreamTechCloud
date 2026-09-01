@@ -25,6 +25,7 @@ export default function sitemap() {
     '/services/cloud-billing-management',
     '/services/cloud-migration',
     '/services/cloud-security-governance',
+    '/manpower-services',
     '/it-services',
     '/it-services/managed-it-support',
     '/it-services/networking-infrastructure',

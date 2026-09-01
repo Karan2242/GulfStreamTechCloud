@@ -117,8 +117,22 @@ img {
   display: block;
 }
 
-ul {
-  list-style: none;
+.check-list {
+  list-style: disc;
+  padding-left: 1.2rem;
+  margin: 16px 0 0;
+  display: grid;
+  gap: 8px;
+}
+
+.check-list li {
+  color: var(--text-secondary);
+  font-size: 0.78rem;
+  line-height: 1.6;
+}
+
+.check-list li::marker {
+  color: var(--accent);
 }
 
 button {
@@ -2742,8 +2756,19 @@ h5 {
   margin-bottom: 20px;
 }
 
+.footer-links {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
 .footer-links li {
   margin-bottom: 10px;
+  list-style: none;
+}
+
+.footer-links li::before {
+  content: none;
 }
 
 .footer-links a {
@@ -3502,14 +3527,94 @@ textarea.form-control {
   font-weight: 600;
 }
 
+.resource-process-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 18px;
+  align-items: stretch;
+}
+
+.resource-process-card {
+  min-height: 100%;
+  padding: 22px 18px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background: linear-gradient(180deg, rgba(19, 31, 52, 0.96), rgba(9, 18, 31, 0.96));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.18);
+}
+
+.resource-process-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #0052CC 0%, #FF6B35 100%);
+  opacity: 1;
+}
+
+.resource-process-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.resource-process-step {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: var(--text-primary);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.resource-process-icon {
+  font-size: 1.35rem;
+  line-height: 1;
+  opacity: 0.95;
+}
+
+.resource-process-card h3 {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.35;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+}
+
+.resource-process-card p {
+  margin: 0;
+  font-size: 0.78rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
+
 @media (max-width: 1200px) {
   .delivery-process {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .resource-process-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
 @media (max-width: 768px) {
   .delivery-process {
+    grid-template-columns: 1fr;
+  }
+
+  .resource-process-grid {
     grid-template-columns: 1fr;
   }
 }

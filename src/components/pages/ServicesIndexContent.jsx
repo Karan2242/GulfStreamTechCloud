@@ -3,12 +3,10 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { useRouter } from 'next/navigation';
 import { useReveal } from '@/hooks/useReveal';
 
 const ServicesIndexContent = () => {
   useReveal();
-  const router = useRouter();
 
   return (
     <main>
@@ -18,7 +16,7 @@ const ServicesIndexContent = () => {
           <div className="breadcrumb">
             <Link href="/">Home</Link><span>›</span><span>Services</span>
           </div>
-          <h1 className="display-lg">Managed Cloud Services <span className="text-gradient">in Saudi Arabia</span></h1>
+          <h1 className="display-lg"><span className="text-gradient">Enterprise Cloud Services in Saudi Arabia</span></h1>
           <p >GulfStream Technologies delivers enterprise multi-Managed Cloud Services across AWS, Microsoft Cloud, Google Cloud, and Oracle Cloud for organizations across Saudi Arabia. We Operate, Optimize, Secure, Govern, and Modernize your cloud — reducing costs by up to 30% while maintaining 99.99% uptime.</p>
           <div style={{ display: 'flex', gap: '16px', justifyContent: 'left', flexWrap: 'wrap', marginTop: '8px' }}>
             <Link href="/book-a-review" className="btn btn-primary btn-lg">Book Your Free Cloud Cost Assessment</Link>
@@ -43,8 +41,7 @@ const ServicesIndexContent = () => {
             <p >Explore our full range of managed cloud services — each designed to deliver measurable outcomes for Saudi enterprises.</p>
           </div>
           <div className="services-grid">
-            <div className="service-link-wrapper" style={{ textDecoration: 'none', color: 'inherit', cursor: 'pointer' }} onClick={() => router.push('/services/cloud-managed-services')}>
-              <div className="service-card premium-card reveal">
+            <div className="service-card premium-card reveal">
                 <Image src="/assets/images/service-monitoring.png" alt="Managed cloud monitoring dashboard" className="service-image" width={800} height={450} />
                 <div className="service-content">
                   <h3>Managed Cloud Services</h3>
@@ -52,10 +49,8 @@ const ServicesIndexContent = () => {
                   <Link href="/services/cloud-managed-services" className="btn btn-accent btn-sm">Optimize Your Cloud Operations →</Link>
 
                 </div>
-              </div>
             </div>
-            <div className="service-link-wrapper" style={{ textDecoration: 'none', color: 'inherit', cursor: 'pointer' }} onClick={() => router.push('/services/finops-cost-optimization')}>
-              <div className="service-card premium-card reveal">
+            <div className="service-card premium-card reveal">
                 <Image src="/assets/images/service-finops.png" alt="FinOps cost optimization analytics" className="service-image" width={800} height={450} />
                 <div className="service-content">
                   <h3>Cloud FinOps & Cost Optimization</h3>
@@ -63,48 +58,39 @@ const ServicesIndexContent = () => {
                   <Link href="/services/finops-cost-optimization" className="btn btn-accent btn-sm">Unlock Cloud Cost Savings →</Link>
 
                 </div>
-              </div>
             </div>
-            <div className="service-link-wrapper" style={{ textDecoration: 'none', color: 'inherit', cursor: 'pointer' }} onClick={() => router.push('/services/cloud-billing-management')}>
-              <div className="service-card premium-card reveal">
+            <div className="service-card premium-card reveal">
                 <Image src="/assets/images/service-billing.png" alt="Cloud billing and chargeback reporting" className="service-image" width={800} height={450} />
                 <div className="service-content">
                   <h3>Cloud Billing Management</h3>
                   <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>Centralized billing, chargeback reporting, and spend analytics across multiple accounts and teams. Gain accurate cost attribution so that each and every money spent on cloud is justified and trackable.</p>
                   <Link href="/services/cloud-billing-management" className="btn btn-accent btn-sm">Simplify Cloud Billing & Spend →</Link>
                 </div>
-              </div>
             </div>
-            <div className="service-link-wrapper" style={{ textDecoration: 'none', color: 'inherit', cursor: 'pointer' }} onClick={() => router.push('/services/cloud-migration')}>
-              <div className="service-card premium-card reveal">
+            <div className="service-card premium-card reveal">
                 <Image src="/assets/images/service-migration.png" alt="Cloud migration and modernization roadmap" className="service-image" width={800} height={450} />
                 <div className="service-content">
                   <h3>Cloud Migration & Modernization</h3>
                   <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>Migrate legacy on-premises workloads to AWS, Microsoft, Google Cloud, or Oracle Cloud with zero business disruption. We design, plan, and execute cloud migrations following proven rehost, replatform, and refactor strategies.</p>
-                  <Link href="/services/cloud-migration" className="btn btn-accent btn-sm">Accelerate Your Cloud Migration→</Link>
+                  <Link href="/services/cloud-migration" className="btn btn-accent btn-sm">Accelerate Your Cloud Migration →</Link>
                 </div>
-              </div>
             </div>
-            <div className="service-link-wrapper" style={{ textDecoration: 'none', color: 'inherit', cursor: 'pointer' }} onClick={() => router.push('/services/cloud-security-governance')}>
-              <div className="service-card premium-card reveal">
+            <div className="service-card premium-card reveal">
                 <Image src="/assets/images/service-security.png" alt="Cloud security governance and compliance" className="service-image" width={800} height={450} />
                 <div className="service-content">
                   <h3>Cloud Security & Governance</h3>
                   <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>Enterprise-level cloud security including IAM governance, NCA ECC compliance automation, security posture management, and continuous threat detection across AWS, Microsoft, Google Cloud, and Oracle Cloud environments.</p>
                   <Link href="/services/cloud-security-governance" className="btn btn-accent btn-sm">Strengthen Your Cloud Security →</Link>
                 </div>
-              </div>
             </div>
-            <div className="service-link-wrapper" style={{ textDecoration: 'none', color: 'inherit', cursor: 'pointer' }} onClick={() => router.push('/contact')}>
-              <div className="service-card premium-card reveal">
+            <div className="service-card premium-card reveal">
                 <Image src="/assets/images/service-custom.png" alt="Custom cloud solutions architecture" className="service-image" width={800} height={450} />
                 <div className="service-content">
                   <h3>Custom Cloud Solutions</h3>
                   <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>Need a cloud service tailored to your specific requirements? We design and deliver custom cloud solutions for enterprises across Saudi Arabia — from Kubernetes management to multi-cloud architecture.</p>
-                  <Link href="/services/custom-cloud-solutions" className="btn btn-accent btn-sm">Tailor Your Cloud Experience →</Link>
+                  <Link href="/contact" className="btn btn-accent btn-sm">Tailor Your Cloud Experience →</Link>
                 </div>
               </div>
-            </div>
           </div>
         </div>
       </section>

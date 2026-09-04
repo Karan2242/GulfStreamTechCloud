@@ -1,84 +1,315 @@
-'use client';
-
-import React, { useState } from 'react';
-import { useRouter } from 'next/navigation';
+import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { useReveal } from '@/hooks/useReveal';
+import HomeFaqSection from '@/components/pages/home/HomeFaqSection';
 
-const HomeContent = () => {
-  const router = useRouter();
-  useReveal();
+const coreCapabilities = [
+  {
+    title: 'Cloud Services',
+    image: '/assets/images/service-custom.png',
+    eyebrow: 'CLOUD TRANSFORMATION',
+    description:
+      'Modernize, migrate and optimize AWS, Azure, Google Cloud and Oracle Cloud environments for secure growth.',
+    href: '/services',
+    cta: 'Explore Cloud Services →',
+  },
+  {
+    title: 'AI Services',
+    image: '/assets/images/ai-services.png',
+    eyebrow: 'APPLIED AI',
+    description:
+      'Move from high-value use cases to secure, production-ready AI applications and business process automation.',
+    href: '/ai-services',
+    cta: 'Explore AI Services →',
+  },
+  {
+    title: 'IT Services',
+    image: '/assets/images/it-services.png',
+    eyebrow: 'MANAGED IT OPERATIONS',
+    description:
+      'Strengthen infrastructure, networking and cybersecurity with reliable managed IT support and delivery.',
+    href: '/it-services',
+    cta: 'Explore IT Services →',
+  },
+  {
+    title: 'Manpower Services',
+    image: '/assets/images/manpower-services.png',
+    eyebrow: 'SPECIALIST TECHNOLOGY TALENT',
+    description:
+      'Extend delivery capacity with experienced cloud, AI, data, cybersecurity and enterprise IT specialists.',
+    href: '/manpower-services',
+    cta: 'Explore Manpower Services →',
+  },
+];
 
-  const [openFaqIndex, setOpenFaqIndex] = useState(null);
+const businessChallenges = [
+  {
+    title: 'Cloud Complexity',
+    icon: '🌐',
+    description:
+      'Modernize, migrate and manage complex cloud environments while improving visibility, performance and control.',
+  },
+  {
+    title: 'Rising Technology Costs',
+    icon: '💰',
+    description:
+      'Improve cloud and IT cost visibility, governance and operational efficiency.',
+  },
+  {
+    title: 'AI Uncertainty',
+    icon: '🧠',
+    description:
+      'Identify practical AI use cases and move from experimentation to secure, production-ready implementation.',
+  },
+  {
+    title: 'IT Operational Pressure',
+    icon: '🔒',
+    description:
+      'Improve reliability, support, cybersecurity and infrastructure performance through managed IT services.',
+  },
+  {
+    title: 'Technology Talent Shortages',
+    icon: '🎯',
+    description:
+      'Quickly access specialized technology professionals and delivery teams without the overhead of building internal capacity.',
+  },
+  {
+    title: 'Digital Transformation Delivery',
+    icon: '🚀',
+    description:
+      'Turn technology strategy into measurable progress with a practical roadmap, accountable delivery and continuous optimization.',
+  },
+];
 
-  
+const deliverySteps = [
+  {
+    number: '01',
+    title: 'Discover',
+    description:
+      'Understand the business goals, priorities, data, existing environment and constraints before proposing technology.',
+  },
+  {
+    number: '02',
+    title: 'Design',
+    description:
+      'Shape the right architecture, roadmap and engagement model for your goals.',
+  },
+  {
+    number: '03',
+    title: 'Implement',
+    description:
+      'Deliver cloud, AI, infrastructure, applications and technology initiatives with structured execution.',
+  },
+  {
+    number: '04',
+    title: 'Operate',
+    description:
+      'Run and support environments with monitoring, security, governance and dependable operations.',
+  },
+  {
+    number: '05',
+    title: 'Optimize',
+    description:
+      'Continuously improve cost, performance, security, scalability and business value over time.',
+  },
+];
 
-    const homeFaqs = [
-    {
-      question: 'What are Managed Cloud Services?',
-      answer: 'Managed Cloud Services involve outsourcing cloud operations, security, monitoring, and optimization to certified experts.',
-    },
-    {
-      question: 'How much can you save on cloud costs?',
-      answer: 'Our clients typically save 25-35% on cloud spend through rightsizing, reserved capacity, and ongoing FinOps governance.',
-    },
-    {
-      question: 'How quickly can you see results?',
-      answer: 'Most organizations see measurable savings and stability improvements within 60-90 days of starting with us.',
-    },
-    {
-      question: 'Do you support AWS, Microsoft Cloud, Google Cloud, and Oracle Cloud?',
-      answer: 'Yes. We manage AWS, Microsoft Cloud, Google Cloud, Oracle Cloud, and hybrid environments with unified visibility and control.',
-    },
-    {
-      question: 'Why choose GulfStream for cloud management in Saudi Arabia?',
-      answer: 'A local Saudi team with multi-cloud certifications, FinOps expertise, and Saudi compliance experience delivers faster outcomes.',
-    },
-  ];
+const industries = [
+  { title: 'Retail & E-commerce', icon: '🛒' },
+  { title: 'Healthcare', icon: '🏥' },
+  { title: 'Logistics & Supply Chain', icon: '🚛' },
+  { title: 'Technology & SaaS', icon: '💻' },
+  { title: 'Professional Services', icon: '🏢' },
+];
 
+const engagementModels = [
+  {
+    icon: '🧭',
+    title: 'Consulting',
+    description: 'Strategy, assessment and advisory to shape the right technology decisions.',
+  },
+  {
+    icon: '⚙️',
+    title: 'Managed Services',
+    description:
+      'Ongoing operation of cloud and IT with monitoring, security and service-level management.',
+  },
+  {
+    icon: '🚀',
+    title: 'Project-Based Delivery',
+    description:
+      'Defined-scope technology programs delivered with structured execution and clear outcomes.',
+  },
+  {
+    icon: '👥',
+    title: 'Staff Augmentation',
+    description: 'Skilled technology professionals who embed into and extend your teams.',
+  },
+  {
+    icon: '🤝',
+    title: 'Dedicated Teams',
+    description: 'A committed technology team aligned to your goals, roadmap and ways of working.',
+  },
+  {
+    icon: '🔗',
+    title: 'Long-Term Partnership',
+    description:
+      'A continuing relationship across strategy, delivery, operations and optimization.',
+  },
+];
+
+const differentiators = [
+  {
+    title: 'GCC-Focused Expertise',
+    icon: '🌍',
+    description:
+      'Built around the priorities, expectations and operating context of organizations across the GCC.',
+  },
+  {
+    title: 'Four Integrated Capabilities',
+    icon: '🔗',
+    description:
+      'Cloud, AI, IT and technology talent under one accountable partner.',
+  },
+  {
+    title: 'Business-First Approach',
+    icon: '📈',
+    description:
+      'We solve business problems, not just technical ones, starting from measurable outcomes.',
+  },
+  {
+    title: 'Enterprise-Ready Delivery',
+    icon: '🏗️',
+    description:
+      'Structured, secure and dependable delivery designed for complex organizations.',
+  },
+  {
+    title: 'Flexible Engagement',
+    icon: '🧩',
+    description:
+      'Consulting, managed services, projects, staff augmentation and dedicated teams as you need them.',
+  },
+  {
+    title: 'Security-Conscious Delivery',
+    icon: '🛡️',
+    description:
+      'Security, governance and operational resilience considered across the solutions we design and support.',
+  },
+];
+
+const featuredInsights = [
+  {
+    slug: 'cloud-cost-optimization-strategy',
+    category: 'FinOps',
+    title: 'Cloud Cost Optimization Strategy: A Complete Framework',
+    summary:
+      'Learn proven FinOps methodologies to reduce cloud costs through rightsizing, commitment planning, and governance.',
+    readTime: '8 min read',
+  },
+  {
+    slug: 'cloud-iam-security-best-practices',
+    category: 'Security',
+    title: 'Cloud IAM Security Best Practices: AWS, Azure, GCP',
+    summary:
+      'Implement zero-trust identity models, least privilege, and MFA across modern cloud operations.',
+    readTime: '8 min read',
+  },
+  {
+    slug: 'cloud-migration-planning',
+    category: 'Migration',
+    title: 'Cloud Migration Planning Strategy: From Discovery to Go-Live',
+    summary:
+      'A practical framework for assessment, design, validation, and cutover planning in enterprise migration programs.',
+    readTime: '10 min read',
+  },
+  {
+    slug: 'auto-scaling-architecture',
+    category: 'Architecture',
+    title: 'Auto-Scaling Cloud Architecture: Design Patterns',
+    summary:
+      'Build elastic architecture patterns that improve performance while keeping infrastructure spend controlled.',
+    readTime: '10 min read',
+  },
+];
+
+const trustPoints = [
+  { label: 'GCC Market Expertise', description: 'Saudi Arabia and regional delivery context' },
+  { label: 'Business-First Advisory', description: 'Technology roadmaps tied to outcomes' },
+  { label: 'Multi-Cloud Capability', description: 'AWS, Azure, Google Cloud and Oracle Cloud' },
+  { label: 'Enterprise Delivery', description: 'Structured programs for complex environments' },
+  { label: 'Cloud Cost Governance', description: 'FinOps visibility, control and optimization' },
+  { label: 'Secure AI Adoption', description: 'Responsible AI use cases and governance' },
+  { label: 'Managed IT Operations', description: 'Reliable infrastructure and service support' },
+  { label: 'Cybersecurity Focus', description: 'Risk, resilience and compliance by design' },
+  { label: 'Specialist Technology Talent', description: 'Cloud, data, engineering and security experts' },
+  { label: 'One Accountable Partner', description: 'Strategy, delivery, operations and optimization' },
+];
+
+const heroTrustPoints = ['24/7 Monitoring & Support', 'FinOps-Led Cost Control', 'Secure Enterprise Delivery'];
+
+const integrationCapabilities = [
+  {
+    number: '01',
+    title: 'Cloud Foundation',
+    description: 'Secure, scalable infrastructure for enterprise applications and data.',
+  },
+  {
+    number: '02',
+    title: 'Applied AI',
+    description: 'Practical automation and intelligence connected to measurable business value.',
+  },
+  {
+    number: '03',
+    title: 'Reliable IT',
+    description: 'Managed operations, cybersecurity and resilience that keep teams productive.',
+  },
+  {
+    number: '04',
+    title: 'Specialist Talent',
+    description: 'Experienced cloud, data and engineering professionals to extend delivery capacity.',
+  },
+];
+
+function SectionHeader({ badgeClass, badgeText, title, description }) {
   return (
-    <main>
-      {/* HERO SECTION */}
+    <div className="section-header">
+      <div className={badgeClass}>{badgeText}</div>
+      <h2 className="display-md">{title}</h2>
+      {description ? <p>{description}</p> : null}
+    </div>
+  );
+}
+
+export default function HomeContent() {
+  return (
+    <main className="home-page">
       <section className="hero">
         <div className="container">
-          <div className="hero-grid"> 
+          <div className="hero-grid">
             <div className="hero-content">
-              <div className="hero-badge">
-                Saudi Arabia&apos;s Multi-Cloud Partner
-              </div>
-              <div style={{ width: '40px', height: '3px', backgroundColor: '#00AEEF', marginBottom: '20px' }}></div>
-              <h1 className="hero-title">
-                Multi-Cloud Managed Services in Saudi Arabia
-              </h1>
-              <p className="hero-subtitle">AWS · Microsoft · Google Cloud · Oracle Cloud</p>
+              <div className="hero-badge"><span className="text-gradient">ONE TECHNOLOGY PARTNER. FOUR CORE CAPABILITIES.</span></div>
+              
+              <h1 className="hero-title"><span>Empowering Digital Transformation Across <span className="text-gradient">Saudi Arabia & the GCC</span></span></h1>
               <p className="hero-desc">
-We reduce cloud costs, improve reliability, and scale operations 
-      for Saudi SMBs and mid-market enterprises — with SLA-backed, 
-      FinOps-driven managed cloud.              </p>
+                GulfStream Technologies helps organizations modernize cloud infrastructure, adopt practical AI, strengthen IT operations and access specialized technology talent through one coordinated technology partner.
+              </p>
               <div className="hero-actions">
-                <Link href="/book-a-review" className="btn btn-primary btn-lg">
-                  Get a Free Cloud Cost & Ops Review →
+                <Link href="/contact" className="btn btn-primary btn-lg">
+                  Talk to a Technology Expert
                 </Link>
-                <Link href="/contact" className="btn btn-cta-white btn-lg">
-                  <span className="gradient-text">Book a Call →</span>
+                <Link href="/services" className="btn btn-cta-white btn-lg">
+                  <span className="gradient-text">Explore Our Services</span>
                 </Link>
               </div>
-              <div className="hero-stats">
-                <div className="hero-stat">
-                  <div className="hero-stat-value">✓</div>
-                  <div className="hero-stat-label">SLA-Backed Operations</div>
-                </div>
-                <div className="hero-stat">
-                  <div className="hero-stat-value">✓</div>
-                  <div className="hero-stat-label">FinOps Certified</div>
-                </div>
-                <div className="hero-stat">
-                  <div className="hero-stat-value">✓</div>
-                  <div className="hero-stat-label">24/7 NOC Support</div>
-                </div>
+              <div className="hero-trust-points" aria-label="GulfStream service commitments">
+                {heroTrustPoints.map((point) => (
+                  <div className="hero-trust-point" key={point}>
+                    <span className="hero-trust-check" aria-hidden="true">✓</span>
+                    <span>{point}</span>
+                  </div>
+                ))}
               </div>
-            </div>
+             </div>
 
             <div className="hero-visual">
               <div className="hero-background-pattern"></div>
@@ -87,475 +318,249 @@ We reduce cloud costs, improve reliability, and scale operations
         </div>
       </section>
 
-      {/* TRUST INDICATORS BAR */}
-      <div className="trust-bar" >
+      <section className="trust-bar home-trust-bar" aria-label="Why organizations choose GulfStream Technologies">
         <div className="marquee-wrapper">
-          <div className="marquee-track">
-            <div className="trust-item">
-              <div className="trust-icon">💰</div>
-              <div>
-                <div className="trust-label">FinOps-Driven Operations</div>
-                <div className="trust-desc">Continuous cloud cost optimization</div>
-              </div>
-            </div>
-            <div className="trust-item">
-              <div className="trust-icon">🔒</div>
-              <div>
-                <div className="trust-label">Security-First Architecture</div>
-                <div className="trust-desc">Proactive security and compliance</div>
-              </div>
-            </div>
-            <div className="trust-item">
-              <div className="trust-icon">🇸🇦</div>
-              <div>
-                <div className="trust-label">Saudi Compliance Expertise</div>
-                <div className="trust-desc">NCA ECC and data residency</div>
-              </div>
-            </div>
-            <div className="trust-item">
-              <div className="trust-icon">☁️</div>
-              <div>
-                <div className="trust-label">Multi-Cloud Certified Team</div>
-                <div className="trust-desc">AWS, Azure, GCP, Oracle</div>
-              </div>
-            </div>
-            <div className="trust-item">
-              <div className="trust-icon">📈</div>
-              <div>
-                <div className="trust-label">Outcome-Based Delivery</div>
-                <div className="trust-desc">Focused on measurable outcomes</div>
-              </div>
-            </div>
-          </div>
-          <div className="marquee-track" aria-hidden="true">
-            <div className="trust-item">
-              <div className="trust-icon">💰</div>
-              <div>
-                <div className="trust-label">FinOps-Driven Operations</div>
-                <div className="trust-desc">Continuous cloud cost optimization</div>
-              </div>
-            </div>
-            <div className="trust-item">
-              <div className="trust-icon">🔒</div>
-              <div>
-                <div className="trust-label">Security-First Architecture</div>
-                <div className="trust-desc">Proactive security and compliance</div>
-              </div>
-            </div>
-            <div className="trust-item">
-              <div className="trust-icon">🇸🇦</div>
-              <div>
-                <div className="trust-label">Saudi Compliance Expertise</div>
-                <div className="trust-desc">NCA ECC and data residency</div>
-              </div>
-            </div>
-            <div className="trust-item">
-              <div className="trust-icon">☁️</div>
-              <div>
-                <div className="trust-label">Multi-Cloud Certified Team</div>
-                <div className="trust-desc">AWS, Azure, GCP, Oracle</div>
-              </div>
-            </div>
-            <div className="trust-item">
-              <div className="trust-icon">📈</div>
-              <div>
-                <div className="trust-label">Outcome-Based Delivery</div>
-                <div className="trust-desc">Focused on measurable outcomes</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* SERVICES OVERVIEW */}
-      <section className="section" >
-        <div className="container">
-          <div className="section-header reveal">
-            <div className="badge badge-primary">🛠️ Our Services</div>
-            <h2 className="display-md">What We Deliver</h2>
-            <p >Explore our full range of managed cloud services — each designed to deliver measurable outcomes for Saudi enterprises.</p>
-          </div>
-          <div className="services-grid">
-            <div className="service-link-wrapper" style={{ textDecoration: 'none', color: 'inherit', cursor: 'pointer' }} onClick={() => router.push('/services/cloud-managed-services')}>
-              <div className="service-card premium-card reveal">
-                <Image src="/assets/images/service-monitoring.png" alt="Managed cloud monitoring dashboard" className="service-image" width={800} height={450} />
-                <div className="service-content">
-                  <h3>Managed Cloud Services</h3>
-                  <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>End-to-end managed cloud operations across AWS, Microsoft, Google Cloud & Oracle Cloud — 24/7 monitoring, incident response, security governance, and FinOps cost optimization for your entire cloud estate in Saudi Arabia.</p>
-                  <Link href="/services/cloud-managed-services" className="btn btn-accent btn-sm">Optimize Your Cloud Operations →</Link>
-
+          {[0, 1].map((track) => (
+            <div className="marquee-track" key={track} aria-hidden={track === 1}>
+              {trustPoints.map((point) => (
+                <div className="trust-item" key={`${track}-${point.label}`}>
+                  <span>
+                    <span className="trust-label">{point.label}</span>
+                    <span className="trust-desc">{point.description}</span>
+                  </span>
                 </div>
-              </div>
+              ))}
             </div>
-            <div className="service-link-wrapper" style={{ textDecoration: 'none', color: 'inherit', cursor: 'pointer' }} onClick={() => router.push('/services/finops-cost-optimization')}>
-              <div className="service-card premium-card reveal">
-                <Image src="/assets/images/service-finops.png" alt="FinOps cost optimization analytics" className="service-image" width={800} height={450} />
-                <div className="service-content">
-                  <h3>Cloud FinOps & Cost Optimization</h3>
-                  <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>Apply the FinOps framework to gain full visibility into cloud spend, eliminate waste, rightsize resources, and achieve sustainable cost governance — delivering an average 30% cost reduction across your cloud estate.</p>
-                  <Link href="/services/finops-cost-optimization" className="btn btn-accent btn-sm">Unlock Cloud Cost Savings →</Link>
-
-                </div>
-              </div>
-            </div>
-            <div className="service-link-wrapper" style={{ textDecoration: 'none', color: 'inherit', cursor: 'pointer' }} onClick={() => router.push('/services/cloud-billing-management')}>
-              <div className="service-card premium-card reveal">
-                <Image src="/assets/images/service-billing.png" alt="Cloud billing and chargeback reporting" className="service-image" width={800} height={450} />
-                <div className="service-content">
-                  <h3>Cloud Billing Management</h3>
-                  <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>Centralized billing, chargeback reporting, and spend analytics across multiple accounts and teams. Gain accurate cost attribution so that each and every money spent on cloud is justified and trackable.</p>
-                  <Link href="/services/cloud-billing-management" className="btn btn-accent btn-sm">Simplify Cloud Billing & Spend →</Link>
-                </div>
-              </div>
-            </div>
-            <div className="service-link-wrapper" style={{ textDecoration: 'none', color: 'inherit', cursor: 'pointer' }} onClick={() => router.push('/services/cloud-migration')}>
-              <div className="service-card premium-card reveal">
-                <Image src="/assets/images/service-migration.png" alt="Cloud migration and modernization roadmap" className="service-image" width={800} height={450} />
-                <div className="service-content">
-                  <h3>Cloud Migration & Modernization</h3>
-                  <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>Migrate legacy on-premises workloads to AWS, Microsoft, Google Cloud, or Oracle Cloud with zero business disruption. We design, plan, and execute cloud migrations following proven rehost, replatform, and refactor strategies.</p>
-                  <Link href="/services/cloud-migration" className="btn btn-accent btn-sm">Accelerate Your Cloud Migration→</Link>
-                </div>
-              </div>
-            </div>
-            <div className="service-link-wrapper" style={{ textDecoration: 'none', color: 'inherit', cursor: 'pointer' }} onClick={() => router.push('/services/cloud-security-governance')}>
-              <div className="service-card premium-card reveal">
-                <Image src="/assets/images/service-security.png" alt="Cloud security governance and compliance" className="service-image" width={800} height={450} />
-                <div className="service-content">
-                  <h3>Cloud Security & Governance</h3>
-                  <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>Enterprise-level cloud security including IAM governance, NCA ECC compliance automation, security posture management, and continuous threat detection across AWS, Microsoft, Google Cloud, and Oracle Cloud environments.</p>
-                  <Link href="/services/cloud-security-governance" className="btn btn-accent btn-sm">Strengthen Your Cloud Security →</Link>
-                </div>
-              </div>
-            </div>
-            <div className="service-link-wrapper" style={{ textDecoration: 'none', color: 'inherit', cursor: 'pointer' }} onClick={() => router.push('/contact')}>
-              <div className="service-card premium-card reveal">
-                <Image src="/assets/images/service-custom.png" alt="Custom cloud solutions architecture" className="service-image" width={800} height={450} />
-                <div className="service-content">
-                  <h3>Custom Cloud Solutions</h3>
-                  <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>Need a cloud service tailored to your specific requirements? We design and deliver custom cloud solutions for enterprises across Saudi Arabia — from Kubernetes management to multi-cloud architecture.</p>
-                  <Link href="/services/custom-cloud-solutions" className="btn btn-accent btn-sm">Tailor Your Cloud Experience →</Link>
-                </div>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
       </section>
 
-      {/* PLATFORM PARTNERS */}
-      <section className="section" style={{ background: 'var(--dark-surface)' }}>
-        <div className="container">
-          <div className="section-header reveal">
-            <div className="badge badge-primary">☁️ Supported Platforms</div>
-            <h2 className="display-md">Multi-Cloud Platform Support</h2>
-            <p>We are certified partners and specialists across all major cloud providers. Unified expertise for AWS, Microsoft Cloud, Google Cloud, and Oracle Cloud environments in Saudi Arabia.</p>
-          </div>
-          <div className="grid-4 reveal">
-            <div className="card premium-card">
-              <div className="platform-logo-container">
-                <Image
-                  src="/assets/images/logo-aws.png"
-                  alt="Amazon Web Services"
-                  fill
-                  className="platform-logo"
-                  priority
-                />
-              </div>
-              <h3 style={{ margin: '1rem 0 0.5rem 0', textAlign: 'center', width: '100%', wordWrap: 'break-word', whiteSpace: 'normal' }}>Amazon Web Services</h3>
-              <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)', textAlign: 'center' }}>AWS management including EC2 optimization, S3 storage governance, cost reduction, and multi-region disaster recovery with certified AWS architects.</p>
-              <div style={{ textAlign: 'center', marginTop: '16px' }}>
-                <Link href="/services/cloud-managed-services/aws" className="btn btn-accent btn-sm">Explore AWS Services →</Link>
-              </div>
-            </div>
-            <div className="card premium-card">
-              <div className="platform-logo-container">
-                <Image
-                  src="/assets/images/logo-azure.png"
-                  alt="Microsoft (Azure/M365)"
-                  fill
-                  className="platform-logo"
-                  priority
-                />
-              </div>
-              <h3 style={{ margin: '1rem 0 0.5rem 0', textAlign: 'center', width: '100%', wordWrap: 'break-word', whiteSpace: 'normal' }}>Microsoft (Azure/M365)</h3>
-              <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)', textAlign: 'center' }}>End-to-end Azure management covering VMs, App Services, databases, security, and hybrid cloud integration with proven Microsoft certification expertise.</p>
-              <div style={{ textAlign: 'center', marginTop: '16px' }}>
-                <Link href="/services/cloud-managed-services/microsoft-cloud" className="btn btn-accent btn-sm">Explore Microsoft Cloud Services →</Link>
-              </div>
-            </div>
-            <div className="card premium-card">
-              <div className="platform-logo-container">
-                <Image
-                  src="/assets/images/logo-gcp.png"
-                  alt="Google Cloud"
-                  fill
-                  className="platform-logo"
-                  priority
-                />
-              </div>
-              <h3 style={{ margin: '1rem 0 0.5rem 0', textAlign: 'center', width: '100%', wordWrap: 'break-word', whiteSpace: 'normal' }}>Google Cloud</h3>
-              <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)', textAlign: 'center' }}>Advanced GCP operations including Compute Engine, BigQuery analytics, Kubernetes clusters, and data residency compliance for Saudi organizations.</p>
-              <div style={{ textAlign: 'center', marginTop: '16px' }}>
-                <Link href="/services/cloud-managed-services/google" className="btn btn-accent btn-sm">Explore Google Cloud Services →</Link>
-              </div>
-            </div>
-            <div className="card premium-card">
-              <div className="platform-logo-container">
-                <Image
-                  src="/assets/images/logo-oracle.png"
-                  alt="Oracle Cloud"
-                  fill
-                  className="platform-logo"
-                  priority
-                />
-              </div>
-              <h3 style={{ margin: '1rem 0 0.5rem 0', textAlign: 'center', width: '100%', wordWrap: 'break-word', whiteSpace: 'normal' }}>Oracle Cloud</h3>
-              <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)', textAlign: 'center' }}>Specialized Oracle Cloud expertise for database workloads, enterprise applications, and hybrid infrastructure with certified Oracle specialists.</p>
-              <div style={{ textAlign: 'center', marginTop: '16px' }}>
-                <Link href="/services/cloud-managed-services/oracle" className="btn btn-accent btn-sm">Explore Oracle Cloud Services →</Link>
-              </div>
-            </div>
-          </div>
-          
-        </div>
-      </section>
-
-      {/* WHY GULFSTREAM */}
       <section className="section">
         <div className="container">
-          <div className="section-header reveal">
-            <div className="badge badge-accent">⭐ Why GulfStream</div>
-            <h2 className="display-md">The GulfStream Technologies Difference</h2>
-            <p>We&apos;re not just another cloud vendor. We&apos;re your strategic partner — FinOps-driven, security-first, and accountable to your outcomes.</p>
-          </div>
-          <div className="grid-3 reveal">
-            <div className="card premium-card">
-              <div className="card-header">
-                <div className="icon-box">🏢</div>
-                <div className="card-title-row">
-                  <h3>Not a Generic MSP</h3>
+          <SectionHeader
+            badgeClass="badge badge-primary"
+            badgeText="CORE CAPABILITIES"
+            title="One technology partner. Four core capabilities."
+            description="Cloud, AI, IT and technology talent are connected parts of modern transformation. GulfStream brings them together under one accountable partner."
+          />
+          <div className="grid-4 home-capabilities-grid">
+            {coreCapabilities.map((capability) => (
+              <article key={capability.title} className="card premium-card home-capability-card">
+                <div className="home-capability-image">
+                  <Image src={capability.image} alt={`${capability.title} for business`} fill sizes="(max-width: 991px) 50vw, 25vw" />
                 </div>
-              </div>
-              <p style={{ fontSize: '.8 rem', color: 'var(--text-secondary)' }}>Custom cloud operations tailored to your workloads, compliance requirements, and long-term business growth.</p>
-            </div>
-            <div className="card premium-card">
-              <div className="card-header">
-                <div className="icon-box">💰</div>
-                <div className="card-title-row">
-                  <h3>FinOps at its Core</h3>
+                <div className="home-capability-content">
+                  <div className="home-capability-eyebrow">{capability.eyebrow}</div>
+                  <h3>{capability.title}</h3>
+                  <p style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>{capability.description}</p>
+                  <div className="home-card-footer">
+                    <Link href={capability.href} className="btn btn-accent btn-sm">
+                      {capability.cta}
+                    </Link>
+                  </div>
                 </div>
-              </div>
-              <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>Continuous cloud cost optimization focused on reducing waste and maximizing operational efficiency and ROI.</p>
-            </div>
-            <div className="card premium-card">
-              <div className="card-header">
-                <div className="icon-box">🔒</div>
-                <div className="card-title-row">
-                  <h3>Security-First Architecture</h3>
-                </div>
-              </div>
-              <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>Proactive cloud security with governance, encryption, compliance monitoring, and continuous threat detection capabilities.</p>
-            </div>
-            <div className="card premium-card">
-              <div className="card-header">
-                <div className="icon-box">🇸🇦</div>
-                <div className="card-title-row">
-                  <h3>Saudi Compliance Expertise</h3>
-                </div>
-              </div>
-              <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>Expertise in NCA ECC, Saudi regulations, data residency, and Vision 2030 cloud transformation initiatives.</p>
-            </div>
-            <div className="card premium-card">
-              <div className="card-header">
-                <div className="icon-box">☁️</div>
-                <div className="card-title-row">
-                  <h3>Multi-Cloud Certified Team</h3>
-                </div>
-              </div>
-              <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>Certified AWS, Microsoft, Google Cloud, and Oracle specialists managing unified multi-cloud enterprise environments efficiently.</p>
-            </div>
-            <div className="card premium-card">
-              <div className="card-header">
-                <div className="icon-box">✅</div>
-                <div className="card-title-row">
-                  <h3>Outcome-Based Contracts</h3>
-                </div>
-              </div>
-              <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>SLA-driven engagements focused on measurable performance, reliability, optimization targets, and long-term business outcomes.</p>
-            </div>
+              </article>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* INDUSTRIES SERVED */}
-      <section className="section" style={{ background: 'var(--dark-surface)' }}>
+      <section className="section home-integration-section" style={{ background: 'var(--dark-surface)' }}>
         <div className="container">
-          <div className="section-header reveal">
-            <div className="badge badge-accent">🏭 Industries</div>
-            <h2 className="display-md">Industry-Specific Cloud Solutions in Saudi Arabia</h2>
-            <p>We deliver specialized cloud strategies addressing the unique regulatory, operational, and scalability challenges of <Link href="/industries/healthcare" style={{ color: 'var(--accent)' }}>healthcare</Link>, <Link href="/industries/retail" style={{ color: 'var(--accent)' }}>retail</Link>, <Link href="/industries/logistics" style={{ color: 'var(--accent)' }}>logistics</Link>, and more — built for Saudi compliance requirements.</p>
+          <div className="home-integration-heading">
+            <div className="badge badge-accent">INTEGRATED CAPABILITIES</div>
+            <h2 className="display-md">One partner. Four capabilities. One accountable team.</h2>
+            <p>Technology initiatives rarely exist in isolation. GulfStream connects the capabilities, people and operational discipline needed to move from strategy to measurable results.</p>
           </div>
-          <div className="grid-3 reveal">
-              <Link href="/industries/retail" style={{ textDecoration: 'none', color: 'inherit', display: 'flex', flexDirection: 'column' }}>
-                <div className="industry-card" style={{ display: 'flex', flexDirection: 'column', flex: 1 }}>
-                  <div className="industry-card-header">
-                    <div className="industry-icon">🛒</div>
-                    <h3 style={{ fontSize: '0.9rem' }}>Retail</h3>
+          <div className="home-integration-layout">
+            <article className="home-integration-card">
+              <div className="home-integration-orbit" aria-hidden="true">
+                <span className="home-integration-orbit-ring"></span>
+                <span className="home-integration-orbit-core">GS</span>
+              </div>
+              <div className="home-integration-eyebrow">THE GULFSTREAM MODEL</div>
+              <h3 className="display-sm">From strategy to operations, without the handoff gaps.</h3>
+              <p>
+                One coordinated team aligns architecture, implementation, governance and ongoing optimization around your business priorities.
+              </p>
+              <div className="home-integration-links">
+                <Link href="/about" className="home-integration-cta">Explore our approach <span aria-hidden="true">↗</span></Link>
+                <Link href="/contact" className="home-integration-cta home-integration-cta-muted">Start a conversation <span aria-hidden="true">↗</span></Link>
+              </div>
+              <div className="home-integration-signature">
+                <span className="home-integration-signature-line"></span>
+                <span>Strategy / Delivery / Operations / Optimization</span>
+              </div>
+            </article>
+            <div className="home-integration-matrix" aria-label="Integrated capability model">
+              {integrationCapabilities.map((capability) => (
+                <article key={capability.number} className="home-integration-item">
+                  <div className="home-integration-item-topline">
+                    <span className="home-integration-number">{capability.number}</span>
                   </div>
-                  <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>Scale cloud infrastructure seamlessly during Ramadan and peak seasons, enable omnichannel commerce, and optimize inventory and analytics workloads across AWS, Microsoft, Google, and Oracle Cloud.</p>
-                </div>
-              </Link>
-              <Link href="/industries/healthcare" style={{ textDecoration: 'none', color: 'inherit', display: 'flex', flexDirection: 'column' }}>
-                <div className="industry-card" style={{ display: 'flex', flexDirection: 'column', flex: 1 }}>
-                  <div className="industry-card-header">
-                    <div className="industry-icon">🏥</div>
-                    <h3 style={{ fontSize: '0.9rem' }}>Healthcare</h3>
+                  <div>
+                    <h3>{capability.title}</h3>
+                    <p style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>{capability.description}</p>
                   </div>
-                  <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>HIPAA-aligned cloud infrastructure ensuring patient data security, high availability for clinical applications, and compliant cloud storage — built for Saudi healthcare regulations.</p>
-                </div>
-              </Link>
-              <Link href="/industries/logistics" style={{ textDecoration: 'none', color: 'inherit', display: 'flex', flexDirection: 'column' }}>
-                <div className="industry-card" style={{ display: 'flex', flexDirection: 'column', flex: 1 }}>
-                  <div className="industry-card-header">
-                    <div className="industry-icon">🚛</div>
-                    <h3 style={{ fontSize: '0.9rem' }}>Logistics</h3>
-                  </div>
-                  <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>Power real-time fleet tracking, IoT data processing, supply chain analytics, and warehouse management systems with resilient, always-on cloud infrastructure.</p>
-                </div>
-              </Link>
-              <Link href="/industries/tech-saas" style={{ textDecoration: 'none', color: 'inherit', display: 'flex', flexDirection: 'column' }}>
-                <div className="industry-card" style={{ display: 'flex', flexDirection: 'column', flex: 1 }}>
-                  <div className="industry-card-header">
-                    <div className="industry-icon">💻</div>
-                    <h3 style={{ fontSize: '0.9rem' }}>SaaS Infrastructure</h3>
-                  </div>
-                  <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>Build, deploy, and scale SaaS products on optimized cloud infrastructure. Managed Kubernetes, CI/CD pipelines, and multi-tenant environments with FinOps cost governance.</p>
-                </div>
-              </Link>
-              <Link href="/industries/professional-services" style={{ textDecoration: 'none', color: 'inherit', display: 'flex', flexDirection: 'column' }}>
-                <div className="industry-card" style={{ display: 'flex', flexDirection: 'column', flex: 1 }}>
-                  <div className="industry-card-header">
-                    <div className="industry-icon">🏢</div>
-                    <h3 style={{ fontSize: '0.9rem' }}>Professional Services </h3>
-                  </div>
-                  <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>Secure, compliant cloud environments for consulting, legal, and financial firms — with zero-trust security, ISO 27001 alignment, and encrypted document management.</p>
-                </div>
-              </Link>
-              <Link href="/contact" style={{ textDecoration: 'none', color: 'inherit', display: 'flex', flexDirection: 'column' }}>
-                <div className="industry-card industry-cta" style={{ display: 'flex', flexDirection: 'column', flex: 1 }}>
-                  <div className="industry-card-header">
-                    <div className="industry-icon">🌐</div>
-                    <h3 style={{ fontSize: '0.9rem' }}>Your Industry</h3>
-                  </div>
-                  <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>Don&apos;t see your sector? We work with enterprises across all verticals in Saudi Arabia. Talk to our cloud specialists for a tailored approach.</p>
-                  <span className="btn btn-accent btn-sm">Get in Touch</span>
-                </div>
-              </Link>
+                </article>
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
-
-      {/* TESTIMONIALS */}
       <section className="section">
         <div className="container">
-          <div className="section-header reveal">
-            <div className="badge badge-accent">💬 Client Feedback</div>
-            <h2 className="display-md">What Clients Say After Their Free Review</h2>
-          </div>
-          <div className="grid-3 reveal">
-            <div className="card testimonial-card">
-              <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>&ldquo;The free cloud review identified SAR 42,000 in monthly savings we had no idea existed. The GulfStream team was thorough, fast, and the recommendations were immediately actionable.&rdquo;</p>
-              <div className="testimonial-author">
-                <div className="author-avatar">AK</div>
-                <div>
-                  <div className="author-name">Ahmed Khalid</div>
-                  <div className="author-title">CTO, Leading Saudi Retailer</div>
+          <SectionHeader
+            badgeClass="badge badge-primary"
+            badgeText="BUSINESS FIRST"
+            title="Solve business challenges, not just technology problems."
+            description="We start with the business outcome you need and bring together the right combination of cloud, AI, IT and technology talent to achieve it."
+          />
+          <div className="home-challenges-grid">
+            {businessChallenges.map((challenge, index) => (
+              <article key={challenge.title} className={`home-challenge-card${index === 0 ? ' home-challenge-card-featured' : ''}`}>
+                <div className="home-challenge-topline">
+                  <span className="home-challenge-number">0{index + 1}</span>
+                  <span className="home-challenge-status">BUSINESS PRESSURE</span>
                 </div>
-              </div>
-            </div>
-            <div className="card testimonial-card">
-              <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>&ldquo;I expected a sales pitch. What I got was a 35-page detailed assessment of our Azure environment with specific remediation steps. We implemented 80% of the recommendations ourselves — the value was immediate.&rdquo;</p>
-              <div className="testimonial-author">
-                <div className="author-avatar">FM</div>
-                <div>
-                  <div className="author-name">Fatima Mahmoud</div>
-                  <div className="author-title">IT Director, Healthcare Group</div>
+                <div className="home-challenge-content">
+                  <h3>{challenge.title}</h3>
+                  <p style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>{challenge.description}</p>
                 </div>
-              </div>
-            </div>
-            <div className="card testimonial-card">
-              <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>&ldquo;The security findings alone in the free review justified engaging GulfStream. Three publicly accessible S3 buckets we didn&apos;t know about. That&apos;s the kind of expertise that matters.&rdquo;</p>
-              <div className="testimonial-author">
-                <div className="author-avatar">SR</div>
-                <div>
-                  <div className="author-name">Salman Al-Rashid</div>
-                  <div className="author-title">Cloud Architect, SaaS Company</div>
-                </div>
-              </div>
-            </div>
+                <span className="home-challenge-arrow" aria-hidden="true"></span>
+              </article>
+            ))}
           </div>
         </div>
       </section>
 
-
-
-      {/* FAQ SECTION */}
       <section className="section" style={{ background: 'var(--dark-surface)' }}>
         <div className="container">
-          <div className="section-header reveal">
-            <div className="badge badge-primary">❓ FAQ</div>
-            <h2 className="display-md">Frequently Asked Questions</h2>
-            <p>Common questions about Managed Cloud Services in Saudi Arabia.</p>
-          </div>
-          <div className="faq-accordion reveal">
-            {homeFaqs.map((faq, index) => {
-              const isOpen = openFaqIndex === index;
-
-              return (
-                <div className={`faq-item ${isOpen ? 'active' : ''}`} key={faq.question}>
-                  <button
-                    className="faq-question"
-                    type="button"
-                    onClick={() => setOpenFaqIndex(isOpen ? null : index)}
-                    aria-expanded={isOpen}
-                    aria-controls={`home-faq-answer-${index}`}
-                  >
-                    <span>{faq.question}</span>
-                    <span className="faq-toggle" aria-hidden="true">+</span>
-                  </button>
-                  <div
-                    id={`home-faq-answer-${index}`}
-                    className="faq-answer"
-                  >
-                    <div className="faq-answer-inner">
-                      <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>{faq.answer}</p>
-                    </div>
-                  </div>
+          <SectionHeader
+            badgeClass="badge badge-accent"
+            badgeText="HOW WE HELP"
+            title="From strategy to continuous optimization."
+            description="GulfStream can engage at any stage of the journey from first strategy to continuous optimization."
+          />
+          <div className="delivery-process home-delivery-process">
+            {deliverySteps.map((step) => (
+              <article key={step.title} className="process-step">
+                <div className="process-step-header">
+                  <span className="process-step-number">{step.number}</span>
+                  <h3>{step.title}</h3>
                 </div>
-              );
-            })}
+                <div className="process-step-body">
+                  <p style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>{step.description}</p>
+                </div>
+              </article>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* FINAL CTA BANNER */}
       <section className="section">
         <div className="container">
-          <div className="cta-banner reveal">
-            <h2 className="display-md">Is Your Cloud Environment Performing at Its Best?</h2>
-            <p style={{ fontSize: '.8rem' }}>Most enterprises are overpaying by 30–40% on cloud. Our free Cloud Assessment identifies cost savings, security gaps, and performance opportunities across AWS, Microsoft , Google Cloud, and Oracle Cloud — at no cost and no commitment.</p>
+          <SectionHeader
+            badgeClass="badge badge-primary"
+            badgeText="INDUSTRIES"
+            title="Technology solutions shaped around your industry."
+            description="We tailor cloud, AI, IT and technology talent to the operational realities, regulatory requirements and growth priorities of your industry."
+          />
+          <div className="grid-3 home-industries-grid">
+            {industries.map((industry) => (
+              <Link key={industry.title} href="/industries" className="home-industry-link">
+                <article className="industry-card home-industry-card">
+                  <div className="industry-card-header">
+                    <div className="industry-icon" aria-hidden="true">{industry.icon}</div>
+                    <h3>{industry.title}</h3>
+                  </div>
+                  <p style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>Solutions aligned to business operations, governance, and growth targets for {industry.title.toLowerCase()} organizations.</p>
+                </article>
+              </Link>
+            ))}
+            <Link href="/industries" className="home-industry-link">
+              <article className="industry-card home-industry-card home-industry-all">
+                <div className="industry-card-header">
+                  <div className="industry-icon" aria-hidden="true">🌐</div>
+                  <h3>View All Industries</h3>
+                </div>
+                <p style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>Explore all available industry pages and engagement priorities GulfStream supports.</p>
+              </article>
+            </Link>
+          </div>
+        </div>
+      </section>
 
+      <section className="section" style={{ background: 'var(--dark-surface)' }}>
+        <div className="container">
+          <SectionHeader
+            badgeClass="badge badge-accent"
+            badgeText="ENGAGEMENT MODELS"
+            title="Work with us in the way that fits your business."
+            description="From advisory to fully managed operations, choose the engagement model that matches your needs today and evolve it over time."
+          />
+          <div className="grid-3 home-engagement-grid">
+            {engagementModels.map((model, index) => (
+              <article key={model.title} className="card premium-card">
+                <div className="card-header">
+                  <div className="icon-box" aria-hidden="true">{model.icon}</div>
+                  <div className="card-title-row">
+                    <h3>{model.title}</h3>
+                  </div>
+                </div>
+                <p style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>{model.description}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container">
+          <SectionHeader
+            badgeClass="badge badge-primary"
+            badgeText="WHY GULFSTREAM"
+            title="A technology partner built for serious organizations."
+          />
+          <div className="grid-3 home-differentiator-grid">
+            {differentiators.map((item) => (
+              <article key={item.title} className="card premium-card">
+                <div className="card-header">
+                  <div className="icon-box" aria-hidden="true">{item.icon}</div>
+                  <div className="card-title-row">
+                    <h3>{item.title}</h3>
+                  </div>
+                </div>
+                <p style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>{item.description}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+ 
+
+      <HomeFaqSection />
+
+      <section className="section">
+        <div className="container">
+          <div className="cta-banner">
+            <h2 className="display-md">Let&apos;s solve your next technology challenge.</h2>
+            <p>
+              Whether you are modernizing infrastructure, exploring AI, improving IT operations or building technology capacity, GulfStream can help you define the right next step.
+            </p>
             <div className="cta-actions">
-              <Link href="/book-a-review" className="btn btn-white btn-lg">📋 Book Your Free Cloud Assessment</Link>
-              <Link href="/contact" className="btn-white-outline">Talk to a Cloud Expert</Link>
+              <Link href="/contact" className="btn btn-white btn-lg">
+                Talk to a Technology Expert
+              </Link>
+              <Link href="/services" className="btn-white-outline">
+                Explore Our Services
+              </Link>
             </div>
           </div>
         </div>
       </section>
-
     </main>
   );
-};
-
-export default HomeContent;
+}

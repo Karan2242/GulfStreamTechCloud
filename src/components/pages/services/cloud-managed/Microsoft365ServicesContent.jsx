@@ -176,7 +176,7 @@ const Microsoft365ServicesContent = () => {
       </section>
 
       {/* WHY MICROSOFT 365 MANAGEMENT */}
-      <section className="section" style={{ background: 'var(--dark-surface)' }}>
+      <section className="section" >
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-accent">🎯 Why Microsoft 365 Management</div>
@@ -231,7 +231,7 @@ const Microsoft365ServicesContent = () => {
       </section>
 
       {/* SERVICES OFFERED */}
-      <section className="section">
+      <section className="section" style={{ background: 'var(--dark-surface)' }}>
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-accent">🔧 Our Microsoft 365 Services</div>
@@ -267,7 +267,7 @@ const Microsoft365ServicesContent = () => {
       </section>
 
       {/* CHALLENGES & SOLUTIONS */}
-      <section className="section" style={{ background: 'var(--dark-surface)' }}>
+      <section className="section" >
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-primary">⚠️ Common Challenges</div>
@@ -304,7 +304,7 @@ const Microsoft365ServicesContent = () => {
       </section>
 
       {/* OUR PROCESS */}
-      <section className="section">
+      <section className="section" style={{ background: 'var(--dark-surface)' }}>
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-primary">✅ Our Engagement Model</div>
@@ -333,7 +333,7 @@ const Microsoft365ServicesContent = () => {
       </section>
 
       {/* METRICS */}
-      <section className="section" style={{ background: 'var(--dark-surface)' }}>
+      <section className="section" >
         <div className="container">
           <div className="metrics-grid reveal">
             <div className="metric-item"><span className="metric-value">↓25-35%</span>
@@ -357,7 +357,7 @@ const Microsoft365ServicesContent = () => {
       </section>
 
       {/* FAQ */}
-      <section className="section">
+      <section className="section" style={{ background: 'var(--dark-surface)' }}>
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-accent">❓ FAQ</div>
@@ -394,12 +394,11 @@ const Microsoft365ServicesContent = () => {
       </section>
 
       {/* CTA */}
-      <section className="section" style={{ background: 'var(--dark-surface)' }}>
+      <section className="section" >
         <div className="container reveal">
           <div className="cta-banner">
             <h2 className="display-md">Optimize Your Microsoft 365 Investment</h2>
             <p>Get a free Microsoft 365 environment assessment covering security, compliance, licensing, governance, and optimization opportunities specific to your organization.</p>
-            <p className="cta-urgency">⚡ Limited free assessments available this month</p>
             <div className="cta-actions">
               <Link href="/book-a-review" className="btn btn-white btn-lg">📋 Book Free Assessment</Link>
               <Link href="/contact" className="btn-white-outline">Talk to Experts</Link>

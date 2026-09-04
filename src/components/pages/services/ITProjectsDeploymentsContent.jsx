@@ -139,26 +139,32 @@ const projectCoverage = [
   {
     icon: '🏢',
     title: 'Office Setup',
+    description: 'Prepare new or relocated offices with coordinated users, devices, connectivity, and workplace technology.',
   },
   {
     icon: '🌐',
     title: 'Network Rollouts',
+    description: 'Deploy reliable wired and wireless networks for offices, branches, and growing business locations.',
   },
   {
     icon: '🖥️',
     title: 'Server Deployments',
+    description: 'Implement server, storage, and compute infrastructure that supports critical business workloads.',
   },
   {
     icon: '💼',
     title: 'Microsoft 365',
+    description: 'Configure productivity, identity, email, and user access as part of a structured rollout.',
   },
   {
     icon: '☁️',
     title: 'Cloud Connectivity',
+    description: 'Connect offices and users to cloud applications with dependable, secure access and integration.',
   },
   {
     icon: '🔄',
     title: 'Infrastructure Refreshes',
+    description: 'Modernize aging technology through phased upgrades designed to reduce operational disruption.',
   },
 ];
 
@@ -200,25 +206,25 @@ const ITProjectsDeploymentsContent = () => {
           </div>
 
           <h1 className="display-lg">
-            <span className="text-gradient">IT Project & Infrastructure Deployment Services</span>
+            <span className="text-gradient">IT Project Deployment Services for Business Growth</span>
           </h1>
 
           <p>
-            GulfStream delivers structured IT projects to help businesses implement infrastructure, office technology, and workplace systems with less disruption and more operational control.
+            GulfStream delivers end-to-end IT project and infrastructure deployment services for businesses launching offices, upgrading systems, or expanding operations. We coordinate networks, servers, Microsoft 365, cloud connectivity, and workplace technology to reduce disruption, improve implementation quality, and create a reliable foundation for long-term business growth.
           </p>
 
           <div className="hero-actions">
             <Link href="/contact" className="btn btn-primary btn-lg">
               Discuss a Project
             </Link>
-            <Link href="/it-services" className="btn btn-outline btn-lg">
+            <Link href="/it-services" className="btn btn-outline btn-lg" style={{ backgroundColor: '#ffffff', color: '#0052CC', borderColor: 'rgba(0,0,0,0.08)' }}>
               Explore IT Services
             </Link>
           </div>
         </div>
       </section>
 
-      <section className="section" style={{ background: 'var(--dark-surface)' }}>
+      <section className="section" >
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-primary">⚠️ Why projects need structure</div>
@@ -237,14 +243,14 @@ const ITProjectsDeploymentsContent = () => {
                     <h3>{item.title}</h3>
                   </div>
                 </div>
-                <p className="text-muted">{item.description}</p>
-              </article>
+                <p style={{ color: 'var(--text-secondary)', fontSize: '0.8rem' }}>{item.description}</p>
+                  </article>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="section">
+      <section className="section" style={{ background: 'var(--dark-surface)' }}>
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-accent">🚀 Project services</div>
@@ -263,35 +269,14 @@ const ITProjectsDeploymentsContent = () => {
                     <h3>{item.title}</h3>
                   </div>
                 </div>
-                <p className="text-muted">{item.description}</p>
-              </article>
+                <p style={{ color: 'var(--text-secondary)', fontSize: '0.8rem' }}>{item.description}</p>
+                  </article>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="section" style={{ background: 'var(--dark-surface)' }}>
-        <div className="container">
-          <div className="section-header reveal">
-            <div className="badge badge-primary">🧭 Delivery method</div>
-            <h2 className="display-md">A structured way to deploy IT projects</h2>
-          </div>
 
-          <div className="grid-4 reveal reveal-stagger">
-            {projectDelivery.map((item) => (
-              <article className="card premium-card" key={item.title}>
-                <div className="card-header">
-                  <div className="icon-box">{item.number}</div>
-                  <div className="card-title-row">
-                    <h3>{item.title}</h3>
-                  </div>
-                </div>
-                <p className="text-muted">{item.description}</p>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
 
       <section className="section">
         <div className="container">
@@ -309,7 +294,7 @@ const ITProjectsDeploymentsContent = () => {
                     <h3>{item.title}</h3>
                   </div>
                 </div>
-                <p className="text-muted">{item.description}</p>
+                <p style={{ color: 'var(--text-secondary)', fontSize: '0.8rem' }}>{item.description}</p>
               </article>
             ))}
           </div>
@@ -319,21 +304,36 @@ const ITProjectsDeploymentsContent = () => {
       <section className="section" style={{ background: 'var(--dark-surface)' }}>
         <div className="container">
           <div className="section-header reveal">
-            <div className="badge badge-primary">🧩 Project areas</div>
-            <h2 className="display-md">Deployment work commonly supported</h2>
+            <div className="badge badge-primary">🧩 Deployment capabilities</div>
+            <h2 className="display-md">IT deployment capabilities for every growth stage</h2>
+            <p>
+              From new office launches to infrastructure modernization, we coordinate the technology work needed to help businesses expand with confidence and less disruption.
+            </p>
           </div>
 
-          <div className="grid-3 reveal reveal-stagger">
-            {projectCoverage.map((item) => (
-              <article className="card premium-card" key={item.title}>
-                <div className="card-header">
-                  <div className="icon-box">{item.icon}</div>
-                  <div className="card-title-row">
-                    <h3>{item.title}</h3>
+          <div className="project-deployment-board reveal">
+            <div className="project-deployment-feature">
+              <span className="project-deployment-kicker">BUSINESS-READY IMPLEMENTATION</span>
+              <div className="project-deployment-feature-icon">🚀</div>
+              <h3>Turn technology plans into working environments</h3>
+              <p>
+                Coordinated deployment helps your teams adopt new technology faster while keeping dependencies, testing, and handover under control.
+              </p>
+              <span className="project-deployment-count">06 DELIVERY AREAS</span>
+            </div>
+
+            <div className="project-deployment-grid reveal reveal-stagger">
+              {projectCoverage.map((item, index) => (
+                <article className="project-deployment-item" key={item.title}>
+                  <div className="project-deployment-item-top">
+                    <span className="project-deployment-index">0{index + 1}</span>
+                    <span className="project-deployment-icon" aria-hidden="true">{item.icon}</span>
                   </div>
-                </div>
-              </article>
-            ))}
+                  <h3>{item.title}</h3>
+                  <p>{item.description}</p>
+                </article>
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -354,7 +354,7 @@ const ITProjectsDeploymentsContent = () => {
                     <h3>{item.title}</h3>
                   </div>
                 </div>
-                <p className="text-muted">{item.description}</p>
+                <p style={{ color: 'var(--text-secondary)', fontSize: '0.8rem' }}>{item.description}</p>
               </article>
             ))}
           </div>
@@ -362,44 +362,6 @@ const ITProjectsDeploymentsContent = () => {
       </section>
 
       <section className="section" style={{ background: 'var(--dark-surface)' }}>
-        <div className="container">
-          <div className="section-header reveal">
-            <div className="badge badge-primary">💡 Why GulfStream</div>
-            <h2 className="display-md">Structured delivery with operational awareness</h2>
-            <p>
-              We focus on practical project management, technical alignment, and smooth handover so business teams can use the deployed technology without unnecessary confusion or downtime.
-            </p>
-          </div>
-
-          <div className="grid-2 reveal reveal-stagger">
-            <div className="card premium-card">
-              <div className="card-header">
-                <div className="icon-box">🧭</div>
-                <div className="card-title-row">
-                  <h3>Structured delivery</h3>
-                </div>
-              </div>
-              <p className="text-muted">
-                We work through business requirements, technical dependencies, and operational realities so the project remains coordinated from planning through handover.
-              </p>
-            </div>
-
-            <div className="card premium-card">
-              <div className="card-header">
-                <div className="icon-box">🔗</div>
-                <div className="card-title-row">
-                  <h3>Connected IT perspective</h3>
-                </div>
-              </div>
-              <p className="text-muted">
-                Our delivery model considers the wider technology ecosystem, creating fewer surprises when the new environment is introduced into day-to-day operations.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="section">
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-primary">❓ FAQ</div>

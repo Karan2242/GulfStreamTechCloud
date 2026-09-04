@@ -19,7 +19,7 @@ const CloudManagedServicesContent = () => {
       <ServicesGrid />
 
       {/* WHY Managed Cloud Services */}
-      <section className="section" style={{ background: 'var(--dark-surface)' }}>
+      <section className="section" >
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-primary">⭐ Key Benefits</div>

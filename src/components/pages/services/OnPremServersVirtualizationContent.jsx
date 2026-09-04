@@ -204,21 +204,21 @@ const OnPremServersVirtualizationContent = () => {
           </h1>
 
           <p>
-            GulfStream helps organizations keep critical on-premises workloads reliable, efficient, and easier to manage as business demands grow and infrastructure ages.
+            GulfStream provides reliable on-premises server and virtualization services for businesses that depend on physical servers, Windows Server, VMware, Hyper-V, storage, and Active Directory to run critical applications securely, efficiently, and with less operational risk as their infrastructure evolves over time.
           </p>
 
           <div className="hero-actions">
             <Link href="/contact" className="btn btn-primary btn-lg">
               Book a Server Review
             </Link>
-            <Link href="/it-services" className="btn btn-outline btn-lg">
+            <Link href="/it-services" className="btn btn-outline btn-lg" style={{ backgroundColor: '#ffffff', color: '#0052CC', borderColor: 'rgba(0,0,0,0.08)' }}>
               Explore IT Services
             </Link>
           </div>
         </div>
       </section>
 
-      <section className="section" style={{ background: 'var(--dark-surface)' }}>
+      <section className="section" >
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-primary">⚠️ Why this matters</div>
@@ -237,14 +237,14 @@ const OnPremServersVirtualizationContent = () => {
                     <h3>{item.title}</h3>
                   </div>
                 </div>
-                <p className="text-muted">{item.description}</p>
+                <p className="text-muted" style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>{item.description}</p>
               </article>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="section">
+      <section className="section" style={{ background: 'var(--dark-surface)' }}>
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-accent">🖥️ Server services</div>
@@ -263,30 +263,7 @@ const OnPremServersVirtualizationContent = () => {
                     <h3>{item.title}</h3>
                   </div>
                 </div>
-                <p className="text-muted">{item.description}</p>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="section" style={{ background: 'var(--dark-surface)' }}>
-        <div className="container">
-          <div className="section-header reveal">
-            <div className="badge badge-primary">🧭 How we deliver</div>
-            <h2 className="display-md">A structured path to better server operations</h2>
-          </div>
-
-          <div className="grid-4 reveal reveal-stagger">
-            {serverDelivery.map((item) => (
-              <article className="card premium-card" key={item.title}>
-                <div className="card-header">
-                  <div className="icon-box">{item.number}</div>
-                  <div className="card-title-row">
-                    <h3>{item.title}</h3>
-                  </div>
-                </div>
-                <p className="text-muted">{item.description}</p>
+                <p className="text-muted" style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>{item.description}</p>
               </article>
             ))}
           </div>
@@ -294,6 +271,30 @@ const OnPremServersVirtualizationContent = () => {
       </section>
 
       <section className="section">
+        <div className="container">
+          <div className="section-header reveal">
+            <div className="badge badge-primary">🧭 Our delivery approach</div>
+            <h2 className="display-md">A structured path from server assessment to modernization</h2>
+            <p>
+              We assess the current environment, plan around business-critical workloads, and implement improvements that strengthen reliability without unnecessary disruption.
+            </p>
+          </div>
+
+          <div className="server-delivery-process it-delivery-process reveal reveal-stagger" aria-label="Server and virtualization delivery process">
+            {serverDelivery.map((item) => (
+              <article className="it-delivery-step" key={item.title}>
+                <div className="it-delivery-number">{item.number}</div>
+                <div className="it-delivery-content">
+                  <h3>{item.title}</h3>
+                  <p>{item.description}</p>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section" style={{ background: 'var(--dark-surface)' }}>
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-accent">📈 Business outcomes</div>
@@ -309,34 +310,14 @@ const OnPremServersVirtualizationContent = () => {
                     <h3>{item.title}</h3>
                   </div>
                 </div>
-                <p className="text-muted">{item.description}</p>
+                <p className="text-muted" style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>{item.description}</p>
               </article>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="section" style={{ background: 'var(--dark-surface)' }}>
-        <div className="container">
-          <div className="section-header reveal">
-            <div className="badge badge-primary">🧩 Supported environments</div>
-            <h2 className="display-md">Platforms and workloads we commonly support</h2>
-          </div>
 
-          <div className="grid-3 reveal reveal-stagger">
-            {serverCoverage.map((item) => (
-              <article className="card premium-card" key={item.title}>
-                <div className="card-header">
-                  <div className="icon-box">{item.icon}</div>
-                  <div className="card-title-row">
-                    <h3>{item.title}</h3>
-                  </div>
-                </div>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
 
       <section className="section">
         <div className="container">
@@ -354,52 +335,16 @@ const OnPremServersVirtualizationContent = () => {
                     <h3>{item.title}</h3>
                   </div>
                 </div>
-                <p className="text-muted">{item.description}</p>
+                <p className="text-muted" style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>{item.description}</p>
               </article>
             ))}
           </div>
         </div>
       </section>
 
+
+
       <section className="section" style={{ background: 'var(--dark-surface)' }}>
-        <div className="container">
-          <div className="section-header reveal">
-            <div className="badge badge-primary">💡 Why GulfStream</div>
-            <h2 className="display-md">A practical, lifecycle-focused approach</h2>
-            <p>
-              We help businesses make informed decisions around modernization, capacity, workload placement, and supportability without creating unnecessary complexity or disruption.
-            </p>
-          </div>
-
-          <div className="grid-2 reveal reveal-stagger">
-            <div className="card premium-card">
-              <div className="card-header">
-                <div className="icon-box">🧠</div>
-                <div className="card-title-row">
-                  <h3>Technology fit over technology noise</h3>
-                </div>
-              </div>
-              <p className="text-muted">
-                We focus on the right server and virtualization strategy for each workload and business context rather than forcing a one-size-fits-all setup.
-              </p>
-            </div>
-
-            <div className="card premium-card">
-              <div className="card-header">
-                <div className="icon-box">🔗</div>
-                <div className="card-title-row">
-                  <h3>Connected infrastructure thinking</h3>
-                </div>
-              </div>
-              <p className="text-muted">
-                Server design is considered alongside wider IT operations, networking, security, and business continuity requirements to support the broader environment.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="section">
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-primary">❓ FAQ</div>
@@ -424,7 +369,7 @@ const OnPremServersVirtualizationContent = () => {
                   </button>
                   <div id={`faq-answer-${index}`} className="faq-answer">
                     <div className="faq-answer-inner">
-                      <p>{faq.answer}</p>
+                      <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>{faq.answer}</p>
                     </div>
                   </div>
                 </div>

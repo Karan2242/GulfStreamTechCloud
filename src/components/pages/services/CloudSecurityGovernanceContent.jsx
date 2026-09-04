@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { useReveal } from '@/hooks/useReveal';
+import ComparisonTable from './cloud-managed/ComparisonTable';
 
 const CloudSecurityGovernanceContent = () => {
   useReveal();
@@ -39,7 +40,7 @@ const CloudSecurityGovernanceContent = () => {
           <div className="breadcrumb">
             <Link href="/">Home</Link><span>›</span><Link href="/services">Services</Link><span>›</span><span>Cloud Security &amp; Governance</span>
           </div>
-          <h1 className="display-lg">Cloud Security &amp; Governance <span className="text-gradient">in Saudi Arabia</span></h1>
+          <h1 className="display-lg"><span className="text-gradient">Enterprise Cloud Security &amp; Governance Services</span></h1>
           <p>GulfStream Technologies delivers enterprise-grade cloud security and governance across multi-cloud environments in Saudi Arabia — combining continuous threat detection, IAM hardening, NCA ECC compliance automation, and policy enforcement to protect your most critical cloud workloads in Saudi Arabia.</p>
           <div style={{ display: 'flex', gap: '16px', justifyContent: 'left', flexWrap: 'wrap' }}>
             <Link href="/book-a-review" className="btn btn-primary btn-lg">Book a Free Security Assessment</Link>
@@ -69,7 +70,7 @@ const CloudSecurityGovernanceContent = () => {
 
 
       {/* THREATS */}
-      <section className="section" style={{ background: 'var(--dark-surface)' }}>
+      <section className="section">
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-primary">⚠️ Threats</div>
@@ -126,7 +127,7 @@ const CloudSecurityGovernanceContent = () => {
 
 
       {/* WHAT YOU GET */}
-      <section className="section">
+      <section className="section" style={{ background: 'var(--dark-surface)' }}>
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-accent">🎯 What You Get</div>
@@ -188,7 +189,7 @@ const CloudSecurityGovernanceContent = () => {
 
 
       {/* METRICS */}
-      <section className="section" style={{ background: 'var(--dark-surface)' }}>
+      <section className="section">
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-accent">📊 Results</div>
@@ -216,7 +217,7 @@ const CloudSecurityGovernanceContent = () => {
       </section>
 
       {/* USE CASES */}
-      <section className="section" >
+      <section className="section" style={{ background: 'var(--dark-surface)' }}>
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-primary">🎯 Use Cases</div>
@@ -249,39 +250,23 @@ const CloudSecurityGovernanceContent = () => {
       </section>
 
  
-      {/* COMPARISON */}
-      <section className="section" style={{ background: 'var(--dark-surface)' }}>
-        <div className="container">
-          <div className="section-header reveal">
-            <div className="badge badge-accent">⚖️ Compare</div>
-            <h2 className="display-md">Why GulfStream vs Others</h2>
-          </div>
-          <div className="reveal" style={{ overflowX: 'auto' }}>
-            <table className="comparison-table">
-              <thead>
-                <tr>
-                  <th>Feature</th>
-                  <th className="highlight-col">GulfStream</th>
-                  <th>Freelancers</th>
-                  <th>In-House</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr><td>24/7 Threat Monitoring</td><td className="highlight-col">✅</td><td>❌</td><td>⚠️</td></tr>
-                <tr><td>NCA ECC Compliance</td><td className="highlight-col">✅</td><td>❌</td><td>⚠️</td></tr>
-                <tr><td>Certified Security Engineers</td><td className="highlight-col">✅</td><td>❌</td><td>⚠️</td></tr>
-                <tr><td>Multi-Cloud Security</td><td className="highlight-col">✅</td><td>⚠️</td><td>❌</td></tr>
-                <tr><td>SLA Guarantee</td><td className="highlight-col">✅</td><td>❌</td><td>⚠️</td></tr>
-                <tr><td>Incident Response Playbooks</td><td className="highlight-col">✅</td><td>❌</td><td>❌</td></tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </section>
+      <ComparisonTable
+        badge="⚖️ Compare Security Operating Models"
+        title="Choose Cloud Security Governance With Continuous Protection"
+        description="Compare the monitoring, compliance, and incident response capabilities protecting your cloud estate."
+        rows={[
+          ['24/7 threat monitoring', 'yes', 'no', 'partial'],
+          ['NCA ECC compliance support', 'yes', 'no', 'partial'],
+          ['Certified cloud security engineers', 'yes', 'no', 'partial'],
+          ['Multi-cloud security coverage', 'yes', 'partial', 'no'],
+          ['SLA-backed security operations', 'yes', 'no', 'partial'],
+          ['Incident response playbooks', 'yes', 'no', 'no'],
+        ]}
+      />
 
 
       {/* FAQ */}
-      <section className="section" >
+      <section className="section" style={{ background: 'var(--dark-surface)' }}>
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-accent">❓ FAQ</div>

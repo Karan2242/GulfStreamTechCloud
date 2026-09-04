@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { useReveal } from '@/hooks/useReveal';
+import ComparisonTable from './cloud-managed/ComparisonTable';
 
 const CloudMigrationContent = () => {
   useReveal();
@@ -39,7 +40,7 @@ const CloudMigrationContent = () => {
           <div className="breadcrumb">
             <Link href="/">Home</Link><span>›</span><Link href="/services">Services</Link><span>›</span><span>Cloud Migration</span>
           </div>
-          <h1 className="display-lg">Cloud Migration &amp; Modernization <span className="text-gradient">in Saudi Arabia</span></h1>
+          <h1 className="display-lg"><span className="text-gradient">Enterprise Cloud Migration &amp; Modernization Services</span></h1>
           <p>GulfStream Technologies designs and executes cloud migration projects in Saudi Arabia with zero business disruption — moving your workloads to AWS, Microsoft Cloud, Google Cloud, and Oracle Cloud using our proven 6Rs methodology, wave-based planning, and post-migration optimization for enterprises in Saudi Arabia.</p>
           <div style={{ display: 'flex', gap: '16px', justifyContent: 'left', flexWrap: 'wrap' }}>
             <Link href="/book-a-review" className="btn btn-primary btn-lg">Book a Free Migration Assessment</Link>
@@ -69,7 +70,7 @@ const CloudMigrationContent = () => {
 
 
       {/* CHALLENGES */}
-      <section className="section" style={{ background: 'var(--dark-surface)' }}>
+      <section className="section" >
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-primary">⚠️ Migration Risks</div>
@@ -126,7 +127,7 @@ const CloudMigrationContent = () => {
 
 
       {/* WHAT YOU GET */}
-      <section className="section">
+      <section className="section" style={{ background: 'var(--dark-surface)' }}>
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-accent">🎯 What You Get</div>
@@ -184,7 +185,7 @@ const CloudMigrationContent = () => {
 
 
       {/* METRICS */}
-      <section className="section" style={{ background: 'var(--dark-surface)' }}>
+      <section className="section">
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-accent">📊 Results</div>
@@ -212,7 +213,7 @@ const CloudMigrationContent = () => {
       </section>
 
       {/* USE CASES */}
-      <section className="section" >
+      <section className="section" style={{ background: 'var(--dark-surface)' }}>
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-primary">🎯 Use Cases</div>
@@ -245,40 +246,24 @@ const CloudMigrationContent = () => {
       </section>
 
     
-      {/* COMPARISON */}
-      <section className="section" style={{ background: 'var(--dark-surface)' }}>
-        <div className="container">
-          <div className="section-header reveal">
-            <div className="badge badge-accent">⚖️ Compare</div>
-            <h2 className="display-md">Why GulfStream vs Others</h2>
-          </div>
-          <div className="reveal" style={{ overflowX: 'auto' }}>
-            <table className="comparison-table">
-              <thead>
-                <tr>
-                  <th>Feature</th>
-                  <th className="highlight-col">GulfStream</th>
-                  <th>Freelancers</th>
-                  <th>In-House</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr><td>Proven 6Rs Methodology</td><td className="highlight-col">✅</td><td>❌</td><td>⚠️</td></tr>
-                <tr><td>Zero-Downtime Guarantee</td><td className="highlight-col">✅</td><td>❌</td><td>❌</td></tr>
-                <tr><td>Certified Migration Architects</td><td className="highlight-col">✅</td><td>❌</td><td>⚠️</td></tr>
-                <tr><td>Post-Migration Optimization</td><td className="highlight-col">✅</td><td>❌</td><td>❌</td></tr>
-                <tr><td>SLA Guarantee</td><td className="highlight-col">✅</td><td>❌</td><td>⚠️</td></tr>
-                <tr><td>24/7 Managed Services</td><td className="highlight-col">✅</td><td>❌</td><td>⚠️</td></tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </section>
+      <ComparisonTable 
+        badge="⚖️ Compare Migration Operating Models"
+        title="Choose a Cloud Migration Partner Built for Business Continuity"
+        description="Compare the planning, engineering, and post-migration accountability behind a successful cloud transformation."
+        rows={[
+          ['Proven 6Rs migration methodology', 'yes', 'no', 'partial'],
+          ['Zero-downtime migration planning', 'yes', 'no', 'no'],
+          ['Certified migration architects', 'yes', 'no', 'partial'],
+          ['Post-migration optimization', 'yes', 'no', 'no'],
+          ['SLA-backed migration support', 'yes', 'no', 'partial'],
+          ['24/7 managed cloud services', 'yes', 'no', 'partial'],
+        ]}
+      />
 
      
 
       {/* FAQ */}
-      <section className="section">
+      <section className="section" style={{ background: 'var(--dark-surface)' }}>
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-accent">❓ FAQ</div>

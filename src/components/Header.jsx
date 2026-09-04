@@ -224,30 +224,7 @@ const Header = () => {
               ))}
             </div>
           </div>
-          <div className={`nav-dropdown ${activeDropdown === 'industries' ? 'expanded' : ''}`}>
-            <Link
-              href="/industries"
-              className={`nav-link nav-dropdown-toggle ${isActive('/industries') ? 'active' : ''}`}
-              onClick={(e) => {
-                if (window.innerWidth <= 768) {
-                  if (activeDropdown !== 'industries') {
-                    e.preventDefault();
-                    setActiveDropdown('industries');
-                  }
-                }
-              }}
-            >
-              Industries
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
-            </Link>
-            <div className="dropdown-menu">
-              <Link href="/industries/retail" className={`dropdown-item ${pathname === '/industries/retail' ? 'active' : ''}`}><span className="item-icon">🛒</span>Retail</Link>
-              <Link href="/industries/healthcare" className={`dropdown-item ${pathname === '/industries/healthcare' ? 'active' : ''}`}><span className="item-icon">🏥</span>Healthcare</Link>
-              <Link href="/industries/logistics" className={`dropdown-item ${pathname === '/industries/logistics' ? 'active' : ''}`}><span className="item-icon">🚛</span>Logistics</Link>
-              <Link href="/industries/tech-saas" className={`dropdown-item ${pathname === '/industries/tech-saas' ? 'active' : ''}`}><span className="item-icon">💻</span>Technology / SaaS</Link>
-              <Link href="/industries/professional-services" className={`dropdown-item ${pathname === '/industries/professional-services' ? 'active' : ''}`}><span className="item-icon">🏢</span>Professional Services</Link>
-            </div>
-          </div>
+          <Link href="/industries" className={`nav-link ${isActive('/industries') ? 'active' : ''}`}>Industries</Link>
           <Link href="/insights" className={`nav-link ${pathname === '/insights' ? 'active' : ''}`}>Insights</Link>
           <Link href="/about" className={`nav-link ${pathname === '/about' ? 'active' : ''}`}>About</Link>
         </div>

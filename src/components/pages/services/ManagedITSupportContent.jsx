@@ -238,11 +238,11 @@ const ManagedITSupportContent = () => {
           </div>
 
           <h1 className="display-lg">
-            <span className="text-gradient">Managed IT Support in Saudi Arabia</span>
+            <span className="text-gradient">Managed IT Support Services in Saudi Arabia for Reliable Business Operations</span>
           </h1>
 
           <p>
-            Managed IT support helps businesses maintain reliable operations by protecting users, devices, endpoints, and Microsoft 365 environments while reducing disruption, improving productivity, and strengthening day-to-day IT continuity.
+            GulfStream provides proactive managed IT support for businesses that need dependable help desk services, endpoint management, Microsoft 365 support, monitoring, and faster issue resolution without the overhead of a large internal IT team.
           </p>
 
           <div className="hero-actions">

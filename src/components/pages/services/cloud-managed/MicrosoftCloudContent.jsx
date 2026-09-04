@@ -112,7 +112,7 @@ const MicrosoftCloudContent = () => {
             </div>
             <div className="card premium-card">
               <div className="card-header">
-                <div className="icon-box">24/7</div>
+                <div className="icon-box">🕒</div>
                 <h3>24/7 Operations</h3>
               </div>
               <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Round-the-clock network operations center (NOC) monitoring, incident response, and proactive management across both Azure and Microsoft 365.</p>

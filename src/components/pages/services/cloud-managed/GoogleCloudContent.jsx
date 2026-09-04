@@ -249,7 +249,6 @@ const GoogleCloudContent = () => {
           <div className="cta-banner">
             <h2 className="display-md">Optimize Your Google Cloud Investment</h2>
             <p>Get a free GCP environment assessment and discover how much you can save while improving performance, security, and data analytics across your Google Cloud.</p>
-            <p className="cta-urgency">⚡ Limited free assessments available this month</p>
             <div className="cta-actions">
               <Link href="/book-a-review" className="btn btn-white btn-lg">📋 Book Free GCP Assessment</Link>
             </div>

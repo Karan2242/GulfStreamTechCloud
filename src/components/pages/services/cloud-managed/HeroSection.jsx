@@ -9,7 +9,7 @@ const HeroSection = () => (
         <Link href="/">Home</Link><span>›</span><Link href="/services">Services</Link><span>›</span><span>Managed Cloud Services</span>
       </div>
 
-      <h1 className="display-lg">Enterprise Managed Cloud Service <span className="text-gradient">in Saudi Arabia</span></h1>
+      <h1 className="display-lg"><span className="text-gradient">Enterprise Managed Cloud Service in Saudi Arabia</span></h1>
       <p>GulfStream Technologies delivers enterprise-grade managed services across AWS, Microsoft Cloud, Oracle Cloud, and Google Cloud for businesses in Saudi Arabia. We operate, optimize, secure, and modernize your cloud — so you can focus on growth.</p>
       <div style={{ display: 'flex', gap: '16px', justifyContent: 'left', flexWrap: 'wrap' }}>
         <Link href="/book-a-review" className="btn btn-primary btn-lg">Book a Free Cloud Assessment</Link>

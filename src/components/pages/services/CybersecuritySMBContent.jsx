@@ -139,26 +139,32 @@ const securityCoverage = [
   {
     icon: '💻',
     title: 'Endpoint Protection',
+    description: 'Protect laptops, desktops, and business devices from malware, suspicious activity, and common attack paths.',
   },
   {
     icon: '✉️',
     title: 'Email Security',
+    description: 'Reduce phishing, malicious links, impersonation, and other email-based threats targeting employees.',
   },
   {
     icon: '🔐',
     title: 'Identity & MFA',
+    description: 'Strengthen sign-in security and access controls for users, cloud services, and business applications.',
   },
   {
     icon: '🔄',
     title: 'Patch Management',
+    description: 'Keep systems and software updated to reduce exposure to known vulnerabilities and avoidable risk.',
   },
   {
     icon: '🚧',
     title: 'Firewall Controls',
+    description: 'Apply practical network access rules that help limit unauthorized traffic and improve perimeter security.',
   },
   {
     icon: '🔍',
     title: 'Vulnerability Review',
+    description: 'Identify configuration gaps and weaknesses so the business can prioritize the most valuable improvements.',
   },
 ];
 
@@ -200,25 +206,25 @@ const CybersecuritySMBContent = () => {
           </div>
 
           <h1 className="display-lg">
-            <span className="text-gradient">Cybersecurity Services</span> for Small & Medium Businesses
+            <span className="text-gradient">Practical Cybersecurity Services for Growing SMBs</span>
           </h1>
 
           <p>
-            GulfStream helps growing organizations build practical cyber protection around their systems, users, devices, and business operations without creating unnecessary complexity.
+            GulfStream provides practical cybersecurity services for small and medium-sized businesses, helping protect users, endpoints, email, cloud applications, and critical data. Our risk-focused approach strengthens identity controls, phishing defenses, vulnerability management, and security awareness while supporting business continuity without unnecessary complexity or enterprise-level overhead.
           </p>
 
           <div className="hero-actions">
             <Link href="/contact" className="btn btn-primary btn-lg">
               Book a Security Review
             </Link>
-            <Link href="/it-services" className="btn btn-outline btn-lg">
+            <Link href="/it-services" className="btn btn-outline btn-lg" style={{ backgroundColor: '#ffffff', color: '#0052CC', borderColor: 'rgba(0,0,0,0.08)' }}>
               Explore IT Services
             </Link>
           </div>
         </div>
       </section>
 
-      <section className="section" style={{ background: 'var(--dark-surface)' }}>
+      <section className="section">
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-primary">⚠️ Why security matters</div>
@@ -237,14 +243,14 @@ const CybersecuritySMBContent = () => {
                     <h3>{item.title}</h3>
                   </div>
                 </div>
-                <p className="text-muted">{item.description}</p>
+                <p style={{ color: 'var(--text-secondary)', fontSize: '0.8rem' }}>{item.description}</p>
               </article>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="section">
+      <section className="section" style={{ background: 'var(--dark-surface)' }}>
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-accent">🔐 Security services</div>
@@ -263,35 +269,13 @@ const CybersecuritySMBContent = () => {
                     <h3>{item.title}</h3>
                   </div>
                 </div>
-                <p className="text-muted">{item.description}</p>
+                <p style={{ color: 'var(--text-secondary)', fontSize: '0.8rem' }}>{item.description}</p>
               </article>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="section" style={{ background: 'var(--dark-surface)' }}>
-        <div className="container">
-          <div className="section-header reveal">
-            <div className="badge badge-primary">🧭 How we work</div>
-            <h2 className="display-md">A focused approach to cyber improvements</h2>
-          </div>
-
-          <div className="grid-4 reveal reveal-stagger">
-            {securityDelivery.map((item) => (
-              <article className="card premium-card" key={item.title}>
-                <div className="card-header">
-                  <div className="icon-box">{item.number}</div>
-                  <div className="card-title-row">
-                    <h3>{item.title}</h3>
-                  </div>
-                </div>
-                <p className="text-muted">{item.description}</p>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
 
       <section className="section">
         <div className="container">
@@ -309,7 +293,7 @@ const CybersecuritySMBContent = () => {
                     <h3>{item.title}</h3>
                   </div>
                 </div>
-                <p className="text-muted">{item.description}</p>
+                <p style={{ color: 'var(--text-secondary)', fontSize: '0.8rem' }}>{item.description}</p>
               </article>
             ))}
           </div>
@@ -319,21 +303,36 @@ const CybersecuritySMBContent = () => {
       <section className="section" style={{ background: 'var(--dark-surface)' }}>
         <div className="container">
           <div className="section-header reveal">
-            <div className="badge badge-primary">🧩 Supported areas</div>
-            <h2 className="display-md">Core control areas we commonly address</h2>
+            <div className="badge badge-primary">🧩 Security coverage</div>
+            <h2 className="display-md">Security controls built around your business</h2>
+            <p>
+              We strengthen the practical security foundations that protect users, devices, communication, and access across growing business environments.
+            </p>
           </div>
 
-          <div className="grid-3 reveal reveal-stagger">
-            {securityCoverage.map((item) => (
-              <article className="card premium-card" key={item.title}>
-                <div className="card-header">
-                  <div className="icon-box">{item.icon}</div>
-                  <div className="card-title-row">
+          <div className="security-control-board reveal">
+            <div className="security-control-feature">
+              <span className="security-control-kicker">SMB SECURITY BASELINE</span>
+              <div className="security-control-feature-icon">🛡️</div>
+              <h3>Cover the exposures that matter most</h3>
+              <p>
+                A focused set of controls can reduce common attack paths without adding enterprise-level complexity to day-to-day operations.
+              </p>
+              <span className="security-control-count">06 CONTROL AREAS</span>
+            </div>
+
+            <div className="security-control-list reveal reveal-stagger">
+              {securityCoverage.map((item, index) => (
+                <article className="security-control-row" key={item.title}>
+                  <span className="security-control-index">0{index + 1}</span>
+                  <span className="security-control-icon" aria-hidden="true">{item.icon}</span>
+                  <div className="security-control-content">
                     <h3>{item.title}</h3>
+                    <p>{item.description}</p>
                   </div>
-                </div>
-              </article>
-            ))}
+                </article>
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -354,7 +353,7 @@ const CybersecuritySMBContent = () => {
                     <h3>{item.title}</h3>
                   </div>
                 </div>
-                <p className="text-muted">{item.description}</p>
+                <p style={{ color: 'var(--text-secondary)', fontSize: '0.8rem' }}>{item.description}</p>
               </article>
             ))}
           </div>
@@ -362,44 +361,6 @@ const CybersecuritySMBContent = () => {
       </section>
 
       <section className="section" style={{ background: 'var(--dark-surface)' }}>
-        <div className="container">
-          <div className="section-header reveal">
-            <div className="badge badge-primary">💡 Why GulfStream</div>
-            <h2 className="display-md">Security guidance that matches business realities</h2>
-            <p>
-              Our approach focuses on practical, business-minded controls that improve resilience without creating unnecessary operational burden or complexity.
-            </p>
-          </div>
-
-          <div className="grid-2 reveal reveal-stagger">
-            <div className="card premium-card">
-              <div className="card-header">
-                <div className="icon-box">🎯</div>
-                <div className="card-title-row">
-                  <h3>Focused on the highest-value controls</h3>
-                </div>
-              </div>
-              <p className="text-muted">
-                We prioritize the measures that most reduce risk in a real business environment rather than chasing complexity for its own sake.
-              </p>
-            </div>
-
-            <div className="card premium-card">
-              <div className="card-header">
-                <div className="icon-box">🔗</div>
-                <div className="card-title-row">
-                  <h3>Aligned with wider IT operations</h3>
-                </div>
-              </div>
-              <p className="text-muted">
-                Security is considered alongside infrastructure, user support, backup, and broader technology operations so the controls remain workable and sustainable.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="section">
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-primary">❓ FAQ</div>
@@ -424,7 +385,7 @@ const CybersecuritySMBContent = () => {
                   </button>
                   <div id={`faq-answer-${index}`} className="faq-answer">
                     <div className="faq-answer-inner">
-                      <p>{faq.answer}</p>
+                      <p style={{ color: 'var(--text-secondary)', fontSize: '0.8rem' }}>{faq.answer}</p>
                     </div>
                   </div>
                 </div>

@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { useReveal } from '@/hooks/useReveal';
 
 const serviceCards = [
@@ -11,6 +12,7 @@ const serviceCards = [
     description: 'We help identify the business problems that are worth solving first, based on impact, readiness, and return on effort.',
     href: '/ai-services/ai-use-case-discovery',
     icon: '🧭',
+    image: '/assets/images/ai-strategy-tile.svg',
     focus: 'Strategy',
     focusKey: 'strategy',
   },
@@ -20,6 +22,7 @@ const serviceCards = [
     description: 'We design practical internal tools, copilots, and AI experiences connected to approved business data and workflows.',
     href: '/ai-services/custom-ai-applications',
     icon: '🤖',
+    image: '/assets/images/ai-applications-tile.svg',
     focus: 'Applications',
     focusKey: 'applications',
   },
@@ -29,6 +32,7 @@ const serviceCards = [
     description: 'We build the data foundations and reporting layers that make AI and better decisions possible across the business.',
     href: '/ai-services/data-engineering-bi',
     icon: '📊',
+    image: '/assets/images/ai-data-tile.svg',
     focus: 'Data',
     focusKey: 'data',
   },
@@ -38,6 +42,7 @@ const serviceCards = [
     description: 'We automate repetitive tasks and connect AI to operational workflows so employees spend less time on manual work.',
     href: '/ai-services/automation-services',
     icon: '⚙️',
+    image: '/assets/images/ai-automation-tile.svg',
     focus: 'Automation',
     focusKey: 'automation',
   },
@@ -47,6 +52,7 @@ const serviceCards = [
     description: 'We create the controls and governance needed to safely adopt AI while protecting data, users, and business processes.',
     href: '/ai-services/ai-governance-security',
     icon: '🛡️',
+    image: '/assets/images/ai-governance-tile.svg',
     focus: 'Governance',
     focusKey: 'governance',
   },
@@ -223,18 +229,22 @@ const AIServicesContent = () => {
               From identifying the right opportunity to deployment and governance, our services are designed to move AI from concept to practical business impact.
             </p>
           </div>
-          <div className="services-grid">
-            {serviceCards.map((service) => (
-              <article key={service.title} className="service-card premium-card reveal">
-                <div className="service-content">
+          <div className="ai-services-tile-grid">
+            {serviceCards.map((service, index) => (
+              <article key={service.title} className={`ai-service-tile ai-service-tile-${index + 1} reveal`}>
+                <div className="ai-service-tile-media">
+                  <Image src={service.image} alt={`${service.title} illustration`} fill sizes="(max-width: 768px) 100vw, 50vw" />
+                  <div className="ai-service-tile-overlay" />
                   <div className="ai-service-number-row">
                     <span className="badge badge-primary ai-service-number">{service.number}</span>
                     <span className={`ai-service-focus ai-service-focus-${service.focusKey}`}>{service.focus}</span>
-                    <div className="icon-box ai-service-icon">{service.icon}</div>
+                    <div className="icon-box ai-service-icon" aria-hidden="true">{service.icon}</div>
                   </div>
+                </div>
+                <div className="ai-service-tile-content">
                   <h3>{service.title}</h3>
-                  <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }} className="ai-service-description">{service.description}</p>
-                  <Link href={service.href} className="btn btn-accent btn-sm">Explore Service →</Link>
+                  <p className="ai-service-description">{service.description}</p>
+                  <Link href={service.href} className="ai-service-link">Explore service <span aria-hidden="true">↗</span></Link>
                 </div>
               </article>
             ))}

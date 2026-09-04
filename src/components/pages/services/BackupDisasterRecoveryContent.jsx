@@ -200,18 +200,18 @@ const BackupDisasterRecoveryContent = () => {
           </div>
 
           <h1 className="display-lg">
-            <span className="text-gradient">Backup & Disaster Recovery Services</span> for Business Continuity
+            <span className="text-gradient">Backup and Disaster Recovery for Business Resilience</span>
           </h1>
 
           <p>
-            GulfStream helps businesses protect critical data, define realistic recovery objectives, and build continuity processes that work when operational disruption occurs.
+            GulfStream delivers backup and disaster recovery services that help businesses protect critical data, define RPO and RTO targets, and restore essential systems quickly. Our approach supports cloud and on-premises environments, strengthens operational resilience, and reduces the financial and reputational impact of unexpected disruption.
           </p>
 
           <div className="hero-actions">
             <Link href="/contact" className="btn btn-primary btn-lg">
               Request a Recovery Review
             </Link>
-            <Link href="/it-services" className="btn btn-outline btn-lg">
+            <Link href="/it-services" className="btn btn-outline btn-lg" style={{ backgroundColor: '#ffffff', color: '#0052CC', borderColor: 'rgba(0,0,0,0.08)' }}>
               Explore IT Services
             </Link>
           </div>
@@ -237,7 +237,7 @@ const BackupDisasterRecoveryContent = () => {
                     <h3>{item.title}</h3>
                   </div>
                 </div>
-                <p className="text-muted">{item.description}</p>
+                <p style={{ color: 'var(--text-secondary)', fontSize: '0.8rem' }}>{item.description}</p>
               </article>
             ))}
           </div>
@@ -263,37 +263,16 @@ const BackupDisasterRecoveryContent = () => {
                     <h3>{item.title}</h3>
                   </div>
                 </div>
-                <p className="text-muted">{item.description}</p>
+                <p style={{ color: 'var(--text-secondary)', fontSize: '0.8rem' }}>{item.description}</p>
               </article>
             ))}
           </div>
         </div>
       </section>
+
+
 
       <section className="section" style={{ background: 'var(--dark-surface)' }}>
-        <div className="container">
-          <div className="section-header reveal">
-            <div className="badge badge-primary">🧭 How we work</div>
-            <h2 className="display-md">A structured continuity and recovery model</h2>
-          </div>
-
-          <div className="grid-4 reveal reveal-stagger">
-            {backupDelivery.map((item) => (
-              <article className="card premium-card" key={item.title}>
-                <div className="card-header">
-                  <div className="icon-box">{item.number}</div>
-                  <div className="card-title-row">
-                    <h3>{item.title}</h3>
-                  </div>
-                </div>
-                <p className="text-muted">{item.description}</p>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="section">
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-accent">📈 Business outcomes</div>
@@ -309,34 +288,14 @@ const BackupDisasterRecoveryContent = () => {
                     <h3>{item.title}</h3>
                   </div>
                 </div>
-                <p className="text-muted">{item.description}</p>
+                <p style={{ color: 'var(--text-secondary)', fontSize: '0.8rem' }}>{item.description}</p>
               </article>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="section" style={{ background: 'var(--dark-surface)' }}>
-        <div className="container">
-          <div className="section-header reveal">
-            <div className="badge badge-primary">🧩 Supported environments</div>
-            <h2 className="display-md">Protection models commonly supported</h2>
-          </div>
 
-          <div className="grid-3 reveal reveal-stagger">
-            {backupCoverage.map((item) => (
-              <article className="card premium-card" key={item.title}>
-                <div className="card-header">
-                  <div className="icon-box">{item.icon}</div>
-                  <div className="card-title-row">
-                    <h3>{item.title}</h3>
-                  </div>
-                </div>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
 
       <section className="section">
         <div className="container">
@@ -354,52 +313,17 @@ const BackupDisasterRecoveryContent = () => {
                     <h3>{item.title}</h3>
                   </div>
                 </div>
-                <p className="text-muted">{item.description}</p>
+                <p style={{ color: 'var(--text-secondary)', fontSize: '0.8rem' }}>{item.description}</p>
               </article>
             ))}
           </div>
         </div>
       </section>
 
+
+
+
       <section className="section" style={{ background: 'var(--dark-surface)' }}>
-        <div className="container">
-          <div className="section-header reveal">
-            <div className="badge badge-primary">💡 Why GulfStream</div>
-            <h2 className="display-md">Recovery planning backed by operational understanding</h2>
-            <p>
-              We help businesses define backup and continuity models around real operational needs, rather than generic technical templates that do not fit the way the business actually runs.
-            </p>
-          </div>
-
-          <div className="grid-2 reveal reveal-stagger">
-            <div className="card premium-card">
-              <div className="card-header">
-                <div className="icon-box">🔍</div>
-                <div className="card-title-row">
-                  <h3>Business-impact driven</h3>
-                </div>
-              </div>
-              <p className="text-muted">
-                We assess which systems matter most, what recovery time is acceptable, and what data protection decisions best support operational continuity.
-              </p>
-            </div>
-
-            <div className="card premium-card">
-              <div className="card-header">
-                <div className="icon-box">🧭</div>
-                <div className="card-title-row">
-                  <h3>Recovery plans you can actually use</h3>
-                </div>
-              </div>
-              <p className="text-muted">
-                We help turn technical protection into a practical, understandable continuity model that teams can rely on when disruption occurs.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="section">
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-primary">❓ FAQ</div>
@@ -424,7 +348,7 @@ const BackupDisasterRecoveryContent = () => {
                   </button>
                   <div id={`faq-answer-${index}`} className="faq-answer">
                     <div className="faq-answer-inner">
-                      <p>{faq.answer}</p>
+                      <p style={{ color: 'var(--text-secondary)', fontSize: '0.8rem' }}>{faq.answer}</p>
                     </div>
                   </div>
                 </div>

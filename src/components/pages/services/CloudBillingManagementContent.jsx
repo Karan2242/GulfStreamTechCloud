@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { useReveal } from '@/hooks/useReveal';
+import ComparisonTable from './cloud-managed/ComparisonTable';
 
 const CloudBillingManagementContent = () => {
   useReveal();
@@ -39,7 +40,7 @@ const CloudBillingManagementContent = () => {
           <div className="breadcrumb">
             <Link href="/">Home</Link><span>›</span><Link href="/services">Services</Link><span>›</span><span>Cloud Billing Management</span>
           </div>
-          <h1 className="display-lg">Cloud Billing Management <span className="text-gradient">in Saudi Arabia</span></h1>
+          <h1 className="display-lg"><span className="text-gradient">Enterprise Cloud Billing Management Services</span></h1>
           <p>GulfStream Technologies delivers unified, transparent cloud billing management across AWS, Microsoft Cloud, Oracle, and Google Cloud — with real-time dashboards, chargeback reporting, anomaly detection, and executive-ready spend analytics that eliminate billing surprises for enterprises in Riyadh and the Middle East.</p>
           <div style={{ display: 'flex', gap: '16px', justifyContent: 'left', flexWrap: 'wrap' }}>
             <Link href="/book-a-review" className="btn btn-primary btn-lg">Get a Free Billing Audit</Link>
@@ -67,7 +68,7 @@ const CloudBillingManagementContent = () => {
 
 
       {/* CHALLENGES */}
-      <section className="section" style={{ background: 'var(--dark-surface)' }}>
+      <section className="section" >
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-primary">⚠️ Challenges</div>
@@ -123,7 +124,7 @@ const CloudBillingManagementContent = () => {
 
 
       {/* WHAT YOU GET */}
-      <section className="section">
+      <section className="section" style={{ background: 'var(--dark-surface)' }}>
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-accent">🎯 What You Get</div>
@@ -184,7 +185,7 @@ const CloudBillingManagementContent = () => {
 
 
       {/* OUTCOMES / METRICS */}
-      <section className="section" style={{ background: 'var(--dark-surface)' }}>
+      <section className="section" >
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-primary">📊 Results</div>
@@ -212,7 +213,7 @@ const CloudBillingManagementContent = () => {
       </section>
 
       {/* USE CASES */}
-      <section className="section" >
+      <section className="section" style={{ background: 'var(--dark-surface)' }}>
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-accent">🎯 Use Cases</div>
@@ -247,39 +248,23 @@ const CloudBillingManagementContent = () => {
      
 
  
-      {/* COMPARISON */}
-      <section className="section" style={{ background: 'var(--dark-surface)' }}>
-        <div className="container">
-          <div className="section-header reveal">
-            <div className="badge badge-primary">⚖️ Compare</div>
-            <h2 className="display-md">Why GulfStream vs Others</h2>
-          </div>
-          <div className="reveal" style={{ overflowX: 'auto' }}>
-            <table className="comparison-table">
-              <thead>
-                <tr>
-                  <th>Feature</th>
-                  <th className="highlight-col">GulfStream</th>
-                  <th>Freelancers</th>
-                  <th>In-House</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr><td>24/7 Billing Monitoring</td><td className="highlight-col">✅</td><td>❌</td><td>⚠️</td></tr>
-                <tr><td>Certified Cloud Engineers</td><td className="highlight-col">✅</td><td>❌</td><td>⚠️</td></tr>
-                <tr><td>Multi-Cloud Billing</td><td className="highlight-col">✅</td><td>❌</td><td>❌</td></tr>
-                <tr><td>Cost Optimization Built-In</td><td className="highlight-col">✅</td><td>❌</td><td>❌</td></tr>
-                <tr><td>SLA Guarantee</td><td className="highlight-col">✅</td><td>❌</td><td>⚠️</td></tr>
-                <tr><td>Executive Reporting</td><td className="highlight-col">✅</td><td>⚠️</td><td>⚠️</td></tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </section>
+      <ComparisonTable
+        badge="⚖️ Compare Billing Operating Models"
+        title="Choose Cloud Billing Management With Complete Accountability"
+        description="Compare the monitoring, reporting, and cost control your finance and engineering teams receive."
+        rows={[
+          ['24/7 cloud billing monitoring', 'yes', 'no', 'partial'],
+          ['Certified cloud billing engineers', 'yes', 'no', 'partial'],
+          ['Multi-cloud billing visibility', 'yes', 'no', 'no'],
+          ['Built-in cost optimization', 'yes', 'no', 'no'],
+          ['SLA-backed billing support', 'yes', 'no', 'partial'],
+          ['Executive spend reporting', 'yes', 'partial', 'partial'],
+        ]}
+      />
 
 
       {/* FAQ */}
-      <section className="section" >
+      <section className="section" style={{ background: 'var(--dark-surface)' }}>
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-primary">❓ FAQ</div>

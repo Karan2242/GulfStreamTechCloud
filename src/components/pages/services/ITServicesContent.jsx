@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { useReveal } from '@/hooks/useReveal';
 
 const serviceCards = [
@@ -11,6 +12,7 @@ const serviceCards = [
     href: '/it-services/managed-it-support',
     cta: 'Explore Managed IT Support →',
     icon: '🛠️',
+    image: '/assets/images/it-support-tile.svg',
   },
   {
     title: 'Networking & Infrastructure',
@@ -18,6 +20,7 @@ const serviceCards = [
     href: '/it-services/networking-infrastructure',
     cta: 'Explore Networking Services →',
     icon: '🌐',
+    image: '/assets/images/it-network-tile.svg',
   },
   {
     title: 'Servers & Virtualization',
@@ -25,6 +28,7 @@ const serviceCards = [
     href: '/it-services/on-prem-servers-virtualization',
     cta: 'Explore Server Services →',
     icon: '🖥️',
+    image: '/assets/images/it-servers-tile.svg',
   },
   {
     title: 'Backup & Disaster Recovery',
@@ -32,6 +36,7 @@ const serviceCards = [
     href: '/it-services/backup-disaster-recovery',
     cta: 'Explore Backup & DR →',
     icon: '💾',
+    image: '/assets/images/it-recovery-tile.svg',
   },
   {
     title: 'Cybersecurity for SMBs',
@@ -39,6 +44,7 @@ const serviceCards = [
     href: '/it-services/cybersecurity-smb',
     cta: 'Explore Cybersecurity →',
     icon: '🔐',
+    image: '/assets/images/it-security-tile.svg',
   },
   {
     title: 'IT Projects & Deployments',
@@ -46,6 +52,7 @@ const serviceCards = [
     href: '/it-services/it-projects-deployments',
     cta: 'Explore IT Projects →',
     icon: '🚀',
+    image: '/assets/images/it-projects-tile.svg',
   },
 ];
 
@@ -68,12 +75,12 @@ const outcomeCards = [
 ];
 
 const whyChoose = [
-  { title: 'Practical Support', description: 'IT support focused on resolving issues and keeping employees productive.' },
-  { title: 'Proactive Operations', description: 'Monitoring and maintenance designed to identify problems before they become larger disruptions.' },
-  { title: 'Security-Minded', description: 'Security considerations built into everyday IT operations and infrastructure.' },
-  { title: 'Business Continuity', description: 'Backup and recovery planning focused on keeping critical business operations resilient.' },
-  { title: 'Scalable IT', description: 'Technology services that can adapt as your business, users, offices, and systems grow.' },
-  { title: 'GCC-Focused Support', description: 'IT services designed for organizations operating across Saudi Arabia and the wider GCC.' },
+  { title: 'Practical Support', description: 'IT support focused on resolving issues and keeping employees productive.', icon: '🎧' },
+  { title: 'Proactive Operations', description: 'Monitoring and maintenance designed to identify problems before they become larger disruptions.', icon: '📡' },
+  { title: 'Security-Minded', description: 'Security considerations built into everyday IT operations and infrastructure.', icon: '🛡️' },
+  { title: 'Business Continuity', description: 'Backup and recovery planning focused on keeping critical business operations resilient.', icon: '🔄' },
+  { title: 'Scalable IT', description: 'Technology services that can adapt as your business, users, offices, and systems grow.', icon: '📈' },
+  { title: 'GCC-Focused Support', description: 'IT services designed for organizations operating across Saudi Arabia and the wider GCC.', icon: '🌍' },
 ];
 
 const deliverySteps = [
@@ -168,14 +175,21 @@ Reliable managed IT support, secure network and server management, pragmatic cyb
               From day-to-day IT support to infrastructure projects and business continuity, GulfStream provides practical IT services designed around your organization&apos;s operational requirements.
             </p>
           </div>
-          <div className="services-grid reveal">
-            {serviceCards.map((service) => (
-              <article key={service.title} className="service-card premium-card">
-                <div className="service-content">
-                  <div className="icon-box" style={{ marginBottom: '0.75rem' }}>{service.icon}</div>
+          <div className="it-services-tile-grid">
+            {serviceCards.map((service, index) => (
+              <article key={service.title} className={`it-service-tile it-service-tile-${index + 1} reveal`}>
+                <div className="it-service-tile-media">
+                  <Image src={service.image} alt={`${service.title} illustration`} fill sizes="(max-width: 768px) 100vw, 50vw" />
+                  <div className="it-service-tile-overlay" />
+                  <div className="it-service-tile-meta">
+                    <span className="it-service-tile-number">0{index + 1}</span>
+                    <div className="icon-box" aria-hidden="true">{service.icon}</div>
+                  </div>
+                </div>
+                <div className="it-service-tile-content">
                   <h3>{service.title}</h3>
                   <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>{service.description}</p>
-                  <Link href={service.href} className="btn btn-accent btn-sm">{service.cta}</Link>
+                  <Link href={service.href} className="it-service-link">{service.cta.replace(' →', '')} <span aria-hidden="true">↗</span></Link>
                 </div>
               </article>
             ))}
@@ -238,7 +252,7 @@ Reliable managed IT support, secure network and server management, pragmatic cyb
             {whyChoose.map((item) => (
               <div key={item.title} className="card premium-card">
                 <div className="card-header">
-                  <div className="icon-box">✓</div>
+                  <div className="icon-box">{item.icon}</div>
                   <div className="card-title-row"><h3>{item.title}</h3></div>
                 </div>
                 <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>{item.description}</p>

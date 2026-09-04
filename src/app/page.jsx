@@ -3,21 +3,24 @@ import HomeContent from '@/components/pages/HomeContent';
 import { DEFAULT_OG_IMAGE } from '@/lib/metadata';
 
 export const metadata = {
-  title: 'Managed Cloud Services | GulfStream Technologies',
-  description: 'Multi-Managed Cloud Services in Saudi Arabia — AWS, Azure, Google Cloud & Oracle Cloud. Reduce costs 30%, strengthen security & scale with certified cloud specialists.',
+  title: 'Cloud, AI, IT & Technology Talent Partner | GulfStream Technologies',
+  description: 'GulfStream Technologies helps organizations modernize cloud infrastructure, adopt practical AI, strengthen IT operations, and access technology talent through one accountable partner across the GCC.',
   keywords: [
-    'Managed Cloud Services Saudi Arabia',
-    'AWS managed services Saudi Arabia',
-    'Azure cloud consulting Saudi Arabia',
-    'cloud cost optimization Saudi Arabia',
-    'FinOps consulting Saudi Arabia',
-    'cloud security Saudi Arabia',
-    'cloud migration Saudi Arabia',
+    'GulfStream Technologies',
+    'technology services',
+    'digital transformation partner',
+    'cloud services',
+    'AI services',
+    'IT services',
+    'technology talent services',
+    'GCC technology solutions',
+    'business technology partner',
   ],
   alternates: { canonical: 'https://gulfstreamtech.com.sa/' },
   openGraph: {
-    title: 'Managed Cloud Services | GulfStream Technologies',
-    description: 'Multi-Managed Cloud Services in Saudi Arabia — AWS, Azure, Google Cloud & Oracle Cloud. Reduce costs 30%, strengthen security & scale with certified cloud specialists.',
+    title: 'Cloud, AI, IT & Technology Talent Partner | GulfStream Technologies',
+    description: 'One technology partner across Cloud, AI, IT and Technology Talent for organizations modernizing and scaling across the GCC.',
+    url: 'https://gulfstreamtech.com.sa/',
     siteName: 'GulfStream Technologies',
     locale: 'en_US',
     type: 'website',
@@ -25,8 +28,8 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Managed Cloud Services | GulfStream Technologies',
-    description: 'Multi-Managed Cloud Services in Saudi Arabia — AWS, Azure, Google Cloud & Oracle Cloud. Reduce costs 30%, strengthen security & scale with certified cloud specialists.',
+    title: 'Cloud, AI, IT & Technology Talent Partner | GulfStream Technologies',
+    description: 'One technology partner across Cloud, AI, IT and Technology Talent for strategy, delivery, operations and optimization.',
     images: [DEFAULT_OG_IMAGE.url],
   },
 };
@@ -34,28 +37,27 @@ export const metadata = {
 const serviceSchema = {
   '@context': 'https://schema.org',
   '@type': 'Service',
-  name: 'Managed Cloud Services Saudi Arabia',
+  name: 'Integrated Technology Services',
   description:
-    'Enterprise-grade managed cloud services across AWS, Azure, Oracle Cloud and Google Cloud in Saudi Arabia. 24/7 monitoring, FinOps cost optimization, cloud security, and cloud migration.',
+    'Integrated Cloud, AI, IT and technology talent services delivered by one accountable partner for organizations across the GCC.',
   provider: {
     '@type': 'Organization',
     name: 'GulfStream Technologies',
     url: 'https://gulfstreamtech.com.sa',
   },
   areaServed: {
-    '@type': 'Country',
-    name: 'Saudi Arabia',
+    '@type': 'Place',
+    name: 'GCC',
   },
-  serviceType: 'Managed Cloud Services',
+  serviceType: 'Integrated Technology Services',
   hasOfferCatalog: {
     '@type': 'OfferCatalog',
-    name: 'Cloud Services',
+    name: 'Technology Capabilities',
     itemListElement: [
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'AWS Managed Services' } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Azure Cloud Consulting' } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'FinOps Cost Optimization' } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Cloud Security & Governance' } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Cloud Migration' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Cloud Services' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'AI Services' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'IT Services' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Manpower Services' } },
     ],
   },
 };
@@ -63,13 +65,72 @@ const serviceSchema = {
 const faqSchema = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
-      mainEntity: [
-      { '@type': 'Question', name: 'What are Managed Cloud Services?', acceptedAnswer: { '@type': 'Answer', text: 'Managed Cloud Services involve outsourcing cloud operations, monitoring, security, and optimization to certified experts.', } },
-      { '@type': 'Question', name: 'How much can you save on cloud costs?', acceptedAnswer: { '@type': 'Answer', text: 'Clients typically save 25-35% through rightsizing, Reserved Instance planning, and continuous cost governance.', } },
-      { '@type': 'Question', name: 'How quickly can you see results with GulfStream?', acceptedAnswer: { '@type': 'Answer', text: 'Most organizations see measurable cloud savings and stability improvements within 60-90 days.', } },
-      { '@type': 'Question', name: 'Do you support AWS, Azure, Google Cloud, and Oracle Cloud?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. We support AWS, Azure, Google Cloud, Oracle Cloud, and hybrid operations with unified governance.', } },
-      { '@type': 'Question', name: 'Why choose GulfStream for cloud management in Saudi Arabia?', acceptedAnswer: { '@type': 'Answer', text: 'A local Saudi team with multi-cloud certifications, FinOps expertise, and compliance experience delivers faster outcomes.', } },
-    ],
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'What services does GulfStream Technologies provide?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'GulfStream provides integrated Cloud Services, AI Services, IT Services, and Manpower Services for organizations that need one accountable technology partner.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Can GulfStream support projects that require multiple technology capabilities?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes. GulfStream combines cloud, AI, IT and technology talent in one coordinated engagement so strategy, implementation and operations stay aligned.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Do you provide both project-based and ongoing managed services?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes. GulfStream supports consulting, project delivery, managed services and long-term partnership models based on business needs.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What types of technology professionals can GulfStream provide?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'GulfStream provides professionals across cloud platforms, cybersecurity, AI, data engineering, infrastructure, software delivery and enterprise IT operations.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Can GulfStream help modernize existing IT environments?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes. GulfStream supports assessment, architecture, migration, implementation, optimization and ongoing support for existing environments.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Do you work with organizations across the GCC?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes. GulfStream works with organizations across Saudi Arabia and the broader GCC, aligned to regional operational and regulatory needs.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'How do we start a conversation with GulfStream?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'You can contact GulfStream for an initial discussion and practical next-step recommendations based on your business priorities.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Can GulfStream support both strategic advisory and implementation?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes. GulfStream can engage from discovery and strategy through implementation, operation and continuous optimization.',
+      },
+    },
+  ],
 };
 
 const breadcrumbSchema = {

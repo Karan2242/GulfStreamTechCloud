@@ -89,7 +89,7 @@ const PlatformSelector = () => {
   const active = platforms[activeIndex];
 
   return (
-    <section className="section" style={{ background: 'var(--dark-surface)' }}>
+    <section className="section" >
       <div className="container">
         <div className="section-header reveal">
           <div className="badge badge-accent">☁️ Platforms</div>
@@ -107,8 +107,8 @@ const PlatformSelector = () => {
               role="tab"
               aria-selected={i === activeIndex}
             >
-              <Image src={p.logo} alt={p.name} className="platform-tab-logo" width={24} height={24} priority={false} style={{ objectFit: 'contain' }} />
-              {p.name}
+              <span className="platform-tab-index">0{i + 1}</span>
+              <span>{p.name}</span>
             </button>
           ))}
         </div>

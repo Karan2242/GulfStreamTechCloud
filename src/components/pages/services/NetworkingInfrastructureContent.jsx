@@ -206,25 +206,25 @@ const NetworkingInfrastructureContent = () => {
           </div>
 
           <h1 className="display-lg">
-            <span className="text-gradient">Network Infrastructure Services</span> for Reliable Business Connectivity
+            <span className="text-gradient">Network Infrastructure Services for Secure, Scalable Business Connectivity</span>
           </h1>
 
           <p>
-            GulfStream helps businesses build and maintain dependable network infrastructure that supports productivity, stable communications, and secure access across the workplace.
+            GulfStream helps businesses design, improve, and manage reliable LAN, WAN, Wi-Fi, and multi-site networks that keep teams connected, applications available, and business operations secure.
           </p>
 
           <div className="hero-actions">
             <Link href="/contact" className="btn btn-primary btn-lg">
               Book a Network Review
             </Link>
-            <Link href="/it-services" className="btn btn-outline btn-lg">
+            <Link href="/it-services" className="btn btn-outline btn-lg" style={{ backgroundColor: '#ffffff', color: '#0052CC', borderColor: 'rgba(0,0,0,0.08)' }}>
               Explore IT Services
             </Link>
           </div>
         </div>
       </section>
 
-      <section className="section" style={{ background: 'var(--dark-surface)' }}>
+      <section className="section" >
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-primary">⚠️ Why it matters</div>
@@ -243,14 +243,14 @@ const NetworkingInfrastructureContent = () => {
                     <h3>{item.title}</h3>
                   </div>
                 </div>
-                <p className="text-muted">{item.description}</p>
+                <p className="text-muted" style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>{item.description}</p>
               </article>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="section">
+      <section className="section" style={{ background: 'var(--dark-surface)' }}>
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-accent">🌐 Network services</div>
@@ -269,30 +269,7 @@ const NetworkingInfrastructureContent = () => {
                     <h3>{item.title}</h3>
                   </div>
                 </div>
-                <p className="text-muted">{item.description}</p>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="section" style={{ background: 'var(--dark-surface)' }}>
-        <div className="container">
-          <div className="section-header reveal">
-            <div className="badge badge-primary">🧭 How we work</div>
-            <h2 className="display-md">A practical network delivery approach</h2>
-          </div>
-
-          <div className="grid-3 reveal reveal-stagger">
-            {networkDelivery.map((item) => (
-              <article className="card premium-card" key={item.title}>
-                <div className="card-header">
-                  <div className="icon-box">{item.number}</div>
-                  <div className="card-title-row">
-                    <h3>{item.title}</h3>
-                  </div>
-                </div>
-                <p className="text-muted">{item.description}</p>
+                <p className="text-muted" style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>{item.description}</p>
               </article>
             ))}
           </div>
@@ -300,6 +277,32 @@ const NetworkingInfrastructureContent = () => {
       </section>
 
       <section className="section">
+        <div className="container">
+          <div className="section-header reveal">
+            <div className="badge badge-primary">🧭 Our delivery method</div>
+            <h2 className="display-md">A clear path from network issues to dependable performance</h2>
+            <p>
+              We combine technical assessment with practical implementation so every network improvement is aligned with business priorities, security requirements, and long-term manageability.
+            </p>
+          </div>
+
+          <div className="delivery-process reveal reveal-stagger">
+            {networkDelivery.map((item) => (
+              <article className="process-step" key={item.title}>
+                <div className="process-step-header">
+                  <span className="process-step-number">{item.number}</span>
+                  <h3>{item.title}</h3>
+                </div>
+                <div className="process-step-body">
+                  <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>{item.description}</p>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section"  style={{ background: 'var(--dark-surface)' }}>
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-accent">📈 Business outcomes</div>
@@ -315,29 +318,7 @@ const NetworkingInfrastructureContent = () => {
                     <h3>{item.title}</h3>
                   </div>
                 </div>
-                <p className="text-muted">{item.description}</p>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="section" style={{ background: 'var(--dark-surface)' }}>
-        <div className="container">
-          <div className="section-header reveal">
-            <div className="badge badge-primary">🧩 Supported environments</div>
-            <h2 className="display-md">Network areas we commonly support</h2>
-          </div>
-
-          <div className="grid-3 reveal reveal-stagger">
-            {networkCoverage.map((item) => (
-              <article className="card premium-card" key={item.title}>
-                <div className="card-header">
-                  <div className="icon-box">{item.icon}</div>
-                  <div className="card-title-row">
-                    <h3>{item.title}</h3>
-                  </div>
-                </div>
+                <p className="text-muted" style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>{item.description}</p>
               </article>
             ))}
           </div>
@@ -360,7 +341,7 @@ const NetworkingInfrastructureContent = () => {
                     <h3>{item.title}</h3>
                   </div>
                 </div>
-                <p className="text-muted">{item.description}</p>
+                <p className="text-muted" style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>{item.description}</p>
               </article>
             ))}
           </div>
@@ -368,44 +349,6 @@ const NetworkingInfrastructureContent = () => {
       </section>
 
       <section className="section" style={{ background: 'var(--dark-surface)' }}>
-        <div className="container">
-          <div className="section-header reveal">
-            <div className="badge badge-primary">💡 Why GulfStream</div>
-            <h2 className="display-md">Business-first network guidance</h2>
-            <p>
-              We focus on practical infrastructure decisions that support business continuity, security, and long-term manageability rather than technology for its own sake.
-            </p>
-          </div>
-
-          <div className="grid-2 reveal reveal-stagger">
-            <div className="card premium-card">
-              <div className="card-header">
-                <div className="icon-box">🎯</div>
-                <div className="card-title-row">
-                  <h3>Practical recommendations</h3>
-                </div>
-              </div>
-              <p className="text-muted">
-                We assess the real operating environment and align network improvements with day-to-day business needs, user experience, and infrastructure priorities.
-              </p>
-            </div>
-
-            <div className="card premium-card">
-              <div className="card-header">
-                <div className="icon-box">🔗</div>
-                <div className="card-title-row">
-                  <h3>Connected IT perspective</h3>
-                </div>
-              </div>
-              <p className="text-muted">
-                Network services are considered alongside broader IT, cybersecurity, cloud, and support needs so infrastructure decisions support the wider environment.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="section">
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-primary">❓ FAQ</div>
@@ -430,7 +373,7 @@ const NetworkingInfrastructureContent = () => {
                   </button>
                   <div id={`faq-answer-${index}`} className="faq-answer">
                     <div className="faq-answer-inner">
-                      <p>{faq.answer}</p>
+                      <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>{faq.answer}</p>
                     </div>
                   </div>
                 </div>

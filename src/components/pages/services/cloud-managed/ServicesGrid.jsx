@@ -34,7 +34,7 @@ const services = [
 ];
 
 const ServicesGrid = () => (
-  <section className="section" >
+  <section className="section" style={{ background: 'var(--dark-surface)' }} >
     <div className="container">
       <div className="section-header reveal">
         <div className="badge badge-primary">🛠️ Full Coverage</div>

@@ -10,7 +10,7 @@ const coreCapabilities = [
     eyebrow: 'CLOUD TRANSFORMATION',
     description:
       'Modernize, migrate and optimize AWS, Azure, Google Cloud and Oracle Cloud environments for secure growth.',
-    href: '/services',
+    href: '/cloud-services',
     cta: 'Explore Cloud Services →',
   },
   {
@@ -142,7 +142,7 @@ const engagementModels = [
   },
   {
     icon: '👥',
-    title: 'Staff Augmentation',
+    title: 'Resource Augmentation',
     description: 'Skilled technology professionals who embed into and extend your teams.',
   },
   {
@@ -197,40 +197,7 @@ const differentiators = [
   },
 ];
 
-const featuredInsights = [
-  {
-    slug: 'cloud-cost-optimization-strategy',
-    category: 'FinOps',
-    title: 'Cloud Cost Optimization Strategy: A Complete Framework',
-    summary:
-      'Learn proven FinOps methodologies to reduce cloud costs through rightsizing, commitment planning, and governance.',
-    readTime: '8 min read',
-  },
-  {
-    slug: 'cloud-iam-security-best-practices',
-    category: 'Security',
-    title: 'Cloud IAM Security Best Practices: AWS, Azure, GCP',
-    summary:
-      'Implement zero-trust identity models, least privilege, and MFA across modern cloud operations.',
-    readTime: '8 min read',
-  },
-  {
-    slug: 'cloud-migration-planning',
-    category: 'Migration',
-    title: 'Cloud Migration Planning Strategy: From Discovery to Go-Live',
-    summary:
-      'A practical framework for assessment, design, validation, and cutover planning in enterprise migration programs.',
-    readTime: '10 min read',
-  },
-  {
-    slug: 'auto-scaling-architecture',
-    category: 'Architecture',
-    title: 'Auto-Scaling Cloud Architecture: Design Patterns',
-    summary:
-      'Build elastic architecture patterns that improve performance while keeping infrastructure spend controlled.',
-    readTime: '10 min read',
-  },
-];
+
 
 const trustPoints = [
   { label: 'GCC Market Expertise', description: 'Saudi Arabia and regional delivery context' },
@@ -375,12 +342,10 @@ export default function HomeContent() {
           <div className="home-integration-layout">
             <article className="home-integration-card">
               <div className="home-integration-orbit" aria-hidden="true">
-                <span className="home-integration-orbit-ring"></span>
-                <span className="home-integration-orbit-core">GS</span>
               </div>
               <div className="home-integration-eyebrow">THE GULFSTREAM MODEL</div>
-              <h3 className="display-sm">From strategy to operations, without the handoff gaps.</h3>
-              <p>
+              <h3 className="display-sm" style={{ marginTop: '1rem' }} >From strategy to operations, without the handoff gaps.</h3>
+              <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', marginTop: '1rem' }}>
                 One coordinated team aligns architecture, implementation, governance and ongoing optimization around your business priorities.
               </p>
               <div className="home-integration-links">
@@ -554,7 +519,7 @@ export default function HomeContent() {
               <Link href="/contact" className="btn btn-white btn-lg">
                 Talk to a Technology Expert
               </Link>
-              <Link href="/services" className="btn-white-outline">
+              <Link href="/cloud-services" className="btn-white-outline">
                 Explore Our Services
               </Link>
             </div>

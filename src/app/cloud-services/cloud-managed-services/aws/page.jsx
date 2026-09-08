@@ -6,11 +6,11 @@ export const metadata = {
   title: 'AWS Managed Services Saudi Arabia',
   description: 'AWS managed services in Saudi Arabia — EC2, RDS, EKS, Lambda & S3. 30% cost reduction, 24/7 monitoring, security & FinOps optimization.',
   keywords: ['AWS managed services Saudi Arabia', 'AWS cloud management Riyadh', 'AWS EC2 managed services', 'AWS cost optimization Saudi Arabia', 'AWS security governance', 'AWS monitoring Saudi Arabia'],
-  alternates: { canonical: 'https://gulfstreamtech.com.sa/services/cloud-managed-services/aws/' },
+  alternates: { canonical: 'https://gulfstreamtech.com.sa/cloud-services/cloud-managed-services/aws/' },
   openGraph: {
     title: 'AWS Managed Services Saudi Arabia | GulfStream',
     description: 'AWS managed services in Saudi Arabia — EC2, RDS, EKS, Lambda & S3. 30% cost reduction, 24/7 monitoring, security & FinOps optimization.',
-    url: 'https://gulfstreamtech.com.sa/services/cloud-managed-services/aws/',
+    url: 'https://gulfstreamtech.com.sa/cloud-services/cloud-managed-services/aws/',
     type: 'website',
     images: [DEFAULT_OG_IMAGE],
   },
@@ -49,8 +49,8 @@ const breadcrumbSchema = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://gulfstreamtech.com.sa/' },
-    { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://gulfstreamtech.com.sa/services/' },
-    { '@type': 'ListItem', position: 3, name: 'Managed Cloud Services', item: 'https://gulfstreamtech.com.sa/services/cloud-managed-services/' },
+    { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://gulfstreamtech.com.sa/cloud-services/' },
+    { '@type': 'ListItem', position: 3, name: 'Managed Cloud Services', item: 'https://gulfstreamtech.com.sa/cloud-services/cloud-managed-services/' },
     { '@type': 'ListItem', position: 4, name: 'AWS Managed Services' },
   ],
 };

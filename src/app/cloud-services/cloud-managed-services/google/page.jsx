@@ -6,11 +6,11 @@ export const metadata = {
   title: 'Google Managed Cloud Services Saudi Arabia',
   description: 'Google Cloud (GCP) managed services in Saudi Arabia — GKE, BigQuery, Cloud Run & Cloud SQL. 28% cost reduction, 24/7 monitoring & data analytics.',
   keywords: ['Google Managed Cloud Services Saudi Arabia', 'GCP managed services Riyadh', 'BigQuery management Saudi Arabia', 'GKE managed services', 'Google Cloud cost optimization', 'GCP monitoring Saudi Arabia'],
-  alternates: { canonical: 'https://gulfstreamtech.com.sa/services/cloud-managed-services/google/' },
+  alternates: { canonical: 'https://gulfstreamtech.com.sa/cloud-services/cloud-managed-services/google/' },
   openGraph: {
     title: 'Google Managed Cloud Services Saudi Arabia | GulfStream',
     description: 'Google Cloud (GCP) managed services in Saudi Arabia — GKE, BigQuery, Cloud Run & Cloud SQL. 28% cost reduction, 24/7 monitoring & data analytics.',
-    url: 'https://gulfstreamtech.com.sa/services/cloud-managed-services/google/',
+    url: 'https://gulfstreamtech.com.sa/cloud-services/cloud-managed-services/google/',
     type: 'website',
     siteName: 'GulfStream Technologies',
     images: [DEFAULT_OG_IMAGE],
@@ -50,8 +50,8 @@ const breadcrumbSchema = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://gulfstreamtech.com.sa/' },
-    { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://gulfstreamtech.com.sa/services/' },
-    { '@type': 'ListItem', position: 3, name: 'Managed Cloud Services', item: 'https://gulfstreamtech.com.sa/services/cloud-managed-services/' },
+    { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://gulfstreamtech.com.sa/cloud-services/' },
+    { '@type': 'ListItem', position: 3, name: 'Managed Cloud Services', item: 'https://gulfstreamtech.com.sa/cloud-services/cloud-managed-services/' },
     { '@type': 'ListItem', position: 4, name: 'Google Managed Cloud Services' },
   ],
 };

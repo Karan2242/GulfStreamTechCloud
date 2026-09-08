@@ -7,6 +7,48 @@ import Image from 'next/image';
 import logo from '@/assets/logo.png';
 import { NAV_SERVICES } from './navConfig';
 
+function ServiceMenuItem({ service, isActive }) {
+  const hasSubmenu = service.submenu?.length > 0;
+  const itemClassName = `dropdown-item ${isActive(service.href) ? 'active' : ''}`;
+  const icon = service.icon?.startsWith('/') ? (
+    <span className="item-icon">
+      <Image src={service.icon} alt="" width={18} height={18} />
+    </span>
+  ) : service.icon ? (
+    <span className="item-icon" aria-hidden="true">{service.icon}</span>
+  ) : null;
+
+  if (!hasSubmenu) {
+    return (
+      <Link href={service.href} className={itemClassName} role="menuitem">
+        {icon}
+        <span>{service.label}</span>
+      </Link>
+    );
+  }
+
+  return (
+    <div className="dropdown-submenu">
+      <Link
+        href={service.href}
+        className={`${itemClassName} dropdown-submenu-toggle`}
+        role="menuitem"
+      >
+        {icon}
+        <span>{service.label}</span>
+        <svg className="submenu-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
+          <polyline points="9 6 15 12 9 18"></polyline>
+        </svg>
+      </Link>
+      <div className="dropdown-submenu-menu">
+        {service.submenu.map((child) => (
+          <ServiceMenuItem key={child.label} service={child} isActive={isActive} />
+        ))}
+      </div>
+    </div>
+  );
+}
+
 const Header = () => {
   const [isMobileOpen, setIsMobileOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -86,141 +128,37 @@ const Header = () => {
         </Link>
 
         <div className="nav-links">
-          <div className={`nav-dropdown ${activeDropdown === 'services' ? 'expanded' : ''}`}>
+          <div
+            className={`nav-dropdown services-nav-dropdown ${activeDropdown === 'services' ? 'expanded' : ''}`}
+            onMouseEnter={() => { if (window.innerWidth > 768) setActiveDropdown('services'); }}
+            onMouseLeave={() => { if (window.innerWidth > 768) setActiveDropdown(null); }}
+          >
+            <Link
+              href="/services"
+              className={`nav-link services-direct-link ${isActive('/services') ? 'active' : ''}`}
+            >
+              Services
+            </Link>
             <button
-              className={`nav-link nav-dropdown-toggle ${isActive('/services') ? 'active' : ''}`}
+              className={`nav-link nav-dropdown-toggle ${isActive('/cloud-services') || isActive('/ai-services') || isActive('/it-services') || isActive('/manpower-services') ? 'active' : ''}`}
+              type="button"
+              aria-label="Open Services menu"
               aria-haspopup="true"
               aria-expanded={activeDropdown === 'services'}
-              onClick={(e) => {
+              onClick={() => {
                 if (window.innerWidth <= 768) {
-                  e.preventDefault();
                   setActiveDropdown(activeDropdown === 'services' ? null : 'services');
                 }
               }}
-              onMouseEnter={() => { if (window.innerWidth > 768) setActiveDropdown('services'); }}
-              onMouseLeave={() => { if (window.innerWidth > 768) setActiveDropdown(null); }}
             >
-              Services
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
             </button>
-            <div 
-              className="dropdown-menu" 
+            <div
+              className="dropdown-menu"
               role="menu"
-              onMouseLeave={() => { if (window.innerWidth > 768) setActiveDropdown(null); }}
             >
-              {NAV_SERVICES.map((category) => (
-                <div key={category.label}>
-                  {category.submenu && !category.href ? (
-                    // Category without href (e.g., Cloud Services) - submenu opener only
-                    <div className="dropdown-submenu">
-                      <div className={`dropdown-item dropdown-submenu-toggle`} style={{ cursor: 'default', opacity: 0.9 }}>
-                        <span>{category.label}</span>
-                        <svg className="submenu-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polyline points="9 6 15 12 9 18"></polyline></svg>
-                      </div>
-                      <div className="dropdown-submenu-menu">
-                        {category.submenu.map((item) => (
-                          <div key={item.label}>
-                            {item.submenu ? (
-                              // Item with nested submenu (e.g., Managed Cloud Services)
-                              <div className="dropdown-submenu">
-                                <Link
-                                  href={item.href}
-                                  className={`dropdown-item dropdown-submenu-toggle ${pathname === item.href || pathname.startsWith(item.href + '/') ? 'active' : ''}`}
-                                >
-                                  {item.icon && item.icon.startsWith('/') ? (
-                                    <span className="item-icon">
-                                      <Image src={item.icon} alt={item.label + ' logo'} width={18} height={18} />
-                                    </span>
-                                  ) : item.icon ? (
-                                    <span className="item-icon">{item.icon}</span>
-                                  ) : null}
-                                  <span>{item.label}</span>
-                                  <svg className="submenu-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polyline points="9 6 15 12 9 18"></polyline></svg>
-                                </Link>
-                                <div className="dropdown-submenu-menu">
-                                  {item.submenu.map((subitem) => (
-                                    <Link
-                                      key={subitem.label}
-                                      href={subitem.href}
-                                      className={`dropdown-item ${pathname === subitem.href ? 'active' : ''}`}
-                                    >
-                                      {subitem.icon && subitem.icon.startsWith('/') ? (
-                                        <span className="item-icon">
-                                          <Image src={subitem.icon} alt={subitem.label + ' logo'} width={18} height={18} />
-                                        </span>
-                                      ) : subitem.icon ? (
-                                        <span className="item-icon">{subitem.icon}</span>
-                                      ) : null}
-                                      {subitem.label}
-                                    </Link>
-                                  ))}
-                                </div>
-                              </div>
-                            ) : (
-                              // Item without nested submenu
-                              <Link
-                                href={item.href}
-                                className={`dropdown-item ${pathname === item.href ? 'active' : ''}`}
-                              >
-                                {item.icon && item.icon.startsWith('/') ? (
-                                  <span className="item-icon">
-                                    <Image src={item.icon} alt={item.label + ' logo'} width={18} height={18} />
-                                  </span>
-                                ) : item.icon ? (
-                                  <span className="item-icon">{item.icon}</span>
-                                ) : null}
-                                {item.label}
-                              </Link>
-                            )}
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  ) : category.external ? (
-                    // External link
-                    <a
-                      href={category.href}
-                      className="dropdown-item"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      role="menuitem"
-                    >
-                      {category.label} {!category.noArrow && <span style={{ fontSize: '.9rem', marginLeft: '4px' }}>↗</span>}
-                    </a>
-                  ) : category.submenu && category.href ? (
-                    // Category with both href and submenu (fallback for future use)
-                    <div className="dropdown-submenu">
-                      <Link 
-                        href={category.href} 
-                        className={`dropdown-item dropdown-submenu-toggle ${isActive(category.href) ? 'active' : ''}`}
-                      >
-                        <span>{category.label}</span>
-                        <svg className="submenu-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polyline points="9 6 15 12 9 18"></polyline></svg>
-                      </Link>
-                      <div className="dropdown-submenu-menu">
-                        {category.submenu.map((item) => (
-                          <Link
-                            key={item.label}
-                            href={item.href}
-                            className={`dropdown-item ${pathname === item.href ? 'active' : ''}`}
-                          >
-                            {item.icon && item.icon.startsWith('/') ? (
-                              <span className="item-icon">
-                                <Image src={item.icon} alt={item.label + ' logo'} width={18} height={18} />
-                              </span>
-                            ) : item.icon ? (
-                              <span className="item-icon">{item.icon}</span>
-                            ) : null}
-                            {item.label}
-                          </Link>
-                        ))}
-                      </div>
-                    </div>
-                  ) : (
-                    // Simple link item
-                    <Link href={category.href} className="dropdown-item" role="menuitem">{category.label}</Link>
-                  )}
-                </div>
+              {NAV_SERVICES.map((service) => (
+                <ServiceMenuItem key={service.label} service={service} isActive={isActive} />
               ))}
             </div>
           </div>

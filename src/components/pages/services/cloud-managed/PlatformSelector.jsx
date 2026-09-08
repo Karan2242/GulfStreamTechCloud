@@ -9,7 +9,7 @@ const platforms = [
     id: 'aws',
     name: 'AWS',
     fullName: 'AWS Managed Services',
-    href: '/services/cloud-managed-services/aws',
+    href: '/cloud-services/cloud-managed-services/aws',
     logo: '/assets/images/logo-aws.png',
     description: 'Complete management of your Amazon Web Services environment — from EC2, RDS, and EKS to Lambda, S3, and CloudFront. Our certified AWS architects deliver 24/7 operations, cost optimization, and security governance for enterprises across Saudi Arabia.',
     services: [
@@ -27,7 +27,7 @@ const platforms = [
     id: 'microsoft-cloud',
     name: 'Microsoft Cloud',
     fullName: 'Microsoft Cloud Managed Services',
-    href: '/services/cloud-managed-services/microsoft-cloud',
+    href: '/cloud-services/cloud-managed-services/microsoft-cloud',
     logo: '/assets/images/logo-azure.png',
     description: 'Comprehensive management of Microsoft Azure infrastructure and Microsoft 365 productivity platform. VMs, AKS, Azure SQL, Entra ID, Defender, Teams, Exchange, and SharePoint. 24/7 operations, hybrid cloud governance, and enterprise compliance for Saudi organizations.',
     services: [
@@ -45,7 +45,7 @@ const platforms = [
     id: 'oracle',
     name: 'Oracle Cloud',
     fullName: 'Oracle Managed Cloud Services',
-    href: '/services/cloud-managed-services/oracle',
+    href: '/cloud-services/cloud-managed-services/oracle',
     logo: '/assets/images/logo-oracle.png',
     description: 'Enterprise Oracle Cloud Infrastructure management — OCI Compute, Autonomous Database, networking, and security. Optimized for performance, cost efficiency, and mission-critical workloads running in the Kingdom of Saudi Arabia.',
     services: [
@@ -63,7 +63,7 @@ const platforms = [
     id: 'google',
     name: 'Google Cloud',
     fullName: 'Google Managed Cloud Services',
-    href: '/services/cloud-managed-services/google',
+    href: '/cloud-services/cloud-managed-services/google',
     logo: '/assets/images/logo-gcp.png',
     description: 'Comprehensive Google Cloud Platform management — GKE, BigQuery, Cloud Run, and Cloud SQL. We bring FinOps-driven cost governance, 24/7 operations, and data analytics expertise to Saudi enterprises in Riyadh and beyond.',
     services: [

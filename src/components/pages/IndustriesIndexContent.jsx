@@ -81,7 +81,7 @@ export default function IndustriesIndexContent() {
         <nav className="breadcrumb" aria-label="Breadcrumb"><Link href="/">Home</Link><span aria-hidden="true">›</span><span>Industries</span></nav>
         <h1 className="display-lg"><span className="text-gradient">Technology Solutions Shaped Around Your Industry</span></h1>
         <p>Every industry has different operational realities, technology priorities and business challenges. GulfStream combines Cloud, AI, IT and technology talent to help organizations build, modernize and operate technology around the way their business works.</p>
-        <div className="hero-actions"><Link href="/contact" className="btn btn-primary btn-lg">Talk to a Technology Expert</Link><Link href="/services" className="btn btn-cta-white btn-lg"><span className="gradient-text">Explore Our Services</span></Link></div>
+        <div className="hero-actions"><Link href="/contact" className="btn btn-primary btn-lg">Talk to a Technology Expert</Link><Link href="/cloud-services" className="btn btn-cta-white btn-lg"><span className="gradient-text">Explore Our Services</span></Link></div>
       </div></section>
 
 
@@ -94,7 +94,7 @@ export default function IndustriesIndexContent() {
       <section className="section"><div className="container"><div className="cta-banner">
 <h2 className="display-md">Technology decisions are better when they start with your business.</h2>
         <p>Tell us about your goals, challenges and current technology environment. We&apos;ll help identify where Cloud, AI, IT or technology talent can create the most value.</p>
-        <div className="cta-actions"><Link href="/contact" className="btn btn-white btn-lg">Talk to a Technology Expert</Link><Link href="/services" className="btn-white-outline">Explore Our Services</Link></div>
+        <div className="cta-actions"><Link href="/contact" className="btn btn-white btn-lg">Talk to a Technology Expert</Link><Link href="/cloud-services" className="btn-white-outline">Explore Our Services</Link></div>
       </div></div></section>
     </main>
   );

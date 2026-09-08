@@ -38,7 +38,7 @@ const FinopsCostOptimizationContent = () => {
       <section className="page-hero">
         <div className="container" style={{ textAlign: 'left' }}>
           <div className="breadcrumb">
-            <Link href="/">Home</Link><span>›</span><Link href="/services">Services</Link><span>›</span><span>FinOps &amp; Cost Optimization</span>
+            <Link href="/">Home</Link><span>›</span><Link href="/cloud-services">Services</Link><span>›</span><span>FinOps &amp; Cost Optimization</span>
           </div>
 
           <h1 className="display-lg"><span className="text-gradient">Enterprise Cloud FinOps &amp; Cost Optimization Services</span></h1>

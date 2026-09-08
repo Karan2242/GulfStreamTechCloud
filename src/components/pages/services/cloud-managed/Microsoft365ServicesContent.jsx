@@ -164,7 +164,7 @@ const Microsoft365ServicesContent = () => {
       <section className="page-hero">
         <div className="container"  style={{ textAlign: 'left' }}>
           <div className="breadcrumb">
-            <Link href="/">Home</Link><span>›</span><Link href="/services">Services</Link><span>›</span><Link href="/services/cloud-managed-services">Managed Cloud Services</Link><span>›</span><Link href="/services/cloud-managed-services/microsoft-cloud">Microsoft Cloud</Link><span>›</span><span>Microsoft 365 Services</span>
+            <Link href="/">Home</Link><span>›</span><Link href="/cloud-services">Services</Link><span>›</span><Link href="/cloud-services/cloud-managed-services">Managed Cloud Services</Link><span>›</span><Link href="/cloud-services/cloud-managed-services/microsoft-cloud">Microsoft Cloud</Link><span>›</span><span>Microsoft 365 Services</span>
           </div>
           <h1 className="display-lg"><span className="text-gradient">Microsoft 365 Managed Services in Saudi Arabia</span></h1>
           <p>GulfStream Technologies delivers comprehensive management of your Microsoft 365 environment — from Exchange Online and Teams to SharePoint, OneDrive, and Microsoft Entra ID. We provide 24/7 operations, compliance governance, license optimization, and end-user support tailored for Saudi enterprises.</p>

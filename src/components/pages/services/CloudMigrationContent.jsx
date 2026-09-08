@@ -38,7 +38,7 @@ const CloudMigrationContent = () => {
       <section className="page-hero">
         <div className="container" style={{ textAlign: 'left' }}>
           <div className="breadcrumb">
-            <Link href="/">Home</Link><span>›</span><Link href="/services">Services</Link><span>›</span><span>Cloud Migration</span>
+            <Link href="/">Home</Link><span>›</span><Link href="/cloud-services">Services</Link><span>›</span><span>Cloud Migration</span>
           </div>
           <h1 className="display-lg"><span className="text-gradient">Enterprise Cloud Migration &amp; Modernization Services</span></h1>
           <p>GulfStream Technologies designs and executes cloud migration projects in Saudi Arabia with zero business disruption — moving your workloads to AWS, Microsoft Cloud, Google Cloud, and Oracle Cloud using our proven 6Rs methodology, wave-based planning, and post-migration optimization for enterprises in Saudi Arabia.</p>

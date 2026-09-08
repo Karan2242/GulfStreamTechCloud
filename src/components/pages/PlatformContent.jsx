@@ -15,7 +15,7 @@ const platformCards = [
     capabilities: ['FinOps', 'Security', 'Migration', 'Monitoring'],
     expertise: 'Certified AWS Partner in Riyadh',
     cta: 'Explore AWS Operations',
-    link: '/services/cloud-managed-services/aws',
+    link: '/cloud-services/cloud-managed-services/aws',
   },
   {
     badge: 'Microsoft',
@@ -26,7 +26,7 @@ const platformCards = [
     capabilities: ['Identity', 'Governance', 'Security', 'Optimization'],
     expertise: 'Microsoft cloud delivery specialists',
     cta: 'Explore Microsoft Cloud Operations',
-    link: '/services/cloud-managed-services/microsoft-cloud',
+    link: '/cloud-services/cloud-managed-services/microsoft-cloud',
   },
   {
     badge: 'GCP',
@@ -37,7 +37,7 @@ const platformCards = [
     capabilities: ['Kubernetes', 'Analytics', 'DevOps', 'Observability'],
     expertise: 'GCP operations and data platform expertise',
     cta: 'Explore Google Cloud',
-    link: '/services/cloud-managed-services/google',
+    link: '/cloud-services/cloud-managed-services/google',
   },
   {
     badge: 'OCI',
@@ -48,7 +48,7 @@ const platformCards = [
     capabilities: ['Enterprise Apps', 'Hybrid Cloud', 'Governance', 'Compliance'],
     expertise: 'OCI enterprise workload specialists',
     cta: 'Explore Oracle Cloud',
-    link: '/services/cloud-managed-services/oracle',
+    link: '/cloud-services/cloud-managed-services/oracle',
   },
 ];
 

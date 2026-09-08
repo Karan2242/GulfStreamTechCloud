@@ -38,7 +38,7 @@ const AzureServicesContent = () => {
       <section className="page-hero">
         <div className="container" style={{ textAlign: 'left' }}>
           <div className="breadcrumb">
-            <Link href="/">Home</Link><span>›</span><Link href="/services">Services</Link><span>›</span><Link href="/services/cloud-managed-services">Managed Cloud Services</Link><span>›</span><Link href="/services/cloud-managed-services/microsoft-cloud">Microsoft Cloud</Link><span>›</span><span>Azure Services</span>
+            <Link href="/">Home</Link><span>›</span><Link href="/cloud-services">Services</Link><span>›</span><Link href="/cloud-services/cloud-managed-services">Managed Cloud Services</Link><span>›</span><Link href="/cloud-services/cloud-managed-services/microsoft-cloud">Microsoft Cloud</Link><span>›</span><span>Azure Services</span>
           </div>
           <h1 className="display-lg"><span className="text-gradient">Azure Managed Services in Saudi Arabia</span></h1>
           <p>GulfStream Technologies is a trusted managed cloud services provider for Microsoft Azure in Saudi Arabia. We deliver comprehensive Azure cloud management — from VMs, AKS, and Azure SQL to Entra ID and Defender — with 24/7 cloud monitoring services, enterprise governance, and FinOps consulting to cut costs by up to 29%.</p>

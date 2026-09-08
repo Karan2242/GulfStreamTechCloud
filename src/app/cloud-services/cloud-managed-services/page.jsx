@@ -16,11 +16,11 @@ export const metadata = {
     'cloud security governance',
     '24/7 cloud monitoring',
   ],
-  alternates: { canonical: 'https://gulfstreamtech.com.sa/services/cloud-managed-services/' },
+  alternates: { canonical: 'https://gulfstreamtech.com.sa/cloud-services/cloud-managed-services/' },
   openGraph: {
     title: 'Multi-Managed Cloud Services Saudi Arabia | GulfStream',
     description: '24/7 managed cloud services for AWS, Azure, Oracle & Google Cloud in Saudi Arabia. Monitoring, FinOps, security governance & certified cloud experts.',
-    url: 'https://gulfstreamtech.com.sa/services/cloud-managed-services/',
+    url: 'https://gulfstreamtech.com.sa/cloud-services/cloud-managed-services/',
     type: 'website',
     siteName: 'GulfStream Technologies',
     images: [DEFAULT_OG_IMAGE],
@@ -67,8 +67,8 @@ const breadcrumbSchema = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://gulfstreamtech.com.sa/' },
-    { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://gulfstreamtech.com.sa/services/' },
-    { '@type': 'ListItem', position: 3, name: 'Managed Cloud Services', item: 'https://gulfstreamtech.com.sa/services/cloud-managed-services/' },
+    { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://gulfstreamtech.com.sa/cloud-services/' },
+    { '@type': 'ListItem', position: 3, name: 'Managed Cloud Services', item: 'https://gulfstreamtech.com.sa/cloud-services/cloud-managed-services/' },
   ],
 };
 

@@ -6,11 +6,11 @@ export const metadata = {
   title: 'FinOps & Cloud Cost Optimization Saudi Arabia',
   description: 'FinOps & cloud cost optimization in Saudi Arabia. 32% average cost reduction across AWS, Azure, Google Cloud & Oracle Cloud with spend visibility, rightsizing & RI strategy.',
   keywords: ['FinOps Saudi Arabia', 'cloud cost optimization', 'cloud cost reduction', 'FinOps consulting', 'rightsizing', 'Reserved Instance strategy', 'cloud cost management Riyadh', 'FinOps framework', 'cloud spend optimization', 'GulfStream Technologies'],
-  alternates: { canonical: 'https://gulfstreamtech.com.sa/services/finops-cost-optimization/' },
+  alternates: { canonical: 'https://gulfstreamtech.com.sa/cloud-services/finops-cost-optimization/' },
   openGraph: {
     title: 'FinOps & Cloud Cost Optimization Saudi Arabia | GulfStream',
     description: 'FinOps & cloud cost optimization in Saudi Arabia. 32% average cost reduction across AWS, Azure, Google Cloud & Oracle Cloud with spend visibility, rightsizing & RI strategy.',
-    url: 'https://gulfstreamtech.com.sa/services/finops-cost-optimization/',
+    url: 'https://gulfstreamtech.com.sa/cloud-services/finops-cost-optimization/',
     type: 'website',
     images: [DEFAULT_OG_IMAGE],
   },
@@ -49,8 +49,8 @@ const breadcrumbSchema = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://gulfstreamtech.com.sa/' },
-    { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://gulfstreamtech.com.sa/services/' },
-    { '@type': 'ListItem', position: 3, name: 'FinOps & Cost Optimization', item: 'https://gulfstreamtech.com.sa/services/finops-cost-optimization/' },
+    { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://gulfstreamtech.com.sa/cloud-services/' },
+    { '@type': 'ListItem', position: 3, name: 'FinOps & Cost Optimization', item: 'https://gulfstreamtech.com.sa/cloud-services/finops-cost-optimization/' },
   ],
 };
 

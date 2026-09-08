@@ -58,9 +58,8 @@ const BookReviewContent = () => {
           <nav className="breadcrumb" aria-label="Breadcrumb">
             <Link href="/">Home</Link><span>›</span><span>Book a Free Cloud Review</span>
           </nav>
-          <h1 className="display-lg"><span className="text-gradient">Free Enterprise Cloud Assessment for Saudi Arabia</span></h1>
-          <p>Book a free, no-obligation cloud assessment for your Saudi enterprise — covering AWS, Microsoft, Google Cloud, and Oracle Cloud. Delivered by certified cloud specialists within 5 business days. Discover exact cost savings, security gaps, and performance improvements.</p>
-          
+          <h1 className="display-lg"><span className="text-gradient">Let&apos;s Discuss Your Technology Priorities</span></h1>
+          <p>A focused, no-obligation conversation to understand your goals and outline how GulfStream can help — across cloud, AI, IT and technology workforce.</p>
         </div>
       </section>
 
@@ -70,7 +69,7 @@ const BookReviewContent = () => {
       {/* THE FORM */}
       <section className="section" >
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1.6fr', gap: '20px', alignItems: 'start' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: '20px', alignItems: 'start' }}>
             {/* Left: Trust / Process */}
             <div className="reveal">
               <h2 style={{ marginBottom: '16px', fontSize: '1.3rem' }}>How It Works</h2>
@@ -79,21 +78,21 @@ const BookReviewContent = () => {
                   <div style={{ width: '30px', height: '30px', background: 'var(--gradient-primary)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 800, fontSize: '.8rem', flexShrink: 0 }}>1</div>
                   <div>
                     <h3 style={{ marginBottom: '6px', fontSize: '.95rem' }}>Submit Your Request</h3>
-                    <p style={{ color: 'var(--text-secondary)', fontSize: '.875rem' }}>Fill in the form with your contact details and cloud environment overview.</p>
+                    <p style={{ color: 'var(--text-secondary)', fontSize: '.875rem' }}>Fill in the form with your contact details and environment overview.</p>
                   </div>
                 </div>
                 <div style={{ display: 'flex', gap: '10px', alignItems: 'flex-start' }}>
                   <div style={{ width: '30px', height: '30px', background: 'var(--gradient-primary)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 800, fontSize: '.8rem', flexShrink: 0 }}>2</div>
                   <div>
                     <h3 style={{ marginBottom: '6px', fontSize: '.95rem' }}>Discovery Call (30 min)</h3>
-                    <p style={{ color: 'var(--text-secondary)', fontSize: '.875rem' }}>A senior cloud specialist contacts you to understand your environment and share read-only access credentials for our analysis tools.</p>
+                    <p style={{ color: 'var(--text-secondary)', fontSize: '.875rem' }}>A senior specialist contacts you to understand your environment and share read-only access credentials for our analysis tools.</p>
                   </div>
                 </div>
                 <div style={{ display: 'flex', gap: '10px', alignItems: 'flex-start' }}>
                   <div style={{ width: '30px', height: '30px', background: 'var(--gradient-primary)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 800, fontSize: '.8rem', flexShrink: 0 }}>3</div>
                   <div>
                     <h3 style={{ marginBottom: '6px', fontSize: '.95rem' }}>Assessment &amp; Analysis</h3>
-                    <p style={{ color: 'var(--text-secondary)', fontSize: '.875rem' }}>Our team analyses your cloud environment using industry-leading assessment tools over 3–5 business days.</p>
+                    <p style={{ color: 'var(--text-secondary)', fontSize: '.875rem' }}>Our team analyses your environment using industry-leading assessment tools over 3–5 business days.</p>
                   </div>
                 </div>
                 <div style={{ display: 'flex', gap: '10px', alignItems: 'flex-start' }}>
@@ -109,10 +108,8 @@ const BookReviewContent = () => {
             {/* Right: Form */}
             <div className="reveal">
               <div className="card" style={{ padding: '32px' }}>
-                <h2 style={{ marginBottom: '8px', fontSize: '1.3rem' }}>Book Your Free Cloud Assessment</h2>
-                <p style={{ color: 'var(--text-secondary)', fontSize: '.9rem', marginBottom: '8px' }}>Takes 3 minutes. We&apos;ll be in touch within 4 business hours.</p>
-                <p style={{ color: 'var(--accent)', fontSize: '.85rem', fontWeight: 600, marginBottom: '18px' }}>⚡ Limited to 10 free assessments per month</p>
-                
+                <h2 style={{ marginBottom: '8px', fontSize: '1.3rem' }}>Book Your Free Technology Assessment</h2>
+                <p style={{ color: 'var(--text-secondary)', fontSize: '.9rem', marginBottom: '8px' }}>Takes 3 minutes. We&apos;ll be in touch within 4 business hours.</p>                
                 {formState !== 'success' ? (
                   <form className="contact-form" id="reviewForm" onSubmit={handleReviewSubmit}>
                     {/* Honeypot */}
@@ -291,43 +288,8 @@ const BookReviewContent = () => {
         </div>
       </section>
 
-      {/* FAQ */}
-      <section className="section" style={{ background: 'var(--dark-surface)' }}>
-        <div className="container">
-          <div className="section-header reveal">
-            <div className="badge badge-primary">❓ FAQ</div>
-            <h2 className="display-md">Frequently Asked Questions</h2>
-          </div>
-          <div className="faq-accordion reveal">
-            {bookReviewFaqs.map((faq, index) => {
-              const isOpen = openFaqIndex === index;
 
-              return (
-                <div className={`faq-item ${isOpen ? 'active' : ''}`} key={faq.question}>
-                  <button
-                    className="faq-question"
-                    type="button"
-                    onClick={() => setOpenFaqIndex(isOpen ? null : index)}
-                    aria-expanded={isOpen}
-                    aria-controls={`book-review-faq-answer-${index}`}
-                  >
-                    <span>{faq.question}</span>
-                    <span className="faq-toggle" aria-hidden="true">+</span>
-                  </button>
-                  <div
-                    id={`book-review-faq-answer-${index}`}
-                    className="faq-answer"
-                  >
-                    <div className="faq-answer-inner">
-                      <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>{faq.answer}</p>
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
+
 
       {/* CTA */}
       <section className="section">

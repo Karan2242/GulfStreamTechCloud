@@ -5,13 +5,16 @@ import { DEFAULT_OG_IMAGE } from '@/lib/metadata';
 const faqSchema = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
-      mainEntity: [
-      { '@type': 'Question', name: 'What are Managed Cloud Services?', acceptedAnswer: { '@type': 'Answer', text: 'Managed Cloud Services mean outsourcing cloud operations, monitoring, security, and optimization to specialists.', } },
-      { '@type': 'Question', name: 'How much do your cloud services cost in Saudi Arabia?', acceptedAnswer: { '@type': 'Answer', text: 'Costs depend on environment size, platform mix, and support level. We offer flexible packages with clear ROI and a tailored quote.', } },
-      { '@type': 'Question', name: 'How quickly can you deliver results?', acceptedAnswer: { '@type': 'Answer', text: 'Most clients see measurable cost savings and improved cloud stability within 60-90 days.', } },
-      { '@type': 'Question', name: 'Do you support multi-cloud and hybrid environments?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. We manage AWS, Azure, Google Cloud, Oracle Cloud, and hybrid on-prem/cloud environments.', } },
-      { '@type': 'Question', name: 'Why choose GulfStream Technologies over other providers?', acceptedAnswer: { '@type': 'Answer', text: 'We combine local Saudi expertise, certified multi-cloud engineers, and transparent delivery for measurable cloud outcomes.', } },
-    ],
+  mainEntity: [
+    { '@type': 'Question', name: 'What does GulfStream Technologies do?', acceptedAnswer: { '@type': 'Answer', text: 'GulfStream is a B2B technology partner helping organizations modernize, transform, operate and optimize technology across Cloud, AI, IT and technology talent.' } },
+    { '@type': 'Question', name: "What are GulfStream's four core capabilities?", acceptedAnswer: { '@type': 'Answer', text: 'Our four capabilities are Cloud Services, AI Services, IT Services and Manpower Services.' } },
+    { '@type': 'Question', name: 'Can GulfStream support projects involving multiple technology areas?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. We coordinate the capabilities needed for connected technology initiatives through one accountable relationship.' } },
+    { '@type': 'Question', name: 'Do you provide consulting as well as implementation and managed services?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. We can engage for advisory work, project delivery, managed operations or specialist talent.' } },
+    { '@type': 'Question', name: 'Can GulfStream provide specialized technology professionals?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Manpower Services provides access to specialized technology professionals and project-based technical teams.' } },
+    { '@type': 'Question', name: 'Which types of organizations does GulfStream work with?', acceptedAnswer: { '@type': 'Answer', text: 'We support SMB, mid-market, enterprise and government organizations.' } },
+    { '@type': 'Question', name: 'Do you support organizations across Saudi Arabia and the GCC?', acceptedAnswer: { '@type': 'Answer', text: 'Our primary focus is Saudi Arabia, with strong coverage across the GCC.' } },
+    { '@type': 'Question', name: 'How do we start working with GulfStream?', acceptedAnswer: { '@type': 'Answer', text: 'Start a conversation through our contact page or book a review to discuss your priorities and current technology environment.' } },
+  ],
 };
 
 const breadcrumbSchema = {
@@ -24,15 +27,15 @@ const breadcrumbSchema = {
 };
 
 export const metadata = {
-  title: 'About Us — Cloud Experts Saudi Arabia',
-  description: 'GulfStream Technologies is a leading cloud management company in Saudi Arabia specializing in AWS, Azure, FinOps, and cloud cost optimization for enterprises.',
-  keywords: ['about GulfStream Technologies', 'cloud management Saudi Arabia', 'AWS managed services Saudi Arabia', 'Azure consulting Saudi Arabia', 'FinOps consulting Saudi Arabia', 'cloud cost optimization experts'],
+  title: 'About GulfStream Technologies — One Technology Partner',
+  description: 'GulfStream Technologies is a Saudi Arabia and GCC-focused technology partner across Cloud, AI, IT and technology talent, supporting organizations from strategy through optimization.',
+  keywords: ['GulfStream Technologies', 'technology partner Saudi Arabia', 'Cloud AI IT services GCC', 'technology talent Saudi Arabia'],
   alternates: {
     canonical: 'https://gulfstreamtech.com.sa/about/',
   },
   openGraph: {
-    title: 'About Us — Cloud Experts Saudi Arabia | GulfStream',
-    description: 'GulfStream Technologies is a leading cloud management company in Saudi Arabia specializing in AWS, Azure, FinOps, and cloud cost optimization for enterprises.',
+    title: 'About GulfStream Technologies — One Technology Partner',
+    description: 'One technology partner across Cloud, AI, IT and technology talent for organizations in Saudi Arabia and the GCC.',
     url: 'https://gulfstreamtech.com.sa/about/',
     type: 'website',
     siteName: 'GulfStream Technologies',
@@ -40,8 +43,8 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'About Us — Cloud Experts Saudi Arabia | GulfStream',
-    description: 'GulfStream Technologies is a leading cloud management company in Saudi Arabia specializing in AWS, Azure, FinOps, and cloud cost optimization for enterprises.',
+    title: 'About GulfStream Technologies — One Technology Partner',
+    description: 'One technology partner across Cloud, AI, IT and technology talent for organizations in Saudi Arabia and the GCC.',
     images: [DEFAULT_OG_IMAGE.url],
   },
 };

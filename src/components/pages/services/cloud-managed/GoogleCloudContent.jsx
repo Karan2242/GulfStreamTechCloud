@@ -38,7 +38,7 @@ const GoogleCloudContent = () => {
       <section className="page-hero">
         <div className="container" style={{ textAlign: 'left' }}>
           <div className="breadcrumb">
-            <Link href="/">Home</Link><span>›</span><Link href="/services">Services</Link><span>›</span><Link href="/services/cloud-managed-services">Managed Cloud Services</Link><span>›</span><span>Google Cloud</span>
+            <Link href="/">Home</Link><span>›</span><Link href="/cloud-services">Services</Link><span>›</span><Link href="/cloud-services/cloud-managed-services">Managed Cloud Services</Link><span>›</span><span>Google Cloud</span>
           </div>
           <h1 className="display-lg"><span className="text-gradient">Google Managed Cloud Services in Saudi Arabia</span></h1>
           <p>GulfStream Technologies is a certified managed cloud services provider for Google Cloud Platform (GCP) in Saudi Arabia. We deliver comprehensive GCP management — from GKE and BigQuery to Cloud Run and Security Command Center — with 24/7 cloud monitoring services, data analytics optimization, and FinOps consulting to cut costs by up to 28%.</p>

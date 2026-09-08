@@ -38,7 +38,7 @@ const AzureManagedContent = () => {
       <section className="page-hero">
         <div className="container">
           <div className="breadcrumb">
-            <Link href="/">Home</Link><span>›</span><Link href="/services">Services</Link><span>›</span><Link href="/services/cloud-managed-services">Managed Cloud Services</Link><span>›</span><span>Azure</span>
+            <Link href="/">Home</Link><span>›</span><Link href="/cloud-services">Services</Link><span>›</span><Link href="/cloud-services/cloud-managed-services">Managed Cloud Services</Link><span>›</span><span>Azure</span>
           </div>
           <div className="badge badge-primary" style={{ marginBottom: '16px' }}>🔷 Azure Managed Services</div>
           <h1 className="display-lg">Azure Managed Services<br /><span className="text-gradient">in Saudi Arabia</span></h1>

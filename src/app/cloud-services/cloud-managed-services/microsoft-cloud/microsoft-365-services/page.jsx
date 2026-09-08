@@ -5,11 +5,11 @@ export const metadata = {
   title: 'Microsoft 365 Managed Services Saudi Arabia',
   description: 'Microsoft 365 managed services in Saudi Arabia — Exchange Online, Teams, SharePoint, OneDrive, and Microsoft Entra ID. 24/7 support, compliance, and license optimization.',
   keywords: ['Microsoft 365 management Saudi Arabia', 'Exchange Online management', 'Teams administration', 'Microsoft 365 support Riyadh', 'Microsoft 365 security', 'Microsoft 365 compliance Saudi Arabia'],
-  alternates: { canonical: 'https://gulfstreamtech.com.sa/services/cloud-managed-services/microsoft-cloud/microsoft-365-services/' },
+  alternates: { canonical: 'https://gulfstreamtech.com.sa/cloud-services/cloud-managed-services/microsoft-cloud/microsoft-365-services/' },
   openGraph: {
     title: 'Microsoft 365 Managed Services Saudi Arabia | GulfStream',
     description: 'Complete Microsoft 365 managed services — Exchange, Teams, SharePoint, OneDrive, Entra ID. 24/7 support, compliance, and license optimization.',
-    url: 'https://gulfstreamtech.com.sa/services/cloud-managed-services/microsoft-cloud/microsoft-365-services/',
+    url: 'https://gulfstreamtech.com.sa/cloud-services/cloud-managed-services/microsoft-cloud/microsoft-365-services/',
     type: 'website',
     images: [DEFAULT_OG_IMAGE],
   },
@@ -48,9 +48,9 @@ const breadcrumbSchema = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://gulfstreamtech.com.sa/' },
-    { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://gulfstreamtech.com.sa/services/' },
-    { '@type': 'ListItem', position: 3, name: 'Managed Cloud Services', item: 'https://gulfstreamtech.com.sa/services/cloud-managed-services/' },
-    { '@type': 'ListItem', position: 4, name: 'Microsoft Cloud', item: 'https://gulfstreamtech.com.sa/services/cloud-managed-services/microsoft-cloud/' },
+    { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://gulfstreamtech.com.sa/cloud-services/' },
+    { '@type': 'ListItem', position: 3, name: 'Managed Cloud Services', item: 'https://gulfstreamtech.com.sa/cloud-services/cloud-managed-services/' },
+    { '@type': 'ListItem', position: 4, name: 'Microsoft Cloud', item: 'https://gulfstreamtech.com.sa/cloud-services/cloud-managed-services/microsoft-cloud/' },
     { '@type': 'ListItem', position: 5, name: 'Microsoft 365 Services' },
   ],
 };

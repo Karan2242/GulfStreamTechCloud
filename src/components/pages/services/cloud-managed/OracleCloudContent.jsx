@@ -38,7 +38,7 @@ const OracleCloudContent = () => {
       <section className="page-hero">
         <div className="container" style={{ textAlign: 'left' }}>
           <div className="breadcrumb">
-            <Link href="/">Home</Link><span>›</span><Link href="/services">Services</Link><span>›</span><Link href="/services/cloud-managed-services">Managed Cloud Services</Link><span>›</span><span>Oracle Cloud</span>
+            <Link href="/">Home</Link><span>›</span><Link href="/cloud-services">Services</Link><span>›</span><Link href="/cloud-services/cloud-managed-services">Managed Cloud Services</Link><span>›</span><span>Oracle Cloud</span>
           </div>
           <h1 className="display-lg"><span className="text-gradient">Oracle Managed Cloud Services in Saudi Arabia</span></h1>
           <p>GulfStream Technologies is a specialized managed cloud services provider for Oracle Cloud Infrastructure (OCI) in Saudi Arabia. We deliver end-to-end OCI management — from Autonomous Database and Exadata to OKE and Cloud Guard — with 24/7 cloud monitoring services, Oracle licensing optimization, and FinOps consulting to reduce costs by up to 35%.</p>

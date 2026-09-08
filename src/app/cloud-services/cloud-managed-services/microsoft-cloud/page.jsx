@@ -5,11 +5,11 @@ export const metadata = {
   title: 'Microsoft Cloud Services Saudi Arabia | Azure & Microsoft 365',
   description: 'Microsoft Cloud managed services in Saudi Arabia — Azure infrastructure and Microsoft 365 management. 24/7 operations, enterprise security, compliance, and cost optimization.',
   keywords: ['Microsoft Cloud Saudi Arabia', 'Azure managed services', 'Microsoft 365 management', 'cloud services Riyadh', 'Microsoft cloud security', 'Azure compliance Saudi Arabia'],
-  alternates: { canonical: 'https://gulfstreamtech.com.sa/services/cloud-managed-services/microsoft-cloud/' },
+  alternates: { canonical: 'https://gulfstreamtech.com.sa/cloud-services/cloud-managed-services/microsoft-cloud/' },
   openGraph: {
     title: 'Microsoft Cloud Services Saudi Arabia | GulfStream',
     description: 'Comprehensive Microsoft Cloud managed services — Azure infrastructure and Microsoft 365. 24/7 operations, security, compliance, and FinOps optimization.',
-    url: 'https://gulfstreamtech.com.sa/services/cloud-managed-services/microsoft-cloud/',
+    url: 'https://gulfstreamtech.com.sa/cloud-services/cloud-managed-services/microsoft-cloud/',
     type: 'website',
     images: [DEFAULT_OG_IMAGE],
   },
@@ -36,8 +36,8 @@ const breadcrumbSchema = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://gulfstreamtech.com.sa/' },
-    { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://gulfstreamtech.com.sa/services/' },
-    { '@type': 'ListItem', position: 3, name: 'Managed Cloud Services', item: 'https://gulfstreamtech.com.sa/services/cloud-managed-services/' },
+    { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://gulfstreamtech.com.sa/cloud-services/' },
+    { '@type': 'ListItem', position: 3, name: 'Managed Cloud Services', item: 'https://gulfstreamtech.com.sa/cloud-services/cloud-managed-services/' },
     { '@type': 'ListItem', position: 4, name: 'Microsoft Cloud' },
   ],
 };

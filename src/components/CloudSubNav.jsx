@@ -6,10 +6,10 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
 const cloudServices = [
-  { name: 'AWS', href: '/services/cloud-managed-services/aws', iconSrc: '/assets/images/logo-aws.png', alt: 'AWS logo' },
-  { name: 'Microsoft Cloud', href: '/services/cloud-managed-services/microsoft-cloud', iconSrc: '/assets/images/logo-azure.png', alt: 'Microsoft Cloud logo' },
-  { name: 'Oracle Cloud', href: '/services/cloud-managed-services/oracle', iconSrc: '/assets/images/logo-oracle.png', alt: 'Oracle Cloud logo' },
-  { name: 'Google Cloud', href: '/services/cloud-managed-services/google', iconSrc: '/assets/images/logo-gcp.png', alt: 'Google Cloud logo' },
+  { name: 'AWS', href: '/cloud-services/cloud-managed-services/aws', iconSrc: '/assets/images/logo-aws.png', alt: 'AWS logo' },
+  { name: 'Microsoft Cloud', href: '/cloud-services/cloud-managed-services/microsoft-cloud', iconSrc: '/assets/images/logo-azure.png', alt: 'Microsoft Cloud logo' },
+  { name: 'Oracle Cloud', href: '/cloud-services/cloud-managed-services/oracle', iconSrc: '/assets/images/logo-oracle.png', alt: 'Oracle Cloud logo' },
+  { name: 'Google Cloud', href: '/cloud-services/cloud-managed-services/google', iconSrc: '/assets/images/logo-gcp.png', alt: 'Google Cloud logo' },
 ];
 
 const CloudSubNav = () => {

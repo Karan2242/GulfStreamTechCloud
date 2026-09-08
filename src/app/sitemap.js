@@ -8,23 +8,23 @@ export default function sitemap() {
     '/about',
     '/contact',
     '/insights',
-    '/services',
+    '/cloud-services',
     '/industries',
     '/book-a-review',
     '/cookie-policy',
     '/privacy-policy',
     '/terms-of-service',
-    '/services/cloud-managed-services',
-    '/services/cloud-managed-services/aws',
-    '/services/cloud-managed-services/microsoft-cloud',
-    '/services/cloud-managed-services/microsoft-cloud/azure-services',
-    '/services/cloud-managed-services/microsoft-cloud/microsoft-365-services',
-    '/services/cloud-managed-services/oracle',
-    '/services/cloud-managed-services/google',
-    '/services/finops-cost-optimization',
-    '/services/cloud-billing-management',
-    '/services/cloud-migration',
-    '/services/cloud-security-governance',
+    '/cloud-services/cloud-managed-services',
+    '/cloud-services/cloud-managed-services/aws',
+    '/cloud-services/cloud-managed-services/microsoft-cloud',
+    '/cloud-services/cloud-managed-services/microsoft-cloud/azure-services',
+    '/cloud-services/cloud-managed-services/microsoft-cloud/microsoft-365-services',
+    '/cloud-services/cloud-managed-services/oracle',
+    '/cloud-services/cloud-managed-services/google',
+    '/cloud-services/finops-cost-optimization',
+    '/cloud-services/cloud-billing-management',
+    '/cloud-services/cloud-migration',
+    '/cloud-services/cloud-security-governance',
     '/manpower-services',
     '/it-services',
     '/it-services/managed-it-support',
@@ -67,9 +67,9 @@ export default function sitemap() {
     changeFrequency: route === '' ? 'weekly' : 'monthly',
     priority: 
       route === '' ? 1 
-      : route === '/services' || route === '/book-a-review' ? 0.9
+      : route === '/cloud-services' || route === '/book-a-review' ? 0.9
       : route === '/insights' || route.startsWith('/insights/') ? 0.8
-      : route.includes('/services/') || route.includes('/industries/') ? 0.7 
+      : route.includes('/cloud-services/') || route.includes('/industries/') ? 0.7 
       : route === '/cookie-policy' || route === '/privacy-policy' || route === '/terms-of-service' ? 0.6 
       : 0.8,
   }));

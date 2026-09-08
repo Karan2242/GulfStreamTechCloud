@@ -6,11 +6,11 @@ export const metadata = {
   title: 'Cloud Security & Governance Saudi Arabia',
   description: 'Cloud security & governance in Saudi Arabia across AWS, Azure, Google Cloud & Oracle Cloud. Threat detection, IAM hardening, NCA ECC compliance & 24/7 SOC.',
   keywords: ['cloud security Saudi Arabia', 'cloud governance', 'IAM hardening', 'NCA ECC compliance', 'threat detection', 'cloud security Riyadh', 'CSPM', 'cloud compliance', 'security operations center', 'GulfStream Technologies'],
-  alternates: { canonical: 'https://gulfstreamtech.com.sa/services/cloud-security-governance/' },
+  alternates: { canonical: 'https://gulfstreamtech.com.sa/cloud-services/cloud-security-governance/' },
   openGraph: {
     title: 'Cloud Security & Governance Saudi Arabia | GulfStream',
     description: 'Cloud security & governance in Saudi Arabia across AWS, Azure, Google Cloud & Oracle Cloud. Threat detection, IAM hardening, NCA ECC compliance & 24/7 SOC.',
-    url: 'https://gulfstreamtech.com.sa/services/cloud-security-governance/',
+    url: 'https://gulfstreamtech.com.sa/cloud-services/cloud-security-governance/',
     type: 'website',
     images: [DEFAULT_OG_IMAGE],
   },
@@ -49,8 +49,8 @@ const breadcrumbSchema = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://gulfstreamtech.com.sa/' },
-    { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://gulfstreamtech.com.sa/services/' },
-    { '@type': 'ListItem', position: 3, name: 'Cloud Security & Governance', item: 'https://gulfstreamtech.com.sa/services/cloud-security-governance/' },
+    { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://gulfstreamtech.com.sa/cloud-services/' },
+    { '@type': 'ListItem', position: 3, name: 'Cloud Security & Governance', item: 'https://gulfstreamtech.com.sa/cloud-services/cloud-security-governance/' },
   ],
 };
 

@@ -38,7 +38,7 @@ const CloudBillingManagementContent = () => {
       <section className="page-hero">
         <div className="container" style={{ textAlign: 'left' }}>
           <div className="breadcrumb">
-            <Link href="/">Home</Link><span>›</span><Link href="/services">Services</Link><span>›</span><span>Cloud Billing Management</span>
+            <Link href="/">Home</Link><span>›</span><Link href="/cloud-services">Services</Link><span>›</span><span>Cloud Billing Management</span>
           </div>
           <h1 className="display-lg"><span className="text-gradient">Enterprise Cloud Billing Management Services</span></h1>
           <p>GulfStream Technologies delivers unified, transparent cloud billing management across AWS, Microsoft Cloud, Oracle, and Google Cloud — with real-time dashboards, chargeback reporting, anomaly detection, and executive-ready spend analytics that eliminate billing surprises for enterprises in Riyadh and the Middle East.</p>

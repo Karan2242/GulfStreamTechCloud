@@ -6,7 +6,7 @@ const HeroSection = () => (
   <section className="page-hero">
     <div className="container" style={{ textAlign: 'left' }}>
       <div className="breadcrumb">
-        <Link href="/">Home</Link><span>›</span><Link href="/services">Services</Link><span>›</span><span>Managed Cloud Services</span>
+        <Link href="/">Home</Link><span>›</span><Link href="/cloud-services">Services</Link><span>›</span><span>Managed Cloud Services</span>
       </div>
 
       <h1 className="display-lg"><span className="text-gradient">Enterprise Managed Cloud Service in Saudi Arabia</span></h1>

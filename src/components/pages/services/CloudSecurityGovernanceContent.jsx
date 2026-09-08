@@ -38,7 +38,7 @@ const CloudSecurityGovernanceContent = () => {
       <section className="page-hero">
         <div className="container" style={{ textAlign: 'left' }}>
           <div className="breadcrumb">
-            <Link href="/">Home</Link><span>›</span><Link href="/services">Services</Link><span>›</span><span>Cloud Security &amp; Governance</span>
+            <Link href="/">Home</Link><span>›</span><Link href="/cloud-services">Services</Link><span>›</span><span>Cloud Security &amp; Governance</span>
           </div>
           <h1 className="display-lg"><span className="text-gradient">Enterprise Cloud Security &amp; Governance Services</span></h1>
           <p>GulfStream Technologies delivers enterprise-grade cloud security and governance across multi-cloud environments in Saudi Arabia — combining continuous threat detection, IAM hardening, NCA ECC compliance automation, and policy enforcement to protect your most critical cloud workloads in Saudi Arabia.</p>

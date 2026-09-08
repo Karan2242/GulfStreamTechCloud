@@ -6,11 +6,11 @@ export const metadata = {
   title: 'Oracle Managed Cloud Services Saudi Arabia',
   description: 'Oracle Cloud (OCI) managed services in Saudi Arabia — Autonomous Database, Exadata & OCI Compute. 35% cost reduction, 24/7 monitoring & licensing optimization.',
   keywords: ['Oracle Managed Cloud Services Saudi Arabia', 'OCI managed services Riyadh', 'Oracle database management Saudi Arabia', 'Oracle licensing optimization', 'Oracle Cloud cost reduction', 'OCI monitoring Saudi Arabia'],
-  alternates: { canonical: 'https://gulfstreamtech.com.sa/services/cloud-managed-services/oracle/' },
+  alternates: { canonical: 'https://gulfstreamtech.com.sa/cloud-services/cloud-managed-services/oracle/' },
   openGraph: {
     title: 'Oracle Managed Cloud Services Saudi Arabia | GulfStream',
     description: 'Oracle Cloud (OCI) managed services in Saudi Arabia — Autonomous Database, Exadata & OCI Compute. 35% cost reduction, 24/7 monitoring & licensing optimization.',
-    url: 'https://gulfstreamtech.com.sa/services/cloud-managed-services/oracle/',
+    url: 'https://gulfstreamtech.com.sa/cloud-services/cloud-managed-services/oracle/',
     type: 'website',
     siteName: 'GulfStream Technologies',
     images: [DEFAULT_OG_IMAGE],
@@ -50,8 +50,8 @@ const breadcrumbSchema = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://gulfstreamtech.com.sa/' },
-    { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://gulfstreamtech.com.sa/services/' },
-    { '@type': 'ListItem', position: 3, name: 'Managed Cloud Services', item: 'https://gulfstreamtech.com.sa/services/cloud-managed-services/' },
+    { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://gulfstreamtech.com.sa/cloud-services/' },
+    { '@type': 'ListItem', position: 3, name: 'Managed Cloud Services', item: 'https://gulfstreamtech.com.sa/cloud-services/cloud-managed-services/' },
     { '@type': 'ListItem', position: 4, name: 'Oracle Managed Cloud Services' },
   ],
 };

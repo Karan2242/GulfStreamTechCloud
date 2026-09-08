@@ -6,13 +6,13 @@ import logo from '@/assets/logo.png';
 const footerServices = [
   {
     title: 'Cloud Services',
-    href: '/services',
+    href: '/cloud-services',
     links: [
-      { label: 'Managed Cloud Services', href: '/services/cloud-managed-services' },
-      { label: 'Cloud Migration', href: '/services/cloud-migration' },
-      { label: 'Cloud Security & Governance', href: '/services/cloud-security-governance' },
-      { label: 'FinOps & Cost Optimization', href: '/services/finops-cost-optimization' },
-      { label: 'Cloud Billing Management', href: '/services/cloud-billing-management' },
+      { label: 'Managed Cloud Services', href: '/cloud-services/cloud-managed-services' },
+      { label: 'Cloud Migration', href: '/cloud-services/cloud-migration' },
+      { label: 'Cloud Security & Governance', href: '/cloud-services/cloud-security-governance' },
+      { label: 'FinOps & Cost Optimization', href: '/cloud-services/finops-cost-optimization' },
+      { label: 'Cloud Billing Management', href: '/cloud-services/cloud-billing-management' },
     ],
   },
   {

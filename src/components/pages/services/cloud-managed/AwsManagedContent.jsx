@@ -38,7 +38,7 @@ const AwsManagedContent = () => {
       <section className="page-hero">
         <div className="container" style={{ textAlign: 'left' }}>
           <div className="breadcrumb">
-            <Link href="/">Home</Link><span>›</span><Link href="/services">Services</Link><span>›</span><Link href="/services/cloud-managed-services">Managed Cloud Services</Link><span>›</span><span>AWS</span>
+            <Link href="/">Home</Link><span>›</span><Link href="/cloud-services">Services</Link><span>›</span><Link href="/cloud-services/cloud-managed-services">Managed Cloud Services</Link><span>›</span><span>AWS</span>
           </div>
           <h1 className="display-lg"><span className="text-gradient">AWS Managed Services in Saudi Arabia</span></h1>
           <p>GulfStream Technologies is a leading managed cloud services provider for AWS in Saudi Arabia. We manage your entire AWS environment — from EC2, RDS, and EKS to Lambda and S3 — with certified engineers, 24/7 cloud monitoring services, and FinOps consulting to reduce costs by up to 32%.</p>

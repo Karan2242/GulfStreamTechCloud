@@ -5,7 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useReveal } from '@/hooks/useReveal';
 
-const ServicesIndexContent = () => {
+const CloudServicesContent = () => {
   useReveal();
 
   return (
@@ -46,7 +46,7 @@ const ServicesIndexContent = () => {
                 <div className="service-content">
                   <h3>Managed Cloud Services</h3>
                   <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>End-to-end managed cloud operations across AWS, Microsoft, Google Cloud & Oracle Cloud — 24/7 monitoring, incident response, security governance, and FinOps cost optimization for your entire cloud estate in Saudi Arabia.</p>
-                  <Link href="/services/cloud-managed-services" className="btn btn-accent btn-sm">Optimize Your Cloud Operations →</Link>
+                  <Link href="/cloud-services/cloud-managed-services" className="btn btn-accent btn-sm">Optimize Your Cloud Operations →</Link>
 
                 </div>
             </div>
@@ -55,7 +55,7 @@ const ServicesIndexContent = () => {
                 <div className="service-content">
                   <h3>Cloud FinOps & Cost Optimization</h3>
                   <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>Apply the FinOps framework to gain full visibility into cloud spend, eliminate waste, rightsize resources, and achieve sustainable cost governance — delivering an average 30% cost reduction across your cloud estate.</p>
-                  <Link href="/services/finops-cost-optimization" className="btn btn-accent btn-sm">Unlock Cloud Cost Savings →</Link>
+                  <Link href="/cloud-services/finops-cost-optimization" className="btn btn-accent btn-sm">Unlock Cloud Cost Savings →</Link>
 
                 </div>
             </div>
@@ -64,7 +64,7 @@ const ServicesIndexContent = () => {
                 <div className="service-content">
                   <h3>Cloud Billing Management</h3>
                   <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>Centralized billing, chargeback reporting, and spend analytics across multiple accounts and teams. Gain accurate cost attribution so that each and every money spent on cloud is justified and trackable.</p>
-                  <Link href="/services/cloud-billing-management" className="btn btn-accent btn-sm">Simplify Cloud Billing & Spend →</Link>
+                  <Link href="/cloud-services/cloud-billing-management" className="btn btn-accent btn-sm">Simplify Cloud Billing & Spend →</Link>
                 </div>
             </div>
             <div className="service-card premium-card reveal">
@@ -72,7 +72,7 @@ const ServicesIndexContent = () => {
                 <div className="service-content">
                   <h3>Cloud Migration & Modernization</h3>
                   <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>Migrate legacy on-premises workloads to AWS, Microsoft, Google Cloud, or Oracle Cloud with zero business disruption. We design, plan, and execute cloud migrations following proven rehost, replatform, and refactor strategies.</p>
-                  <Link href="/services/cloud-migration" className="btn btn-accent btn-sm">Accelerate Your Cloud Migration →</Link>
+                  <Link href="/cloud-services/cloud-migration" className="btn btn-accent btn-sm">Accelerate Your Cloud Migration →</Link>
                 </div>
             </div>
             <div className="service-card premium-card reveal">
@@ -80,7 +80,7 @@ const ServicesIndexContent = () => {
                 <div className="service-content">
                   <h3>Cloud Security & Governance</h3>
                   <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>Enterprise-level cloud security including IAM governance, NCA ECC compliance automation, security posture management, and continuous threat detection across AWS, Microsoft, Google Cloud, and Oracle Cloud environments.</p>
-                  <Link href="/services/cloud-security-governance" className="btn btn-accent btn-sm">Strengthen Your Cloud Security →</Link>
+                  <Link href="/cloud-services/cloud-security-governance" className="btn btn-accent btn-sm">Strengthen Your Cloud Security →</Link>
                 </div>
             </div>
             <div className="service-card premium-card reveal">
@@ -116,7 +116,7 @@ const ServicesIndexContent = () => {
               <h3 style={{ margin: '1rem 0 0.5rem 0', textAlign: 'center', width: '100%', wordWrap: 'break-word', whiteSpace: 'normal' }}>Amazon Web Services</h3>
               <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)', textAlign: 'center' }}>AWS management including EC2 optimization, S3 storage governance, cost reduction, and multi-region disaster recovery with certified AWS architects.</p>
               <div style={{ textAlign: 'center', marginTop: '16px' }}>
-                <Link href="/services/cloud-managed-services/aws" className="btn btn-accent btn-sm">Explore AWS Services →</Link>
+                <Link href="/cloud-services/cloud-managed-services/aws" className="btn btn-accent btn-sm">Explore AWS Services →</Link>
               </div>
             </div>
             <div className="card premium-card">
@@ -132,7 +132,7 @@ const ServicesIndexContent = () => {
               <h3 style={{ margin: '1rem 0 0.5rem 0', textAlign: 'center', width: '100%', wordWrap: 'break-word', whiteSpace: 'normal' }}>Microsoft (Azure/M365)</h3>
               <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)', textAlign: 'center' }}>End-to-end Azure management covering VMs, App Services, databases, security, and hybrid cloud integration with proven Microsoft certification expertise.</p>
               <div style={{ textAlign: 'center', marginTop: '16px' }}>
-                <Link href="/services/cloud-managed-services/microsoft-cloud" className="btn btn-accent btn-sm">Explore Microsoft Cloud Services →</Link>
+                <Link href="/cloud-services/cloud-managed-services/microsoft-cloud" className="btn btn-accent btn-sm">Explore Microsoft Cloud Services →</Link>
               </div>
             </div>
             <div className="card premium-card">
@@ -148,7 +148,7 @@ const ServicesIndexContent = () => {
               <h3 style={{ margin: '1rem 0 0.5rem 0', textAlign: 'center', width: '100%', wordWrap: 'break-word', whiteSpace: 'normal' }}>Google Cloud</h3>
               <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)', textAlign: 'center' }}>Advanced GCP operations including Compute Engine, BigQuery analytics, Kubernetes clusters, and data residency compliance for Saudi organizations.</p>
               <div style={{ textAlign: 'center', marginTop: '16px' }}>
-                <Link href="/services/cloud-managed-services/google" className="btn btn-accent btn-sm">Explore Google Cloud Services →</Link>
+                <Link href="/cloud-services/cloud-managed-services/google" className="btn btn-accent btn-sm">Explore Google Cloud Services →</Link>
               </div>
             </div>
             <div className="card premium-card">
@@ -164,7 +164,7 @@ const ServicesIndexContent = () => {
               <h3 style={{ margin: '1rem 0 0.5rem 0', textAlign: 'center', width: '100%', wordWrap: 'break-word', whiteSpace: 'normal' }}>Oracle Cloud</h3>
               <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)', textAlign: 'center' }}>Specialized Oracle Cloud expertise for database workloads, enterprise applications, and hybrid infrastructure with certified Oracle specialists.</p>
               <div style={{ textAlign: 'center', marginTop: '16px' }}>
-                <Link href="/services/cloud-managed-services/oracle" className="btn btn-accent btn-sm">Explore Oracle Cloud Services →</Link>
+                <Link href="/cloud-services/cloud-managed-services/oracle" className="btn btn-accent btn-sm">Explore Oracle Cloud Services →</Link>
               </div>
             </div>
           </div>
@@ -289,4 +289,4 @@ const ServicesIndexContent = () => {
   );
 };
 
-export default ServicesIndexContent;
+export default CloudServicesContent;

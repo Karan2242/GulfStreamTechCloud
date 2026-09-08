@@ -6,11 +6,11 @@ export const metadata = {
   title: 'Cloud Billing Management Saudi Arabia',
   description: 'Unified cloud billing for AWS, Azure, Oracle & Google Cloud in Saudi Arabia. Real-time dashboards, chargeback reporting & anomaly detection.',
   keywords: ['cloud billing management', 'cloud cost attribution', 'chargeback reporting', 'cloud spend forecasting', 'billing anomaly detection', 'cloud billing Saudi Arabia', 'cloud billing Riyadh', 'multi-cloud billing', 'cloud invoice management', 'GulfStream Technologies'],
-  alternates: { canonical: 'https://gulfstreamtech.com.sa/services/cloud-billing-management/' },
+  alternates: { canonical: 'https://gulfstreamtech.com.sa/cloud-services/cloud-billing-management/' },
   openGraph: {
     title: 'Cloud Billing Management Saudi Arabia | GulfStream',
     description: 'Unified cloud billing for AWS, Azure, Oracle & Google Cloud in Saudi Arabia. Real-time dashboards, chargeback reporting & anomaly detection.',
-    url: 'https://gulfstreamtech.com.sa/services/cloud-billing-management/',
+    url: 'https://gulfstreamtech.com.sa/cloud-services/cloud-billing-management/',
     type: 'website',
     images: [DEFAULT_OG_IMAGE],
   },
@@ -49,8 +49,8 @@ const breadcrumbSchema = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://gulfstreamtech.com.sa/' },
-    { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://gulfstreamtech.com.sa/services/' },
-    { '@type': 'ListItem', position: 3, name: 'Cloud Billing Management', item: 'https://gulfstreamtech.com.sa/services/cloud-billing-management/' },
+    { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://gulfstreamtech.com.sa/cloud-services/' },
+    { '@type': 'ListItem', position: 3, name: 'Cloud Billing Management', item: 'https://gulfstreamtech.com.sa/cloud-services/cloud-billing-management/' },
   ],
 };
 

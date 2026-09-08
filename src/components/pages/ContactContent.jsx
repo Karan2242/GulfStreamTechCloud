@@ -11,39 +11,16 @@ const ContactContent = () => {
   const [errorMsg, setErrorMsg] = useState('');
   const [openFaqIndex, setOpenFaqIndex] = useState(null);
 
-    const contactFaqs = [
-    {
-      question: 'Do you offer a free cloud consultation?',
-      answer: 'Yes. Every new enquiry includes a free cloud consultation and assessment to identify savings, security gaps, and operational improvements.',
-    },
-    {
-      question: 'How quickly do you respond to enquiries?',
-      answer: 'We respond within four business hours on working days, and existing clients receive priority support through our 24/7 operations team.',
-    },
-    {
-      question: 'Which cloud platforms do you support?',
-      answer: 'We support AWS, Microsoft Cloud, Google Cloud, and Oracle Cloud, including single-cloud and multi-cloud enterprise environments.',
-    },
-    {
-      question: 'Can you help reduce our cloud costs?',
-      answer: 'Yes. Our managed services and FinOps teams regularly deliver 25-35% cost reduction for Saudi enterprises.',
-    },
-    {
-      question: 'Do you support multi-cloud and hybrid environments?',
-      answer: 'Yes. We help enterprises manage multi-cloud estates and hybrid on-premises environments with consistent governance and automation.',
-    },
-  ];
+
 
   const serviceOptions = [
-    { id: 'service-aws', value: 'AWS Managed Services', title: 'AWS Managed Services', description: 'Managed AWS operations, governance, and optimization.' },
-    { id: 'service-azure', value: 'Azure Managed Services', title: 'Azure Managed Services', description: 'Azure cloud management, migration and security support.' },
-    { id: 'service-m365', value: 'M365 Services', title: 'M365 Services', description: 'Microsoft 365 deployment, security, and collaboration support for enterprise teams.' },
-    { id: 'service-gcp', value: 'Google Cloud Services', title: 'Google Cloud Services', description: 'GCP architecture, managed workloads, and cost controls.' },
-    { id: 'service-oracle', value: 'Oracle Cloud Services', title: 'Oracle Cloud Services', description: 'OCI managed services, integration, and support for enterprise workloads.' },
-    { id: 'service-migration', value: 'Cloud Migration', title: 'Cloud Migration', description: 'End-to-end migration planning, execution, and cutover support.' },
-    { id: 'service-finops', value: 'FinOps & Cost Optimization', title: 'FinOps & Cost Optimization', description: 'Cloud cost reduction, governance, and efficiency for GCC enterprises.' },
-    { id: 'service-billing', value: 'Cloud Billing Management', title: 'Cloud Billing Management', description: 'Automated billing, showback, and cost accountability for multi-cloud estates.' },
-    { id: 'service-security', value: 'Cloud Security & Governance', title: 'Cloud Security & Governance', description: 'Cloud security controls, compliance, and governance for enterprise workloads.' },
+    { id: 'service-cloud-transformation', value: 'Cloud Consulting & Transformation', title: 'Cloud Consulting & Transformation', description: 'Cloud strategy, architecture, migration, and modernization for enterprise environments.' },
+    { id: 'service-managed-cloud', value: 'Managed Cloud Operations', title: 'Managed Cloud Operations', description: 'Reliable day-to-day operations, monitoring, support, and optimization across AWS, Azure, Google Cloud, and Oracle Cloud.' },
+    { id: 'service-cloud-security', value: 'Cloud Security & Governance', title: 'Cloud Security & Governance', description: 'Security controls, compliance, identity, risk management, and governance for cloud workloads.' },
+    { id: 'service-finops', value: 'FinOps & Cloud Cost Optimization', title: 'FinOps & Cloud Cost Optimization', description: 'Improve cloud cost visibility, accountability, efficiency, and financial control.' },
+    { id: 'service-ai-automation', value: 'AI Solutions & Automation', title: 'AI Solutions & Automation', description: 'Practical AI applications, workflow automation, and intelligent business process improvement.' },
+    { id: 'service-managed-it', value: 'Managed IT & Cybersecurity', title: 'Managed IT & Cybersecurity', description: 'Managed infrastructure, networking, backup, disaster recovery, and cybersecurity support.' },
+    { id: 'service-workforce', value: 'Technology Workforce Solutions', title: 'Technology Workforce Solutions', description: 'Specialist technology professionals and project teams across cloud, IT, cybersecurity, AI, and data.' },
   ];
 
   const handleSubmit = async (e) => {
@@ -81,8 +58,8 @@ const ContactContent = () => {
           <nav className="breadcrumb" aria-label="Breadcrumb">
             <Link href="/">Home</Link><span>›</span><span>Contact</span>
           </nav>
-          <h1 className="display-lg"><span className="text-gradient">Contact Multi-Cloud Experts in Saudi Arabia</span></h1>
-          <p>Connect with GulfStream Technologies for expert-led cloud consulting, managed services, and cloud optimization solutions across AWS, Microsoft, Oracle Cloud, and Google Cloud. We help enterprises across the GCC improve performance, strengthen security, and reduce cloud costs with scalable multi-cloud strategies.</p>
+          <h1 className="display-lg"><span className="text-gradient">Let&apos;s start a Conversation</span></h1>
+          <p>A focused, no-obligation conversation to understand your goals and outline how GulfStream can help — across cloud, AI, IT and technology workforce.</p>
           
         </div>
       </section>
@@ -146,7 +123,7 @@ const ContactContent = () => {
                 }}
               >
                 <h2 style={{ marginBottom: '12px', fontSize: '1.4rem', fontWeight: 700, background: 'linear-gradient(135deg, #fff, rgba(255,255,255,0.8))', backgroundClip: 'text', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', color: '#fff' }}>Send Us a Message</h2>
-                <p style={{ color: 'var(--text-secondary)', fontSize: 'clamp(0.85rem, 2vw, 0.9rem)', marginBottom: '20px', lineHeight: 1.6 }}>Fill in your details and one of our cloud specialists will be in touch within 4 hours during business hours.</p>
+                <p style={{ color: 'var(--text-secondary)', fontSize: 'clamp(0.85rem, 2vw, 0.9rem)', marginBottom: '20px', lineHeight: 1.6 }}>Fill in your details and one of our specialists will be in touch within 4 hours during business hours.</p>
                 <form className="contact-form" id="contactForm" onSubmit={handleSubmit}>
                   {/* Honeypot — hidden from users, caught by Web3Forms */}
                   <input type="checkbox" name="botcheck" style={{ display: 'none' }} tabIndex={-1} autoComplete="off" />
@@ -182,8 +159,8 @@ const ContactContent = () => {
                     </select>
                   </div>
                   <div className="form-group">
-                    <label className="form-label" htmlFor="cloud-size">Cloud Environment Size</label>
-                    <select id="cloud-size" name="cloudSize" aria-label="Cloud Environment Size" className="form-input form-select" defaultValue="" required>
+                    <label className="form-label" htmlFor="cloud-size">Company Environment Size</label>
+                    <select id="company-size" name="CompanySize" aria-label="Company Environment Size" className="form-input form-select" defaultValue="" required>
                       <option value="" disabled>Select size</option>
                       <option value="startup-small">1 - 50</option>
                       <option value="mid-market">51 - 200</option>
@@ -193,7 +170,7 @@ const ContactContent = () => {
                   </div>
                   <div className="form-group">
                     <label className="form-label" htmlFor="message">Project Requirements or Challenges</label>
-                    <textarea id="message" name="message" aria-label="Project Requirements or Challenges" className="form-input form-textarea" placeholder="Briefly describe your cloud environment, challenges, or goals..." rows="4"></textarea>
+                    <textarea id="message" name="message" aria-label="Project Requirements or Challenges" className="form-input form-textarea" placeholder="Briefly describe your environment, challenges, or goals..." rows="4"></textarea>
                   </div>
                   <button type="submit" className="btn btn-primary w-full" style={{ justifyContent: 'center' }} disabled={formState === 'submitting'}>
                     {formState === 'submitting' ? 'Sending...' : 'Send Message →'}
@@ -225,12 +202,12 @@ const ContactContent = () => {
             <div className="card" style={{ padding: 'clamp(16px, 3vw, 24px)', textAlign: 'center' }}>
               <div style={{ fontSize: 'clamp(1.8rem, 4vw, 28px)', marginBottom: '12px' }}>1️⃣</div>
               <h3 style={{ fontSize: '.95rem' }}>We Listen First</h3>
-              <p style={{ color: 'var(--text-secondary)', fontSize: 'clamp(0.8rem, 1.8vw, 0.875rem)' }}>We start by understanding your business goals, cloud challenges, and priorities — not by selling packages.</p>
+              <p style={{ color: 'var(--text-secondary)', fontSize: 'clamp(0.8rem, 1.8vw, 0.875rem)' }}>We start by understanding your business goals, challenges, and priorities — not by selling packages.</p>
             </div>
             <div className="card" style={{ padding: 'clamp(16px, 3vw, 24px)', textAlign: 'center' }}>
               <div style={{ fontSize: 'clamp(1.8rem, 4vw, 28px)', marginBottom: '12px' }}>2️⃣</div>
               <h3 style={{ fontSize: '.95rem' }}>Free Assessment</h3>
-              <p style={{ color: 'var(--text-secondary)', fontSize: 'clamp(0.8rem, 1.8vw, 0.875rem)' }}>We offer a <Link href="/book-a-review" style={{ color: 'var(--accent)' }}>free cloud assessment</Link> for every prospective client — delivering real value before you commit anything.</p>
+              <p style={{ color: 'var(--text-secondary)', fontSize: 'clamp(0.8rem, 1.8vw, 0.875rem)' }}>We offer a <Link href="/book-a-review" style={{ color: 'var(--accent)' }}>free assessment</Link> for every prospective client — delivering real value before you commit anything.</p>
             </div>
             <div className="card" style={{ padding: 'clamp(16px, 3vw, 24px)', textAlign: 'center' }}>
               <div style={{ fontSize: 'clamp(1.8rem, 4vw, 28px)', marginBottom: '12px' }}>3️⃣</div>
@@ -240,58 +217,22 @@ const ContactContent = () => {
             <div className="card" style={{ padding: 'clamp(16px, 3vw, 24px)', textAlign: 'center' }}>
               <div style={{ fontSize: 'clamp(1.8rem, 4vw, 28px)', marginBottom: '12px' }}>4️⃣</div>
               <h3 style={{ fontSize: '.95rem' }}>No Pressure Decision</h3>
-              <p style={{ color: 'var(--text-secondary)', fontSize: 'clamp(0.8rem, 1.8vw, 0.875rem)' }}>You take the time you need. We don&apos;t do high-pressure sales. Our <Link href="/case-studies" style={{ color: 'var(--accent)' }}>case studies</Link> speak for themselves.</p>
+              <p style={{ color: 'var(--text-secondary)', fontSize: 'clamp(0.8rem, 1.8vw, 0.875rem)' }}>You take the time you need. We don&apos;t do high-pressure sales. Our case studies speak for themselves.</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* FAQ */}
-      <section className="section"style={{ background: 'var(--dark-surface)' }}>
-        <div className="container">
-          <div className="section-header reveal">
-            <div className="badge badge-accent">❓ FAQ</div>
-            <h2 className="display-md">Frequently Asked Questions</h2>
-          </div>
-          <div className="faq-accordion reveal">
-            {contactFaqs.map((faq, index) => {
-              const isOpen = openFaqIndex === index;
 
-              return (
-                <div className={`faq-item ${isOpen ? 'active' : ''}`} key={faq.question}>
-                  <button
-                    className="faq-question"
-                    type="button"
-                    onClick={() => setOpenFaqIndex(isOpen ? null : index)}
-                    aria-expanded={isOpen}
-                    aria-controls={`contact-faq-answer-${index}`}
-                  >
-                    <span>{faq.question}</span>
-                    <span className="faq-toggle" aria-hidden="true">+</span>
-                  </button>
-                  <div
-                    id={`contact-faq-answer-${index}`}
-                    className="faq-answer"
-                  >
-                    <div className="faq-answer-inner">
-                      <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>{faq.answer}</p>
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
 
       {/* CTA */}
       <section className="section" >
         <div className="container">
           <div className="cta-banner reveal">
-            <h2 className="display-md">Ready to Optimize Your Cloud?</h2>
-            <p>Talk to certified multi-cloud experts in Riyadh, Saudi Arabia. Get a free consultation, a complimentary cloud assessment, and actionable recommendations — no commitment required.</p>
+            <h2 className="display-md">Ready to Transform Your Technology Strategy?</h2>
+            <p>Speak with GulfStream specialists about cloud transformation, practical AI solutions, managed IT services, or technology workforce support. Get a focused consultation and actionable recommendations aligned with your business goals, priorities, and growth plans.</p>
             <div className="cta-actions">
-              <Link href="/book-a-review" className="btn btn-white btn-lg">📋 Book Free Cloud Assessment</Link>
+              <Link href="/book-a-review" className="btn btn-white btn-lg">📋 Book Free Assessment</Link>
             </div>
           </div>
         </div>

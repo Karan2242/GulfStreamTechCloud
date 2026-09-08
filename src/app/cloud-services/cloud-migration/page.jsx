@@ -6,11 +6,11 @@ export const metadata = {
   title: 'Cloud Migration & Modernization Saudi Arabia',
   description: 'End-to-end cloud migration in Saudi Arabia with zero disruption. 6Rs methodology, wave-based planning & post-migration optimization across AWS, Azure, GCP & OCI.',
   keywords: ['cloud migration Saudi Arabia', 'cloud migration services', 'cloud modernization', 'AWS migration', 'Azure migration', 'data center migration', 'legacy modernization', 'cloud migration Riyadh', '6Rs migration', 'GulfStream Technologies'],
-  alternates: { canonical: 'https://gulfstreamtech.com.sa/services/cloud-migration/' },
+  alternates: { canonical: 'https://gulfstreamtech.com.sa/cloud-services/cloud-migration/' },
   openGraph: {
     title: 'Cloud Migration & Modernization Saudi Arabia | GulfStream',
     description: 'End-to-end cloud migration in Saudi Arabia with zero disruption. 6Rs methodology, wave-based planning & post-migration optimization across AWS, Azure, GCP & OCI.',
-    url: 'https://gulfstreamtech.com.sa/services/cloud-migration/',
+    url: 'https://gulfstreamtech.com.sa/cloud-services/cloud-migration/',
     type: 'website',
     images: [DEFAULT_OG_IMAGE],
   },
@@ -49,8 +49,8 @@ const breadcrumbSchema = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://gulfstreamtech.com.sa/' },
-    { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://gulfstreamtech.com.sa/services/' },
-    { '@type': 'ListItem', position: 3, name: 'Cloud Migration', item: 'https://gulfstreamtech.com.sa/services/cloud-migration/' },
+    { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://gulfstreamtech.com.sa/cloud-services/' },
+    { '@type': 'ListItem', position: 3, name: 'Cloud Migration', item: 'https://gulfstreamtech.com.sa/cloud-services/cloud-migration/' },
   ],
 };
 

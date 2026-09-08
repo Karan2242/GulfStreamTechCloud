@@ -24,7 +24,7 @@ const MicrosoftCloudContent = () => {
         'Cost Management & Advisor',
         'Hybrid Cloud Integration',
       ],
-      href: '/services/cloud-managed-services/microsoft-cloud/azure-services',
+      href: '/cloud-services/cloud-managed-services/microsoft-cloud/azure-services',
       ctaText: 'Explore Azure Services',
     },
     {
@@ -42,7 +42,7 @@ const MicrosoftCloudContent = () => {
         'License & Cost Optimization',
         'End User Support & Training',
       ],
-      href: '/services/cloud-managed-services/microsoft-cloud/microsoft-365-services',
+      href: '/cloud-services/cloud-managed-services/microsoft-cloud/microsoft-365-services',
       ctaText: 'Explore Microsoft 365 Services',
     },
   ];
@@ -53,7 +53,7 @@ const MicrosoftCloudContent = () => {
       <section className="page-hero">
         <div className="container" style={{ textAlign: 'left' }}>
           <div className="breadcrumb">
-            <Link href="/">Home</Link><span>›</span><Link href="/services">Services</Link><span>›</span><Link href="/services/cloud-managed-services">Managed Cloud Services</Link><span>›</span><span>Microsoft Cloud</span>
+            <Link href="/">Home</Link><span>›</span><Link href="/cloud-services">Services</Link><span>›</span><Link href="/cloud-services/cloud-managed-services">Managed Cloud Services</Link><span>›</span><span>Microsoft Cloud</span>
           </div>
           <h1 className="display-lg"><span className="text-gradient">Microsoft Cloud Services in Saudi Arabia</span></h1>
           <p>GulfStream Technologies provides comprehensive managed services for your entire Microsoft cloud ecosystem — from Azure infrastructure to Microsoft 365 productivity and collaboration tools. We deliver enterprise-grade management, security, and compliance across all Microsoft platforms with 24/7 NOC operations and FinOps-driven cost optimization.</p>

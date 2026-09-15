@@ -26,10 +26,10 @@ const industries = [
     outcomes: ['Scalable infrastructure', 'Faster innovation', 'Improved cloud efficiency', 'Stronger security and product reliability'],
   },
   {
-    number: '05', name: 'Healthcare',
-    description: 'Strengthen secure systems, data access and digital healthcare operations with availability-minded, compliance-aware technology that supports clinical and administrative teams.',
-    challenges: ['Sensitive data', 'System availability', 'Interoperability', 'Cybersecurity and legacy infrastructure'],
-    outcomes: ['Stronger security', 'Reliable systems', 'Improved operational efficiency', 'Better data access and scalable digital capabilities'],
+    number: '05', name: 'Hospitality',
+    description: 'Improve guest experiences and hospitality operations with connected digital platforms, reliable infrastructure, accessible data and technology that supports properties, teams and service delivery.',
+    challenges: ['Disconnected property systems', 'Guest experience expectations', 'Operational data visibility', 'Cybersecurity and service reliability'],
+    outcomes: ['More connected guest journeys', 'Improved operational efficiency', 'Better property and performance visibility', 'Scalable and dependable technology operations'],
   },
   {
     number: '06', name: 'Real Estate',

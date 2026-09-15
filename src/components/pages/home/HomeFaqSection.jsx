@@ -4,9 +4,9 @@ import React, { useState } from 'react';
 
 const homeFaqs = [
   {
-    question: 'What services does GulfStream Technologies provide?',
+    question: 'What Technology services does GulfStream Technologies provide?',
     answer:
-      'GulfStream Technologies provides four integrated capabilities: Cloud Services, AI Services, IT Services, and Manpower Services for technology teams.',
+      'GulfStream Technologies provides cloud services, AI solutions, managed IT services and technology talent solutions for organizations across Saudi Arabia and the GCC.',
   },
   {
     question: 'Can GulfStream support projects that require multiple technology capabilities?',
@@ -53,7 +53,7 @@ export default function HomeFaqSection() {
       <div className="container">
         <div className="section-header">
           <div className="badge badge-primary">FAQ</div>
-          <h2 className="display-md">Questions about working with GulfStream?</h2>
+          <h2 className="display-md">Frequently Asked Questions About GulfStream Technologies</h2>
         </div>
 
         <div className="faq-accordion">

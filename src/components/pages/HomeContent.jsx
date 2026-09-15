@@ -9,7 +9,7 @@ const coreCapabilities = [
     image: '/assets/images/service-custom.png',
     eyebrow: 'CLOUD TRANSFORMATION',
     description:
-      'Modernize, migrate and optimize AWS, Azure, Google Cloud and Oracle Cloud environments for secure growth.',
+      'Design, migrate, manage and optimize AWS, Azure, Google Cloud and Oracle Cloud environments with cloud security, FinOps, governance and ongoing operational support.',
     href: '/cloud-services',
     cta: 'Explore Cloud Services →',
   },
@@ -18,7 +18,7 @@ const coreCapabilities = [
     image: '/assets/images/ai-services.png',
     eyebrow: 'APPLIED AI',
     description:
-      'Move from high-value use cases to secure, production-ready AI applications and business process automation.',
+      'Identify high-value AI use cases and build secure, production-ready AI applications, data solutions and intelligent automation aligned with measurable business outcomes.',
     href: '/ai-services',
     cta: 'Explore AI Services →',
   },
@@ -27,7 +27,7 @@ const coreCapabilities = [
     image: '/assets/images/it-services.png',
     eyebrow: 'MANAGED IT OPERATIONS',
     description:
-      'Strengthen infrastructure, networking and cybersecurity with reliable managed IT support and delivery.',
+      'Manage and modernize IT infrastructure, networks, servers, cybersecurity and business-critical systems with structured support and operational oversight.',
     href: '/it-services',
     cta: 'Explore IT Services →',
   },
@@ -36,7 +36,7 @@ const coreCapabilities = [
     image: '/assets/images/manpower-services.png',
     eyebrow: 'SPECIALIST TECHNOLOGY TALENT',
     description:
-      'Extend delivery capacity with experienced cloud, AI, data, cybersecurity and enterprise IT specialists.',
+      'Scale technology delivery with experienced cloud, AI, data, cybersecurity, infrastructure and IT professionals through flexible staffing and dedicated team models.',
     href: '/manpower-services',
     cta: 'Explore Manpower Services →',
   },
@@ -47,37 +47,37 @@ const businessChallenges = [
     title: 'Cloud Complexity',
     icon: '🌐',
     description:
-      'Modernize, migrate and manage complex cloud environments while improving visibility, performance and control.',
+      'Simplify cloud migration, modernization and management while improving infrastructure visibility, security, performance and operational control across complex environments.',
   },
   {
     title: 'Rising Technology Costs',
     icon: '💰',
     description:
-      'Improve cloud and IT cost visibility, governance and operational efficiency.',
+      'Improve cloud cost management with FinOps governance, usage visibility and optimization strategies that reduce waste and support more predictable technology spending.',
   },
   {
-    title: 'AI Uncertainty',
+    title: 'AI Adoption Uncertainty',
     icon: '🧠',
     description:
-      'Identify practical AI use cases and move from experimentation to secure, production-ready implementation.',
+      'Identify valuable AI use cases and move from experimentation to secure, governed and production-ready AI applications, automation and data solutions.',
   },
   {
     title: 'IT Operational Pressure',
     icon: '🔒',
     description:
-      'Improve reliability, support, cybersecurity and infrastructure performance through managed IT services.',
+      'Strengthen managed IT operations with proactive monitoring, cybersecurity, infrastructure support and business continuity services that improve reliability and productivity.',
   },
   {
-    title: 'Technology Talent Shortages',
+    title: 'Technology Talent Gaps',
     icon: '🎯',
     description:
-      'Quickly access specialized technology professionals and delivery teams without the overhead of building internal capacity.',
+      'Access experienced cloud, AI, data, cybersecurity and infrastructure professionals to accelerate delivery without the cost and delay of permanent hiring.',
   },
   {
     title: 'Digital Transformation Delivery',
     icon: '🚀',
     description:
-      'Turn technology strategy into measurable progress with a practical roadmap, accountable delivery and continuous optimization.',
+      'Turn technology strategy into measurable progress through practical roadmaps, accountable implementation, coordinated delivery and continuous optimization across business functions.',
   },
 ];
 
@@ -115,11 +115,36 @@ const deliverySteps = [
 ];
 
 const industries = [
-  { title: 'Retail & E-commerce', icon: '🛒' },
-  { title: 'Healthcare', icon: '🏥' },
-  { title: 'Logistics & Supply Chain', icon: '🚛' },
-  { title: 'Technology & SaaS', icon: '💻' },
-  { title: 'Professional Services', icon: '🏢' },
+  {
+    title: 'Retail & E-commerce',
+    icon: '🛒',
+    description:
+      'Help retail organizations create scalable digital operations, improve customer experiences and manage technology across stores, commerce platforms, data and cloud environments.',
+  },
+  {
+    title: 'Hospitality',
+    icon: '🏨',
+    description:
+      'Improve guest experiences and hospitality operations with connected digital platforms, reliable infrastructure, accessible data and technology that supports properties, teams and service delivery.',
+  },
+  {
+    title: 'Logistics & Supply Chain',
+    icon: '🚛',
+    description:
+      'Connect fleet and logistics systems, operational data and automation on resilient infrastructure that gives supply chain teams clearer visibility and faster decisions.',
+  },
+  {
+    title: 'Technology & SaaS',
+    icon: '💻',
+    description:
+      'Build and operate scalable, cloud-native platforms for product teams that need stronger security, reliable data and AI foundations, and a faster path from development to delivery.',
+  },
+  {
+    title: 'Professional Services',
+    icon: '🏢',
+    description:
+      'Support consulting, legal and advisory organizations with productive collaboration, accessible data, secure business applications and dependable IT operations.',
+  },
 ];
 
 const engagementModels = [
@@ -160,40 +185,40 @@ const engagementModels = [
 
 const differentiators = [
   {
-    title: 'GCC-Focused Expertise',
-    icon: '🌍',
-    description:
-      'Built around the priorities, expectations and operating context of organizations across the GCC.',
+      title: 'Business-First Approach',
+      icon: '📈',
+      description:
+        'We align cloud, AI, IT and digital initiatives with your business objectives, operational priorities, budgets and long-term technology roadmap.',
   },
   {
     title: 'Four Integrated Capabilities',
     icon: '🔗',
     description:
-      'Cloud, AI, IT and technology talent under one accountable partner.',
-  },
+      'Access cloud services, AI solutions, managed IT, cybersecurity and technology talent through one coordinated technology partner, reducing complexity and vendor handoffs.',
+  },  
   {
-    title: 'Business-First Approach',
-    icon: '📈',
+    title: 'GCC-Focused Expertise',
+    icon: '🌍',
     description:
-      'We solve business problems, not just technical ones, starting from measurable outcomes.',
-  },
+      'Our technology solutions are designed around the business, operational and technology requirements of organizations operating across Saudi Arabia and the wider GCC.',
+  },  
   {
     title: 'Enterprise-Ready Delivery',
     icon: '🏗️',
     description:
-      'Structured, secure and dependable delivery designed for complex organizations.',
+      'From cloud migration and infrastructure modernization to AI implementation and IT projects, we provide structured delivery focused on reliability, scalability and measurable outcomes.',
   },
   {
     title: 'Flexible Engagement',
     icon: '🧩',
     description:
-      'Consulting, managed services, projects, staff augmentation and dedicated teams as you need them.',
+      'Choose the right level of support for your organization — from technology consulting and project delivery to managed services, staff augmentation and dedicated technology teams.',
   },
   {
-    title: 'Security-Conscious Delivery',
+    title: 'Security & Operational Resilience ',
     icon: '🛡️',
     description:
-      'Security, governance and operational resilience considered across the solutions we design and support.',
+      'We integrate cybersecurity, cloud governance, infrastructure reliability, risk management and operational best practices across the technology lifecycle.',
   },
 ];
 
@@ -212,28 +237,28 @@ const trustPoints = [
   { label: 'One Accountable Partner', description: 'Strategy, delivery, operations and optimization' },
 ];
 
-const heroTrustPoints = ['24/7 Monitoring & Support', 'FinOps-Led Cost Control', 'Secure Enterprise Delivery'];
+const heroTrustPoints = ['24/7 Monitoring & Support', 'Business-First Advisory', 'Secure Enterprise Delivery'];
 
 const integrationCapabilities = [
   {
     number: '01',
-    title: 'Cloud Foundation',
-    description: 'Secure, scalable infrastructure for enterprise applications and data.',
+    title: 'Cloud Transformation',
+    description: 'Modernize, migrate and optimize secure cloud environments with governance, FinOps and operational support for resilient, cost-effective business applications and data.',
   },
   {
     number: '02',
-    title: 'Applied AI',
-    description: 'Practical automation and intelligence connected to measurable business value.',
+    title: 'Production-Ready AI',
+    description: 'Turn practical AI use cases into secure, production-ready applications, data solutions and intelligent automation that deliver measurable business value at scale.',
   },
   {
     number: '03',
-    title: 'Reliable IT',
-    description: 'Managed operations, cybersecurity and resilience that keep teams productive.',
+    title: 'Managed IT Operations',
+    description: 'Improve infrastructure reliability, cybersecurity and business continuity through structured IT support, proactive monitoring and dependable operations for growing organizations across the GCC.',
   },
   {
     number: '04',
-    title: 'Specialist Talent',
-    description: 'Experienced cloud, data and engineering professionals to extend delivery capacity.',
+    title: 'Specialist Technology Talent',
+    description: 'Extend delivery capacity with experienced cloud, AI, data, cybersecurity and infrastructure professionals through flexible staffing and dedicated team models aligned to business priorities.',
   },
 ];
 
@@ -256,15 +281,14 @@ export default function HomeContent() {
             <div className="hero-content">
               <div className="hero-badge"><span className="text-gradient">ONE TECHNOLOGY PARTNER. FOUR CORE CAPABILITIES.</span></div>
               
-              <h1 className="hero-title"><span>Empowering Digital Transformation Across <span className="text-gradient">Saudi Arabia & the GCC</span></span></h1>
+              <h1 className="hero-title"><span>One Partner. Every Stage of Your Digital Transformation</span></h1>
               <p className="hero-desc">
-                GulfStream Technologies helps organizations modernize cloud infrastructure, adopt practical AI, strengthen IT operations and access specialized technology talent through one coordinated technology partner.
-              </p>
+                From cloud modernization to AI adoption, IT operations to technology talent — GulfStream Technologies brings strategy, execution, and ongoing support together, so businesses across the Saudi Arabia & GCC can move forward with confidence.</p>
               <div className="hero-actions">
-                <Link href="/contact" className="btn btn-primary btn-lg">
+                <Link href="/contact" className="btn btn-primary btn-lg" style={{ marginBottom: '1rem' }}>
                   Talk to a Technology Expert
                 </Link>
-                <Link href="/services" className="btn btn-cta-white btn-lg">
+                <Link href="/services" className="btn btn-cta-white btn-lg" style={{ marginBottom: '1rem' }}>
                   <span className="gradient-text">Explore Our Services</span>
                 </Link>
               </div>
@@ -335,22 +359,22 @@ export default function HomeContent() {
       <section className="section home-integration-section" style={{ background: 'var(--dark-surface)' }}>
         <div className="container">
           <div className="home-integration-heading">
-            <div className="badge badge-accent">INTEGRATED CAPABILITIES</div>
-            <h2 className="display-md">One partner. Four capabilities. One accountable team.</h2>
-            <p>Technology initiatives rarely exist in isolation. GulfStream connects the capabilities, people and operational discipline needed to move from strategy to measurable results.</p>
+
+            <h2 className="display-md">One Technology Partner Across the Entire Transformation Lifecycle</h2>
+            <p>Cloud, AI, IT and technology talent often need to work together to deliver meaningful business outcomes. GulfStream Technologies brings these capabilities together under one coordinated delivery model — reducing handoff gaps between strategy, implementation, operations and optimization.</p>
           </div>
           <div className="home-integration-layout">
             <article className="home-integration-card">
               <div className="home-integration-orbit" aria-hidden="true">
               </div>
               <div className="home-integration-eyebrow">THE GULFSTREAM MODEL</div>
-              <h3 className="display-sm" style={{ marginTop: '1rem' }} >From strategy to operations, without the handoff gaps.</h3>
-              <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', marginTop: '1rem' }}>
-                One coordinated team aligns architecture, implementation, governance and ongoing optimization around your business priorities.
+              <h3 className="display-sm" style={{ marginTop: '1rem' }} >One Accountable Team From Strategy Through Operations</h3>
+              <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginTop: '1rem' }}>
+                One accountable team connects strategy, architecture, implementation, governance and ongoing optimization, helping organizations reduce handoff gaps, move faster and sustain measurable business outcomes.
               </p>
               <div className="home-integration-links">
-                <Link href="/about" className="home-integration-cta">Explore our approach <span aria-hidden="true">↗</span></Link>
-                <Link href="/contact" className="home-integration-cta home-integration-cta-muted">Start a conversation <span aria-hidden="true">↗</span></Link>
+                <Link href="/about" className="home-integration-cta">Explore our Approach <span aria-hidden="true">↗</span></Link>
+                <Link href="/contact" className="home-integration-cta home-integration-cta-muted">Start a Conversation <span aria-hidden="true">↗</span></Link>
               </div>
               <div className="home-integration-signature">
                 <span className="home-integration-signature-line"></span>
@@ -379,21 +403,20 @@ export default function HomeContent() {
           <SectionHeader
             badgeClass="badge badge-primary"
             badgeText="BUSINESS FIRST"
-            title="Solve business challenges, not just technology problems."
-            description="We start with the business outcome you need and bring together the right combination of cloud, AI, IT and technology talent to achieve it."
+            title="Technology Challenges We Help Organizations Solve"
+            description="GulfStream helps organizations address cloud complexity, rising technology costs, AI adoption, IT operations and technology talent shortages through practical, secure solutions."
           />
           <div className="home-challenges-grid">
             {businessChallenges.map((challenge, index) => (
-              <article key={challenge.title} className={`home-challenge-card${index === 0 ? ' home-challenge-card-featured' : ''}`}>
+              <article key={challenge.title} className="home-challenge-card">
                 <div className="home-challenge-topline">
                   <span className="home-challenge-number">0{index + 1}</span>
                   <span className="home-challenge-status">BUSINESS PRESSURE</span>
                 </div>
                 <div className="home-challenge-content">
                   <h3>{challenge.title}</h3>
-                  <p style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>{challenge.description}</p>
+                  <p>{challenge.description}</p>
                 </div>
-                <span className="home-challenge-arrow" aria-hidden="true"></span>
               </article>
             ))}
           </div>
@@ -405,76 +428,21 @@ export default function HomeContent() {
           <SectionHeader
             badgeClass="badge badge-accent"
             badgeText="HOW WE HELP"
-            title="From strategy to continuous optimization."
+            title="From Technology Strategy to Reliable Day-to-Day Operations"
             description="GulfStream can engage at any stage of the journey from first strategy to continuous optimization."
           />
-          <div className="delivery-process home-delivery-process">
+          <div className="home-roadmap" aria-label="GulfStream delivery roadmap">
             {deliverySteps.map((step) => (
-              <article key={step.title} className="process-step">
-                <div className="process-step-header">
-                  <span className="process-step-number">{step.number}</span>
+              <article
+                key={step.title}
+                className="home-roadmap-step"
+              >
+                <div className="home-roadmap-node">{step.number}</div>
+                <div className="home-roadmap-card">
+                  <div className="home-roadmap-kicker">PHASE {step.number}</div>
                   <h3>{step.title}</h3>
+                  <p>{step.description}</p>
                 </div>
-                <div className="process-step-body">
-                  <p style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>{step.description}</p>
-                </div>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="section">
-        <div className="container">
-          <SectionHeader
-            badgeClass="badge badge-primary"
-            badgeText="INDUSTRIES"
-            title="Technology solutions shaped around your industry."
-            description="We tailor cloud, AI, IT and technology talent to the operational realities, regulatory requirements and growth priorities of your industry."
-          />
-          <div className="grid-3 home-industries-grid">
-            {industries.map((industry) => (
-              <Link key={industry.title} href="/industries" className="home-industry-link">
-                <article className="industry-card home-industry-card">
-                  <div className="industry-card-header">
-                    <div className="industry-icon" aria-hidden="true">{industry.icon}</div>
-                    <h3>{industry.title}</h3>
-                  </div>
-                  <p style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>Solutions aligned to business operations, governance, and growth targets for {industry.title.toLowerCase()} organizations.</p>
-                </article>
-              </Link>
-            ))}
-            <Link href="/industries" className="home-industry-link">
-              <article className="industry-card home-industry-card home-industry-all">
-                <div className="industry-card-header">
-                  <div className="industry-icon" aria-hidden="true">🌐</div>
-                  <h3>View All Industries</h3>
-                </div>
-                <p style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>Explore all available industry pages and engagement priorities GulfStream supports.</p>
-              </article>
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      <section className="section" style={{ background: 'var(--dark-surface)' }}>
-        <div className="container">
-          <SectionHeader
-            badgeClass="badge badge-accent"
-            badgeText="ENGAGEMENT MODELS"
-            title="Work with us in the way that fits your business."
-            description="From advisory to fully managed operations, choose the engagement model that matches your needs today and evolve it over time."
-          />
-          <div className="grid-3 home-engagement-grid">
-            {engagementModels.map((model, index) => (
-              <article key={model.title} className="card premium-card">
-                <div className="card-header">
-                  <div className="icon-box" aria-hidden="true">{model.icon}</div>
-                  <div className="card-title-row">
-                    <h3>{model.title}</h3>
-                  </div>
-                </div>
-                <p style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>{model.description}</p>
               </article>
             ))}
           </div>
@@ -486,7 +454,8 @@ export default function HomeContent() {
           <SectionHeader
             badgeClass="badge badge-primary"
             badgeText="WHY GULFSTREAM"
-            title="A technology partner built for serious organizations."
+            title="Why Organizations Choose GulfStream Technologies"
+            description="Technology expertise, structured delivery and flexible engagement models to help organizations across Saudi Arabia and the GCC modernize, operate and scale their technology environments."
           />
           <div className="grid-3 home-differentiator-grid">
             {differentiators.map((item) => (
@@ -504,25 +473,83 @@ export default function HomeContent() {
         </div>
       </section>
 
- 
+
+      <section className="section" style={{ background: 'var(--dark-surface)' }}>
+        <div className="container">
+          <SectionHeader
+            badgeClass="badge badge-accent"
+            badgeText="ENGAGEMENT MODELS"
+            title="Flexible Engagement Models for Different Business Needs"
+            description="From advisory to fully managed operations, choose the engagement model that matches your needs today and evolve it over time."
+          />
+          <div className="grid-3 home-engagement-grid">
+            {engagementModels.map((model, index) => (
+              <article key={model.title} className="card premium-card">
+                <div className="card-header">
+                  <div className="icon-box" aria-hidden="true">{model.icon}</div>
+                  <div className="card-title-row">
+                    <h3>{model.title}</h3>
+                  </div>
+                </div>
+                <p style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>{model.description}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>     
+
+      <section className="section">
+        <div className="container">
+          <SectionHeader
+            badgeClass="badge badge-primary"
+            badgeText="INDUSTRIES"
+            title="Technology Solutions Aligned to Your Industry"
+            description="Every industry has different operational, regulatory and technology requirements. GulfStream combines cloud, AI, IT and technology talent to build solutions around the way your organization actually operates."
+          />
+          <div className="grid-3 home-industries-grid">
+            {industries.map((industry) => (
+              <Link key={industry.title} href="/industries" className="home-industry-link">
+                <article className="industry-card home-industry-card">
+                  <div className="industry-card-header">
+                    <div className="industry-icon" aria-hidden="true">{industry.icon}</div>
+                    <h3>{industry.title}</h3>
+                  </div>
+                  <p style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>{industry.description}</p>
+                </article>
+              </Link>
+            ))}
+            <Link href="/industries" className="home-industry-link">
+              <article className="industry-card home-industry-card home-industry-all">
+                <div className="industry-card-header">
+                  <div className="industry-icon" aria-hidden="true">🌐</div>
+                  <h3>View All Industries</h3>
+                </div>
+                <p style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>
+                  Explore industry-specific cloud, AI, IT and technology talent solutions supporting operational priorities, governance and sustainable business growth.
+                </p>
+              </article>
+            </Link>
+          </div>
+        </div>
+      </section>
 
       <HomeFaqSection />
 
       <section className="section">
         <div className="container">
           <div className="cta-banner">
-            <h2 className="display-md">Let&apos;s solve your next technology challenge.</h2>
+            <h2 className="display-md">Ready to Turn Your Technology Priorities Into a Practical Plan? </h2>
             <p>
-              Whether you are modernizing infrastructure, exploring AI, improving IT operations or building technology capacity, GulfStream can help you define the right next step.
+              Whether you're planning a cloud migration, exploring AI, improving IT operations, strengthening cybersecurity or expanding your technology team, GulfStream can help you define the right next step.
             </p>
             <div className="cta-actions">
               <Link href="/contact" className="btn btn-white btn-lg">
                 Talk to a Technology Expert
               </Link>
-              <Link href="/cloud-services" className="btn-white-outline">
+              <Link href="/services" className="btn-white-outline">
                 Explore Our Services
               </Link>
-            </div>
+            </div>  
           </div>
         </div>
       </section>

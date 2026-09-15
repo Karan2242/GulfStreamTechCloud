@@ -6,7 +6,7 @@ export const coreCapabilities = [
     image: 'service-migration.png',
     subheading: 'Modernize, manage and optimize your cloud environment.',
     description: 'From cloud migration and modernization to managed operations, security and cost optimization, GulfStream helps organizations build reliable, scalable and efficient cloud environments across leading platforms.',
-    services: ['Managed Cloud Services', 'Cloud Migration', 'Cloud Security & Governance', 'FinOps & Cost Optimization', 'Cloud Billing Management'],
+    services: ['Managed Cloud Services', 'Cloud Migration & Modernization', 'Cloud Security & Governance', 'FinOps & Cost Optimization', 'Cloud Billing Management'],
     outcome: 'Built for scalability, reliability, security and cost control.',
   },
   {
@@ -16,7 +16,7 @@ export const coreCapabilities = [
     image: 'ai-services.png',
     subheading: 'Turn practical AI opportunities into business value.',
     description: 'We help organizations identify valuable AI use cases, prepare the required data and build secure, production-ready AI solutions that improve processes, insight and decision-making.',
-    services: ['AI Use Case Discovery', 'Custom AI Applications', 'Data Engineering & BI', 'Automation Services', 'AI Governance & Security'],
+    services: ['AI Use Case Discovery', 'Custom AI Applications', 'Data Engineering & BI Analytics', 'Automation Services', 'AI Governance & Security'],
     outcome: 'Built for automation, intelligence, productivity and better decisions.',
   },
   {
@@ -36,7 +36,7 @@ export const coreCapabilities = [
     image: 'manpower-services.png',
     subheading: 'Access the technology skills your business needs.',
     description: 'Extend your technology capacity with experienced professionals and delivery teams across cloud, AI, data, cybersecurity, infrastructure and enterprise IT.',
-    services: ['Technology Manpower', 'Staff Augmentation', 'Dedicated Teams', 'Project-Based Teams'],
+    services: ['Technology Manpower', 'Resource Augmentation', 'Dedicated Teams', 'Project-Based Teams'],
     outcome: 'Built for faster delivery, specialized expertise and scalable technology capacity.',
   },
 ];

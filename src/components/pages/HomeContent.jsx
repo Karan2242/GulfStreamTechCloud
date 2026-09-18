@@ -415,7 +415,7 @@ export default function HomeContent() {
                 </div>
                 <div className="home-challenge-content">
                   <h3>{challenge.title}</h3>
-                  <p>{challenge.description}</p>
+                  <p style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>{challenge.description}</p>
                 </div>
               </article>
             ))}
@@ -540,7 +540,7 @@ export default function HomeContent() {
           <div className="cta-banner">
             <h2 className="display-md">Ready to Turn Your Technology Priorities Into a Practical Plan? </h2>
             <p>
-              Whether you're planning a cloud migration, exploring AI, improving IT operations, strengthening cybersecurity or expanding your technology team, GulfStream can help you define the right next step.
+              Whether you&apos;re planning a cloud migration, exploring AI, improving IT operations, strengthening cybersecurity or expanding your technology team, GulfStream can help you define the right next step.
             </p>
             <div className="cta-actions">
               <Link href="/contact" className="btn btn-white btn-lg">

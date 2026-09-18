@@ -1,17 +1,12 @@
-'use client';
-
 import React from 'react';
 import Link from 'next/link';
-import { useReveal } from '@/hooks/useReveal';
 
 const CookiePolicyContent = () => {
-  useReveal();
-
   return (
     <main>
       {/* HERO */}
       <section className="page-hero">
-        <div className="container" style={{ maxWidth: '860px' }}>
+        <div className="container legal-page-container">
           <nav className="breadcrumb" aria-label="Breadcrumb">
             <Link href="/">Home</Link><span>›</span><span>Legal</span><span>›</span><span>Cookie Policy</span>
           </nav>
@@ -24,7 +19,7 @@ const CookiePolicyContent = () => {
           <p>
             This Cookie Policy explains what cookies are, how GulfStream Technologies uses them, and how you can control them. By continuing to browse our website, you consent to our use of cookies as outlined below.
           </p>
-          <p style={{ fontSize: '0.95rem', color: 'var(--text-secondary)', marginTop: '16px' }}>
+          <p className="legal-intro-meta">
             <strong>Last Updated:</strong> April 14, 2026 | <strong>Effective Date:</strong> April 14, 2026
           </p>
         </div>
@@ -32,9 +27,9 @@ const CookiePolicyContent = () => {
 
       {/* CONTENT */}
       <section className="section">
-        <div className="container" style={{ maxWidth: '860px' }}>
+        <div className="container legal-page-container">
           {/* 1. INTRODUCTION */}
-          <div className="card reveal" style={{ marginBottom: '40px' }}>
+          <div className="card reveal legal-card-wrapper">
             <h2 style={{ fontSize: '1.4rem', fontWeight: 600, marginBottom: '16px', color: 'var(--text-primary)' }}>1. Introduction</h2>
             <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8, marginBottom: '12px' }}>
               GulfStream Technologies uses cookies and similar tracking technologies to enhance your browsing experience, understand how you use our website, and deliver personalized content and services. This Cookie Policy provides transparent information about our cookie practices.

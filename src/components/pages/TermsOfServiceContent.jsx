@@ -1,17 +1,12 @@
-'use client';
-
 import React from 'react';
 import Link from 'next/link';
-import { useReveal } from '@/hooks/useReveal';
 
 const TermsOfServiceContent = () => {
-  useReveal();
-
   return (
     <main>
       {/* HERO */}
       <section className="page-hero">
-        <div className="container" style={{ maxWidth: '860px' }}>
+        <div className="container legal-page-container">
           <nav className="breadcrumb" aria-label="Breadcrumb">
             <Link href="/">Home</Link><span>›</span><span>Legal</span><span>›</span><span>Terms of Service</span>
           </nav>
@@ -24,7 +19,7 @@ const TermsOfServiceContent = () => {
           <p>
             These Terms of Service govern your access to and use of GulfStream Technologies&apos; website and cloud management services. Please read them carefully before engaging with our services.
           </p>
-          <p style={{ fontSize: '0.95rem', color: 'var(--text-secondary)', marginTop: '16px' }}>
+          <p className="legal-intro-meta">
             <strong>Last Updated:</strong> April 14, 2026 | <strong>Effective Date:</strong> April 14, 2026
           </p>
         </div>
@@ -32,9 +27,9 @@ const TermsOfServiceContent = () => {
 
       {/* CONTENT */}
       <section className="section">
-        <div className="container" style={{ maxWidth: '860px' }}>
+        <div className="container legal-page-container">
           {/* 1. ACCEPTANCE OF TERMS */}
-          <div className="card reveal" style={{ marginBottom: '40px' }}>
+          <div className="card reveal legal-card-wrapper">
             <h2 style={{ fontSize: '1.4rem', fontWeight: 600, marginBottom: '16px', color: 'var(--text-primary)' }}>1. Acceptance of Terms</h2>
             <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8, marginBottom: '12px' }}>
               By accessing and using GulfStream Technologies&apos;s website, booking services, or engaging with our cloud management solutions, you agree to be bound by these Terms of Service. If you do not agree to any part of these terms, you must discontinue use of our services immediately.

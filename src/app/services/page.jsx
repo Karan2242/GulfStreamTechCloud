@@ -3,13 +3,13 @@ import { serviceFaqs } from '@/components/pages/services/servicesData';
 import { DEFAULT_OG_IMAGE } from '@/lib/metadata';
 
 const pageUrl = 'https://gulfstreamtech.com.sa/services/';
-const pageTitle = 'GulfStream Technologies | Cloud, AI, IT & Manpower Services';
-const pageDescription = "Explore GulfStream Technologies' Cloud, AI, IT and Manpower Services for organizations across Saudi Arabia and the GCC.";
+const pageTitle = 'Technology Services | Cloud, AI & IT Services | GulfStream Technologies';
+const pageDescription = "Explore GulfStream Technologies' Cloud, AI, IT and technology talent services designed to help organizations modernize infrastructure, improve efficiency, strengthen security and execute technology initiatives.";
 
 export const metadata = {
-  title: pageTitle,
+  title: { absolute: pageTitle },
   description: pageDescription,
-  keywords: ['Cloud Services Saudi Arabia', 'AI Services Saudi Arabia', 'IT Services Saudi Arabia', 'IT manpower services Saudi Arabia', 'technology services GCC'],
+  keywords: ['technology services', 'Cloud Services', 'AI Services', 'IT Services', 'technology talent', 'cloud migration', 'FinOps', 'cybersecurity'],
   alternates: { canonical: pageUrl },
   openGraph: { title: pageTitle, description: pageDescription, url: pageUrl, type: 'website', siteName: 'GulfStream Technologies', locale: 'en_US', images: [DEFAULT_OG_IMAGE] },
   twitter: { card: 'summary_large_image', title: pageTitle, description: pageDescription, images: [DEFAULT_OG_IMAGE.url] },

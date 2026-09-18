@@ -26,7 +26,7 @@ export default function ServicesFaq() {
               <span className="faq-toggle" aria-hidden="true">+</span>
             </button>
             <div className="faq-answer" id={answerId} role="region" aria-labelledby={questionId}>
-              <div className="faq-answer-inner"><p style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>{answer}</p></div>
+              <div className="faq-answer-inner"><p className="services-faq-answer" style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>{answer}</p></div>
             </div>
           </div>
         );

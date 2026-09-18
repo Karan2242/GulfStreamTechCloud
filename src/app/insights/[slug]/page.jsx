@@ -249,8 +249,9 @@ export async function generateStaticParams() {
   }));
 }
 
-export function generateMetadata({ params }) {
-  const blog = blogData[params.slug];
+export async function generateMetadata({ params }) {
+  const { slug } = await params;
+  const blog = blogData[slug];
   if (!blog) return { title: 'Not Found' };
 
   return {
@@ -260,8 +261,9 @@ export function generateMetadata({ params }) {
   };
 }
 
-export default function BlogDetailPage({ params }) {
-  const blog = blogData[params.slug];
+export default async function BlogDetailPage({ params }) {
+  const { slug } = await params;
+  const blog = blogData[slug];
 
   if (!blog) {
     return (

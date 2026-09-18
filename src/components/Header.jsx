@@ -1,11 +1,11 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import Image from 'next/image';
-import logo from '@/assets/logo.png';
 import { NAV_SERVICES } from './navConfig';
+import { siteConfig } from '@/config/siteConfig';
 
 function ServiceMenuItem({ service, isActive }) {
   const hasSubmenu = service.submenu?.length > 0;
@@ -53,6 +53,7 @@ const Header = () => {
   const [isMobileOpen, setIsMobileOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
+  const navToggleRef = useRef(null);
   const pathname = usePathname();
 
   useEffect(() => {
@@ -70,6 +71,13 @@ const Header = () => {
 
   const toggleMobileNav = () => {
     setIsMobileOpen((prev) => !prev);
+  };
+
+  const handleMobileNavKeyDown = (event) => {
+    if (event.key === 'Escape' && isMobileOpen) {
+      setIsMobileOpen(false);
+      navToggleRef.current?.focus();
+    }
   };
 
   useEffect(() => {
@@ -123,11 +131,11 @@ const Header = () => {
     <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`} id="navbar">
       <div className="container-wide">
         <Link href="/" className="nav-logo">
-          <Image src={logo} alt="GulfStream Technologies" className="nav-logo-img" priority />
-          <span className="brand">GulfStream Technologies</span>
+          <Image src="/assets/logo.png" alt="GulfStream Technologies" className="nav-logo-img" width={2000} height={2000} priority />
+          <span className="brand">{siteConfig.name}</span>
         </Link>
 
-        <div className="nav-links">
+        <div className="nav-links" id="mobile-navigation" onKeyDown={handleMobileNavKeyDown}>
           <div
             className={`nav-dropdown services-nav-dropdown ${activeDropdown === 'services' ? 'expanded' : ''}`}
             onMouseEnter={() => { if (window.innerWidth > 768) setActiveDropdown('services'); }}
@@ -168,11 +176,21 @@ const Header = () => {
         </div>
 
         <div className="nav-cta">
-          <Link href="/contact" className="btn btn-outline btn-sm">Contact</Link>
-          <Link href="/book-a-review" className="btn btn-primary btn-sm">Book Free Review</Link>
+          <Link href={siteConfig.cta.secondary.href} className="btn btn-outline btn-sm">{siteConfig.cta.secondary.label}</Link>
+          <Link href={siteConfig.cta.primary.href} className="btn btn-primary btn-sm">{siteConfig.cta.primary.label}</Link>
         </div>
 
-        <button className="nav-toggle" id="navToggle" aria-label="Open menu" onClick={toggleMobileNav}>
+        <button
+          ref={navToggleRef}
+          className="nav-toggle"
+          id="navToggle"
+          type="button"
+          aria-label={isMobileOpen ? 'Close menu' : 'Open menu'}
+          aria-controls="mobile-navigation"
+          aria-expanded={isMobileOpen}
+          onClick={toggleMobileNav}
+          onKeyDown={handleMobileNavKeyDown}
+        >
           <span style={isMobileOpen ? { transform: 'rotate(45deg) translate(5px, 5px)' } : {}}></span>
           <span style={isMobileOpen ? { opacity: '0' } : {}}></span>
           <span style={isMobileOpen ? { transform: 'rotate(-45deg) translate(5px, -5px)' } : {}}></span>

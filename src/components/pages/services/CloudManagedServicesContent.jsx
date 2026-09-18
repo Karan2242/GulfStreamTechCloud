@@ -1,8 +1,5 @@
-'use client';
-
 import React from 'react';
 import Link from 'next/link';
-import { useReveal } from '@/hooks/useReveal';
 import HeroSection from './cloud-managed/HeroSection';
 import PlatformSelector from './cloud-managed/PlatformSelector';
 import ServicesGrid from './cloud-managed/ServicesGrid';
@@ -10,8 +7,6 @@ import ComparisonTable from './cloud-managed/ComparisonTable';
 import CTASection from './cloud-managed/CTASection';
 
 const CloudManagedServicesContent = () => {
-  useReveal();
-
   return (
     <main>
       <HeroSection />

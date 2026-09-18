@@ -1,4 +1,6 @@
-const BASE_URL = 'https://gulfstreamtech.com.sa';
+import { SITE_URL } from '@/lib/metadata';
+
+const BASE_URL = SITE_URL;
 
 export const dynamic = 'force-static';
 

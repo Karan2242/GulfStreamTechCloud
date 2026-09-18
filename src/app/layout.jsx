@@ -1,9 +1,10 @@
 import './globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import { siteConfig } from '@/config/siteConfig';
 
 export const metadata = {
-  metadataBase: new URL('https://gulfstreamtech.com.sa'),
+  metadataBase: new URL(siteConfig.url),
   title: {
     default: 'Managed Cloud Services Saudi Arabia | GulfStream',
     template: '%s | GulfStream',
@@ -37,8 +38,8 @@ export const metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://gulfstreamtech.com.sa',
-    siteName: 'GulfStream Technologies',
+    url: siteConfig.url,
+    siteName: siteConfig.name,
     title: 'GulfStream Technologies | Multi-Managed Cloud Services',
     description:
       'Enterprise-grade multi-Managed Cloud Services in Saudi Arabia — AWS, Azure, Google Cloud & Oracle Cloud. FinOps, 24/7 monitoring, cloud migration & security governance.',
@@ -62,15 +63,15 @@ export default function RootLayout({ children }) {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'GulfStream Technologies',
-    url: 'https://gulfstreamtech.com.sa',
-    logo: 'https://gulfstreamtech.com.sa/assets/logo.png',
+    name: siteConfig.name,
+    url: siteConfig.url,
+    logo: `${siteConfig.url}/assets/logo.png`,
     description:
       'Enterprise-grade managed cloud services across AWS, Azure, Oracle Cloud & Google Cloud in Saudi Arabia.',
     address: {
       '@type': 'PostalAddress',
       streetAddress: '6526 At Takhassusi Road, Almathar Ash Shamali District',
-      addressLocality: 'Riyadh',
+      addressLocality: siteConfig.headquarters.city,
       postalCode: '12332',
       addressCountry: 'SA',
     },
@@ -82,9 +83,9 @@ export default function RootLayout({ children }) {
     ],
     contactPoint: {
       '@type': 'ContactPoint',
-      telephone: '+966-053-201-917',
+      telephone: siteConfig.contact.phoneHref,
       contactType: 'sales',
-      email: 'sales@gulfstreamtech.com.sa',
+      email: siteConfig.contact.salesEmail,
       availableLanguage: ['English', 'Arabic'],
     },
     knowsAbout: [
@@ -100,7 +101,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link rel="alternate" hrefLang="en-SA" href="https://gulfstreamtech.com.sa/" />
+        <link rel="alternate" hrefLang="en-SA" href={`${siteConfig.url}/`} />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

@@ -9,50 +9,45 @@ const serviceCards = [
   {
     number: '01',
     title: 'AI Strategy & Use-Case Discovery',
-    description: 'We help identify the business problems that are worth solving first, based on impact, readiness, and return on effort.',
+    description: 'Identify and prioritize AI opportunities based on business impact, technical feasibility, data readiness and implementation effort.',
     href: '/ai-services/ai-use-case-discovery',
-    icon: '🧭',
-    image: '/assets/images/ai-strategy-tile.svg',
+    image: '/assets/images/ai-usecases.png',
     focus: 'Strategy',
     focusKey: 'strategy',
   },
   {
     number: '02',
     title: 'Custom AI Applications',
-    description: 'We design practical internal tools, copilots, and AI experiences connected to approved business data and workflows.',
+    description: 'Design and develop AI applications, internal assistants and copilots connected to approved business data, systems and workflows.',
     href: '/ai-services/custom-ai-applications',
-    icon: '🤖',
-    image: '/assets/images/ai-applications-tile.svg',
+    image: '/assets/images/custom-ai.png',
     focus: 'Applications',
     focusKey: 'applications',
   },
   {
     number: '03',
     title: 'Data Engineering & Business Intelligence',
-    description: 'We build the data foundations and reporting layers that make AI and better decisions possible across the business.',
+    description: 'Build the data pipelines, reporting foundations and analytics capabilities needed to support reliable insights and AI-driven decision-making.',
     href: '/ai-services/data-engineering-bi',
-    icon: '📊',
-    image: '/assets/images/ai-data-tile.svg',
+    image: '/assets/images/data-bi.png',
     focus: 'Data',
     focusKey: 'data',
   },
   {
     number: '04',
     title: 'AI & Workflow Automation',
-    description: 'We automate repetitive tasks and connect AI to operational workflows so employees spend less time on manual work.',
+    description: 'Connect AI with business workflows to automate repetitive processes, reduce manual effort and improve operational consistency..',
     href: '/ai-services/automation-services',
-    icon: '⚙️',
-    image: '/assets/images/ai-automation-tile.svg',
+    image: '/assets/images/automation.png',
     focus: 'Automation',
     focusKey: 'automation',
   },
   {
     number: '05',
     title: 'AI Governance & Security',
-    description: 'We create the controls and governance needed to safely adopt AI while protecting data, users, and business processes.',
+    description: 'Establish practical controls for AI security, data protection, access, monitoring and responsible adoption across the organization.',
     href: '/ai-services/ai-governance-security',
-    icon: '🛡️',
-    image: '/assets/images/ai-governance-tile.svg',
+    image: '/assets/images/ai-security.png',
     focus: 'Governance',
     focusKey: 'governance',
   },
@@ -163,32 +158,94 @@ const industryCards = [
   },
 ];
 
-const faqs = [
+const whyGulfstreamCards = [
   {
-    question: 'What can GulfStream help my business achieve with AI?',
-    answer: 'GulfStream helps businesses reduce manual work, improve access to knowledge, automate workflows, make smarter decisions, and deploy AI in a secure and practical way that matches business goals.',
+    title: 'Business-First AI Strategy',
+    description: 'We start with business priorities, operational challenges and measurable outcomes to identify AI opportunities that can create meaningful value—not technology for its own sake.',
+    icon: 'strategy',
   },
   {
-    question: 'How can AI improve business operations?',
-    answer: 'AI can help teams work faster, reduce repetitive work, improve data visibility, automate operational tasks, and support better decisions using trusted business information.',
+    title: 'Practical AI Implementation',
+    description: 'We turn prioritized AI opportunities into practical applications, assistants, copilots and workflow solutions designed around how your teams actually work.',
+    icon: 'implementation',
   },
   {
-    question: 'Does GulfStream build custom AI applications?',
-    answer: 'Yes. We can design custom AI tools such as internal assistants, knowledge systems, copilots, document support experiences, and workflow automations connected to your business context.',
+    title: 'Data & Integration Focus',
+    description: 'AI depends on reliable data and connected systems. We consider data readiness, business information, integrations and existing technology environments when designing AI solutions.',
+    icon: 'data',
   },
   {
-    question: 'Can GulfStream help with AI automation?',
-    answer: 'Yes. We can connect AI to business workflows to automate repetitive tasks, reduce operational friction, and improve consistency across teams and processes.',
+    title: 'Automation That Improves Operations',
+    description: 'We apply AI to repetitive and time-consuming workflows to help reduce manual effort, improve process consistency and give teams more time for higher-value work.',
+    icon: 'automation',
   },
   {
-    question: 'Why is AI governance important?',
-    answer: 'AI governance ensures access, security, monitoring, and responsible usage are handled in a way that protects the business while still enabling practical value from AI.',
+    title: 'Security & AI Governance',
+    description: 'Security and governance are built into the solution from the start, with practical consideration for data protection, access, controls, monitoring and responsible AI adoption.',
+    icon: 'security',
   },
   {
-    question: 'How do we start an AI project with GulfStream?',
-    answer: 'The most practical first step is a discovery session to identify where AI can create value, assess readiness, and shape the right next phase of implementation.',
+    title: 'Designed for Long-Term Adoption',
+    description: 'We focus on solutions that can move beyond experimentation by considering user adoption, production readiness, ongoing monitoring and continuous improvement.',
+    icon: 'adoption',
   },
 ];
+
+const faqs = [
+  {
+    question: 'What AI services does GulfStream Technologies provide?',
+    answer: 'GulfStream Technologies provides business-focused AI services covering AI strategy and use-case discovery, custom AI applications, data engineering and business intelligence, workflow automation, and AI governance and security. The services are designed to help organizations identify practical AI opportunities, build useful solutions and support responsible adoption.',
+  },
+  {
+    question: 'How can AI help improve business operations?',
+    answer: 'AI can support business operations by automating repetitive tasks, improving access to organizational knowledge, accelerating document processing, strengthening reporting and helping teams make better use of business data. The most useful opportunities depend on the organization\'s workflows, data, technology environment and business priorities.',
+  },
+  {
+    question: 'Can GulfStream help identify AI use cases for our business?',
+    answer: 'Yes. AI use-case discovery is part of GulfStream\'s AI services. The process focuses on understanding business challenges and workflows, then evaluating opportunities based on potential business impact, technical feasibility, data readiness and implementation effort.',
+  },
+  {
+    question: 'Does GulfStream build custom AI applications and copilots?',
+    answer: 'Yes. GulfStream can design and develop practical AI applications, internal assistants and copilots connected to approved business data, systems and workflows. The objective is to create solutions that address specific organizational requirements rather than applying a generic AI solution to every business problem.',
+  },
+  {
+    question: 'Can GulfStream automate business workflows using AI?',
+    answer: 'Yes. AI and workflow automation can be used to reduce repetitive manual processes and improve operational consistency. Potential applications include document processing, information retrieval, workflow assistance and other business processes where AI can support defined tasks and decision workflows.',
+  },
+  {
+    question: 'How does GulfStream approach AI governance and security?',
+    answer: 'GulfStream considers AI governance and security as part of the solution lifecycle. This includes practical consideration of data protection, access controls, security requirements, monitoring and responsible AI adoption. Governance requirements should be aligned with the organization\'s data, users, workflows and technology environment.',
+  },
+  {
+    question: 'Can AI solutions work with our existing business data and systems?',
+    answer: 'AI solutions can be designed around approved business data, existing technology environments and relevant workflows. The appropriate integration approach depends on the organization\'s systems, data sources, security requirements and use case. Data readiness and integration requirements are therefore considered during AI solution assessment and design.',
+  },
+  {
+    question: 'How does GulfStream deliver an AI project?',
+    answer: 'GulfStream follows a structured approach covering discovery, assessment, solution design, development, deployment and governance. This helps connect the business requirement with the technical solution while considering data readiness, security, implementation requirements and ongoing improvement.',
+  },
+  {
+    question: 'Can GulfStream\'s AI services work alongside our existing IT team?',
+    answer: 'Yes. AI initiatives can be supported alongside existing internal technology and business teams. GulfStream can contribute specialist AI strategy, application development, data, automation and governance capabilities while working within the organization\'s existing technology environment and operating model.',
+  },
+  {
+    question: 'How do we get started with an AI project with GulfStream?',
+    answer: 'The starting point is to discuss the business challenge, workflow or opportunity you want to address. GulfStream can help assess the requirement, identify practical AI opportunities and determine the appropriate next step, whether that involves use-case discovery, solution design, development or another stage of the AI delivery process.',
+  },
+];
+
+const WhyGulfstreamIcon = ({ name }) => {
+  const paths = {
+    strategy: <><circle cx="12" cy="12" r="7.5" /><path d="m12 8 1.3 2.7L16 12l-2.7 1.3L12 16l-1.3-2.7L8 12l2.7-1.3L12 8Z" /><path d="M5 5 3.5 3.5M19 5l1.5-1.5" /></>,
+    implementation: <><path d="m8.5 8.5-3 3 3 3M15.5 8.5l3 3-3 3M13.5 6l-3 12" /></>,
+    data: <><ellipse cx="12" cy="6" rx="6.5" ry="3" /><path d="M5.5 6v6c0 1.7 2.9 3 6.5 3s6.5-1.3 6.5-3V6M5.5 12v6c0 1.7 2.9 3 6.5 3s6.5-1.3 6.5-3v-6" /></>,
+    automation: <><path d="M6 6h12v5H6zM6 16h5v2H6zM13 16h5v2h-5z" /><path d="M12 11v3M8.5 14v2M15.5 14v2" /></>,
+    security: <><path d="M12 3.5 19 6v5.2c0 4.3-2.8 7-7 9.3-4.2-2.3-7-5-7-9.3V6l7-2.5Z" /><path d="m9 12 2 2 4-4" /></>,
+    adoption: <><path d="M5 18 10 13l3 2 6-7" /><path d="M15 8h4v4M5 20h14" /></>,
+  };
+
+  return <svg className="why-ai-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">{paths[name]}</svg>;
+};
 
 const AIServicesContent = () => {
   useReveal();
@@ -207,11 +264,11 @@ const AIServicesContent = () => {
             <span className="text-gradient">Turn Business Challenges Into Practical AI Solutions</span>
           </h1>
           <p>
-            GulfStream Technologies helps organizations turn AI from an idea into measurable business value: faster decisions, less manual work, stronger knowledge access, better reporting, and more efficient operations.
+            GulfStream Technologies helps organizations identify, build and deploy practical AI solutions across business workflows, data and operations. From AI strategy and custom applications to automation, data engineering and AI governance, we help turn business challenges into measurable operational value.
           </p>
           <div className="hero-actions">
-            <Link href="/contact" className="btn btn-primary btn-lg">Discuss Your AI Opportunity</Link>
-            <Link href="#ai-services" className="btn btn-outline btn-lg" style={{ backgroundColor: '#ffffff', color: '#0052CC', borderColor: 'rgba(0,0,0,0.08)' }}>Explore AI Services</Link>
+            <Link href="/book-a-review" className="btn btn-primary btn-lg">Book Your AI Review</Link>
+            <Link href="/contact" className="btn btn-outline btn-lg" style={{ backgroundColor: '#ffffff', color: '#0052CC', borderColor: 'rgba(0,0,0,0.08)' }}>Talk to Technology Expert</Link>
           </div>
         </div>
       </section>
@@ -223,11 +280,10 @@ const AIServicesContent = () => {
       <section id="ai-services" className="section" style={{ background: 'var(--dark-surface)' }}>
         <div className="container">
           <div className="section-header reveal">
-            <div className="badge badge-primary">🧩 AI services</div>
-            <h2 className="display-md">AI capabilities built around your business</h2>
+            <div className="badge badge-primary">AI SERVICES</div>
+            <h2 className="display-md">AI Services Built Around Your Business Priorities</h2>
             <p>
-              From identifying the right opportunity to deployment and governance, our services are designed to move AI from concept to practical business impact.
-            </p>
+From identifying the right AI opportunities to building, deploying and governing AI solutions, GulfStream provides practical services designed around business requirements, data readiness and measurable outcomes.            </p>
           </div>
           <div className="ai-services-tile-grid">
             {serviceCards.map((service, index) => (
@@ -238,13 +294,16 @@ const AIServicesContent = () => {
                   <div className="ai-service-number-row">
                     <span className="badge badge-primary ai-service-number">{service.number}</span>
                     <span className={`ai-service-focus ai-service-focus-${service.focusKey}`}>{service.focus}</span>
-                    <div className="icon-box ai-service-icon" aria-hidden="true">{service.icon}</div>
                   </div>
                 </div>
                 <div className="ai-service-tile-content">
+                  <div className="ai-service-tile-kicker">Business capability</div>
                   <h3>{service.title}</h3>
                   <p className="ai-service-description">{service.description}</p>
-                  <Link href={service.href} className="ai-service-link">Explore service <span aria-hidden="true">↗</span></Link>
+                  <div className="ai-service-tile-footer">
+                    <span className="ai-service-tile-index">{service.number} / 05</span>
+                    <Link href={service.href} className="ai-service-link">Explore service <span aria-hidden="true">↗</span></Link>
+                  </div>
                 </div>
               </article>
             ))}
@@ -256,9 +315,9 @@ const AIServicesContent = () => {
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-accent">💡 Use cases</div>
-            <h2 className="display-md">Where AI can move the needle in real business workflows</h2>
+            <h2 className="display-md">Practical AI Use Cases for Business Operations</h2>
             <p>
-              We focus on practical use cases where AI can reduce effort, improve access to information, and support faster, more confident decisions.
+              We focus on AI applications that address identifiable business challenges, improve operational efficiency and help teams make better use of their data and knowledge.
             </p>
           </div>
           <div className="grid-3 reveal">
@@ -282,77 +341,63 @@ const AIServicesContent = () => {
         </div>
       </section>
 
+
       <section className="section" style={{ background: 'var(--dark-surface)' }}>
         <div className="container">
           <div className="section-header reveal">
-            <div className="badge badge-primary">🛠️ Delivery approach</div>
+            <div className="badge badge-primary">WHY GULFSTREAM FOR AI SERVICES</div>
+            <h2 className="display-md">Why Organizations Choose GulfStream for AI Services</h2>
+            <p>GulfStream combines business-focused AI strategy, practical implementation, data capabilities and governance to help organizations move from AI opportunities to useful, sustainable business solutions.</p>
+          </div>
+          <div className="grid-3 reveal">
+            {whyGulfstreamCards.map((card) => (
+              <article key={card.title} className="card premium-card">
+                <div className="card-header">
+                  <div className="icon-box"><WhyGulfstreamIcon name={card.icon} /></div>
+                  <h3>{card.title}</h3>
+                </div>
+                <p style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>{card.description}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+
+      <section className="section" >
+        <div className="container">
+          <div className="section-header reveal">
+            <div className="badge badge-primary">HOW WE DELIVER AI SERVICES</div>
             <h2 className="display-md">A measured path from strategy to production</h2>
             <p>
               We combine business analysis, data readiness, solution design, and governance to reduce risk and keep AI aligned with what the business actually needs.
             </p>
           </div>
 
-          <div className="delivery-process reveal" aria-label="AI delivery process steps">
+          <div className="home-roadmap ai-roadmap reveal" aria-label="AI delivery process steps">
             {deliveryStages.map((stage, index) => (
-              <div key={stage.title} className="process-step">
-                <div className="process-step-header">
-                  <div className="process-step-number">{String(index + 1).padStart(2, '0')}</div>
+              <article className="home-roadmap-step" key={stage.title}>
+                <div className="home-roadmap-node" aria-hidden="true">{String(index + 1).padStart(2, '0')}</div>
+                <div className="home-roadmap-card">
                   <h3>{stage.title}</h3>
+                  <p>{stage.description}</p>
                 </div>
-                <div className="process-step-body">
-                  <p style={{ color: 'var(--text-secondary)', fontSize: '0.75rem' }} ><strong>{stage.outputLabel}</strong> {stage.description}</p>
-                </div>
-              </div>
+              </article>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="section" >
-        <div className="container">
-          <div className="section-header reveal">
-            <div className="badge badge-primary">🏆 Why us for AI services</div>
-            <h2 className="display-md">We help businesses move from AI ideas to real operational value</h2>
-            <p>
-              GulfStream combines strategic clarity, practical implementation, and governance so AI is not just discussed, but deployed in ways that support productivity, performance, and long-term business resilience.
-            </p>
-          </div>
-          <div className="grid-3 reveal">
-            <div className="card premium-card">
-              <div className="card-header">
-                <div className="icon-box">🎯</div>
-                <div className="card-title-row"><h3>Business-first thinking</h3></div>
-              </div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>We focus on the opportunities that matter most to your operations, not just the technologies that look impressive.</p>
-            </div>
-            <div className="card premium-card">
-              <div className="card-header">
-                <div className="icon-box">⚙️</div>
-                <div className="card-title-row"><h3>Execution that works</h3></div>
-              </div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }} >From discovery to deployment, we turn AI concepts into usable workflows, tools, and measurable business outcomes.</p>
-            </div>
-            <div className="card premium-card">
-              <div className="card-header">
-                <div className="icon-box">🛡️</div>
-                <div className="card-title-row"><h3>Governance built in</h3></div>
-              </div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>We help organizations adopt AI responsibly with the right controls, data handling, and operational confidence.</p>
-            </div>
-          </div>
-        </div>
-      </section>
+
 
 
 
       <section className="section" style={{ background: 'var(--dark-surface)' }}>
         <div className="container">
           <div className="section-header reveal">
-            <div className="badge badge-primary">❓ FAQ</div>
-            <h2 className="display-md">Frequently asked questions</h2>
-            <p>
-              Common questions about business AI, implementation approach, automation, governance, and where GulfStream fits in.
-            </p>
+            <div className="badge badge-primary">FREQUENTLY ASKED QUESTIONS</div>
+            <h2 className="display-md">Frequently Asked Questions About AI Services</h2>
+            <p>Answers to common questions about AI strategy, custom AI applications, automation, data, governance and AI implementation.</p>
           </div>
           <div className="faq-accordion reveal">
             {faqs.map((faq, index) => {
@@ -372,7 +417,7 @@ const AIServicesContent = () => {
                   </button>
                   <div id={`ai-services-faq-answer-${index}`} className="faq-answer">
                     <div className="faq-answer-inner">
-                      <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>{faq.answer}</p>
+                      <p>{faq.answer}</p>
                     </div>
                   </div>
                 </div>
@@ -385,11 +430,11 @@ const AIServicesContent = () => {
       <section className="section">
         <div className="container">
           <div className="cta-banner reveal">
-            <h2 className="display-md">Ready to identify where AI can create value in your business?</h2>
-            <p>Let&apos;s start with the business problem, the workflow, and the measurable opportunity—then shape the right AI path forward.</p>
+            <h2 className="display-md">Ready to Identify Where AI Can Create Value in Your Business?</h2>
+            <p>Start with the business problem, workflow or opportunity—not the technology. GulfStream can help assess your requirements, identify practical AI opportunities and define the right path toward implementation.</p>
             <div className="cta-actions">
-              <Link href="/contact" className="btn btn-white btn-lg">Discuss Your AI Opportunity</Link>
-              <Link href="/ai-services/ai-use-case-discovery" className="btn-white-outline">Book an AI Discovery Workshop</Link>
+              <Link href="/contact" className="btn btn-white btn-lg">Book Your AI Review</Link>
+              <Link href="/ai-services/ai-use-case-discovery" className="btn-white-outline">Talk to an Technology Expert</Link>
             </div>
           </div>
         </div>

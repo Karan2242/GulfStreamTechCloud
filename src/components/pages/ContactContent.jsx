@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { useReveal } from '@/hooks/useReveal';
 import { submitForm } from '@/lib/formSubmit';
+import { siteConfig } from '@/config/siteConfig';
 
 const ContactContent = () => {
   useReveal();
@@ -78,7 +79,7 @@ const ContactContent = () => {
                   <div className="icon-box" style={{ margin: 0, flexShrink: 0 }}>📧</div>
                   <div style={{ minWidth: 0 }}>
                     <h3 style={{ marginBottom: '6px', fontSize: '1rem', wordBreak: 'break-word' }}>Email</h3>
-                    <a href="mailto:sales@gulfstreamtech.com.sa" style={{ color: 'var(--accent)', fontSize: 'clamp(0.85rem, 2vw, 0.95rem)', wordBreak: 'break-all' }}>sales@gulfstreamtech.com.sa</a>
+                    <a href={`mailto:${siteConfig.contact.salesEmail}`} style={{ color: 'var(--accent)', fontSize: 'clamp(0.85rem, 2vw, 0.95rem)', wordBreak: 'break-all' }}>{siteConfig.contact.salesEmail}</a>
                     <p style={{ color: 'var(--text-muted)', fontSize: '.82rem', marginTop: '4px' }}>We respond within 4 business hours</p>
                   </div>
                 </div>
@@ -86,14 +87,14 @@ const ContactContent = () => {
                   <div className="icon-box" style={{ margin: 0, flexShrink: 0 }}>📞</div>
                   <div style={{ minWidth: 0 }}>
                     <h3 style={{ marginBottom: '6px', fontSize: '1rem' }}>Phone</h3>
-                    <a href="tel:+9660532019172" style={{ color: 'var(--accent)', fontSize: 'clamp(0.85rem, 2vw, 0.95rem)' }}>+966 (0) 53 201 9172</a>
+                    <a href={`tel:${siteConfig.contact.phoneHref}`} style={{ color: 'var(--accent)', fontSize: 'clamp(0.85rem, 2vw, 0.95rem)' }}>{siteConfig.contact.phone}</a>
                     <p style={{ color: 'var(--text-muted)', fontSize: '.82rem', marginTop: '4px' }}>Sun–Thu, 8:00 AM – 6:00 PM AST</p>
                   </div>
                 </div>
                 <div className="card" style={{ padding: 'clamp(16px, 3vw, 24px)', display: 'flex', gap: 'clamp(12px, 2vw, 16px)', alignItems: 'flex-start' }}>
                   <div className="icon-box" style={{ margin: 0, flexShrink: 0 }}>📍</div>
                   <div style={{ minWidth: 0 }}>
-                    <h3 style={{ marginBottom: '6px', fontSize: '1rem' }}>Location — Riyadh, Saudi Arabia<br />  Muscat, Oman</h3>
+                    <h3 style={{ marginBottom: '6px', fontSize: '1rem' }}>Location — {siteConfig.officeLocations[0]}<br />  {siteConfig.officeLocations[1]}</h3>
                     
                   </div>
                 </div>
@@ -101,7 +102,7 @@ const ContactContent = () => {
                   <div className="icon-box" style={{ margin: 0, flexShrink: 0 }}>⚡</div>
                   <div style={{ minWidth: 0 }}>
                     <h3 style={{ marginBottom: '6px', fontSize: '1rem' }}>24/7 Client Support</h3>
-                    <a href="tel:+9660532019172" style={{ color: 'var(--accent)', fontSize: 'clamp(0.85rem, 2vw, 0.95rem)' }}>+966 (0) 53 201 9172 (Clients)</a>
+                    <a href={`tel:${siteConfig.contact.phoneHref}`} style={{ color: 'var(--accent)', fontSize: 'clamp(0.85rem, 2vw, 0.95rem)' }}>{siteConfig.contact.phone} (Clients)</a>
                     <p style={{ color: 'var(--text-muted)', fontSize: '.82rem', marginTop: '4px' }}>For active GulfStream-managed environments</p>
                   </div>
                 </div>

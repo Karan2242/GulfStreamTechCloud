@@ -1,34 +1,66 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useReveal } from '@/hooks/useReveal';
+import { cloudFaqs } from './cloud-services/cloudServicesFaqs';
+
+const cloudDeliverySteps = [
+  ['01', 'Assess', 'Understand your existing cloud environment, workloads, costs, risks and operational requirements.'],
+  ['02', 'Plan', 'Define priorities, architecture, migration or optimization strategy and an actionable roadmap.'],
+  ['03', 'Implement', 'Execute cloud initiatives with structured delivery, technical expertise and controlled change.'],
+  ['04', 'Operate', 'Provide ongoing monitoring, support, governance and operational management where required.'],
+  ['05', 'Optimize', 'Continuously improve performance, security, reliability and cloud cost efficiency.'],
+];
+
+const cloudResults = [
+  ['30%', 'Average Cost Reduction'],
+  ['99.99%', 'Uptime SLA'],
+  ['150+', 'Cloud Environments Managed'],
+  ['24/7', 'Cloud Operations & Support'],
+];
+
+const cloudBenefitIcons = {
+  'One Accountable Cloud Partner': <path d="M12 21s8-4 8-10V5l-8-3-8 3v6c0 6 8 10 8 10Z" />,
+  'Multi-Cloud Expertise': <path d="M12 3v18M3 12h18M5.64 5.64l12.72 12.72M18.36 5.64 5.64 18.36M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10Z" />,
+  'Business-Aligned Cloud Strategy': <path d="M4 19V5m0 14h16M7 15l3-4 3 2 5-7" />,
+  'Continuous Optimization': <path d="M4 19V5m0 14h16M7 15l3-4 3 2 5-7" />,
+  'Operational Visibility': <path d="M3 12s3-6 9-6 9 6 9 6-3 6-9 6-9-6-9-6Zm9 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />,
+  'Local Saudi Cloud Expertise': <path d="M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18Zm-9 9h18M12 3c2.2 2.4 3.3 5.4 3.3 9s-1.1 6.6-3.3 9c-2.2-2.4-3.3-5.4-3.3-9S9.8 5.4 12 3Z" />,
+};
+
+function CloudBenefitIcon({ title }) {
+  return (
+    <svg className="cloud-benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      {cloudBenefitIcons[title]}
+    </svg>
+  );
+}
 
 const CloudServicesContent = () => {
+  const [openFaqIndex, setOpenFaqIndex] = useState(null);
   useReveal();
 
   return (
-    <main>
+    <main>  
       {/* HERO */}
       <section className="page-hero">
         <div className="container" style={{ textAlign: 'left' }}>
           <div className="breadcrumb">
             <Link href="/">Home</Link><span>›</span><span>Services</span>
           </div>
-          <h1 className="display-lg"><span className="text-gradient">Enterprise Cloud Services in Saudi Arabia</span></h1>
-          <p >GulfStream Technologies delivers enterprise multi-Managed Cloud Services across AWS, Microsoft Cloud, Google Cloud, and Oracle Cloud for organizations across Saudi Arabia. We Operate, Optimize, Secure, Govern, and Modernize your cloud — reducing costs by up to 30% while maintaining 99.99% uptime.</p>
+          <h1 className="display-lg"><span className="text-gradient">Enterprise Cloud Services for Organizations in Saudi Arabia</span></h1>
+          <p >GulfStream Technologies provides managed cloud services across AWS, Microsoft Azure, Google Cloud and Oracle Cloud, helping organizations modernize infrastructure, optimize cloud costs, strengthen security and manage day-to-day cloud operations.</p>
           <div style={{ display: 'flex', gap: '16px', justifyContent: 'left', flexWrap: 'wrap', marginTop: '8px' }}>
-            <Link href="/book-a-review" className="btn btn-primary btn-lg">Book Your Free Cloud Cost Assessment</Link>
+            <Link href="/book-a-review" className="btn btn-primary btn-lg">Book a Cloud Assessment</Link>
             <Link
               href="/contact"
-              className="btn btn-outline btn-lg"
-              style={{ backgroundColor: '#ffffff', color: '#0052CC', borderColor: 'rgba(0,0,0,0.08)' }}
+              className="btn btn-outline-light btn-lg" style={{ backgroundColor: '#ffffff', color: '#0052CC', borderColor: 'rgba(0,0,0,0.08)' }}
             >
-              Get a Cloud Optimization Report
+              Talk to a Cloud Expert
             </Link>
           </div>
-          
         </div>
       </section>
 
@@ -37,8 +69,8 @@ const CloudServicesContent = () => {
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-primary">🛠️ Our Services</div>
-            <h2 className="display-md">What We Deliver</h2>
-            <p >Explore our full range of managed cloud services — each designed to deliver measurable outcomes for Saudi enterprises.</p>
+            <h2 className="display-md">Cloud Services Designed Around Your Business Needs</h2>
+            <p >From day-to-day cloud operations to migration, cost optimization and security, GulfStream provides the expertise and managed services needed to build, operate and continuously improve your cloud environment.</p>
           </div>
           <div className="services-grid">
             <div className="service-card premium-card reveal">
@@ -99,8 +131,8 @@ const CloudServicesContent = () => {
         <div className="container">
           <div className="section-header reveal">
             <div className="badge badge-primary">☁️ Supported Platforms</div>
-            <h2 className="display-md">Multi-Cloud Platform Support</h2>
-            <p>We are certified partners and specialists across all major cloud providers. Unified expertise for AWS, Microsoft Cloud, Google Cloud, and Oracle Cloud environments in Saudi Arabia.</p>
+            <h2 className="display-md">Cloud Expertise Across Leading Platforms</h2>
+            <p>GulfStream Technologies supports organizations across leading cloud platforms, helping businesses manage, optimize and modernize workloads in environments that match their technology and business requirements.</p>
           </div>
           <div className="grid-4 reveal">
             <div className="card premium-card">
@@ -172,102 +204,146 @@ const CloudServicesContent = () => {
         </div>
       </section>
 
-      {/* GULFSTREAM ADVANTAGE */}
-      <section className="section" >
+      {/* CLOUD DELIVERY APPROACH */}
+      <section className="section">
         <div className="container">
           <div className="section-header reveal">
-            <div className="badge badge-accent">⭐ GulfStream Advantage</div>
-            <h2 className="display-md">Why Choose GulfStream</h2>
-            <p>Experience the difference with our proven approach to managed cloud services in Saudi Arabia.</p>
+            <div className="badge badge-primary">HOW WE DELIVER CLOUD SERVICES</div>
+            <h2 className="display-md">A Structured Approach to Cloud Transformation</h2>
+            <p>Whether you are moving to the cloud, optimizing an existing environment or looking for ongoing operational support, GulfStream follows a structured approach designed around your current environment, business priorities and technology roadmap.</p>
+          </div>
+          <div className="home-roadmap reveal" aria-label="Cloud services delivery roadmap">
+            {cloudDeliverySteps.map(([number, title, description]) => (
+              <article className="home-roadmap-step" key={title}>
+                <div className="home-roadmap-node" aria-hidden="true">{number}</div>
+                <div className="home-roadmap-card">
+                  <div className="home-roadmap-kicker">PHASE {number}</div>
+                  <h3>{title}</h3>
+                  <p>{description}</p>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* GULFSTREAM ADVANTAGE */}
+      <section className="section"  style={{ background: 'var(--dark-surface)' }}>
+        <div className="container">
+          <div className="section-header reveal">
+            <div className="badge badge-accent">⭐ Why Us for Cloud Services</div>
+            <h2 className="display-md">Why Organizations Choose GulfStream Technologies for Cloud Services</h2>
+            <p>GulfStream combines cloud expertise, operational support and business-focused technology services to help organizations manage cloud environments with greater visibility, control and accountability.</p>
           </div>
           <div className="grid-3 reveal">
             <div className="card premium-card">
               <div className="card-header">
-                <div className="icon-box">☁️</div>
+                <div className="icon-box"><CloudBenefitIcon title="One Accountable Cloud Partner" /></div>
                 <div className="card-title-row">
-                  <h3>50+ Enterprise Clients</h3>
+                  <h3>One Accountable Cloud Partner</h3>
                 </div>
               </div>
-              <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>Trusted by leading Saudi enterprises across Saudi Arabia for mission-critical cloud management.</p>
+              <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>Coordinate cloud operations, optimization, security and transformation through one technology partner.</p>
             </div>
             <div className="card premium-card">
               <div className="card-header">
-                <div className="icon-box">👥</div>
+                <div className="icon-box"><CloudBenefitIcon title="Multi-Cloud Expertise" /></div>
                 <div className="card-title-row">
-                  <h3>25+ Certified Engineers</h3>
+                  <h3>Multi-Cloud Expertise</h3>
                 </div>
               </div>
               <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>Multi-cloud certified team with deep expertise in AWS, Microsoft, Google Cloud, and Oracle Cloud platforms.</p>
             </div>
             <div className="card premium-card">
               <div className="card-header">
-                <div className="icon-box">💰</div>
+                <div className="icon-box"><CloudBenefitIcon title="Business-Aligned Cloud Strategy" /></div>
                 <div className="card-title-row">
-                  <h3>Transparent Billing</h3>
+                  <h3>Business-Aligned Cloud Strategy</h3>
                 </div>
               </div>
-              <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>Clear, detailed billing with no hidden fees. Full visibility into costs and ROI from day one.</p>
+              <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>Align cloud architecture, investment and operations with business requirements rather than technology alone.</p>
             </div>
             <div className="card premium-card">
               <div className="card-header">
-                <div className="icon-box">📊</div>
-                <div className="card-title-row">
-                  <h3>Predictable Budgeting</h3>
-                </div>
-              </div>
-              <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>Fixed monthly pricing with predictable costs. No surprise bills or unexpected cloud expenses.</p>
-            </div>
-            <div className="card premium-card">
-              <div className="card-header">
-                <div className="icon-box">⚡</div>
+                <div className="icon-box"><CloudBenefitIcon title="Continuous Optimization" /></div>
                 <div className="card-title-row">
                   <h3>Continuous Optimization</h3>
                 </div>
               </div>
-              <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>Ongoing cost optimization and performance tuning to ensure maximum ROI from your cloud investment.</p>
+              <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>Go beyond initial implementation with ongoing opportunities to improve performance, utilization, security and cost efficiency.</p>
             </div>
             <div className="card premium-card">
               <div className="card-header">
-                <div className="icon-box">🌐</div>
+                <div className="icon-box"><CloudBenefitIcon title="Operational Visibility" /></div>
+                <div className="card-title-row">
+                  <h3>Operational Visibility</h3>
+                </div>
+              </div>
+              <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>Improve visibility into cloud environments, costs, workloads, performance and operational priorities.</p>
+            </div>
+            <div className="card premium-card">
+              <div className="card-header">
+                <div className="icon-box"><CloudBenefitIcon title="Local Saudi Cloud Expertise" /></div>
                 <div className="card-title-row">
                   <h3>Local Saudi Cloud Expertise</h3>
                 </div>
               </div>
-              <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>Regional cloud experience with NCA compliance, Vision 2030 alignment, and local GCC infrastructure best practices.</p>
+              <p style={{ fontSize: '.8rem', color: 'var(--text-secondary)' }}>Deliver cloud services with an understanding of the technology, regulatory and operational requirements relevant to organizations in Saudi Arabia.</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* PROVEN RESULTS */}
-      <section className="section" style={{ background: 'var(--dark-surface)' }}>
+      <section className="section cloud-results-section">
         <div className="container">
           <div className="section-header reveal">
-            <div className="badge badge-accent">📊 Proven Results</div>
-            <h2 className="display-md">Measurable Cloud Outcomes</h2>
-            <p>Real results delivered across our managed cloud environments in Saudi Arabia.</p>
+            <div className="badge badge-accent">PROVEN CLOUD OUTCOMES</div>
+            <h2 className="display-md">Cloud Performance at a Glance</h2>
+            <p>Our cloud services are designed around measurable improvements in cost efficiency, operational reliability, scalability and ongoing support.</p>
           </div>
-          <div className="grid-4 reveal" style={{ textAlign: 'center' }}>
-            <div className="card premium-card">
-              <div style={{ fontSize: '2rem', marginBottom: '12px' }}>💰</div>
-              <h3 style={{ fontSize: '1.5rem', marginBottom: '8px' }}>30%</h3>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Average Cost Reduction</p>
-            </div>
-            <div className="card premium-card">
-              <div style={{ fontSize: '2rem', marginBottom: '12px' }}>🔒</div>
-              <h3 style={{ fontSize: '1.5rem', marginBottom: '8px' }}>99.99%</h3>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Uptime SLA Consistently Delivered</p>
-            </div>
-            <div className="card premium-card">
-              <div style={{ fontSize: '2rem', marginBottom: '12px' }}>☁️</div>
-              <h3 style={{ fontSize: '1.5rem', marginBottom: '8px' }}>150+</h3>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Cloud Environments Managed</p>
-            </div>
-            <div className="card premium-card">
-              <div style={{ fontSize: '2rem', marginBottom: '12px' }}>🕒</div>
-              <h3 style={{ fontSize: '1.5rem', marginBottom: '8px' }}>24/7 Support</h3>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '.8rem' }}>Always-on operational support</p>
-            </div>
+          <div className="cloud-results-grid reveal">
+            {cloudResults.map(([value, label]) => (
+              <article className="cloud-result-item" key={label}>
+                <div className="cloud-result-value">{value}</div>
+                <p className="cloud-result-label">{label}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="section cloud-faq-section" style={{ background: 'var(--dark-surface)' }} >
+        <div className="container">
+          <div className="section-header reveal">
+            <div className="badge badge-accent">FAQ</div>
+            <h2 className="display-md">Frequently Asked Questions About Cloud Services</h2>
+          </div>
+          <div className="faq-accordion reveal">
+            {cloudFaqs.map(({ question, answer }, index) => {
+              const isOpen = openFaqIndex === index;
+              const answerId = `cloud-faq-answer-${index}`;
+              const questionId = `cloud-faq-question-${index}`;
+              return (
+                <div className={`faq-item ${isOpen ? 'active' : ''}`} key={question}>
+                  <button
+                    className="faq-question"
+                    type="button"
+                    id={questionId}
+                    aria-expanded={isOpen}
+                    aria-controls={answerId}
+                    onClick={() => setOpenFaqIndex(isOpen ? null : index)}
+                  >
+                    <span>{question}</span>
+                    <span className="faq-toggle" aria-hidden="true">+</span>
+                  </button>
+                  <div className="faq-answer" id={answerId} role="region" aria-labelledby={questionId}>
+                    <div className="faq-answer-inner"><p>{answer}</p></div>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
@@ -276,10 +352,10 @@ const CloudServicesContent = () => {
       <section className="section" >
         <div className="container">
           <div className="cta-banner reveal">
-            <h2 className="display-md">Ready to Optimize Your Cloud in Saudi Arabia?</h2>
-            <p>Book a free 60-minute Cloud Assessment with our certified engineers in Saudi Arabia and discover exactly where your cloud is underperforming or overspending.</p>
+            <h2 className="display-md">Ready to Move Your Cloud Strategy Forward?</h2>
+            <p>Whether you are planning a cloud migration, optimizing an existing environment, improving cloud security or looking for ongoing managed cloud support, GulfStream Technologies can help assess your requirements and define the right next step.</p>
             <div className="cta-actions">
-              <Link href="/book-a-review" className="btn btn-white btn-lg">📋 Book Your Free Cloud Cost Assessment</Link>
+              <Link href="/book-a-review" className="btn btn-white btn-lg">📋 Book a Free Cloud Assessment</Link>
               <Link href="/contact" className="btn-white-outline">Talk to Cloud Experts</Link>
             </div>
           </div>

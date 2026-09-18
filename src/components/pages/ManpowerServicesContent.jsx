@@ -111,8 +111,7 @@ export default function ManpowerServicesContent() {
             </Link>
             <Link
               href="#technology-capabilities"
-              className="btn btn-outline btn-lg"
-              style={{ backgroundColor: '#ffffff', color: '#0052CC', borderColor: 'rgba(0,0,0,0.08)' }}
+              className="btn btn-outline-light btn-lg"
             >
               Explore Capabilities
             </Link>

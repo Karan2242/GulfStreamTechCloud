@@ -182,7 +182,7 @@ const InsightsContent = () => {
           <nav className="breadcrumb" aria-label="Breadcrumb">
             <Link href="/">Home</Link><span>›</span><span>Insights</span>
           </nav>
-          <h1 className="display-lg">Cloud Insights & Resources <span className="text-gradient">Expert Guidance for Saudi Enterprises</span></h1>
+          <h1 className="display-lg"><span className="text-gradient">Cloud Insights & Resources Expert Guidance for Saudi Enterprises</span></h1>
           <p>In-depth guides on FinOps, security, migration, and cloud architecture from GulfStream certified cloud engineers — helping you make smarter decisions across AWS, Microsoft Cloud, Google Cloud, and Oracle Cloud.</p>
         </div>
       </section>

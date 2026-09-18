@@ -1,17 +1,12 @@
-'use client';
-
 import React from 'react';
 import Link from 'next/link';
-import { useReveal } from '@/hooks/useReveal';
 
 const PrivacyPolicyContent = () => {
-  useReveal();
-
   return (
     <main>
       {/* HERO */}
       <section className="page-hero">
-        <div className="container" style={{ maxWidth: '860px' }}>
+        <div className="container legal-page-container">
           <nav className="breadcrumb" aria-label="Breadcrumb">
             <Link href="/">Home</Link><span>›</span><span>Legal</span><span>›</span><span>Privacy Policy</span>
           </nav>
@@ -24,7 +19,7 @@ const PrivacyPolicyContent = () => {
           <p>
             At GulfStream Technologies, protecting your privacy and data is our highest priority. This Privacy Policy explains how we collect, use, store, and protect your information across all of our digital properties and Managed Cloud Services.
           </p>
-          <p style={{ fontSize: '0.95rem', color: 'var(--text-secondary)', marginTop: '16px' }}>
+          <p className="legal-intro-meta">
             <strong>Last Updated:</strong> April 14, 2026 | <strong>Effective Date:</strong> April 14, 2026
           </p>
         </div>
@@ -32,9 +27,9 @@ const PrivacyPolicyContent = () => {
 
       {/* CONTENT */}
       <section className="section">
-        <div className="container" style={{ maxWidth: '860px' }}>
+        <div className="container legal-page-container">
           {/* 1. INTRODUCTION */}
-          <div className="card reveal" style={{ marginBottom: '40px' }}>
+          <div className="card reveal legal-card-wrapper">
             <h2 style={{ fontSize: '1.4rem', fontWeight: 600, marginBottom: '16px', color: 'var(--text-primary)' }}>1. Introduction</h2>
             <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8, marginBottom: '12px' }}>
               GulfStream Technologies (&ldquo;we,&rdquo; &ldquo;us,&rdquo; &ldquo;our,&rdquo; or &ldquo;Company&rdquo;) is committed to transparency regarding how we collect and use information about you. This Privacy Policy applies to our website, Managed Cloud Services, and all digital interactions with our organization.

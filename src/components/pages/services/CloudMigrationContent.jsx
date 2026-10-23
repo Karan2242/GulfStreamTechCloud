@@ -251,12 +251,12 @@ const CloudMigrationContent = () => {
         title="Choose a Cloud Migration Partner Built for Business Continuity"
         description="Compare the planning, engineering, and post-migration accountability behind a successful cloud transformation."
         rows={[
-          ['Proven 6Rs migration methodology', 'yes', 'no', 'partial'],
-          ['Zero-downtime migration planning', 'yes', 'no', 'no'],
-          ['Certified migration architects', 'yes', 'no', 'partial'],
-          ['Post-migration optimization', 'yes', 'no', 'no'],
-          ['SLA-backed migration support', 'yes', 'no', 'partial'],
-          ['24/7 managed cloud services', 'yes', 'no', 'partial'],
+          ['Proven 6Rs migration methodology', 'yes', 'yes', 'partial'],
+          ['Zero-downtime migration planning', 'yes', 'yes', 'partial'],
+          ['Certified migration architects', 'yes', 'yes', 'partial'],
+          ['Post-migration optimization', 'yes', 'partial', 'partial'],
+          ['SLA-backed migration support', 'yes', 'partial', 'no'],
+          ['24/7 managed cloud services', 'yes', 'yes', 'partial'],
         ]}
       />
 

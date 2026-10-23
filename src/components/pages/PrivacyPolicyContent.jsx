@@ -1,11 +1,16 @@
+'use client';
+
 import React from 'react';
 import Link from 'next/link';
+import { useReveal } from '@/hooks/useReveal';
 
 const PrivacyPolicyContent = () => {
+  useReveal();
+
   return (
-    <main>
+    <main className="legal-policy-page">
       {/* HERO */}
-      <section className="page-hero">
+      <section className="page-hero legal-policy-hero">
         <div className="container legal-page-container">
           <nav className="breadcrumb" aria-label="Breadcrumb">
             <Link href="/">Home</Link><span>›</span><span>Legal</span><span>›</span><span>Privacy Policy</span>
@@ -17,22 +22,22 @@ const PrivacyPolicyContent = () => {
             <span className="text-gradient">Data & Privacy</span>
           </h1>
           <p>
-            At GulfStream Technologies, protecting your privacy and data is our highest priority. This Privacy Policy explains how we collect, use, store, and protect your information across all of our digital properties and Managed Cloud Services.
+            At GulfStream Technologies, protecting your privacy and data is our highest priority. This Privacy Policy explains how we collect, use, store, and protect your information across our website and Cloud, AI, IT, and Manpower services.
           </p>
           <p className="legal-intro-meta">
-            <strong>Last Updated:</strong> April 14, 2026 | <strong>Effective Date:</strong> April 14, 2026
+            <strong>Last Updated:</strong> October 23, 2026 | <strong>Effective Date:</strong> October 23, 2026
           </p>
         </div>
       </section>
 
       {/* CONTENT */}
-      <section className="section">
+      <section className="section legal-policy-content">
         <div className="container legal-page-container">
           {/* 1. INTRODUCTION */}
           <div className="card reveal legal-card-wrapper">
             <h2 style={{ fontSize: '1.4rem', fontWeight: 600, marginBottom: '16px', color: 'var(--text-primary)' }}>1. Introduction</h2>
             <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8, marginBottom: '12px' }}>
-              GulfStream Technologies (&ldquo;we,&rdquo; &ldquo;us,&rdquo; &ldquo;our,&rdquo; or &ldquo;Company&rdquo;) is committed to transparency regarding how we collect and use information about you. This Privacy Policy applies to our website, Managed Cloud Services, and all digital interactions with our organization.
+              GulfStream Technologies (&ldquo;we,&rdquo; &ldquo;us,&rdquo; &ldquo;our,&rdquo; or &ldquo;Company&rdquo;) is committed to transparency regarding how we collect and use information about you. This Privacy Policy applies to our website, cloud, AI, IT, and manpower services, and digital interactions with our organization.
             </p>
             <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8 }}>
               By accessing our website or using our services, you acknowledge that you have read, understood, and agree to be bound by this Privacy Policy. If you do not agree with our policies and practices, please do not use our website or engage our services.
@@ -65,9 +70,9 @@ const PrivacyPolicyContent = () => {
 
             <h3 style={{ fontSize: '1.1rem', fontWeight: 600, marginBottom: '12px', marginTop: '16px', color: 'var(--text-primary)' }}>Analytics Data</h3>
             <ul style={{ color: 'var(--text-secondary)', lineHeight: 1.8, marginLeft: '24px', marginBottom: '16px' }}>
-              <li>Google Analytics data including user behavior and engagement metrics</li>
-              <li>Heatmaps and session recordings (where explicitly consented)</li>
-              <li>Performance metrics and service usage patterns</li>
+              <li>Usage and engagement data from analytics tools, if enabled</li>
+              <li>Heatmaps and session recordings, if enabled and where required consent has been obtained</li>
+              <li>Performance metrics and service usage patterns related to services you use</li>
             </ul>
 
             <h3 style={{ fontSize: '1.1rem', fontWeight: 600, marginBottom: '12px', marginTop: '16px', color: 'var(--text-primary)' }}>Cloud Service Information</h3>
@@ -255,7 +260,7 @@ const PrivacyPolicyContent = () => {
                 <strong>Email:</strong> <a href="mailto:privacy@gulfstreamtech.com.sa" style={{ color: 'var(--accent)' }}>privacy@gulfstreamtech.com.sa</a>
               </p>
               <p style={{ color: 'var(--text-secondary)', marginBottom: '8px' }}>
-                <strong>Phone:</strong> <a href="tel:+966053201917" style={{ color: 'var(--accent)' }}>+966 (0) 53 201 917</a>
+                <strong>Phone:</strong> <a href="tel:+966532019172" style={{ color: 'var(--accent)' }}>+966 (0) 53 201 9172</a>
               </p>
               <p style={{ color: 'var(--text-secondary)' }}>
                 <strong>Address:</strong> 6526 At Takhassusi Road, Almathar Ash Shamali District, Riyadh 12332, Saudi Arabia

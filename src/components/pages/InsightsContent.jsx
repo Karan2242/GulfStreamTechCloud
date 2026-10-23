@@ -10,14 +10,114 @@ const InsightsContent = () => {
 
   const articles = [
     {
+      slug: 'ai-use-case-discovery-roadmap',
+      icon: '💡',
+      category: 'AI',
+      title: 'AI Use Case Discovery: From Business Challenge to Roadmap',
+      summary: 'Prioritize practical AI opportunities by assessing business value, data readiness, feasibility, and measurable outcomes before investing.',
+      readTime: '9 min read',
+      date: '2026-10-19',
+      dateLabel: 'Oct 19, 2026',
+    },
+    {
+      slug: 'responsible-ai-governance-framework',
+      icon: '⚖️',
+      category: 'AI',
+      title: 'Responsible AI Governance: A Practical Framework',
+      summary: 'Set clear ownership, risk reviews, human oversight, and monitoring controls for responsible AI adoption across your organization.',
+      readTime: '10 min read',
+      date: '2026-08-21',
+      dateLabel: 'Aug 21, 2026',
+    },
+    {
+      slug: 'custom-ai-application-development',
+      icon: '🧠',
+      category: 'AI',
+      title: 'Building Custom AI Applications: From Prototype to Production',
+      summary: 'Explore the architecture, integration, evaluation, and deployment practices needed to move a custom AI application into production.',
+      readTime: '11 min read',
+      date: '2026-09-26',
+      dateLabel: 'Sep 26, 2026',
+    },
+    {
+      slug: 'enterprise-data-engineering-ai-readiness',
+      icon: '🗃️',
+      category: 'AI',
+      title: 'Data Engineering for AI-Ready Analytics',
+      summary: 'Build reliable data pipelines and governed analytics foundations that make enterprise data useful for AI and business intelligence.',
+      readTime: '8 min read',
+      date: '2026-07-28',
+      dateLabel: 'Jul 28, 2026',
+    },
+    {
+      slug: 'business-process-automation-with-ai',
+      icon: '⚡',
+      category: 'AI',
+      title: 'AI-Powered Business Process Automation: Where to Start',
+      summary: 'Identify repeatable workflows for automation, connect AI safely to business systems, and measure quality and time savings.',
+      readTime: '9 min read',
+      date: '2026-10-01',
+      dateLabel: 'Oct 01, 2026',
+    },
+    {
+      slug: 'managed-it-support-proactive-operations',
+      icon: '🖥️',
+      category: 'IT Services',
+      title: 'Proactive Managed IT Support: A Guide for Growing Businesses',
+      summary: 'Learn how monitoring, help desk workflows, patching, and service-level targets can make day-to-day IT more dependable.',
+      readTime: '8 min read',
+      date: '2026-10-17',
+      dateLabel: 'Oct 17, 2026',
+    },
+    {
+      slug: 'small-business-cybersecurity-baseline',
+      icon: '🛡️',
+      category: 'IT Services',
+      title: 'Small Business Cybersecurity: Essential Controls to Prioritize',
+      summary: 'Build a practical security baseline with identity protection, endpoint controls, backups, employee awareness, and incident readiness.',
+      readTime: '9 min read',
+      date: '2026-09-17',
+      dateLabel: 'Sep 17, 2026',
+    },
+    {
+      slug: 'network-infrastructure-modernization',
+      icon: '🌐',
+      category: 'IT Services',
+      title: 'Modernizing Business Network Infrastructure',
+      summary: 'Plan resilient wired, wireless, and remote access networks with practical guidance for capacity, segmentation, and ongoing support.',
+      readTime: '8 min read',
+      date: '2026-08-09',
+      dateLabel: 'Aug 09, 2026',
+    },
+    {
+      slug: 'business-backup-disaster-recovery-planning',
+      icon: '🔄',
+      category: 'IT Services',
+      title: 'Backup and Disaster Recovery Planning for Business IT',
+      summary: 'Define recovery objectives, protect critical systems, and validate restoration plans before an outage puts operations at risk.',
+      readTime: '10 min read',
+      date: '2026-10-07',
+      dateLabel: 'Oct 07, 2026',
+    },
+    {
+      slug: 'successful-it-project-deployment-checklist',
+      icon: '📋',
+      category: 'IT Services',
+      title: 'A Practical Checklist for Successful IT Project Deployments',
+      summary: 'Coordinate requirements, stakeholders, testing, communications, and handover to reduce disruption during technology rollouts.',
+      readTime: '7 min read',
+      date: '2026-09-08',
+      dateLabel: 'Sep 08, 2026',
+    },
+    {
       slug: 'cloud-cost-optimization-strategy',
       icon: '💰',
       category: 'FinOps',
       title: 'Cloud Cost Optimization Strategy: A Complete Framework',
       summary: 'Learn proven FinOps methodologies to reduce cloud costs by 25-35% through rightsizing, commitment planning, and intelligent resource allocation.',
       readTime: '8 min read',
-      date: '2026-05-15',
-      dateLabel: 'May 15, 2026',
+      date: '2026-10-23',
+      dateLabel: 'Oct 23, 2026',
     },
     {
       slug: 'auto-scaling-architecture',
@@ -26,8 +126,8 @@ const InsightsContent = () => {
       title: 'Auto-Scaling Cloud Architecture: Design Patterns',
       summary: 'Build elastic architectures that automatically scale based on demand, reducing costs and improving performance across AWS, Azure, and GCP.',
       readTime: '10 min read',
-      date: '2026-05-14',
-      dateLabel: 'May 14, 2026',
+      date: '2026-09-11',
+      dateLabel: 'Sep 11, 2026',
     },
     {
       slug: 'cloud-migration-planning',
@@ -36,8 +136,8 @@ const InsightsContent = () => {
       title: 'Cloud Migration Planning Strategy: From Discovery to Go-Live',
       summary: 'A step-by-step migration framework covering assessment, design, validation, and cutover planning for zero-downtime enterprise migrations.',
       readTime: '10 min read',
-      date: '2026-05-13',
-      dateLabel: 'May 13, 2026',
+      date: '2026-10-03',
+      dateLabel: 'Oct 03, 2026',
     },
     {
       slug: 'cloud-iam-security-best-practices',
@@ -46,8 +146,8 @@ const InsightsContent = () => {
       title: 'Cloud IAM Security Best Practices: AWS, Azure, GCP',
       summary: 'Implement zero-trust identity models, least privilege access, and MFA across multi-cloud environments with practical implementation steps.',
       readTime: '8 min read',
-      date: '2026-05-12',
-      dateLabel: 'May 12, 2026',
+      date: '2026-08-25',
+      dateLabel: 'Aug 25, 2026',
     },
     {
       slug: 'multi-region-high-availability',
@@ -56,8 +156,8 @@ const InsightsContent = () => {
       title: 'Multi-Region High Availability Design: 99.99% Uptime',
       summary: 'Architect resilient multi-region deployments with automated failover, data replication, and disaster recovery ensuring mission-critical availability.',
       readTime: '11 min read',
-      date: '2026-05-11',
-      dateLabel: 'May 11, 2026',
+      date: '2026-10-21',
+      dateLabel: 'Oct 21, 2026',
     },
     {
       slug: 'reserved-instances-vs-savings-plans',
@@ -66,8 +166,8 @@ const InsightsContent = () => {
       title: 'Reserved Instances vs Savings Plans: Which Should You Buy?',
       summary: 'A practical comparison of AWS Reserved Instances, Savings Plans, and on-demand pricing with decision matrices for different workload types.',
       readTime: '7 min read',
-      date: '2026-05-10',
-      dateLabel: 'May 10, 2026',
+      date: '2026-09-05',
+      dateLabel: 'Sep 05, 2026',
     },
     {
       slug: 'lift-and-shift-vs-modernization',
@@ -76,8 +176,8 @@ const InsightsContent = () => {
       title: 'Lift-and-Shift vs Modernization: Which Path is Right?',
       summary: 'Compare rehost, replatform, and refactor strategies with cost-benefit analysis, timeline considerations, and decision frameworks.',
       readTime: '9 min read',
-      date: '2026-05-09',
-      dateLabel: 'May 09, 2026',
+      date: '2026-08-17',
+      dateLabel: 'Aug 17, 2026',
     },
     {
       slug: 'multi-cloud-threat-detection',
@@ -86,8 +186,8 @@ const InsightsContent = () => {
       title: 'Multi-Cloud Threat Detection and Response Strategy',
       summary: 'Unified security monitoring across AWS, Azure, and Google Cloud with SIEM integration, automated detection, and incident response procedures.',
       readTime: '11 min read',
-      date: '2026-05-08',
-      dateLabel: 'May 08, 2026',
+      date: '2026-10-13',
+      dateLabel: 'Oct 13, 2026',
     },
     {
       slug: 'cloud-waste-reduction',
@@ -96,8 +196,8 @@ const InsightsContent = () => {
       title: 'Cloud Waste Reduction Techniques: Finding Hidden Costs',
       summary: 'Discover data transfer charges, idle resources, and orphaned snapshots draining your budget. A complete guide to finding and eliminating cloud waste.',
       readTime: '9 min read',
-      date: '2026-05-05',
-      dateLabel: 'May 05, 2026',
+      date: '2026-07-31',
+      dateLabel: 'Jul 31, 2026',
     },
     {
       slug: 'zero-downtime-migration',
@@ -106,8 +206,8 @@ const InsightsContent = () => {
       title: 'Zero Downtime Cloud Migration: Advanced Techniques',
       summary: 'Implement dual-running, database replication, and cutover strategies ensuring business continuity during cloud migration.',
       readTime: '11 min read',
-      date: '2026-05-03',
-      dateLabel: 'May 03, 2026',
+      date: '2026-09-20',
+      dateLabel: 'Sep 20, 2026',
     },
     {
       slug: 'resilient-cloud-infrastructure',
@@ -116,8 +216,8 @@ const InsightsContent = () => {
       title: 'Resilient Cloud Infrastructure: Fault Tolerance Design',
       summary: 'Design fault-tolerant systems using microservices, containerization, and infrastructure-as-code for production-grade reliability.',
       readTime: '9 min read',
-      date: '2026-05-02',
-      dateLabel: 'May 02, 2026',
+      date: '2026-08-13',
+      dateLabel: 'Aug 13, 2026',
     },
     {
       slug: 'cloud-compliance-governance',
@@ -126,8 +226,8 @@ const InsightsContent = () => {
       title: 'Cloud Compliance & Governance: A Practical Roadmap',
       summary: 'Navigate HIPAA, SOC 2, ISO 27001, and Saudi regulations with automated compliance frameworks and continuous monitoring strategies.',
       readTime: '9 min read',
-      date: '2026-05-01',
-      dateLabel: 'May 01, 2026',
+      date: '2026-09-29',
+      dateLabel: 'Sep 29, 2026',
     },
     {
       slug: 'finops-governance',
@@ -136,8 +236,8 @@ const InsightsContent = () => {
       title: 'FinOps Governance Best Practices: Building Cost Culture',
       summary: 'Implement FinOps governance policies, automated cost controls, and organizational structures that make cloud cost management a team discipline.',
       readTime: '10 min read',
-      date: '2026-04-30',
-      dateLabel: 'Apr 30, 2026',
+      date: '2026-08-29',
+      dateLabel: 'Aug 29, 2026',
     },
     {
       slug: 'security-monitoring-aws-azure',
@@ -146,8 +246,8 @@ const InsightsContent = () => {
       title: 'Security Monitoring in AWS/Azure: Native Tools Guide',
       summary: 'Compare native security tools, implement centralized logging, and set up real-time alerts across AWS and Azure environments.',
       readTime: '8 min read',
-      date: '2026-04-28',
-      dateLabel: 'Apr 28, 2026',
+      date: '2026-10-05',
+      dateLabel: 'Oct 05, 2026',
     },
     {
       slug: 'cloud-performance-optimization',
@@ -156,8 +256,8 @@ const InsightsContent = () => {
       title: 'Cloud Performance Optimization: Beyond CPU and Memory',
       summary: 'Optimize application performance through caching strategies, CDN integration, database optimization, and observability best practices.',
       readTime: '8 min read',
-      date: '2026-04-27',
-      dateLabel: 'Apr 27, 2026',
+      date: '2026-09-14',
+      dateLabel: 'Sep 14, 2026',
     },
     {
       slug: 'hybrid-cloud-migration',
@@ -166,13 +266,16 @@ const InsightsContent = () => {
       title: 'Hybrid Cloud Migration Best Practices',
       summary: 'Strategies for phased cloud adoption, managing on-premises and cloud infrastructure, and hybrid cloud governance models.',
       readTime: '8 min read',
-      date: '2026-04-26',
-      dateLabel: 'Apr 26, 2026',
+      date: '2026-07-25',
+      dateLabel: 'Jul 25, 2026',
     },
   ];
 
-  const categories = ['All', 'FinOps', 'Security', 'Migration', 'Architecture'];
-  const filtered = activeCategory === 'All' ? articles : articles.filter(a => a.category === activeCategory);
+  const categories = ['All', 'FinOps', 'Security', 'Migration', 'Architecture', 'AI', 'IT Services'];
+  const mixedArticles = [...articles].sort((a, b) => b.date.localeCompare(a.date));
+  const filtered = activeCategory === 'All'
+    ? mixedArticles
+    : mixedArticles.filter(a => a.category === activeCategory);
 
   return (
     <main>
@@ -183,7 +286,7 @@ const InsightsContent = () => {
             <Link href="/">Home</Link><span>›</span><span>Insights</span>
           </nav>
           <h1 className="display-lg"><span className="text-gradient">Cloud Insights & Resources Expert Guidance for Saudi Enterprises</span></h1>
-          <p>In-depth guides on FinOps, security, migration, and cloud architecture from GulfStream certified cloud engineers — helping you make smarter decisions across AWS, Microsoft Cloud, Google Cloud, and Oracle Cloud.</p>
+          <p>In-depth guides on AI, IT services, FinOps, security, migration, and cloud architecture from GulfStream experts — helping you make smarter decisions across your technology landscape.</p>
         </div>
       </section>
 

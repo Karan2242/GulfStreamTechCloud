@@ -250,12 +250,12 @@ const FinopsCostOptimizationContent = () => {
         title="Choose a FinOps Partner Built for Enterprise Savings"
         description="Compare the expertise, governance, and accountability behind sustainable cloud cost optimization."
         rows={[
-          ['Certified FinOps practitioners', 'yes', 'partial', 'partial'],
-          ['Multi-cloud cost optimization', 'yes', 'partial', 'no'],
-          ['RI and Savings Plans strategy', 'yes', 'no', 'partial'],
-          ['Continuous cost monitoring', 'yes', 'no', 'partial'],
-          ['SLA-backed savings accountability', 'yes', 'no', 'no'],
-          ['Executive FinOps reporting', 'yes', 'no', 'partial'],
+          ['Certified FinOps practitioners', 'yes', 'yes', 'partial'],
+          ['Multi-cloud cost optimization', 'yes', 'yes', 'partial'],
+          ['RI and Savings Plans strategy', 'yes', 'yes', 'partial'],
+          ['Continuous cost monitoring', 'yes', 'partial', 'partial'],
+          ['SLA-backed savings accountability', 'yes', 'partial', 'no'],
+          ['Executive FinOps reporting', 'yes', 'partial', 'partial'],
         ]}
       />
 

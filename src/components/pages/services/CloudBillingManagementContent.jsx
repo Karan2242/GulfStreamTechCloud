@@ -253,11 +253,11 @@ const CloudBillingManagementContent = () => {
         title="Choose Cloud Billing Management With Complete Accountability"
         description="Compare the monitoring, reporting, and cost control your finance and engineering teams receive."
         rows={[
-          ['24/7 cloud billing monitoring', 'yes', 'no', 'partial'],
-          ['Certified cloud billing engineers', 'yes', 'no', 'partial'],
-          ['Multi-cloud billing visibility', 'yes', 'no', 'no'],
-          ['Built-in cost optimization', 'yes', 'no', 'no'],
-          ['SLA-backed billing support', 'yes', 'no', 'partial'],
+          ['24/7 cloud billing monitoring', 'yes', 'yes', 'partial'],
+          ['Certified cloud billing engineers', 'yes', 'yes', 'partial'],
+          ['Multi-cloud billing visibility', 'yes', 'yes', 'partial'],
+          ['Built-in cost optimization', 'yes', 'partial', 'partial'],
+          ['SLA-backed billing support', 'yes', 'partial', 'no'],
           ['Executive spend reporting', 'yes', 'partial', 'partial'],
         ]}
       />

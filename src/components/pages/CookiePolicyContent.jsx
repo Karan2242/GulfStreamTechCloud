@@ -1,11 +1,16 @@
+'use client';
+
 import React from 'react';
 import Link from 'next/link';
+import { useReveal } from '@/hooks/useReveal';
 
 const CookiePolicyContent = () => {
+  useReveal();
+
   return (
-    <main>
+    <main className="legal-policy-page">
       {/* HERO */}
-      <section className="page-hero">
+      <section className="page-hero legal-policy-hero">
         <div className="container legal-page-container">
           <nav className="breadcrumb" aria-label="Breadcrumb">
             <Link href="/">Home</Link><span>›</span><span>Legal</span><span>›</span><span>Cookie Policy</span>
@@ -17,22 +22,22 @@ const CookiePolicyContent = () => {
             <span className="text-gradient">& Tracking Technologies</span>
           </h1>
           <p>
-            This Cookie Policy explains what cookies are, how GulfStream Technologies uses them, and how you can control them. By continuing to browse our website, you consent to our use of cookies as outlined below.
+            This Cookie Policy explains what cookies are, how they may be used on this website, and how you can manage them. Where consent is required for non-essential cookies, we will request it before using them.
           </p>
           <p className="legal-intro-meta">
-            <strong>Last Updated:</strong> April 14, 2026 | <strong>Effective Date:</strong> April 14, 2026
+            <strong>Last Updated:</strong> October 23, 2026 | <strong>Effective Date:</strong> October 23, 2026
           </p>
         </div>
       </section>
 
       {/* CONTENT */}
-      <section className="section">
+      <section className="section legal-policy-content">
         <div className="container legal-page-container">
           {/* 1. INTRODUCTION */}
           <div className="card reveal legal-card-wrapper">
             <h2 style={{ fontSize: '1.4rem', fontWeight: 600, marginBottom: '16px', color: 'var(--text-primary)' }}>1. Introduction</h2>
             <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8, marginBottom: '12px' }}>
-              GulfStream Technologies uses cookies and similar tracking technologies to enhance your browsing experience, understand how you use our website, and deliver personalized content and services. This Cookie Policy provides transparent information about our cookie practices.
+              This website may use cookies and similar technologies for functionality and, if enabled, analytics or marketing. This policy explains the categories of technologies that may be used and the options available to manage them.
             </p>
             <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8 }}>
               Please review this policy carefully. If you do not agree with our cookie practices, you can disable cookies through your browser settings or opt out using the methods described below.
@@ -82,13 +87,13 @@ const CookiePolicyContent = () => {
 
             <h3 style={{ fontSize: '1.1rem', fontWeight: 600, marginBottom: '12px', marginTop: '16px', color: 'var(--text-primary)' }}>Analytics & Performance Cookies</h3>
             <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8, marginBottom: '12px' }}>
-              <strong>Purpose:</strong> These cookies help us understand how visitors use our website by collecting aggregated, anonymous data about page views, bounce rates, session duration, and user interactions.
+              <strong>Purpose:</strong> If an analytics service is enabled, its cookies may collect information about page views, session duration, and interactions to help assess website performance.
             </p>
             <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8, marginBottom: '16px' }}>
-              <strong>Tools Used:</strong> Google Analytics (see <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent)' }}>Google Privacy Policy</a>)
+              <strong>Possible provider:</strong> Google Analytics, if enabled (see <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent)' }}>Google Privacy Policy</a>)
             </p>
             <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8, marginBottom: '20px' }}>
-              <em>These cookies do not identify you personally; they provide us with insights to improve website performance and user experience.</em>
+              <em>Information collected and its handling depend on the analytics service and its settings.</em>
             </p>
 
             <h3 style={{ fontSize: '1.1rem', fontWeight: 600, marginBottom: '12px', marginTop: '16px', color: 'var(--text-primary)' }}>Preference Cookies</h3>
@@ -104,10 +109,10 @@ const CookiePolicyContent = () => {
 
             <h3 style={{ fontSize: '1.1rem', fontWeight: 600, marginBottom: '12px', marginTop: '16px', color: 'var(--text-primary)' }}>Marketing & Retargeting Cookies</h3>
             <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8, marginBottom: '12px' }}>
-              <strong>Purpose:</strong> These cookies are used to track your browsing activity across websites to deliver targeted advertisements and marketing messages relevant to your interests.
+              <strong>Purpose:</strong> If advertising or marketing integrations are enabled, these cookies may be used to measure campaigns or personalize advertising.
             </p>
             <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8, marginBottom: '16px' }}>
-              <strong>Examples:</strong> LinkedIn Pixel, Facebook Pixel, Google Ads retargeting, social media tracking.
+              <strong>Examples:</strong> Advertising pixels or retargeting tools, if integrated into the website.
             </p>
             <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8 }}>
               <em>You can opt out of these cookies using your browser&apos;s privacy settings or the methods described in Section 5.</em>
@@ -118,7 +123,7 @@ const CookiePolicyContent = () => {
           <div className="card reveal" style={{ marginBottom: '40px' }}>
             <h2 style={{ fontSize: '1.4rem', fontWeight: 600, marginBottom: '16px', color: 'var(--text-primary)' }}>4. How We Use Cookies</h2>
             <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8, marginBottom: '20px' }}>
-              We use cookies for the following purposes:
+              Depending on the features and integrations enabled, cookies may support the following purposes:
             </p>
 
             <ul style={{ color: 'var(--text-secondary)', lineHeight: 1.8, marginLeft: '24px', marginBottom: '16px' }}>
@@ -158,7 +163,7 @@ const CookiePolicyContent = () => {
 
             <h3 style={{ fontSize: '1.1rem', fontWeight: 600, marginBottom: '12px', marginTop: '16px', color: 'var(--text-primary)' }}>Opt-Out of Google Analytics</h3>
             <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8, marginBottom: '12px' }}>
-              To opt out of Google Analytics tracking, visit: <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent)' }}>Google Analytics Opt-Out</a>
+              If Google Analytics is enabled, you can use the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent)' }}>Google Analytics Opt-Out</a> tool.
             </p>
 
             <h3 style={{ fontSize: '1.1rem', fontWeight: 600, marginBottom: '12px', marginTop: '16px', color: 'var(--text-primary)' }}>Do-Not-Track (DNT) Signals</h3>
@@ -176,7 +181,7 @@ const CookiePolicyContent = () => {
           <div className="card reveal" style={{ marginBottom: '40px' }}>
             <h2 style={{ fontSize: '1.4rem', fontWeight: 600, marginBottom: '16px', color: 'var(--text-primary)' }}>6. Third-Party Cookies & Partners</h2>
             <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8, marginBottom: '20px' }}>
-              Our website integrates third-party services that may set their own cookies:
+              Third-party cookies may be set when related services are integrated and enabled on the website. Examples may include:
             </p>
 
             <h3 style={{ fontSize: '1.1rem', fontWeight: 600, marginBottom: '12px', marginTop: '16px', color: 'var(--text-primary)' }}>Analytics Providers</h3>
@@ -193,7 +198,7 @@ const CookiePolicyContent = () => {
 
             <h3 style={{ fontSize: '1.1rem', fontWeight: 600, marginBottom: '12px', marginTop: '16px', color: 'var(--text-primary)' }}>Cloud Infrastructure Partners</h3>
             <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8, marginBottom: '16px' }}>
-              Our website is hosted on cloud infrastructure (AWS, Azure, GCP) which may use performance cookies and monitoring tools. Review their privacy policies for details.
+              Our hosting and infrastructure providers may use performance or security technologies. The providers and technologies used depend on the hosting configuration.
             </p>
 
             <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8 }}>
@@ -231,7 +236,7 @@ const CookiePolicyContent = () => {
                 <strong>Email:</strong> <a href="mailto:privacy@gulfstreamtech.com.sa" style={{ color: 'var(--accent)' }}>privacy@gulfstreamtech.com.sa</a>
               </p>
               <p style={{ color: 'var(--text-secondary)', marginBottom: '8px' }}>
-                <strong>Phone:</strong> <a href="tel:+966053201917" style={{ color: 'var(--accent)' }}>+966 (0) 53 201 917</a>
+                <strong>Phone:</strong> <a href="tel:+966532019172" style={{ color: 'var(--accent)' }}>+966 (0) 53 201 9172</a>
               </p>
               <p style={{ color: 'var(--text-secondary)' }}>
                 <strong>Address:</strong> 6526 At Takhassusi Road, Almathar Ash Shamali District, Riyadh 12332, Saudi Arabia

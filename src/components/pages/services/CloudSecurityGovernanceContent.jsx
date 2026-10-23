@@ -255,12 +255,12 @@ const CloudSecurityGovernanceContent = () => {
         title="Choose Cloud Security Governance With Continuous Protection"
         description="Compare the monitoring, compliance, and incident response capabilities protecting your cloud estate."
         rows={[
-          ['24/7 threat monitoring', 'yes', 'no', 'partial'],
-          ['NCA ECC compliance support', 'yes', 'no', 'partial'],
-          ['Certified cloud security engineers', 'yes', 'no', 'partial'],
-          ['Multi-cloud security coverage', 'yes', 'partial', 'no'],
-          ['SLA-backed security operations', 'yes', 'no', 'partial'],
-          ['Incident response playbooks', 'yes', 'no', 'no'],
+          ['24/7 threat monitoring', 'yes', 'yes', 'partial'],
+          ['NCA ECC compliance support', 'yes', 'partial', 'partial'],
+          ['Certified cloud security engineers', 'yes', 'yes', 'partial'],
+          ['Multi-cloud security coverage', 'yes', 'yes', 'partial'],
+          ['SLA-backed security operations', 'yes', 'partial', 'no'],
+          ['Incident response playbooks', 'yes', 'yes', 'partial'],
         ]}
       />
 

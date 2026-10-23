@@ -1,14 +1,14 @@
 'use client';
 
 const defaultRows = [
-  ['24/7 cloud monitoring', 'yes', 'partial', 'partial'],
-  ['Certified multi-cloud engineers', 'yes', 'partial', 'partial'],
+  ['24/7 cloud monitoring', 'yes', 'yes', 'yes'],
+  ['Certified multi-cloud engineers', 'yes', 'yes', 'partial'],
   ['FinOps cost optimization', 'yes', 'partial', 'no'],
-  ['SLA-backed accountability', 'yes', 'no', 'no'],
-  ['Multi-cloud platform expertise', 'yes', 'partial', 'no'],
+  ['SLA-backed accountability', 'yes', 'yes', 'no'],
+  ['Multi-cloud platform expertise', 'yes', 'yes  ', 'partial'],
   ['Security and compliance governance', 'yes', 'partial', 'partial'],
   ['Disaster recovery planning', 'yes', 'partial', 'partial'],
-  ['Saudi market and regulation knowledge', 'yes', 'no', 'yes'],
+  ['Saudi market and regulation knowledge', 'yes', 'partial', 'yes'],
 ];
 
 const statusLabels = {

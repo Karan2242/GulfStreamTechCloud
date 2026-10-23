@@ -1,11 +1,16 @@
+'use client';
+
 import React from 'react';
 import Link from 'next/link';
+import { useReveal } from '@/hooks/useReveal';
 
 const TermsOfServiceContent = () => {
+  useReveal();
+
   return (
-    <main>
+    <main className="legal-policy-page">
       {/* HERO */}
-      <section className="page-hero">
+      <section className="page-hero legal-policy-hero">
         <div className="container legal-page-container">
           <nav className="breadcrumb" aria-label="Breadcrumb">
             <Link href="/">Home</Link><span>›</span><span>Legal</span><span>›</span><span>Terms of Service</span>
@@ -14,25 +19,25 @@ const TermsOfServiceContent = () => {
           <h1 className="display-lg">
             Terms & Conditions for
             <br />
-            <span className="text-gradient">Cloud Services</span>
+            <span className="text-gradient">Technology Services</span>
           </h1>
           <p>
-            These Terms of Service govern your access to and use of GulfStream Technologies&apos; website and cloud management services. Please read them carefully before engaging with our services.
+            These Terms of Service govern your access to and use of GulfStream Technologies&apos; website and Cloud, AI, IT, and Manpower services. Please read them carefully before engaging with our services.
           </p>
           <p className="legal-intro-meta">
-            <strong>Last Updated:</strong> April 14, 2026 | <strong>Effective Date:</strong> April 14, 2026
+            <strong>Last Updated:</strong> October 23, 2026 | <strong>Effective Date:</strong> October 23, 2026
           </p>
         </div>
       </section>
 
       {/* CONTENT */}
-      <section className="section">
+      <section className="section legal-policy-content">
         <div className="container legal-page-container">
           {/* 1. ACCEPTANCE OF TERMS */}
           <div className="card reveal legal-card-wrapper">
             <h2 style={{ fontSize: '1.4rem', fontWeight: 600, marginBottom: '16px', color: 'var(--text-primary)' }}>1. Acceptance of Terms</h2>
             <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8, marginBottom: '12px' }}>
-              By accessing and using GulfStream Technologies&apos;s website, booking services, or engaging with our cloud management solutions, you agree to be bound by these Terms of Service. If you do not agree to any part of these terms, you must discontinue use of our services immediately.
+              By accessing and using GulfStream Technologies&apos;s website, booking services, or engaging with our cloud, AI, IT, or manpower services, you agree to be bound by these Terms of Service. If you do not agree to any part of these terms, you must discontinue use of our services immediately.
             </p>
             <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8 }}>
               GulfStream Technologies reserves the right to update these Terms at any time. Your continued use of our services following notification of changes constitutes acceptance of the updated Terms.
@@ -65,7 +70,7 @@ const TermsOfServiceContent = () => {
           <div className="card reveal" style={{ marginBottom: '40px' }}>
             <h2 style={{ fontSize: '1.4rem', fontWeight: 600, marginBottom: '16px', color: 'var(--text-primary)' }}>3. Services Offered</h2>
             <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8, marginBottom: '20px' }}>
-              GulfStream Technologies provides comprehensive cloud management and optimization services, including but not limited to:
+              GulfStream Technologies provides technology services across cloud, AI, IT, and manpower, including but not limited to:
             </p>
 
             <h3 style={{ fontSize: '1.1rem', fontWeight: 600, marginBottom: '12px', marginTop: '16px', color: 'var(--text-primary)' }}>Cloud Platforms Supported</h3>
@@ -82,6 +87,9 @@ const TermsOfServiceContent = () => {
               <li>FinOps cost optimization and billing management</li>
               <li>Cloud migration and infrastructure modernization</li>
               <li>Cloud security, governance, and compliance</li>
+              <li>AI services, including AI governance, use-case discovery, applications, and automation</li>
+              <li>IT services, including managed support, cybersecurity, infrastructure, and deployment projects</li>
+              <li>Manpower and specialist technology staffing services</li>
               <li>Consulting, training, and implementation support</li>
             </ul>
 
@@ -209,7 +217,7 @@ const TermsOfServiceContent = () => {
                 <strong>Email:</strong> <a href="mailto:legal@gulfstreamtech.com.sa" style={{ color: 'var(--accent)' }}>legal@gulfstreamtech.com.sa</a>
               </p>
               <p style={{ color: 'var(--text-secondary)', marginBottom: '8px' }}>
-                <strong>Phone:</strong> <a href="tel:+966053201917" style={{ color: 'var(--accent)' }}>+966 (0) 53 201 917</a>
+                <strong>Phone:</strong> <a href="tel:+966532019172" style={{ color: 'var(--accent)' }}>+966 (0) 53 201 9172</a>
               </p>
               <p style={{ color: 'var(--text-secondary)' }}>
                 <strong>Address:</strong> 6526 At Takhassusi Road, Almathar Ash Shamali District, Riyadh 12332, Saudi Arabia

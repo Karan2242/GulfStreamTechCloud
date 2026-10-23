@@ -285,10 +285,10 @@ export default function HomeContent() {
               <p className="hero-desc">
                 From cloud modernization to AI adoption, IT operations to technology talent — GulfStream Technologies brings strategy, execution, and ongoing support together, so businesses across the Saudi Arabia & GCC can move forward with confidence.</p>
               <div className="hero-actions">
-                <Link href="/contact" className="btn btn-primary btn-lg" style={{ marginBottom: '1rem' }}>
+                <Link href="/contact" className="btn btn-primary btn-lg">
                   Talk to a Technology Expert
                 </Link>
-                <Link href="/services" className="btn btn-cta-white btn-lg" style={{ marginBottom: '1rem' }}>
+                <Link href="/services" className="btn btn-cta-white btn-lg">
                   <span className="gradient-text">Explore Our Services</span>
                 </Link>
               </div>

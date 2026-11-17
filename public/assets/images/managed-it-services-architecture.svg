@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" fill="none" role="img" aria-labelledby="title description">
+  <title id="title">Managed IT services architecture</title>
+  <desc id="description">Employees and devices connect through managed network, server, and cloud infrastructure, with helpdesk, security monitoring, and backup support.</desc>
+  <defs>
+    <linearGradient id="panel" x1="160" y1="110" x2="1450" y2="800" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#17375F"/>
+      <stop offset="1" stop-color="#0B1A30"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#58AEFF"/>
+      <stop offset="1" stop-color="#0052CC"/>
+    </linearGradient>
+    <linearGradient id="orange" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FF9A64"/>
+      <stop offset="1" stop-color="#FF6B35"/>
+    </linearGradient>
+  </defs>
+  <rect x="1" y="1" width="1598" height="898" rx="28" fill="#0B172B" stroke="#314C6B" stroke-width="2"/>
+  <rect x="46" y="47" width="1508" height="806" rx="22" fill="url(#panel)" stroke="#31577F" stroke-width="2"/>
+  <path d="M276 278H1322M276 620H1322" stroke="#5486B8" stroke-width="4" stroke-dasharray="12 14"/>
+  <path d="M276 278V620M1322 278V620" stroke="#5486B8" stroke-width="4" stroke-dasharray="12 14"/>
+  <g font-family="Arial, sans-serif" text-anchor="middle">
+    <rect x="105" y="143" width="340" height="184" rx="20" fill="#102744" stroke="#4E78A5" stroke-width="3"/>
+    <circle cx="275" cy="209" r="36" fill="#1C4777"/>
+    <path d="M251 270C251 249 262 239 275 239C288 239 299 249 299 270" stroke="#8EC7FF" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="275" cy="202" r="12" fill="#8EC7FF"/>
+    <text x="275" y="306" fill="#EAF2FF" font-size="24" font-weight="700">Employees</text>
+    <rect x="1155" y="143" width="340" height="184" rx="20" fill="#102744" stroke="#4E78A5" stroke-width="3"/>
+    <rect x="1245" y="183" width="78" height="58" rx="7" fill="#1C4777" stroke="#8EC7FF" stroke-width="3"/>
+    <path d="M1258 198H1310M1258 211H1310M1258 224H1291" stroke="#8EC7FF" stroke-width="4" stroke-linecap="round"/>
+    <rect x="1342" y="183" width="78" height="58" rx="7" fill="#1C4777" stroke="#8EC7FF" stroke-width="3"/>
+    <path d="M1355 198H1407M1355 211H1407M1355 224H1388" stroke="#8EC7FF" stroke-width="4" stroke-linecap="round"/>
+    <text x="1325" y="286" fill="#EAF2FF" font-size="24" font-weight="700">End-user devices</text>
+    <rect x="105" y="500" width="340" height="236" rx="20" fill="#102744" stroke="#4E78A5" stroke-width="3"/>
+    <path d="M210 569H340V654H210V569Z" fill="#16395F" stroke="#8EC7FF" stroke-width="4"/>
+    <path d="M228 592H322M228 611H322M228 630H294" stroke="#8EC7FF" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="227" cy="685" r="6" fill="#54D6A0"/>
+    <circle cx="247" cy="685" r="6" fill="#54D6A0"/>
+    <text x="275" y="717" fill="#EAF2FF" font-size="24" font-weight="700">Servers and storage</text>
+    <rect x="1155" y="500" width="340" height="236" rx="20" fill="#102744" stroke="#4E78A5" stroke-width="3"/>
+    <path d="M1247 612C1224 612 1206 594 1206 571C1206 550 1222 533 1243 531C1252 507 1276 491 1303 495C1327 498 1344 516 1349 538C1377 539 1398 560 1398 586C1398 601 1390 612 1378 619H1247V612Z" fill="#1C4777" stroke="#8EC7FF" stroke-width="4"/>
+    <path d="M1274 569H1330M1302 542V596" stroke="#8EC7FF" stroke-width="5" stroke-linecap="round"/>
+    <text x="1325" y="686" fill="#EAF2FF" font-size="24" font-weight="700">Cloud infrastructure</text>
+    <rect x="538" y="205" width="524" height="146" rx="20" fill="#15385D" stroke="#FF6B35" stroke-width="4"/>
+    <circle cx="608" cy="278" r="34" fill="#FF6B35" fill-opacity=".2"/>
+    <path d="M592 278H624M608 262V294" stroke="#FF9A64" stroke-width="6" stroke-linecap="round"/>
+    <text x="815" y="266" fill="#FFFFFF" font-size="26" font-weight="700">IT Helpdesk</text>
+    <text x="815" y="306" fill="#B7CAE0" font-size="19">Tickets • triage • communication</text>
+    <rect x="538" y="407" width="524" height="146" rx="20" fill="#15385D" stroke="#58AEFF" stroke-width="4"/>
+    <path d="M608 445L640 458V484C640 507 626 523 608 534C590 523 576 507 576 484V458L608 445Z" stroke="#8EC7FF" stroke-width="5"/>
+    <path d="M593 484L604 495L624 472" stroke="#8EC7FF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="815" y="468" fill="#FFFFFF" font-size="26" font-weight="700">Security monitoring</text>
+    <text x="815" y="508" fill="#B7CAE0" font-size="19">Alerts • access • response</text>
+    <rect x="538" y="609" width="524" height="146" rx="20" fill="#15385D" stroke="#58AEFF" stroke-width="4"/>
+    <path d="M580 675C580 660 592 648 607 648H629C644 648 656 660 656 675V709H580V675Z" stroke="#8EC7FF" stroke-width="5"/>
+    <path d="M597 674H639M597 687H639M597 700H628" stroke="#8EC7FF" stroke-width="4" stroke-linecap="round"/>
+    <text x="815" y="670" fill="#FFFFFF" font-size="26" font-weight="700">Backup and recovery</text>
+    <text x="815" y="710" fill="#B7CAE0" font-size="19">Protection • restore • continuity</text>
+    <path d="M276 327V500M1322 327V500M800 351V407M800 553V609" stroke="url(#orange)" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="276" cy="414" r="9" fill="#FF6B35"/>
+    <circle cx="1322" cy="414" r="9" fill="#FF6B35"/>
+    <circle cx="800" cy="379" r="9" fill="#FF6B35"/>
+    <circle cx="800" cy="581" r="9" fill="#FF6B35"/>
+  </g>
+</svg>

@@ -154,7 +154,7 @@ const MicrosoftCloudContent = () => {
                   </p>
                   <div style={{ marginBottom: '24px', paddingTop: '24px', borderTop: '1px solid rgba(255, 107, 53, 0.1)' }}>
                     <h4 style={{ fontSize: '.85rem', fontWeight: 700, color: 'var(--accent)', marginBottom: '12px', textTransform: 'uppercase' }}>Key Capabilities</h4>
-                    <ul style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px', listStyle: 'none', padding: 0, margin: 0 }}>
+                    <ul className="responsive-content-grid" style={{ gap: '10px', listStyle: 'none', padding: 0, margin: 0 }}>
                       {service.features.map((feature) => (
                         <li key={feature} style={{ fontSize: '.8rem', color: 'var(--text-secondary)', display: 'flex', alignItems: 'center', gap: '6px' }}>
                           <span style={{ color: 'var(--accent)' }}>✓</span>

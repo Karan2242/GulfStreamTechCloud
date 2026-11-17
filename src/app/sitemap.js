@@ -41,6 +41,10 @@ export default function sitemap() {
     '/ai-services/data-engineering-bi',
     '/ai-services/automation-services',
     '/ai-services/ai-governance-security',
+    // Blog Insight Pages - AI
+    '/insights/building-custom-ai-applications',
+    // Blog Insight Pages - IT Services
+    '/insights/proactive-managed-it-support',
     // Blog Insight Pages - FinOps
     '/insights/cloud-cost-optimization-strategy',
     '/insights/reserved-instances-vs-savings-plans',

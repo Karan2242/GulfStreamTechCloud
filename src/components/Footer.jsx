@@ -22,7 +22,7 @@ const Footer = () => {
               <Image src="/assets/logo.png" alt="GulfStream Technologies" className="nav-logo-img" width={2000} height={2000} />
               <span className="brand">{siteConfig.name}</span>
             </Link>
-            <p style={{ fontSize: '0.8rem' }}>One technology partner across Cloud, AI, IT and technology talent. GulfStream Technologies helps organizations modernize technology, adopt practical AI, strengthen IT operations and access specialized technology professionals.</p>
+            <p>One technology partner across Cloud, AI, IT and technology talent. GulfStream Technologies helps organizations modernize technology, adopt practical AI, strengthen IT operations and access specialized technology professionals.</p>
             <div className="footer-social">
               <a href={siteConfig.social.linkedin} className="social-btn" title="LinkedIn" target="_blank" rel="noopener noreferrer">in</a>
               <a href={siteConfig.social.x} className="social-btn" title="Twitter / X" target="_blank" rel="noopener noreferrer">𝕏</a>
@@ -42,6 +42,14 @@ const Footer = () => {
                   </ul>
                 </section>
               ))}
+            </div>
+            <section className="footer-manpower-row">
+              <h6><Link href="/manpower-services">Manpower Services</Link></h6>
+            </section>
+          </div>
+          <div className="footer-col footer-company-contact">
+            <h5>Company &amp; Contact</h5>
+            <div className="footer-company-contact-grid">
               <section className="footer-service-group footer-company-group">
                 <h6>Company</h6>
                 <ul className="footer-links">
@@ -60,9 +68,6 @@ const Footer = () => {
                 </ul>
               </section>
             </div>
-            <section className="footer-manpower-row">
-              <h6><Link href="/manpower-services">Manpower Services</Link></h6>
-            </section>
           </div>
         </div>
         <div className="footer-bottom">

@@ -197,7 +197,7 @@ const DataEngineeringBIContent = () => {
 
             <div aria-hidden style={{ fontSize: '1.5rem', color: 'var(--text-secondary)' }}>↓</div>
 
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16, width: '100%', maxWidth: 920 }}>
+            <div className="responsive-content-grid" style={{ width: '100%', maxWidth: 920 }}>
               <div className="card premium-card">
                 <div className="card-header"><div className="icon-box">📊</div><h3>Analytics &amp; BI</h3></div>
                 <p style={{ color: 'var(--text-secondary)', fontSize: '0.8rem' }}>Dashboards, reports, and operational views that provide trusted insights.</p>

@@ -69,7 +69,7 @@ const BookReviewContent = () => {
       {/* THE FORM */}
       <section className="section" >
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: '20px', alignItems: 'start' }}>
+          <div className="review-layout">
             {/* Left: Trust / Process */}
             <div className="reveal">
               <h2 style={{ marginBottom: '16px', fontSize: '1.3rem' }}>How It Works</h2>
@@ -107,14 +107,14 @@ const BookReviewContent = () => {
 
             {/* Right: Form */}
             <div className="reveal">
-              <div className="card" style={{ padding: '32px' }}>
+              <div className="card review-form-card" style={{ padding: '32px' }}>
                 <h2 style={{ marginBottom: '8px', fontSize: '1.3rem' }}>Book Your Free Technology Assessment</h2>
                 <p style={{ color: 'var(--text-secondary)', fontSize: '.9rem', marginBottom: '8px' }}>Takes 3 minutes. We&apos;ll be in touch within 4 business hours.</p>                
                 {formState !== 'success' ? (
                   <form className="contact-form" id="reviewForm" onSubmit={handleReviewSubmit}>
                     {/* Honeypot */}
                     <input type="checkbox" name="botcheck" style={{ display: 'none' }} tabIndex={-1} autoComplete="off" />
-                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px' }}>
+                    <div className="review-name-fields">
                       <div className="form-group">
                         <label className="form-label" htmlFor="revFirstName">First Name *</label>
                         <input type="text" id="revFirstName" name="firstName" autoComplete="given-name" aria-label="First Name" className="form-input" placeholder="Ahmed" required />
@@ -176,7 +176,7 @@ const BookReviewContent = () => {
                       <label className="form-label" htmlFor="revChallenge">Primary Cloud Challenge</label>
                       <textarea id="revChallenge" name="challenge" aria-label="Primary Cloud Challenge" className="form-input form-textarea" placeholder="e.g. Costs are growing 20% month-over-month, we have no visibility into where the spend is going..." rows="3"></textarea>
                     </div>
-                    <button type="submit" className="btn btn-primary w-full" id="reviewSubmitBtn" style={{ justifyContent: 'center', fontSize: '1rem', padding: '12px' }} disabled={formState === 'submitting'}>
+                    <button type="submit" className="btn btn-primary w-full" id="reviewSubmitBtn" style={{ justifyContent: 'center' }} disabled={formState === 'submitting'}>
                       {formState === 'submitting' ? 'Submitting...' : '📋 Book My Free Cloud Assessment →'}
                     </button>
                     {formState === 'error' && (

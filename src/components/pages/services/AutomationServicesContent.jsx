@@ -101,7 +101,7 @@ const AutomationServicesContent = () => {
             <h2 className="display-md">Turn repetitive processes into reliable digital workflows</h2>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 24 }}>
+          <div className="responsive-content-grid">
             <div>
               <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }}>Automation services help enterprises streamline operations by connecting systems, enforcing business rules, and automating approvals, notifications, and data flows. Implemented correctly, automation delivers repeatable, auditable workflows that reduce cost, shorten cycle times, and lower operational risk.</p>
               <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }}>We prioritize high-impact processes, design resilient integrations and transformations, and apply RPA or targeted AI only where it improves accuracy or decisioning—ensuring solutions are maintainable, compliant, and aligned to measurable ROI.</p>

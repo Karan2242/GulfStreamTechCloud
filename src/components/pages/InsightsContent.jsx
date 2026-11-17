@@ -1,8 +1,15 @@
 'use client';
 
 import React, { useState } from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { useReveal } from '@/hooks/useReveal';
+
+const VISIBLE_ARTICLE_SLUGS = new Set([
+  'proactive-managed-it-support',
+  'building-custom-ai-applications',
+  'cloud-cost-optimization-strategy',
+]);
 
 const InsightsContent = () => {
   useReveal();
@@ -16,8 +23,8 @@ const InsightsContent = () => {
       title: 'AI Use Case Discovery: From Business Challenge to Roadmap',
       summary: 'Prioritize practical AI opportunities by assessing business value, data readiness, feasibility, and measurable outcomes before investing.',
       readTime: '9 min read',
-      date: '2026-10-19',
-      dateLabel: 'Oct 19, 2026',
+      date: '2026-10-14',
+      dateLabel: 'Oct 14, 2026',
     },
     {
       slug: 'responsible-ai-governance-framework',
@@ -30,14 +37,14 @@ const InsightsContent = () => {
       dateLabel: 'Aug 21, 2026',
     },
     {
-      slug: 'custom-ai-application-development',
+      slug: 'building-custom-ai-applications',
       icon: '🧠',
       category: 'AI',
       title: 'Building Custom AI Applications: From Prototype to Production',
       summary: 'Explore the architecture, integration, evaluation, and deployment practices needed to move a custom AI application into production.',
-      readTime: '11 min read',
-      date: '2026-09-26',
-      dateLabel: 'Sep 26, 2026',
+      readTime: '9 min read',
+      date: '2026-11-14',
+      dateLabel: 'Nov 14, 2026',
     },
     {
       slug: 'enterprise-data-engineering-ai-readiness',
@@ -60,14 +67,14 @@ const InsightsContent = () => {
       dateLabel: 'Oct 01, 2026',
     },
     {
-      slug: 'managed-it-support-proactive-operations',
+      slug: 'proactive-managed-it-support',
       icon: '🖥️',
       category: 'IT Services',
       title: 'Proactive Managed IT Support: A Guide for Growing Businesses',
       summary: 'Learn how monitoring, help desk workflows, patching, and service-level targets can make day-to-day IT more dependable.',
-      readTime: '8 min read',
-      date: '2026-10-17',
-      dateLabel: 'Oct 17, 2026',
+      readTime: '10 min read',
+      date: '2026-11-18',
+      dateLabel: 'Nov 18, 2026',
     },
     {
       slug: 'small-business-cybersecurity-baseline',
@@ -114,10 +121,11 @@ const InsightsContent = () => {
       icon: '💰',
       category: 'FinOps',
       title: 'Cloud Cost Optimization Strategy: A Complete Framework',
-      summary: 'Learn proven FinOps methodologies to reduce cloud costs by 25-35% through rightsizing, commitment planning, and intelligent resource allocation.',
+      summary: 'Discover how Saudi businesses can optimize AWS and Azure cloud costs through FinOps, cost visibility, resource rightsizing, and practical governance for sustainable cloud spending.',
       readTime: '8 min read',
-      date: '2026-10-23',
-      dateLabel: 'Oct 23, 2026',
+      date: '2026-11-10',
+      dateLabel: 'Nov 10, 2026',
+      image: '/assets/images/service-finops.png',
     },
     {
       slug: 'auto-scaling-architecture',
@@ -271,8 +279,9 @@ const InsightsContent = () => {
     },
   ];
 
-  const categories = ['All', 'FinOps', 'Security', 'Migration', 'Architecture', 'AI', 'IT Services'];
-  const mixedArticles = [...articles].sort((a, b) => b.date.localeCompare(a.date));
+  const visibleArticles = articles.filter((article) => VISIBLE_ARTICLE_SLUGS.has(article.slug));
+  const categories = ['All', ...new Set(visibleArticles.map((article) => article.category))];
+  const mixedArticles = [...visibleArticles].sort((a, b) => b.date.localeCompare(a.date));
   const filtered = activeCategory === 'All'
     ? mixedArticles
     : mixedArticles.filter(a => a.category === activeCategory);
@@ -285,8 +294,8 @@ const InsightsContent = () => {
           <nav className="breadcrumb" aria-label="Breadcrumb">
             <Link href="/">Home</Link><span>›</span><span>Insights</span>
           </nav>
-          <h1 className="display-lg"><span className="text-gradient">Cloud Insights & Resources Expert Guidance for Saudi Enterprises</span></h1>
-          <p>In-depth guides on AI, IT services, FinOps, security, migration, and cloud architecture from GulfStream experts — helping you make smarter decisions across your technology landscape.</p>
+          <h1 className="display-lg"><span className="text-gradient">Insights for Smarter Cloud, AI, and IT Decisions</span></h1>
+          <p>Explore expert guidance on cloud transformation, AI adoption, cybersecurity, FinOps, migration, and managed IT—designed to help businesses in Saudi Arabia make practical, future-ready technology decisions.</p>
         </div>
       </section>
 
@@ -317,6 +326,7 @@ const InsightsContent = () => {
                 style={{ textDecoration: 'none', color: 'inherit' }}
               >
                 <div className="card" style={{ display: 'flex', flexDirection: 'column', height: '100%', cursor: 'pointer' }}>
+
                   <header style={{ display: 'flex', gap: '8px', marginBottom: '12px' }}>
                     <span className="badge badge-accent">{a.category}</span>
                   </header>
@@ -341,8 +351,8 @@ const InsightsContent = () => {
         <div className="container">
           <div className="newsletter-banner reveal" style={{ textAlign: 'center' }}>
             <div className="badge badge-primary" style={{ marginBottom: '24px', justifyContent: 'center', width: 'fit-content', margin: '0 auto 24px' }}>📧 NEWSLETTER</div>
-            <h2 className="display-md" style={{ marginBottom: '16px' }}>Cloud Insights, Monthly.</h2>
-            <p style={{ marginBottom: '32px', maxWidth: '600px', margin: '0 auto 32px', fontSize: '1rem', color: 'var(--text-secondary)' }}>Join 1,200+ Saudi cloud professionals who receive expert cloud cost optimization tips, security updates, and Cloud news monthly — no spam, ever.</p>
+            <h2 className="display-md" style={{ marginBottom: '16px' }}>Actionable insight, delivered monthly.</h2>
+            <p style={{ marginBottom: '32px', maxWidth: '640px', margin: '0 auto 32px', fontSize: '1rem', color: 'var(--text-secondary)' }}>Get practical guidance on cloud cost optimization, AI strategy, cybersecurity, migration planning, and digital transformation from GulfStream experts—tailored for leaders building resilient, high-performing businesses.</p>
             
             <form onSubmit={async (e) => {
               e.preventDefault();
@@ -360,15 +370,17 @@ const InsightsContent = () => {
                   alert('Error subscribing. Please try again.');
                 }
               }
-            }} style={{ display: 'flex', gap: '12px', maxWidth: '550px', margin: '0 auto', flexWrap: 'wrap', justifyContent: 'center' }}>
+            }} className="newsletter-form">
               <input
                 type="email"
                 name="email"
+                className="newsletter-email"
                 placeholder="Your business email address"
                 required
                 style={{
-                  flex: 1,
-                  minWidth: '300px',
+                  width: '100%',
+                  minWidth: 0,
+                  boxSizing: 'border-box',
                   padding: '14px 20px',
                   borderRadius: 'var(--radius-md)',
                   background: 'rgba(15, 26, 46, 0.8)',
@@ -388,7 +400,7 @@ const InsightsContent = () => {
               </button>
             </form>
 
-            <p style={{ marginTop: '16px', fontSize: '.875rem', color: 'var(--text-muted)' }}>No spam. Monthly insights only. Unsubscribe any time.</p>
+            <p style={{ marginTop: '16px', fontSize: '.875rem', color: 'var(--text-muted)' }}>No spam. Just relevant insights for your next strategic decision.</p>
           </div>
         </div>
       </section>
@@ -397,11 +409,11 @@ const InsightsContent = () => {
       <section className="section">
         <div className="container">
           <div className="cta-banner reveal">
-            <h2 className="display-md">Ready to Transform Your Cloud Strategy?</h2>
-            <p>Book a free cloud assessment to discuss how these strategies apply to your organization and discover your specific optimization opportunities.</p>
+            <h2 className="display-md">Build a smarter digital roadmap.</h2>
+            <p>Need help turning these insights into action? Let’s assess your current cloud, AI, and IT environment to uncover practical opportunities for efficiency, resilience, and growth.</p>
             <div className="cta-actions">
-              <Link href="/book-a-review" className="btn btn-white btn-lg">📋 Book Free Assessment</Link>
-              <Link href="/contact" className="btn-white-outline">Talk to Cloud Experts</Link>
+              <Link href="/book-a-review" className="btn btn-white btn-lg">📋 Book a Strategy Call</Link>
+              <Link href="/contact" className="btn-white-outline">Speak with Our Experts</Link>
             </div>
           </div>
         </div>

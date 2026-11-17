@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="680" viewBox="0 0 1440 680" fill="none" role="img" aria-labelledby="title description">
+  <title id="title">Reactive and proactive IT support comparison</title>
+  <desc id="description">Reactive support responds after an incident; proactive support monitors, maintains, and plans to reduce avoidable disruption.</desc>
+  <rect x="1" y="1" width="1438" height="678" rx="24" fill="#F5F7FA" stroke="#DBE2EA" stroke-width="2"/>
+  <rect x="48" y="48" width="626" height="584" rx="20" fill="#FFFFFF" stroke="#DBE2EA" stroke-width="2"/>
+  <rect x="766" y="48" width="626" height="584" rx="20" fill="#EDF4FF" stroke="#A8C9F0" stroke-width="2"/>
+  <rect x="48" y="48" width="626" height="92" rx="20" fill="#263D59"/>
+  <path d="M48 120H674V140H48V120Z" fill="#263D59"/>
+  <rect x="766" y="48" width="626" height="92" rx="20" fill="#0052CC"/>
+  <path d="M766 120H1392V140H766V120Z" fill="#0052CC"/>
+  <circle cx="103" cy="94" r="22" fill="#FFE4D9"/>
+  <path d="M103 80V95L114 102" stroke="#E55100" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="821" cy="94" r="22" fill="#D9EAFE"/>
+  <path d="M810 94L818 102L833 85" stroke="#0052CC" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="146" y="104" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="29" font-weight="700">REACTIVE SUPPORT</text>
+  <text x="864" y="104" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="29" font-weight="700">PROACTIVE SUPPORT</text>
+  <g font-family="Arial, sans-serif" font-size="21" fill="#52627A">
+    <text x="92" y="197">Waits for a problem to be reported</text>
+    <text x="92" y="277">Monitoring is limited or incident-based</text>
+    <text x="92" y="357">Maintenance often follows a failure</text>
+    <text x="92" y="437">Security response is mainly incident-driven</text>
+    <text x="92" y="517">Disruption and urgent work can be harder to plan</text>
+    <text x="92" y="597">Support demand and costs may be less predictable</text>
+    <text x="810" y="197">Uses alerts and scheduled reviews to spot risk</text>
+    <text x="810" y="277">Monitors infrastructure and service health</text>
+    <text x="810" y="357">Plans updates, patching, and preventive care</text>
+    <text x="810" y="437">Builds security tasks into ongoing operations</text>
+    <text x="810" y="517">Acts on early signals before wider impact</text>
+    <text x="810" y="597">Supports clearer service planning and review</text>
+  </g>
+  <g stroke="#DBE2EA" stroke-width="2">
+    <path d="M82 220H640M82 300H640M82 380H640M82 460H640M82 540H640"/>
+    <path d="M800 220H1358M800 300H1358M800 380H1358M800 460H1358M800 540H1358"/>
+  </g>
+  <path d="M702 303L738 340L702 377L666 340L702 303Z" fill="#FF6B35"/>
+  <path d="M694 340H710M702 332L710 340L702 348" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
